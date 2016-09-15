@@ -4,14 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives: 2016 | iMath</title>
+  <title>使用Redmine的PHP API时，如何判断需求是否为原子需求 | iMath</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="iMath">
-<meta property="og:url" content="http://yoursite.com/archives/2016/index.html">
+  <meta name="description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
+12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Redmine的PHP API时，如何判断需求是否为原子需求">
+<meta property="og:url" content="http://yoursite.com/2016/09/15/redmine-child-issue/index.html">
 <meta property="og:site_name" content="iMath">
+<meta property="og:description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
+12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
+<meta property="og:updated_time" content="2016-09-15T07:33:50.401Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iMath">
+<meta name="twitter:title" content="使用Redmine的PHP API时，如何判断需求是否为原子需求">
+<meta name="twitter:description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
+12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="iMath" type="application/atom+xml">
   
@@ -129,86 +136,88 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-redmine-child-issue" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/09/15/redmine-child-issue/" class="archive-article-date">
-  	<time datetime="2016-09-15T07:33:22.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/15/redmine-child-issue/">使用Redmine的PHP API时，如何判断需求是否为原子需求</a>
+    <h1 class="article-title" itemprop="name">
+      使用Redmine的PHP API时，如何判断需求是否为原子需求
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 判断是否为原子需求, 即是否依然含有子需求</div><div class="line"> * <span class="doctag">@param</span> int $id 需求Id</div><div class="line"> * <span class="doctag">@return</span> int</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">hasChildIssue</span><span class="params">($id)</span></span></div><div class="line">&#123;</div><div class="line">    $res = <span class="keyword">$this</span>-&gt;client-&gt;api(<span class="string">'issue'</span>)-&gt;show($id, <span class="keyword">array</span>(<span class="string">'include'</span> =&gt; <span class="string">'children'</span>));</div><div class="line">    <span class="keyword">if</span> (!<span class="keyword">empty</span>($res) &amp;&amp; <span class="keyword">isset</span>($res[<span class="string">'issue'</span>][<span class="string">'children'</span>])) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">    set_time_limit(<span class="number">0</span>);</div><div class="line">    $startTime = microtime(<span class="keyword">true</span>);</div><div class="line"></div><div class="line">    <span class="comment">//检查API KEY是否配置</span></div><div class="line">    $configService = <span class="keyword">$this</span>-&gt;serviceInstance(<span class="string">'config'</span>, <span class="string">'work'</span>);</div><div class="line">    $config = $configService-&gt;getConstApiKey();</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">empty</span>($config)) &#123;</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> \<span class="keyword">Exception</span>(<span class="string">'固定API KEY未配置'</span>);</div><div class="line">    &#125;</div><div class="line">    $constApiKey = $config[<span class="string">'value'</span>];</div><div class="line">    $redmine = <span class="keyword">new</span> RedmineLib($constApiKey);</div><div class="line"></div><div class="line">    $issueId=<span class="number">17252</span>;</div><div class="line">    $temp = $redmine-&gt;client-&gt;get(<span class="string">'/issues/'</span>.urlencode($issueId).<span class="string">'.json?'</span>.http_build_query(<span class="keyword">array</span> (<span class="string">'include'</span> =&gt; <span class="string">'children'</span>)));</div><div class="line"></div><div class="line">    $temp = $redmine-&gt;client-&gt;api(<span class="string">'issue'</span>)-&gt;show(<span class="number">17252</span>, <span class="keyword">array</span> (<span class="string">'include'</span> =&gt; <span class="string">'children'</span>));</div><div class="line">    </div><div class="line">    var_dump($temp[<span class="string">'issue'</span>][<span class="string">'children'</span>]); <span class="keyword">exit</span>; <span class="comment">// 如果有子任务，['issue']['children']字段不存在，否则['issue']['children']字段对应一个子数组</span></div><div class="line"></div><div class="line"><span class="comment">//        $temp  = $redmine-&gt;client-&gt;issue-&gt;show(17252, array('include' =&gt; 'children'));</span></div><div class="line"><span class="comment">//        $temp  = $redmine-&gt;hasChildIssue(17330);</span></div><div class="line">    var_dump($temp); <span class="keyword">exit</span>;</div></pre></td></tr></table></figure>
+<p>相关链接:<br><a href="http://www.redmine.org/projects/redmine/wiki/Rest_Issues" target="_blank" rel="external">http://www.redmine.org/projects/redmine/wiki/Rest_Issues</a></p>
+<p>Rest api with php - Redmine<br><a href="http://www.redmine.org/projects/redmine/wiki/Rest_api_with_php" target="_blank" rel="external">http://www.redmine.org/projects/redmine/wiki/Rest_api_with_php</a></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/09/15/redmine-child-issue/" class="archive-article-date">
+  	<time datetime="2016-09-15T07:33:22.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-15</time>
+</a>
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/redmine-php-api/">redmine php api</a></li></ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/09/15/smarty_usage_in_php/" class="archive-article-date">
-  	<time datetime="2016-09-15T07:07:22.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/15/smarty_usage_in_php/">PHP中Smarty引擎的常用语法</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/15/smarty_usage_in_php/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP中Smarty引擎的常用语法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
 
 
       </div>
@@ -231,8 +240,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
