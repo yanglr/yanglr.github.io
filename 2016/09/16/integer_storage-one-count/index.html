@@ -45,7 +45,7 @@
 分析:看到此题, 想到两种办法:
 
 将该整数转为二进制的字符串, 然后">
-<meta property="og:updated_time" content="2016-09-16T09:05:03.625Z">
+<meta property="og:updated_time" content="2016-09-16T09:10:38.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="华为oj之求int型正整数在内存中存储时1的个数">
 <meta name="twitter:description" content="题目: 求int型正整数在内存中存储时1的个数
@@ -351,7 +351,7 @@
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>看到此题, 想到两种办法:</p>
 <ul>
 <li>将该整数转为二进制的字符串, 然后去数里面字符<code>1</code>的个数;</li>
-<li>巧妙使用n&amp;(n-1)计算出1的个数.</li>
+<li>巧妙使用n&amp;(n-1)计算出1的个数. (参见 剑指offer 面试题10：二进制中1的个数 题解 -  CSDN  <a href="http://blog.csdn.net/lzuacm/article/details/51308149" target="_blank" rel="external">http://blog.csdn.net/lzuacm/article/details/51308149</a>)</li>
 </ul>
 <p>下面是用方法2写成的代码, 顺利AC.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">digit1ofNum</span><span class="params">(<span class="keyword">int</span> n)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span>(n != <span class="number">0</span>)</div><div class="line">    &#123;</div><div class="line">        n = n&amp;(n<span class="number">-1</span>);<span class="comment">// 每进行一次，将最右侧存有1的bit的值置为0，直到全0，退出循环</span></div><div class="line">        count++;</div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> count;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;   </div><div class="line">    <span class="keyword">int</span> n;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;digit1ofNum(n)&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -369,7 +369,7 @@
         <p><span>本文标题:</span><a href="/2016/09/16/integer_storage-one-count/">华为oj之求int型正整数在内存中存储时1的个数</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
         <p><span>发布时间:</span>2016-09-16, 16:55:09</p>
-        <p><span>最后更新:</span>2016-09-16, 17:05:03</p>
+        <p><span>最后更新:</span>2016-09-16, 17:10:38</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/09/16/integer_storage-one-count/" title="华为oj之求int型正整数在内存中存储时1的个数">http://yanglr.github.io/2016/09/16/integer_storage-one-count/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/16/integer_storage-one-count/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
