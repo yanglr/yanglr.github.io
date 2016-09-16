@@ -15,7 +15,7 @@
 
 
 
-<meta name="description" content="字符串反转
+<meta name="description" content="题目: 字符串反转
 热度指数：4940   时间限制：1秒    空间限制：32768K
 
 本题知识点： 字符串
@@ -26,12 +26,12 @@
 输出描述:1输出该字符串反转后的字符串
 输入例子:1abcd
 输出例子:1dcba
-在线提交网址: http://www.nowcoder.com/practice/e45e078701">
+在线提交网址: http://www.nowcoder.com/practice/e45e07">
 <meta property="og:type" content="article">
-<meta property="og:title" content="字符串反转">
+<meta property="og:title" content="华为oj之字符串反转">
 <meta property="og:url" content="http://yanglr.github.io/2016/09/16/string-reverse-solution/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="字符串反转
+<meta property="og:description" content="题目: 字符串反转
 热度指数：4940   时间限制：1秒    空间限制：32768K
 
 本题知识点： 字符串
@@ -42,11 +42,11 @@
 输出描述:1输出该字符串反转后的字符串
 输入例子:1abcd
 输出例子:1dcba
-在线提交网址: http://www.nowcoder.com/practice/e45e078701">
-<meta property="og:updated_time" content="2016-09-16T08:24:38.465Z">
+在线提交网址: http://www.nowcoder.com/practice/e45e07">
+<meta property="og:updated_time" content="2016-09-16T08:28:21.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="字符串反转">
-<meta name="twitter:description" content="字符串反转
+<meta name="twitter:title" content="华为oj之字符串反转">
+<meta name="twitter:description" content="题目: 字符串反转
 热度指数：4940   时间限制：1秒    空间限制：32768K
 
 本题知识点： 字符串
@@ -57,7 +57,7 @@
 输出描述:1输出该字符串反转后的字符串
 输入例子:1abcd
 输出例子:1dcba
-在线提交网址: http://www.nowcoder.com/practice/e45e078701">
+在线提交网址: http://www.nowcoder.com/practice/e45e07">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -89,7 +89,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>字符串反转 | iMath</title>
+<title>华为oj之字符串反转 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -310,7 +310,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      字符串反转
+      华为oj之字符串反转
     </h1>
   
 
@@ -335,7 +335,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="字符串反转"><a href="#字符串反转" class="headerlink" title="字符串反转"></a>字符串反转</h3><ul>
+        <h3 id="题目-字符串反转"><a href="#题目-字符串反转" class="headerlink" title="题目: 字符串反转"></a>题目: 字符串反转</h3><ul>
 <li><p>热度指数：4940   时间限制：1秒    空间限制：32768K</p>
 </li>
 <li><p>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a></p>
@@ -350,6 +350,8 @@
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>其实使用C++算法库中的reverse()函数即可…</p>
 <p>下面是已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">    <span class="built_in">string</span> out;</div><div class="line">    <span class="keyword">while</span>(getline(<span class="built_in">cin</span>, str))</div><div class="line">    &#123;</div><div class="line">        reverse(str.begin(), str.end());  <span class="comment">// 原址逆序</span></div><div class="line">        <span class="built_in">cout</span>&lt;&lt;str&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>用C风格字符串也可这样写:<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">strrev</span><span class="params">(<span class="keyword">char</span> s[])</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> length = <span class="built_in">strlen</span>(s) ;</div><div class="line">    <span class="keyword">char</span> ch;</div><div class="line">    <span class="keyword">int</span> i, j;</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>, j = length - <span class="number">1</span>; i &lt; j; i++, j--)</div><div class="line">    &#123;</div><div class="line">        ch= s[i];</div><div class="line">        s[i] = s[j];</div><div class="line">        s[j] = ch;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">char</span> str[<span class="number">1000</span>];</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%s"</span>, str) != EOF)</div><div class="line">    &#123;</div><div class="line">        strrev(str);</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;str&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;        </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>相关参考:</p>
+<p><a href="http://stackoverflow.com/questions/198199/how-do-you-reverse-a-string-in-place-in-c-or-c" target="_blank" rel="external">http://stackoverflow.com/questions/198199/how-do-you-reverse-a-string-in-place-in-c-or-c</a></p>
 
       
     </div>
@@ -358,12 +360,12 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/16/string-reverse-solution/">字符串反转</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/16/string-reverse-solution/">华为oj之字符串反转</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
         <p><span>发布时间:</span>2016-09-16, 16:03:06</p>
-        <p><span>最后更新:</span>2016-09-16, 16:24:38</p>
+        <p><span>最后更新:</span>2016-09-16, 16:28:21</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/16/string-reverse-solution/" title="字符串反转">http://yanglr.github.io/2016/09/16/string-reverse-solution/</a>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/16/string-reverse-solution/" title="华为oj之字符串反转">http://yanglr.github.io/2016/09/16/string-reverse-solution/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/16/string-reverse-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -391,7 +393,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符串反转"><span class="toc-number">1.</span> <span class="toc-text">字符串反转</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-字符串反转"><span class="toc-number">1.</span> <span class="toc-text">题目: 字符串反转</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
         
     </div>
     <style>
@@ -427,7 +429,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"字符串反转　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"华为oj之字符串反转　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -481,7 +483,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/string-reverse-solution/">字符串反转</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/last-word-length-solution/">华为oj之字符串最后一个单词的长度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/15/redmine-child-issue/">使用Redmine的PHP API时，如何判断需求是否为原子需求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/15/smarty_usage_in_php/">PHP中Smarty引擎的常用语法</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/string-reverse-solution/">华为oj之字符串反转</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/last-word-length-solution/">华为oj之字符串最后一个单词的长度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/15/redmine-child-issue/">使用Redmine的PHP API时，如何判断需求是否为原子需求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/15/smarty_usage_in_php/">PHP中Smarty引擎的常用语法</a></li></ul>
 
 
 
