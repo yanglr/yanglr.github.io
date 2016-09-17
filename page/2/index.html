@@ -14,10 +14,13 @@
 <meta name="author" content="Bravo Yeung" />
 
 
+    
+    
+
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="iMath">
-<meta property="og:url" content="http://yanglr.github.io/archives/index.html">
+<meta property="og:url" content="http://yanglr.github.io/page/2/index.html">
 <meta property="og:site_name" content="iMath">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iMath">
@@ -48,11 +51,13 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
+    <style> .article { opacity: 0;} </style>
+
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives | iMath</title>
+<title>iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -61,9 +66,9 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: false,
+        isHome: true,
         isPost: false,
-        isArchive: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -256,395 +261,84 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-smarty_usage_in_php" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2016/09/15/smarty_usage_in_php/" class="article-date">
+      <time datetime="2016-09-15T07:07:22.000Z" itemprop="datePublished">2016-09-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/15/smarty_usage_in_php/">PHP中Smarty引擎的常用语法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>smarty在PHP项目开发中用得挺多的, 主要用于实现前后端分离, 本文来总结一下常见的用法.</p>
+<p>输出今天的日期:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;$smarty.now|date_format:&quot;%H:%M %A, %B %e, %Y&quot;&#125;</div></pre></td></tr></table></figure>
+<p>实际上用到了PHP的time()函数</p>
+<p>明天Date of Tomorrow:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;tomorrow&quot;|date_format:&quot;%A, %B %e, %Y&quot;&#125;</div></pre></td></tr></table></figure></p>
+<p>后天Date of the day after tomorrow (Day+2):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;+2 days&quot;|date_format:&quot;%A, %B %e, %Y&quot;&#125;</div></pre></td></tr></table></figure></p>
+<p>(Day+3):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;+3 days&quot;|date_format:&quot;%A, %B %e, %Y&quot;&#125;</div></pre></td></tr></table></figure></p>
+<p>相关链接:</p>
+<p>How to do to print out date of tomorrow (day+1) with Smarty? - v1.x Store Design &amp; Templates - CS-Cart Community Forums  <a href="http://forum.cs-cart.com/topic/8070-how-to-do-to-print-out-date-of-tomorrow-day1-with-smarty/" target="_blank" rel="external">http://forum.cs-cart.com/topic/8070-how-to-do-to-print-out-date-of-tomorrow-day1-with-smarty/</a> </p>
+<h2 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;foreach from=$workDetails key=key item=workDetail&#125;</div><div class="line">    &lt;td&gt;&#123;$workDetail[&apos;name&apos;]&#125;&lt;/td&gt;</div><div class="line">&#123;/foreach&#125;</div></pre></td></tr></table></figure>
+<h2 id="if-else"><a href="#if-else" class="headerlink" title="if, else"></a>if, else</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;if $weekDay neq 0 and  $weekDay neq 6&#125;</div><div class="line"></div><div class="line">&#123;else&#125;</div><div class="line"></div><div class="line">&#123;/if&#125;</div></pre></td></tr></table></figure>
+<h2 id="调用php函数"><a href="#调用php函数" class="headerlink" title="调用php函数"></a>调用php函数</h2><p><code>{$monthDay|substr:&#39;5&#39;:&#39;9&#39;}</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;if $weekDay neq 0 and  $weekDay neq 6&#125;</div><div class="line">    &lt;th&gt;</div><div class="line">        &lt;div style=&quot;text-align: center; width:&#123;$tableTdWidth * ($groupMaxCostData[&apos;groupMaxCostTimes&apos;][$monthDay] + 1)&#125;px&quot;&gt;&#123;$monthDay|substr:&apos;5&apos;:&apos;9&apos;&#125;&lt;div&gt;</div><div class="line">    &lt;/th&gt;</div><div class="line">&#123;else&#125;</div><div class="line">    &lt;th style=&quot;background-color: gray;&quot;&gt;</div><div class="line">        &lt;div style=&quot;width:&#123;$tableTdWidth * ($groupMaxCostData[&apos;groupMaxCostTimes&apos;][$monthDay] + 1)&#125;px&quot;&gt;&#123;$monthDay|substr:&apos;5&apos;:&apos;9&apos;&#125;&lt;div&gt;</div><div class="line">    &lt;/th&gt;</div><div class="line">&#123;/if&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="相等与不等"><a href="#相等与不等" class="headerlink" title="相等与不等"></a>相等与不等</h2><p>eq、neq<br>和shell的写法接近</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$var eq 5</div></pre></td></tr></table></figure>
+<h2 id="是否有值"><a href="#是否有值" class="headerlink" title="是否有值"></a>是否有值</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;if $var&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/17/sum-of-a-sequence/" class="archive-article-date">
-      <time datetime="2016-09-17T07:35:11.000Z" itemprop="datePublished">09-17</time>
-</a>
 
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/17/sum-of-a-sequence/">华为oj之等差数列前n项和</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-          
+      
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/17/least-common-multiple/" class="archive-article-date">
-      <time datetime="2016-09-17T07:19:26.000Z" itemprop="datePublished">09-17</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/17/least-common-multiple/">华为oj之最小公倍数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/17/char-count-hard-solution/" class="archive-article-date">
-      <time datetime="2016-09-17T06:38:48.000Z" itemprop="datePublished">09-17</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/17/char-count-hard-solution/">华为oj之字符统计(按出现次数由多到少的顺序进行输出)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/char-count-solution/" class="archive-article-date">
-      <time datetime="2016-09-16T15:42:35.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/char-count-solution/">华为oj之字符个数统计</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/count-char-in-string-solution/" class="archive-article-date">
-      <time datetime="2016-09-16T14:31:09.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/count-char-in-string-solution/">华为oj之计算字符个数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/prime-factor-solution/" class="archive-article-date">
-      <time datetime="2016-09-16T14:02:17.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/prime-factor-solution/">华为oj之质数因子</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程练习/">编程练习</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/integer_storage-one-count/" class="archive-article-date">
-      <time datetime="2016-09-16T08:55:09.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/integer_storage-one-count/">华为oj之求int型正整数在内存中存储时1的个数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程练习/">编程练习</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/string-reverse-solution/" class="archive-article-date">
-      <time datetime="2016-09-16T08:03:06.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/string-reverse-solution/">华为oj之字符串反转</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/16/last-word-length-solution/" class="archive-article-date">
-      <time datetime="2016-09-16T07:07:25.000Z" itemprop="datePublished">09-16</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/16/last-word-length-solution/">华为oj之字符串最后一个单词的长度</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/09/15/redmine-child-issue/" class="archive-article-date">
-      <time datetime="2016-09-15T07:33:22.000Z" itemprop="datePublished">09-15</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/15/redmine-child-issue/">使用Redmine的PHP API时，如何判断需求是否为原子需求</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/PHP项目实战/">PHP项目实战</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">api</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/redmine/">redmine</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
-  
-
-    
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
   
-
 </div>
       <footer id="footer">
     <div class="outer">
