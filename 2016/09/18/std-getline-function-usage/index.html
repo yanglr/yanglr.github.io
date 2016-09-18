@@ -15,46 +15,31 @@
 
 
 
-<meta name="description" content="题目: 提取不重复的整数
-热度指数：4740    时间限制：1秒    空间限制：32768K
-本题知识点： 数组
-
-题目描述输入一个int型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。
-输入描述:1输入一个int型整数
-输出描述:1按照从右向左的阅读顺序，返回一个不含重复数字的新的整数
-输入例子:19876673
-输出例子:137689
-在线提交网址:
-http://www.">
+<meta name="description" content="std::getline在头文件  中定义.
+getline从输入流中读取字符, 并把它们转换成字符串.
+1) 的行为就像UnformattedInputFunction, 除了input.gcount()不会受到影响.在构造和检查岗哨对象的, 执行以下操作：
+1) 调用str.erase()
+2) input并把它们添加到str的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查
+a) 上">
 <meta property="og:type" content="article">
-<meta property="og:title" content="华为oj之提取不重复的整数">
-<meta property="og:url" content="http://yanglr.github.io/2016/09/18/backfoward-first-appear-solution/index.html">
+<meta property="og:title" content="C++中std::getline函数的用法">
+<meta property="og:url" content="http://yanglr.github.io/2016/09/18/std-getline-function-usage/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="题目: 提取不重复的整数
-热度指数：4740    时间限制：1秒    空间限制：32768K
-本题知识点： 数组
-
-题目描述输入一个int型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。
-输入描述:1输入一个int型整数
-输出描述:1按照从右向左的阅读顺序，返回一个不含重复数字的新的整数
-输入例子:19876673
-输出例子:137689
-在线提交网址:
-http://www.">
-<meta property="og:updated_time" content="2016-09-18T05:02:37.441Z">
+<meta property="og:description" content="std::getline在头文件  中定义.
+getline从输入流中读取字符, 并把它们转换成字符串.
+1) 的行为就像UnformattedInputFunction, 除了input.gcount()不会受到影响.在构造和检查岗哨对象的, 执行以下操作：
+1) 调用str.erase()
+2) input并把它们添加到str的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查
+a) 上">
+<meta property="og:updated_time" content="2016-09-18T13:47:39.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="华为oj之提取不重复的整数">
-<meta name="twitter:description" content="题目: 提取不重复的整数
-热度指数：4740    时间限制：1秒    空间限制：32768K
-本题知识点： 数组
-
-题目描述输入一个int型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。
-输入描述:1输入一个int型整数
-输出描述:1按照从右向左的阅读顺序，返回一个不含重复数字的新的整数
-输入例子:19876673
-输出例子:137689
-在线提交网址:
-http://www.">
+<meta name="twitter:title" content="C++中std::getline函数的用法">
+<meta name="twitter:description" content="std::getline在头文件  中定义.
+getline从输入流中读取字符, 并把它们转换成字符串.
+1) 的行为就像UnformattedInputFunction, 除了input.gcount()不会受到影响.在构造和检查岗哨对象的, 执行以下操作：
+1) 调用str.erase()
+2) input并把它们添加到str的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查
+a) 上">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -86,7 +71,7 @@ http://www.">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>华为oj之提取不重复的整数 | iMath</title>
+<title>C++中std::getline函数的用法 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -288,11 +273,11 @@ http://www.">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-backfoward-first-appear-solution" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-std-getline-function-usage" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/18/backfoward-first-appear-solution/" class="article-date">
-      <time datetime="2016-09-18T04:56:52.000Z" itemprop="datePublished">2016-09-18</time>
+      <a href="/2016/09/18/std-getline-function-usage/" class="article-date">
+      <time datetime="2016-09-18T13:23:07.000Z" itemprop="datePublished">2016-09-18</time>
 </a>
 
 
@@ -307,7 +292,7 @@ http://www.">
         
   
     <h1 class="article-title" itemprop="name">
-      华为oj之提取不重复的整数
+      C++中std::getline函数的用法
     </h1>
   
 
@@ -316,7 +301,7 @@ http://www.">
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
+    <a class="article-category-link" href="/categories/C-常用语法/">C++常用语法</a>
     </div>
 
 
@@ -332,20 +317,23 @@ http://www.">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="题目-提取不重复的整数"><a href="#题目-提取不重复的整数" class="headerlink" title="题目: 提取不重复的整数"></a>题目: 提取不重复的整数</h3><ul>
-<li>热度指数：4740    时间限制：1秒    空间限制：32768K</li>
-<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
-</ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个int型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入一个int型整数</div></pre></td></tr></table></figure>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">按照从右向左的阅读顺序，返回一个不含重复数字的新的整数</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">9876673</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">37689</div></pre></td></tr></table></figure>
-<p>在线提交网址:</p>
-<p><a href="http://www.nowcoder.com/practice/253986e66d114d378ae8de2e6c4577c1?tpId=37&amp;tqId=21232&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/253986e66d114d378ae8de2e6c4577c1?tpId=37&amp;tqId=21232&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>先将该输入的字符串进行逆序, 使用一个vector存储每一个字符, 存入要求是当vector中没有该字符(使用算算法库中的find()函数). 最后遍历该向量, 输出即可.</p>
-<p>已AC代码:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">string</span> str;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; vect;</div><div class="line">	<span class="keyword">while</span>(getline(<span class="built_in">cin</span>,str))</div><div class="line">	&#123;</div><div class="line">		reverse(str.begin(), str.end());		</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str.length();i++)</div><div class="line">		&#123;</div><div class="line">			<span class="keyword">if</span>(find(vect.begin(),vect.end(), str[i]) == vect.end())</div><div class="line">			&#123;</div><div class="line">				vect.push_back(str[i]);  </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">auto</span> it: vect)</div><div class="line">			<span class="built_in">cout</span>&lt;&lt;it;</div><div class="line"></div><div class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;    <span class="comment">// 如果用set, set会用一个字符最后一次出现的地方覆盖之前的, 此处不能用</span></div><div class="line">		vect.clear();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h1 id="std-getline"><a href="#std-getline" class="headerlink" title="std::getline"></a>std::getline</h1><p>在头文件 <string> 中定义.</string></p>
+<p><code>getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
+<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction" target="_blank" rel="external"><code>UnformattedInputFunction</code></a>, 除了<code>input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
+<p>1) 调用str.erase()</p>
+<p>2) <code>input</code>并把它们添加到<code>str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
+<p>a) 上<code>input</code>文件结束的条件, 在这种情况下, <code>getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">eofbit</a>和回报.</p>
+<p>b) 下一个可用的输入字符<code>delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code>input</code>提取进行了测试, 但不会追加到<code>str</code>.</p>
+<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code>getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">failbit</a>并返回.</p>
+<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code>getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">failbit</a>, 并返回.</p>
+<p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p> input  -     流中获取数据<br> str    -     把数据转换成字符串<br> delim  -     分隔符       </p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p><code>input</code></p>
+<h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin" target="_blank" rel="external">std::cin</a> &gt;&gt; n;, <code>getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt" target="_blank" rel="external">operator&gt;&gt;</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits" target="_blank" rel="external">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize" target="_blank" rel="external">std::streamsize</a> &gt;::max(), ‘\n’); before switching to line-oriented input.</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>下面的例子陈述了如何使用getline函数来读取用户输入, 以及如何按行处理文件内容. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">#include &lt;string&gt;</div><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;sstream&gt;</div><div class="line"> </div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    // greet the user</div><div class="line">    std::string name;</div><div class="line">    std::cout &lt;&lt; &quot;What is your name? &quot;;</div><div class="line">    std::getline(std::cin, name);</div><div class="line">    std::cout &lt;&lt; &quot;Hello &quot; &lt;&lt; name &lt;&lt; &quot;, nice to meet you.\n&quot;;</div><div class="line"> </div><div class="line">    // read file line by line</div><div class="line">    std::istringstream input;</div><div class="line">    input.str(&quot;1\n2\n3\n4\n5\n6\n7\n&quot;);</div><div class="line">    int sum = 0;</div><div class="line">    for (std::string line; std::getline(input, line); ) &#123;</div><div class="line">        sum += std::stoi(line);</div><div class="line">    &#125;</div><div class="line">    std::cout &lt;&lt; &quot;\nThe sum is: &quot; &lt;&lt; sum &lt;&lt; &quot;\n&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可能的输出:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">What is your name? John Q. Public</div><div class="line">Hello John Q. Public, nice to meet you.</div><div class="line"> </div><div class="line">The sum is 28</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -354,13 +342,13 @@ http://www.">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/18/backfoward-first-appear-solution/">华为oj之提取不重复的整数</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/18/std-getline-function-usage/">C++中std::getline函数的用法</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-18, 12:56:52</p>
-        <p><span>最后更新:</span>2016-09-18, 13:02:37</p>
+        <p><span>发布时间:</span>2016-09-18, 21:23:07</p>
+        <p><span>最后更新:</span>2016-09-18, 21:47:39</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/18/backfoward-first-appear-solution/" title="华为oj之提取不重复的整数">http://yanglr.github.io/2016/09/18/backfoward-first-appear-solution/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/18/backfoward-first-appear-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/18/std-getline-function-usage/" title="C++中std::getline函数的用法">http://yanglr.github.io/2016/09/18/std-getline-function-usage/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/18/std-getline-function-usage/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -372,16 +360,10 @@ http://www.">
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/18/string-linebreak-every-eight/">
-                    华为oj之字符串分割
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/18/reverse-int-solution/">
-                    华为oj之(整型)数字颠倒
+                <a href="/2016/09/18/word-reverse-print-solution/">
+                    华为oj之【中级】单词倒排
                 </a>
             </div>
         
@@ -393,7 +375,7 @@ http://www.">
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-提取不重复的整数"><span class="toc-number">1.</span> <span class="toc-text">题目: 提取不重复的整数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#std-getline"><span class="toc-number">1.</span> <span class="toc-text">std::getline</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参数"><span class="toc-number">1.0.1.</span> <span class="toc-text">参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#返回值"><span class="toc-number">1.0.2.</span> <span class="toc-text">返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Notes"><span class="toc-number">1.0.3.</span> <span class="toc-text">Notes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#示例"><span class="toc-number">1.0.4.</span> <span class="toc-text">示例</span></a></li></ol></li></ol></li></ol>
         
     </div>
     <style>
@@ -429,7 +411,7 @@ http://www.">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"华为oj之提取不重复的整数　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"C++中std::getline函数的用法　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -448,8 +430,8 @@ http://www.">
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yanglr.github.io/2016/09/18/backfoward-first-appear-solution/';
-            this.page.identifier = '2016/09/18/backfoward-first-appear-solution/';
+            this.page.url = 'http://yanglr.github.io/2016/09/18/std-getline-function-usage/';
+            this.page.identifier = '2016/09/18/std-getline-function-usage/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -471,15 +453,13 @@ http://www.">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/18/string-linebreak-every-eight/" title="上一篇: 华为oj之字符串分割">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/18/reverse-int-solution/" title="下一篇: 华为oj之(整型)数字颠倒">
+            <a href="/2016/09/18/word-reverse-print-solution/" title="下一篇: 华为oj之【中级】单词倒排">
                 <i class="fa fa-angle-right"></i>
             </a>
         

@@ -261,6 +261,86 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-std-getline-function-usage" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/18/std-getline-function-usage/" class="article-date">
+      <time datetime="2016-09-18T13:23:07.000Z" itemprop="datePublished">2016-09-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/18/std-getline-function-usage/">C++中std::getline函数的用法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="std-getline"><a href="#std-getline" class="headerlink" title="std::getline"></a>std::getline</h1><p>在头文件 <string> 中定义.</string></p>
+<p><code>getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
+<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction" target="_blank" rel="external"><code>UnformattedInputFunction</code></a>, 除了<code>input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
+<p>1) 调用str.erase()</p>
+<p>2) <code>input</code>并把它们添加到<code>str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
+<p>a) 上<code>input</code>文件结束的条件, 在这种情况下, <code>getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">eofbit</a>和回报.</p>
+<p>b) 下一个可用的输入字符<code>delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code>input</code>提取进行了测试, 但不会追加到<code>str</code>.</p>
+<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code>getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">failbit</a>并返回.</p>
+<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code>getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate" target="_blank" rel="external">failbit</a>, 并返回.</p>
+<p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p> input  -     流中获取数据<br> str    -     把数据转换成字符串<br> delim  -     分隔符       </p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p><code>input</code></p>
+<h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin" target="_blank" rel="external">std::cin</a> &gt;&gt; n;, <code>getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt" target="_blank" rel="external">operator&gt;&gt;</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits" target="_blank" rel="external">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize" target="_blank" rel="external">std::streamsize</a> &gt;::max(), ‘\n’); before switching to line-oriented input.</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>下面的例子陈述了如何使用getline函数来读取用户输入, 以及如何按行处理文件内容. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">#include &lt;string&gt;</div><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;sstream&gt;</div><div class="line"> </div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    // greet the user</div><div class="line">    std::string name;</div><div class="line">    std::cout &lt;&lt; &quot;What is your name? &quot;;</div><div class="line">    std::getline(std::cin, name);</div><div class="line">    std::cout &lt;&lt; &quot;Hello &quot; &lt;&lt; name &lt;&lt; &quot;, nice to meet you.\n&quot;;</div><div class="line"> </div><div class="line">    // read file line by line</div><div class="line">    std::istringstream input;</div><div class="line">    input.str(&quot;1\n2\n3\n4\n5\n6\n7\n&quot;);</div><div class="line">    int sum = 0;</div><div class="line">    for (std::string line; std::getline(input, line); ) &#123;</div><div class="line">        sum += std::stoi(line);</div><div class="line">    &#125;</div><div class="line">    std::cout &lt;&lt; &quot;\nThe sum is: &quot; &lt;&lt; sum &lt;&lt; &quot;\n&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可能的输出:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">What is your name? John Q. Public</div><div class="line">Hello John Q. Public, nice to meet you.</div><div class="line"> </div><div class="line">The sum is 28</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/C-常用语法/">C++常用语法</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-word-reverse-print-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -933,87 +1013,6 @@
 <p>在线提交网址: <a href="http://www.nowcoder.com/practice/22948c2cad484e0291350abad86136c3?tpId=37&amp;tqId=21331&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/22948c2cad484e0291350abad86136c3?tpId=37&amp;tqId=21331&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>先用欧几里得(Euclidean)算法求出两数最大公约数, 再利用最小公倍数<code>lcm*gcd = n*m</code> 求得最小公倍数即可.</p>
 <p>已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span>  <span class="comment">// 欧几里得算法(辗转相除法)求最大公约数</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(b == <span class="number">0</span>) <span class="keyword">return</span> a;</div><div class="line">    <span class="keyword">return</span> gcd(b, a%b);    </div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> n, m;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">int</span> res;</div><div class="line">        res = n*m/gcd(n, m);   <span class="comment">// 最小公倍数lcm*gcd = n*m</span></div><div class="line">        <span class="built_in">cout</span>&lt;&lt;res&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-char-count-hard-solution" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/09/17/char-count-hard-solution/" class="article-date">
-      <time datetime="2016-09-17T06:38:48.000Z" itemprop="datePublished">2016-09-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/17/char-count-hard-solution/">华为oj之字符统计(按出现次数由多到少的顺序进行输出)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目-字符统计"><a href="#题目-字符统计" class="headerlink" title="题目: 字符统计"></a>题目: 字符统计</h3><ul>
-<li><p>热度指数：875    时间限制：1秒   空间限制：32768K</p>
-</li>
-<li><p>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a> <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=590" target="_blank" rel="external">排序</a></p>
-</li>
-</ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。</p>
-<p>实现以下接口：<br>输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）<br>按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出<br>清空目前的统计结果，重新统计</p>
-<p>调用者会保证：<br>输入的字符串以‘\0’结尾。</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><p>输入一串字符。</p>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><p>对字符中的各个英文字符（大小写分开统计），数字，空格进行统计，并按照统计个数由多到少输出,如果统计的个数相同，则按照ASII码由小到大排序输出。如果有其他字符，则对这些字符不用进行统计。</p>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">aadddccddc</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dca</div></pre></td></tr></table></figure>
-<p>在线提交网址: <a href="http://www.nowcoder.com/practice/c1f9561de1e240099bdb904765da9ad0?tpId=37&amp;tqId=21325&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/c1f9561de1e240099bdb904765da9ad0?tpId=37&amp;tqId=21325&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>使用一个hash表(unordered_map)存储 <code>&lt;字符, 出现次数&gt;</code> 的键值对, 然后按出现次数count进行排序(C++算法库中的sort函数), 排序时注意当统计的个数相同时, 按照ASII码由小到大顺序输出. </p>
-<p>下面是已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_map&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comp</span><span class="params">(pair&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; a, pair&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; b)</span>  <span class="comment">// 重载sort函数的自定义比较函数comp</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(a.second &gt; b.second)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(a.second == b.second &amp;&amp; a.first &lt; b.first)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">	<span class="built_in">unordered_map</span>&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt; countMap;</div><div class="line"></div><div class="line">    <span class="keyword">while</span>(getline(<span class="built_in">cin</span>,str))</div><div class="line">	&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i &lt;= str.length()<span class="number">-1</span>; i++)</div><div class="line">		&#123;</div><div class="line">             <span class="keyword">if</span>(countMap.find(str[i]) == countMap.end())</div><div class="line">            &#123;</div><div class="line">                countMap[str[i]] = <span class="number">1</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span></div><div class="line">            &#123;</div><div class="line">                countMap[str[i]]++;</div><div class="line">            &#125;        </div><div class="line">		&#125;</div><div class="line"></div><div class="line">    <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt;&gt; elems(countMap.begin(), countMap.end());</div><div class="line">	sort(elems.begin(), elems.end(), comp);  <span class="comment">// 使用sort对hash表进行排序</span></div><div class="line"></div><div class="line">	<span class="keyword">for</span>(<span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt;&gt;::iterator it=elems.begin(); it != elems.end(); it++)</div><div class="line">	&#123;</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;it-&gt;first;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">	countMap.clear();</div><div class="line">	&#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">测试用例1: 8v26ktzk069lm400061m0v965we88850o6omqi532ktir6esb55t0kqm026y8rk63aj82kcx48gd1tiylvs0xo32zem65q7z5ce2185d2ascz62a2p3ajr45h637t2p290lc043gicp5ldzzmx2</div><div class="line"></div><div class="line">测试用例2:</div><div class="line">aadddccddc</div></pre></td></tr></table></figure>
-<p>参考:<br><a href="http://stackoverflow.com/questions/31323135/sort-an-unordered-map-using-sort" target="_blank" rel="external">http://stackoverflow.com/questions/31323135/sort-an-unordered-map-using-sort</a></p>
 
       
     </div>
