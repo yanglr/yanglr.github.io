@@ -15,55 +15,43 @@
 
 
 
-<meta name="description" content="题目: 数字颠倒
-热度指数：5722    时间限制：1秒    空间限制：32768K
+<meta name="description" content="题目: 【中级】单词倒排
+热度指数：1593时间限制：1秒空间限制：32768K
+本题知识点： 字符串 排序
 
-本题知识点： 字符串
-​
-
-
-题目描述描述：
-输入一个整数，将这个整数以字符串的形式逆序输出
-程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001
-输入描述:1输入一个int整数
-输出描述:1将这个整数以字符串的形式逆序输出
-输入例子:11516000
-输出例子:10006">
+题目描述对字符串中的所有单词进行倒排。
+说明：
+1、每个单词是以26个大写或小写英文字母构成；
+2、非构成单词的字符均视为单词间隔符；
+3、要求倒排后的单词间隔符以一个空格表示；如果原字符串中相邻单词间有多个间隔符时，倒排转换后也只允许出现一个空格间隔符；
+4、每个单词最长20个字母；">
 <meta property="og:type" content="article">
-<meta property="og:title" content="华为oj之(整型)数字颠倒">
-<meta property="og:url" content="http://yanglr.github.io/2016/09/18/reverse-int-solution/index.html">
+<meta property="og:title" content="华为oj之【中级】单词倒排">
+<meta property="og:url" content="http://yanglr.github.io/2016/09/18/word-reverse-print-solution/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="题目: 数字颠倒
-热度指数：5722    时间限制：1秒    空间限制：32768K
+<meta property="og:description" content="题目: 【中级】单词倒排
+热度指数：1593时间限制：1秒空间限制：32768K
+本题知识点： 字符串 排序
 
-本题知识点： 字符串
-​
-
-
-题目描述描述：
-输入一个整数，将这个整数以字符串的形式逆序输出
-程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001
-输入描述:1输入一个int整数
-输出描述:1将这个整数以字符串的形式逆序输出
-输入例子:11516000
-输出例子:10006">
-<meta property="og:updated_time" content="2016-09-18T02:51:35.988Z">
+题目描述对字符串中的所有单词进行倒排。
+说明：
+1、每个单词是以26个大写或小写英文字母构成；
+2、非构成单词的字符均视为单词间隔符；
+3、要求倒排后的单词间隔符以一个空格表示；如果原字符串中相邻单词间有多个间隔符时，倒排转换后也只允许出现一个空格间隔符；
+4、每个单词最长20个字母；">
+<meta property="og:updated_time" content="2016-09-18T12:46:29.812Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="华为oj之(整型)数字颠倒">
-<meta name="twitter:description" content="题目: 数字颠倒
-热度指数：5722    时间限制：1秒    空间限制：32768K
+<meta name="twitter:title" content="华为oj之【中级】单词倒排">
+<meta name="twitter:description" content="题目: 【中级】单词倒排
+热度指数：1593时间限制：1秒空间限制：32768K
+本题知识点： 字符串 排序
 
-本题知识点： 字符串
-​
-
-
-题目描述描述：
-输入一个整数，将这个整数以字符串的形式逆序输出
-程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001
-输入描述:1输入一个int整数
-输出描述:1将这个整数以字符串的形式逆序输出
-输入例子:11516000
-输出例子:10006">
+题目描述对字符串中的所有单词进行倒排。
+说明：
+1、每个单词是以26个大写或小写英文字母构成；
+2、非构成单词的字符均视为单词间隔符；
+3、要求倒排后的单词间隔符以一个空格表示；如果原字符串中相邻单词间有多个间隔符时，倒排转换后也只允许出现一个空格间隔符；
+4、每个单词最长20个字母；">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -95,7 +83,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>华为oj之(整型)数字颠倒 | iMath</title>
+<title>华为oj之【中级】单词倒排 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -297,11 +285,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-reverse-int-solution" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-word-reverse-print-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/18/reverse-int-solution/" class="article-date">
-      <time datetime="2016-09-18T02:43:12.000Z" itemprop="datePublished">2016-09-18</time>
+      <a href="/2016/09/18/word-reverse-print-solution/" class="article-date">
+      <time datetime="2016-09-18T12:15:26.000Z" itemprop="datePublished">2016-09-18</time>
 </a>
 
 
@@ -316,7 +304,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      华为oj之(整型)数字颠倒
+      华为oj之【中级】单词倒排
     </h1>
   
 
@@ -341,23 +329,24 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="题目-数字颠倒"><a href="#题目-数字颠倒" class="headerlink" title="题目: 数字颠倒"></a>题目: 数字颠倒</h3><ul>
-<li><p>热度指数：5722    时间限制：1秒    空间限制：32768K</p>
-</li>
-<li><p>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a></p>
-<p>​</p>
-</li>
+        <h3 id="题目-【中级】单词倒排"><a href="#题目-【中级】单词倒排" class="headerlink" title="题目: 【中级】单词倒排"></a>题目: 【中级】单词倒排</h3><ul>
+<li>热度指数：1593时间限制：1秒空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a> <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=590" target="_blank" rel="external">排序</a></li>
 </ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>描述：</p>
-<p>输入一个整数，将这个整数以字符串的形式逆序输出</p>
-<p>程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入一个int整数</div></pre></td></tr></table></figure>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将这个整数以字符串的形式逆序输出</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1516000</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">0006151</div></pre></td></tr></table></figure>
-<p>在线提交网址: <a href="http://www.nowcoder.com/practice/ae809795fca34687a48b172186e3dafe?tpId=37&amp;tqId=21234&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/ae809795fca34687a48b172186e3dafe?tpId=37&amp;tqId=21234&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>将整数按照一位一位地进行读入到vector中, 可以用getchar配合<code>\n</code>, 也可使用<code>cin&gt;&gt;char</code>的方式, 然后对vector进行反转, 再遍历输出即可.</p>
-<p>已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">char</span> ch;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; vect;    </div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;ch)</div><div class="line">    &#123;</div><div class="line">        vect.push_back(ch);</div><div class="line">    &#125;</div><div class="line">    reverse(vect.begin(), vect.end());    <span class="comment">// 将装有字符的向量反转</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> it: vect)</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;it;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>对字符串中的所有单词进行倒排。</p>
+<p>说明：</p>
+<p>1、每个单词是以26个大写或小写英文字母构成；</p>
+<p>2、非构成单词的字符均视为单词间隔符；</p>
+<p>3、要求倒排后的单词间隔符以一个空格表示；如果原字符串中相邻单词间有多个间隔符时，倒排转换后也只允许出现一个空格间隔符；</p>
+<p>4、每个单词最长20个字母；</p>
+<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入一行以空格来分隔的句子</div></pre></td></tr></table></figure>
+<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输出句子的逆序</div></pre></td></tr></table></figure>
+<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">I am a student</div></pre></td></tr></table></figure>
+<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">student a am I</div></pre></td></tr></table></figure>
+<p>在线提交网址: <a href="http://www.nowcoder.com/practice/81544a4989df4109b33c2d65037c5836?tpId=37&amp;tqId=21254&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/81544a4989df4109b33c2d65037c5836?tpId=37&amp;tqId=21254&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>先使用getline()进行按行读入到vector中, 将其中的非字母字符赋值为空格, 注意还得将多个连续空格替换为单空格(使用 <code>sstream</code> 库中的 <code>istringstream</code> ), 然后对vector进行反向遍历, 输出即可.</p>
+<p>已AC代码:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;sstream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">string</span> str;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; vect;</div><div class="line">	<span class="built_in">string</span> line;</div><div class="line">	<span class="keyword">while</span>(getline(<span class="built_in">cin</span>, line))</div><div class="line">	&#123;</div><div class="line">		<span class="function"><span class="built_in">istringstream</span> <span class="title">ss</span><span class="params">(line)</span></span>;</div><div class="line">		<span class="keyword">while</span>(ss &gt;&gt; str)</div><div class="line">		&#123;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i != str.length(); i++)</div><div class="line">			&#123;</div><div class="line">				<span class="keyword">if</span> (!((str[i] &gt;= <span class="string">'a'</span> &amp;&amp; str[i] &lt;= <span class="string">'z'</span>) || (str[i] &gt;= <span class="string">'A'</span> &amp;&amp; str[i] &lt;= <span class="string">'Z'</span>)))</div><div class="line">					str[i] = <span class="string">' '</span>;</div><div class="line">			&#125;</div><div class="line"></div><div class="line">			<span class="function"><span class="built_in">istringstream</span> <span class="title">temp</span><span class="params">(str)</span></span>;   <span class="comment">// 相当于cin, 来过滤多个连续的空格, 最后只保留一个</span></div><div class="line">			<span class="keyword">while</span>(temp&gt;&gt;str) </div><div class="line">			&#123;</div><div class="line">				vect.push_back(str);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">auto</span> it = vect.rbegin(); it != vect.rend() - <span class="number">1</span>; ++it)</div><div class="line">		&#123;</div><div class="line">			<span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="string">" "</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="built_in">cout</span> &lt;&lt; vect[<span class="number">0</span>] &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">		vect.clear();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -366,13 +355,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/18/reverse-int-solution/">华为oj之(整型)数字颠倒</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/18/word-reverse-print-solution/">华为oj之【中级】单词倒排</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-18, 10:43:12</p>
-        <p><span>最后更新:</span>2016-09-18, 10:51:35</p>
+        <p><span>发布时间:</span>2016-09-18, 20:15:26</p>
+        <p><span>最后更新:</span>2016-09-18, 20:46:29</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/18/reverse-int-solution/" title="华为oj之(整型)数字颠倒">http://yanglr.github.io/2016/09/18/reverse-int-solution/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/18/reverse-int-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/18/word-reverse-print-solution/" title="华为oj之【中级】单词倒排">http://yanglr.github.io/2016/09/18/word-reverse-print-solution/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/18/word-reverse-print-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -384,16 +373,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/18/backfoward-first-appear-solution/">
-                    华为oj之提取不重复的整数
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/18/reverse-english-statement/">
-                    华为oj之句子逆序
+                <a href="/2016/09/18/string-linebreak-every-eight/">
+                    华为oj之字符串分割
                 </a>
             </div>
         
@@ -405,7 +388,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-数字颠倒"><span class="toc-number">1.</span> <span class="toc-text">题目: 数字颠倒</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-【中级】单词倒排"><span class="toc-number">1.</span> <span class="toc-text">题目: 【中级】单词倒排</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
         
     </div>
     <style>
@@ -441,7 +424,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"华为oj之(整型)数字颠倒　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"华为oj之【中级】单词倒排　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -460,8 +443,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yanglr.github.io/2016/09/18/reverse-int-solution/';
-            this.page.identifier = '2016/09/18/reverse-int-solution/';
+            this.page.url = 'http://yanglr.github.io/2016/09/18/word-reverse-print-solution/';
+            this.page.identifier = '2016/09/18/word-reverse-print-solution/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -483,15 +466,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/18/backfoward-first-appear-solution/" title="上一篇: 华为oj之提取不重复的整数">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/18/reverse-english-statement/" title="下一篇: 华为oj之句子逆序">
+            <a href="/2016/09/18/string-linebreak-every-eight/" title="下一篇: 华为oj之字符串分割">
                 <i class="fa fa-angle-right"></i>
             </a>
         
