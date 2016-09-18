@@ -15,37 +15,31 @@
 
 
 
-<meta name="description" content="题目: 字符统计
-热度指数：875    时间限制：1秒   空间限制：32768K
+<meta name="description" content="题目: 句子逆序
+热度指数：4483    时间限制：1秒    空间限制：32768K
+本题知识点： 数组
 
-本题知识点： 字符串 排序
-
-
-题目描述如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。
-实现以下接口：输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出">
+将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后“boy a am I”所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符
+接口说明12345678/*** 反转句子  * @param sentence 原句子  * @return 反转后的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="华为oj之字符统计(按出现次数由多到少的顺序进行输出)">
-<meta property="og:url" content="http://yanglr.github.io/2016/09/17/char-count-hard-solution/index.html">
+<meta property="og:title" content="华为oj之句子逆序">
+<meta property="og:url" content="http://yanglr.github.io/2016/09/18/reverse-english-statement/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="题目: 字符统计
-热度指数：875    时间限制：1秒   空间限制：32768K
+<meta property="og:description" content="题目: 句子逆序
+热度指数：4483    时间限制：1秒    空间限制：32768K
+本题知识点： 数组
 
-本题知识点： 字符串 排序
-
-
-题目描述如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。
-实现以下接口：输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出">
-<meta property="og:updated_time" content="2016-09-17T06:58:05.406Z">
+将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后“boy a am I”所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符
+接口说明12345678/*** 反转句子  * @param sentence 原句子  * @return 反转后的">
+<meta property="og:updated_time" content="2016-09-18T02:06:46.820Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="华为oj之字符统计(按出现次数由多到少的顺序进行输出)">
-<meta name="twitter:description" content="题目: 字符统计
-热度指数：875    时间限制：1秒   空间限制：32768K
+<meta name="twitter:title" content="华为oj之句子逆序">
+<meta name="twitter:description" content="题目: 句子逆序
+热度指数：4483    时间限制：1秒    空间限制：32768K
+本题知识点： 数组
 
-本题知识点： 字符串 排序
-
-
-题目描述如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。
-实现以下接口：输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出">
+将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后“boy a am I”所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符
+接口说明12345678/*** 反转句子  * @param sentence 原句子  * @return 反转后的">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -77,7 +71,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>华为oj之字符统计(按出现次数由多到少的顺序进行输出) | iMath</title>
+<title>华为oj之句子逆序 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -279,11 +273,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-char-count-hard-solution" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-reverse-english-statement" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/17/char-count-hard-solution/" class="article-date">
-      <time datetime="2016-09-17T06:38:48.000Z" itemprop="datePublished">2016-09-17</time>
+      <a href="/2016/09/18/reverse-english-statement/" class="article-date">
+      <time datetime="2016-09-18T01:47:26.000Z" itemprop="datePublished">2016-09-18</time>
 </a>
 
 
@@ -298,7 +292,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      华为oj之字符统计(按出现次数由多到少的顺序进行输出)
+      华为oj之句子逆序
     </h1>
   
 
@@ -323,24 +317,21 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="题目-字符统计"><a href="#题目-字符统计" class="headerlink" title="题目: 字符统计"></a>题目: 字符统计</h3><ul>
-<li><p>热度指数：875    时间限制：1秒   空间限制：32768K</p>
-</li>
-<li><p>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a> <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=590" target="_blank" rel="external">排序</a></p>
-</li>
+        <h3 id="题目-句子逆序"><a href="#题目-句子逆序" class="headerlink" title="题目: 句子逆序"></a>题目: 句子逆序</h3><ul>
+<li>热度指数：4483    时间限制：1秒    空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
 </ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。</p>
-<p>实现以下接口：<br>输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）<br>按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出<br>清空目前的统计结果，重新统计</p>
-<p>调用者会保证：<br>输入的字符串以‘\0’结尾。</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><p>输入一串字符。</p>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><p>对字符中的各个英文字符（大小写分开统计），数字，空格进行统计，并按照统计个数由多到少输出,如果统计的个数相同，则按照ASII码由小到大排序输出。如果有其他字符，则对这些字符不用进行统计。</p>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">aadddccddc</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dca</div></pre></td></tr></table></figure>
-<p>在线提交网址: <a href="http://www.nowcoder.com/practice/c1f9561de1e240099bdb904765da9ad0?tpId=37&amp;tqId=21325&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/c1f9561de1e240099bdb904765da9ad0?tpId=37&amp;tqId=21325&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>使用一个hash表(unordered_map)存储 <code>&lt;字符, 出现次数&gt;</code> 的键值对, 然后按出现次数count进行排序(C++算法库中的sort函数), 排序时注意当统计的个数相同时, 按照ASII码由小到大顺序输出. </p>
-<p>下面是已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_map&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comp</span><span class="params">(pair&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; a, pair&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; b)</span>  <span class="comment">// 重载sort函数的自定义比较函数comp</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(a.second &gt; b.second)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(a.second == b.second &amp;&amp; a.first &lt; b.first)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">	<span class="built_in">unordered_map</span>&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt; countMap;</div><div class="line"></div><div class="line">    <span class="keyword">while</span>(getline(<span class="built_in">cin</span>,str))</div><div class="line">	&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i &lt;= str.length()<span class="number">-1</span>; i++)</div><div class="line">		&#123;</div><div class="line">             <span class="keyword">if</span>(countMap.find(str[i]) == countMap.end())</div><div class="line">            &#123;</div><div class="line">                countMap[str[i]] = <span class="number">1</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span></div><div class="line">            &#123;</div><div class="line">                countMap[str[i]]++;</div><div class="line">            &#125;        </div><div class="line">		&#125;</div><div class="line"></div><div class="line">    <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt;&gt; elems(countMap.begin(), countMap.end());</div><div class="line">	sort(elems.begin(), elems.end(), comp);  <span class="comment">// 使用sort对hash表进行排序</span></div><div class="line"></div><div class="line">	<span class="keyword">for</span>(<span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt;&gt;::iterator it=elems.begin(); it != elems.end(); it++)</div><div class="line">	&#123;</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;it-&gt;first;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">	countMap.clear();</div><div class="line">	&#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">测试用例1: 8v26ktzk069lm400061m0v965we88850o6omqi532ktir6esb55t0kqm026y8rk63aj82kcx48gd1tiylvs0xo32zem65q7z5ce2185d2ascz62a2p3ajr45h637t2p290lc043gicp5ldzzmx2</div><div class="line"></div><div class="line">测试用例2:</div><div class="line">aadddccddc</div></pre></td></tr></table></figure>
-<p>参考:<br><a href="http://stackoverflow.com/questions/31323135/sort-an-unordered-map-using-sort" target="_blank" rel="external">http://stackoverflow.com/questions/31323135/sort-an-unordered-map-using-sort</a></p>
+<p>将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后“boy a am I”<br>所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符</p>
+<p>接口说明<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"></div><div class="line">* 反转句子</div><div class="line">  * @param sentence 原句子</div><div class="line"></div><div class="line">  * @return 反转后的句子</div><div class="line">    */</div><div class="line">    public String reverse(String sentence);</div></pre></td></tr></table></figure></p>
+<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将一个英文语句以单词为单位逆序排放。</div></pre></td></tr></table></figure>
+<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">得到逆序的句子</div></pre></td></tr></table></figure>
+<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">I am a boy</div></pre></td></tr></table></figure>
+<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">boy a am I</div></pre></td></tr></table></figure>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>有一种比较易实现的思路, 将每次cin的部分放进一个vector中, 然后反向遍历(迭代器auto it = vect.rbegin()), 最后一个元素单独处理, 否则会输出多余的空格.</p>
+<p>已AC代码:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; vect;</div><div class="line">    </div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;str)</div><div class="line">    &#123;</div><div class="line">        vect.push_back(str);</div><div class="line">    &#125;</div><div class="line"><span class="comment">//    vector&lt;string&gt;::iterator it = vect.rbegin();             // 反向循环</span></div><div class="line">    <span class="keyword">for</span>( <span class="keyword">auto</span> it = vect.rbegin(); it != vect.rend()<span class="number">-1</span>;  ++it)</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;*it&lt;&lt;<span class="string">" "</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;vect[<span class="number">0</span>]&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>相关链接:</p>
+<p><a href="http://stackoverflow.com/questions/3610933/iterating-c-vector-from-the-end-to-the-begin" target="_blank" rel="external">http://stackoverflow.com/questions/3610933/iterating-c-vector-from-the-end-to-the-begin</a></p>
 
       
     </div>
@@ -349,13 +340,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/17/char-count-hard-solution/">华为oj之字符统计(按出现次数由多到少的顺序进行输出)</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/18/reverse-english-statement/">华为oj之句子逆序</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-17, 14:38:48</p>
-        <p><span>最后更新:</span>2016-09-17, 14:58:05</p>
+        <p><span>发布时间:</span>2016-09-18, 09:47:26</p>
+        <p><span>最后更新:</span>2016-09-18, 10:06:46</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/17/char-count-hard-solution/" title="华为oj之字符统计(按出现次数由多到少的顺序进行输出)">http://yanglr.github.io/2016/09/17/char-count-hard-solution/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/17/char-count-hard-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/18/reverse-english-statement/" title="华为oj之句子逆序">http://yanglr.github.io/2016/09/18/reverse-english-statement/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/18/reverse-english-statement/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -367,16 +358,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/17/least-common-multiple/">
-                    华为oj之最小公倍数
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/16/char-count-solution/">
-                    华为oj之字符个数统计
+                <a href="/2016/09/17/max-profit-in-stock/">
+                    携程校招2017编程题之股票最大利润
                 </a>
             </div>
         
@@ -388,7 +373,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-字符统计"><span class="toc-number">1.</span> <span class="toc-text">题目: 字符统计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-句子逆序"><span class="toc-number">1.</span> <span class="toc-text">题目: 句子逆序</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入描述"><span class="toc-number">1.0.1.</span> <span class="toc-text">输入描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出描述"><span class="toc-number">1.0.2.</span> <span class="toc-text">输出描述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">1.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">1.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">2.</span> <span class="toc-text">分析:</span></a></li></ol>
         
     </div>
     <style>
@@ -424,7 +409,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"华为oj之字符统计(按出现次数由多到少的顺序进行输出)　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"华为oj之句子逆序　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -443,8 +428,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yanglr.github.io/2016/09/17/char-count-hard-solution/';
-            this.page.identifier = '2016/09/17/char-count-hard-solution/';
+            this.page.url = 'http://yanglr.github.io/2016/09/18/reverse-english-statement/';
+            this.page.identifier = '2016/09/18/reverse-english-statement/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -466,15 +451,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/17/least-common-multiple/" title="上一篇: 华为oj之最小公倍数">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/16/char-count-solution/" title="下一篇: 华为oj之字符个数统计">
+            <a href="/2016/09/17/max-profit-in-stock/" title="下一篇: 携程校招2017编程题之股票最大利润">
                 <i class="fa fa-angle-right"></i>
             </a>
         
