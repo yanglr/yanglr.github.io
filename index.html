@@ -184,7 +184,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oj/">oj</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redmine/">redmine</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oj/">oj</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redmine/">redmine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
                     </div>
                 </section>
                 
@@ -260,6 +260,77 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-odd-before-even-solution" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/27/odd-before-even-solution/" class="article-date">
+      <time datetime="2016-09-27T07:14:55.000Z" itemprop="datePublished">2016-09-27</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/27/odd-before-even-solution/">剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目-调整数组顺序使奇数位于偶数前面"><a href="#题目-调整数组顺序使奇数位于偶数前面" class="headerlink" title="题目: 调整数组顺序使奇数位于偶数前面"></a>题目: 调整数组顺序使奇数位于偶数前面</h3><ul>
+<li>热度指数：11843    时间限制：1秒     空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
+</ul>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数和偶数, 然后使用copy函数将odd向量的内容和even向量的内容依次填入原array数组即可. 其中有个小技巧: 使用按位与&amp;判断奇偶性比%运算更快一些…</p>
+<p>已AC代码:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isOdd</span><span class="params">(<span class="keyword">int</span> x)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">// if(x % 2 == 1)</span></div><div class="line">		<span class="keyword">if</span>(x &amp; <span class="number">1</span> != <span class="number">0</span>)</div><div class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">reOrderArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;<span class="built_in">array</span>)</span> </span>&#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; odd;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; even;</div><div class="line">        <span class="keyword">int</span> len=<span class="built_in">array</span>.size();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i != len; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(isOdd(<span class="built_in">array</span>[i])) odd.push_back(<span class="built_in">array</span>[i]);</div><div class="line">            <span class="keyword">else</span> even.push_back(<span class="built_in">array</span>[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> len1 = odd.size();</div><div class="line">        <span class="built_in">array</span>.clear();</div><div class="line">        <span class="built_in">array</span>.resize(len);</div><div class="line">        copy(odd.begin(), odd.end(), <span class="built_in">array</span>.begin());</div><div class="line">        copy(even.begin(), even.end(), <span class="built_in">array</span>.begin()+len1);        </div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 以下为测试</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Solution sol;</div><div class="line">	<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vect(arr, arr+<span class="number">6</span>);</div><div class="line">	sol.reOrderArray(vect);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> i: vect)</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;i;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-std-getline-function-usage" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -936,82 +1007,6 @@
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>使用求和公式, a[n] = d*n - a[0], S[n] = (a[1] + a[n])/2, 算一下就可以写出代码了…</p>
 <p>已AC代码:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> n;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(n &lt;= <span class="number">0</span>) <span class="keyword">return</span> (<span class="number">-1</span>);</div><div class="line">        <span class="keyword">int</span> sum;</div><div class="line">        sum = n*(<span class="number">3</span>*n+<span class="number">1</span>)/<span class="number">2</span>;</div><div class="line">        </div><div class="line">        <span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-least-common-multiple" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/09/17/least-common-multiple/" class="article-date">
-      <time datetime="2016-09-17T07:19:26.000Z" itemprop="datePublished">2016-09-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/17/least-common-multiple/">华为oj之最小公倍数</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目-求最小公倍数"><a href="#题目-求最小公倍数" class="headerlink" title="题目: 求最小公倍数"></a>题目: 求最小公倍数</h3><ul>
-<li><p>热度指数：1842    时间限制：1秒     空间限制：32768K</p>
-<p>​</p>
-</li>
-</ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>正整数A和正整数B 的最小公倍数是指 能被A和B整除的最小的正整数值，设计一个算法，求输入A和B的最小公倍数。</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入两个正整数A和B。</div></pre></td></tr></table></figure>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输出A和B的最小公倍数。</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">5 </div><div class="line">7</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">35</div></pre></td></tr></table></figure>
-<p>在线提交网址: <a href="http://www.nowcoder.com/practice/22948c2cad484e0291350abad86136c3?tpId=37&amp;tqId=21331&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/22948c2cad484e0291350abad86136c3?tpId=37&amp;tqId=21331&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>先用欧几里得(Euclidean)算法求出两数最大公约数, 再利用最小公倍数<code>lcm*gcd = n*m</code> 求得最小公倍数即可.</p>
-<p>已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span>  <span class="comment">// 欧几里得算法(辗转相除法)求最大公约数</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(b == <span class="number">0</span>) <span class="keyword">return</span> a;</div><div class="line">    <span class="keyword">return</span> gcd(b, a%b);    </div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> n, m;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">int</span> res;</div><div class="line">        res = n*m/gcd(n, m);   <span class="comment">// 最小公倍数lcm*gcd = n*m</span></div><div class="line">        <span class="built_in">cout</span>&lt;&lt;res&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
