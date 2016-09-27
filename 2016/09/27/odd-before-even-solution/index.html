@@ -15,33 +15,31 @@
 
 
 
-<meta name="description" content="题目: 股票利润题目描述有一个数组来存储一支股票每天的价格，例如第i天的股票价格为prices[i]。现在我们至多做一次股票交易，最多买入一次，卖出一次，设计一个算法求我们买股票能得到的最大收益。
-输入:1价格序列, 用,隔开
-输出:1最大的可能利润
-输入例子:12,3,2,4
-输出例子:12
-分析:只需要找出最大的差值即可, 即max(prices[j] - prices[i]), i&amp;">
+<meta name="description" content="题目: 调整数组顺序使奇数位于偶数前面
+热度指数：11843    时间限制：1秒     空间限制：32768K
+本题知识点： 数组
+
+题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="携程校招2017编程题之股票最大利润">
-<meta property="og:url" content="http://yanglr.github.io/2016/09/17/max-profit-in-stock/index.html">
+<meta property="og:title" content="调整数组顺序使奇数位于偶数前面">
+<meta property="og:url" content="http://yanglr.github.io/2016/09/27/odd-before-even-solution/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="题目: 股票利润题目描述有一个数组来存储一支股票每天的价格，例如第i天的股票价格为prices[i]。现在我们至多做一次股票交易，最多买入一次，卖出一次，设计一个算法求我们买股票能得到的最大收益。
-输入:1价格序列, 用,隔开
-输出:1最大的可能利润
-输入例子:12,3,2,4
-输出例子:12
-分析:只需要找出最大的差值即可, 即max(prices[j] - prices[i]), i&amp;">
-<meta property="og:image" content="http://yanglr.github.io/images/ctrip_ex1.png">
-<meta property="og:updated_time" content="2016-09-20T07:03:30.685Z">
+<meta property="og:description" content="题目: 调整数组顺序使奇数位于偶数前面
+热度指数：11843    时间限制：1秒     空间限制：32768K
+本题知识点： 数组
+
+题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
+<meta property="og:updated_time" content="2016-09-27T07:23:01.134Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="携程校招2017编程题之股票最大利润">
-<meta name="twitter:description" content="题目: 股票利润题目描述有一个数组来存储一支股票每天的价格，例如第i天的股票价格为prices[i]。现在我们至多做一次股票交易，最多买入一次，卖出一次，设计一个算法求我们买股票能得到的最大收益。
-输入:1价格序列, 用,隔开
-输出:1最大的可能利润
-输入例子:12,3,2,4
-输出例子:12
-分析:只需要找出最大的差值即可, 即max(prices[j] - prices[i]), i&amp;">
-<meta name="twitter:image" content="http://yanglr.github.io/images/ctrip_ex1.png">
+<meta name="twitter:title" content="调整数组顺序使奇数位于偶数前面">
+<meta name="twitter:description" content="题目: 调整数组顺序使奇数位于偶数前面
+热度指数：11843    时间限制：1秒     空间限制：32768K
+本题知识点： 数组
+
+题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -73,7 +71,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>携程校招2017编程题之股票最大利润 | iMath</title>
+<title>调整数组顺序使奇数位于偶数前面 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -275,11 +273,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-max-profit-in-stock" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-odd-before-even-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/17/max-profit-in-stock/" class="article-date">
-      <time datetime="2016-09-17T13:58:36.000Z" itemprop="datePublished">2016-09-17</time>
+      <a href="/2016/09/27/odd-before-even-solution/" class="article-date">
+      <time datetime="2016-09-27T07:14:55.000Z" itemprop="datePublished">2016-09-27</time>
 </a>
 
 
@@ -294,7 +292,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      携程校招2017编程题之股票最大利润
+      调整数组顺序使奇数位于偶数前面
     </h1>
   
 
@@ -309,7 +307,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -319,17 +317,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p> <img src="/images/ctrip_ex1.png" alt="携程校招2017编程题1">  <!-- 本地: ![携程校招2017编程题1](../images/ctrip_ex1.png) --></p>
-<h3 id="题目-股票利润"><a href="#题目-股票利润" class="headerlink" title="题目: 股票利润"></a>题目: 股票利润</h3><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>有一个数组来存储一支股票每天的价格，例如第i天的股票价格为prices[i]。<br>现在我们至多做一次股票交易，最多买入一次，卖出一次，设计一个算法求我们买股票能得到的最大收益。</p>
-<h5 id="输入"><a href="#输入" class="headerlink" title="输入:"></a><strong>输入:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">价格序列, 用,隔开</div></pre></td></tr></table></figure>
-<h5 id="输出"><a href="#输出" class="headerlink" title="输出:"></a><strong>输出:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">最大的可能利润</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2,3,2,4</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2</div></pre></td></tr></table></figure>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>只需要找出最大的差值即可, 即max(prices[j] - prices[i]), i&lt;j . 遍历一遍即可, 在遍历的时间用遍历low记录prices[0…i]的最小值, 就是当前位置的最低售价, 时间复杂度为O(n) .</p>
-<p>注意: 输入用, 隔开, 需要用getchar()来保存<code>,</code>, scanf(“%d”, &amp;n)来读入每一个整数值.</p>
+        <h3 id="题目-调整数组顺序使奇数位于偶数前面"><a href="#题目-调整数组顺序使奇数位于偶数前面" class="headerlink" title="题目: 调整数组顺序使奇数位于偶数前面"></a>题目: 调整数组顺序使奇数位于偶数前面</h3><ul>
+<li>热度指数：11843    时间限制：1秒     空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
+</ul>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数和偶数, 然后使用copy函数将odd向量的内容和even向量的内容依次填入原array数组即可. 其中有个小技巧: 使用按位与&amp;判断奇偶性比%运算更快一些…</p>
 <p>已AC代码:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; prices)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> len=prices.size();</div><div class="line">    <span class="keyword">if</span>(len==<span class="number">0</span>||len==<span class="number">1</span>)</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> min=prices[<span class="number">0</span>];</div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(prices[i]&lt;min)</div><div class="line">            min=prices[i];</div><div class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(prices[i]&gt;min)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">int</span> temp=prices[i]-min;</div><div class="line">            <span class="keyword">if</span>(temp&gt;sum)</div><div class="line">                sum=temp;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> sum;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> n;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec;</div><div class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n))</div><div class="line">	&#123;</div><div class="line">		vec.push_back(n);</div><div class="line">		<span class="keyword">char</span> ch = getchar();</div><div class="line">		<span class="keyword">if</span>(ch == <span class="string">'\n'</span>) <span class="keyword">break</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">// for(int i: vec)</span></div><div class="line">	<span class="comment">//	cout&lt;&lt;i;</span></div><div class="line"></div><div class="line">	<span class="built_in">cout</span>&lt;&lt;maxProfit(vec)&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">	vec.clear();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>相关链接: <a href="http://blog.csdn.net/DERRANTCM/article/details/47651235" target="_blank" rel="external">http://blog.csdn.net/DERRANTCM/article/details/47651235</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isOdd</span><span class="params">(<span class="keyword">int</span> x)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">// if(x % 2 == 1)</span></div><div class="line">		<span class="keyword">if</span>(x &amp; <span class="number">1</span> != <span class="number">0</span>)</div><div class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">reOrderArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;<span class="built_in">array</span>)</span> </span>&#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; odd;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; even;</div><div class="line">        <span class="keyword">int</span> len=<span class="built_in">array</span>.size();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i != len; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(isOdd(<span class="built_in">array</span>[i])) odd.push_back(<span class="built_in">array</span>[i]);</div><div class="line">            <span class="keyword">else</span> even.push_back(<span class="built_in">array</span>[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> len1 = odd.size();</div><div class="line">        <span class="built_in">array</span>.clear();</div><div class="line">        <span class="built_in">array</span>.resize(len);</div><div class="line">        copy(odd.begin(), odd.end(), <span class="built_in">array</span>.begin());</div><div class="line">        copy(even.begin(), even.end(), <span class="built_in">array</span>.begin()+len1);        </div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 以下为测试</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Solution sol;</div><div class="line">	<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vect(arr, arr+<span class="number">6</span>);</div><div class="line">	sol.reOrderArray(vect);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> i: vect)</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;i;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -338,13 +333,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/17/max-profit-in-stock/">携程校招2017编程题之股票最大利润</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/27/odd-before-even-solution/">调整数组顺序使奇数位于偶数前面</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-17, 21:58:36</p>
-        <p><span>最后更新:</span>2016-09-20, 15:03:30</p>
+        <p><span>发布时间:</span>2016-09-27, 15:14:55</p>
+        <p><span>最后更新:</span>2016-09-27, 15:23:01</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/17/max-profit-in-stock/" title="携程校招2017编程题之股票最大利润">http://yanglr.github.io/2016/09/17/max-profit-in-stock/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/17/max-profit-in-stock/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/27/odd-before-even-solution/" title="调整数组顺序使奇数位于偶数前面">http://yanglr.github.io/2016/09/27/odd-before-even-solution/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/27/odd-before-even-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -356,16 +351,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/18/reverse-english-statement/">
-                    华为oj之句子逆序
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/17/get-cube-root/">
-                    华为oj之求解立方根
+                <a href="/2016/09/18/std-getline-function-usage/">
+                    C++中std::getline函数的用法
                 </a>
             </div>
         
@@ -377,7 +366,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-股票利润"><span class="toc-number">1.</span> <span class="toc-text">题目: 股票利润</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#输入"><span class="toc-number">0.0.1.</span> <span class="toc-text">输入:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出"><span class="toc-number">0.0.2.</span> <span class="toc-text">输出:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输入例子"><span class="toc-number">0.0.3.</span> <span class="toc-text">输入例子:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出例子"><span class="toc-number">0.0.4.</span> <span class="toc-text">输出例子:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-调整数组顺序使奇数位于偶数前面"><span class="toc-number">1.</span> <span class="toc-text">题目: 调整数组顺序使奇数位于偶数前面</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
         
     </div>
     <style>
@@ -413,7 +402,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"携程校招2017编程题之股票最大利润　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"调整数组顺序使奇数位于偶数前面　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -432,8 +421,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yanglr.github.io/2016/09/17/max-profit-in-stock/';
-            this.page.identifier = '2016/09/17/max-profit-in-stock/';
+            this.page.url = 'http://yanglr.github.io/2016/09/27/odd-before-even-solution/';
+            this.page.identifier = '2016/09/27/odd-before-even-solution/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -455,15 +444,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/18/reverse-english-statement/" title="上一篇: 华为oj之句子逆序">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/17/get-cube-root/" title="下一篇: 华为oj之求解立方根">
+            <a href="/2016/09/18/std-getline-function-usage/" title="下一篇: C++中std::getline函数的用法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
