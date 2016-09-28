@@ -261,6 +261,77 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-reverse-word-order-solution" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/28/reverse-word-order-solution/" class="article-date">
+      <time datetime="2016-09-28T15:48:56.000Z" itemprop="datePublished">2016-09-28</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/28/reverse-word-order-solution/">剑指offer面试题42(a)之翻转单词顺序列</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目-翻转单词顺序列"><a href="#题目-翻转单词顺序列" class="headerlink" title="题目: 翻转单词顺序列"></a>题目: 翻转单词顺序列</h3><ul>
+<li>热度指数：5140     时间限制：1秒     空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a></li>
+</ul>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该是“I am a student.”。Cat对一一的翻转这些单词顺序可不在行，你能帮助他么？</p>
+<p>在线提交网址:<br><a href="http://www.nowcoder.com/practice/3194a4f4cf814f63919d0790578d51f3?tpId=13&amp;tqId=11197&amp;rp=1" target="_blank" rel="external">http://www.nowcoder.com/practice/3194a4f4cf814f63919d0790578d51f3?tpId=13&amp;tqId=11197&amp;rp=1</a></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>逐个字符进行读取, 如果遇到空格则进行字符串的反向拼接, 否则保持当前单词中的字符顺序, 最后将结果输出即可.</p>
+<p>下面是AC后代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="built_in">string</span> <span class="title">ReverseSentence</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</div><div class="line">        <span class="built_in">string</span> res, temp; <span class="comment">// temp表示当前单词, res表示最后输出的字符串       </span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">unsigned</span> <span class="keyword">int</span> i=<span class="number">0</span>; i != str.size(); i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(str[i] == <span class="string">' '</span>)</div><div class="line">            &#123;</div><div class="line">            res = <span class="string">" "</span> + temp + res; <span class="comment">// 反向进行拼接</span></div><div class="line">            temp = <span class="string">""</span>;               </div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span> temp += str[i]; <span class="comment">// 保持当前单词中的字符顺序</span></div><div class="line">        &#125;        </div><div class="line">        <span class="keyword">if</span>(temp.size() != <span class="number">0</span>)</div><div class="line">            res = temp + res;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;       </div><div class="line">    Solution sol;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;str;</div><div class="line">    <span class="built_in">string</span> res = sol.ReverseSentence(str);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i: res)</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;i;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-string-permutation-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -302,6 +373,11 @@
 <p>方法3: 先对输入的字符串进行重新排序, 然后使用stl算法库中的函数next_permutation()按顺序得到各个字符串, 并依次存入vector中…</p>
 <p>按方法3给出的已AC代码:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comp</span><span class="params">(<span class="keyword">char</span> a, <span class="keyword">char</span> b)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> a&lt;b;</div><div class="line">&#125;  <span class="comment">// sort()重载的函数不能写在class Solution的内部, class内部的函数指针和外部的函数指针类型不一样</span></div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; Permutation(<span class="built_in">string</span> str) &#123;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; vect;</div><div class="line">    <span class="keyword">if</span>(str.length() == <span class="number">0</span>) <span class="keyword">return</span> vect;        </div><div class="line"></div><div class="line">    sort(str.begin(), str.end(), comp);</div><div class="line">    <span class="comment">// 也可使用匿名函数: sort(str.begin(), str.end(), [](char a, char b)&#123;return a&lt;b;&#125;);    </span></div><div class="line">    <span class="keyword">do</span>&#123;</div><div class="line">		<span class="built_in">string</span> sstr;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;str.size(); i++)</div><div class="line">		&#123;</div><div class="line">			sstr += str[i];</div><div class="line">		&#125;</div><div class="line">		vect.push_back(sstr);</div><div class="line">		sstr.clear();</div><div class="line">    &#125;</div><div class="line">	<span class="keyword">while</span>(next_permutation(str.begin(), str.end() )); <span class="comment">// 使用do...while保证对第一个也有效</span></div><div class="line">    <span class="keyword">return</span> vect;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 以下为测试</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Solution sol;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res = sol.Permutation(<span class="string">"acb"</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> it: res)</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;it&lt;&lt;<span class="string">' '</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>next_permutation() 函数原型:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">next_permutation</span><span class="params">(</span></span></div><div class="line">      BidirectionalIterator <span class="number">_F</span>irst,</div><div class="line">      BidirectionalIterator <span class="number">_L</span>ast,</div><div class="line">      BinaryPredicate <span class="number">_</span>Comp</div><div class="line"> );</div></pre></td></tr></table></figure></p>
+<p>对于第二个重载函数的第三个参数, 默认比较顺序为小于. 如果找到下一个序列, 则返回真, 否则返回假. </p>
+<p>用next_permutation和prev_permutation求排列组合很方便,  但是要记得包含头文件<code>#include &lt;algorithm&gt;</code>.</p>
+<p>虽然最后一个排列没有下一个排列, 用next_permutation会返回false, 但是使用了这个方法后，序列会变成字典序列的第一个, 如cba变成abc, prev_permutation同理。</p>
+
       
     </div>
     
@@ -920,89 +996,6 @@
 <p>已AC代码:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; prices)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> len=prices.size();</div><div class="line">    <span class="keyword">if</span>(len==<span class="number">0</span>||len==<span class="number">1</span>)</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> min=prices[<span class="number">0</span>];</div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(prices[i]&lt;min)</div><div class="line">            min=prices[i];</div><div class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(prices[i]&gt;min)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">int</span> temp=prices[i]-min;</div><div class="line">            <span class="keyword">if</span>(temp&gt;sum)</div><div class="line">                sum=temp;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> sum;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> n;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec;</div><div class="line">	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n))</div><div class="line">	&#123;</div><div class="line">		vec.push_back(n);</div><div class="line">		<span class="keyword">char</span> ch = getchar();</div><div class="line">		<span class="keyword">if</span>(ch == <span class="string">'\n'</span>) <span class="keyword">break</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">// for(int i: vec)</span></div><div class="line">	<span class="comment">//	cout&lt;&lt;i;</span></div><div class="line"></div><div class="line">	<span class="built_in">cout</span>&lt;&lt;maxProfit(vec)&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">	vec.clear();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>相关链接: <a href="http://blog.csdn.net/DERRANTCM/article/details/47651235" target="_blank" rel="external">http://blog.csdn.net/DERRANTCM/article/details/47651235</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-get-cube-root" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/09/17/get-cube-root/" class="article-date">
-      <time datetime="2016-09-17T08:18:46.000Z" itemprop="datePublished">2016-09-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/17/get-cube-root/">华为oj之求解立方根</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>求解立方根</p>
-<ul>
-<li>热度指数：1008   时间限制：1秒   空间限制：32768K</li>
-</ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>•计算一个数字的立方根，不使用库函数</p>
-<p>立方根的逼近迭代方程是 y(n+1) = y(n)<em>2/3 + x/(3</em>y(n)*y(n)),其中y0=x. 求给定的x经过n次迭代后立方根的值。 </p>
-<p>详细描述：</p>
-<p>•接口说明</p>
-<p>原型：</p>
-<p>public static double getCubeRoot(double input)</p>
-<p>输入:double 待求解参数</p>
-<p>返回值:double  输入参数的立方根</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">待求解参数 double类型</div></pre></td></tr></table></figure>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入参数的立方根 也是double类型</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">216</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">6.0</div></pre></td></tr></table></figure>
-<p>在线提交网址: <a href="http://www.nowcoder.com/practice/caf35ae421194a1090c22fe223357dca?tpId=37&amp;tqId=21330&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/caf35ae421194a1090c22fe223357dca?tpId=37&amp;tqId=21330&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
-<p>已AC代码:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">double</span> <span class="title">getCubeRoot</span><span class="params">(<span class="keyword">double</span> input)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(input == <span class="number">0</span>) <span class="keyword">return</span> (<span class="keyword">double</span>)<span class="number">0</span>;</div><div class="line">    <span class="keyword">double</span> pre = <span class="number">0</span>;</div><div class="line">    <span class="keyword">double</span> res = <span class="number">1</span>;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">abs</span>(res-pre) &gt; <span class="number">0.000001</span>)</div><div class="line">    &#123;</div><div class="line">        pre = res;</div><div class="line">        res = (<span class="number">2</span>*res + input/(res*res) )/<span class="number">3</span>;   <span class="comment">// 迭代公式</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> res;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">double</span> in;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;in)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">double</span> res;</div><div class="line">        res = getCubeRoot(in);</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%.1f"</span>, res);           <span class="comment">// 如果需要四舍五入保留1位小数, 最后应该用res+0.05, n位小数则需加5*pow(0.1, n+1)</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>相关链接:<br><a href="http://blog.csdn.net/lzuacm/article/details/51335995" target="_blank" rel="external">http://blog.csdn.net/lzuacm/article/details/51335995</a><br><a href="http://ilovers.sinaapp.com/article/迭代法求平方根和立方根" target="_blank" rel="external">http://ilovers.sinaapp.com/article/迭代法求平方根和立方根</a><br><a href="http://blog.csdn.net/never_cxb/article/details/47734519" target="_blank" rel="external">http://blog.csdn.net/never_cxb/article/details/47734519</a></p>
 
       
     </div>

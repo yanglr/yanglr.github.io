@@ -15,19 +15,28 @@
 
 
 
-<meta name="description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
-12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
+<meta name="description" content="题目: 翻转单词顺序列
+热度指数：5140     时间限制：1秒     空间限制：32768K
+本题知识点： 字符串
+
+题目描述牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Redmine的PHP API时，如何判断需求是否为原子需求">
-<meta property="og:url" content="http://yanglr.github.io/2016/09/15/redmine-child-issue/index.html">
+<meta property="og:title" content="剑指offer面试题42(a)之翻转单词顺序列">
+<meta property="og:url" content="http://yanglr.github.io/2016/09/28/reverse-word-order-solution/index.html">
 <meta property="og:site_name" content="iMath">
-<meta property="og:description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
-12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
-<meta property="og:updated_time" content="2016-09-15T07:43:06.290Z">
+<meta property="og:description" content="题目: 翻转单词顺序列
+热度指数：5140     时间限制：1秒     空间限制：32768K
+本题知识点： 字符串
+
+题目描述牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子">
+<meta property="og:updated_time" content="2016-09-28T16:15:27.101Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Redmine的PHP API时，如何判断需求是否为原子需求">
-<meta name="twitter:description" content="使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:
-12345678910111213/** * 判断是否为原子需求, 即是否依然含有子需求 * @param int $id 需求Id * @return int */public function hasChildIssue($id)&amp;#123;    $res = $this-&amp;gt;client-&amp;gt;">
+<meta name="twitter:title" content="剑指offer面试题42(a)之翻转单词顺序列">
+<meta name="twitter:description" content="题目: 翻转单词顺序列
+热度指数：5140     时间限制：1秒     空间限制：32768K
+本题知识点： 字符串
+
+题目描述牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +68,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>使用Redmine的PHP API时，如何判断需求是否为原子需求 | iMath</title>
+<title>剑指offer面试题42(a)之翻转单词顺序列 | iMath</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -261,11 +270,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-redmine-child-issue" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-reverse-word-order-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/15/redmine-child-issue/" class="article-date">
-      <time datetime="2016-09-15T07:33:22.000Z" itemprop="datePublished">2016-09-15</time>
+      <a href="/2016/09/28/reverse-word-order-solution/" class="article-date">
+      <time datetime="2016-09-28T15:48:56.000Z" itemprop="datePublished">2016-09-28</time>
 </a>
 
 
@@ -280,7 +289,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      使用Redmine的PHP API时，如何判断需求是否为原子需求
+      剑指offer面试题42(a)之翻转单词顺序列
     </h1>
   
 
@@ -289,13 +298,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/PHP项目实战/">PHP项目实战</a>
+    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">api</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/redmine/">redmine</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -305,11 +314,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 判断是否为原子需求, 即是否依然含有子需求</div><div class="line"> * <span class="doctag">@param</span> int $id 需求Id</div><div class="line"> * <span class="doctag">@return</span> int</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">hasChildIssue</span><span class="params">($id)</span></span></div><div class="line">&#123;</div><div class="line">    $res = <span class="keyword">$this</span>-&gt;client-&gt;api(<span class="string">'issue'</span>)-&gt;show($id, <span class="keyword">array</span>(<span class="string">'include'</span> =&gt; <span class="string">'children'</span>));</div><div class="line">    <span class="keyword">if</span> (!<span class="keyword">empty</span>($res) &amp;&amp; <span class="keyword">isset</span>($res[<span class="string">'issue'</span>][<span class="string">'children'</span>])) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">    set_time_limit(<span class="number">0</span>);</div><div class="line">    $startTime = microtime(<span class="keyword">true</span>);</div><div class="line"></div><div class="line">    <span class="comment">//检查API KEY是否配置</span></div><div class="line">    $configService = <span class="keyword">$this</span>-&gt;serviceInstance(<span class="string">'config'</span>, <span class="string">'work'</span>);</div><div class="line">    $config = $configService-&gt;getConstApiKey();</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">empty</span>($config)) &#123;</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> \<span class="keyword">Exception</span>(<span class="string">'固定API KEY未配置'</span>);</div><div class="line">    &#125;</div><div class="line">    $constApiKey = $config[<span class="string">'value'</span>];</div><div class="line">    $redmine = <span class="keyword">new</span> RedmineLib($constApiKey);</div><div class="line"></div><div class="line">    $issueId=<span class="number">17252</span>;</div><div class="line">    $temp = $redmine-&gt;client-&gt;get(<span class="string">'/issues/'</span>.urlencode($issueId).<span class="string">'.json?'</span>.http_build_query(<span class="keyword">array</span> (<span class="string">'include'</span> =&gt; <span class="string">'children'</span>)));</div><div class="line"></div><div class="line">    $temp = $redmine-&gt;client-&gt;api(<span class="string">'issue'</span>)-&gt;show(<span class="number">17252</span>, <span class="keyword">array</span> (<span class="string">'include'</span> =&gt; <span class="string">'children'</span>));</div><div class="line">    </div><div class="line">    var_dump($temp[<span class="string">'issue'</span>][<span class="string">'children'</span>]); <span class="keyword">exit</span>; <span class="comment">// 如果有子任务，['issue']['children']字段不存在，否则['issue']['children']字段对应一个子数组</span></div><div class="line"></div><div class="line"><span class="comment">//        $temp  = $redmine-&gt;client-&gt;issue-&gt;show(17252, array('include' =&gt; 'children'));</span></div><div class="line"><span class="comment">//        $temp  = $redmine-&gt;hasChildIssue(17330);</span></div><div class="line">    var_dump($temp); <span class="keyword">exit</span>;</div></pre></td></tr></table></figure>
-<p>相关链接:<br><a href="http://www.redmine.org/projects/redmine/wiki/Rest_Issues" target="_blank" rel="external">http://www.redmine.org/projects/redmine/wiki/Rest_Issues</a></p>
-<p>Rest api with php - Redmine<br><a href="http://www.redmine.org/projects/redmine/wiki/Rest_api_with_php" target="_blank" rel="external">http://www.redmine.org/projects/redmine/wiki/Rest_api_with_php</a></p>
+        <h3 id="题目-翻转单词顺序列"><a href="#题目-翻转单词顺序列" class="headerlink" title="题目: 翻转单词顺序列"></a>题目: 翻转单词顺序列</h3><ul>
+<li>热度指数：5140     时间限制：1秒     空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579" target="_blank" rel="external">字符串</a></li>
+</ul>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该是“I am a student.”。Cat对一一的翻转这些单词顺序可不在行，你能帮助他么？</p>
+<p>在线提交网址:<br><a href="http://www.nowcoder.com/practice/3194a4f4cf814f63919d0790578d51f3?tpId=13&amp;tqId=11197&amp;rp=1" target="_blank" rel="external">http://www.nowcoder.com/practice/3194a4f4cf814f63919d0790578d51f3?tpId=13&amp;tqId=11197&amp;rp=1</a></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>逐个字符进行读取, 如果遇到空格则进行字符串的反向拼接, 否则保持当前单词中的字符顺序, 最后将结果输出即可.</p>
+<p>下面是AC后代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="built_in">string</span> <span class="title">ReverseSentence</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</div><div class="line">        <span class="built_in">string</span> res, temp; <span class="comment">// temp表示当前单词, res表示最后输出的字符串       </span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">unsigned</span> <span class="keyword">int</span> i=<span class="number">0</span>; i != str.size(); i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(str[i] == <span class="string">' '</span>)</div><div class="line">            &#123;</div><div class="line">            res = <span class="string">" "</span> + temp + res; <span class="comment">// 反向进行拼接</span></div><div class="line">            temp = <span class="string">""</span>;               </div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span> temp += str[i]; <span class="comment">// 保持当前单词中的字符顺序</span></div><div class="line">        &#125;        </div><div class="line">        <span class="keyword">if</span>(temp.size() != <span class="number">0</span>)</div><div class="line">            res = temp + res;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;       </div><div class="line">    Solution sol;</div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;str;</div><div class="line">    <span class="built_in">string</span> res = sol.ReverseSentence(str);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i: res)</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;i;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -318,13 +330,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/15/redmine-child-issue/">使用Redmine的PHP API时，如何判断需求是否为原子需求</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/28/reverse-word-order-solution/">剑指offer面试题42(a)之翻转单词顺序列</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-15, 15:33:22</p>
-        <p><span>最后更新:</span>2016-09-15, 15:43:06</p>
+        <p><span>发布时间:</span>2016-09-28, 23:48:56</p>
+        <p><span>最后更新:</span>2016-09-29, 00:15:27</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/15/redmine-child-issue/" title="使用Redmine的PHP API时，如何判断需求是否为原子需求">http://yanglr.github.io/2016/09/15/redmine-child-issue/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/15/redmine-child-issue/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/28/reverse-word-order-solution/" title="剑指offer面试题42(a)之翻转单词顺序列">http://yanglr.github.io/2016/09/28/reverse-word-order-solution/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/28/reverse-word-order-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -336,16 +348,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/16/last-word-length-solution/">
-                    华为oj之字符串最后一个单词的长度
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/15/smarty_usage_in_php/">
-                    PHP中Smarty引擎的常用语法
+                <a href="/2016/09/27/string-permutation-solution/">
+                    剑指offer面试题28 - 字符串的排列
                 </a>
             </div>
         
@@ -357,7 +363,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-翻转单词顺序列"><span class="toc-number">1.</span> <span class="toc-text">题目: 翻转单词顺序列</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number"></span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.</span> <span class="toc-text">分析:</span></a></li></ol>
         
     </div>
     <style>
@@ -393,7 +399,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"使用Redmine的PHP API时，如何判断需求是否为原子需求　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"剑指offer面试题42(a)之翻转单词顺序列　| iMath　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -412,8 +418,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yanglr.github.io/2016/09/15/redmine-child-issue/';
-            this.page.identifier = '2016/09/15/redmine-child-issue/';
+            this.page.url = 'http://yanglr.github.io/2016/09/28/reverse-word-order-solution/';
+            this.page.identifier = '2016/09/28/reverse-word-order-solution/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -435,15 +441,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/16/last-word-length-solution/" title="上一篇: 华为oj之字符串最后一个单词的长度">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/15/smarty_usage_in_php/" title="下一篇: PHP中Smarty引擎的常用语法">
+            <a href="/2016/09/27/string-permutation-solution/" title="下一篇: 剑指offer面试题28 - 字符串的排列">
                 <i class="fa fa-angle-right"></i>
             </a>
         
