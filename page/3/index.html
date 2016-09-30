@@ -261,6 +261,88 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-integer_storage-one-count" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/16/integer_storage-one-count/" class="article-date">
+      <time datetime="2016-09-16T08:55:09.000Z" itemprop="datePublished">2016-09-16</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/16/integer_storage-one-count/">华为oj之求int型正整数在内存中存储时1的个数</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目-求int型正整数在内存中存储时1的个数"><a href="#题目-求int型正整数在内存中存储时1的个数" class="headerlink" title="题目: 求int型正整数在内存中存储时1的个数"></a>题目: 求int型正整数在内存中存储时1的个数</h3><ul>
+<li>热度指数：4427   时间限制：1秒    空间限制：32768K</li>
+</ul>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个int型的正整数，计算出该int型数据在内存中存储时1的个数。</p>
+<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"> 输入一个整数（int类型）</div></pre></td></tr></table></figure>
+<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"> 这个数转换成2进制后，输出1的个数</div></pre></td></tr></table></figure>
+<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">5</div></pre></td></tr></table></figure>
+<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2</div></pre></td></tr></table></figure>
+<p>在线提交网址: <a href="http://www.nowcoder.com/practice/440f16e490a0404786865e99c6ad91c9?tpId=37&amp;tqId=21238&amp;rp=&amp;ru=/ta/huawei" target="_blank" rel="external">http://www.nowcoder.com/practice/440f16e490a0404786865e99c6ad91c9?tpId=37&amp;tqId=21238&amp;rp=&amp;ru=/ta/huawei</a></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>看到此题, 想到两种办法:</p>
+<ul>
+<li>将该整数转为二进制的字符串, 然后去数里面字符<code>1</code>的个数;</li>
+<li>巧妙使用n&amp;(n-1)计算出1的个数. (参见 剑指offer 面试题10：二进制中1的个数 题解 -  CSDN  <a href="http://blog.csdn.net/lzuacm/article/details/51308149" target="_blank" rel="external">http://blog.csdn.net/lzuacm/article/details/51308149</a>)</li>
+</ul>
+<p>下面是用方法2写成的代码, 顺利AC.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">digit1ofNum</span><span class="params">(<span class="keyword">int</span> n)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> count=<span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span>(n != <span class="number">0</span>)</div><div class="line">    &#123;</div><div class="line">        n = n&amp;(n<span class="number">-1</span>);<span class="comment">// 每进行一次，将最右侧存有1的bit的值置为0，直到全0，退出循环</span></div><div class="line">        count++;</div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> count;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;   </div><div class="line">    <span class="keyword">int</span> n;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;digit1ofNum(n)&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>相关链接:<br>c++ - Changing integer to binary string of digits - Stack Overflow  <a href="http://stackoverflow.com/questions/8222127/changing-integer-to-binary-string-of-digits" target="_blank" rel="external">http://stackoverflow.com/questions/8222127/changing-integer-to-binary-string-of-digits</a></p>
+<p>c - n &amp; (n-1) what does this expression do? - Stack Overflow  <a href="https://stackoverflow.com/questions/4678333/n-n-1-what-does-this-expression-do?noredirect=1&amp;lq=1" target="_blank" rel="external">https://stackoverflow.com/questions/4678333/n-n-1-what-does-this-expression-do?noredirect=1&amp;lq=1</a></p>
+<p>c - n &amp; ~(n - 1) What does this function do? - Stack Overflow  <a href="https://stackoverflow.com/questions/21502303/n-n-1-what-does-this-function-do" target="_blank" rel="external">https://stackoverflow.com/questions/21502303/n-n-1-what-does-this-function-do</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程练习/">编程练习</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-string-reverse-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
