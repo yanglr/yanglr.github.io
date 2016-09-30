@@ -20,7 +20,8 @@
 本题知识点： 数组
 
 题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
-分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
+在线提交网址:
+http://www.nowcoder.com/practice">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面">
 <meta property="og:url" content="http://yanglr.github.io/2016/09/27/odd-before-even-solution/index.html">
@@ -30,8 +31,9 @@
 本题知识点： 数组
 
 题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
-分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
-<meta property="og:updated_time" content="2016-09-27T07:49:52.052Z">
+在线提交网址:
+http://www.nowcoder.com/practice">
+<meta property="og:updated_time" content="2016-09-30T11:29:19.177Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面">
 <meta name="twitter:description" content="题目: 调整数组顺序使奇数位于偶数前面
@@ -39,7 +41,8 @@
 本题知识点： 数组
 
 题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
-分析:不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数">
+在线提交网址:
+http://www.nowcoder.com/practice">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -153,13 +156,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -271,7 +274,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-odd-before-even-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -322,6 +325,8 @@
 <li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
 </ul>
 <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<p>在线提交网址:</p>
+<p><a href="http://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&amp;tqId=11166&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&amp;tqId=11166&amp;rp=1&amp;ru=/ta/coding-interviews&amp;qru=/ta/coding-interviews/question-ranking</a></p>
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>不考虑空间损耗, 可以考虑使用odd和even两个vector分别存放基数和偶数, 然后使用copy函数将odd向量的内容和even向量的内容依次填入原array数组即可. 其中有个小技巧: 使用按位与&amp;判断奇偶性比%运算更快一些…</p>
 <p>已AC代码:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isOdd</span><span class="params">(<span class="keyword">int</span> x)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">// if(x % 2 == 1)</span></div><div class="line">		<span class="keyword">if</span>(x &amp; <span class="number">1</span> != <span class="number">0</span>)</div><div class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;    </div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">reOrderArray</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;<span class="built_in">array</span>)</span> </span>&#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; odd;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; even;</div><div class="line">        <span class="keyword">int</span> len=<span class="built_in">array</span>.size();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i != len; i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(isOdd(<span class="built_in">array</span>[i])) odd.push_back(<span class="built_in">array</span>[i]);</div><div class="line">            <span class="keyword">else</span> even.push_back(<span class="built_in">array</span>[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> len1 = odd.size();</div><div class="line">        <span class="built_in">array</span>.clear();</div><div class="line">        <span class="built_in">array</span>.resize(len);</div><div class="line">        copy(odd.begin(), odd.end(), <span class="built_in">array</span>.begin());</div><div class="line">        copy(even.begin(), even.end(), <span class="built_in">array</span>.begin()+len1);        </div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 以下为测试</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Solution sol;</div><div class="line">	<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vect(arr, arr+<span class="number">6</span>);</div><div class="line">	sol.reOrderArray(vect);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> i: vect)</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;i;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -333,17 +338,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/27/odd-before-even-solution/">剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Bravo Yeung</a></p>
-        <p><span>发布时间:</span>2016-09-27, 15:14:55</p>
-        <p><span>最后更新:</span>2016-09-27, 15:49:52</p>
+        <p><span>Title:</span><a href="/2016/09/27/odd-before-even-solution/">剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Bravo Yeung</a></p>
+        <p><span>Created:</span>2016-09-27, 15:14:55</p>
+        <p><span>Updated:</span>2016-09-30, 19:29:19</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/27/odd-before-even-solution/" title="剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面">http://yanglr.github.io/2016/09/27/odd-before-even-solution/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yanglr.github.io/2016/09/27/odd-before-even-solution/　　作者: Bravo Yeung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2016/09/27/odd-before-even-solution/" title="剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面">http://yanglr.github.io/2016/09/27/odd-before-even-solution/</a>
+            <span class="copy-path" data-clipboard-text="From http://yanglr.github.io/2016/09/27/odd-before-even-solution/　　By Bravo Yeung" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -370,7 +375,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目-调整数组顺序使奇数位于偶数前面"><span class="toc-number">1.</span> <span class="toc-text">题目: 调整数组顺序使奇数位于偶数前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述"><span class="toc-number">2.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">3.</span> <span class="toc-text">分析:</span></a></li></ol>
         
@@ -386,10 +391,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -450,15 +455,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/27/string-permutation-solution/" title="上一篇: 剑指offer面试题28 - 字符串的排列">
+            <a href="/2016/09/27/string-permutation-solution/" title="Pre: 剑指offer面试题28 - 字符串的排列">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/09/18/std-getline-function-usage/" title="下一篇: C++中std::getline函数的用法">
+            <a href="/2016/09/18/std-getline-function-usage/" title="Next: C++中std::getline函数的用法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -481,14 +486,14 @@
                 2016 Bravo Yeung
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -497,7 +502,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -530,9 +535,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
