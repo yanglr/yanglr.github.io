@@ -184,7 +184,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oj/">oj</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redmine/">redmine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cpp/">cpp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cstdlib/">cstdlib</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oj/">oj</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redmine/">redmine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a></li></ul>
                     </div>
                 </section>
                 
@@ -260,6 +260,83 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-backfoward-first-appear-solution" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/18/backfoward-first-appear-solution/" class="article-date">
+      <time datetime="2016-09-18T04:56:52.000Z" itemprop="datePublished">2016-09-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/18/backfoward-first-appear-solution/">华为oj之提取不重复的整数</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="题目-提取不重复的整数"><a href="#题目-提取不重复的整数" class="headerlink" title="题目: 提取不重复的整数"></a>题目: 提取不重复的整数</h3><ul>
+<li>热度指数：4740    时间限制：1秒    空间限制：32768K</li>
+<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578" target="_blank" rel="external">数组</a></li>
+</ul>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个int型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。</p>
+<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入一个int型整数</div></pre></td></tr></table></figure>
+<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">按照从右向左的阅读顺序，返回一个不含重复数字的新的整数</div></pre></td></tr></table></figure>
+<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">9876673</div></pre></td></tr></table></figure>
+<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">37689</div></pre></td></tr></table></figure>
+<p>在线提交网址:</p>
+<p><a href="http://www.nowcoder.com/practice/253986e66d114d378ae8de2e6c4577c1?tpId=37&amp;tqId=21232&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking" target="_blank" rel="external">http://www.nowcoder.com/practice/253986e66d114d378ae8de2e6c4577c1?tpId=37&amp;tqId=21232&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</a></p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>先将该输入的字符串进行逆序, 使用一个vector存储每一个字符, 存入要求是当vector中没有该字符(使用算算法库中的find()函数). 最后遍历该向量, 输出即可.</p>
+<p>已AC代码:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="built_in">string</span> str;</div><div class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt; vect;</div><div class="line">	<span class="keyword">while</span>(getline(<span class="built_in">cin</span>,str))</div><div class="line">	&#123;</div><div class="line">		reverse(str.begin(), str.end());		</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str.length();i++)</div><div class="line">		&#123;</div><div class="line">			<span class="keyword">if</span>(find(vect.begin(),vect.end(), str[i]) == vect.end())</div><div class="line">			&#123;</div><div class="line">				vect.push_back(str[i]);  </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">auto</span> it: vect)</div><div class="line">			<span class="built_in">cout</span>&lt;&lt;it;</div><div class="line"></div><div class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;    <span class="comment">// 如果用set, set会用一个字符最后一次出现的地方覆盖之前的, 此处不能用</span></div><div class="line">		vect.clear();</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-reverse-int-solution" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -938,88 +1015,6 @@
       
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/编程训练/">编程训练</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oj/">oj</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-prime-factor-solution" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/09/16/prime-factor-solution/" class="article-date">
-      <time datetime="2016-09-16T14:02:17.000Z" itemprop="datePublished">2016-09-16</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/16/prime-factor-solution/">华为oj之质数因子</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="题目-质数因子"><a href="#题目-质数因子" class="headerlink" title="题目: 质数因子"></a>题目: 质数因子</h3><ul>
-<li>热度指数：5143    时间限制：1秒    空间限制：32768K</li>
-<li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=590" target="_blank" rel="external">排序</a></li>
-</ul>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>功能:输入一个正整数，按照从小到大的顺序输出它的所有质数的因子（如180的质数因子为2 2 3 3 5 ）</p>
-<p>最后一个数后面也要有空格</p>
-<p>详细描述：</p>
-<p>函数接口说明：</p>
-<p>public String getResult(long ulDataInput)</p>
-<p>输入参数：</p>
-<p>long ulDataInput：输入的正整数</p>
-<p>返回值：</p>
-<p>String</p>
-<h5 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a><strong>输入描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入一个long型整数</div></pre></td></tr></table></figure>
-<h5 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a><strong>输出描述:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">按照从小到大的顺序输出它的所有质数的因子，以空格隔开。最后一个数后面也要有空格。</div></pre></td></tr></table></figure>
-<h5 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a><strong>输入例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">180</div></pre></td></tr></table></figure>
-<h5 id="输出例子"><a href="#输出例子" class="headerlink" title="输出例子:"></a><strong>输出例子:</strong></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2 2 3 3 5</div></pre></td></tr></table></figure>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析:"></a>分析:</h3><p>将输入的数记作n, i从2~n开始遍历去除n, 如果该数能整除n, 第一次除尽时就break, 此时记录下的i值必为质数, 将n更新为n/i, 当n不为1时继续循环, 直至n为1时整个程序结束, 此时所有的质因子输出完毕.</p>
-<p>已AC代码:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">long</span> n;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">while</span>(n != <span class="number">1</span>)</div><div class="line">        &#123;</div><div class="line">             <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>; i&lt;=n; i++)</div><div class="line">             &#123;</div><div class="line">                 <span class="keyword">if</span>(n % i == <span class="number">0</span>)</div><div class="line">                 &#123;</div><div class="line">                     n = n / i;          <span class="comment">// 每次计算出商后, 判断是否为1, 如果不为1继续执行, 直至为1时结束程序</span></div><div class="line">                     <span class="built_in">cout</span>&lt;&lt;i&lt;&lt;<span class="string">' '</span>;</div><div class="line">                     <span class="keyword">break</span>;              <span class="comment">// 能被该质数"第一次"除尽时就跳到 while(n != 1)</span></div><div class="line">                 &#125;</div><div class="line">             &#125;</div><div class="line">        &#125;</div><div class="line">             </div><div class="line">    &#125;    </div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程练习/">编程练习</a>
     </div>
 
 
