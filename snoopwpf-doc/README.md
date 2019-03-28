@@ -1,1 +1,1 @@
-snoopWpf online documentation
+snoopWpf online documentation - pages
