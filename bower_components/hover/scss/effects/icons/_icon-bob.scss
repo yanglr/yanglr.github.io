@@ -19,9 +19,16 @@
 
 @mixin icon-bob {
 	@include hacks();
+	position: relative;
+	padding-right: 2.2em;
 	@include prefixed(transition-duration, $mediumDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f077";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -29,7 +36,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			@include prefixed(animation-name, "#{$nameSpace}-icon-bob-float, #{$nameSpace}-icon-bob");
 			@include prefixed(animation-duration, ".3s, 1.5s");
 			@include prefixed(animation-delay, "0s, .3s");

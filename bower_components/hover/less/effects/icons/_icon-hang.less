@@ -19,9 +19,16 @@
 
 .icon-hang() {
 	.hacks();
+	position: relative;
+	padding-right: 2.2em;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f078";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		.prefixed(transform, translateZ(0));
 	}
 
@@ -29,7 +36,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-hang-sink, @{nameSpace}-icon-hang");
 			.prefixed(animation-duration, ~".3s, 1.5s");
 			.prefixed(animation-delay, ~"0s, .3s");

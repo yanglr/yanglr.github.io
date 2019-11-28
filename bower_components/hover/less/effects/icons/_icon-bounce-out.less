@@ -7,9 +7,16 @@
 
 .icon-bounce-out() {
 	.hacks();
+	position: relative;
+	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f088";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -20,7 +27,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			.prefixed(transform, scale(.9));
 			.prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36));
 		}

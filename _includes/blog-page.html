@@ -1,11 +1,11 @@
 <div class="row">
 
-    <div class="col-md-8">
+    <div class="col-md-9">
 
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
-            <li class="posts-list-item" data-title="{{post.title}}">
+            <li class="posts-list-item">
                 <div class="posts-content">
                     <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
                     <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -19,11 +19,13 @@
         {% include pagination.html %}
 
         <!-- Comments -->
-        {% include disqus-comments.html %}
+       <div class="comment">
+         {% include comments.html %}
+       </div>
 
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
         {% include sidebar-post-tag.html %}
     </div>
 

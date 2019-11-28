@@ -1,9 +1,16 @@
 /* Icon Grow */
 @mixin icon-grow {
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 	@include prefixed(transition-duration, $mediumDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f118";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $mediumDuration);
 		@include prefixed(transition-property, transform);
@@ -14,7 +21,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			@include prefixed(transform, scale(1.3) translateZ(0));
 		}
 	}

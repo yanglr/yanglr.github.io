@@ -3,9 +3,16 @@
 	$duration: $mediumDuration;
 
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 	@include prefixed(transition-duration, $duration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f0c6";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $duration);
 		@include prefixed(transition-property, transform);
@@ -16,7 +23,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			@include prefixed(transform, rotate(20deg));
 		}
 	}

@@ -12,19 +12,28 @@ css: ['sidebar-post-nav.css']
 
             {{ content }}
 
+            {% include copyright.html %}
+
             <!-- Comments -->
-            {% include disqus-comments.html %}
+           <div class="comment">
+             {% include comments.html %}
+           </div>
+
         </div>
         {% else %}
-        <div class="col-md-8 markdown-body">
+        <div class="col-md-9 markdown-body">
 
             {{ content }}
 
+            {% include copyright.html %}
+
             <!-- Comments -->
-            {% include disqus-comments.html %}
+            <div class="comment">
+             {% include comments.html %}
+            </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             {% include sidebar-post-nav.html %}
         </div>
         {% endif %}
