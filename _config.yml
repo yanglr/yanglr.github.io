@@ -6,19 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  纯洁的微笑
-subtitle: 分享技术，品味人生
-name: 纯洁的微笑 
-email: ityouknow@126.com
-description: 本站是纯洁的微笑的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: ityouknow,纯洁的微笑,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+title:  极客玩家
+subtitle: 
+name: Bravo Yeung
+email: yanglr@126.com
+description: 
+keywords: geekplayer, geekplayers, 极客玩家, .NET, C#, .NET Core,PHP,RSS,k8s,生活故事,一线,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客, .NET,Python,
 encoding: "utf-8"
-favicon: favicon.ico 
+favicon: favicon.ico
 
-repository: ityouknow/ityouknow.github.io
-github_url: https://github.com/ityouknow
-url: http://www.ityouknow.com
-enforce_ssl: ityouknow.com
+repository: yanglr/yanglr.github.io
+github_url: https://github.com/yanglr
+url: http://www.geekplayers.com
+enforce_ssl: geekplayers.com
 
 ## Gem
 plugins:
@@ -76,11 +76,6 @@ menus:
     target: _self
 
   -
-    href: /arch.html
-    label: 架构
-    target: _self
-
-  -
     href: /link.html
     label: 友链
     target: _self
@@ -95,38 +90,38 @@ navs:
     label: Home
 
   -
-    href: /spring-boot.html
-    label: Spring Boot
+    href: /k8s-boot.html
+    label: k8s Boot
     target: _self
     subnav:
 
       -
-        subHref: /spring-boot.html
-        subLabel: Spring Boot
+        subHref: /k8s-boot.html
+        subLabel: k8s Boot
 
       -
-        subHref: /spring-cloud.html
-        subLabel: Spring Cloud
+        subHref: /k8s-cloud.html
+        subLabel: k8s Cloud
 
   -
-    href: /spring-cloud.html
-    label: Spring Cloud
+    href: /k8s-cloud.html
+    label: k8s Cloud
     target: _self
 
   -
     
-    href: http://www.justdojava.com
-    label: Java
+    href: http://enjoy233.cn
+    label: .NET
     target: _blank
     subnav:
 
       -
-        subHref: /java.html
+        subHref: /.NET.html
         subLabel: Jvm 系列文章
         
       -
-        subHref: http://www.justdojava.com
-        subLabel: Java 极客技术
+        subHref: http://enjoy233.cn
+        subLabel: .NET 极客技术
         target: _blank
 
   -
@@ -193,9 +188,9 @@ classes:
     describe: 一个架构师的自我修养
 
   -
-    href: /java.html
-    name: Java 系列文章
-    describe: Java 之根基，Java 程序员必学
+    href: /.NET.html
+    name: .NET 系列文章
+    describe: .NET 之根基，.NET 程序员必学
 
 
 # ---------------- #
@@ -214,10 +209,10 @@ side_bar_repo_limit: 6 # Number of repos to show
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
-skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
-skill_mobile_app_keywords: [vuejs, hyhird app]
+skill_software_keywords: [.NET, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [k8s]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, vue, xamarin]
 
 
 # ---------------- #
@@ -229,19 +224,19 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: ityouknow
+    username: yanglr
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: ityouknow
+    owner: yanglr
     repo: blog-comments
     oauth:
-        client_id: 61bfc53d957e74e78f8f
-        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+        client_id: 
+        client_secret: 
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: ityouknow
+    owner: yanglr
     repo: blog-comments
-    clientID: 61bfc53d957e74e78f8f
-    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+    clientID: 
+    clientSecret: 
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : true
