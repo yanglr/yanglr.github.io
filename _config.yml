@@ -90,18 +90,14 @@ navs:
     label: Home
 
   -
-    href: /k8s-boot.html
-    label: k8s Boot
+    href: /k8s.html
+    label: k8s
     target: _self
     subnav:
 
-      -
-        subHref: /k8s-boot.html
-        subLabel: k8s Boot
-
-      -
-        subHref: /k8s-cloud.html
-        subLabel: k8s Cloud
+      -        
+        subHref: /k8s.html
+        subLabel: k8s
 
   -
     href: /k8s-cloud.html
@@ -116,8 +112,8 @@ navs:
     subnav:
 
       -
-        subHref: /.NET.html
-        subLabel: Jvm 系列文章
+        subHref: /dotnet.html
+        subLabel: 
         
       -
         subHref: http://enjoy233.cn
@@ -139,21 +135,6 @@ navs:
 labels:
 
   -
-    href: /payment.html
-    label: 支付     
-    target: _self
-
-  -
-    href: /fastdfs.html
-    label: FastDFS
-    target: _blank
-
-  -
-    href: /mongodb.html
-    label: MongoDB
-    target: _blank
-
-  -
     href: /docker.html
     label: Docker
     target: _blank
@@ -161,11 +142,6 @@ labels:
   -
     href: /open-source.html
     label: Code  
-    target: _blank
-
-  -
-    href: /gitchat.html
-    label: Chat
     target: _blank
 
   -
@@ -179,18 +155,13 @@ classes:
 
   -
     href: /life.html
-    name: 我的故事
-    describe: 生活就是故事，故事就是生活
-
-  -
-    href: /arch.html
-    name: 架构师之路
-    describe: 一个架构师的自我修养
+    name: 我的生活
+    describe: 
 
   -
     href: /.NET.html
     name: .NET 系列文章
-    describe: .NET 之根基，.NET 程序员必学
+    describe: 
 
 
 # ---------------- #
