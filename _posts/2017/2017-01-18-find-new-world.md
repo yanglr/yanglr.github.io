@@ -103,6 +103,6 @@ Tor支持动态代理链（通过Tor访问一个地址时，所经过的节点�
 
 -------------
 
-**作者：纯洁的微笑**  
-**出处：[www.ityouknow.com](http://www.ityouknow.com)**      
-**版权归作者所有，转载请注明出处** 
+**作者：极客玩家Bravo Yeung**  
+**出处：[www.geekplayers.com](http://www.geekplayers.com)**  
+**版权所有，欢迎保留原文链接进行转载：)**
