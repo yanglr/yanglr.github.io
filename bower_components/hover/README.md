@@ -7,33 +7,10 @@ A collection of CSS3 powered hover effects to be applied to links, buttons, logo
 [Demo](http://ianlunn.github.io/Hover)  |
 [Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
 
-## Contents
-- [Download/Install](#downloadinstall)
-- [How To Use](#how-to-use)
-    - [A. Copy and Paste an Effect](#a-copy-and-paste-an-effect)
-    - [B. Reference Hover.css](#b-reference-hovercss)
-    - [A Note on the display property](#a-note-on-the-display-property)
-    - [Using Icon Effects](#using-icon-effects)
-- [What's Included?](#whats-included)
-    - [css](#css)
-    - [scss/less](#scssless)
-    - [Other](#other)
-- [Browser Support](#browser-support)
-- [Using Grunt for Development](#using-grunt-for-development)
-- [Using Sass/LESS for Development](#using-sassless-for-development)
-    - [_hacks](#\_hacks)
-    - [_mixins](#\_mixins)
-    - [_options](#\_options)
-- [Contribute to Hover.css](#contribute-to-hovercss)
-- [Licenses](#licenses)
-    - [Commercial License](#commercial-license)
-    - [Open-Source License](#open-source-license)
-- [Hire Ian Lunn](#hire-ian-lunn)
-
 ## Download/Install
 
-- NPM: `npm install hover.css --save`
-- Bower: `bower install hover --save`
+- NPM: `npm install --save hover.css`
+- Bower: `bower install Hover`
 - [Download Zip](https://github.com/IanLunn/Hover/archive/master.zip)
 
 ## How To Use
@@ -126,44 +103,41 @@ Should you wish to override this behavior, either remove the above CSS from Hove
 
 For more information about Transformable elements, see the [CSS Transforms Module](http://www.w3.org/TR/css3-transforms/#transformable-element).
 
-### Using Icon Effects
+### Using FontAwesome with Icon Effects
 
-To add a Hover.css icon, place the icon HTML inside the element that a Hover.css effect is applied to. For example:
-
-```
-<a href="#" class="hvr-icon-forward">
-  Icon Forward
-  <i class="fa fa-chevron-circle-right hvr-icon"></i>
-</a>
-```
-
-In the above code, we have given a link element a class of `hvr-icon-forward` which will make an icon move forward when the link is hovered over. The icon itself is given a class of `hvr-icon` to let Hover.css know that this is the icon we want to animate. In this example, our icon is from FontAwesome, which we've loaded into the `<head></head>` of our web page as per FontAwesome's instructions, like so:
+Hover.css uses [FontAwesome](https://fortawesome.github.io/Font-Awesome/) for its icon effects. For these effects to work, a reference to the FontAwesome stylesheet must be added by placing the following in the `<head></head>` of your web page:
 
 ```html
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 ```
 
-Note: As of Hover.css v2.3.0 you can use any method you like for adding icons (previously, only FontAwesome was supported out-of-the-box.) For example, you could use another icon library or instead, use an image like so:
+Hover.css icons are added to elements via the `:before` pseudo-element. Let's take the Icon Forward effect as an example (browser prefixes and additional styles removed for brevity):
 
-```
-<a href="#" class="hvr-icon-spin">
-  Icon Spin
-  <img src="myicon.svg" class="hvr-icon" />
-</a>
-```
-
-Here, the image will act as the icon because it has the `hvr-icon` class applied to it, and when hovered over, the icon will spin as defined by the `hvr-icon-spin` class on the parent element.
-
-Position of the icon is entirely in your control. You could place it before the text, like so:
-
-```
-<a href="#" class="hvr-icon-spin">
-  <img src="myicon.svg" class="hvr-icon" />
-  Icon Spin
-</a>
+```css
+.hvr-icon-forward:before {
+    content: "\f138";
+    position: absolute;
+    right: 1em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
 ```
 
-Or use custom CSS to position the icon as you see fit.
+What's important in the above example are the `font-family` and `content` declarations. `font-family: FontAwesome` tells the browser we want to use a FontAwesome icon in this pseudo-element, and the `content` value says which one. Should you wish to change the icon, change the value of the `content` property. A [full list of the values and the icon they represent can be found here](http://astronautweb.co/snippet/font-awesome/#font-awesome-list).
+
+If you'd rather not tamper with Hover.css itself, you can override the default content value simply by declaring the same declaration again (providing it be declared after the default one either in Hover.css or another stylesheet):
+
+```css
+.hvr-icon-forward:before {
+    content: "\f001";
+}
+```
+
+The Icon Forward effect will then display a musical note that moves forward when hovered over (instead of the default arrow in a circle).
 
 ## What's Included?
 
@@ -191,15 +165,15 @@ Other files of note include:
 ## Browser Support
 Many Hover.css effects rely on CSS3 features such as transitions, animations, transforms and pseudo-elements, for that reason, effects may not fully work in older browsers.
 
-- [Transitions](http://caniuse.com/#search=transitions) and [Animations](http://caniuse.com/#search=animations) - not supported below Internet Explorer 10
-- [Transforms](http://caniuse.com/#search=transforms) - not supported below Internet Explorer 9
+- [Transitions](http://caniuse.com/#search=transitions) and [Animations](http://caniuse.com/#search=animations) - not supported below Internet Explorer 9
+- [Transforms](http://caniuse.com/#search=transforms) - not supported below Internet Explorer 10
 - [Generated Content (pseudo-elements)](http://caniuse.com/#search=pseudo-elements) - not supported below Internet Explorer 8
 
 Aside from the above mentioned browsers, Hover.css is supported across all major browsers. Please see [caniuse.com](http://caniuse.com/) for full support for many web technologies and test your webpages accordingly. It is recommended to apply fallback effects for older browsers, using CSS supported by those browsers or a feature testing library such as [Modernizr](http://modernizr.com/).
 
 ## Using Grunt for Development
 
-Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/) or your local IP for network testing. With Grunt running, Sass or LESS will be preprocessed (depending on whether you work out of the `scss` or `less` folder) and CSS files will be minified.
+Grunt is non-essential but can speed up development. With [Grunt installed](http://gruntjs.com/getting-started), run `grunt` from the command line to set up a development server accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/). With Grunt running, Sass or LESS will be preprocessed (depending on whether you work out of the `scss` or `less` folder) and CSS files will be minified.
 
 **Note:** Originally Grunt was set up to autoprefix CSS properties but to make the project as accessible as possible, this is no longer the case. The `prefixed(property, value)` Sass/LESS mixin should be used for browser prefixing instead. See [Using Sass/LESS for Development](#using-sassless-for-development) and [Using LESS for Development].
 
@@ -263,57 +237,30 @@ The `$includeClasses` / `@includeClasses` option by default is set to `true` and
 
 If you'd like to contribute your own effects, please see the [Contributing Guide](https://github.com/IanLunn/Hover/blob/master/CONTRIBUTING.md).
 
-## Licenses
+## License
+Hover.css is open source, and made available under a [MIT License](http://www.opensource.org/licenses/mit-license.php). Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
 
-Hover.css is made available under a free personal/open source or paid commercial licenses depending on your requirements. To compare licenses please visit the [Ian Lunn Design Limited Store](https://ianlunn.co.uk/store/licenses/) and [purchase a commercial license here](https://ianlunn.co.uk/store/hover-css/).
-
-### Personal/Open Source
-
-For personal/open source use, Hover.css is made available under a [MIT license](https://opensource.org/licenses/MIT)
-
-- Use in unlimited personal applications
-- Your application can't be sold
-- Your modifications remain open-source
-- Free updates
-
-[Read full license](https://ianlunn.co.uk/store/licenses/personal/)
-
-### Commercial
-
-For commercial use, Hover.css is made available under Commercial, Extended Commercial, and OEM Commercial licenses.
-
-#### Commercial License
-
-- Use in 1 application
-- Sell your application once only (e.g. a website sold to a client)
-- Your code is kept proprietary, to yourself
-- Free updates to the major version
-
-[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/commercial/)
-
-#### Extended Commercial License
-
-- Use in unlimited applications
-- Sell your applications an unlimited number of times (e.g. a website template sold on a theme store)*
-- Your code is kept proprietary, to yourself
-- Free updates to the major version
-
-*With the exception of applications that allow end users to produce separate applications. See the OEM Commercial License.
-
-[Purchase](https://ianlunn.co.uk/store/hover-css/?attribute_pa_licenses=extended-commercial) | [Read full license](https://ianlunn.co.uk/store/licenses/extended-commercial/)
-
-#### OEM Commercial License
-
-Should your application enable end users to produce separate applications that incorporate Ian Lunn Design Limited's software, for example, a development toolkit, library, or application builder, you must obtain an OEM Commercial License. Please [contact us](https://ianlunn.co.uk/contact/) for more information about the OEM Commercial License.
-
-### MIT License (Pre v2.2.0 / 24th March 2017)
-
-Hover.css was previously made available under a MIT License for both commercial and non-commercial use. Anyone that obtained a MIT license for commercial use before v2.2.0 (24th March 2017) may continue to use Hover.css versions prior to v2.2.0 under that same license.
-
-If you'd like to upgrade to v2.2.0 or above, or would like to simply show your support for Hover.css (we'd much appreciate it!), please purchase an up-to-date commercial license. [Purchase a Commercial License](https://ianlunn.co.uk/store/hover-css/).
+Retaining the author information at the top of `css/hover.css` and placing it on your credits page or humans.txt is much appreciated.
 
 ## Hire Ian Lunn
 
 [Ian Lunn](http://ianlunn.co.uk) is a Freelance Front-end Developer and author of [CSS3 Foundations](http://css3foundations.com/).
 
 Hire [Ian](http://ianlunn.co.uk) for responsive websites, WordPress websites, JavaScript, animation, and optimization.
+
+## Support Future Development
+
+To support the future development of Hover.css and other open source projects created by [Ian Lunn](https://github.com/IanLunn), please consider making a donation.
+
+Your donation is not-for-profit (or beer!), and will allow Ian to spend a little less time on client projects and more time supporting and creating open source software.
+
+Thank you.
+
+**Bitcoin:**
+
+Bitcoin donations may be sent to the following address:
+
+<div style="text-align: center;">
+<a href="bitcoin:1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd?label=Hover.css%20Development"><img src="http://ianlunn.co.uk/images/btc-donate.jpg" /></a>
+<p>1KEbFvcXL8m6LogG2wjSUFz2xH6PeN6jRd</p>
+</div>

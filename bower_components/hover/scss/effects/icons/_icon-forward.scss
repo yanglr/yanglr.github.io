@@ -1,9 +1,16 @@
 /* Icon Forward */
 @mixin icon-forward {
 	@include hacks();
+	position: relative;
+	padding-right: 2.2em;
 	@include prefixed(transition-duration, $fastDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f138";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-duration, $fastDuration);
 		@include prefixed(transition-property, transform);
@@ -14,7 +21,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			@include prefixed(transform, translateX(4px));
 		}
 	}

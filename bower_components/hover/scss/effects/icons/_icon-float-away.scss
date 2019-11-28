@@ -13,9 +13,20 @@
 /* Icon Float Away */
 @mixin icon-float-away {
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.hvr-icon {
-		@include prefixed(transform, translateZ(0));
+	&:before,
+	&:after {
+		content: "\f055";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
+	}
+
+	&:after {
+		opacity: 0;
 		@include prefixed(animation-duration, #{$slowDuration});
 		@include prefixed(animation-fill-mode, forwards);
 	}
@@ -24,7 +35,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:after {
 			@include prefixed(animation-name, #{$nameSpace}-icon-float-away);
 			@include prefixed(animation-timing-function, ease-out);
 		}

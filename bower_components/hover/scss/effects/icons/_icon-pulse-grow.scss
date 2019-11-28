@@ -7,8 +7,15 @@
 
 @mixin icon-pulse-grow {
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.hvr-icon {
+	&:before {
+		content: "\f015";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 		@include prefixed(transition-timing-function, ease-out);
 	}
@@ -17,7 +24,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			@include prefixed(animation-name, #{$nameSpace}-icon-pulse-grow);
 			@include prefixed(animation-duration, $mediumDuration);
 			@include prefixed(animation-timing-function, linear);

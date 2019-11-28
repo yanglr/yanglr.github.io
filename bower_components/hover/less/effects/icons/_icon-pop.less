@@ -7,9 +7,16 @@
 
 .icon-pop() {
 	.hacks();
+	position: relative;
+	padding-right: @spaceBetweenTextAndArrows;
 	.prefixed(transition-duration, @mediumDuration);
 
-	.hvr-icon {
+	&:before {
+		content: "\f005";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-duration, @mediumDuration);
 		.prefixed(transition-property, transform);
@@ -20,7 +27,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pop");
 			.prefixed(animation-duration, @mediumDuration);
 			.prefixed(animation-timing-function, linear);

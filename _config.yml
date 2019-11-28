@@ -6,25 +6,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 极客玩家 # ex. 
-name: Bravo Yeung # 
-email: enjoy233@foxmail.com
-location: Shanghai # ex. Nice, France
-company: CC
-company_url: 
-github_url: https://github.com/yanglr
-github_username: yanglr # ex. DONGChuan
-description: 极简匠人
-favicon: favicon.png # Image must be in assets/images
-repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.github.io
+title:  纯洁的微笑
+subtitle: 分享技术，品味人生
+name: 纯洁的微笑 
+email: ityouknow@126.com
+description: 本站是纯洁的微笑的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
+keywords: ityouknow,纯洁的微笑,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+encoding: "utf-8"
+favicon: favicon.ico 
 
-# The base hostname & protocol for your site
-# For local test, please use http://localhost:4000
-# For production, use your github page url. ex. http://dongchuan.github.io
-url: http://localhost:4000
+repository: ityouknow/ityouknow.github.io
+github_url: https://github.com/ityouknow
+url: http://www.ityouknow.com
+enforce_ssl: ityouknow.com
 
 ## Gem
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-geo-pattern
   - rouge
@@ -46,48 +43,205 @@ defaults: []
 kramdown:
   input: GFM
   enable_coderay: true
+  syntax_highlighter: rouge
 
-# Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+syntax_highlighter_opts:
+   coderay_line_numbers:  nil
 
 # Pagination
-paginate: 10
+paginate: 12
 paginate_path: 'page:num'
 
-# Navigation. If you do not like these modules, just remove them :D
+# Navigation. top menu list
+menus:
+
+  -
+    href: /python.html
+    label: Python  
+    target: _self
+
+  -
+    href: /it.html
+    label: IT
+    target: _self
+
+  -
+    href: /zsxq.html
+    label: 星球
+    target: _self   
+
+  -
+    href: /life.html
+    label: 故事
+    target: _self
+
+  -
+    href: /arch.html
+    label: 架构
+    target: _self
+
+  -
+    href: /link.html
+    label: 友链
+    target: _self
+
+
+
+# Navigation. main menu list
 navs:
+
   -
     href: /
     label: Home
 
   -
-    href: /open-source
-    label: Open-Source
+    href: /spring-boot.html
+    label: Spring Boot
+    target: _self
+    subnav:
+
+      -
+        subHref: /spring-boot.html
+        subLabel: Spring Boot
+
+      -
+        subHref: /spring-cloud.html
+        subLabel: Spring Cloud
 
   -
-    href: /blog
-    label: Blog
+    href: /spring-cloud.html
+    label: Spring Cloud
+    target: _self
 
   -
-    href: /bookmark
-    label: Bookmark
+    
+    href: http://www.justdojava.com
+    label: Java
+    target: _blank
+    subnav:
+
+      -
+        subHref: /java.html
+        subLabel: Jvm 系列文章
+        
+      -
+        subHref: http://www.justdojava.com
+        subLabel: Java 极客技术
+        target: _blank
 
   -
-    href: /about
+    href: /archives.html
+    label: Archives
+    target: _self
+
+  -
+    href: /about.html
     label: About
+    target: _self
+
+
+# labels. my blog key words
+labels:
+
+  -
+    href: /payment.html
+    label: 支付     
+    target: _self
+
+  -
+    href: /fastdfs.html
+    label: FastDFS
+    target: _blank
+
+  -
+    href: /mongodb.html
+    label: MongoDB
+    target: _blank
+
+  -
+    href: /docker.html
+    label: Docker
+    target: _blank
+
+  -
+    href: /open-source.html
+    label: Code  
+    target: _blank
+
+  -
+    href: /gitchat.html
+    label: Chat
+    target: _blank
+
+  -
+    href: /geektime.html
+    label: 极客
+    target: _blank
+
+
+# selected articles
+classes:
+
+  -
+    href: /life.html
+    name: 我的故事
+    describe: 生活就是故事，故事就是生活
+
+  -
+    href: /arch.html
+    name: 架构师之路
+    describe: 一个架构师的自我修养
+
+  -
+    href: /java.html
+    name: Java 系列文章
+    describe: Java 之根基，Java 程序员必学
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
 
 # Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
+side_bar_repo_limit: 6 # Number of repos to show
 
 # Google Analytics
-analytics :
-  provider : google
-  google :
-      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
-skill_mobile_app_keywords: [Android, Sketch UI Desgin]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: ityouknow
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: ityouknow
+    repo: blog-comments
+    oauth:
+        client_id: 61bfc53d957e74e78f8f
+        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: ityouknow
+    repo: blog-comments
+    clientID: 61bfc53d957e74e78f8f
+    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true

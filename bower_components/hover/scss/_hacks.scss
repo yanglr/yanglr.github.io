@@ -4,13 +4,18 @@
 
 @mixin hardwareAccel() {
 	// Improve performance on mobile/tablet devices
-	// Perspective reduces blurryness of text in Chrome
-	@include prefixed(transform, perspective(1px) translateZ(0));
+	@include prefixed(transform, translateZ(0));
 }
 
 @mixin improveAntiAlias() {
 	// Improve aliasing on mobile/tablet devices
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@mixin fontSmooth() {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @mixin forceBlockLevel() {
@@ -23,4 +28,5 @@
 	@include forceBlockLevel();
 	@include hardwareAccel();
 	@include improveAntiAlias();
+	@include fontSmooth();
 }

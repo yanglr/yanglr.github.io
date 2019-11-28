@@ -13,9 +13,21 @@
 /* Icon Sink Away */
 @mixin icon-sink-away {
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.hvr-icon {
+	&:before,
+	&:after {
+		content: "\f056";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
+	}
+
+	&:after {
+		opacity: 0;
 		@include prefixed(animation-duration, #{$slowDuration});
 		@include prefixed(animation-fill-mode, forwards);
 	}
@@ -24,7 +36,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:after {
 			@include prefixed(animation-name, #{$nameSpace}-icon-sink-away);
 			@include prefixed(animation-timing-function, ease-out);
 		}

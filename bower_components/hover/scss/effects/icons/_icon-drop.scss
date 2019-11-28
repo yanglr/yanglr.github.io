@@ -19,8 +19,16 @@
 /* Icon Drop */
 @mixin icon-drop {
 	@include hacks();
+	position: relative;
+	padding-right: #{$spaceBetweenTextAndArrows};
 
-	.hvr-icon {
+	&:before {
+		content: "\f041";
+		position: absolute;
+		right: 1em;
+		opacity: 1;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		@include prefixed(transform, translateZ(0));
 	}
 
@@ -28,7 +36,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			opacity: 0;
 			@include prefixed(transition-duration, #{$mediumDuration});
 			@include prefixed(animation-name, #{$nameSpace}-icon-drop);

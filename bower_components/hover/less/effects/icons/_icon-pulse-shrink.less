@@ -7,8 +7,15 @@
 
 .icon-pulse-shrink() {
 	.hacks();
+	position: relative;
+	padding-right: @spaceBetweenTextAndArrows;
 
-	.hvr-icon {
+	&:before {
+		content: "\f015";
+		position: absolute;
+		right: 1em;
+		padding: 0 1px;
+		font-family: FontAwesome;
 		.prefixed(transform, translateZ(0));
 		.prefixed(transition-timing-function, ease-out);
 	}
@@ -17,7 +24,7 @@
 	&:focus,
 	&:active {
 
-		.hvr-icon {
+		&:before {
 			.prefixed(animation-name, ~"@{nameSpace}-icon-pulse-shrink");
 			.prefixed(animation-duration, @mediumDuration);
 			.prefixed(animation-timing-function, linear);
