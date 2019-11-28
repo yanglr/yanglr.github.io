@@ -100,8 +100,8 @@ navs:
         subLabel: k8s
 
   -
-    href: /k8s-cloud.html
-    label: k8s Cloud
+    href: /k8s.html
+    label: k8s
     target: _self
 
   -
