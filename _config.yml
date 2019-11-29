@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  极客玩家
-subtitle: 
+title:  极客玩家Bravo Yeung
+subtitle: 爱生活，爱技术
 name: Bravo Yeung
 email: yanglr@126.com
-description: 
+description: 本站是极客玩家Bravo Yeung的技术分享博客。内容涵盖 .NET开发, PHP开发, 算法面试题等等~
 keywords: geekplayer, geekplayers, 极客玩家, .NET, C#, .NET Core,PHP,RSS,k8s,生活故事,一线,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客, .NET,Python,
 encoding: "utf-8"
 favicon: favicon.ico
