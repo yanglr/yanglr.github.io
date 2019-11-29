@@ -180,7 +180,6 @@ side_bar_repo_limit: 6 # Number of repos to show
 
 # For about.html. Fell free to create your own!
 skill_software_keywords: [.NET, MySQL, Oracle, Design Patterns]
-skill_j2ee_keywords: [k8s]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, MongoDB, Redis, PHP,  Boostrap]
 skill_mobile_app_keywords: [vuejs, vue, xamarin]
 
