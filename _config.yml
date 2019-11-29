@@ -81,28 +81,12 @@ menus:
     target: _self
 
 
-
 # Navigation. main menu list
 navs:
 
   -
     href: /
     label: Home
-
-  -
-    href: /k8s.html
-    label: k8s
-    target: _self
-    subnav:
-
-      -        
-        subHref: /k8s.html
-        subLabel: k8s
-
-  -
-    href: /k8s.html
-    label: k8s
-    target: _self
 
   -
     
@@ -119,6 +103,21 @@ navs:
         subHref: http://enjoy233.cn
         subLabel: .NET 极客技术
         target: _blank
+
+  -
+    href: /algo.html
+    label: 算法
+    target: _self
+
+  -
+    href: /k8s.html
+    label: k8s
+    target: _self
+    subnav:
+
+      -        
+        subHref: /k8s.html
+        subLabel: k8s
 
   -
     href: /archives.html
