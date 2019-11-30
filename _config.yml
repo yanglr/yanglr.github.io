@@ -199,8 +199,8 @@ gitment:
     owner: yanglr
     repo: blog-comments
     oauth:
-        client_id: 
-        client_secret: 
+        client_id: 22eb6462c987e7a79860  # owner: yanglr
+        client_secret: 6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: yanglr
