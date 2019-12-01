@@ -28,6 +28,11 @@
   </ul>
 </div>
 
+<div id="search-demo-container">
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+  </div>
+
 <h3 class="sidebar-title">精选文章</h3>
 
 {% for article in site.classes  %}
@@ -94,3 +99,16 @@
 
     });
 </script>
+
+<script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+      noResultsText: 'No results found',
+      limit: 10,
+      fuzzy: false,
+      exclude: ['Welcome']
+    })
+  </script>
