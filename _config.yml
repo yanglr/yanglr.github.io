@@ -209,3 +209,9 @@ gitalk:
     clientSecret: 6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : true
+
+simple_jekyll_search:
+     # 是否支持全文搜索
+     fulltext: false
+     # 最多显示多少条搜索结果
+     limit: 10
