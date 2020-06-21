@@ -1,0 +1,47 @@
+<div class="wikidoc">
+<p>Recently, there was logging ability added to Snoop to see why Snoop does not attach on certain machines.&nbsp;</p>
+<p>If nothing happens when trying to snoop a program, take these troubleshooting steps:</p>
+<p>1) Go directly to the folder containing the Snoop.exe program being run. <br>
+2) Look for the file SnoopLog.txt in your temp directory. Make sure that the contents of the file are similar to this:
+<br>
+<em>10/09/2011 19:06:02 : Starting the injection process...</em> <br>
+<em>10/09/2011 19:06:02 : GetModuleHandleEx successful</em> <br>
+<em>10/09/2011 19:06:02 : Got process id</em> <br>
+<em>10/09/2011 19:06:02 : Got process handle</em> <br>
+<em>10/09/2011 19:06:02 : VirtualAllocEx successful</em> <br>
+<em>10/09/2011 19:06:02 : SetWindowsHookEx successful</em> <br>
+<em>10/09/2011 19:06:05 : Successfully injected Snoop for process SnoopTestCase.vshost (PID = 7548)</em></p>
+<p>(Make sure that the file ends with &quot;Successfully injected Snoop for process <em>
+processname </em>(PID = <em>process id</em>)&quot;</p>
+<p>If the test above does <em>not</em> pass, contact one of the developers/coordinators (or post to a Discission), and specify what the results in the file are. If the test above passes, it means that Snoop successfully injected itself into the process being
+ &quot;snooped,&quot; and the problem lies in the part after the injection process. After Snoop has successfully injected itself into the process, it's running inside the process, and can write to the output window of the debugger debugging the process. At this point,
+ look at the output window of the WPF application being debugged (and attempted to be snooped). The output window should have contents similar to this:</p>
+<p><em>other messages written to output window</em> <br>
+Got WM_GOBABYGO message <br>
+<em>other messages written to output window</em> <br>
+acmLocal = C:\XXX\Snoop.exe$Snoop.SnoopUI$GoBabyGo <br>
+<em>other messages written to output window</em> <br>
+About to load assembly C:\XXX\Snoop.exe <br>
+<em>other messages written to output window</em> <br>
+About to load type Snoop.SnoopUI <br>
+<em>other messages written to output window</em> <br>
+Just loaded the type Snoop.SnoopUI <br>
+<em>other messages written to output window</em> <br>
+About to invoke GoBabyGo on type Snoop.SnoopUI <br>
+<em>other messages written to output window</em> <br>
+Return value of GoBabyGo on type Snoop.SnoopUI is True</p>
+<p>If you don't see the messages above, try doing this: right before trying to &quot;snoop&quot; your application, try setting Visual Studio to break on
+<em>all</em> CLR exceptions. Note that you may need to disable&nbsp;<em>Just My Code
+</em>by&nbsp;<strong>unchecking&nbsp;</strong>the <em>Enable Just My Code (Managed Only)</em> option.</p>
+<p>Here are the steps to breaking on every thrown exception: <br>
+1) Go to the Debug menu in the Visual Studio instance debugging your application.
+<br>
+2) Choose the &quot;Exceptions&quot; menu. An exceptions dialog box should show up. <br>
+3) Check &quot;Common Language Runtime Exceptions&quot; under the &quot;Thrown&quot; column. <br>
+4) Now try snooping the application. If the SnoopLog.txt contains the contents mentioned above, Visual Studio will break when there's a problem trying to snoop the application. From there, you can use this information to try to troubleshoot (or you can post
+ the information on a Discussions panel, and a developer/coordinator will get back to you).</p>
+<p>Here are the steps to disable <em>Just My Code</em>:<br>
+1) Go to tools-&gt;Options.<br>
+2) &nbsp;Choose Debugging.<br>
+3) Uncheck &nbsp;<em>Enable Just My Code (Managed Only).</em></p>
+</div><div class="ClearBoth"></div>
