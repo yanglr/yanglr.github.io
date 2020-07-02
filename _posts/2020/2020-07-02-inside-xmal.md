@@ -1,4 +1,11 @@
-# 深入浅出XAML
+---
+layout: post
+title: 深入浅出XAML
+no-post-nav: true
+category: dotNET
+tags: [wpf, .NET]
+excerpt: 
+---
 
 **Inside XAML**
 
