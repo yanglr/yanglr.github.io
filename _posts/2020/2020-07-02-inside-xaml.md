@@ -2,10 +2,15 @@
 layout: post
 title: 深入浅出XAML
 no-post-nav: true
-category: dotNET
-tags: [wpf, .NET]
-excerpt: 
+category: life
+tags: [wpf]
+excerpt: 深入浅出XAML
 ---
+
+今天来聊聊深入浅出XAML的那些事~
+
+
+-------------
 
 **Inside XAML**
 
