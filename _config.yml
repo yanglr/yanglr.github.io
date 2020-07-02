@@ -90,8 +90,8 @@ navs:
 
   -
     
-    href: http://enjoy233.cn
-    label: .NET
+    href: http://enjoy233.cnblogs.com
+    label: dotNET
     target: _blank
     subnav:
 
@@ -100,7 +100,7 @@ navs:
         subLabel: 
         
       -
-        subHref: http://enjoy233.cn
+        subHref: http://enjoy233.cnblogs.com
         subLabel: .NET 极客技术
         target: _blank
 
