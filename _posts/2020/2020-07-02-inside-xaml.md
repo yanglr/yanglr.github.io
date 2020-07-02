@@ -2,10 +2,15 @@
 layout: post
 title: 深入浅出XAML
 no-post-nav: true
-category: dotNET
-tags: [wpf, .NET]
-excerpt: 
+category: life
+tags: [wpf]
+excerpt: 深入浅出XAML
 ---
+
+今天来聊聊深入浅出XAML的那些事~
+
+
+-------------
 
 **Inside XAML**
 
@@ -28,9 +33,10 @@ XAML用户界面的构建方式与HTML Web用户界面的构建方式非常相�
 
 这个特定的例子显示一个Text元素和一个Button元素，同时使用FlowPanel 在屏幕上排列它们。这些全都是Avalon定义的类，Avalon 是WinFX 的用户界面框架。Text 和Button元素是不言而喻的。FlowPanel 是窗格的一个例子。窗格用于根据特定的布局方法安排元素。FlowPanel 在屏幕上安排元素的方式与通常对文本进行格式编排的方式相同——元素从左至右地“流”过可用空间，在当前行没有更多空间时移到下一行上。结果如下所示。（第一幅图片显示了这样一个窗口，它足够宽到可在一行上同时包含两个元素。第二幅图片显示了当窗口不足够宽时所发生的情况 —— FlowPanel 将元素分割到两行上。）Avalon提供了针对不同布局技术的各种窗格类型，包括固定布局、停靠，以及基于列的文本流。
 
-![img1](https://img2020.cnblogs.com/blog/436938/202007/436938-20200702080422563-280235559.png)
+![img1](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img1.png
+)
 
-![img2](https://img2020.cnblogs.com/blog/436938/202007/436938-20200702080427763-721073277.png)
+![img2](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img2.png)
 
 <br/>
 
@@ -168,7 +174,7 @@ MSAvalon.Windows.Media.Color.FromARGB(255, 255, 0, 0));
 与依赖通常的类型转换器机制来将字符串转换为画笔不同，这个例子显式地使用标记来创建了一个画笔。在此例中，我们创建了一个相当复杂的画笔——具有许多填充阶次的LinearGradientBrush。这个例子展示了两个复杂属性，一个属性嵌套在另一个属性的内部。<Button.Background>元素设置按钮的背景属性， 但是在这个元素的内部，<LinearGradientBrush.GradientStops>元素设置线性渐变画笔的GradientStops属性。复杂属性的语法与其他任何XAML属性的语法完全相同——它允许建立对象的树结构。唯一的区别在于，这些属性然后被指定为它们所应用到的元素的属性，而不是成为那些元素的子元素。结果如下所示：
 
 
-![Click me](https://img2020.cnblogs.com/blog/436938/202007/436938-20200702080506384-1343875875.png)
+![Click me](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img3.png)
 
 <br/>
 
