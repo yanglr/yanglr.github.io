@@ -5,7 +5,7 @@ no-post-nav: true
 category: life
 
 sitemap:
-  lastmod: 2014-01-23
+  lastmod: 20120-07-02
   priority: 0.7
   changefreq: 'monthly'
   exclude: 'yes'
