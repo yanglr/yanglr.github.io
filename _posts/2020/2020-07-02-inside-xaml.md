@@ -3,6 +3,13 @@ layout: post
 title: 深入浅出XAML
 no-post-nav: true
 category: life
+
+sitemap:
+  lastmod: 2014-01-23
+  priority: 0.7
+  changefreq: 'monthly'
+  exclude: 'yes'
+
 tags: [wpf]
 excerpt: 深入浅出XAML
 ---
