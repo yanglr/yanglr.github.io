@@ -1,0 +1,7 @@
+
+<div class="wikidoc">
+<p>Snoop.csproj can be built using VS Express, but the complete solution requires the C&#43;&#43; compiler found in full VS. The C&#43;&#43; portion of the solution is provided pre-built and has no WPF dependencies, so you should not have to rebuild it to run.</p>
+<p>If any of the ManagedInjector (orManagedInjectorLauncher) projects fail to build, try unloading them from the solution, and rebuild the solution. Snoop detects the environment at runtime, and depending on the environment, Snoop runs the appropriate ManagedInjectorLauncher
+ program at runtime (which is the one that probably built successfully) depending on the environment. For example, if the application that snoop is trying to snoop is built using the 4.0 framework built for the 64 bit process, snoop will run the ManagedInjectorLauncher64-4.0.exe
+ program to inject Snoop into the application, and start &quot;snooping&quot; it. Therefore, if the other ManagedInjector projects fail to build (probably because of an environmental issue), it won't affect snoop at runtime.</p>
+</div><div class="ClearBoth"></div>
