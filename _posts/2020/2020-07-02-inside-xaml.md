@@ -5,9 +5,9 @@ no-post-nav: true
 category: life
 
 sitemap:
-  lastmod: 20120-07-02
+  lastmod: 2020-07-02
   priority: 0.7
-  changefreq: 'monthly'
+  changefreq: 'weekly'
   exclude: 'yes'
 
 tags: [wpf]
