@@ -251,6 +251,7 @@
 .markdown-body table {
   border-spacing: 0;
   border-collapse: collapse;
+  font-size: 16px !important;
 }
 
 .markdown-body td,
@@ -633,6 +634,13 @@
 .markdown-body .highlight pre {
   margin-bottom: 0;
   word-break: normal;
+
+  background-color: transparent !important;  
+  border-width: 0 !important;  
+}
+
+.markdown-body table th, .markdown-body table td {
+    background-color: #f6f8fa !important;
 }
 
 .markdown-body .highlight pre,
