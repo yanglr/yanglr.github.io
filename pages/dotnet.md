@@ -6,6 +6,7 @@ subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; ".
 menu: dotnet
 css: ['blog-page.css']
 permalink: /dotnet
+keywords: csharp, dotnet, vb, powershell, fsharp, wpf, windows forms, asp.net, .net core
 ---
 
 <div class="row">

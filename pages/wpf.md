@@ -1,11 +1,12 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: "WPF-CS架构的王者"
+titlebar: wpf
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "WPF-MVVM框架的首创"
+menu: wpf
 css: ['blog-page.css']
-permalink: /life
+permalink: /wpf
+keywords: wpf, xaml
 ---
 
 <div class="row">
@@ -14,7 +15,7 @@ permalink: /life
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='wpf' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
