@@ -46,7 +46,14 @@ kramdown:
   syntax_highlighter: rouge
 
 syntax_highlighter_opts:
-   coderay_line_numbers:  nil
+   coderay_line_numbers: linline
+
+# Date / Time format
+## uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD HH:mm:ss
+time_format: HH:mm:ss
 
 # Pagination
 paginate: 12
