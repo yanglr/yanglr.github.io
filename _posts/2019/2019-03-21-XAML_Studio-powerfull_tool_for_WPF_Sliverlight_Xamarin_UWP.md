@@ -24,7 +24,7 @@ XAML Studio，用来调试REST服务的绑定挺棒的~
 
 今天路过 [https://channel9.msdn.com/](https://channel9.msdn.com/) 浏览 `WPF`相关的学习视频时，遇到微软推荐的相关视频 - [XAML sutdio简介](https://channel9.msdn.com/Shows/On-NET/Introducing-XAML-Studio)，好奇心使然，目测是和Visual Studio Code类似而强大的牛牛工具，就好好看完了视频。
 
-![XAML studio](https://ask.qcloudimg.com/http-save/4599976/vc3jimovcp.jpeg)
+![XAML studio](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio0.jpeg)
 
 XAML sutdio是微软Garage实验小组的作品，其特色是为XAML提供了如下一些功能。
 
@@ -47,15 +47,15 @@ XAML sutdio是微软Garage实验小组的作品，其特色是为XAML提供了�
 
 XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Code来类比更合适。除了编辑器， 在左侧还有文件，数据源，调试和工具箱这几个选项。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/k2zf1fhkty.png)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio1.png)
 
 编辑器的行为与您期望的一样。 您可以在底部向XAML添加控件，顶部预览面板会对更新做出响应。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/n4odyugdt6.gif)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio2.gif)
 
 工具箱提供了一个可以搜索的控件列表，然后单击以插入到XAML中。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/fbnz3s0lh7.gif)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio3.gif)
 
 与Visual Studio中的XAML编辑器不同，VS中的实时预览不提供任何类型的拖放体验。
 
@@ -65,17 +65,17 @@ XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Cod
 
 要绑定到静态JSON，可以单击数据源窗格，然后直接在编辑器中输入JSON即可。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/1a22eqsqt7.png)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio4.png)
 
 要绑定到REST API，可以单击数据源面板顶部的两个箭头以打开一个文本框，您可以在其中输入REST API。 输入REST API URI然后单击刷新按钮后，JSON将更新，XAML预览也将更新。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/1is6qykkgu.png)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio5.png)
 
 ## 调试数据绑定
 
 调试功能允许你查看哪些数据绑定实际成功。 打开调试模式后，您将能够看到当前绑定以及可用绑定的历史记录。
 
-![img](https://ask.qcloudimg.com/http-save/4599976/r53r9r46yb.gif)
+![img](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio6.gif)
 
 ## 伟大的开始
 
@@ -104,7 +104,7 @@ XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Cod
 
 上方立马就出现了代码预览~
 
-![code preview](https://ask.qcloudimg.com/http-save/4599976/i83ifo4ks4.png)
+![code preview](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio7.png)
 
 知道`HTML`的人都应该知道这里 `<Run>`标签的左右，其实和HTML中的`<p>`标签有点像，除此之外，其他的XAML部分和其他地方一样~
 
