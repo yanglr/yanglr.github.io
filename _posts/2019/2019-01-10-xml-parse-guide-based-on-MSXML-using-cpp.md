@@ -19,16 +19,16 @@ excerpt: 大白技术控 - 史上最最靠谱，又双叒叒(ruò,zhuó)简单�
 
 -------------
 
-
-### 史上最最靠谱，又双叒叒简单的基于MSXML的XML解析指南
-
 最近做C++相关的项目，遇到同时使用COM和MSXML来解析XML文件中信息的问题，这类问题如果做MFC开发也会经常用到。
 在网上搜了一整圈，确实很难找到可用的code，总算自己研究出高效而简单的方法，借此机会总结一下，并分享给大家。
 
 附 VS Project镜像: 
-SimpleParser4MSXML-cpp: C++语言写的MSXML的简单使用示例, COM 和 MFC 开发中比较常用。
+
+SimpleParser4MSXML-cpp: C++语言写的MSXML的简单使用示例, COM 和 MFC 开发中比较常用:
+
 <https://github.com/yanglr/SimpleParser4MSXML-cpp>
-点击”Raw”可看到源码，欢迎fork或star~ 
+
+点击“Raw”可看到源码，欢迎fork或star~ 
 
 <br>
 首先简要列举一下MSXML技术的基本特点。
