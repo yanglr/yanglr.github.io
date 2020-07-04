@@ -10,4 +10,3 @@ permalink: /about
 
 {% include about.html %}
 
-

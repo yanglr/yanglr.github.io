@@ -2,10 +2,11 @@
 layout: page
 title: 算法也可以很有趣
 titlebar: algo
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "算法也可以很有趣"
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 算法也可以很有趣
 menu: algo
 css: ['blog-page.css']
 permalink: /algo
+keywords: algo, algorithm, leetcode, interview
 ---
 
 <div class="row">

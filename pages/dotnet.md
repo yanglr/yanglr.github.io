@@ -2,7 +2,7 @@
 layout: page
 title: ".NET极客玩法, 你值得拥有"
 titlebar: dotnet
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; ".NET极客玩法，你值得拥有"
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; .NET极客玩法，你值得拥有
 menu: dotnet
 css: ['blog-page.css']
 permalink: /dotnet
