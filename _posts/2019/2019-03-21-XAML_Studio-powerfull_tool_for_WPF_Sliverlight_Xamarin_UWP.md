@@ -85,7 +85,7 @@ XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Cod
 
 我在编辑器中创建了一段这样的代码:
 
-```
+```xml
 <Page
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
