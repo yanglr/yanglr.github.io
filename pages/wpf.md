@@ -15,7 +15,7 @@ keywords: wpf, xaml
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='wpf' post.categories contains 'wpf' or post.keywords contains 'xaml' %}
+                {% if post.category=='wpf' or post.categories contains 'wpf' or post.keywords contains 'xaml' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
