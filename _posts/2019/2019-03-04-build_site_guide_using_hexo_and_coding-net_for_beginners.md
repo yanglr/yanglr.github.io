@@ -1,11 +1,12 @@
 ﻿---
 layout: post
 title: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程
+date: 2019-03-04 21:01:04
 no-post-nav: true
 category: it
 
 sitemap:
-  lastmod: 2019-03-04 21:01:00
+  lastmod: 2019-03-04 21:01:04
   priority: 0.7
   changefreq: 'weekly'
   exclude: 'yes'
