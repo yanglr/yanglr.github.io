@@ -3,7 +3,7 @@ layout: post
 title: 从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器
 no-post-nav: true
 categories: 
-- [wpf, xaml]
+- [wpf, xaml, caliburn.micro]
 
 sitemap:
   lastmod: 2018-06-03 19:53:01
