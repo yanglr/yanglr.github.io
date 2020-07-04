@@ -3,7 +3,7 @@ title: 剑指offer面试题33 - 把数组排成最小的数
 date: 2016-10-01 01:19:07
 tags: [oj, 剑指offer]
 categories: 
-- 编程训练
+- [oj, 编程训练]
 ---
 
 
