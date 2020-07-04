@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ΢��XAML Studio - WPF, Sliverlight, Xamarin, UWP�ȼ��������ߵĸ���
+title: 微软XAML Studio - WPF、Sliverlight、Xamarin、UWP等技术开发者的福音
 date: 2019-03-21 02:46:04
 no-post-nav: true
 categories: 
@@ -13,77 +13,77 @@ sitemap:
   exclude: 'yes'
 
 tags: [wpf]
-excerpt: ��׼����� - ΢��XAML Studio - WPF, Sliverlight, Xamarin, UWP�ȼ��������ߵĸ���
+excerpt: 大白技术控 - 微软XAML Studio - WPF、Sliverlight、Xamarin、UWP等技术开发者的福音
 ---
 
-XAML Studio����������REST����İ�ͦ����~
+XAML Studio，用来调试REST服务的绑定挺棒的~
 
 -------------
 
-������ڼ�������`WPF`����Ŀ������ʹ��`Caliburn.Micro`��`Xceed`���Ѵ��롣ÿ�ε���xaml�ϵ�binding��������Ҫ��ĸϽš�
+最近又在继续倒腾`WPF`的项目，继续使用`Caliburn.Micro`和`Xceed`来堆代码。每次调试xaml上的binding，都有种要疯的赶脚。
 
-����·�� [https://channel9.msdn.com/](https://channel9.msdn.com/) ��� `WPF`��ص�ѧϰ��Ƶʱ������΢���Ƽ��������Ƶ - [XAML sutdio���](https://channel9.msdn.com/Shows/On-NET/Introducing-XAML-Studio)��������ʹȻ��Ŀ���Ǻ�Visual Studio Code���ƶ�ǿ���ţţ���ߣ��ͺúÿ�������Ƶ��
+今天路过 [https://channel9.msdn.com/](https://channel9.msdn.com/) 浏览 `WPF`相关的学习视频时，遇到微软推荐的相关视频 - [XAML sutdio简介](https://channel9.msdn.com/Shows/On-NET/Introducing-XAML-Studio)，好奇心使然，目测是和Visual Studio Code类似而强大的牛牛工具，就好好看完了视频。
 
 ![XAML studio](https://ask.qcloudimg.com/http-save/4599976/vc3jimovcp.jpeg)
 
-XAML sutdio��΢��Garageʵ��С�����Ʒ������ɫ��ΪXAML�ṩ������һЩ���ܡ�
+XAML sutdio是微软Garage实验小组的作品，其特色是为XAML提供了如下一些功能。
 
-**XAML Studio�������¹��ܣ�**
+**XAML Studio包含以下功能：**
 
-- ʵʱ�ҿɽ�����Ԥ������
-- ʵʱ�󶨺͵���
-- ���������ı༭��
-- �Զ�����ͻָ��ĵ�
-- ���ܸ�֪
-- �ĵ�������
-- ����ָ��
-- �����ռ�����
+- 实时且可交互的预览窗口
+- 实时绑定和调试
+- 数据上下文编辑器
+- 自动保存和恢复文档
+- 智能感知
+- 文档工具箱
+- 对齐指南
+- 命名空间助手
 
-������XAML studio�Ľ�����������ϸ����~
+下面结合XAML studio的界面对其进行详细介绍~
 
-[XAML Studio](https://www.microsoft.com/en-us/garage/profiles/xaml-studio/) ��΢��Garage��Ŀ���һ�������� Visual Studio���ܿ��ٴ���`XAML`UIԭ�͡�ʵʱԤ�����������ݰ󶨼��������๦�ܵ�һ������Ŀ�������°汾�ɴ� [Microsoft Store](https://www.microsoft.com/en-us/p/xaml-studio/9ntls214tkmq?rtc=1&activetab=pivot:overviewtab) ���а�װ��
+[XAML Studio](https://www.microsoft.com/en-us/garage/profiles/xaml-studio/) 是微软Garage项目组的一个不依赖 Visual Studio而能快速创建`XAML`UI原型、实时预览、调试数据绑定及其他更多功能的一个轻项目，其最新版本可从 [Microsoft Store](https://www.microsoft.com/en-us/p/xaml-studio/9ntls214tkmq?rtc=1&activetab=pivot:overviewtab) 进行安装。
 
-## �༭������
+## 编辑器功能
 
-XAML Studio�ı༭������һ��"������"��Visual Studio��������VS Code����ȸ����ʡ����˱༭���� ����໹���ļ�������Դ�����Ժ͹������⼸��ѡ�
+XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Code来类比更合适。除了编辑器， 在左侧还有文件，数据源，调试和工具箱这几个选项。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/k2zf1fhkty.png)
 
-�༭������Ϊ����������һ���� �������ڵײ���XAML���ӿؼ�������Ԥ������Ը���������Ӧ��
+编辑器的行为与您期望的一样。 您可以在底部向XAML添加控件，顶部预览面板会对更新做出响应。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/n4odyugdt6.gif)
 
-�������ṩ��һ�����������Ŀؼ��б���Ȼ�󵥻��Բ��뵽XAML�С�
+工具箱提供了一个可以搜索的控件列表，然后单击以插入到XAML中。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/fbnz3s0lh7.gif)
 
-��Visual Studio�е�XAML�༭����ͬ��VS�е�ʵʱԤ�����ṩ�κ����͵��Ϸ����顣
+与Visual Studio中的XAML编辑器不同，VS中的实时预览不提供任何类型的拖放体验。
 
-## ����(Դ)����
+## 数据(源)功能
 
-�����ͨ����̬JSON��JSON REST API�����ݰ󶨵�XAML�����
+你可以通过静态JSON或JSON REST API将数据绑定到XAML组件。
 
-Ҫ�󶨵���̬JSON�����Ե�������Դ����Ȼ��ֱ���ڱ༭��������JSON���ɡ�
+要绑定到静态JSON，可以单击数据源窗格，然后直接在编辑器中输入JSON即可。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/1a22eqsqt7.png)
 
-Ҫ�󶨵�REST API�����Ե�������Դ��嶥����������ͷ�Դ�һ���ı�������������������REST API�� ����REST API URIȻ�󵥻�ˢ�°�ť��JSON�����£�XAMLԤ��Ҳ�����¡�
+要绑定到REST API，可以单击数据源面板顶部的两个箭头以打开一个文本框，您可以在其中输入REST API。 输入REST API URI然后单击刷新按钮后，JSON将更新，XAML预览也将更新。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/1is6qykkgu.png)
 
-## �������ݰ�
+## 调试数据绑定
 
-���Թ���������鿴��Щ���ݰ�ʵ�ʳɹ��� �򿪵���ģʽ�������ܹ�������ǰ���Լ����ð󶨵���ʷ��¼��
+调试功能允许你查看哪些数据绑定实际成功。 打开调试模式后，您将能够看到当前绑定以及可用绑定的历史记录。
 
 ![img](https://ask.qcloudimg.com/http-save/4599976/r53r9r46yb.gif)
 
-## ΰ��Ŀ�ʼ
+## 伟大的开始
 
-�Ҷ�������ߵĵ����е����˷ܡ�  �⿴���ǽ�����VS Code��Monaco�༭���Ļ����Ͽ��������ģ���������ɫ���ṩ��һЩ��ݵĹ��ܡ� �Һ����⿴������İ󶨹��ܣ�����������Ϊ����ʹ���˼���JSON���ݣ������������ھͿ����ṩ�ǳ����İ󶨵��Թ��ܣ�����֪��Ŀǰ��Visual Studio�л�û�ṩ���ֹ��ܡ�
+我对这个工具的诞生感到很兴奋。  这看似是建立在VS Code和Monaco编辑器的基础上开发而来的，但它的特色是提供了一些便捷的功能。 我很乐意看到这里的绑定功能，不仅仅是因为这里使用了简洁的JSON数据，而且是它现在就可以提供非常棒的绑定调试功能，而我知道目前的Visual Studio中还没提供这种功能。
 
-## ������һ��ʵ����
+## 我们来一起实践吧
 
-���ڱ༭���д�����һ�������Ĵ���:
+我在编辑器中创建了一段这样的代码:
 
 ```
 <Page
@@ -102,15 +102,15 @@ XAML Studio�ı༭������һ��"������"��Visual Studio��������VS Code����ȸ����ʡ��
 </Page>
 ```
 
-�Ϸ������ͳ����˴���Ԥ��~
+上方立马就出现了代码预览~
 
 ![code preview](https://ask.qcloudimg.com/http-save/4599976/i83ifo4ks4.png)
 
-֪��`HTML`���˶�Ӧ��֪������ `<Run>`��ǩ�����ң���ʵ��HTML�е�`<p>`��ǩ�е��񣬳���֮�⣬������XAML���ֺ������ط�һ��~
+知道`HTML`的人都应该知道这里 `<Run>`标签的左右，其实和HTML中的`<p>`标签有点像，除此之外，其他的XAML部分和其他地方一样~
 
-�ðɣ������������λ����������~
+好吧，接下来就请各位慢慢享用了~
 
-**�ο����ӣ�**
+**参考链接：**
 
 [Microsoft Garage's XAML Studio Does Real-Time UWP UI Changes -- Visual Studio Magazine](https://visualstudiomagazine.com/articles/2019/01/23/xaml-studio.aspx)
 
@@ -120,21 +120,21 @@ XAML Studio�ı༭������һ��"������"��Visual Studio��������VS Code����ȸ����ʡ��
 
 <hr>
 
-��ӭ��������������Ĺ۵㣬һ��������ߡ��������������������µ�������ѧϰ���������������µ���ʶ����ӭת�������������ˡ�
+欢迎在留言区留下你的观点，一起讨论提高。如果今天的文章让你有新的启发，学习能力的提升上有新的认识，欢迎转发分享给更多人。
 
 <br>
 
-��ӭ��λ���߼��� **.NET��������Ⱥ**���ڹ��ںź�̨�ظ�**����Ⱥ��**����**��ѧϰ��**���ɡ�
+欢迎各位读者加入 **.NET技术交流群**，在公众号后台回复**“加群”**或者**“学习”**即可。
 
 <br>
 
-![��׼����� ���ں���Ƭ](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
+![大白技术控 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
 
 
-### ��ĩ�ʵ�
+### 文末彩蛋
 
-> ΢�ź�̨�ظ���**asp**�������㣺һ��ȫ����ǿ��ASP.NETѧϰ·��ͼ��
+> 微信后台回复“**asp**”，给你：一份全网最强的ASP.NET学习路线图。
 > <br>
-> �ظ���**cs**�������㣺һ���� C# �� WPF ѧϰ��Դ��
+> 回复“**cs**”，给你：一整套 C# 和 WPF 学习资源！
 ><br>
-> �ظ���**core**�������㣺2019��dotConf����Ϸ�����.NET core 3.0ѧϰ��Ƶ��
+> 回复“**core**”，给你：2019年dotConf大会上发布的.NET core 3.0学习视频！
