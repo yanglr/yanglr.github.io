@@ -90,14 +90,18 @@ navs:
 
   -
     
-    href: http://enjoy233.cnblogs.com
-    label: dotNET
+    href: /dotnet.html
+    label: .NET
     target: _blank
     subnav:
 
       -
-        subHref: /dotnet.html
-        subLabel: 
+        subHref: /csharp.html
+        subLabel: "C#"
+
+      -
+        subHref: /wpf.html
+        subLabel: WPF
         
       -
         subHref: http://enjoy233.cnblogs.com
