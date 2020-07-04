@@ -6,7 +6,7 @@ categories:
 - 编程训练
 ---
 
- ![携程校招2017编程题1](/images/ctrip_ex1.png)  <!-- 本地: ![携程校招2017编程题1](../images/ctrip_ex1.png) -->
+ ![携程校招2017编程题1](http://geekplayers.com/assets/images/2016/ctrip_ex1.png)  <!-- 本地: ![携程校招2017编程题1](../images/ctrip_ex1.png) -->
 
 ### 题目: 股票利润
 
