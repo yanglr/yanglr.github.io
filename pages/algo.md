@@ -2,7 +2,7 @@
 layout: page
 title: 算法也可以很有趣
 titlebar: algo
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "你的生活有什么故事?"
 menu: algo
 css: ['blog-page.css']
 permalink: /algo
