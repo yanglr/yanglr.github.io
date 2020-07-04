@@ -1,3 +1,24 @@
+---
+layout: post
+title: 微软XAML Studio - WPF, Sliverlight, Xamarin, UWP等技术开发者的福音
+no-post-nav: true
+categories: 
+- [wpf, xaml]
+
+sitemap:
+  lastmod: 2019-03-21 02:46:04
+  priority: 0.7
+  changefreq: 'weekly'
+  exclude: 'yes'
+
+tags: [wpf]
+excerpt: 大白技术控 - 微软XAML Studio - WPF, Sliverlight, Xamarin, UWP等技术开发者的福音
+---
+
+XAML Studio，用来调试REST服务的绑定挺棒的~
+
+-------------
+
 最近又在继续倒腾`WPF`的项目，继续使用`Caliburn.Micro`和`Xceed`来堆代码。每次调试xaml上的binding，都有种要疯的赶脚。
 
 今天路过 [https://channel9.msdn.com/](https://channel9.msdn.com/) 浏览 `WPF`相关的学习视频时，遇到微软推荐的相关视频 - [XAML sutdio简介](https://channel9.msdn.com/Shows/On-NET/Introducing-XAML-Studio)，好奇心使然，目测是和Visual Studio Code类似而强大的牛牛工具，就好好看完了视频。
