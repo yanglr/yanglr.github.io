@@ -33,7 +33,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                             {{ post.excerpt | strip_html | strip }}
                         </p>
                         <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}
                         </p>
                     </li>
                   {% endif %}
