@@ -141,12 +141,9 @@ MSAvalon.Windows.Controls.FlowPanel _FlowPanel_1_ = this;
 
 这表明应该设置Button对象的Background 属性。XAML编译器将生成相应的代码来设置该属性：
 
-```xml
-Button_3_.Background =
-
-new MSAvalon.Windows.Media.SolidColorBrush(
-
-MSAvalon.Windows.Media.Color.FromARGB(255, 255, 0, 0));
+```csharp
+Button_3_.Background = 
+new MSAvalon.Windows.Media.SolidColorBrush(MSAvalon.Windows.Media.Color.FromARGB(255, 255, 0, 0));
 ```
 
 
