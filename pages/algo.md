@@ -13,7 +13,7 @@ permalink: /algo
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='algo' or post.category=='oj' or post.category=='leetcode' or post.keywords contains 'leetcode' %}
+                {% if post.category=='algo' or post.category contains 'oj' or post.category=='leetcode' or post.keywords contains 'leetcode' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
