@@ -2,7 +2,7 @@
 layout: page
 title: 算法也可以很有趣
 titlebar: algo
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "你的生活有什么故事?"
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "算法也可以很有趣"
 menu: algo
 css: ['blog-page.css']
 permalink: /algo
@@ -13,7 +13,7 @@ permalink: /algo
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='algo' or post.category=='leetcode' or post.keywords contains 'leetcode' %}
+                {% if post.category=='algo' post.category=='oj' or post.category=='leetcode' or post.keywords contains 'leetcode' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
