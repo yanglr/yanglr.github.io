@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "WPF-CS架构的王者"
+title: "WPF-CS架构里的C端王者"
 titlebar: wpf
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; WPF - MVVM框架的首创者
 menu: wpf
