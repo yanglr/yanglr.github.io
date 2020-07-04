@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ´Ó0µ½1£ºÊ¹ÓÃCaliburn.Micro(WPFºÍMVVM)¿ª·¢¼òµ¥µÄ¼ÆËãÆ÷
+title: ä»Ž0åˆ°1ï¼šä½¿ç”¨Caliburn.Micro(WPFå’ŒMVVM)å¼€å‘ç®€å•çš„è®¡ç®—å™¨
 no-post-nav: true
 categories: 
-- [wpf, xaml]
+- [wpf, xaml, caliburn.micro]
 
 sitemap:
   lastmod: 2018-06-03 19:53:01
@@ -12,40 +12,40 @@ sitemap:
   exclude: 'yes'
 
 tags: [wpf]
-excerpt: ´ó°×¼¼Êõ¿Ø - ´Ó0µ½1£ºÊ¹ÓÃCaliburn.Micro(WPFºÍMVVM)¿ª·¢¼òµ¥µÄ¼ÆËãÆ÷
+excerpt: å¤§ç™½æŠ€æœ¯æŽ§ - ä»Ž0åˆ°1ï¼šä½¿ç”¨Caliburn.Micro(WPFå’ŒMVVM)å¼€å‘ç®€å•çš„è®¡ç®—å™¨
 ---
 
-Ç°Ò»¶ÎÊ±¼äÒ»Ö±ÔÚÓÃ`Caliburn.micro`¿ò¼Ü£¬½ñÌì³é¿ÕÀ´×Ü½áÒ»ÏÂ~
+å‰ä¸€æ®µæ—¶é—´ä¸€ç›´åœ¨ç”¨`Caliburn.micro`æ¡†æž¶ï¼Œä»Šå¤©æŠ½ç©ºæ¥æ€»ç»“ä¸€ä¸‹~
 
 -------------
 
-## ´Ó0µ½1£ºÊ¹ÓÃCaliburn.Micro(WPFºÍMVVM)¿ª·¢¼òµ¥µÄ¼ÆËãÆ÷
+## ä»Ž0åˆ°1ï¼šä½¿ç”¨Caliburn.Micro(WPFå’ŒMVVM)å¼€å‘ç®€å•çš„è®¡ç®—å™¨
 
-Ö®Ç°Ê±¼äÒ»Ö±ÔÚÊ¹ÓÃCaliburn.MicroÕâÖÖÓ¦ÓÃÁËMVVMÄ£Ê½µÄWPF¿ò¼Ü×ö¿ª·¢£¬ÊÇÊ±ºò×Ü½áÒ»ÏÂÁË¡£
+ä¹‹å‰æ—¶é—´ä¸€ç›´åœ¨ä½¿ç”¨Caliburn.Microè¿™ç§åº”ç”¨äº†MVVMæ¨¡å¼çš„WPFæ¡†æž¶åšå¼€å‘ï¼Œæ˜¯æ—¶å€™æ€»ç»“ä¸€ä¸‹äº†ã€‚
 
-Caliburn.Micro(Caliburn.Micro¿ò¼Ü¸ÅÊö - https://blog.csdn.net/lzuacm/article/details/78886436) ÊÇÒ»¸öÇáÁ¿¼¶µÄWPF¿ò¼Ü£¬¼ò»¯ÁËWPFÖÐµÄ²»ÉÙÓÃ·¨£¬ÍÆ¼ö×öWPF¿ª·¢Ê±ÓÅÏÈÊ¹ÓÃ¡£
+Caliburn.Micro(Caliburn.Microæ¡†æž¶æ¦‚è¿° - https://blog.csdn.net/lzuacm/article/details/78886436) æ˜¯ä¸€ä¸ªè½»é‡çº§çš„WPFæ¡†æž¶ï¼Œç®€åŒ–äº†WPFä¸­çš„ä¸å°‘ç”¨æ³•ï¼ŒæŽ¨èåšWPFå¼€å‘æ—¶ä¼˜å…ˆä½¿ç”¨ã€‚
 
-ÕæÕý¿ìËÙ¶øÊìÁ·µØÕÆÎÕÒ»ÃÅ¼¼Êõ¾Í¿ÉÒÔ³¢ÊÔ×ÅÓÃ×î¿ìµÄËÙ¶ÈÈ¥¹¹½¨Ò»¸öÍæ¾ßÏîÄ¿(Toy project)£¬È»ºó²»¶ÏµØÓÅ»¯¡¢ÖØ¹¹Ö®¡£±ÈÈç±¾ÎÄ½«½éÉÜÈçºÎÊ¹ÓÃCaliburn.Micro v3.2¿ª·¢³öÒ»¸ö¼òµ¥µÄ¼ÆËãÆ÷£¬ÀïÃæÓÃµ½ÁËC#ÖÐµÄasyncÒì²½¼¼Êõ£¬Caliburn.MicroÖÐµÄConductorµÈµÈ~
+çœŸæ­£å¿«é€Ÿè€Œç†Ÿç»ƒåœ°æŽŒæ¡ä¸€é—¨æŠ€æœ¯å°±å¯ä»¥å°è¯•ç€ç”¨æœ€å¿«çš„é€Ÿåº¦åŽ»æž„å»ºä¸€ä¸ªçŽ©å…·é¡¹ç›®(Toy project)ï¼Œç„¶åŽä¸æ–­åœ°ä¼˜åŒ–ã€é‡æž„ä¹‹ã€‚æ¯”å¦‚æœ¬æ–‡å°†ä»‹ç»å¦‚ä½•ä½¿ç”¨Caliburn.Micro v3.2å¼€å‘å‡ºä¸€ä¸ªç®€å•çš„è®¡ç®—å™¨ï¼Œé‡Œé¢ç”¨åˆ°äº†C#ä¸­çš„asyncå¼‚æ­¥æŠ€æœ¯ï¼ŒCaliburn.Microä¸­çš„Conductorç­‰ç­‰~
 
-### Step 1: ÔÚVSÖÐ´´½¨WPFÏîÄ¿
+### Step 1: åœ¨VSä¸­åˆ›å»ºWPFé¡¹ç›®
 ![create_project](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324010953551-1224926541.png)
 
 
-### Step 2: Ê¹ÓÃNuGet°ü¹ÜÀí¹¤¾ßÎªµ±Ç°ÏîÄ¿°²×°Caliburn.Micro
-¶ÔÓÚCaliburn.Micro 1.xºÍ2.x°æ£¬Ö»ÄÜÊ¹ÓÃ.dll£¬ÐèÊÖ¶¯¸øÏîÄ¿¼ÓReference¡£¶ø3.0ÒÔºóµÄ°æ±¾¿ÉÊ¹ÓÃNuGet°ü¹ÜÀí¹¤¾ßÀ´¹ÜÀí£¬°²×°ºÍÐ¶ÔØ¼È·½±ãÓÖ³¹µ×£¬ÍÆ¼öÊ¹ÓÃ¡£(ps: NuGetÖ®ÓÚVisual Studio(C++, C#µÈ), ÓÌpipÖ®ÓÚPython, npmÖ®ÓÚnode, mavenÖ®ÓÚJava, gemÖ®ÓÚRubyµÈµÈ)
+### Step 2: ä½¿ç”¨NuGetåŒ…ç®¡ç†å·¥å…·ä¸ºå½“å‰é¡¹ç›®å®‰è£…Caliburn.Micro
+å¯¹äºŽCaliburn.Micro 1.xå’Œ2.xç‰ˆï¼Œåªèƒ½ä½¿ç”¨.dllï¼Œéœ€æ‰‹åŠ¨ç»™é¡¹ç›®åŠ Referenceã€‚è€Œ3.0ä»¥åŽçš„ç‰ˆæœ¬å¯ä½¿ç”¨NuGetåŒ…ç®¡ç†å·¥å…·æ¥ç®¡ç†ï¼Œå®‰è£…å’Œå¸è½½æ—¢æ–¹ä¾¿åˆå½»åº•ï¼ŒæŽ¨èä½¿ç”¨ã€‚(ps: NuGetä¹‹äºŽVisual Studio(C++, C#ç­‰), çŠ¹pipä¹‹äºŽPython, npmä¹‹äºŽnode, mavenä¹‹äºŽJava, gemä¹‹äºŽRubyç­‰ç­‰)
 
 ![Install CM](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005855423-424717537.png)
 
 
-### Step 3: ¿ò¼Ü´î½¨
+### Step 3: æ¡†æž¶æ­å»º
 
- 1. É¾³ýÏîÄ¿¸ùÄ¿Â¼ÏÂµÄMainWindow.xaml
- 2. °´ÏÂÍ¼µ÷ÕûApp.xaml
- É¾³ýÓï¾äStartupUri="MainWindow.xmal"¡£
+ 1. åˆ é™¤é¡¹ç›®æ ¹ç›®å½•ä¸‹çš„MainWindow.xaml
+ 2. æŒ‰ä¸‹å›¾è°ƒæ•´App.xaml
+ åˆ é™¤è¯­å¥StartupUri="MainWindow.xmal"ã€‚
  ![config1](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005959001-1435534729.png)
 
 
- 3. Ìî³äApplication.Resources
+ 3. å¡«å……Application.Resources
 ```xml
     <Application.Resources>
          <ResourceDictionary>
@@ -57,8 +57,8 @@ Caliburn.Micro(Caliburn.Micro¿ò¼Ü¸ÅÊö - https://blog.csdn.net/lzuacm/article/det
          </ResourceDictionary>
     </Application.Resources>
 ```
-  &nbsp;&nbsp; 4 . ´´½¨BootstrapperÀà
-È»ºóÈÃÆä¼Ì³Ð×ÔBootstrapperBaseÀà£¬²¢¼ÓÉÏ¹¹Ôìº¯Êý£¬ÁíÍâÔÙÖØÐ´º¯ÊýOnStartup¼´¿É¡£
+  &nbsp;&nbsp; 4 . åˆ›å»ºBootstrapperç±»
+ç„¶åŽè®©å…¶ç»§æ‰¿è‡ªBootstrapperBaseç±»ï¼Œå¹¶åŠ ä¸Šæž„é€ å‡½æ•°ï¼Œå¦å¤–å†é‡å†™å‡½æ•°OnStartupå³å¯ã€‚
 
 ```csharp
 using System.Windows;
@@ -82,10 +82,10 @@ namespace CaliburnMicro_Calculator
 }
 
 ```
- &nbsp;&nbsp; 5 . ÔÚÏîÄ¿Ä¿Â¼ÏÂÐÂ½¨Models, ViewModels, ViewsÕâ3¸öÎÄ¼þ¼Ð
-ÔÚViewModelÎÄ¼þ¼ÐÖÐÌí¼ÓShellViewModel.cs£¬²¢´´½¨Left, RightºÍResultÕâ3¸öÊôÐÔ¡£
+ &nbsp;&nbsp; 5 . åœ¨é¡¹ç›®ç›®å½•ä¸‹æ–°å»ºModels, ViewModels, Viewsè¿™3ä¸ªæ–‡ä»¶å¤¹
+åœ¨ViewModelæ–‡ä»¶å¤¹ä¸­æ·»åŠ ShellViewModel.csï¼Œå¹¶åˆ›å»ºLeft, Rightå’ŒResultè¿™3ä¸ªå±žæ€§ã€‚
  
-ÐèÒª×¢ÒâµÄÊÇ ShellViewModel.csÐèÒª¼Ì³ÐÀà **Screen ºÍ INotifyPropertyChanged** (ÓÃÓÚ¸ÐÖª²¢Í¬²½Ëù°ó¶¨ÊôÐÔµÄ±ä»¯)£¬ShellViewModel¾ßÌå´úÂëÎª:
+éœ€è¦æ³¨æ„çš„æ˜¯ ShellViewModel.cséœ€è¦ç»§æ‰¿ç±» **Screen å’Œ INotifyPropertyChanged** (ç”¨äºŽæ„ŸçŸ¥å¹¶åŒæ­¥æ‰€ç»‘å®šå±žæ€§çš„å˜åŒ–)ï¼ŒShellViewModelå…·ä½“ä»£ç ä¸º:
 ```csharp
 using System.ComponentModel;
 using System.Threading;
@@ -132,10 +132,10 @@ namespace CaliburnMicro_Calculator.ViewModels
         }
 }
 ```
-**ËµÃ÷:** ×î¿ªÊ¼²¼¾ÖxamlÊ±£¬Éè¼ÆÎ»ÖÃÊ±²ÉÓÃµÄÊÇ×ó(operand 1), ÖÐ(operand 2), ÓÒ(result)£¬ÓÚÊÇÊôÐÔÖµÊ¹ÓÃÁËLeft, RightºÍResult¡£
+**è¯´æ˜Ž:** æœ€å¼€å§‹å¸ƒå±€xamlæ—¶ï¼Œè®¾è®¡ä½ç½®æ—¶é‡‡ç”¨çš„æ˜¯å·¦(operand 1), ä¸­(operand 2), å³(result)ï¼ŒäºŽæ˜¯å±žæ€§å€¼ä½¿ç”¨äº†Left, Rightå’ŒResultã€‚
 
-### Step 4: Éè¼ÆXAML²¢°ó¶¨ÊôÐÔ
-ÔÚViewsÎÄ¼þ¼ÐÖÐ´´½¨Window£¬ÃüÃûÎªShellView.xaml£¬ÔÚViewsÎÄ¼þ¼ÐÏÂ´´½¨×ÓÎÄ¼þ¼ÐImages£¬ÓÃÓÚ´æ·Å+,-,*,/Õâ4ÖÖ²Ù×÷¶ÔÓ¦µÄÐ¡Í¼±ê£¬Æä¾ßÌå´úÂëÈçÏÂ£º
+### Step 4: è®¾è®¡XAMLå¹¶ç»‘å®šå±žæ€§
+åœ¨Viewsæ–‡ä»¶å¤¹ä¸­åˆ›å»ºWindowï¼Œå‘½åä¸ºShellView.xamlï¼Œåœ¨Viewsæ–‡ä»¶å¤¹ä¸‹åˆ›å»ºå­æ–‡ä»¶å¤¹Imagesï¼Œç”¨äºŽå­˜æ”¾+,-,*,/è¿™4ç§æ“ä½œå¯¹åº”çš„å°å›¾æ ‡ï¼Œå…¶å…·ä½“ä»£ç å¦‚ä¸‹ï¼š
 ```xml
 <Window x:Class="CaliburnMicro_Calculator.Views.ShellView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -203,15 +203,15 @@ namespace CaliburnMicro_Calculator.ViewModels
     </StackPanel>
 </Window>
 ```
-**ËµÃ÷£º**¶Ô²Ù×÷ÊýOperand _1ºÍOperand _2£¬°´Alt¼ü+Êý×Ö¿ÉÒÔÑ¡ÖÐ¸Ã´¦£¬ÕâÊÇWPFµÄÒ»¸öÌØÊâÓÃ·¨¡£ÓÉÓÚ¼ÆËã½á¹û²»Ï£Íû±»ÐÞ¸Ä£¬ÓÚÊÇ¼ÓÉÏÁËÊôÐÔ```IsReadOnly="True"```¡£
+**è¯´æ˜Žï¼š**å¯¹æ“ä½œæ•°Operand _1å’ŒOperand _2ï¼ŒæŒ‰Alté”®+æ•°å­—å¯ä»¥é€‰ä¸­è¯¥å¤„ï¼Œè¿™æ˜¯WPFçš„ä¸€ä¸ªç‰¹æ®Šç”¨æ³•ã€‚ç”±äºŽè®¡ç®—ç»“æžœä¸å¸Œæœ›è¢«ä¿®æ”¹ï¼ŒäºŽæ˜¯åŠ ä¸Šäº†å±žæ€§```IsReadOnly="True"```ã€‚
 
-### Step 5: Éè¼Æ²¢°ó¶¨ÊÂ¼þ
-ÓÉÓÚÔÝÊ±Ö»´òËãÊµÏÖ+, -, *, /ËÄÖÖ²Ù×÷£¬ÓÚÊÇÎÒÃÇÖ»Ðè´´½¨ÏàÓ¦µÄ4¸öº¯Êý¼´¿É£¬ÓÉÓÚ³ýÊýÊÇ0Õâ¸ö²Ù×÷²»ÔÊÐí£¬ÓÚÊÇÐèÔÙ¼Ó¸öÅÐ¶Ïº¯ÊýCanDivide¡£
+### Step 5: è®¾è®¡å¹¶ç»‘å®šäº‹ä»¶
+ç”±äºŽæš‚æ—¶åªæ‰“ç®—å®žçŽ°+, -, *, /å››ç§æ“ä½œï¼ŒäºŽæ˜¯æˆ‘ä»¬åªéœ€åˆ›å»ºç›¸åº”çš„4ä¸ªå‡½æ•°å³å¯ï¼Œç”±äºŽé™¤æ•°æ˜¯0è¿™ä¸ªæ“ä½œä¸å…è®¸ï¼ŒäºŽæ˜¯éœ€å†åŠ ä¸ªåˆ¤æ–­å‡½æ•°CanDivideã€‚
 
-Caliburn.MicroÖÐ°ó¶¨ÊÂ¼þµÄÐ´·¨ÊÇ: 
-```cal:Message.Attach="[Event E]=[Action A]"```(EÊÇ²Ù×÷£¬±ÈÈçClick, MouseDown, KeyDownµÈµÈ£¬AÊÇViewModelÖÐ¾ßÌåµÄº¯Êý¡£)
+Caliburn.Microä¸­ç»‘å®šäº‹ä»¶çš„å†™æ³•æ˜¯: 
+```cal:Message.Attach="[Event E]=[Action A]"```(Eæ˜¯æ“ä½œï¼Œæ¯”å¦‚Click, MouseDown, KeyDownç­‰ç­‰ï¼ŒAæ˜¯ViewModelä¸­å…·ä½“çš„å‡½æ•°ã€‚)
 
-ÏòShellViewModelÖÐ¼ÓÈëÊÂ¼þÖÐÒª×öµÄÊÂ£¬´ËÊ±ShellViewModelÎª£º
+å‘ShellViewModelä¸­åŠ å…¥äº‹ä»¶ä¸­è¦åšçš„äº‹ï¼Œæ­¤æ—¶ShellViewModelä¸ºï¼š
 ```csharp
 using System.ComponentModel;
 using System.Threading;
@@ -286,9 +286,9 @@ namespace CaliburnMicro_Calculator.ViewModels
     }
 }
 ```
-´ËÊ±¼ÆËãÆ÷µÄ¹¦ÄÜÒÑ»ù±¾Íê³É£¬µ«ÎÒÃÇ¿ÉÒÔ¶ÔViewModel½øÐÐÊÊµ±µÄµ÷Õû£º
-1.´´½¨ÐÂµÄViewModel - CalculatorViewModel£¬½«Ô­À´µÄShellViewModelÖÐ¾ßÌåµÄ¼ÆËãÂß¼­ÒÆÈëµ½CalculatorViewModelÖÐ£»
-2.´ËÊ±ÈÃShellViewModel¼Ì³Ð**Conductor&lt;Object>**£¬ÓÚÊÇShellViewModelÓµÓÐÁË¹ÜÀíScreenÊµÀýµÄ¹¦ÄÜ(ViewModelÖÐÊ¹ÓÃActivateItemº¯Êý£¬¶øViewÖÐÊ¹ÓÃX:Name="ActivateItem"±êÇ©)£¬Æä¾ßÌå´úÂëÎª:
+æ­¤æ—¶è®¡ç®—å™¨çš„åŠŸèƒ½å·²åŸºæœ¬å®Œæˆï¼Œä½†æˆ‘ä»¬å¯ä»¥å¯¹ViewModelè¿›è¡Œé€‚å½“çš„è°ƒæ•´ï¼š
+1.åˆ›å»ºæ–°çš„ViewModel - CalculatorViewModelï¼Œå°†åŽŸæ¥çš„ShellViewModelä¸­å…·ä½“çš„è®¡ç®—é€»è¾‘ç§»å…¥åˆ°CalculatorViewModelä¸­ï¼›
+2.æ­¤æ—¶è®©ShellViewModelç»§æ‰¿**Conductor&lt;Object>**ï¼ŒäºŽæ˜¯ShellViewModelæ‹¥æœ‰äº†ç®¡ç†Screenå®žä¾‹çš„åŠŸèƒ½(ViewModelä¸­ä½¿ç”¨ActivateItemå‡½æ•°ï¼Œè€ŒViewä¸­ä½¿ç”¨X:Name="ActivateItem"æ ‡ç­¾)ï¼Œå…¶å…·ä½“ä»£ç ä¸º:
 ```csharp
 using System.ComponentModel;
 using System.Threading;
@@ -310,7 +310,7 @@ namespace CaliburnMicro_Calculator.ViewModels
     }
 }
 ```
-´ËÊ±£¬CalculatorViewModelµÄ¾ßÌå´úÂëÎª£º
+æ­¤æ—¶ï¼ŒCalculatorViewModelçš„å…·ä½“ä»£ç ä¸ºï¼š
 ```csharp
 using System.ComponentModel;
 using System.Threading;
@@ -390,7 +390,7 @@ namespace CaliburnMicro_Calculator.ViewModels
 }
 ```
 
-&nbsp;&nbsp;3 . ¶ÔÓÚView£¬Ö»Ðè°ÑCalculatorViewModel¶ÔÓ¦µÄCalculatorView×÷ÎªContentControl¿Ø¼þÇ¶ÈëShellView¼´¿É¡£´ËÊ±ShellViewµÄ´úÂëµ÷ÕûÎª:
+&nbsp;&nbsp;3 . å¯¹äºŽViewï¼Œåªéœ€æŠŠCalculatorViewModelå¯¹åº”çš„CalculatorViewä½œä¸ºContentControlæŽ§ä»¶åµŒå…¥ShellViewå³å¯ã€‚æ­¤æ—¶ShellViewçš„ä»£ç è°ƒæ•´ä¸º:
 ```xml
 <Window x:Class="CaliburnMicro_Calculator.Views.ShellView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -408,10 +408,10 @@ namespace CaliburnMicro_Calculator.ViewModels
     </Grid>
 </Window>
 ```
-**ÁíÍâÌáÒ»µã**£¬ÏòViewModel AÖÐÇ¶ÈëViewModel B£¬Ò»°ãÀ´ËµÐèÒª×öµÄ²Ù×÷ÊÇ£º
-ÔÚAµÄviewÖÐÊ¹ÓÃContentControl£¬°ó¶¨BµÄViewModelÖ»ÐèÊ¹ÓÃÓï¾äcal:View.Model="{Binding BViewModel}"¼´¿É£¬¶øBµÄviewÊÇUserControl¾Í¿ÉÒÔÀ²¡£
+**å¦å¤–æä¸€ç‚¹**ï¼Œå‘ViewModel Aä¸­åµŒå…¥ViewModel Bï¼Œä¸€èˆ¬æ¥è¯´éœ€è¦åšçš„æ“ä½œæ˜¯ï¼š
+åœ¨Açš„viewä¸­ä½¿ç”¨ContentControlï¼Œç»‘å®šBçš„ViewModelåªéœ€ä½¿ç”¨è¯­å¥cal:View.Model="{Binding BViewModel}"å³å¯ï¼Œè€ŒBçš„viewæ˜¯UserControlå°±å¯ä»¥å•¦ã€‚
 
-´ËÊ±CalculatorViewÊÇÒ»¸öUserControl£¬Æä´úÂëÎª:
+æ­¤æ—¶CalculatorViewæ˜¯ä¸€ä¸ªUserControlï¼Œå…¶ä»£ç ä¸º:
 ```xml
 <UserControl x:Class="CaliburnMicro_Calculator.Views.CalculatorView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -479,59 +479,59 @@ namespace CaliburnMicro_Calculator.ViewModels
     </StackPanel>
 </UserControl>
 ```
-ºÃÀ²£¬¾Í½´£¬ÓÉÓÚ±¾ÀýÖÐÂß¼­²¢²»¸´ÔÓ£¬ModelÔÝÊ±ÓÃ²»ÉÏ£¬¶ÔÓÚ¸´ÔÓÒ»µãµÄÏîÄ¿£¬ModelÖ÷Òª¸ºÔðÊý¾ÝµÄ¶ÁÈ¡£¬ÈçÎÄ¼þ²Ù×÷¡¢Êý¾Ý¿â²Ù×÷¡¢serviceµ÷ÓÃµÈ£¬ÒÔºóÓÐ»ú»á¾ÙÀý¾ßÌåÀ´Ëµ¡£
+å¥½å•¦ï¼Œå°±é…±ï¼Œç”±äºŽæœ¬ä¾‹ä¸­é€»è¾‘å¹¶ä¸å¤æ‚ï¼ŒModelæš‚æ—¶ç”¨ä¸ä¸Šï¼Œå¯¹äºŽå¤æ‚ä¸€ç‚¹çš„é¡¹ç›®ï¼ŒModelä¸»è¦è´Ÿè´£æ•°æ®çš„è¯»å–ï¼Œå¦‚æ–‡ä»¶æ“ä½œã€æ•°æ®åº“æ“ä½œã€serviceè°ƒç”¨ç­‰ï¼Œä»¥åŽæœ‰æœºä¼šä¸¾ä¾‹å…·ä½“æ¥è¯´ã€‚
 
-Èç¹ûÐèÒª³Ö¾Ã»¯(persistent)£¬Ôò»¹Ðè¸ø¸øÃ¿¶ÔM-VM(ModelºÍViewModel)¼ÓÈëState£¬Õâ¸öÊµ¼Ê¹¤³ÌÖÐÒ²ÓÃµÃÌØ±ð¶à¡£
+å¦‚æžœéœ€è¦æŒä¹…åŒ–(persistent)ï¼Œåˆ™è¿˜éœ€ç»™ç»™æ¯å¯¹M-VM(Modelå’ŒViewModel)åŠ å…¥Stateï¼Œè¿™ä¸ªå®žé™…å·¥ç¨‹ä¸­ä¹Ÿç”¨å¾—ç‰¹åˆ«å¤šã€‚
 
-### Part 6: ¹¦ÄÜ¾ÙÀý
-CalculatorÖ÷Ò³£º
+### Part 6: åŠŸèƒ½ä¸¾ä¾‹
+Calculatorä¸»é¡µï¼š
 ![Main Page](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081757557-1375110827.png)
 
 
-µã»÷°´Å¥¡°ShowCalculator¡±¼´¿É¿´µ½¾ßÌåµÄ¼ÆËãÆ÷~
+ç‚¹å‡»æŒ‰é’®â€œShowCalculatorâ€å³å¯çœ‹åˆ°å…·ä½“çš„è®¡ç®—å™¨~
 
-³Ë·¨¾ÙÀý£º
+ä¹˜æ³•ä¸¾ä¾‹ï¼š
 ![Multiply](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081820757-800108336.png)
 
 
-³ý·¨¾ÙÀý£º
+é™¤æ³•ä¸¾ä¾‹ï¼š
 ![Divide](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081841357-881843872.png)
 
 
-**×îºó¸½ÉÏ´úÂë£º**
+**æœ€åŽé™„ä¸Šä»£ç ï¼š**
 CaliburnMicro-Calculator: A simple Calculator using Caliburn.Micro
-https://github.com/yanglr/CaliburnMicro-Calculator£¬
-»¶Ó­forkºÍstar£¬ÈçÓÐ¸Ä½øÒâ¼û»¶Ó­Ìá½»pull request~
+https://github.com/yanglr/CaliburnMicro-Calculatorï¼Œ
+æ¬¢è¿Žforkå’Œstarï¼Œå¦‚æœ‰æ”¹è¿›æ„è§æ¬¢è¿Žæäº¤pull request~
 
 
 <br>
 
 <hr>
 
-**×÷Õß¼ò½é**£ºBravo Yeung£¬¼ÆËã»úË¶Ê¿£¬Öªºõ¸É»õ´ðÖ÷(»ñ**81K** ÔÞÍ¬, **38K** ¸ÐÐ», **235K** ÊÕ²Ø)¡£ÔøÔÚ¹úÄÚ Top3»¥ÁªÍøÊÓÆµÖ±²¥¹«Ë¾¹¤×÷¹ý£¬ºó¼ÓÈëÒ»¼ÒÍâÆó×öÈí¼þ¿ª·¢ÖÁ½ñ¡£
+**ä½œè€…ç®€ä»‹**ï¼šBravo Yeungï¼Œè®¡ç®—æœºç¡•å£«ï¼ŒçŸ¥ä¹Žå¹²è´§ç­”ä¸»(èŽ·**81K** èµžåŒ, **38K** æ„Ÿè°¢, **235K** æ”¶è—)ã€‚æ›¾åœ¨å›½å†… Top3äº’è”ç½‘è§†é¢‘ç›´æ’­å…¬å¸å·¥ä½œè¿‡ï¼ŒåŽåŠ å…¥ä¸€å®¶å¤–ä¼åšè½¯ä»¶å¼€å‘è‡³ä»Šã€‚
 
 <br>
 
-ÈçÐè×ªÔØ£¬Çë¼ÓÎ¢ÐÅ **iMath7** ÉêÇë¿ª°×£¡
+å¦‚éœ€è½¬è½½ï¼Œè¯·åŠ å¾®ä¿¡ **iMath7** ç”³è¯·å¼€ç™½ï¼
 
 <br>
 
-»¶Ó­ÔÚÁôÑÔÇøÁôÏÂÄãµÄ¹Ûµã£¬Ò»ÆðÌÖÂÛÌá¸ß¡£Èç¹û½ñÌìµÄÎÄÕÂÈÃÄãÓÐÐÂµÄÆô·¢£¬Ñ§Ï°ÄÜÁ¦µÄÌáÉýÉÏÓÐÐÂµÄÈÏÊ¶£¬»¶Ó­×ª·¢·ÖÏí¸ø¸ü¶àÈË¡£
+æ¬¢è¿Žåœ¨ç•™è¨€åŒºç•™ä¸‹ä½ çš„è§‚ç‚¹ï¼Œä¸€èµ·è®¨è®ºæé«˜ã€‚å¦‚æžœä»Šå¤©çš„æ–‡ç« è®©ä½ æœ‰æ–°çš„å¯å‘ï¼Œå­¦ä¹ èƒ½åŠ›çš„æå‡ä¸Šæœ‰æ–°çš„è®¤è¯†ï¼Œæ¬¢è¿Žè½¬å‘åˆ†äº«ç»™æ›´å¤šäººã€‚
 
 <br>
 
-»¶Ó­¸÷Î»¶ÁÕß¼ÓÈë **.NET¼¼Êõ½»Á÷Èº**£¬ÔÚ¹«ÖÚºÅºóÌ¨»Ø¸´**¡°¼ÓÈº¡±**»òÕß**¡°Ñ§Ï°¡±**¼´¿É¡£
+æ¬¢è¿Žå„ä½è¯»è€…åŠ å…¥ **.NETæŠ€æœ¯äº¤æµç¾¤**ï¼Œåœ¨å…¬ä¼—å·åŽå°å›žå¤**â€œåŠ ç¾¤â€**æˆ–è€…**â€œå­¦ä¹ â€**å³å¯ã€‚
 
 
 <br>
 
-![´ó°×¼¼Êõ¿Ø ¹«ÖÚºÅÃûÆ¬](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
+![å¤§ç™½æŠ€æœ¯æŽ§ å…¬ä¼—å·åç‰‡](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
 
 
-### ÎÄÄ©²Êµ°
+### æ–‡æœ«å½©è›‹
 
-> Î¢ÐÅºóÌ¨»Ø¸´¡°**asp**¡±£¬¸øÄã£ºÒ»·ÝÈ«Íø×îÇ¿µÄASP.NETÑ§Ï°Â·ÏßÍ¼¡£
+> å¾®ä¿¡åŽå°å›žå¤â€œ**asp**â€ï¼Œç»™ä½ ï¼šä¸€ä»½å…¨ç½‘æœ€å¼ºçš„ASP.NETå­¦ä¹ è·¯çº¿å›¾ã€‚
 > <br>
-> »Ø¸´¡°**cs**¡±£¬¸øÄã£ºÒ»ÕûÌ× C# ºÍ WPF Ñ§Ï°×ÊÔ´£¡
+> å›žå¤â€œ**cs**â€ï¼Œç»™ä½ ï¼šä¸€æ•´å¥— C# å’Œ WPF å­¦ä¹ èµ„æºï¼
 ><br>
-> »Ø¸´¡°**core**¡±£¬¸øÄã£º2019ÄêdotConf´ó»áÉÏ·¢²¼µÄ.NET core 3.0Ñ§Ï°ÊÓÆµ£¡
+> å›žå¤â€œ**core**â€ï¼Œç»™ä½ ï¼š2019å¹´dotConfå¤§ä¼šä¸Šå‘å¸ƒçš„.NET core 3.0å­¦ä¹ è§†é¢‘ï¼
