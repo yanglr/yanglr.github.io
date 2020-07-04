@@ -2,10 +2,11 @@
 layout: post
 title: 深入浅出XAML
 no-post-nav: true
-category: life
+categories: 
+- [life, xaml, wpf]
 
 sitemap:
-  lastmod: 2020-07-02
+  lastmod: 2020-07-02 20:00:00
   priority: 0.7
   changefreq: 'weekly'
   exclude: 'yes'
