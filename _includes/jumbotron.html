@@ -4,10 +4,10 @@
             <h1>{{ page.title }}</h1>
             <span class="meta-info">
                 {% if page.subtitle %}
-                    {{ page.subtitle }}
+                {{ page.subtitle }}
                 {% endif %}
                 {% if page.date %}
-                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d %T" }}
                 {% endif %}
             </span>
         </div>
