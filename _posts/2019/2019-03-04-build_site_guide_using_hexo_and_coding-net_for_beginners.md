@@ -203,7 +203,7 @@ root@coding:/home/coding/workspace/blog# hexo clean && hexo g && hexo d
 `_config.yml`文件的配置、域名绑定、主题使用等等，基本上与在`Windows`下安装完全一样，参考Windows下同样的操作即可，就不再赘述了。
 
 安装完主题后的界面是:
-![UI](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304224154579-1613298900.png)
+![UI](http://img2018.cnblogs.com/blog/436938/201903/436938-20190304224154579-1613298900.png)
 
 
 另外，值得一提的是:
@@ -211,7 +211,7 @@ Cloud Studio还有几个优势，即:
 - 可以迅速切换环境，比如`hexo`、`node.js`、`.net Core`、`Ubuntu`、`Java`等互转，速度超快的。
 - 可以一键部署，除了`coding.me`的域名可用以外，一键部署后，还提供一个`coding.io`的域名可以访问。如果暂时没买个人域名，这就是个大福利了~
 
-![img6](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304220305918-1069723032.png)
+![img6](http://img2018.cnblogs.com/blog/436938/201903/436938-20190304220305918-1069723032.png)
 
 如有帮助，麻烦在右下角"推荐"一下，多谢~
 
