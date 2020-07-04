@@ -357,18 +357,21 @@ int main()
 ```
 
 运行结果:
-![run Result](https://img2018.cnblogs.com/blog/436938/201901/436938-20190121134519188-697181042.png)
+![run Result](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/2019-01-10-run-result.png)
 
 
 
 运行完，得到的update.xml内容为:
+
 <https://raw.githubusercontent.com/yanglr/SimpleParser4MSXML-cpp/master/msxmlDemo/updated.xml>
+
 <br>
+
 **参考资料:**
   1. [IXMLDOMElement接口](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/dd874725%28v=vs.85%29)
   2. [Using the MSXML Parser](http://www.endurasoft.com/vcd/msxml1.htm) 
   3. [MFC C++ XML Parse - Using MSXML](https://social.msdn.microsoft.com/Forums/vstudio/en-US/d3fbeea4-fdf9-48f9-9513-42cde8a833d6/mfc-c-xml-parse-using-msxml)
-  4. [如何：各种字符串类型之间转换 | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/text/how-to-convert-between-various-string-types?view=vs-2017)
+  4. [如何：各种字符串类型之间转换 - Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/text/how-to-convert-between-various-string-types?view=vs-2017)
 
 <br>
 
