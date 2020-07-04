@@ -2,7 +2,7 @@
 layout: page
 title: "WPF-CS架构的王者"
 titlebar: wpf
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "WPF-MVVM框架的首创"
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; WPF - MVVM框架的首创者
 menu: wpf
 css: ['blog-page.css']
 permalink: /wpf

@@ -2,7 +2,7 @@
 layout: page
 title: "Kubernetes相关"
 titlebar: k8s
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; "K8S你用上了吗?"
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; K8S你用上了吗?
 menu: k8s
 css: ['blog-page.css']
 permalink: /k8s
