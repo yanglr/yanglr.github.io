@@ -11,7 +11,7 @@ sitemap:
   exclude: 'yes'
 
 tags: [wpf]
-excerpt: 深入浅出XAML
+excerpt: 深入浅出XAML - 转载自《程序员杂志》
 ---
 
 今天来聊聊深入浅出XAML的那些事~
