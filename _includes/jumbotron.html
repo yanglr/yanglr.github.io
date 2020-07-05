@@ -12,11 +12,23 @@
             </span>
             <p>
                 Posted in:
-                {% for category in page.categories %}
-                <a href="/{{ category | first | slugize }}/">
-                    {{ category | first }}
-                </a>
-                {% endfor %}
+
+                <!--{% if page.categories == null %}
+                {% endif %}-->
+                {% assign category_size = page.categorys.size %}
+                {% if category_size > 0 %}
+                  with categories:<i class="fa fa-tags"></i>
+                  {% for post_category in page.categories %}
+                    {% assign category = site.data.categories[post_category] %}
+                    {% if category == null %}
+                      {% assign category = post_category %}
+                    {% endif %}
+                    <a href="/{{ category | slugize }}/">
+                        {{ category }}
+                    </a>
+                    {% if forloop.last == false %}, {% endif %}
+                  {% endfor %}
+                {% endif %}
             </p>
         </div>
     </div>
