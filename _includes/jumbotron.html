@@ -11,19 +11,14 @@
                 {% endif %}
             </span>
             <p>
-                <!--{% for category in page.categories %}
-                <a href="/{{ category | first | slugize }}/">
-                    {{ category | first }}
-                </a>
-                {% endfor %}-->
-
                 {% if post %}
                 {% assign categories = post.categories %}
                 {% else %}
                 {% assign categories = page.categories %}
                 {% endif %}
+                ·ÖÀà:
                 {% for category in categories %}
-                <a href="/{{category | slugize}}">{{category}}</a>
+                <code><a href="/{{category | first | slugize}}">{{category | first}}</a></code>
                 {% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             </p>
