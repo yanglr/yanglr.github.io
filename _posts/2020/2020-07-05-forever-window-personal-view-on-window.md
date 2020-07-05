@@ -279,7 +279,7 @@ static void Main()
 | WS_CHILD             | 0                                  | 1    | 0    | 0    | 0    | 0    | 0    | 0    | ……   | 0x40000000L    |
 | WS_MINIMIZE          | 0                                  | 0    | 1    | 0    | 0    | 0    | 0    | 0    | ……   | 0x20000000L    |
 | WS_VISIBLE           | 0                                  | 0    | 0    | 1    | 0    | 0    | 0    | 0    | ……   | 0x10000000L    |
-| …….                  | …….                                | …….  |      |      |      |      |      |      |      |                |
+| ……                   | ……                                 | ……   |      |      |      |      |      |      |      |                |
 | WS_POPUP \| WS_CHILD | 1                                  | 1    | 0    | 0    | 0    | 0    | 0    | 0    | ……   |                |
 
 
@@ -315,7 +315,7 @@ style = style & ~WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式       
 
 一般来说一个应用程序的主窗口是重叠式窗口，而弹出式窗口多用于对话框，消息框这样的窗口。当然还有细节上的问题。
 
-（1） WS_OVERLAPPED样式创建的窗口是含有标题栏的，而WS_POPUP样式创建的窗口是不含标题栏的，如果需要创建一个带标题栏的WS_POPUP样式的窗口，那么需要运用WS_"POPUP | WS_CAPTION"样式组合；
+（1） WS_OVERLAPPED样式创建的窗口是含有标题栏的，而WS_POPUP样式创建的窗口是不含标题栏的，如果需要创建一个带标题栏的WS_POPUP样式的窗口，那么需要运用WS_POPUP \| WS_CAPTION样式组合；
 
 （2） 在创建WS_OVERLAPPED样式窗口的时候，CreateWindow或者CreateWindowEx函数当中x,y,nWidth, nHeight四个参数都可以取CW_USEDEFAULT默认值，系统会选择一个合适的值。但是创建WS_POPUP样式的窗口，CW_USEDEFAULT对这四个参数是无效的，如果程序员一意孤行非要传CW_USEDEFAULT值，系统会默认认为这几个参数为0，那么这个时候整个窗口的大小就为0。这个时候往往会给程序员造成一种错觉，以为自己的窗口没有创建出来，实际上窗口已经创建出来了，只不过它长宽均为0而已。
 
@@ -458,17 +458,17 @@ while (GetMessage(&msg, NULL, 0, 0))
 
 ```cpp
 typedef struct tagMSG {
-	HWND        hwnd;
+	HWND hwnd;
 
-	UINT        message;
+	UINT message;
 
-	WPARAM      wParam;
+	WPARAM wParam;
 
-	LPARAM      lParam;
+	LPARAM lParam;
 
-	DWORD       time;
+	DWORD time;
 
-	POINT       pt;
+	POINT pt;
 
 } MSG;
 ```
