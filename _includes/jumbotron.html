@@ -13,8 +13,8 @@
             <p>
                 Posted in:
                 {% for category in page.categories %}
-                <a href="/{{ category | slugize }}/">
-                    {{ category }}
+                <a href="/{{ category | first | slugize }}/">
+                    {{ category | first }}
                 </a>
                 {% endfor %}
             </p>
