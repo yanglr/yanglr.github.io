@@ -1,6 +1,6 @@
 <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
     <div class="container">
-        <div id="jumbotron-meta-info">        
+        <div id="jumbotron-meta-info">
             <h1>{{ page.title }}</h1>
             <span class="meta-info">
                 {% if page.subtitle %}
@@ -10,6 +10,14 @@
                 <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d %T" }}
                 {% endif %}
             </span>
+            <p>
+                Posted in:
+                {% for category in page.categories %}
+                <a href="/{{ category | slugize }}/">
+                    {{ category }}
+                </a>
+                {% endfor %}
+            </p>
         </div>
     </div>
 </section>
