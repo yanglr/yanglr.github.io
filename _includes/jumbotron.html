@@ -10,7 +10,7 @@
                 <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d %T" }}
                 {% endif %}
             </span>
-            <p>
+            <!--<p>
                 {% if post %}
                 {% assign categories = post.categories %}
                 {% else %}
@@ -18,10 +18,10 @@
                 {% endif %}
                 分类:
                 {% for category in categories %}
-                <code><a href="/{{category | first | slugize}}">{{category | first}}</a></code>
+                <a href="/{{category | first | slugize}}">{{category | first}}</a>
                 {% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
-            </p>
+            </p>-->
         </div>
     </div>
 </section>
