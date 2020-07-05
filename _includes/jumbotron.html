@@ -11,23 +11,19 @@
                 {% endif %}
             </span>
             <p>
-                {% if page.category != null %}
-                Posted in:
-                <code>
-                    <a href="/{{ page.category }}">{{ category }}</a>
-                </code>
+                {% assign category = site.data.categories[page.category] %}
+                <p id="post-meta">
+                Posted
+                {% if category == null %}
+                {% assign category = page.category %}
                 {% endif %}
-
-                {% if page.categories != null %}
-                {% for category in page.categories %}
-                Posted in:
+                in
                 <code>
                     <a href="/{{ category | first | slugize }}/">
                         {{ category | first }}
                     </a>
                 </code>
-                {% endfor %}
-                {% endif %}
+                </p>
             </p>
         </div>
     </div>
