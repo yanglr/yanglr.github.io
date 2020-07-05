@@ -11,10 +11,20 @@
                 {% endif %}
             </span>
             <p>
-                {% for category in page.categories %}
+                <!--{% for category in page.categories %}
                 <a href="/{{ category | first | slugize }}/">
                     {{ category | first }}
                 </a>
+                {% endfor %}-->
+
+                {% if post %}
+                {% assign categories = post.categories %}
+                {% else %}
+                {% assign categories = page.categories %}
+                {% endif %}
+                {% for category in categories %}
+                <a href="/{{category | slugize}}">{{category}}</a>
+                {% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             </p>
         </div>
