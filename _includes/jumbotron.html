@@ -16,7 +16,7 @@
                 {% else %}
                 {% assign categories = page.categories %}
                 {% endif %}
-                ·ÖÀà:
+                åˆ†ç±»:
                 {% for category in categories %}
                 <code><a href="/{{category | first | slugize}}">{{category | first}}</a></code>
                 {% unless forloop.last %}&nbsp;{% endunless %}
