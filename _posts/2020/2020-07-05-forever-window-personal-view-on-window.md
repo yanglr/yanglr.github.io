@@ -17,6 +17,7 @@ excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客
 
 来源: [永远的窗口（个人对窗口的拙见） - by helloj2ee](https://www.cnblogs.com/helloj2ee/archive/2009/06/29/1513210.html)
 
+<br>
 
 文章愿意和大家分享，但是转载请注明出处！
 
