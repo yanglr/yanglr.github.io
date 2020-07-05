@@ -77,29 +77,17 @@ excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客
 
 ```cpp
 typedef struct {
-
-    UINT style;
-
-    WNDPROC lpfnWndProc;
-
-    int cbClsExtra;
-
-    int cbWndExtra;
-
-    HINSTANCE hInstance;
-
-    HICON hIcon;
-
-    HCURSOR hCursor;
-
-    HBRUSH hbrBackground;
-
-    LPCTSTR lpszMenuName;
-
-    LPCTSTR lpszClassName;
-
-} WNDCLASS, *PWNDCLASS;
-
+    UINT style;
+    WNDPROC lpfnWndProc;
+    int cbClsExtra;
+    int cbWndExtra;
+    HINSTANCE hInstance;
+    HICON hIcon;
+    HCURSOR hCursor;
+    HBRUSH hbrBackground;
+    LPCTSTR lpszMenuName;
+    LPCTSTR lpszClassName;
+} WNDCLASS, * PWNDCLASS;
 ```
 
 
@@ -121,73 +109,66 @@ typedef struct {
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 int APIENTRY WinMain(HINSTANCE hInstance,
-
-                     HINSTANCE hPrevInstance,
-
-                     LPSTR     lpCmdLine,
-
-                     int       nCmdShow)
-
+	HINSTANCE hPrevInstance,
+	LPSTR lpCmdLine,
+	int nCmdShow)
 {
 
-       static TCHAR szAppName[] = TEXT("HelloWin");
+	static TCHAR szAppName[] = TEXT("HelloWin");
 
-       HWND hwnd;
+	HWND hwnd;
 
-       WNDCLASS wndclass;
+	WNDCLASS wndclass;
 
-       // 注册窗口
+	// 注册窗口
 
-       wndclass.style = CS_HREDRAW | CS_VREDRAW;
+	wndclass.style = CS_HREDRAW | CS_VREDRAW;
 
-       wndclass.lpfnWndProc = WndProc;
+	wndclass.lpfnWndProc = WndProc;
 
-       wndclass.cbClsExtra = 0;
+	wndclass.cbClsExtra = 0;
 
-       wndclass.cbWndExtra = 0;
+	wndclass.cbWndExtra = 0;
 
-       wndclass.hInstance = hInstance;
+	wndclass.hInstance = hInstance;
 
-       wndclass.hIcon = LoadIcon(NULL,IDI_APPLICATION);
+	wndclass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
 
-       wndclass.hCursor = LoadCursor(NULL,IDC_ARROW);
+	wndclass.hCursor = LoadCursor(NULL, IDC_ARROW);
 
-       wndclass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
+	wndclass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
 
-       wndclass.lpszMenuName = NULL;
+	wndclass.lpszMenuName = NULL;
 
-       wndclass.lpszClassName = **szAppName**;
+	wndclass.lpszClassName = szAppName;
 
-       if(!RegisterClass(&wndclass))
-       {
-              return 0;
-       }
+	if (!RegisterClass(&wndclass))
+	{
+		return 0;
+	}
 
-       // 创建窗口并显示窗口
+	// 创建窗口并显示窗口
 
-     hwnd = CreateWindow(**szAppName**,TEXT("The Hello Program"),
+	hwnd = CreateWindow(szAppName, TEXT("The Hello Program"),
+		WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT,
+		CW_USEDEFAULT,
+		CW_USEDEFAULT,
+		CW_USEDEFAULT,
+		NULL, NULL, hInstance, NULL);
 
-     WS_OVERLAPPEDWINDOW ,
-     CW_USEDEFAULT,
-     CW_USEDEFAULT,
-     CW_USEDEFAULT,
-     CW_USEDEFAULT,
-     NULL,NULL,hInstance,NULL);
+	ShowWindow(hwnd, nCmdShow);
 
-       ShowWindow(hwnd,nCmdShow);
+	UpdateWindow(hwnd);
+	// …….
 
-       UpdateWindow(hwnd);
-     // .......
-
-     return 0;
-
+	return 0;
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-       return DefWindowProc(hwnd,message,wParam,lParam);
+	return DefWindowProc(hwnd, message, wParam, lParam);
 }
-
 ```
 
  **代码 2‑2 标准的窗口创建过程**
@@ -205,7 +186,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 ```cpp
 static void Main()
 {
-    Application.Run(new HelloWorldWinForm());
+   Application.Run(new HelloWorldWinForm());
 }
 ```
 
@@ -216,10 +197,10 @@ static void Main()
 按理说，WinForm已经简单到了极致。WPF没有理由再简单，但他还是做到了。因为在WPF里甚至不需要写任何程序，只需要在指定应用程序启动的时候启动那个窗口文件即可。
 
 ```xml
-<Application x:Class=" HelloWorldWPF.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    StartupUri=" HelloWorldWPF.xaml">
+<Application x:Class = "HelloWorldWPF.App" 
+	xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+	StartupUri = "HelloWorldWPF.xaml">
 ```
 
 **代码 2‑4 WPF里创建窗口**
@@ -243,34 +224,34 @@ static void Main()
 相信一定会有人问，WS_OVERLAPPED 和WS_OVERLAPPEDWINDOW 有什么区别？我们只要看看两个宏的定义，便可见分晓（窗口样式的宏都定义在WinUser.h这个文件当中）。
 
 ```cpp
-// 摘自WinUser.h文件
+// 摘自WinUser.h文件
 
-#define WS_OVERLAPPED       0x00000000L
+#define WS_OVERLAPPED       0x00000000L
 
-#define WS_POPUP            0x80000000L
+#define WS_POPUP            0x80000000L
 
-#define WS_CHILD             0x40000000L
+#define WS_CHILD             0x40000000L
 
-#define WS_MINIMIZE          0x20000000L
+#define WS_MINIMIZE          0x20000000L
 
-#define WS_VISIBLE            0x10000000L
+#define WS_VISIBLE            0x10000000L
 
-#define WS_DISABLED          0x08000000L
+#define WS_DISABLED          0x08000000L
 
-#define WS_CLIPSIBLINGS       0x04000000L
+#define WS_CLIPSIBLINGS       0x04000000L
 
-#define WS_CLIPCHILDREN      0x02000000L
+#define WS_CLIPCHILDREN      0x02000000L
 
-#define WS_MAXIMIZE         0x01000000L
+#define WS_MAXIMIZE         0x01000000L
 
-.......
+......
 
-#define **WS_OVERLAPPEDWINDOW **(WS_OVERLAPPED     | "
-                             WS_CAPTION        | "
-                             WS_SYSMENU        | "
-                             WS_THICKFRAME     | "
-                             WS_MINIMIZEBOX    | "
-                             WS_MAXIMIZEBOX)
+#define WS_OVERLAPPEDWINDOW (WS_OVERLAPPED     | "
+    WS_CAPTION | "
+    WS_SYSMENU | "
+    WS_THICKFRAME | "
+    WS_MINIMIZEBOX | "
+    WS_MAXIMIZEBOX)
 ```
 
 **代码 3‑1 窗口样式**
@@ -311,15 +292,15 @@ static void Main()
 这样的做法也是一个极其高明的做法。需要组合的这种参数，往往会设计成这样。它们通过或运算组合而成。判断该参数里是否有某一个特定的样式，则用与运算来检验。将样式从某一个组合里剔除出来，则采用与非运算。如下所示：
 
 ```cpp
-DWORD style = WS_POPUP;          // 数值为0x80000000
+DWORD style = WS_POPUP;         // 数值为0x80000000
 
-style = style | WS_MINIMIZE;    // 样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000
+style = style | WS_MINIMIZE;    //样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000
 
-bool res = style & WS_MINIMIZE; // 判断style里是否有WS_MINIMIZE 返回为真
+bool res = style & WS_MINIMIZE; // 判断style里是否有WS_MINIMIZE 返回为真
 
-res = style & WS_CHILD;          //判断style里是否有WS_CHILD返回为假    
+res = style & WS_CHILD;          //判断style里是否有WS_CHILD返回为假    
 
-style = style &~ WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式         数值为0x80000000
+style = style & ~WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式         数值为0x80000000
 
 ```
 
@@ -334,7 +315,7 @@ style = style &~ WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式  
 
 一般来说一个应用程序的主窗口是重叠式窗口，而弹出式窗口多用于对话框，消息框这样的窗口。当然还有细节上的问题。
 
-（1） WS_OVERLAPPED样式创建的窗口是含有标题栏的，而WS_POPUP样式创建的窗口是不含标题栏的，如果需要创建一个带标题栏的WS_POPUP样式的窗口，那么需要运用WS_POPUP | WS_CAPTION样式组合；
+（1） WS_OVERLAPPED样式创建的窗口是含有标题栏的，而WS_POPUP样式创建的窗口是不含标题栏的，如果需要创建一个带标题栏的WS_POPUP样式的窗口，那么需要运用WS_"POPUP | WS_CAPTION"样式组合；
 
 （2） 在创建WS_OVERLAPPED样式窗口的时候，CreateWindow或者CreateWindowEx函数当中x,y,nWidth, nHeight四个参数都可以取CW_USEDEFAULT默认值，系统会选择一个合适的值。但是创建WS_POPUP样式的窗口，CW_USEDEFAULT对这四个参数是无效的，如果程序员一意孤行非要传CW_USEDEFAULT值，系统会默认认为这几个参数为0，那么这个时候整个窗口的大小就为0。这个时候往往会给程序员造成一种错觉，以为自己的窗口没有创建出来，实际上窗口已经创建出来了，只不过它长宽均为0而已。
 
@@ -385,7 +366,7 @@ Message-Only Windows这个翻译成单一处理消息窗口，不知道是否妥
 
 [Message-Only Windows](https://docs.microsoft.com/en-us/windows/win32/winmsg/window-features#message-only-windows)
 
-https://www.cnblogs.com/kwliu/archive/2011/07/30/2121861.html
+<https://www.cnblogs.com/kwliu/archive/2011/07/30/2121861.html>
 
 <https://www.codeproject.com/Articles/7969/How-to-make-a-Message-Only-Window>
 
@@ -403,8 +384,8 @@ MSG msg;
 
 while (GetMessage(&msg, NULL, 0, 0))
 {
-         TranslateMessage(&msg);
-         DispatchMessage(&msg);
+	TranslateMessage(&msg);
+	DispatchMessage(&msg);
 }
 ```
 
@@ -456,7 +437,7 @@ while (GetMessage(&msg, NULL, 0, 0))
 
 
 
-## 4.2    几个特殊进队的消息
+## 4.2 几个特殊进队的消息
 
 按说进队消息已经没什么特殊，他们都是老老实实地遵循先进先出（first in first out）的原则。但是仍然有些消息会特殊。按照常理来想，如果你要搞特殊，大可不排队，走领导递条子型不就得了。但是这些消息特殊，并不是特殊在他们要特权，他们的问题是太过谦让，看到其他消息总是说"您请先"。
 
@@ -477,20 +458,19 @@ while (GetMessage(&msg, NULL, 0, 0))
 
 ```cpp
 typedef struct tagMSG {
+	HWND        hwnd;
 
-    HWND        hwnd;
+	UINT        message;
 
-    UINT        message;
+	WPARAM      wParam;
 
-    WPARAM      wParam;
+	LPARAM      lParam;
 
-    LPARAM      lParam;
+	DWORD       time;
 
-    DWORD       time;
+	POINT       pt;
 
-    POINT       pt;
-
-} MSG；
+} MSG;
 ```
 
 
