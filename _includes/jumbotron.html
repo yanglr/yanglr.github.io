@@ -11,12 +11,23 @@
                 {% endif %}
             </span>
             <p>
+                {% if page.category != null %}
                 Posted in:
+                <code>
+                    <a href="/{{ page.category }}">{{ category }}</a>
+                </code>
+                {% endif %}
+
+                {% if page.categories != null %}
                 {% for category in page.categories %}
-                <a href="/{{ category | first | slugize }}/">
-                    {{ category }}
-                </a>
+                Posted in:
+                <code>
+                    <a href="/{{ category | first | slugize }}/">
+                        {{ category | first }}
+                    </a>
+                </code>
                 {% endfor %}
+                {% endif %}
             </p>
         </div>
     </div>
