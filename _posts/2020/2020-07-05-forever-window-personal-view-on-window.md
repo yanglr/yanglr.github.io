@@ -30,7 +30,7 @@ excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客
 
 不仅我这么看，Spy++也这么看，如下图：
 
-![img1](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE11Spy%E5%92%8C%E6%A1%8C%E9%9D%A2.JPG)
+![img1](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p1.jpg)
 
 **图 1‑1 Spy++和桌面**
 
@@ -38,7 +38,7 @@ excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客
 
 我们首先通过一个普普通通典型的窗口，来分析一下窗口的组成：
 
-![](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE12%E6%99%AE%E6%99%AE%E9%80%9A%E9%80%9A%E7%9A%84%E7%AA%97%E5%8F%A3.JPG)
+![img2](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p2.jpg)
 
 **图 1‑2 普普通通的窗口**
 
@@ -336,7 +336,7 @@ style = style & ~WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式       
 
 如果各位体验过Windows2000以前的产品，Windows95或者Windows98。细心的用户会发现Windows为了改进用户体验，在部分细节的地方作了改变，比如鼠标。在Windows2000以前，鼠标只是一个平面的箭头。而在Windows2000和Windows2000以后，鼠标下面会增加了一层阴影，以强化其视觉深度。这样使得鼠标更有立体感，在大的显示器甚至是多个显示器上更容易找到那个小小的鼠标。 
 
-![](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE31.JPG)
+![img3](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p3.jpg)
 
  **图 3‑1 左图是Windows200以前的鼠标，右图是Windows2000以后的鼠标，增加了阴影**
 
@@ -344,7 +344,7 @@ style = style & ~WS_MINIMIZE;    //从样式里去掉了WS_MINIMIZE样式       
 
 再比如置顶窗口的一个时钟，透明地浮动在窗口，为你显示时间。
 
-![](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE32.JPG)
+![img4](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p4.jpg)
 
 **图 3‑2 透明时钟**
 
@@ -397,7 +397,7 @@ while (GetMessage(&msg, NULL, 0, 0))
 
 一幅应用程序和操作系统"你来浇水，我施肥"的和谐共建图
 
-![](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE41.JPG)
+![img5](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p5.jpg)
 
 **图4‑1 windows程序与操作系统关系（侯捷，1997）**
 
@@ -421,7 +421,7 @@ while (GetMessage(&msg, NULL, 0, 0))
 
 两个消息队列分别是系统消息队列（System Message Queue）和应用程序消息队列（Application Message Queue）。注意系统消息队列是唯一的，也就是说一个操作系统也就一个系统消息队列，用户点击鼠标，敲击键盘，由相应的鼠标和键盘驱动将这些外部事件转换为鼠标和键盘消息，然后放在系统消息队列里排队。操作系统非常聪明会知道某个鼠标键盘消息属于哪个窗口，然后把相应的消息放到特定窗口应用程序消息队列中。注意我再重复一遍，系统消息队列会把相应的消息放到特定窗口的应用程序消息队列中。换句话说，消息循环不会从系统消息队列里去取消息，只会从特定窗口的应用程序消息队列中取消息。因此侯先生的这幅图出现了一点小小的瑕疵，它应该修改成如下图。
 
-![](https://images.cnblogs.com/cnblogs_com/helloj2ee/%E5%9B%BE42new.JPG)
+![](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p6.jpg)
 
 **图 4‑2 windows程序与操作系统关系（作者修改）**
 
