@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 深入浅出XAML
-no-post-nav: true
+
 categories: 
 - [life, xaml, wpf]
 

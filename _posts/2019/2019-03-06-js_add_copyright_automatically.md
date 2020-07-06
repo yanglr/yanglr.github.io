@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: JS实现页面复制文字时自动加版权
-no-post-nav: true
+
 category: it
 
 sitemap:
