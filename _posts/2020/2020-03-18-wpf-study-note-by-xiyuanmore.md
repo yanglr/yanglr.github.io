@@ -1,12 +1,12 @@
 ---
 layout: post
 title: WPF学习笔记（一） - by 邹溪源
-date: 2020-07-05 11:06:50
+date: 2020-03-18 21:26:20
 no-post-nav: true
-category: windows
+category: wpf
 
 sitemap:
-  lastmod: 2020-07-02 20:00:00
+  lastmod: 2020-03-18 21:26:20
   priority: 0.7
   changefreq: 'weekly'
   exclude: 'yes'
@@ -29,22 +29,22 @@ excerpt: WPF学习笔记（一） - 转载自邹溪源的博客园博客
 
 ## 如何学习WPF技术？
 
-在Quote上有人提出了这样一个相同的问题，[查看问题](https://www.quora.com/How-can-I-learn-WPF-easily)，开发者Srikanth Pagadala如是回答：
+在Quote上有人提出了这样一个相同的问题，[查看问题](https://www.quora.com/How-can-I-learn-WPF-easily)，开发者`Srikanth Pagadala`如是回答：
 
-> 1、以了解基础控件作为学习的起步过程：这些控件包括TextBox,Button,TextBlock及其他的，理解这些控件对外提供的属性，以及如何使用。\
-> 2、了解和使用布局空间：例如Grid、StackPanel、DockerPanel和其他控件，在这一点上，你需要花费大量的时间。同时你需要学会创建复杂的UI设计。\
-> 3、了解循环类型的空间，例如ItemControl控件。\
-> 4、了解关于模板的概念。包括如何定义包含CheckBox的Combox，同时这个控件还包含了一张图片的按钮，以及如何在ItemsControl中使用不同的模板。\
-> 5、理解数据绑定的运行机制。尝试创建一个MVVM或类似类型的应用程序。\
-> 6、创建一个典型的控件，探索DependencyProperties（依赖属性）和AttachedProperties（附加属性）。\
+> 1、以了解基础控件作为学习的起步过程：这些控件包括TextBox,Button,TextBlock及其他的，理解这些控件对外提供的属性，以及如何使用。
+> 2、了解和使用布局空间：例如Grid、StackPanel、DockerPanel和其他控件，在这一点上，你需要花费大量的时间。同时你需要学会创建复杂的UI设计。
+> 3、了解循环类型的空间，例如ItemControl控件。
+> 4、了解关于模板的概念。包括如何定义包含CheckBox的Combox，同时这个控件还包含了一张图片的按钮，以及如何在ItemsControl中使用不同的模板。
+> 5、理解数据绑定的运行机制。尝试创建一个MVVM或类似类型的应用程序。
+> 6、创建一个典型的控件，探索DependencyProperties（依赖属性）和AttachedProperties（附加属性）。
 > 7、创建一个样式资源，理解如何给控件设计样式。
 
 除此之外，还有其他开发者给出了补充回答：
 
-> 1、学习控件的数据绑定过程，在DataGrid上实现数据绑定。\
-> 2、学习和实现INotifyPropertyChanged类。[查看如何实现](https://msdn.microsoft.com/en-us/library/vstudio/ms743695(v=vs.100).aspx)\
-> 3、学习Observable Collection。该类型的集合广泛使用于数据集合绑定方面，同时也提供了数据改变通知的机制。\
-> 4、使网格上的列可编辑。用文本控件（用户项目模板）替换列。为每个捕获文本更改事件的列创建一个属性。在文本控件上使用绑定类型。尝试捕获您在后端在网格上所做的更改。\
+> 1、学习控件的数据绑定过程，在DataGrid上实现数据绑定。
+> 2、学习和实现INotifyPropertyChanged类。[查看如何实现](https://msdn.microsoft.com/en-us/library/vstudio/ms743695(v=vs.100).aspx)
+> 3、学习Observable Collection。该类型的集合广泛使用于数据集合绑定方面，同时也提供了数据改变通知的机制。
+> 4、使网格上的列可编辑。用文本控件（用户项目模板）替换列。为每个捕获文本更改事件的列创建一个属性。在文本控件上使用绑定类型。尝试捕获您在后端在网格上所做的更改。
 > 5、成功将数据控件中的文本控件与后端属性绑定后，请在同一页面上创建网格的副本。尝试同步这两个网格。例如，您在第一个网格中所做的每个更改都必须在第二个网格中自动更新。
 
 网站"<https://www.wpf-tutorial.com/>"是一个专门用于学习WPF的网站，通过这个网站，可以快速的入门WPF。
