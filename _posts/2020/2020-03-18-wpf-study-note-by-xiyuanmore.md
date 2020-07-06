@@ -585,7 +585,7 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 
 而如果我们需要实现的功能有这么复杂，那大概使用传统的控件就无法实现，就得使用自定义控件了。（[点击查看示例代码](https://github.com/caomfan/WpfDemo.git)）
 
-![图片](https://uploader.shimo.im/f/f44dU5UMbaYZpJtm.png!thumbnail)
+![图片](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/zxy-wpf-self-define-control.png)
 
 作者定义了自定义控件 ButtonEx，并实现了依赖属性 ButtonType，见【依赖属性】，并定义了不同类型的样式特征。
 
@@ -627,8 +627,8 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 ### 属性和事件
 
 
-[依赖属性](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/dependency-properties-overview)
------------------------------------------------------------------------------------------------------
+#### [依赖属性](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/dependency-properties-overview)
+
 
 依赖属性是为既有WPF控件对象定义自定义属性，以便支持其扩展，例如在上述自定义控件的示例中，就定义了依赖属性 ButtonType，实现了不同类型的按钮外观。
 
@@ -649,7 +649,8 @@ public ButtonType ButtonType
 DependencyProperty.Register("ButtonType", typeof(ButtonType), typeof(ButtonEx), new PropertyMetadata(ButtonType.Normal));
 ```
 
-[附加属性](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/attached-properties-overview)
+#### [附加属性](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/attached-properties-overview)
+
 按照官方的说法就是"附加属性旨在用作可在任何对象上设置的一类全局属性"，例如，DockPanel面板中的子对象，继承了来自于容器对象的附加属性，使得其能够在父对象中实现停靠的功能。
 
 
