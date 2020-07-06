@@ -645,8 +645,9 @@ public ButtonType ButtonType
 
 ```
 
+```csharp
 DependencyProperty.Register("ButtonType", typeof(ButtonType), typeof(ButtonEx), new PropertyMetadata(ButtonType.Normal));
--------------------------------------------------------------------------------------------------------------------------
+```
 
 [附加属性](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/attached-properties-overview)\
 按照官方的说法就是"附加属性旨在用作可在任何对象上设置的一类全局属性"，例如，DockPanel面板中的子对象，继承了来自于容器对象的附加属性，使得其能够在父对象中实现停靠的功能。
@@ -660,10 +661,9 @@ DependencyProperty.Register("ButtonType", typeof(ButtonType), typeof(ButtonEx), 
 
 ```
 
-[路由事件](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/routed-events-overview)
----------------------------------------------------------------------------------------------
+### [路由事件](https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/advanced/routed-events-overview)
 
-### 基本定义
+#### 基本定义
 
 假设我们定义了几个这样的控件。
 
