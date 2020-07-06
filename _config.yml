@@ -20,6 +20,8 @@ github_url: https://github.com/yanglr
 url: http://geekplayers.com
 enforce_ssl: https://geekplayers.com
 
+permalink: /:year/:month/:day/:title/
+
 ## Gem
 plugins:
   - jekyll-paginate
