@@ -1,5 +1,4 @@
 ---
-layout: post
 title: WPF学习笔记（一） - by 邹溪源
 date: 2020-03-18 21:26:20
 no-post-nav: true
