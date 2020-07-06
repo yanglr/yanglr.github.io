@@ -66,6 +66,15 @@ kramdown:
 paginate: 12
 paginate_path: 'page:num'
 
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Zhuang Ma
+organization: 
+organization_url: 
+github_username: yanglr
+location: Shanghai, China
+
 # Navigation. top menu list
 menus:
 
