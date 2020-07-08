@@ -1,0 +1,97 @@
+<h1 id="stdgetline">std::getline</h1>
+
+<p> </p>
+
+<p>在头文件 <string> 中定义.</string></p>
+
+<p><code class="highlighter-rouge">getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
+
+<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction"><code class="highlighter-rouge">UnformattedInputFunction</code></a>, 除了<code class="highlighter-rouge">input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
+
+<p>1) 调用str.erase()</p>
+
+<p>2) <code class="highlighter-rouge">input</code>并把它们添加到<code class="highlighter-rouge">str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
+
+<p>a) 上<code class="highlighter-rouge">input</code>文件结束的条件, 在这种情况下, <code class="highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">eofbit</a>和回报.</p>
+
+<p>b) 下一个可用的输入字符<code class="highlighter-rouge">delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code class="highlighter-rouge">input</code>提取进行了测试, 但不会追加到<code class="highlighter-rouge">str</code>.</p>
+
+<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code class="highlighter-rouge">getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>并返回.</p>
+
+<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code class="highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>, 并返回.</p>
+
+<p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
+
+<h3 id="参数">参数</h3>
+
+<p><strong>input</strong>  -     流中获取数据
+ <strong>str</strong>    -     把数据转换成字符串 
+ <strong>delim</strong>  -     分隔符</p>
+
+<h3 id="返回值">返回值</h3>
+
+<p><code class="highlighter-rouge">input</code></p>
+
+<h3 id="notes">Notes</h3>
+
+<p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin">std::cin</a> » n;, <code class="highlighter-rouge">getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt">operator»</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize">std::streamsize</a> &gt;::max(), ’\n’); before switching to line-oriented input.</p>
+
+<h3 id="示例">示例</h3>
+
+<p>下面的例子陈述了如何使用getline函数来读取用户输入, 以及如何按行处理文件内容. </p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;sstream&gt;
+</span> 
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// greet the user
+</span>    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"What is your name? "</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", nice to meet you.</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+ 
+    <span class="c1">// read file line by line
+</span>    <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="n">input</span><span class="p">;</span>
+    <span class="n">input</span><span class="p">.</span><span class="n">str</span><span class="p">(</span><span class="s">"1</span><span class="se">\n</span><span class="s">2</span><span class="se">\n</span><span class="s">3</span><span class="se">\n</span><span class="s">4</span><span class="se">\n</span><span class="s">5</span><span class="se">\n</span><span class="s">6</span><span class="se">\n</span><span class="s">7</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">line</span><span class="p">;</span> <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">line</span><span class="p">);</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">The sum is: "</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>可能的输出:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>What is your name? John Q. Public
+Hello John Q. Public, nice to meet you.
+ 
+The sum is 28
+</pre></td></tr></tbody></table></code></pre></div></div>

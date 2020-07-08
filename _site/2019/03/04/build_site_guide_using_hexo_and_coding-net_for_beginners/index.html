@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程 -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="geekplayer, geekplayers, 极客玩家, .NET, "C#", .NET Core, PHP, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客, .NET, Python">
+    <meta name="description"
+          content="开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程">
+
+    <link rel="canonical" href="http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2019/03/04 21:01:04
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+                <a href="/"></a>
+                
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>扯一扯在coding.net上建Hexo静态博客的坑和玩法~</p>
+
+<hr />
+
+<p>本文介绍对开发小白也毫无压力的hexo静态博客建站全攻略，<code class="highlighter-rouge">github.io</code>与<code class="highlighter-rouge">coding.me</code>的静态博客类似，3年前本人基于本机<code class="highlighter-rouge">Windows</code>在<code class="highlighter-rouge">github.io</code>上创建了静态<a href="https://yanglr.github.io">Github Pages - yanglr</a>，本文以在<code class="highlighter-rouge">Coding pages</code>上建站为例。</p>
+
+<h2 id="基本原理">基本原理</h2>
+<p><strong>配置区</strong>: 用于<code class="highlighter-rouge">hexo</code>博客的配置，成功部署后原<code class="highlighter-rouge">hexo init</code>产生的目录下会生成一个<code class="highlighter-rouge">public</code>的文件夹。</p>
+
+<p><strong>发布区</strong>: 
+事实上，这一部分就是由<strong>配置区</strong>生成的<code class="highlighter-rouge">public</code>文件夹中的内容。</p>
+
+<p>发布区的代码必须是公开的，配置区的代码看需要了，如果<code class="highlighter-rouge">git</code>部署时使用的是<code class="highlighter-rouge">repo: https://用户名:密码@仓库地址</code>这种方式，如果也<code class="highlighter-rouge">push</code>到公开代码的仓库就会泄漏个人密码了，所以建议配置在自己的电脑上进行，或使用<code class="highlighter-rouge">ssh key</code>的形式代替明文密码。</p>
+
+<h2 id="方法1---本机windows下建站-力荐">方法1 - 本机Windows下建站 (力荐)</h2>
+
+<h3 id="下载安装nodejs">下载安装<code class="highlighter-rouge">node.js</code></h3>
+<p>到<a href="https://nodejs.org/en/blog/release/">官网</a>下载<code class="highlighter-rouge">nodejs</code>的最新<code class="highlighter-rouge">LTS</code>版安装即可。</p>
+<h3 id="用管理员权限打开命令行安装hexo-cli和hexo">用管理员权限打开命令行，安装<code class="highlighter-rouge">hexo-cli</code>和<code class="highlighter-rouge">hexo</code></h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>npm install hexo-cli <span class="nt">-g</span>
+<span class="nv">$ </span>npm install hexo <span class="nt">--save</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>如果安装速度很慢，可以考虑先换淘宝镜像源:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>npm install <span class="nt">-g</span> cnpm <span class="nt">--registry</span><span class="o">=</span>https://registry.npm.taobao.org
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>再继续进行安装~</p>
+
+<h3 id="下载安装git">下载安装<code class="highlighter-rouge">git</code></h3>
+<p>到<a href="https://git-scm.com/">Git官网</a>下载Git Windows版，使用默认设置进行安装即可。</p>
+
+<h3 id="初始化hexo">初始化<code class="highlighter-rouge">hexo</code></h3>
+<p>比如，打算在<code class="highlighter-rouge">D:\</code>盘进行配置，若将配置的文件夹取名为<code class="highlighter-rouge">blog</code>，操作如下：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span><span class="nb">cd </span>D:<span class="se">\</span>
+<span class="nv">$ </span>hexo init blog
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>文件夹名字任意起，根据个人需要了。</p>
+
+<h3 id="使用hexo-generate生成静态资源">使用<code class="highlighter-rouge">hexo generate</code>生成静态资源</h3>
+<p>存放<code class="highlighter-rouge">hexo</code>配置的文件夹<code class="highlighter-rouge">blog</code>创建好之后，就可以使用<code class="highlighter-rouge">hexo generate</code>来生成静态资源了，该命令也可简写为”hexo g”。</p>
+
+<h3 id="在本地运行hexo看一切是否正常">在本地运行<code class="highlighter-rouge">hexo</code>，看一切是否正常</h3>
+<p>此时可使用<code class="highlighter-rouge">hexo server</code>(简写为<code class="highlighter-rouge">hexo s</code>)来开启本地<code class="highlighter-rouge">web</code>服务器查看页面效果，默认情况下在浏览器中打开<code class="highlighter-rouge">http://localhost:4000</code>即可看到如下界面:
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304203706783-1034748400.png" alt="img" /></p>
+
+<h3 id="在codingnet创建与用户名相同的项目并启用代码的pages功能">在<code class="highlighter-rouge">Coding.net</code>创建与用户名相同的项目，并启用代码的<code class="highlighter-rouge">pages</code>功能</h3>
+<p>打开网址<a href="https://dev.tencent.com/user/projects/create">https://dev.tencent.com/user/projects/create</a>，即可创建项目。
+由于项目名字与用户名<code class="highlighter-rouge">legege007</code>一致，所以我的<code class="highlighter-rouge">coding</code>静态<code class="highlighter-rouge">pages</code>的访问地址即为 <a href="http://legege007.coding.me/">legege007.coding.me</a>, 你用同样的方法，地址会变成<code class="highlighter-rouge">你的用户名.coding.me</code>。而如果你的项目名是<code class="highlighter-rouge">blog</code>, 而用户名不是<code class="highlighter-rouge">blog</code>，则此时<code class="highlighter-rouge">coding</code>静态<code class="highlighter-rouge">pages</code>的访问地址即为<code class="highlighter-rouge">你的用户名.coding.me/blog</code>, 这样会有一个隐含的问题在，就是如果你要绑定个人域名，会导致静态资源<code class="highlighter-rouge">js、css</code>等加载失败，即博客会出现有文字但呈现页面混乱的情形。</p>
+
+<p>这里也亲自淌过坑，最终发现有效的处理办法是:
+<strong>创建的项目名必须要和用户名一致，创建的项目名必须要和用户名一致，创建的项目名必须要和用户名一致，强调三连~</strong></p>
+
+<h3 id="启用通过git将hexo部署到远程的功能">启用通过<code class="highlighter-rouge">git</code>将<code class="highlighter-rouge">hexo</code>部署到远程的功能</h3>
+<p>完成此项工作，需要先安装<code class="highlighter-rouge">hexo-deployer-git</code>, 相应需要在命令行中执行:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>npm install hexo-deployer-git <span class="nt">--save</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>安装途中可能会遇到问题:
+<code class="highlighter-rouge">"npm WARN babel-eslint@10.0.1 requires a peer of eslint@&gt;= 4.12.1 but none is installed. You must install peer dependencies yourself. "</code>,
+这里亲自淌过坑，试了很多方法，最终发现有效的处理办法是:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>npm install lodash
+<span class="nv">$ </span>npm install eslint@^4.12.0
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="使用_configyml来配置hexo">使用<code class="highlighter-rouge">_config.yml</code>来配置<code class="highlighter-rouge">hexo</code></h3>
+<p>一开始，我们只需要修改<code class="highlighter-rouge">deloy</code>相关才参数即可.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="na">deploy</span><span class="pi">:</span>
+<span class="err">	</span><span class="na">type</span><span class="pi">:</span> <span class="s">git</span>  <span class="c1">#上传类型 选择git</span>
+<span class="err">	</span><span class="na">repo</span><span class="pi">:</span> <span class="s">https://legege007:yl15826911621@git.dev.tencent.com/legege007/legege007.git</span>  <span class="c1"># 执行 git remote -v 可以获得</span>
+<span class="err">	</span><span class="na">branch</span><span class="pi">:</span> <span class="s">master</span>  <span class="c1"># 部署到 Master分支</span>
+<span class="err">	</span><span class="c1">#message: update blog # 每次提交的信息 不填默认为当前时间</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>只需要将<code class="highlighter-rouge">repo</code>改为你的仓库的<code class="highlighter-rouge">ssh</code>版地址即可。
+同时，你还需要在coding项目中加入自己的<code class="highlighter-rouge">公钥</code>，具体方法为:
+打开命令行终端输入<code class="highlighter-rouge">ssh-keygen -t rsa -C &lt;your_email@example.com&gt;</code>(你的邮箱)，连续点击 Enter 键即可。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Enter file <span class="k">in </span>which to save the key <span class="o">(</span>/Users/you/.ssh/id_rsa<span class="o">)</span>: <span class="o">[</span>Press enter] 
+// 此处推荐使用默认地址，也可在密钥后面加后缀,即输入<span class="s2">"id_rsa_coding"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>找到刚才生成的<code class="highlighter-rouge">id_rsa_coding.pub</code>，将其中的内容贴到<code class="highlighter-rouge">Coding</code>的公钥信息中：
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304214608470-1076788388.png" alt="img" />
+此时，<code class="highlighter-rouge">git</code>推送应该具有权限了~
+目前为止，<code class="highlighter-rouge">_config.yml</code>配置文件只需要改<code class="highlighter-rouge">deploy</code>这一处！</p>
+
+<h3 id="使用hexo-clean--hexo-g--hexo-d发布hexo博客">使用<code class="highlighter-rouge">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>发布<code class="highlighter-rouge">hexo</code>博客</h3>
+<p>不出意外的话，等命令完全跑完就能从静态地址<code class="highlighter-rouge">你的用户名.coding.me</code>看到你的博客内容了。</p>
+
+<h3 id="域名绑定">域名绑定</h3>
+<p>先去域名管理系统中加一条<code class="highlighter-rouge">CNAME</code>记录, 比如我的域名是<a href="https://enjoy233.cn">https://enjoy233.cn</a>，此处想绑定到<a href="https://www.enjoy233.cn">https://www.enjoy233.cn</a>，则添加方法如下：
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211351308-907087033.png" alt="record1" /></p>
+
+<p>将<code class="highlighter-rouge">_config.yml</code>中的<code class="highlighter-rouge">url</code>从<code class="highlighter-rouge">http://yousite.com</code>改为实际用的，比如我设置为:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="na">url</span><span class="pi">:</span> <span class="s">//www.enjoy233.cn</span>
+<span class="na">root</span><span class="pi">:</span> <span class="s">/</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后在<code class="highlighter-rouge">coding pages</code>的页面中设置如下:
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211130778-1132950578.png" alt="img2" />
+过几分钟后，就能通过域名<a href="https://www.enjoy233.cn">https://www.enjoy233.cn</a>来访问我的博客了。</p>
+
+<h3 id="主题使用">主题使用</h3>
+<p>个人觉得 <code class="highlighter-rouge">hexo</code>主题 <a href="https://xaoxuu.com/wiki/material-x/">Material X</a>还挺不错的，配置文档为 <a href="https://xaoxuu.com/wiki/material-x/">Material X  - Wiki</a>~
+就安装试了一下，首先命令行要做的事情是：</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>git clone https://github.com/xaoxuu/hexo-theme-material-x themes/material-x
+
+<span class="nv">$ </span>npm i <span class="nt">-S</span> hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>然后将<code class="highlighter-rouge">_config.yml</code>中的<code class="highlighter-rouge">theme</code>(默认是<code class="highlighter-rouge">landscape</code>)配置为:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="na">theme</span><span class="pi">:</span> <span class="s">material-x</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>此时，再使用<code class="highlighter-rouge">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>发布博客，然后刷新博客就能看到使用主题后的效果了。</p>
+
+<h2 id="方法2---cloud-studio下建站-力荐">方法2 - Cloud Studio下建站 (力荐)</h2>
+<p>此处介绍在<code class="highlighter-rouge">Cloud Studio</code>中使用两个<code class="highlighter-rouge">branch</code>建站的方法，<code class="highlighter-rouge">master</code>分支作为发布区，<code class="highlighter-rouge">config</code>分支作为配置区。如果不另建分支，千万不要使用Cloud Studio的<code class="highlighter-rouge">push</code>代码的功能，不然上传的会是配置相关的所有文件(真个<code class="highlighter-rouge">blog</code>文件夹，而不是仅有<code class="highlighter-rouge">public</code>文件夹下的内容)，会导致博客无法正常使用。
+<strong>这里也亲自淌过坑，所以强调一下~</strong></p>
+
+<h3 id="在codingnet创建与用户名相同的项目并启用pages功能">在<code class="highlighter-rouge">Coding.net</code>创建与用户名相同的项目，并启用<code class="highlighter-rouge">pages</code>功能</h3>
+<p>打开网址 <a href="https://dev.tencent.com/user/projects/create">https://dev.tencent.com/user/projects/create</a>, 开始创建项目。</p>
+
+<p>我的用户名是<code class="highlighter-rouge">legege007</code>，于是就建了个<code class="highlighter-rouge">legege007</code>的项目.
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212259672-990931307.png" alt="img" /></p>
+
+<h3 id="使用现有项目创建工作区">使用现有项目创建工作区</h3>
+<p>打开网址 <a href="https://studio.dev.tencent.com/dashboard/workspace/create">https://studio.dev.tencent.com/dashboard/workspace/create</a>, 即可进入Cloud Studio。
+我选择使用了<code class="highlighter-rouge">node.js</code>的环境来进行配置，同时选中项目<code class="highlighter-rouge">legege007</code>，然后<code class="highlighter-rouge">创建</code>即可。
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212558823-766636642.png" alt="img" /></p>
+
+<h3 id="使用命令行配置环境">使用命令行配置环境</h3>
+<p>Cloud studio中默认是<code class="highlighter-rouge">Linux</code>系统，我习惯于用root的权限来操作，免得后面还需要用<code class="highlighter-rouge">chmod</code>之类的命令来改权限，一进IDE界面，使用命令<code class="highlighter-rouge">sudo su</code>切换即可。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span><span class="nb">sudo </span>su
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>然后新建<code class="highlighter-rouge">config</code>分支后，配置主要在该分支上进行。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>git checkout <span class="nt">-b</span> config
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>其他相关命令使用过程具体如下:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre>➜  workspace git:<span class="o">(</span>master<span class="o">)</span> <span class="nb">sudo </span>su
+root@coding:/home/coding/workspace# git checkout <span class="nt">-b</span> config
+
+root@coding:/home/coding/workspace# git checkout <span class="nt">-b</span> config
+Switched to a new branch <span class="s1">'config'</span>
+
+root@coding:/home/coding/workspace# hexo init blog
+
+root@coding:/home/coding/workspace# <span class="nb">cd </span>blog/
+root@coding:/home/coding/workspace/blog# hexo g
+
+root@coding:/home/coding/workspace/blog# hexo clean <span class="o">&amp;&amp;</span> hexo g <span class="o">&amp;&amp;</span> hexo d
+
+root@coding:/home/coding/workspace/blog# npm install hexo-deployer-git <span class="nt">--save</span>
+
+root@coding:/home/coding/workspace/blog# npm audit fix
+
+root@coding:/home/coding/workspace/blog# npm install lodash
+
+root@coding:/home/coding/workspace/blog# npm install eslint@^4.12.0
+
+root@coding:/home/coding/workspace/blog# npm install hexo-deployer-git <span class="nt">--save</span>
+
+root@coding:/home/coding/workspace/blog# hexo clean <span class="o">&amp;&amp;</span> hexo g <span class="o">&amp;&amp;</span> hexo d
+
+root@coding:/home/coding/workspace/blog# ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-C</span> <span class="s2">"legege007@yeah.net"</span>
+root@coding:/home/coding/workspace# <span class="nb">cd</span> ~/.ssh
+root@coding:~/.ssh# <span class="nb">ls
+</span>id_rsa  id_rsa.pub  known_hosts
+root@coding:~/.ssh# vim id_rsa.pub
+
+root@coding:/home/coding/workspace/blog# hexo clean <span class="o">&amp;&amp;</span> hexo g <span class="o">&amp;&amp;</span> hexo d
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>上述命令和在<code class="highlighter-rouge">windows</code>下操作时基本一致遇到问题，解决问题即可~</p>
+
+<h3 id="_configyml文件的配置域名绑定主题使用等等"><code class="highlighter-rouge">_config.yml</code>文件的配置、域名绑定、主题使用等等</h3>
+<p><code class="highlighter-rouge">_config.yml</code>文件的配置、域名绑定、主题使用等等，基本上与在<code class="highlighter-rouge">Windows</code>下安装完全一样，参考Windows下同样的操作即可，就不再赘述了。</p>
+
+<p>安装完主题后的界面是:
+<img src="http://img2018.cnblogs.com/blog/436938/201903/436938-20190304224154579-1613298900.png" alt="UI" /></p>
+
+<p>另外，值得一提的是:
+Cloud Studio还有几个优势，即:</p>
+<ul>
+  <li>可以迅速切换环境，比如<code class="highlighter-rouge">hexo</code>、<code class="highlighter-rouge">node.js</code>、<code class="highlighter-rouge">.net Core</code>、<code class="highlighter-rouge">Ubuntu</code>、<code class="highlighter-rouge">Java</code>等互转，速度超快的。</li>
+  <li>可以一键部署，除了<code class="highlighter-rouge">coding.me</code>的域名可用以外，一键部署后，还提供一个<code class="highlighter-rouge">coding.io</code>的域名可以访问。如果暂时没买个人域名，这就是个大福利了~</li>
+</ul>
+
+<p><img src="http://img2018.cnblogs.com/blog/436938/201903/436938-20190304220305918-1069723032.png" alt="img6" /></p>
+
+<p>如有帮助，麻烦在右下角”推荐”一下，多谢~</p>
+
+<p><br /></p>
+
+<hr />
+
+<p>欢迎在留言区留下你的观点，一起讨论提高。如果今天的文章让你有新的启发，学习能力的提升上有新的认识，欢迎转发分享给更多人。</p>
+
+<p><br /></p>
+
+<p>欢迎各位读者加入 <strong>.NET技术交流群</strong>，在公众号后台回复<strong>“加群”</strong>或者<strong>“学习”</strong>即可。</p>
+
+<p><br /></p>
+
+<p><img src="https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_qrcode_daBai.jpg" alt="dotNET匠人 公众号名片" /></p>
+
+<h3 id="文末彩蛋">文末彩蛋</h3>
+
+<blockquote>
+  <p>微信后台回复“<strong>asp</strong>”，给你：一份全网最强的ASP.NET学习路线图。</p>
+
+  <p>回复“<strong>cs</strong>”，给你：一整套 C# 和 WPF 学习资源！</p>
+
+  <p>回复“<strong>core</strong>”，给你：2019年dotConf大会上发布的.NET core 3.0学习视频！</p>
+</blockquote>
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>文档信息</h3>
+    <ul>
+        <li>本文作者：<a href="http://localhost:4000" target="_blank">Bravo Yeung大白技术控</a></li>
+        <li>本文链接：<a href="http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/" target="_blank">http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/</a></li>
+        <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">大白技术控-Bravo Yeung-极客玩家</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET 技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/';
+        this.page.identifier = '/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/';
+        this.page.title = '开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <script src="/assets/js/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/',
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'blog-comments',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

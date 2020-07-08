@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> Bookmarks -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="geekplayer, geekplayers, 极客玩家, .NET, "C#", .NET Core, PHP, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客, .NET, Python">
+    <meta name="description"
+          content="本站是极客玩家Bravo Yeung的技术分享博客。内容涵盖 .NET开发, PHP开发, 算法面试题等等~">
+
+    <link rel="canonical" href="http://localhost:4000/bookmark/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="Bookmarks">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>Bookmarks</h1>
+            <span class="meta-info">
+                
+                <span class="mega-octicon octicon-repo"></span>&nbsp;&nbsp; To mark useful libs - tools - books
+                
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <h2 id="php">PHP</h2>
+<ul>
+  <li><a href="https://github.com/j4mie/idiorm/">Idiorm</a> - A lightweight nearly-zero-config object-relational mapper and fluent query builder for PHP5</li>
+  <li><a href="https://github.com/matteosister/GitElephant">GitElephant</a> - An abstraction layer to manage your git repositories with php</li>
+  <li><a href="https://github.com/propelorm/Propel">Propel</a> - ORM for PHP5</li>
+  <li><a href="https://code.google.com/archive/p/simpledom/">SimpleDOM</a> - Built upon SimpleXML and provids DOM methods using SimpleXML’s syntax.</li>
+</ul>
+
+<h2 id="javascript">Javascript</h2>
+<ul>
+  <li><a href="http://alvarotrigo.com/fullPage/">fullPage.js</a> - To create fullscreen scrolling websites / single page websites</li>
+  <li><a href="http://lunrjs.com/">lunr.js</a> - Simple full-text search</li>
+  <li><a href="http://eragonj.github.io/Trip.js/index.html">Trip.js</a> - Help you customize a tutorial trip easily with more flexibilities</li>
+  <li><a href="http://momentjs.com/">Moment.js</a> - Parse, validate, manipulate, and display dates in JavaScript.</li>
+  <li><a href="http://underscorejs.org/">Underscore.js</a> - It provides a whole mess of useful functional programming helpers without extending any built-in objects.</li>
+</ul>
+
+<h3 id="angularjs">AngularJs</h3>
+<ul>
+  <li><a href="http://angular.github.io/protractor">Protractor</a> - End-to-end test framework for AngularJS applications</li>
+  <li><a href="https://github.com/colthreepv/angular-media-player">angular-media-player</a> - Directive for audio and video</li>
+  <li><a href="http://lorenzofox3.github.io/smart-table-website/">Smart table</a> - Module to easily display data in a table</li>
+  <li><a href="http://esvit.github.io/ng-table/#/">ng-table</a> - Module to easily display data in a table</li>
+  <li><a href="https://github.com/tameraydin/ngToast">ngToast</a> - AngularJS toast</li>
+  <li><a href="http://newaeonweb.com.br/generator-angm/">ANGM-GENERATOR</a> - AngularJS Yeoman Generator</li>
+</ul>
+
+<h3 id="nodejs">Node.js</h3>
+<ul>
+  <li><a href="https://github.com/node-modules/utility">utility</a> - A collection of useful utilities</li>
+  <li><a href="https://github.com/cheeriojs/cheerio">cheerio</a> - Implementation of core jQuery designed specifically for the server</li>
+  <li><a href="http://mongoosejs.com/">mongoose</a> - elegant mongodb object modeling for node.js</li>
+  <li><a href="http://visionmedia.github.io/superagent/">SuperAgent</a> - Super Agent is light-weight progressive ajax API</li>
+  <li><a href="https://github.com/kcbanner/connect-mongo">connect-mongo</a> - MongoDB session store for Express and Connect</li>
+  <li><a href="https://github.com/expressjs/morgan">Morgan</a> - HTTP request logger middleware for node.js</li>
+</ul>
+
+<h2 id="css">CSS</h2>
+<ul>
+  <li><a href="https://connoratherton.com/loaders">loaders.css</a> - Delightful and performance-focused pure css loading animations</li>
+  <li><a href="http://github.danielcardoso.net/load-awesome/animations.html">Load Awesome</a> - Pure CSS Loaders and Spinners</li>
+  <li><a href="http://ianlunn.github.io/Hover/">Hover.css</a> - Collection of CSS3 powered hover effects</li>
+  <li><a href="https://github.com/daneden/animate.css">Animate.css</a> - Bunch of cool, fun, and cross-browser animation.</li>
+</ul>
+
+<h2 id="front-end-web-uiframework">Front-end web UI/Framework</h2>
+<ul>
+  <li><a href="http://getbootstrap.com/">Bootstrap</a> - HTML, CSS, and JS framework for developing responsive, mobile first projects on the web</li>
+  <li><a href="https://material.angularjs.org/latest/">Angular-Material</a> - Implementation of Google’s Material Design Specification</li>
+</ul>
+
+<h2 id="fonts">Fonts</h2>
+<ul>
+  <li><a href="https://www.google.com/fonts">Google Fonts</a> - So it’s google fonts :D</li>
+</ul>
+
+<h2 id="icons">Icons</h2>
+<ul>
+  <li><a href="https://octicons.github.com/">Github-Octicons</a> - GitHub’s icons</li>
+  <li><a href="https://fortawesome.github.io/Font-Awesome/">Font-Awesome</a> - Scalable vector icons that can instantly be customized</li>
+  <li><a href="http://www.iconfont.cn/">Iconfont</a> - Alibaba Icon Library (Chinese)</li>
+  <li><a href="http://lipis.github.io/flag-icon-css/">flag-icon-css</a> - Country Flags</li>
+  <li><a href="http://weloveiconfonts.com/">weloveiconfonts</a> - Icon fonts</li>
+  <li><a href="https://design.google.com/icons/#ic_accessibility">Material Icon</a> - Material icons</li>
+</ul>
+
+<h2 id="color">Color</h2>
+<ul>
+  <li><a href="https://www.behance.net/gallery/32154055/Minimalist-Color-Palettes-2015">Minimalist-Color-Palettes</a> - Minimalist Color Palettes</li>
+</ul>
+
+<h2 id="tool">Tool</h2>
+<ul>
+  <li><a href="https://www.processon.com/">ProcessOn</a> - UML web app for team (Chinese)</li>
+  <li><a href="https://www.draw.io/">draw.io</a> - UML web app for team</li>
+  <li><a href="https://winscp.net/eng/download.php">WinSCP</a> - SFTP, SCP and FTP client for Windows</li>
+</ul>
+
+<h2 id="books">Books</h2>
+<ul>
+  <li><a href="https://github.com/tiimgreen/github-cheat-sheet">GitHub Cheat Sheet</a> - GitHub Practical Tips</li>
+  <li><a href="http://jonas.nitro.dk/git/quick-reference.html">Git Quick Reference</a> - Git Quick Reference</li>
+  <li><a href="https://geemus.gitbooks.io/http-api-design/content/en/index.html">HTTP API Design Guide</a> - HTTP+JSON API design practices</li>
+</ul>
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>文档信息</h3>
+    <ul>
+        <li>本文作者：<a href="http://localhost:4000" target="_blank">Bravo Yeung大白技术控</a></li>
+        <li>本文链接：<a href="http://localhost:4000/bookmark/" target="_blank">http://localhost:4000/bookmark/</a></li>
+        <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">大白技术控-Bravo Yeung-极客玩家</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET 技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://localhost:4000/bookmark/';
+        this.page.identifier = '/bookmark/';
+        this.page.title = 'Bookmarks';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <script src="/assets/js/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/bookmark/',
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'blog-comments',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,127 @@
+<h2 id="第3题-装满篮子">第3题: 装满篮子</h2>
+
+<p><strong>描述:</strong>  假设一个篮子最大载重为W，要求从多个不同重量物品中挑选出部分，使得其重量之和刚好等于W。输入若干个正整数，其中第一个数值为篮子载重，后面若干个数值表示不同物品的重量，请判断是否存在方案能刚好装满篮子。存在装满篮子的方案则输出YES，并按照输入顺序输出装入篮子的物品重量，以空格隔开；若不存在则输出NO。备注：本题中只存在一种装载方案。</p>
+
+<p><strong>输入:</strong>  输入若干个正整数，其中第一个数值为篮子载重，后面若干个数值表示不同物品的重量。为了编程方便，限定输入的整数个数不超过20个。</p>
+
+<p><strong>输出:</strong>  存在刚好装满篮子方案则输出YES，并按照输入顺序输出装入篮子的物品重量，以空格隔开；不存在则输出NO。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>运行时间限制:</td>
+      <td>无限制</td>
+    </tr>
+    <tr>
+      <td>内存限制:</td>
+      <td>无限制</td>
+    </tr>
+    <tr>
+      <td>样例输入:</td>
+      <td><code class="highlighter-rouge">10 4 5 6</code></td>
+    </tr>
+    <tr>
+      <td>样例输出:</td>
+      <td><code class="highlighter-rouge">YES 4 6</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>测试用例AC比例: 7/8</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;cstdio&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">int64</span><span class="p">;</span>
+<span class="n">int64</span> <span class="n">fit</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">int64</span><span class="o">*</span> <span class="n">w</span><span class="p">){</span>
+	<span class="n">int64</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="p">){</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="n">s</span> <span class="o">+=</span> <span class="n">w</span><span class="p">[</span><span class="n">k</span><span class="p">];</span>
+		<span class="n">k</span><span class="o">++</span><span class="p">;</span>
+		<span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="n">s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">put</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">int64</span><span class="o">*</span> <span class="n">w</span><span class="p">){</span>
+	<span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="p">){</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">" %lld"</span><span class="p">,</span> <span class="n">w</span><span class="p">[</span><span class="n">k</span><span class="p">]);</span>
+		<span class="n">k</span><span class="o">++</span><span class="p">;</span>
+		<span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">puts</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+	<span class="n">int64</span> <span class="n">w</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+	<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="n">int64</span> <span class="n">W</span><span class="p">;</span>
+	<span class="n">scanf</span><span class="p">(</span><span class="s">"%lld"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">W</span><span class="p">);</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">scanf</span><span class="p">(</span><span class="s">"%lld"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">w</span><span class="p">[</span><span class="n">n</span><span class="o">++</span><span class="p">])</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">);</span>
+	<span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">n</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">find</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">){</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">W</span> <span class="o">==</span> <span class="n">fit</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">w</span><span class="p">))</span> <span class="p">{</span>
+			<span class="n">find</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"YES"</span><span class="p">);</span>
+			<span class="n">put</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">w</span><span class="p">);</span>
+			<span class="k">break</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">find</span><span class="p">)</span> <span class="n">puts</span><span class="p">(</span><span class="s">"NO"</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>264分</p>
+

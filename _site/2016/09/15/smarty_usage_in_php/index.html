@@ -1,0 +1,82 @@
+<p>smarty在PHP项目开发中用得挺多的, 主要用于实现前后端分离, 本文来总结一下常见的用法.</p>
+
+<p>输出今天的日期:</p>
+
+<div class="language-smarty highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">{</span><span class="nv">$smarty.now</span><span class="o">|</span><span class="nb">date_format</span><span class="o">:</span><span class="s2">"%H:%M %A, %B %e, %Y"</span><span class="k">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>实际上用到了PHP的time()函数</p>
+
+<p>明天Date of Tomorrow:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{"tomorrow"|date_format:"%A, %B %e, %Y"}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>后天Date of the day after tomorrow (Day+2):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{"+2 days"|date_format:"%A, %B %e, %Y"}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>(Day+3):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{"+3 days"|date_format:"%A, %B %e, %Y"}
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>相关链接:</p>
+
+<p>How to do to print out date of tomorrow (day+1) with Smarty? - v1.x Store Design &amp; Templates - CS-Cart Community Forums  http://forum.cs-cart.com/topic/8070-how-to-do-to-print-out-date-of-tomorrow-day1-with-smarty/</p>
+
+<h2 id="foreach">foreach</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    {foreach from=$workDetails key=key item=workDetail}
+        &lt;td&gt;{$workDetail['name']}&lt;/td&gt;
+    {/foreach}
+</pre></td></tr></tbody></table></code></pre></div></div>
+<h2 id="if-else">if, else</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>{if $weekDay neq 0 and  $weekDay neq 6}
+
+{else}
+
+{/if}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="调用php函数">调用php函数</h2>
+<p><code class="highlighter-rouge">{$monthDay|substr:'5':'9'}</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>{if $weekDay neq 0 and  $weekDay neq 6}
+    &lt;th&gt;
+        &lt;div style="text-align: center; width:{$tableTdWidth * ($groupMaxCostData['groupMaxCostTimes'][$monthDay] + 1)}px"&gt;{$monthDay|substr:'5':'9'}&lt;div&gt;
+    &lt;/th&gt;
+{else}
+    &lt;th style="background-color: gray;"&gt;
+        &lt;div style="width:{$tableTdWidth * ($groupMaxCostData['groupMaxCostTimes'][$monthDay] + 1)}px"&gt;{$monthDay|substr:'5':'9'}&lt;div&gt;
+    &lt;/th&gt;
+{/if}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="相等与不等">相等与不等</h2>
+<p>eq、neq
+和shell的写法接近</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$var eq 5
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="是否有值">是否有值</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>{if $var}
+</pre></td></tr></tbody></table></code></pre></div></div>

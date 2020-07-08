@@ -1,0 +1,278 @@
+<h2 id="c语言中你可能不熟悉的头文件cstdlibstdlibh"><strong>C语言中你可能不熟悉的头文件&lt;cstdlib&gt;(stdlib.h)</strong></h2>
+
+<p>C Standard General Utilities Library (header)</p>
+
+<p>C标准通用工具库(头文件)</p>
+
+<p>此头文件定义了一些通用功能函数，包括动态存储器管理，随机数生成，与操作系统环境通信，整数算术，搜索，排序和转换。</p>
+
+<h2 id="函数">函数:</h2>
+
+<h3 id="字符串转换">字符串转换</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atof/"><strong>atof</strong></a>
+将字符串(char[])转换为double类型数, 即(char) array-&gt; float(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atoi/"><strong>atoi</strong></a>
+字符串转换为整型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atol/"><strong>atol</strong></a>
+字符串转换为long类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atoll/"><strong>atoll</strong></a> (c++11)
+字符串转换为长整型long long类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtod/"><strong>strtod</strong></a>
+字符串转换为double类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtof/"><strong>strtof</strong></a> (c++11)
+字符串转换为浮点类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtol/"><strong>strtol</strong></a>
+字符串转换为long integer类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtold/"><strong>strtold</strong></a> (c++11)
+字符串转换为long double类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoll/"><strong>strtoll</strong></a> (c++11)
+字符串转换为long long integer类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoul/"><strong>strtoul</strong></a>
+字符串转换为无符号long integer类型(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoull/"><strong>strtoull</strong></a> (c++11)</p>
+
+    <p>字符串转换为无符号long long integer类型(函数)</p>
+  </li>
+  <li>
+    <h3 id="函数非标准">函数(非标准)：</h3>
+
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/itoa/"><strong>itoa</strong></a></p>
+
+    <p>将整数转换为字符串.</p>
+
+    <p><strong>注:</strong> itoa并不是一个标准的C函数，它是Windows特有的，如果要写跨平台的程序，请用sprintf。</p>
+  </li>
+</ul>
+
+<h3 id="伪随机序列生成">伪随机序列生成</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/rand/"><strong>rand</strong></a>
+产生一个伪随机数(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/srand/"><strong>srand</strong></a></p>
+
+    <p>初始化随机数生成器, 为伪随机数生成器设置种子(函数)</p>
+  </li>
+</ul>
+
+<h3 id="动态内存管理">动态内存管理</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/calloc/"><strong>calloc</strong></a></p>
+
+    <p>分配内存且用 0 数组初始化(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/free/"><strong>free</strong></a></p>
+
+    <p>释放内存(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/malloc/"><strong>malloc</strong></a></p>
+
+    <p>分配内存(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/realloc/"><strong>realloc</strong></a></p>
+
+    <p>重分配内存(函数)</p>
+  </li>
+</ul>
+
+<h3 id="系统环境">系统环境</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/abort/"><strong>abort</strong></a></p>
+
+    <p>使程序异常中止，不会主动释放资源(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atexit/"><strong>atexit</strong></a></p>
+
+    <p>注册一个一旦程序发起 <code class="highlighter-rouge">exit</code> 请求就会调用的函数(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/at_quick_exit/"><strong>at_quick_exit</strong></a> (C++11)</p>
+
+    <p>注册一个一旦程序发起 <code class="highlighter-rouge">quick_exit</code> 请求就会调用的函数(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/exit/"><strong>exit</strong></a></p>
+
+    <p>使程序正常中止，主动释放资源(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/getenv/"><strong>getenv</strong></a></p>
+
+    <p>获取系统环境变量列表(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/quick_exit/"><strong>quick_exit</strong></a> (C++11)</p>
+
+    <p>使程序正常中止，不会主动释放所有资源(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/system/"><strong>system</strong></a></p>
+
+    <p>执行系统命令(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/_Exit/"><strong>_Exit</strong></a> (C++11)</p>
+
+    <p>使程序正常中止，不会主动释放资源(函数)</p>
+  </li>
+</ul>
+
+<h3 id="搜索和排序">搜索和排序</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/bsearch/"><strong>bsearch</strong></a></p>
+
+    <p>在数组中进行二分(Binary)查找(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/qsort/"><strong>qsort</strong></a></p>
+
+    <p>对数组元素进行快速排序(函数)</p>
+  </li>
+</ul>
+
+<h3 id="整数算术">整数算术</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/abs/"><strong>abs</strong></a></p>
+
+    <p>获得整数(Integer)或浮点数(Floating point number)的绝对值(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/div/"><strong>div</strong></a></p>
+
+    <p>同时获得两数相除的商(Quotient)及余数(Remainder)(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/labs/"><strong>labs</strong></a></p>
+
+    <p>获得整数的绝对值(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/ldiv/"><strong>ldiv</strong></a></p>
+
+    <p>同时获得两数相除的商及余数(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/llabs/"><strong>llabs</strong></a></p>
+
+    <p>获得整数的绝对值(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/lldiv/"><strong>lldiv</strong></a></p>
+
+    <p>同时获得两数相除的商及余数(函数)</p>
+  </li>
+</ul>
+
+<h3 id="多字节multibyte字符">多字节(Multibyte)字符</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mblen/"><strong>mblen</strong></a></p>
+
+    <p>返回下一个多字节字符的字节数(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mbtowc/"><strong>mbtowc</strong></a></p>
+
+    <p>将下一个多字节字符转化成宽字符(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/wctomb/"><strong>wctomb</strong></a></p>
+
+    <p>将一个宽字符转化成对应的多字节字符(函数)</p>
+  </li>
+</ul>
+
+<h3 id="多字节字符串">多字节字符串</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mbstowcs/"><strong>mbstowcs</strong></a></p>
+
+    <p>将一个多字节字符串转化成宽字符串(函数)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/wcstombs/"><strong>wcstombs</strong></a></p>
+
+    <p>将一个宽字符串转化成多字节字符串(函数)</p>
+  </li>
+</ul>
+
+<h3 id="宏常数">宏常数</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/EXIT_FAILURE/"><strong>EXIT_FAILURE</strong></a></p>
+
+    <p>程序失败终止码, 表明一个程序执行失败 (macro)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/EXIT_SUCCESS/"><strong>EXIT_SUCCESS</strong></a></p>
+
+    <p>程序成功终止码, 表明一个程序非正常完成执行 (macro)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/MB_CUR_MAX/"><strong>MB_CUR_MAX</strong></a></p>
+
+    <p>多字节字符的最大尺寸 (macro)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/NULL/"><strong>NULL</strong></a></p>
+
+    <p>空指针 (macro)</p>
+  </li>
+  <li>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/RAND_MAX/"><strong>RAND_MAX</strong></a></p>
+
+    <p><code class="highlighter-rouge">std::rand</code> 可能产生的最大随机数值 (macro)</p>
+  </li>
+</ul>
+
+<h3 id="类型type">类型(type)</h3>
+
+<p>| 类型                                       | 描述                   |
+| —————————————- | ——————– |
+| <code class="highlighter-rouge">div_t</code>                                  | 结构体类型，由 <code class="highlighter-rouge">div</code> 函数返回   |
+| <code class="highlighter-rouge">ldiv_t</code>                                 | 结构体类型，由 <code class="highlighter-rouge">ldiv</code> 函数返回  |
+| <code class="highlighter-rouge">lldiv_t</code>                                | 结构体类型，由 <code class="highlighter-rouge">lldiv</code> 函数返回 |
+| <a href="http://www.cplusplus.com/reference/cstddef/size_t/"><strong>size_t</strong></a> | 无符号整型 (type )        |
+<br />
+参考链接: <a href="http://www.cplusplus.com/reference/cstdlib/">http://www.cplusplus.com/reference/cstdlib/</a></p>

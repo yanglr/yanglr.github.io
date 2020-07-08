@@ -1,0 +1,87 @@
+<h3 id="题目-等差数列">题目: 等差数列</h3>
+
+<ul>
+  <li>热度指数：1010    时间限制：1秒    空间限制：32768K</li>
+</ul>
+
+<h2 id="题目描述">题目描述</h2>
+
+<p>功能: 对于等差数列 2，5，8，11，14…</p>
+
+<p>输入: 正整数N &gt;0</p>
+
+<p>输出: 求等差数列前N项和</p>
+
+<p>返回: 转换成功返回 0 ,非法输入与异常返回-1</p>
+
+<p> </p>
+
+<h5 id="输入描述"><strong>输入描述:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>输入一个正整数。
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输出描述"><strong>输出描述:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>输出一个相加后的整数。
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输入例子"><strong>输入例子:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>2
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输出例子"><strong>输出例子:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>7
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在线提交网址: http://www.nowcoder.com/practice/f792cb014ed0474fb8f53389e7d9c07f?tpId=37&amp;tqId=21323&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</p>
+
+<h3 id="分析">分析:</h3>
+
+<p>使用求和公式, a[n] = d*n - a[0], S[n] = (a[1] + a[n])/2, 算一下就可以写出代码了…</p>
+
+<p>已AC代码:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="cp">#include&lt;cstdio&gt;
+#include&lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">sum</span><span class="p">;</span>
+        <span class="n">sum</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+        
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">sum</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
