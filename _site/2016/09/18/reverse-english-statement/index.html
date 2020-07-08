@@ -1,0 +1,113 @@
+<h3 id="题目-句子逆序">题目: 句子逆序</h3>
+
+<ul>
+  <li>热度指数：4483    时间限制：1秒    空间限制：32768K</li>
+  <li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578">数组</a></li>
+</ul>
+
+<p>将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后“boy a am I”
+所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符</p>
+
+<p>接口说明</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>/**
+
+* 反转句子
+  * @param sentence 原句子
+
+  * @return 反转后的句子
+    */
+    public String reverse(String sentence);
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输入描述"><strong>输入描述:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>将一个英文语句以单词为单位逆序排放。
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输出描述"><strong>输出描述:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>得到逆序的句子
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输入例子"><strong>输入例子:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>I am a boy
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输出例子"><strong>输出例子:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>boy a am I
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在线提交网址: http://www.nowcoder.com/practice/48b3cb4e3c694d9da5526e6255bb73c3?tpId=37&amp;tqId=21236&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</p>
+
+<h3 id="分析">分析:</h3>
+
+<p>有一种比较易实现的思路, 将每次cin的部分放进一个vector中, 然后反向遍历(迭代器auto it = vect.rbegin()), 最后一个元素单独处理, 否则会输出多余的空格.</p>
+
+<p>已AC代码:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre><span class="cp">#include&lt;cstdio&gt;
+#include&lt;iostream&gt;
+#include&lt;vector&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">str</span><span class="p">;</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">vect</span><span class="p">;</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">str</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">vect</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="c1">//    vector&lt;string&gt;::iterator it = vect.rbegin();             // 反向循环
+</span>    <span class="k">for</span><span class="p">(</span> <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">vect</span><span class="p">.</span><span class="n">rbegin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">vect</span><span class="p">.</span><span class="n">rend</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>  <span class="o">++</span><span class="n">it</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">it</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">vect</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>相关链接:</p>
+
+<p>http://stackoverflow.com/questions/3610933/iterating-c-vector-from-the-end-to-the-begin</p>
+

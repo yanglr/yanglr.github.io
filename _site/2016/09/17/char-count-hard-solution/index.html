@@ -1,0 +1,156 @@
+<h3 id="题目-字符统计">题目: 字符统计</h3>
+
+<ul>
+  <li>
+    <p>热度指数：875    时间限制：1秒   空间限制：32768K</p>
+  </li>
+  <li>
+    <p>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=579">字符串</a> <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=590">排序</a></p>
+  </li>
+</ul>
+
+<h2 id="题目描述">题目描述</h2>
+
+<p>如果统计的个数相同，则按照ASII码由小到大排序输出 。如果有其他字符，则对这些字符不用进行统计。</p>
+
+<p>实现以下接口：
+输入一个字符串，对字符中的各个英文字符，数字，空格进行统计（可反复调用）
+按照统计个数由多到少输出统计结果，如果统计的个数相同，则按照ASII码由小到大排序输出
+清空目前的统计结果，重新统计</p>
+
+<p>调用者会保证：
+输入的字符串以‘\0’结尾。</p>
+
+<h5 id="输入描述"><strong>输入描述:</strong></h5>
+<p>输入一串字符。</p>
+
+<h5 id="输出描述"><strong>输出描述:</strong></h5>
+
+<p>对字符中的各个英文字符（大小写分开统计），数字，空格进行统计，并按照统计个数由多到少输出,如果统计的个数相同，则按照ASII码由小到大排序输出。如果有其他字符，则对这些字符不用进行统计。</p>
+
+<h5 id="输入例子"><strong>输入例子:</strong></h5>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>aadddccddc
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="输出例子"><strong>输出例子:</strong></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>dca
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在线提交网址: http://www.nowcoder.com/practice/c1f9561de1e240099bdb904765da9ad0?tpId=37&amp;tqId=21325&amp;rp=&amp;ru=/ta/huawei&amp;qru=/ta/huawei/question-ranking</p>
+
+<h3 id="分析">分析:</h3>
+
+<p>使用一个hash表(unordered_map)存储 <code class="highlighter-rouge">&lt;字符, 出现次数&gt;</code> 的键值对, 然后按出现次数count进行排序(C++算法库中的sort函数), 排序时注意当统计的个数相同时, 按照ASII码由小到大顺序输出.</p>
+
+<p>下面是已AC代码:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;iostream&gt;
+#include &lt;unordered_map&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">bool</span> <span class="nf">comp</span><span class="p">(</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">,</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>  <span class="c1">// 重载sort函数的自定义比较函数comp
+</span><span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">second</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">.</span><span class="n">second</span><span class="p">)</span>
+		<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">second</span> <span class="o">==</span> <span class="n">b</span><span class="p">.</span><span class="n">second</span> <span class="o">&amp;&amp;</span> <span class="n">a</span><span class="p">.</span><span class="n">first</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">.</span><span class="n">first</span><span class="p">)</span>
+		<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+	<span class="k">else</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">str</span><span class="p">;</span>
+	<span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">countMap</span><span class="p">;</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="n">str</span><span class="p">))</span>
+	<span class="p">{</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">str</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+             <span class="k">if</span><span class="p">(</span><span class="n">countMap</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="n">countMap</span><span class="p">.</span><span class="n">end</span><span class="p">())</span>
+            <span class="p">{</span>
+                <span class="n">countMap</span><span class="p">[</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="n">countMap</span><span class="p">[</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>        
+		<span class="p">}</span>
+
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">elems</span><span class="p">(</span><span class="n">countMap</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">countMap</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+	<span class="n">sort</span><span class="p">(</span><span class="n">elems</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">elems</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">comp</span><span class="p">);</span>  <span class="c1">// 使用sort对hash表进行排序
+</span>
+	<span class="k">for</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;::</span><span class="n">iterator</span> <span class="n">it</span><span class="o">=</span><span class="n">elems</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">elems</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+	<span class="n">countMap</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+	<span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>测试用例1: 8v26ktzk069lm400061m0v965we88850o6omqi532ktir6esb55t0kqm026y8rk63aj82kcx48gd1tiylvs0xo32zem65q7z5ce2185d2ascz62a2p3ajr45h637t2p290lc043gicp5ldzzmx2
+
+测试用例2:
+aadddccddc
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>参考:
+http://stackoverflow.com/questions/31323135/sort-an-unordered-map-using-sort</p>

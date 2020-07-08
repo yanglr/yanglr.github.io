@@ -1,0 +1,81 @@
+<p>使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre>    <span class="sd">/**
+     * 判断是否为原子需求, 即是否依然含有子需求
+     * @param int $id 需求Id
+     * @return int
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">hasChildIssue</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$res</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">client</span><span class="o">-&gt;</span><span class="na">api</span><span class="p">(</span><span class="s1">'issue'</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">show</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">'include'</span> <span class="o">=&gt;</span> <span class="s1">'children'</span><span class="p">));</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$res</span><span class="p">[</span><span class="s1">'issue'</span><span class="p">][</span><span class="s1">'children'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre>    <span class="nb">set_time_limit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="nv">$startTime</span> <span class="o">=</span> <span class="nb">microtime</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+
+    <span class="c1">//检查API KEY是否配置
+</span>    <span class="nv">$configService</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">serviceInstance</span><span class="p">(</span><span class="s1">'config'</span><span class="p">,</span> <span class="s1">'work'</span><span class="p">);</span>
+    <span class="nv">$config</span> <span class="o">=</span> <span class="nv">$configService</span><span class="o">-&gt;</span><span class="na">getConstApiKey</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$config</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nx">\Exception</span><span class="p">(</span><span class="s1">'固定API KEY未配置'</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nv">$constApiKey</span> <span class="o">=</span> <span class="nv">$config</span><span class="p">[</span><span class="s1">'value'</span><span class="p">];</span>
+    <span class="nv">$redmine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RedmineLib</span><span class="p">(</span><span class="nv">$constApiKey</span><span class="p">);</span>
+
+    <span class="nv">$issueId</span><span class="o">=</span><span class="mi">17252</span><span class="p">;</span>
+    <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$redmine</span><span class="o">-&gt;</span><span class="na">client</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">'/issues/'</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$issueId</span><span class="p">)</span><span class="o">.</span><span class="s1">'.json?'</span><span class="o">.</span><span class="nb">http_build_query</span><span class="p">(</span><span class="k">array</span> <span class="p">(</span><span class="s1">'include'</span> <span class="o">=&gt;</span> <span class="s1">'children'</span><span class="p">)));</span>
+
+    <span class="nv">$temp</span> <span class="o">=</span> <span class="nv">$redmine</span><span class="o">-&gt;</span><span class="na">client</span><span class="o">-&gt;</span><span class="na">api</span><span class="p">(</span><span class="s1">'issue'</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">show</span><span class="p">(</span><span class="mi">17252</span><span class="p">,</span> <span class="k">array</span> <span class="p">(</span><span class="s1">'include'</span> <span class="o">=&gt;</span> <span class="s1">'children'</span><span class="p">));</span>
+    
+    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$temp</span><span class="p">[</span><span class="s1">'issue'</span><span class="p">][</span><span class="s1">'children'</span><span class="p">]);</span> <span class="k">exit</span><span class="p">;</span> <span class="c1">// 如果有子任务，['issue']['children']字段不存在，否则['issue']['children']字段对应一个子数组
+</span>
+<span class="c1">//        $temp  = $redmine-&gt;client-&gt;issue-&gt;show(17252, array('include' =&gt; 'children'));
+//        $temp  = $redmine-&gt;hasChildIssue(17330);
+</span>    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$temp</span><span class="p">);</span> <span class="k">exit</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>相关链接:
+http://www.redmine.org/projects/redmine/wiki/Rest_Issues</p>
+
+<p>Rest api with php - Redmine 
+http://www.redmine.org/projects/redmine/wiki/Rest_api_with_php</p>

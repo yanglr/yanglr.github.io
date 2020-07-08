@@ -1,0 +1,124 @@
+<h3 id="题目-数组中的逆序对">题目: 数组中的逆序对</h3>
+
+<ul>
+  <li>热度指数：4735      时间限制：1秒        空间限制：32768K</li>
+  <li>本题知识点： <a href="http://www.nowcoder.com/questionCenter?questionTypes=000100&amp;mutiTagIds=578">数组</a></li>
+</ul>
+
+<h2 id="题目描述">题目描述</h2>
+
+<p>在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组,求出这个数组中的逆序对的总数P。并将P对1000000007取模的结果输出。 即输出P%1000000007 </p>
+
+<p><strong>输入描述:</strong><code class="highlighter-rouge">题目保证输入的数组中没有的相同的数字数据范围：</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>对于%50的数据,size&lt;=10^4;
+对于%75的数据,size&lt;=10^5;
+对于%100的数据,size&lt;=2*10^5
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>输入例子:</strong><code class="highlighter-rouge">1,2,3,4,5,6,7,0</code></p>
+
+<p><strong>输出例子:</strong><code class="highlighter-rouge">7</code></p>
+
+<h3 id="分析">分析:</h3>
+
+<p>使用归并排序…</p>
+
+<p>统计逆序对的过程：<strong>先把数组分隔成子数组， 先统计出子数组内部的逆序对的数目，然后再统计出两个相邻子数组之间的逆序对的数目。在统计逆序对的过程中，还需要对数组进行排序(二路归并)。</strong></p>
+
+<p>合并数组，合并时，出现前面的数组值array[i]大于后面数组值array[j]时；则前面数组array[i]~array[mid]都是大于array[j]的，count += mid+1 - i .</p>
+
+<p>当count较大时，将其对1000000007取余.</p>
+
+<h3 id="遇到的坑">遇到的坑:</h3>
+
+<p>1.估计很多人最开始提交都会超时，我是因为在递归中重复创建辅助空间，参考《剑指 offer 》可以通过传 copy 数组解决，辅助空间只创建一次;</p>
+
+<p>2.getCount()的返回值用int型会越界, 用long型就过了…</p>
+
+<p>已AC代码:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+</pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>    
+    <span class="kt">long</span> <span class="n">getCount</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">data</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">copy</span><span class="p">,</span> <span class="kt">long</span> <span class="n">start</span><span class="p">,</span> <span class="kt">long</span> <span class="n">end</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">start</span> <span class="o">==</span> <span class="n">end</span><span class="p">)</span>  <span class="c1">// copy: 辅助数组
+</span>        <span class="p">{</span>
+            <span class="k">return</span> <span class="mi">0</span> <span class="p">;</span>  <span class="c1">// 递归终止条件
+</span>        <span class="p">}</span>
+        
+        <span class="kt">long</span> <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span><span class="o">/</span> <span class="mi">2</span> <span class="p">;</span>
+        <span class="kt">long</span> <span class="n">lCount</span> <span class="o">=</span> <span class="n">getCount</span><span class="p">(</span><span class="n">copy</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">mid</span><span class="p">);</span> <span class="c1">// 递归，归并排序，并计算本次逆序对数 
+</span>        <span class="kt">long</span> <span class="n">rCount</span> <span class="o">=</span> <span class="n">getCount</span><span class="p">(</span><span class="n">copy</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="p">);</span>
+        <span class="kt">long</span> <span class="n">crossCount</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span>       <span class="c1">// 记录交叉的逆序对数
+</span>        <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="n">mid</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">end</span><span class="p">,</span> <span class="n">tempIdx</span> <span class="o">=</span> <span class="n">end</span><span class="p">;</span>  <span class="c1">//i：前半部分的下标，j：后半部分的下标，tempIdx：辅助数组的下标
+</span>        
+        <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="n">start</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="n">mid</span><span class="p">)</span> <span class="p">{</span>   <span class="c1">// 存在交叉的逆序对，先统计一下，然后依次将较大值放进辅助数组
+</span>            <span class="k">if</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">data</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>   
+                <span class="n">copy</span><span class="p">[</span><span class="n">tempIdx</span><span class="o">--</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">--</span><span class="p">];</span>
+                <span class="n">crossCount</span> <span class="o">+=</span> <span class="n">j</span> <span class="o">-</span> <span class="n">start</span> <span class="o">-</span> <span class="p">(</span><span class="n">mid</span><span class="o">-</span><span class="n">start</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">copy</span><span class="p">[</span><span class="n">tempIdx</span><span class="o">--</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">j</span><span class="o">--</span><span class="p">];</span>   <span class="c1">// 不存在交叉的逆序对，依次将较大值放进辅助数组 
+</span>            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="n">start</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">copy</span><span class="p">[</span><span class="n">tempIdx</span><span class="o">--</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">--</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">j</span> <span class="o">&gt;</span> <span class="n">mid</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">copy</span><span class="p">[</span><span class="n">tempIdx</span><span class="o">--</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">j</span><span class="o">--</span><span class="p">];</span>
+        <span class="p">}</span>        
+        <span class="k">return</span> <span class="p">(</span><span class="n">lCount</span> <span class="o">+</span> <span class="n">rCount</span> <span class="o">+</span> <span class="n">crossCount</span><span class="p">)</span> <span class="o">%</span> <span class="mi">1000000007</span><span class="p">;</span> <span class="c1">//数值过大时求余, 防止溢出
+</span>    <span class="p">}</span>
+    
+    <span class="kt">int</span> <span class="n">InversePairs</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">data</span><span class="p">.</span> <span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span> <span class="p">;</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">data</span><span class="p">.</span> <span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">copy</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+            <span class="k">return</span> <span class="n">getCount</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></div></div>

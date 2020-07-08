@@ -1,0 +1,105 @@
+<h3 id="题目-字符串最后一个单词的长度">题目: 字符串最后一个单词的长度</h3>
+<p>热度指数：9697    时间限制：1秒    空间限制：32768K
+本题知识点： 字符串</p>
+
+<h3 id="题目描述">题目描述</h3>
+<p>计算字符串最后一个单词的长度，单词以空格隔开。</p>
+
+<h3 id="输入描述">输入描述:</h3>
+<p>一行字符串，非空，长度小于5000。</p>
+
+<h3 id="输出描述">输出描述:</h3>
+<p>整数N，最后一个单词的长度。</p>
+
+<h3 id="输入例子">输入例子:</h3>
+<p>hello world</p>
+
+<h3 id="输出例子">输出例子:</h3>
+<p>5</p>
+
+<p>在线提交网址: <a href="http://www.nowcoder.com/practice/8c949ea5f36f422594b306a2300315da?tpId=37&amp;tqId=21224">http://www.nowcoder.com/practice/8c949ea5f36f422594b306a2300315da?tpId=37&amp;tqId=21224</a></p>
+
+<h3 id="分析">分析:</h3>
+<p>此题又不少解决办法, 下面po出一种解题方案: 从后向前来扫描输入的字符串, 然后用状态变量flag来记录当前位是否为空格, 字符串最末尾的空格全部跳过, 当遇到第一个非空格的字符时改变flag的值, 计数器+1, 直到flag的状态值为0, 且当前字符是空格时终止循环(break).</p>
+
+<p>注意: 此题的输入不能使用<code class="highlighter-rouge">cin&gt;&gt;stringvar</code>, cin遇到空格、tab键、换行等均会停止, 不过有getline()函数可以解决此问题.</p>
+
+<p>而getline()函数有两种方法可以使用:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> std::getline(std::cin, stringvar);
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>char stringvar[100];
+cin.getline(input,sizeof(stringvar));
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>推荐使用前一种方法.</p>
+
+<p>已AC代码如下:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre><span class="cp">#include&lt;cstdio&gt;
+#include&lt;iostream&gt;
+#include&lt;string&gt;          // 必需
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span> 
+    <span class="n">string</span> <span class="n">str</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">flag</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>       <span class="c1">// 记录当前位置是否为空格
+</span>    <span class="kt">int</span> <span class="n">lastlen</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>   
+    <span class="k">while</span><span class="p">(</span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">str</span><span class="p">))</span>
+    <span class="p">{</span>
+       <span class="kt">int</span> <span class="n">len</span><span class="o">=</span><span class="n">str</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+       <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">len</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span>
+    	<span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">' '</span><span class="p">)</span>
+        	<span class="p">{</span>
+            <span class="k">continue</span><span class="p">;</span>
+        	<span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="sc">' '</span><span class="p">)</span>
+       		<span class="p">{</span>
+            <span class="n">flag</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+            <span class="n">lastlen</span><span class="o">++</span><span class="p">;</span>
+        	<span class="p">}</span>
+       <span class="k">if</span><span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">' '</span><span class="p">)</span>
+       		<span class="p">{</span>
+           <span class="k">break</span><span class="p">;</span>
+       		<span class="p">}</span>
+    	<span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">lastlen</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
