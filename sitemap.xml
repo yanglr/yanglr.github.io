@@ -1,7 +1,5 @@
 ---
 layout: null
-sitemap:
-  exclude: 'yes'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -10,13 +8,13 @@ sitemap:
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
       {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+        <lastmod>{{ post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
       {% elsif post.date %}
-        <lastmod>{{ post.date | date: "%Y/%m/%d" }}</lastmod>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
-        <lastmod>{{ site.time | date: "%Y/%m/%d" }}</lastmod>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       {% endif %}
-      {% if post.sitemap.changefreq %}
+      <!-- {% if post.sitemap.changefreq %}
         <changefreq>{{ post.sitemap.changefreq }}</changefreq>
       {% else %}
         <changefreq>monthly</changefreq>
@@ -25,7 +23,7 @@ sitemap:
         <priority>{{ post.sitemap.priority }}</priority>
       {% else %}
         <priority>0.5</priority>
-      {% endif %}
+      {% endif %} -->
     </url>
     {% endunless %}
   {% endfor %}
@@ -40,7 +38,7 @@ sitemap:
       {% else %}
         <lastmod>{{ site.time | date: "%Y/%m/%d" }}</lastmod>
       {% endif %}
-      {% if page.sitemap.changefreq %}
+      <!-- {% if page.sitemap.changefreq %}
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
       {% else %}
         <changefreq>monthly</changefreq>
@@ -49,7 +47,7 @@ sitemap:
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
         <priority>0.3</priority>
-      {% endif %}
+      {% endif %} -->
     </url>
     {% endunless %}
   {% endfor %}
