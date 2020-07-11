@@ -14,16 +14,6 @@ layout: null
       {% else %}
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       {% endif %}
-      <!-- {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.5</priority>
-      {% endif %} -->
     </url>
     {% endunless %}
   {% endfor %}
@@ -38,16 +28,6 @@ layout: null
       {% else %}
         <lastmod>{{ site.time | date: "%Y/%m/%d" }}</lastmod>
       {% endif %}
-      <!-- {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.3</priority>
-      {% endif %} -->
     </url>
     {% endunless %}
   {% endfor %}
