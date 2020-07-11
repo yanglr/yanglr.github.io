@@ -6,12 +6,6 @@ date: 2019-03-21 02:46:04
 categories: 
 - [wpf, xaml]
 
-sitemap:
-  lastmod: 2019-03-21 02:46:04
-  priority: 0.7
-  changefreq: 'weekly'
-  exclude: 'yes'
-
 tags: [wpf]
 excerpt: 大白技术控 - 微软XAML Studio - WPF、Sliverlight、Xamarin、UWP等技术开发者的福音
 ---

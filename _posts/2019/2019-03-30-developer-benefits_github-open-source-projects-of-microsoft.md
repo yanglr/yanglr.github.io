@@ -5,11 +5,6 @@ date: 2019-03-30 19:43:10
 categories: 
 - [github, 微软]
 
-sitemap:
-  lastmod: 2019-03-30 19:43:10
-  priority: 0.7
-  changefreq: 'weekly'
-
 tags: [github, 微软]
 excerpt: 大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收
 ---

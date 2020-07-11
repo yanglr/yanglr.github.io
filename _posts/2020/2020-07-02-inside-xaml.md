@@ -5,12 +5,6 @@ title: 深入浅出XAML
 categories: 
 - [life, xaml, wpf]
 
-sitemap:
-  lastmod: 2020-07-02 20:00:00
-  priority: 0.7
-  changefreq: 'weekly'
-  exclude: 'yes'
-
 tags: [wpf]
 excerpt: 深入浅出XAML - 转载自《程序员杂志》
 ---

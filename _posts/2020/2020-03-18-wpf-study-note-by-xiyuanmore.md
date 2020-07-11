@@ -4,12 +4,6 @@ date: 2020-03-18 21:26:20
 no-post-nav: false
 category: wpf
 
-sitemap:
-  lastmod: 2020-03-18 21:26:20
-  priority: 0.7
-  changefreq: 'weekly'
-  exclude: 'yes'
-
 tags: [mfc, windows]
 excerpt: WPF学习笔记（一） - 转载自邹溪源的博客园博客
 ---

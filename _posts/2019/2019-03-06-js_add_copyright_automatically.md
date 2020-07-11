@@ -4,12 +4,6 @@ title: JS实现页面复制文字时自动加版权
 
 category: it
 
-sitemap:
-  lastmod: 2019-03-04 21:01:00
-  priority: 0.7
-  changefreq: 'weekly'
-  exclude: 'yes'
-
 tags: [js, copyright]
 excerpt: JS实现页面复制文字时自动加版权
 ---

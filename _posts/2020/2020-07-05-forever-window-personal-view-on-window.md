@@ -5,12 +5,6 @@ date: 2020-07-05 11:06:50
 
 category: windows
 
-sitemap:
-  lastmod: 2020-07-02 20:00:00
-  priority: 0.7
-  changefreq: 'weekly'
-  exclude: 'yes'
-
 tags: [mfc, windows]
 excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客园博客
 ---
