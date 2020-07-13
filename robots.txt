@@ -1,3 +1,2 @@
 Sitemap: https://geekplayers.com/sitemap.xml
 User-agent: *
-Disallow:
