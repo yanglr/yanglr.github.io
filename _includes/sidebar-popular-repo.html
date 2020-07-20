@@ -80,14 +80,14 @@
 <br />
 <h3 class="sidebar-title">开源软件</h3>
 {% if site.github.public_repositories != false %}
-{% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+{% assign repos = (site.github.public_repositories | sort: "stargazers_count") | reverse | where: "fork", "false" %}
 {% for repo in repos | limit: site.side_bar_repo_limit %}
-<a href="{{ repo.html_url }}" target="_blank" class="card text-center">
+<div class="card text-center">
     <div class="thumbnail">
         <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
             <div class="card-image-cell">
                 <h3 class="card-title">
-                    {{ repo.name }}
+                    <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
                 </h3>
             </div>
         </div>
@@ -104,12 +104,13 @@
                 </span>
                 <span data-toggle="tooltip" class="meta-info" title="Last updated：{{ repo.updated_at }}">
                     <span class="octicon octicon-clock"></span>
-                    <time datetime="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
+                    <time datetime="{{ repo.updated_at }}"
+                        title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d %T' }}</time>
                 </span>
             </div>
         </div>
     </div>
-</a>
+</div>
 {% endfor %}
 {% endif %}
 
