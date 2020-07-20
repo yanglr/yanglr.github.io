@@ -79,6 +79,7 @@
 
 <br />
 <h3 class="sidebar-title">开源软件</h3>
+{% if site.github.public_repositories != false %}
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 {% for repo in sorted_repos | limit: site.side_bar_repo_limit %}
 <div class="card text-center">
@@ -111,6 +112,8 @@
     </div>
 </div>
 {% endfor %}
+{% endif %}
+
 <script>
     $(document).ready(function () {
 
