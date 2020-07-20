@@ -10,14 +10,14 @@ title:  极客玩家Bravo Yeung-大白技术控
 subtitle: "大白爱技术，爱生活"
 name: Bravo Yeung大白技术控
 email: legege007@126.com
-description: "本站是极客玩家Bravo Yeung的技术分享博客。内容涵盖 .NET开发, PHP开发, 算法面试题等等~"
-keywords: geekplayer, geekplayers, 极客玩家, .NET, "C#", .NET Core, PHP, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客, .NET, Python
+description: "极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~"
+keywords: Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客
 encoding: "utf-8"
 favicon: favicon.ico
 
 repository: yanglr/yanglr.github.io
 github_url: https://github.com/yanglr
-url: http://geekplayers.com
+url: https://geekplayers.com
 enforce_ssl: https://geekplayers.com
 
 permalink: /:year/:month/:day/:title/

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>极客玩家Bravo Yeung-大白技术控</title>
-    <description>本站是极客玩家Bravo Yeung的技术分享博客。内容涵盖 .NET开发, PHP开发, 算法面试题等等~</description>
-    <link>http://geekplayers.com/</link>
-    <atom:link href="http://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jul 2020 20:12:55 +0800</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2020 20:12:55 +0800</lastBuildDate>
+    <description>极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
+    <link>https://geekplayers.com/</link>
+    <atom:link href="https://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 20 Jul 2020 21:31:18 +0800</pubDate>
+    <lastBuildDate>Mon, 20 Jul 2020 21:31:18 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -677,8 +677,8 @@
 &lt;p&gt;我想《永远的窗口》此文就到此结束了……&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jul 2020 19:06:50 +0800</pubDate>
-        <link>http://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/</guid>
+        <link>https://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/</guid>
         
         <category>mfc</category>
         
@@ -1021,8 +1021,8 @@
 &lt;p&gt;XAML是生成.NET对象树的简单而强大的方法。由于它基于XML，创建基于XAML的标记就很简单了。这不仅使得手工构建用户界面很容易，而且使得通过工具来生成XAML也相对简单——今后，能够导出文档和以XAML格式来绘制的设计工具将会出现。使用诸如XSLT之类的技术来将XML数据源转换为XAML文档也很容易。XAML通过code-behind文件支持用户界面与代码的完全分离，而它与WinFX的紧密集成使得代码操作标记中定义的用户界面元素非常容易。&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2020/07/02/inside-xaml/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2020/07/02/inside-xaml/</guid>
+        <link>https://geekplayers.com/2020/07/02/inside-xaml/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2020/07/02/inside-xaml/</guid>
         
         <category>wpf</category>
         
@@ -2241,8 +2241,8 @@
 &lt;p&gt;如果果想要对WPF进一步了解，最好通过系统的学习相关知识，除了前面提到的网站和几本书，最好的入门网站依然是&lt;a href=&quot;https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/&quot;&gt;微软官方文档&lt;/a&gt;。&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Mar 2020 05:26:20 +0800</pubDate>
-        <link>http://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</guid>
+        <link>https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</guid>
         
         <category>mfc</category>
         
@@ -2369,8 +2369,8 @@
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-977&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-977&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</guid>
+        <link>https://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -2497,8 +2497,8 @@
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-645&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-645&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/</guid>
+        <link>https://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -2599,8 +2599,8 @@
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/</guid>
+        <link>https://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -2799,8 +2799,8 @@ M             1000
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-013&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-013&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/</guid>
+        <link>https://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -2926,8 +2926,8 @@ M             1000
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-009&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-009&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/</guid>
+        <link>https://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -3151,8 +3151,8 @@ M             1000
 &lt;a href=&quot;https://blog.csdn.net/Gavin_Nicholas/article/details/88974079&quot;&gt;https://blog.csdn.net/Gavin_Nicholas/article/details/88974079&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/10/04/python-leetcode204-count-primes/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/10/04/python-leetcode204-count-primes/</guid>
+        <link>https://geekplayers.com/2019/10/04/python-leetcode204-count-primes/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/10/04/python-leetcode204-count-primes/</guid>
         
         <category>LeetCode面试题系列</category>
         
@@ -3316,8 +3316,8 @@ M             1000
 &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-202&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-202&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 28 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://geekplayers.com/2019/09/28/python-leetcode202-happy-number/</link>
-        <guid isPermaLink="true">http://geekplayers.com/2019/09/28/python-leetcode202-happy-number/</guid>
+        <link>https://geekplayers.com/2019/09/28/python-leetcode202-happy-number/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2019/09/28/python-leetcode202-happy-number/</guid>
         
         <category>LeetCode面试题系列</category>
         

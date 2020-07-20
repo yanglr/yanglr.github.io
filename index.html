@@ -26,9 +26,9 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {% for post in paginator.posts %}
                  {% if  post.category != 'gitchat' and post.category != 'geektime' %}
                     <li class="post-list-item">
-                        <h1 class="post-list-title">
-                            <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                        </h1>
+                        <h2 class="post-list-title">
+                            <b><a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></b>
+                        </h2>
                         <p class="post-list-description">
                             {{ post.excerpt | strip_html | strip }}
                         </p>
