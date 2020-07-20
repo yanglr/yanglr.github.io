@@ -274,7 +274,7 @@
 
 <p>例如，给定 <em>n</em> = 2，返回 <strong>[0,1,3,2]</strong>。其格雷编码是：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -326,13 +326,13 @@
     <span class="k">def</span> <span class="nf">grayCode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
         <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> 
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">n</span><span class="p">):</span> 
-            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">^</span> <span class="n">i</span><span class="p">)</span> 
+            <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">^</span> <span class="n">i</span><span class="p">)</span> 
         <span class="k">return</span> <span class="n">res</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/leetcode89-code.jpg" alt="code" /></p>
 
-<p>如果需要在本地测试，需要先在代码开头引入<code class="highlighter-rouge">from typing import List</code>，然后实例化 <code class="highlighter-rouge">Solution</code>，最后调用相应的 method 即可。完整代码如下:</p>
+<p>如果需要在本地测试，需要先在代码开头引入<code class="language-plaintext highlighter-rouge">from typing import List</code>，然后实例化 <code class="language-plaintext highlighter-rouge">Solution</code>，最后调用相应的 method 即可。完整代码如下:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -352,17 +352,17 @@
     <span class="k">def</span> <span class="nf">grayCode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
         <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> 
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">n</span><span class="p">):</span> 
-            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">^</span> <span class="n">i</span><span class="p">)</span> 
+            <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">^</span> <span class="n">i</span><span class="p">)</span> 
         <span class="k">return</span> <span class="n">res</span>
         
-<span class="c"># 以下是测试代码</span>
-<span class="n">obj</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">grayCode</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># 以下是测试代码
+</span><span class="n">obj</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="n">grayCode</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><strong>运行结果:</strong></p>
 
-<p>执行用时: <code class="highlighter-rouge">48 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">87.40%</code>的用户。</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">48 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">87.40%</code>的用户。</p>
 
 <p><br /></p>
 

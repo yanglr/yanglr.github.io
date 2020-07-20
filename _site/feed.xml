@@ -5,9 +5,9 @@
     <description>极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
     <link>https://geekplayers.com/</link>
     <atom:link href="https://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jul 2020 22:58:07 +0800</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2020 22:58:07 +0800</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+    <pubDate>Mon, 20 Jul 2020 23:22:53 +0800</pubDate>
+    <lastBuildDate>Mon, 20 Jul 2020 23:22:53 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>永远的窗口(个人对窗口的拙见)</title>
@@ -77,8 +77,8 @@
 10
 11
 12
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;UINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;UINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;WNDPROC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lpfnWndProc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cbClsExtra&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cbWndExtra&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -88,18 +88,18 @@
     &lt;span class=&quot;n&quot;&gt;HBRUSH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hbrBackground&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;LPCTSTR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lpszMenuName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;LPCTSTR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lpszClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WNDCLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PWNDCLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WNDCLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PWNDCLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;代码 2‑1 窗口类结构体&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;这里面最为重要的是第二个成员窗口过程，如果把窗口比作有生命的物体，那么窗口过程就注入了灵魂。这个我们需要在消息循环一节当中解释。&lt;/p&gt;
 
-&lt;p&gt;其他的比较常用的成员变量，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;hIcon&lt;/code&gt;指定了应用程序的图标，&lt;code class=&quot;highlighter-rouge&quot;&gt;hCursor&lt;/code&gt;指定了鼠标的形状，hbrBackground指定了客户区的背景色，&lt;code class=&quot;highlighter-rouge&quot;&gt;lpszMenuName&lt;/code&gt;指定了窗口类的菜单，&lt;code class=&quot;highlighter-rouge&quot;&gt;lpszClassName&lt;/code&gt;指定了窗口类的名字等等。这些特性是每个窗口都具备的共性，因此全部抽象成了窗口类的成员变量。&lt;/p&gt;
+&lt;p&gt;其他的比较常用的成员变量，比如&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hIcon&lt;/code&gt;指定了应用程序的图标，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hCursor&lt;/code&gt;指定了鼠标的形状，hbrBackground指定了客户区的背景色，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lpszMenuName&lt;/code&gt;指定了窗口类的菜单，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lpszClassName&lt;/code&gt;指定了窗口类的名字等等。这些特性是每个窗口都具备的共性，因此全部抽象成了窗口类的成员变量。&lt;/p&gt;
 
 &lt;p&gt;窗口类和窗口的关系，在面向对象里我们可以把它们比作类和对象的关系。但是更贴切的比喻，我认为是模具和成品的关系。窗口类好比一个个模具，想要做按钮，我们就拿一个按钮的模具，倒成一个模子，然后再在上面做一些慢工细活，成为一个按钮。想做组合框，我们就拿一个组合框的模具，想做编辑框，我们就拿一个编辑框的模具，想做一个花瓶，我们就拿……. 问题来了，操作系统没有提供花瓶的模具，不过也有办法，操作系统会告诉我们，你把模具的特性告诉我，我会给你制作一个花瓶的模具。&lt;/p&gt;
 
-&lt;p&gt;有&lt;code class=&quot;highlighter-rouge&quot;&gt;Win32&lt;/code&gt;经验的程序员都知道，每次创建窗口之前，我们都会调用一个函数&lt;code class=&quot;highlighter-rouge&quot;&gt;RegisterClass&lt;/code&gt;，注册窗口类。注册窗口类实际上就是告诉操作系统模具的特性和要求，让操作系统为我们制作一个模具。&lt;/p&gt;
+&lt;p&gt;有&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Win32&lt;/code&gt;经验的程序员都知道，每次创建窗口之前，我们都会调用一个函数&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RegisterClass&lt;/code&gt;，注册窗口类。注册窗口类实际上就是告诉操作系统模具的特性和要求，让操作系统为我们制作一个模具。&lt;/p&gt;
 
 &lt;p&gt;因此一个标准的窗口创建过程，如下所示： &lt;/p&gt;
 
@@ -166,7 +166,7 @@
 61
 62
 63
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;LRESULT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CALLBACK&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WndProc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HWND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WPARAM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wParam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LPARAM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lParam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;LRESULT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CALLBACK&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;WndProc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HWND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WPARAM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wParam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LPARAM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lParam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APIENTRY&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;WinMain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HINSTANCE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;HINSTANCE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hPrevInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -180,8 +180,8 @@
 
 	&lt;span class=&quot;n&quot;&gt;WNDCLASS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wndclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-	&lt;span class=&quot;c1&quot;&gt;// 注册窗口
-&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// 注册窗口&lt;/span&gt;
+
 	&lt;span class=&quot;n&quot;&gt;wndclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CS_HREDRAW&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CS_VREDRAW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 	&lt;span class=&quot;n&quot;&gt;wndclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lpfnWndProc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WndProc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -207,8 +207,8 @@
 		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-	&lt;span class=&quot;c1&quot;&gt;// 创建窗口并显示窗口
-&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// 创建窗口并显示窗口&lt;/span&gt;
+
 	&lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CreateWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;szAppName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The Hello Program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
 		&lt;span class=&quot;n&quot;&gt;WS_OVERLAPPEDWINDOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 		&lt;span class=&quot;n&quot;&gt;CW_USEDEFAULT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -220,8 +220,8 @@
 	&lt;span class=&quot;n&quot;&gt;ShowWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nCmdShow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 	&lt;span class=&quot;n&quot;&gt;UpdateWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// …….
-&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// …….&lt;/span&gt;
+
 	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
@@ -307,8 +307,8 @@
 26
 27
 28
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// 摘自WinUser.h文件
-&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// 摘自WinUser.h文件&lt;/span&gt;
+
 &lt;span class=&quot;cp&quot;&gt;#define WS_OVERLAPPED       0x00000000L
 &lt;/span&gt;
 &lt;span class=&quot;cp&quot;&gt;#define WS_POPUP            0x80000000L
@@ -339,7 +339,7 @@
 
 &lt;p&gt;&lt;strong&gt;代码 3‑1 窗口样式&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;从定义上也能看出&lt;code class=&quot;highlighter-rouge&quot;&gt;WS_OVERLAPPEDWINDOW&lt;/code&gt;是&lt;code class=&quot;highlighter-rouge&quot;&gt;WS_OVERLAPPED&lt;/code&gt;和其他样式的一种组合。&lt;/p&gt;
+&lt;p&gt;从定义上也能看出&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_OVERLAPPEDWINDOW&lt;/code&gt;是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_OVERLAPPED&lt;/code&gt;和其他样式的一种组合。&lt;/p&gt;
 
 &lt;p&gt;写到这里，我们不得不岔开一下话题，谈一谈关于程序员”小气和高明”的问题。&lt;/p&gt;
 
@@ -462,7 +462,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/window_macros_table.png&quot; alt=&quot;window macros table&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;察觉出来没有，程序员没有用一个整型（32位）来表示一个特定的窗口样式，而是用1位来表示窗口样式。小气吗？真小气，早期的程序员就像守财奴一样非常吝啬地使用自己的内存。一个32位的整型，程序员用其中1位来表示一个特定的样式。如果其中有几位都是1呢？那么它表示的就是一个样式的组合。因此，我们可以看到&lt;code class=&quot;highlighter-rouge&quot;&gt;WS_OVERLAPPEDWINDOW&lt;/code&gt; 可以由几个窗口样式进行或运算组合而成。&lt;/p&gt;
+&lt;p&gt;察觉出来没有，程序员没有用一个整型（32位）来表示一个特定的窗口样式，而是用1位来表示窗口样式。小气吗？真小气，早期的程序员就像守财奴一样非常吝啬地使用自己的内存。一个32位的整型，程序员用其中1位来表示一个特定的样式。如果其中有几位都是1呢？那么它表示的就是一个样式的组合。因此，我们可以看到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS_OVERLAPPEDWINDOW&lt;/code&gt; 可以由几个窗口样式进行或运算组合而成。&lt;/p&gt;
 
 &lt;p&gt;这样的做法也是一个极其高明的做法。需要组合的这种参数，往往会设计成这样。它们通过或运算组合而成。判断该参数里是否有某一个特定的样式，则用与运算来检验。将样式从某一个组合里剔除出来，则采用与非运算。如下所示：&lt;/p&gt;
 
@@ -476,16 +476,16 @@
 8
 9
 10
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;DWORD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_POPUP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;// 数值为0x80000000
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000
-&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 判断style里是否有WS_MINIMIZE 返回为真
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_CHILD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;//判断style里是否有WS_CHILD返回为假    
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//从样式里去掉了WS_MINIMIZE样式         数值为0x80000000
-&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;DWORD&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_POPUP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;// 数值为0x80000000&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 判断style里是否有WS_MINIMIZE 返回为真&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WS_CHILD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;//判断style里是否有WS_CHILD返回为假    &lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WS_MINIMIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//从样式里去掉了WS_MINIMIZE样式         数值为0x80000000&lt;/span&gt;
+
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;代码 3‑2 窗口样式运算&lt;/strong&gt;&lt;/p&gt;
@@ -606,13 +606,13 @@
 
 &lt;p&gt;按说进队消息已经没什么特殊，他们都是老老实实地遵循先进先出（first in first out）的原则。但是仍然有些消息会特殊。按照常理来想，如果你要搞特殊，大可不排队，走领导递条子型不就得了。但是这些消息特殊，并不是特殊在他们要特权，他们的问题是太过谦让，看到其他消息总是说”您请先”。&lt;/p&gt;
 
-&lt;p&gt;现在让我们介绍一下，这几个特殊而高尚的信息。他们分别是&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息。这三个消息总在谦让，他们谦让的程度让人咂舌。消息队列里只要还有一条消息在排队，他们都不会往前，直到消息队列为空，才会交给窗口过程处理。&lt;/p&gt;
+&lt;p&gt;现在让我们介绍一下，这几个特殊而高尚的信息。他们分别是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息。这三个消息总在谦让，他们谦让的程度让人咂舌。消息队列里只要还有一条消息在排队，他们都不会往前，直到消息队列为空，才会交给窗口过程处理。&lt;/p&gt;
 
-&lt;p&gt;当系统感觉到窗口需要重绘的时候，比如窗口大小，尺寸等发生变化，会向窗口发送&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，告知窗口需要重绘。&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息不仅会谦让，而且当消息队列里有多个&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，系统会自动合并成一个&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，同时会将每个&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息的无效矩形合并成一个大的无效矩形。&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;之所以这样做，是因为避免窗口过多地重绘造成的系统低效。关于&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;和无效矩形，我想还得再写一篇文章来说明这个问题。&lt;/p&gt;
+&lt;p&gt;当系统感觉到窗口需要重绘的时候，比如窗口大小，尺寸等发生变化，会向窗口发送&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，告知窗口需要重绘。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息不仅会谦让，而且当消息队列里有多个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，系统会自动合并成一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息，同时会将每个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;消息的无效矩形合并成一个大的无效矩形。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;之所以这样做，是因为避免窗口过多地重绘造成的系统低效。关于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_PAINT&lt;/code&gt;和无效矩形，我想还得再写一篇文章来说明这个问题。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;是设置了计时器之后，系统会按照计时器规定的间隔时间来定时发送&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息。由于&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息是一个具有”先人后己”道德高尚的消息，因此，我们说这种计时器是不太准的，比如定时器设置了每50毫秒发送一次&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息，但是50毫秒的时候，消息队列里还有很多其他兄弟消息，于是&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;就忍让了，可能51毫秒或者52毫秒的时候&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息才会放到消息队列当中。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;是设置了计时器之后，系统会按照计时器规定的间隔时间来定时发送&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息。由于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息是一个具有”先人后己”道德高尚的消息，因此，我们说这种计时器是不太准的，比如定时器设置了每50毫秒发送一次&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息，但是50毫秒的时候，消息队列里还有很多其他兄弟消息，于是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;就忍让了，可能51毫秒或者52毫秒的时候&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_TIMER&lt;/code&gt;消息才会放到消息队列当中。&lt;/p&gt;
 
-&lt;p&gt;当应用程序需要退出的时候，系统会发送&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息。&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;的谦让精神和前面的兄弟消息也是一样，就无需多言了。&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;的特殊之处，在于GetMessage一旦得到的是&lt;code class=&quot;highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息，就返回0，整个消息循环就结束了，Game Over！&lt;/p&gt;
+&lt;p&gt;当应用程序需要退出的时候，系统会发送&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;的谦让精神和前面的兄弟消息也是一样，就无需多言了。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;的特殊之处，在于GetMessage一旦得到的是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WM_QUIT&lt;/code&gt;消息，就返回0，整个消息循环就结束了，Game Over！&lt;/p&gt;
 
 &lt;h3 id=&quot;43-一个消息的完整结构&quot;&gt;4.3 一个消息的完整结构&lt;/h3&gt;
 
@@ -632,7 +632,7 @@
 12
 13
 14
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tagMSG&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;tagMSG&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;HWND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 	&lt;span class=&quot;n&quot;&gt;UINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -648,7 +648,7 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;消息结构体，总共有六个成员变量。第一个就是窗口句柄&lt;code class=&quot;highlighter-rouge&quot;&gt;hwnd&lt;/code&gt;，这个参数就告诉我们是哪个窗口收到消息，操作系统可以根据这个信息将消息放到合适的窗口应用程序消息队列当中；第二个是消息的标识，比如WM_PAINT等；第三和第四参数都是用来存储消息的额外信息；第五个参数记录的是消息被放入到消息队列的时间；第六个参数是消息被放入到消息队列时，鼠标所在的位置。&lt;/p&gt;
+&lt;p&gt;消息结构体，总共有六个成员变量。第一个就是窗口句柄&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hwnd&lt;/code&gt;，这个参数就告诉我们是哪个窗口收到消息，操作系统可以根据这个信息将消息放到合适的窗口应用程序消息队列当中；第二个是消息的标识，比如WM_PAINT等；第三和第四参数都是用来存储消息的额外信息；第五个参数记录的是消息被放入到消息队列的时间；第六个参数是消息被放入到消息队列时，鼠标所在的位置。&lt;/p&gt;
 
 &lt;h2 id=&quot;5-小结&quot;&gt;5. 小结&lt;/h2&gt;
 
@@ -870,7 +870,7 @@
 &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;SolidColorBrush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;FromARGB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果想知道XAML编译器如何将字符串Red 映射为上面的代码，事实上它使用了一种自从.NET的第一版发布以来就已存在的技术：&lt;code class=&quot;highlighter-rouge&quot;&gt;类型转换器&lt;/code&gt;。类型转换器是.NET设计时环境的一部分，用于在VS.NET Properties窗口中显示的字符串和对象属性的实际值之间执行转换。类型转换器还可以生成代码来初始化这些属性——VS.NET使用它们来创建Windows Forms应用程序的InitializeComponent方法中的代码。XAML 编译器简单地使用这个现有的基础结构，将特性（attribute）字符串值转换为初始化代码。&lt;/p&gt;
+&lt;p&gt;如果想知道XAML编译器如何将字符串Red 映射为上面的代码，事实上它使用了一种自从.NET的第一版发布以来就已存在的技术：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;类型转换器&lt;/code&gt;。类型转换器是.NET设计时环境的一部分，用于在VS.NET Properties窗口中显示的字符串和对象属性的实际值之间执行转换。类型转换器还可以生成代码来初始化这些属性——VS.NET使用它们来创建Windows Forms应用程序的InitializeComponent方法中的代码。XAML 编译器简单地使用这个现有的基础结构，将特性（attribute）字符串值转换为初始化代码。&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -918,7 +918,7 @@
 
 &lt;h2 id=&quot;添加代码&quot;&gt;添加代码&lt;/h2&gt;
 
-&lt;p&gt;正如我们已经看到的，XAML编译器分别为每个XAML文件生成一个类。那些类从对应XAML文件的根元素类型派生而来，并且包含用于创建所有子元素的代码，如上所示。然而，这些生成的代码对于创建实用的UI 还不足够。大多数用户界面并不只是提供信息——它们通常还需要能够响应用户输入。因此你通常需要添加代码来提供用户界面的行为。把代码插入XAML 文件本身是可以做到的。你可以在Definition 命名空间中添加一个&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;Code&amp;gt;&lt;/code&gt;元素。（根据约定，Definition命名空间被映射到def命名空间前缀，因此这个元素通常以&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;def:Code&amp;gt;&lt;/code&gt;的形式出现。）然后你可以把源代码直接放在这个元素内部，XAML编译器将把它添加到所生成的源文件中。这些代码通常添加到&lt;code class=&quot;highlighter-rouge&quot;&gt;CDATA&lt;/code&gt;节之内，如下面的例子所示：&lt;/p&gt;
+&lt;p&gt;正如我们已经看到的，XAML编译器分别为每个XAML文件生成一个类。那些类从对应XAML文件的根元素类型派生而来，并且包含用于创建所有子元素的代码，如上所示。然而，这些生成的代码对于创建实用的UI 还不足够。大多数用户界面并不只是提供信息——它们通常还需要能够响应用户输入。因此你通常需要添加代码来提供用户界面的行为。把代码插入XAML 文件本身是可以做到的。你可以在Definition 命名空间中添加一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Code&amp;gt;&lt;/code&gt;元素。（根据约定，Definition命名空间被映射到def命名空间前缀，因此这个元素通常以&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;def:Code&amp;gt;&lt;/code&gt;的形式出现。）然后你可以把源代码直接放在这个元素内部，XAML编译器将把它添加到所生成的源文件中。这些代码通常添加到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CDATA&lt;/code&gt;节之内，如下面的例子所示：&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -978,7 +978,7 @@
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Text&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ID=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textElem&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Text&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;这样做之后，XAML编译器将使得这个对象可以像该类的成员变量一样使用，也就是使用ID特性中所指定的名称。例如，你可以将上面的元素中的文本修改如下：&lt;code class=&quot;highlighter-rouge&quot;&gt;textElem.TextRange.Text = &quot;Foo&quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样做之后，XAML编译器将使得这个对象可以像该类的成员变量一样使用，也就是使用ID特性中所指定的名称。例如，你可以将上面的元素中的文本修改如下：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textElem.TextRange.Text = &quot;Foo&quot;;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;你通常不会像上面的例子那样在公共方法编写这种代码。code-behind 文件中的大多数代码都在事件处理程序方法中。&lt;/p&gt;
 
@@ -1002,7 +1002,7 @@
 &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ClickEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;为了使这段代码能够正确地编译，我们当然必须在codebehind文件中提供适当的OnClick函数。与.NET程序中的所有事件处理程序一样，该函数的签名必须匹配事件的委托（delegate）类型。在此例中，按钮的Click 事件使用了&lt;code class=&quot;highlighter-rouge&quot;&gt;ClickEventHandler&lt;/code&gt;委托，因此我们必须编写一个具有匹配的签名的函数。&lt;/p&gt;
+&lt;p&gt;为了使这段代码能够正确地编译，我们当然必须在codebehind文件中提供适当的OnClick函数。与.NET程序中的所有事件处理程序一样，该函数的签名必须匹配事件的委托（delegate）类型。在此例中，按钮的Click 事件使用了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ClickEventHandler&lt;/code&gt;委托，因此我们必须编写一个具有匹配的签名的函数。&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -1055,7 +1055,7 @@
 
 &lt;h2 id=&quot;如何学习wpf技术&quot;&gt;如何学习WPF技术？&lt;/h2&gt;
 
-&lt;p&gt;在Quote上有人提出了这样一个相同的问题，&lt;a href=&quot;https://www.quora.com/How-can-I-learn-WPF-easily&quot;&gt;查看问题&lt;/a&gt;，开发者&lt;code class=&quot;highlighter-rouge&quot;&gt;Srikanth Pagadala&lt;/code&gt;如是回答：&lt;/p&gt;
+&lt;p&gt;在Quote上有人提出了这样一个相同的问题，&lt;a href=&quot;https://www.quora.com/How-can-I-learn-WPF-easily&quot;&gt;查看问题&lt;/a&gt;，开发者&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Srikanth Pagadala&lt;/code&gt;如是回答：&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;1、以了解基础控件作为学习的起步过程：这些控件包括TextBox,Button,TextBlock及其他的，理解这些控件对外提供的属性，以及如何使用。&lt;/p&gt;
@@ -1500,7 +1500,7 @@
 
 &lt;p&gt;定义按钮的颜色为红色和蓝色渐变色，内容为helloworld。这种称为”集合语法”。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1870,7 +1870,7 @@
   &lt;li&gt;DynamicResource：在运行时为资源提供内容。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;object property=&quot;{DynamicResource key}&quot; .../&amp;gt;
 
@@ -1880,7 +1880,7 @@
   &lt;li&gt;Binding：在运行时为使用数据上下文为数据提供内容。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1904,7 +1904,7 @@
   &lt;li&gt;RelativeSource：提供了可在运行时对象树中导航几个可能的关系的 &lt;a href=&quot;https://docs.microsoft.com/zh-cn/dotnet/api/system.windows.data.binding&quot;&gt;Binding&lt;/a&gt; 的源信息。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;Binding RelativeSource=&quot;{RelativeSource modeEnumValue}&quot; .../&amp;gt;
 
@@ -1914,7 +1914,7 @@
   &lt;li&gt;TemplateBinding：使控件模板能够使用模板化属性的值，这些属性来自于将使用该模板的类的对象模型定义属性。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;object property=&quot;{TemplateBinding sourceProperty}&quot; .../&amp;gt;
 
@@ -1924,7 +1924,7 @@
   &lt;li&gt;ColorConvertedBitmap：提供一种方法，用于指定没有嵌入的配置文件的位图源。 颜色上下文/配置文件由 URI 指定，与映像源 URI 相同。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;object property=&quot;{ColorConvertedBitmap imageSource sourceIIC destinationIIC}&quot; .../&amp;gt;
 
@@ -1934,7 +1934,7 @@
   &lt;li&gt;ComponentResourceKey和TemplateResourceKey：&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;object x:Key=&quot;{ComponentResourceKey {x:Type targetTypeName}, targetID}&quot; .../&amp;gt;
 
@@ -2026,7 +2026,7 @@
 
 &lt;p&gt;当然，这样的更改意义不大，如果该FlatButtonStyle引用了其他样式或元素，会发生作用。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -2241,8 +2241,8 @@
 &lt;p&gt;如果果想要对WPF进一步了解，最好通过系统的学习相关知识，除了前面提到的网站和几本书，最好的入门网站依然是&lt;a href=&quot;https://docs.microsoft.com/zh-cn/dotnet/framework/wpf/&quot;&gt;微软官方文档&lt;/a&gt;。&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Mar 2020 05:26:20 +0800</pubDate>
-        <link>https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</link>
-        <guid isPermaLink="true">https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</guid>
+        <link>https://geekplayers.com/2020/03/19/wpf-study-note-by-xiyuanmore/</link>
+        <guid isPermaLink="true">https://geekplayers.com/2020/03/19/wpf-study-note-by-xiyuanmore/</guid>
         
         <category>mfc</category>
         
@@ -2255,7 +2255,7 @@
     
       <item>
         <title>LeetCode面试系列 第12天：No.977 - 有序数组的平方</title>
-        <description>&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道&lt;code class=&quot;highlighter-rouge&quot;&gt;集合&lt;/code&gt;相关的数学题。现在我们再来看一个&lt;code class=&quot;highlighter-rouge&quot;&gt;排序&lt;/code&gt;相关的面试题吧~&lt;/p&gt;
+        <description>&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;集合&lt;/code&gt;相关的数学题。现在我们再来看一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;排序&lt;/code&gt;相关的面试题吧~&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -2269,11 +2269,11 @@
 
 &lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
 
-&lt;p&gt;给定一个按非递减顺序排序的整数数组 &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。&lt;/p&gt;
+&lt;p&gt;给定一个按非递减顺序排序的整数数组 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入：[-4,-1,0,3,10]
 输出：[0,1,9,16,100]
@@ -2281,7 +2281,7 @@
 
 &lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入：[-7,-3,2,3,11]
 输出：[4,9,9,49,121]
@@ -2290,9 +2290,9 @@
 &lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1 &amp;lt;= A.length &amp;lt;= 10000&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-10000 &amp;lt;= A[i] &amp;lt;= 10000&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; 已按非递减顺序排序。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 &amp;lt;= A.length &amp;lt;= 10000&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-10000 &amp;lt;= A[i] &amp;lt;= 10000&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt; 已按非递减顺序排序。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;ul&gt;
@@ -2340,11 +2340,11 @@
 
 &lt;p&gt;&lt;strong&gt;解题思路:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;如果有办法将数组 &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; 中的值按&lt;code class=&quot;highlighter-rouge&quot;&gt;绝对值&lt;/code&gt;进行递减序排序，那最后只需将排序过的数组中的每个数求个平方依次加入到结果 list 中即可。&lt;/p&gt;
+&lt;p&gt;如果有办法将数组 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt; 中的值按&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;绝对值&lt;/code&gt;进行递减序排序，那最后只需将排序过的数组中的每个数求个平方依次加入到结果 list 中即可。&lt;/p&gt;
 
-&lt;p&gt;恰好 Python 中的 &lt;code class=&quot;highlighter-rouge&quot;&gt;sorted(array, key = abs)&lt;/code&gt; 可以实现按绝对值排序，所以这个问题就迎刃而解了。&lt;/p&gt;
+&lt;p&gt;恰好 Python 中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sorted(array, key = abs)&lt;/code&gt; 可以实现按绝对值排序，所以这个问题就迎刃而解了。&lt;/p&gt;
 
-&lt;p&gt;已&lt;code class=&quot;highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
+&lt;p&gt;已&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -2355,14 +2355,14 @@
 7
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sortedSquares&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# sort by absolute values&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# sort by absolute values
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;elem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;执行用时: &lt;code class=&quot;highlighter-rouge&quot;&gt;268 ms&lt;/code&gt;, 在所有 python3 提交中击败了 ` 87.52 %` 的用户.&lt;/p&gt;
+&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;268 ms&lt;/code&gt;, 在所有 python3 提交中击败了 ` 87.52 %` 的用户.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/leetcode977.jpg&quot; alt=&quot;Leetcode645&quot; /&gt;&lt;/p&gt;
 
@@ -2395,13 +2395,13 @@
 
 &lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
 
-&lt;p&gt;集合 &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; 包含从 1 到 &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;  的整数。不幸的是，因为数据错误，导致集合里面某一个元素复制了成了集合里面的另外一个元素的值，导致集合丢失了一个整数并且有一个元素重复。&lt;/p&gt;
+&lt;p&gt;集合 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; 包含从 1 到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;  的整数。不幸的是，因为数据错误，导致集合里面某一个元素复制了成了集合里面的另外一个元素的值，导致集合丢失了一个整数并且有一个元素重复。&lt;/p&gt;
 
-&lt;p&gt;给定一个数组 &lt;code class=&quot;highlighter-rouge&quot;&gt;nums&lt;/code&gt; 代表了集合 &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; 发生错误后的结果。你的任务是首先寻找到重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。&lt;/p&gt;
+&lt;p&gt;给定一个数组 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nums&lt;/code&gt; 代表了集合 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; 发生错误后的结果。你的任务是首先寻找到重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: nums = [1,2,2,4]
 输出: [2,3]
@@ -2448,7 +2448,7 @@
 
 &lt;p&gt;&lt;strong&gt;解题思路:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;由于给定输入是无序的数组，且每个数的范围是 &lt;code class=&quot;highlighter-rouge&quot;&gt;[1, n]&lt;/code&gt; ，排序后便于后续处理。&lt;/p&gt;
+&lt;p&gt;由于给定输入是无序的数组，且每个数的范围是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1, n]&lt;/code&gt; ，排序后便于后续处理。&lt;/p&gt;
 
 &lt;p&gt;如何得到&lt;strong&gt;重复的数&lt;/strong&gt;？&lt;/p&gt;
 
@@ -2466,7 +2466,7 @@
 
 &lt;p&gt;最后将 &lt;strong&gt;重复的数 **和 **缺失的数&lt;/strong&gt; 一起放进 list 中即可。&lt;/p&gt;
 
-&lt;p&gt;已&lt;code class=&quot;highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
+&lt;p&gt;已&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -2481,16 +2481,16 @@
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;findErrorNums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;stdList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# len(nums) = n&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;repeatedNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;     
-        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repeatedNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;missingNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;missingNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;stdList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# len(nums) = n
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;repeatedNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;     
+        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repeatedNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;missingNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;missingNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;执行用时: &lt;code class=&quot;highlighter-rouge&quot;&gt;276 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;highlighter-rouge&quot;&gt;60.58 %&lt;/code&gt; 的用户.&lt;/p&gt;
+&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;276 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60.58 %&lt;/code&gt; 的用户.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/leetcode645.jpg&quot; alt=&quot;Leetcode645&quot; /&gt;&lt;/p&gt;
 
@@ -2523,7 +2523,7 @@
 
 &lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
 
-&lt;p&gt;给定一个仅包含大小写字母和空格 &lt;code class=&quot;highlighter-rouge&quot;&gt;' '&lt;/code&gt; 的字符串，返回其最后一个单词的长度。&lt;/p&gt;
+&lt;p&gt;给定一个仅包含大小写字母和空格 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;' '&lt;/code&gt; 的字符串，返回其最后一个单词的长度。&lt;/p&gt;
 
 &lt;p&gt;如果不存在最后一个单词，请返回 0 。&lt;/p&gt;
 
@@ -2531,14 +2531,14 @@
 
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;Hello World&quot;
 输出: 5
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;题目难度： &lt;code class=&quot;highlighter-rouge&quot;&gt;简单&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;题目难度： &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;简单&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;通过次数：49.1K&lt;/li&gt;
   &lt;li&gt;提交次数：156.4K&lt;/li&gt;
   &lt;li&gt;贡献者：LeetCode&lt;/li&gt;
@@ -2565,7 +2565,7 @@
 &lt;p&gt;这道字符串题目可以使用直接法~&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;删掉首尾部的换行、&lt;code class=&quot;highlighter-rouge&quot;&gt;\t&lt;/code&gt;、空格等字符，使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;strip()&lt;/code&gt; 函数可以完成&lt;/li&gt;
+  &lt;li&gt;删掉首尾部的换行、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\t&lt;/code&gt;、空格等字符，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strip()&lt;/code&gt; 函数可以完成&lt;/li&gt;
   &lt;li&gt;寻找最后一个空格
     &lt;ul&gt;
       &lt;li&gt;如果不存在空格，直接返回字符串的长度&lt;/li&gt;
@@ -2586,15 +2586,15 @@
 8
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lengthOfLastWord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;       
-        &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rfind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;       
+        &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rfind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;执行用时: &lt;code class=&quot;highlighter-rouge&quot;&gt;28 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;highlighter-rouge&quot;&gt;99.83%&lt;/code&gt; 的用户&lt;/p&gt;
+&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;28 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.83%&lt;/code&gt; 的用户&lt;/p&gt;
 
 &lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -2625,9 +2625,9 @@
 
 &lt;h4 id=&quot;题目描述&quot;&gt;题目描述&lt;/h4&gt;
 
-&lt;p&gt;罗马数字包含以下七种字符: &lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt;， &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt;， &lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt;， &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;罗马数字包含以下七种字符: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I&lt;/code&gt;， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V&lt;/code&gt;， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt;， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;L&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M&lt;/code&gt;。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -2645,21 +2645,21 @@ D             500
 M             1000
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;例如， 罗马数字 2 写做 &lt;code class=&quot;highlighter-rouge&quot;&gt;II&lt;/code&gt; ，即为两个并列的 1。12 写做 &lt;code class=&quot;highlighter-rouge&quot;&gt;XII&lt;/code&gt; ，即为 &lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;II&lt;/code&gt; 。 27 写做  &lt;code class=&quot;highlighter-rouge&quot;&gt;XXVII&lt;/code&gt;, 即为 &lt;code class=&quot;highlighter-rouge&quot;&gt;XX&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;II&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;例如， 罗马数字 2 写做 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;II&lt;/code&gt; ，即为两个并列的 1。12 写做 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XII&lt;/code&gt; ，即为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;II&lt;/code&gt; 。 27 写做  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XXVII&lt;/code&gt;, 即为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XX&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;II&lt;/code&gt; 。&lt;/p&gt;
 
-&lt;p&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 &lt;code class=&quot;highlighter-rouge&quot;&gt;IIII&lt;/code&gt;，而是 &lt;code class=&quot;highlighter-rouge&quot;&gt;IV&lt;/code&gt;。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 &lt;code class=&quot;highlighter-rouge&quot;&gt;IX&lt;/code&gt;。这个特殊的规则只适用于以下六种情况：&lt;/p&gt;
+&lt;p&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IIII&lt;/code&gt;，而是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IV&lt;/code&gt;。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IX&lt;/code&gt;。这个特殊的规则只适用于以下六种情况：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt; 可以放在 &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; (5) 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt; (10) 的左边，来表示 4 和 9。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;X&lt;/code&gt; 可以放在 &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; (50) 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; (100) 的左边，来表示 40 和 90。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; 可以放在 &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; (500) 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt; (1000) 的左边，来表示 400 和 900。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I&lt;/code&gt; 可以放在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V&lt;/code&gt; (5) 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; (10) 的左边，来表示 4 和 9。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; 可以放在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;L&lt;/code&gt; (50) 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C&lt;/code&gt; (100) 的左边，来表示 40 和 90。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C&lt;/code&gt; 可以放在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; (500) 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M&lt;/code&gt; (1000) 的左边，来表示 400 和 900。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;III&quot;
 输出: 3
@@ -2667,7 +2667,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;IV&quot;
 输出: 4
@@ -2675,7 +2675,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 3:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;IX&quot;
 输出: 9
@@ -2683,7 +2683,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 4:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;LVIII&quot;
@@ -2693,7 +2693,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 5:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;MCMXCIV&quot;
@@ -2746,7 +2746,7 @@ M             1000
   &lt;li&gt;其他情况则减去当前位的字母对应的数.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;已&lt;code class=&quot;highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
+&lt;p&gt;已&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -2788,8 +2788,8 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;currentValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
             
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# d[s[i+1]]: nextValue&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;sum0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currentValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# d[s[i+1]]: nextValue
+&lt;/span&gt;                &lt;span class=&quot;n&quot;&gt;sum0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;sum0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
         
@@ -2829,7 +2829,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: 121
 输出: true
@@ -2837,7 +2837,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: -121
@@ -2847,7 +2847,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例 3:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: 10
@@ -2881,21 +2881,21 @@ M             1000
 &lt;p&gt;&lt;strong&gt;解题思路:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;先将原数转为字符串 &lt;code class=&quot;highlighter-rouge&quot;&gt;str0&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;反转步骤1中的字符串 &lt;code class=&quot;highlighter-rouge&quot;&gt;str0&lt;/code&gt; 得到字符串 &lt;code class=&quot;highlighter-rouge&quot;&gt;reversedStr&lt;/code&gt;，判断其是否与反转前相等。而 Python 中字符串反转有如下两种常用方法:
+  &lt;li&gt;先将原数转为字符串 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;反转步骤1中的字符串 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str0&lt;/code&gt; 得到字符串 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reversedStr&lt;/code&gt;，判断其是否与反转前相等。而 Python 中字符串反转有如下两种常用方法:
     &lt;ul&gt;
-      &lt;li&gt;使用切片功能，即&lt;code class=&quot;highlighter-rouge&quot;&gt;reversedStr = str0[::-1]&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;reversed&lt;/code&gt; 函数，&lt;code class=&quot;highlighter-rouge&quot;&gt;reversedStr = ''.join(list(reversed(str0)))&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;使用切片功能，即&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reversedStr = str0[::-1]&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reversed&lt;/code&gt; 函数，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reversedStr = ''.join(list(reversed(str0)))&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;解决特殊情况
     &lt;ul&gt;
-      &lt;li&gt;输入的数为负的，前面有&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;，反转后显然不相等&lt;/li&gt;
+      &lt;li&gt;输入的数为负的，前面有&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;，反转后显然不相等&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;已&lt;code class=&quot;highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
+&lt;p&gt;已&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -2919,7 +2919,7 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;        
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;执行用时: &lt;code class=&quot;highlighter-rouge&quot;&gt;64 ms&lt;/code&gt;, 在所有 python3 提交中击败了&lt;code class=&quot;highlighter-rouge&quot;&gt;98.39%&lt;/code&gt;的用户.&lt;/p&gt;
+&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;64 ms&lt;/code&gt;, 在所有 python3 提交中击败了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;98.39%&lt;/code&gt;的用户.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/leetcode009-sol.png&quot; alt=&quot;result&quot; /&gt;&lt;/p&gt;
 
@@ -2956,7 +2956,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: 10
@@ -2972,7 +2972,7 @@ M             1000
     &lt;p&gt;题目难度: &lt;strong&gt;Easy&lt;/strong&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;通过率: &lt;code class=&quot;highlighter-rouge&quot;&gt;30.23%&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;通过率: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;30.23%&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;相关话题
     &lt;ul&gt;
@@ -2997,7 +2997,7 @@ M             1000
   &lt;li&gt;遍历每个数，判断它是否为素数。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;基于传统教科书中的算法 &lt;code class=&quot;highlighter-rouge&quot;&gt;IsPrime&lt;/code&gt;(其流程见下图)来做，即在 &lt;code class=&quot;highlighter-rouge&quot;&gt;IsPrime&lt;/code&gt;算法外套一个循环来做，由于下面流程的时间复杂度 T(n) = O(n*log n)，于是整体算下来整个算法最后的时间复杂度为 O(n * n * log n)，这个算法的时间复杂度是不达标的。
+&lt;p&gt;基于传统教科书中的算法 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsPrime&lt;/code&gt;(其流程见下图)来做，即在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsPrime&lt;/code&gt;算法外套一个循环来做，由于下面流程的时间复杂度 T(n) = O(n*log n)，于是整体算下来整个算法最后的时间复杂度为 O(n * n * log n)，这个算法的时间复杂度是不达标的。
   &lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/check_prime.png&quot; alt=&quot;check_prime&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
@@ -3037,7 +3037,7 @@ M             1000
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;isDelete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;max0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;max0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isDelete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -3052,7 +3052,7 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;            
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;ps: 由于这段代码使用了数学库函数&lt;code class=&quot;highlighter-rouge&quot;&gt;sqrt()&lt;/code&gt;，于是本地测试需要在开头引入&lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt;库，其代码如下:&lt;/p&gt;
+&lt;p&gt;ps: 由于这段代码使用了数学库函数&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sqrt()&lt;/code&gt;，于是本地测试需要在开头引入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;math&lt;/code&gt;库，其代码如下:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -3084,7 +3084,7 @@ M             1000
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;isDelete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;max0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;max0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isDelete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -3099,12 +3099,12 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;  
 
 &lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countPrimes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5566&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countPrimes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5566&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/sol1.png&quot; alt=&quot;sol1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;执行用时 : &lt;code class=&quot;highlighter-rouge&quot;&gt;492 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;highlighter-rouge&quot;&gt;47.44 %&lt;/code&gt;的用户.&lt;/p&gt;
+&lt;p&gt;执行用时 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;492 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;47.44 %&lt;/code&gt;的用户.&lt;/p&gt;
 
 &lt;p&gt;已AC代码 解法2:&lt;/p&gt;
 
@@ -3126,19 +3126,19 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# isPrime = not deleted&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# isPrime = not deleted
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 
             &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# slice: a[start:stop:step] # items from the beginning through stop-1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# slice: a[start:stop:step] # items from the beginning through stop-1
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justdopython.com/assets/images/2019/python/sol2.png&quot; alt=&quot;sol2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;执行用时 : &lt;code class=&quot;highlighter-rouge&quot;&gt;100 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;highlighter-rouge&quot;&gt;94.27 %&lt;/code&gt;的用户.&lt;/p&gt;
+&lt;p&gt;执行用时 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;94.27 %&lt;/code&gt;的用户.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -3163,7 +3163,7 @@ M             1000
     
       <item>
         <title>LeetCode面试系列 第4天：No.202 - 快乐数</title>
-        <description>&lt;p&gt;或许你不知道的是，Leetcode 中是有很多 &lt;em&gt;数学题&lt;/em&gt; 的，本文要解析的题 &lt;strong&gt;快乐数&lt;/strong&gt; 就是其中到一个典型问题，本题将基于数据结构 &lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt; 来求解。&lt;/p&gt;
+        <description>&lt;p&gt;或许你不知道的是，Leetcode 中是有很多 &lt;em&gt;数学题&lt;/em&gt; 的，本文要解析的题 &lt;strong&gt;快乐数&lt;/strong&gt; 就是其中到一个典型问题，本题将基于数据结构 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&lt;/code&gt; 来求解。&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -3183,7 +3183,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: 19
 输出: true
@@ -3232,7 +3232,7 @@ M             1000
 
 &lt;p&gt;具体操作为: 迭代地求给定数的各位数字的平方和，维护一个 set，迭代循环的出口是平方和为1或已在 set 中出现过。&lt;/p&gt;
 
-&lt;p&gt;已&lt;code class=&quot;highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
+&lt;p&gt;已&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AC&lt;/code&gt;的代码为:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -3253,8 +3253,8 @@ M             1000
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isHappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;    
 
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -3268,7 +3268,7 @@ M             1000
 
 &lt;p&gt;&lt;strong&gt;运行结果:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;执行用时 : &lt;code class=&quot;highlighter-rouge&quot;&gt;36 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;highlighter-rouge&quot;&gt;99.72%&lt;/code&gt;的用户.&lt;/p&gt;
+&lt;p&gt;执行用时 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;36 ms&lt;/code&gt;, 在所有 Python3 提交中击败了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.72%&lt;/code&gt;的用户.&lt;/p&gt;
 
 &lt;p&gt;相应的，如需测试，本地可执行的代码为:&lt;/p&gt;
 
@@ -3294,8 +3294,8 @@ M             1000
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isHappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;unhappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;    
 
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetSquareSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -3307,7 +3307,7 @@ M             1000
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum0&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isHappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isHappy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

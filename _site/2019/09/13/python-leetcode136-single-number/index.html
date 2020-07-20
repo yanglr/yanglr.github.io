@@ -276,14 +276,14 @@
 <p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
 
 <p><strong>示例 1:</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: [2,2,1]
 输出: 1
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><strong>示例 2:</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: [4,1,2,1,2]
 输出: 4
@@ -365,11 +365,11 @@
                 <span class="n">d</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">d</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>如果需要在本地测试，需要先在代码开头引入<code class="highlighter-rouge">from typing import List</code>。完整代码如下:</p>
+<p>如果需要在本地测试，需要先在代码开头引入<code class="language-plaintext highlighter-rouge">from typing import List</code>。完整代码如下:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -399,15 +399,15 @@
                 <span class="n">d</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">d</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="p">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 
-<span class="c">#以下是测试</span>
-<span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">singleNumber</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>
+<span class="c1">#以下是测试
+</span><span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="p">.</span><span class="n">singleNumber</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>执行用时: <code class="highlighter-rouge">104 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">43.71%</code>的用户。</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">104 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">43.71%</code>的用户。</p>
 
 <p><strong>方法2</strong>的已 AC 代码(Python 3):</p>
 
@@ -428,9 +428,9 @@
 
 <p><strong>运行结果:</strong></p>
 
-<p>执行用时: <code class="highlighter-rouge">84 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">99.96 %</code>的用户。</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">84 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">99.96 %</code>的用户。</p>
 
-<p>显然，对于此题，<code class="highlighter-rouge">位运算</code>依然更胜一筹。</p>
+<p>显然，对于此题，<code class="language-plaintext highlighter-rouge">位运算</code>依然更胜一筹。</p>
 
 <p><br /></p>
 

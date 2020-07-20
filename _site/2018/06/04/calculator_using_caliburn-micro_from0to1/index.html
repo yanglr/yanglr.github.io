@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> 从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器 -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <meta name="description"
+          content="大白技术控 - 从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器">
+
+    <link rel="canonical" href="https://geekplayers.com/2018/06/04/calculator_using_caliburn-micro_from0to1/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2018/06/04 03:53:01
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+                <a href="/wpf">wpf</a>
+                &nbsp;
+                
+                <a href="/"></a>
+                &nbsp;
+                
+                <a href="/"></a>
+                &nbsp;
+                
+                <a href="/"></a>
+                &nbsp;
+                
+                <a href="/"></a>
+                
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>前一段时间一直在用<code class="language-plaintext highlighter-rouge">Caliburn.micro</code>框架，今天抽空来总结一下~</p>
+
+<hr />
+
+<h2 id="从0到1使用caliburnmicrowpf和mvvm开发简单的计算器">从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器</h2>
+
+<p>之前时间一直在使用Caliburn.Micro这种应用了MVVM模式的WPF框架做开发，是时候总结一下了。</p>
+
+<p>Caliburn.Micro(Caliburn.Micro框架概述 - https://blog.csdn.net/lzuacm/article/details/78886436) 是一个轻量级的WPF框架，简化了WPF中的不少用法，推荐做WPF开发时优先使用。</p>
+
+<p>真正快速而熟练地掌握一门技术就可以尝试着用最快的速度去构建一个玩具项目(Toy project)，然后不断地优化、重构之。比如本文将介绍如何使用Caliburn.Micro v3.2开发出一个简单的计算器，里面用到了C#中的async异步技术，Caliburn.Micro中的Conductor等等~</p>
+
+<h3 id="step-1-在vs中创建wpf项目">Step 1: 在VS中创建WPF项目</h3>
+<p><img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190324010953551-1224926541.png" alt="create_project" /></p>
+
+<h3 id="step-2-使用nuget包管理工具为当前项目安装caliburnmicro">Step 2: 使用NuGet包管理工具为当前项目安装Caliburn.Micro</h3>
+<p>对于Caliburn.Micro 1.x和2.x版，只能使用.dll，需手动给项目加Reference。而3.0以后的版本可使用NuGet包管理工具来管理，安装和卸载既方便又彻底，推荐使用。(ps: NuGet之于Visual Studio(C++, C#等), 犹pip之于Python, npm之于node, maven之于Java, gem之于Ruby等等)</p>
+
+<p><img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005855423-424717537.png" alt="Install CM" /></p>
+
+<h3 id="step-3-框架搭建">Step 3: 框架搭建</h3>
+
+<ol>
+  <li>删除项目根目录下的MainWindow.xaml</li>
+  <li>
+    <p>按下图调整App.xaml
+ 删除语句StartupUri=”MainWindow.xmal”。
+ <img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005959001-1435534729.png" alt="config1" /></p>
+  </li>
+  <li>填充Application.Resources
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Application.Resources&gt;</span>
+     <span class="nt">&lt;ResourceDictionary&gt;</span>
+         <span class="nt">&lt;ResourceDictionary.MergedDictionaries&gt;</span>
+             <span class="nt">&lt;ResourceDictionary&gt;</span>
+                 <span class="nt">&lt;local:Bootstrapper</span> <span class="na">x:Key=</span><span class="s">"bootstrapper"</span><span class="nt">/&gt;</span>
+             <span class="nt">&lt;/ResourceDictionary&gt;</span>
+         <span class="nt">&lt;/ResourceDictionary.MergedDictionaries&gt;</span>
+     <span class="nt">&lt;/ResourceDictionary&gt;</span>
+<span class="nt">&lt;/Application.Resources&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>   4 . 创建Bootstrapper类
+然后让其继承自BootstrapperBase类，并加上构造函数，另外再重写函数OnStartup即可。</p>
+  </li>
+</ol>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Caliburn.Micro</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">CaliburnMicro_Calculator.ViewModels</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CaliburnMicro_Calculator</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Bootstrapper</span> <span class="p">:</span> <span class="n">BootstrapperBase</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">Bootstrapper</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="nf">Initialize</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnStartup</span><span class="p">(</span><span class="kt">object</span> <span class="n">obj</span><span class="p">,</span> <span class="n">StartupEventArgs</span> <span class="n">e</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">DisplayRootViewFor</span><span class="p">&lt;</span><span class="n">ShellViewModel</span><span class="p">&gt;();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>   5 . 在项目目录下新建Models, ViewModels, Views这3个文件夹
+在ViewModel文件夹中添加ShellViewModel.cs，并创建Left, Right和Result这3个属性。</p>
+
+<p>需要注意的是 ShellViewModel.cs需要继承类 <strong>Screen 和 INotifyPropertyChanged</strong> (用于感知并同步所绑定属性的变化)，ShellViewModel具体代码为:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Controls</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Caliburn.Micro</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CaliburnMicro_Calculator.ViewModels</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">ShellViewModel</span> <span class="p">:</span> <span class="n">Screen</span><span class="p">,</span> <span class="n">INotifyPropertyChanged</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_left</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_right</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_result</span><span class="p">;</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Left</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_left</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_left</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Right</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_right</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_right</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Result</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_result</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_result</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><strong>说明:</strong> 最开始布局xaml时，设计位置时采用的是左(operand 1), 中(operand 2), 右(result)，于是属性值使用了Left, Right和Result。</p>
+
+<h3 id="step-4-设计xaml并绑定属性">Step 4: 设计XAML并绑定属性</h3>
+<p>在Views文件夹中创建Window，命名为ShellView.xaml，在Views文件夹下创建子文件夹Images，用于存放+,-,*,/这4种操作对应的小图标，其具体代码如下：</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Window</span> <span class="na">x:Class=</span><span class="s">"CaliburnMicro_Calculator.Views.ShellView"</span>
+        <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        <span class="na">xmlns:x=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        <span class="na">xmlns:d=</span><span class="s">"http://schemas.microsoft.com/expression/blend/2008"</span>
+        <span class="na">xmlns:mc=</span><span class="s">"http://schemas.openxmlformats.org/markup-compatibility/2006"</span>
+        <span class="na">xmlns:local=</span><span class="s">"clr-namespace:CaliburnMicro_Calculator.Views"</span>
+        <span class="na">xmlns:cal=</span><span class="s">"http://www.caliburnproject.org"</span>
+        <span class="na">mc:Ignorable=</span><span class="s">"d"</span>
+        <span class="na">Title=</span><span class="s">"Calculator"</span> <span class="na">SizeToContent=</span><span class="s">"Height"</span> <span class="na">Width=</span><span class="s">"240"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;StackPanel</span> <span class="na">Background=</span><span class="s">"Beige"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                   <span class="na">Target=</span><span class="s">"{Binding ElementName=left}"</span><span class="nt">&gt;</span>
+                Operand _1:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">x:Name=</span><span class="s">"left"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                   <span class="na">Target=</span><span class="s">"{Binding ElementName=right}"</span><span class="nt">&gt;</span>
+                Operand _2:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">x:Name=</span><span class="s">"right"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnPlus"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Plus(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op1.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnMinus"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Minus(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op2.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnMultiply"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Multipy(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op3.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnDivide"</span> <span class="na">IsEnabled=</span><span class="s">"{Binding Path=CanDivide}"</span>
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Divide(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op4.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span><span class="nt">&gt;</span>
+                Answer:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">Text =</span><span class="s">"{Binding Path=Result, StringFormat={}{0:F4}}"</span> <span class="na">IsReadOnly=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+    <span class="nt">&lt;/StackPanel&gt;</span>
+<span class="nt">&lt;/Window&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><strong>说明：</strong>对操作数Operand _1和Operand _2，按Alt键+数字可以选中该处，这是WPF的一个特殊用法。由于计算结果不希望被修改，于是加上了属性<code class="language-plaintext highlighter-rouge">IsReadOnly="True"</code>。</p>
+
+<h3 id="step-5-设计并绑定事件">Step 5: 设计并绑定事件</h3>
+<p>由于暂时只打算实现+, -, *, /四种操作，于是我们只需创建相应的4个函数即可，由于除数是0这个操作不允许，于是需再加个判断函数CanDivide。</p>
+
+<p>Caliburn.Micro中绑定事件的写法是:
+<code class="language-plaintext highlighter-rouge">cal:Message.Attach="[Event E]=[Action A]"</code>(E是操作，比如Click, MouseDown, KeyDown等等，A是ViewModel中具体的函数。)</p>
+
+<p>向ShellViewModel中加入事件中要做的事，此时ShellViewModel为：</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Controls</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Caliburn.Micro</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CaliburnMicro_Calculator.ViewModels</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">ShellViewModel</span> <span class="p">:</span> <span class="n">Screen</span><span class="p">,</span> <span class="n">INotifyPropertyChanged</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_left</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_right</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_result</span><span class="p">;</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Left</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_left</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_left</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Right</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_right</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_right</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Result</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_result</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_result</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+                <span class="k">public</span> <span class="kt">bool</span> <span class="nf">CanDivide</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">right</span> <span class="p">!=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Divide</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Thread</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="m">600</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nf">CanDivide</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span> <span class="p">==</span> <span class="k">true</span><span class="p">)</span>
+                <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">/</span> <span class="n">right</span><span class="p">;</span>
+            <span class="k">else</span> <span class="n">MessageBox</span><span class="p">.</span><span class="nf">Show</span><span class="p">(</span><span class="s">"Divider cannot be zero."</span><span class="p">,</span> <span class="s">"Warning"</span><span class="p">,</span> <span class="n">MessageBoxButton</span><span class="p">.</span><span class="n">OK</span><span class="p">,</span> <span class="n">MessageBoxImage</span><span class="p">.</span><span class="n">Warning</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Plus</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">+</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Minus</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">-</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Multipy</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">*</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>此时计算器的功能已基本完成，但我们可以对ViewModel进行适当的调整：
+1.创建新的ViewModel - CalculatorViewModel，将原来的ShellViewModel中具体的计算逻辑移入到CalculatorViewModel中；
+2.此时让ShellViewModel继承<strong>Conductor&lt;Object&gt;</strong>，于是ShellViewModel拥有了管理Screen实例的功能(ViewModel中使用ActivateItem函数，而View中使用X:Name=”ActivateItem”标签)，其具体代码为:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows.Controls</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Caliburn.Micro</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CaliburnMicro_Calculator.ViewModels</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">ShellViewModel</span> <span class="p">:</span> <span class="n">Conductor</span><span class="p">&lt;</span><span class="kt">object</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">ShellViewModel</span><span class="p">()</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">ShowCalculator</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="nf">ActivateItem</span><span class="p">(</span><span class="k">new</span> <span class="nf">CalculatorViewModel</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>此时，CalculatorViewModel的具体代码为：</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Caliburn.Micro</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CaliburnMicro_Calculator.ViewModels</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">CalculatorViewModel</span><span class="p">:</span> <span class="n">Screen</span><span class="p">,</span> <span class="n">INotifyPropertyChanged</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_left</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_right</span><span class="p">;</span>
+        <span class="k">private</span> <span class="kt">double</span> <span class="n">_result</span><span class="p">;</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Left</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_left</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_left</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Right</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_right</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_right</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">double</span> <span class="n">Result</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_result</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span>
+            <span class="p">{</span>
+                <span class="n">_result</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+                <span class="nf">NotifyOfPropertyChange</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="nf">CalculatorViewModel</span><span class="p">()</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="kt">bool</span> <span class="nf">CanDivide</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">right</span> <span class="p">!=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Divide</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Thread</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="m">600</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nf">CanDivide</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span> <span class="p">==</span> <span class="k">true</span><span class="p">)</span>
+                <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">/</span> <span class="n">right</span><span class="p">;</span>
+            <span class="k">else</span> <span class="n">MessageBox</span><span class="p">.</span><span class="nf">Show</span><span class="p">(</span><span class="s">"Divider cannot be zero."</span><span class="p">,</span> <span class="s">"Warning"</span><span class="p">,</span> <span class="n">MessageBoxButton</span><span class="p">.</span><span class="n">OK</span><span class="p">,</span> <span class="n">MessageBoxImage</span><span class="p">.</span><span class="n">Warning</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Plus</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">+</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Minus</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">-</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">async</span> <span class="k">void</span> <span class="nf">Multipy</span><span class="p">(</span><span class="kt">double</span> <span class="n">left</span><span class="p">,</span> <span class="kt">double</span> <span class="n">right</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Result</span> <span class="p">=</span> <span class="n">left</span> <span class="p">*</span> <span class="n">right</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>  3 . 对于View，只需把CalculatorViewModel对应的CalculatorView作为ContentControl控件嵌入ShellView即可。此时ShellView的代码调整为:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Window</span> <span class="na">x:Class=</span><span class="s">"CaliburnMicro_Calculator.Views.ShellView"</span>
+        <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+        <span class="na">xmlns:x=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+        <span class="na">xmlns:d=</span><span class="s">"http://schemas.microsoft.com/expression/blend/2008"</span>
+        <span class="na">xmlns:mc=</span><span class="s">"http://schemas.openxmlformats.org/markup-compatibility/2006"</span>
+        <span class="na">xmlns:local=</span><span class="s">"clr-namespace:CaliburnMicro_Calculator.Views"</span>
+        <span class="na">xmlns:cal=</span><span class="s">"http://www.caliburnproject.org"</span>
+        <span class="na">mc:Ignorable=</span><span class="s">"d"</span>
+        <span class="na">Title=</span><span class="s">"Calculator"</span> <span class="na">SizeToContent=</span><span class="s">"Height"</span> <span class="na">Width=</span><span class="s">"240"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;Grid</span> <span class="na">MinHeight=</span><span class="s">"200"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Button</span> <span class="na">Content=</span><span class="s">"Show Calculator"</span> <span class="na">x:Name=</span><span class="s">"ShowCalculator"</span> <span class="na">Grid.Row=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/Button&gt;</span>
+        <span class="nt">&lt;ContentControl</span> <span class="na">x:Name=</span><span class="s">"ActiveItem"</span><span class="nt">&gt;&lt;/ContentControl&gt;</span>        
+    <span class="nt">&lt;/Grid&gt;</span>
+<span class="nt">&lt;/Window&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><strong>另外提一点</strong>，向ViewModel A中嵌入ViewModel B，一般来说需要做的操作是：
+在A的view中使用ContentControl，绑定B的ViewModel只需使用语句cal:View.Model=”{Binding BViewModel}”即可，而B的view是UserControl就可以啦。</p>
+
+<p>此时CalculatorView是一个UserControl，其代码为:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;UserControl</span> <span class="na">x:Class=</span><span class="s">"CaliburnMicro_Calculator.Views.CalculatorView"</span>
+             <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
+             <span class="na">xmlns:x=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+             <span class="na">xmlns:mc=</span><span class="s">"http://schemas.openxmlformats.org/markup-compatibility/2006"</span>
+             <span class="na">xmlns:d=</span><span class="s">"http://schemas.microsoft.com/expression/blend/2008"</span>
+             <span class="na">xmlns:local=</span><span class="s">"clr-namespace:CaliburnMicro_Calculator.Views"</span>
+             <span class="na">xmlns:cal=</span><span class="s">"http://www.caliburnproject.org"</span>
+             <span class="na">mc:Ignorable=</span><span class="s">"d"</span>
+             <span class="na">Width=</span><span class="s">"240"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;StackPanel</span> <span class="na">Background=</span><span class="s">"Beige"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                   <span class="na">Target=</span><span class="s">"{Binding ElementName=left}"</span><span class="nt">&gt;</span>
+                Operand _1:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">x:Name=</span><span class="s">"left"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                   <span class="na">Target=</span><span class="s">"{Binding ElementName=right}"</span><span class="nt">&gt;</span>
+                Operand _2:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">x:Name=</span><span class="s">"right"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span> <span class="na">HorizontalAlignment=</span><span class="s">"Center"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnPlus"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Plus(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op1.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnMinus"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Minus(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op2.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnMultiply"</span> 
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Multipy(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op3.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+            <span class="nt">&lt;Button</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                    <span class="na">x:Name=</span><span class="s">"btnDivide"</span> <span class="na">IsEnabled=</span><span class="s">"{Binding Path=CanDivide}"</span>
+                    <span class="na">cal:Message.Attach=</span><span class="s">"[Event Click]=[Action Divide(left.Text, right.Text):result.Text]"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Image</span> <span class="na">Source=</span><span class="s">"Images/op4.ICO"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Button&gt;</span>
+
+        <span class="nt">&lt;/StackPanel&gt;</span>
+        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Label</span> <span class="na">Margin=</span><span class="s">"10"</span><span class="nt">&gt;</span>
+                Answer:
+            <span class="nt">&lt;/Label&gt;</span>
+            <span class="nt">&lt;TextBox</span> <span class="na">Margin=</span><span class="s">"10"</span>
+                     <span class="na">Width=</span><span class="s">"72"</span>
+                     <span class="na">Text =</span><span class="s">"{Binding Path=Result, StringFormat={}{0:F4}, UpdateSourceTrigger=PropertyChanged}"</span> <span class="na">IsReadOnly=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/StackPanel&gt;</span>
+    <span class="nt">&lt;/StackPanel&gt;</span>
+<span class="nt">&lt;/UserControl&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>好啦，就酱，由于本例中逻辑并不复杂，Model暂时用不上，对于复杂一点的项目，Model主要负责数据的读取，如文件操作、数据库操作、service调用等，以后有机会举例具体来说。</p>
+
+<p>如果需要持久化(persistent)，则还需给给每对M-VM(Model和ViewModel)加入State，这个实际工程中也用得特别多。</p>
+
+<h3 id="part-6-功能举例">Part 6: 功能举例</h3>
+<p>Calculator主页：
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081757557-1375110827.png" alt="Main Page" /></p>
+
+<p>点击按钮“ShowCalculator”即可看到具体的计算器~</p>
+
+<p>乘法举例：
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081820757-800108336.png" alt="Multiply" /></p>
+
+<p>除法举例：
+<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081841357-881843872.png" alt="Divide" /></p>
+
+<p><strong>最后附上代码：</strong>
+CaliburnMicro-Calculator: A simple Calculator using Caliburn.Micro
+https://github.com/yanglr/CaliburnMicro-Calculator，
+欢迎fork和star，如有改进意见欢迎提交pull request~</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><strong>作者简介</strong>：Bravo Yeung，计算机硕士，知乎干货答主(获<strong>81K</strong> 赞同, <strong>38K</strong> 感谢, <strong>235K</strong> 收藏)。曾在国内 Top3互联网视频直播公司工作过，后加入一家外企做软件开发至今。</p>
+
+<p><br /></p>
+
+<p>如需转载，请加微信 <strong>iMath7</strong> 申请开白！</p>
+
+<p><br /></p>
+
+<p>欢迎在留言区留下你的观点，一起讨论提高。如果今天的文章让你有新的启发，学习能力的提升上有新的认识，欢迎转发分享给更多人。</p>
+
+<p><br /></p>
+
+<p>欢迎各位读者加入 <strong>.NET技术交流群</strong>，在公众号后台回复<strong>“加群”</strong>或者<strong>“学习”</strong>即可。</p>
+
+<p><br /></p>
+
+<p><img src="https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png" alt="大白技术控 公众号名片" /></p>
+
+<h3 id="文末彩蛋">文末彩蛋</h3>
+
+<blockquote>
+  <p>微信后台回复“<strong>asp</strong>”，给你：一份全网最强的ASP.NET学习路线图。
+<br />
+回复“<strong>cs</strong>”，给你：一整套 C# 和 WPF 学习资源！
+<br />
+回复“<strong>core</strong>”，给你：2019年dotConf大会上发布的.NET core 3.0学习视频！</p>
+</blockquote>
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>文档信息</h3>
+    <ul>
+        <li>本文作者：<a href="https://geekplayers.com" target="_blank">Bravo Yeung大白技术控</a></li>
+        <li>本文链接：<a href="https://geekplayers.com/2018/06/04/calculator_using_caliburn-micro_from0to1/" target="_blank">https://geekplayers.com/2018/06/04/calculator_using_caliburn-micro_from0to1/</a></li>
+        <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">大白技术控-Bravo Yeung-极客玩家</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET 技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://geekplayers.com/2018/06/04/calculator_using_caliburn-micro_from0to1/';
+        this.page.identifier = '/2018/06/04/calculator_using_caliburn-micro_from0to1/';
+        this.page.title = '从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <script src="/assets/js/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2018/06/04/calculator_using_caliburn-micro_from0to1/',
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'blog-comments',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

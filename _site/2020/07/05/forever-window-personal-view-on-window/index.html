@@ -219,7 +219,7 @@
             <span class="meta-info">
                 
                 
-                <span class="octicon octicon-calendar"></span> 2020/07/05 11:06:50
+                <span class="octicon octicon-calendar"></span> 2020/07/05 19:06:50
                 
             </span>
             <!--<p>
@@ -315,8 +315,8 @@
 10
 11
 12
-</pre></td><td class="rouge-code"><pre><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
-    <span class="n">UINT</span> <span class="n">style</span><span class="p">;</span>
+</pre></td><td class="rouge-code"><pre><span class="k">typedef</span> <span class="k">struct</span> <span class="err">{</span>
+    <span class="nc">UINT</span> <span class="n">style</span><span class="p">;</span>
     <span class="n">WNDPROC</span> <span class="n">lpfnWndProc</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">cbClsExtra</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">cbWndExtra</span><span class="p">;</span>
@@ -326,18 +326,18 @@
     <span class="n">HBRUSH</span> <span class="n">hbrBackground</span><span class="p">;</span>
     <span class="n">LPCTSTR</span> <span class="n">lpszMenuName</span><span class="p">;</span>
     <span class="n">LPCTSTR</span> <span class="n">lpszClassName</span><span class="p">;</span>
-<span class="p">}</span> <span class="n">WNDCLASS</span><span class="p">,</span> <span class="o">*</span> <span class="n">PWNDCLASS</span><span class="p">;</span>
+<span class="err">}</span> <span class="n">WNDCLASS</span><span class="p">,</span> <span class="o">*</span> <span class="n">PWNDCLASS</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><strong>代码 2‑1 窗口类结构体</strong></p>
 
 <p>这里面最为重要的是第二个成员窗口过程，如果把窗口比作有生命的物体，那么窗口过程就注入了灵魂。这个我们需要在消息循环一节当中解释。</p>
 
-<p>其他的比较常用的成员变量，比如<code class="highlighter-rouge">hIcon</code>指定了应用程序的图标，<code class="highlighter-rouge">hCursor</code>指定了鼠标的形状，hbrBackground指定了客户区的背景色，<code class="highlighter-rouge">lpszMenuName</code>指定了窗口类的菜单，<code class="highlighter-rouge">lpszClassName</code>指定了窗口类的名字等等。这些特性是每个窗口都具备的共性，因此全部抽象成了窗口类的成员变量。</p>
+<p>其他的比较常用的成员变量，比如<code class="language-plaintext highlighter-rouge">hIcon</code>指定了应用程序的图标，<code class="language-plaintext highlighter-rouge">hCursor</code>指定了鼠标的形状，hbrBackground指定了客户区的背景色，<code class="language-plaintext highlighter-rouge">lpszMenuName</code>指定了窗口类的菜单，<code class="language-plaintext highlighter-rouge">lpszClassName</code>指定了窗口类的名字等等。这些特性是每个窗口都具备的共性，因此全部抽象成了窗口类的成员变量。</p>
 
 <p>窗口类和窗口的关系，在面向对象里我们可以把它们比作类和对象的关系。但是更贴切的比喻，我认为是模具和成品的关系。窗口类好比一个个模具，想要做按钮，我们就拿一个按钮的模具，倒成一个模子，然后再在上面做一些慢工细活，成为一个按钮。想做组合框，我们就拿一个组合框的模具，想做编辑框，我们就拿一个编辑框的模具，想做一个花瓶，我们就拿……. 问题来了，操作系统没有提供花瓶的模具，不过也有办法，操作系统会告诉我们，你把模具的特性告诉我，我会给你制作一个花瓶的模具。</p>
 
-<p>有<code class="highlighter-rouge">Win32</code>经验的程序员都知道，每次创建窗口之前，我们都会调用一个函数<code class="highlighter-rouge">RegisterClass</code>，注册窗口类。注册窗口类实际上就是告诉操作系统模具的特性和要求，让操作系统为我们制作一个模具。</p>
+<p>有<code class="language-plaintext highlighter-rouge">Win32</code>经验的程序员都知道，每次创建窗口之前，我们都会调用一个函数<code class="language-plaintext highlighter-rouge">RegisterClass</code>，注册窗口类。注册窗口类实际上就是告诉操作系统模具的特性和要求，让操作系统为我们制作一个模具。</p>
 
 <p>因此一个标准的窗口创建过程，如下所示： </p>
 
@@ -404,7 +404,7 @@
 61
 62
 63
-</pre></td><td class="rouge-code"><pre><span class="n">LRESULT</span> <span class="n">CALLBACK</span> <span class="n">WndProc</span><span class="p">(</span><span class="n">HWND</span> <span class="n">hwnd</span><span class="p">,</span> <span class="n">UINT</span> <span class="n">message</span><span class="p">,</span> <span class="n">WPARAM</span> <span class="n">wParam</span><span class="p">,</span> <span class="n">LPARAM</span> <span class="n">lParam</span><span class="p">);</span>
+</pre></td><td class="rouge-code"><pre><span class="n">LRESULT</span> <span class="n">CALLBACK</span> <span class="nf">WndProc</span><span class="p">(</span><span class="n">HWND</span> <span class="n">hwnd</span><span class="p">,</span> <span class="n">UINT</span> <span class="n">message</span><span class="p">,</span> <span class="n">WPARAM</span> <span class="n">wParam</span><span class="p">,</span> <span class="n">LPARAM</span> <span class="n">lParam</span><span class="p">);</span>
 
 <span class="kt">int</span> <span class="n">APIENTRY</span> <span class="nf">WinMain</span><span class="p">(</span><span class="n">HINSTANCE</span> <span class="n">hInstance</span><span class="p">,</span>
 	<span class="n">HINSTANCE</span> <span class="n">hPrevInstance</span><span class="p">,</span>
@@ -418,8 +418,8 @@
 
 	<span class="n">WNDCLASS</span> <span class="n">wndclass</span><span class="p">;</span>
 
-	<span class="c1">// 注册窗口
-</span>
+	<span class="c1">// 注册窗口</span>
+
 	<span class="n">wndclass</span><span class="p">.</span><span class="n">style</span> <span class="o">=</span> <span class="n">CS_HREDRAW</span> <span class="o">|</span> <span class="n">CS_VREDRAW</span><span class="p">;</span>
 
 	<span class="n">wndclass</span><span class="p">.</span><span class="n">lpfnWndProc</span> <span class="o">=</span> <span class="n">WndProc</span><span class="p">;</span>
@@ -445,8 +445,8 @@
 		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 	<span class="p">}</span>
 
-	<span class="c1">// 创建窗口并显示窗口
-</span>
+	<span class="c1">// 创建窗口并显示窗口</span>
+
 	<span class="n">hwnd</span> <span class="o">=</span> <span class="n">CreateWindow</span><span class="p">(</span><span class="n">szAppName</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">"The Hello Program"</span><span class="p">),</span>
 		<span class="n">WS_OVERLAPPEDWINDOW</span><span class="p">,</span>
 		<span class="n">CW_USEDEFAULT</span><span class="p">,</span>
@@ -458,8 +458,8 @@
 	<span class="n">ShowWindow</span><span class="p">(</span><span class="n">hwnd</span><span class="p">,</span> <span class="n">nCmdShow</span><span class="p">);</span>
 
 	<span class="n">UpdateWindow</span><span class="p">(</span><span class="n">hwnd</span><span class="p">);</span>
-	<span class="c1">// …….
-</span>
+	<span class="c1">// …….</span>
+
 	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -545,8 +545,8 @@
 26
 27
 28
-</pre></td><td class="rouge-code"><pre><span class="c1">// 摘自WinUser.h文件
-</span>
+</pre></td><td class="rouge-code"><pre><span class="c1">// 摘自WinUser.h文件</span>
+
 <span class="cp">#define WS_OVERLAPPED       0x00000000L
 </span>
 <span class="cp">#define WS_POPUP            0x80000000L
@@ -577,7 +577,7 @@
 
 <p><strong>代码 3‑1 窗口样式</strong></p>
 
-<p>从定义上也能看出<code class="highlighter-rouge">WS_OVERLAPPEDWINDOW</code>是<code class="highlighter-rouge">WS_OVERLAPPED</code>和其他样式的一种组合。</p>
+<p>从定义上也能看出<code class="language-plaintext highlighter-rouge">WS_OVERLAPPEDWINDOW</code>是<code class="language-plaintext highlighter-rouge">WS_OVERLAPPED</code>和其他样式的一种组合。</p>
 
 <p>写到这里，我们不得不岔开一下话题，谈一谈关于程序员”小气和高明”的问题。</p>
 
@@ -700,7 +700,7 @@
 
 <p><img src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/window_macros_table.png" alt="window macros table" /></p>
 
-<p>察觉出来没有，程序员没有用一个整型（32位）来表示一个特定的窗口样式，而是用1位来表示窗口样式。小气吗？真小气，早期的程序员就像守财奴一样非常吝啬地使用自己的内存。一个32位的整型，程序员用其中1位来表示一个特定的样式。如果其中有几位都是1呢？那么它表示的就是一个样式的组合。因此，我们可以看到<code class="highlighter-rouge">WS_OVERLAPPEDWINDOW</code> 可以由几个窗口样式进行或运算组合而成。</p>
+<p>察觉出来没有，程序员没有用一个整型（32位）来表示一个特定的窗口样式，而是用1位来表示窗口样式。小气吗？真小气，早期的程序员就像守财奴一样非常吝啬地使用自己的内存。一个32位的整型，程序员用其中1位来表示一个特定的样式。如果其中有几位都是1呢？那么它表示的就是一个样式的组合。因此，我们可以看到<code class="language-plaintext highlighter-rouge">WS_OVERLAPPEDWINDOW</code> 可以由几个窗口样式进行或运算组合而成。</p>
 
 <p>这样的做法也是一个极其高明的做法。需要组合的这种参数，往往会设计成这样。它们通过或运算组合而成。判断该参数里是否有某一个特定的样式，则用与运算来检验。将样式从某一个组合里剔除出来，则采用与非运算。如下所示：</p>
 
@@ -714,16 +714,16 @@
 8
 9
 10
-</pre></td><td class="rouge-code"><pre><span class="n">DWORD</span> <span class="n">style</span> <span class="o">=</span> <span class="n">WS_POPUP</span><span class="p">;</span>         <span class="c1">// 数值为0x80000000
-</span>
-<span class="n">style</span> <span class="o">=</span> <span class="n">style</span> <span class="o">|</span> <span class="n">WS_MINIMIZE</span><span class="p">;</span>    <span class="c1">//样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000
-</span>
-<span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="n">WS_MINIMIZE</span><span class="p">;</span> <span class="c1">// 判断style里是否有WS_MINIMIZE 返回为真
-</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="n">WS_CHILD</span><span class="p">;</span>          <span class="c1">//判断style里是否有WS_CHILD返回为假    
-</span>
-<span class="n">style</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">WS_MINIMIZE</span><span class="p">;</span>    <span class="c1">//从样式里去掉了WS_MINIMIZE样式         数值为0x80000000
-</span>
+</pre></td><td class="rouge-code"><pre><span class="n">DWORD</span> <span class="n">style</span> <span class="o">=</span> <span class="n">WS_POPUP</span><span class="p">;</span>         <span class="c1">// 数值为0x80000000</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">style</span> <span class="o">|</span> <span class="n">WS_MINIMIZE</span><span class="p">;</span>    <span class="c1">//样式组合成了 WS_POPUP | WS_MINIMIZE    数值为0x80000000 | 0x20000000为0xa0000000</span>
+
+<span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="n">WS_MINIMIZE</span><span class="p">;</span> <span class="c1">// 判断style里是否有WS_MINIMIZE 返回为真</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="n">WS_CHILD</span><span class="p">;</span>          <span class="c1">//判断style里是否有WS_CHILD返回为假    </span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">style</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">WS_MINIMIZE</span><span class="p">;</span>    <span class="c1">//从样式里去掉了WS_MINIMIZE样式         数值为0x80000000</span>
+
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><strong>代码 3‑2 窗口样式运算</strong></p>
@@ -844,13 +844,13 @@
 
 <p>按说进队消息已经没什么特殊，他们都是老老实实地遵循先进先出（first in first out）的原则。但是仍然有些消息会特殊。按照常理来想，如果你要搞特殊，大可不排队，走领导递条子型不就得了。但是这些消息特殊，并不是特殊在他们要特权，他们的问题是太过谦让，看到其他消息总是说”您请先”。</p>
 
-<p>现在让我们介绍一下，这几个特殊而高尚的信息。他们分别是<code class="highlighter-rouge">WM_PAINT</code>，<code class="highlighter-rouge">WM_TIMER</code>和<code class="highlighter-rouge">WM_QUIT</code>消息。这三个消息总在谦让，他们谦让的程度让人咂舌。消息队列里只要还有一条消息在排队，他们都不会往前，直到消息队列为空，才会交给窗口过程处理。</p>
+<p>现在让我们介绍一下，这几个特殊而高尚的信息。他们分别是<code class="language-plaintext highlighter-rouge">WM_PAINT</code>，<code class="language-plaintext highlighter-rouge">WM_TIMER</code>和<code class="language-plaintext highlighter-rouge">WM_QUIT</code>消息。这三个消息总在谦让，他们谦让的程度让人咂舌。消息队列里只要还有一条消息在排队，他们都不会往前，直到消息队列为空，才会交给窗口过程处理。</p>
 
-<p>当系统感觉到窗口需要重绘的时候，比如窗口大小，尺寸等发生变化，会向窗口发送<code class="highlighter-rouge">WM_PAINT</code>消息，告知窗口需要重绘。<code class="highlighter-rouge">WM_PAINT</code>消息不仅会谦让，而且当消息队列里有多个<code class="highlighter-rouge">WM_PAINT</code>消息，系统会自动合并成一个<code class="highlighter-rouge">WM_PAINT</code>消息，同时会将每个<code class="highlighter-rouge">WM_PAINT</code>消息的无效矩形合并成一个大的无效矩形。<code class="highlighter-rouge">WM_PAINT</code>之所以这样做，是因为避免窗口过多地重绘造成的系统低效。关于<code class="highlighter-rouge">WM_PAINT</code>和无效矩形，我想还得再写一篇文章来说明这个问题。</p>
+<p>当系统感觉到窗口需要重绘的时候，比如窗口大小，尺寸等发生变化，会向窗口发送<code class="language-plaintext highlighter-rouge">WM_PAINT</code>消息，告知窗口需要重绘。<code class="language-plaintext highlighter-rouge">WM_PAINT</code>消息不仅会谦让，而且当消息队列里有多个<code class="language-plaintext highlighter-rouge">WM_PAINT</code>消息，系统会自动合并成一个<code class="language-plaintext highlighter-rouge">WM_PAINT</code>消息，同时会将每个<code class="language-plaintext highlighter-rouge">WM_PAINT</code>消息的无效矩形合并成一个大的无效矩形。<code class="language-plaintext highlighter-rouge">WM_PAINT</code>之所以这样做，是因为避免窗口过多地重绘造成的系统低效。关于<code class="language-plaintext highlighter-rouge">WM_PAINT</code>和无效矩形，我想还得再写一篇文章来说明这个问题。</p>
 
-<p><code class="highlighter-rouge">WM_TIMER</code>是设置了计时器之后，系统会按照计时器规定的间隔时间来定时发送<code class="highlighter-rouge">WM_TIMER</code>消息。由于<code class="highlighter-rouge">WM_TIMER</code>消息是一个具有”先人后己”道德高尚的消息，因此，我们说这种计时器是不太准的，比如定时器设置了每50毫秒发送一次<code class="highlighter-rouge">WM_TIMER</code>消息，但是50毫秒的时候，消息队列里还有很多其他兄弟消息，于是<code class="highlighter-rouge">WM_TIMER</code>就忍让了，可能51毫秒或者52毫秒的时候<code class="highlighter-rouge">WM_TIMER</code>消息才会放到消息队列当中。</p>
+<p><code class="language-plaintext highlighter-rouge">WM_TIMER</code>是设置了计时器之后，系统会按照计时器规定的间隔时间来定时发送<code class="language-plaintext highlighter-rouge">WM_TIMER</code>消息。由于<code class="language-plaintext highlighter-rouge">WM_TIMER</code>消息是一个具有”先人后己”道德高尚的消息，因此，我们说这种计时器是不太准的，比如定时器设置了每50毫秒发送一次<code class="language-plaintext highlighter-rouge">WM_TIMER</code>消息，但是50毫秒的时候，消息队列里还有很多其他兄弟消息，于是<code class="language-plaintext highlighter-rouge">WM_TIMER</code>就忍让了，可能51毫秒或者52毫秒的时候<code class="language-plaintext highlighter-rouge">WM_TIMER</code>消息才会放到消息队列当中。</p>
 
-<p>当应用程序需要退出的时候，系统会发送<code class="highlighter-rouge">WM_QUIT</code>消息。<code class="highlighter-rouge">WM_QUIT</code>的谦让精神和前面的兄弟消息也是一样，就无需多言了。<code class="highlighter-rouge">WM_QUIT</code>的特殊之处，在于GetMessage一旦得到的是<code class="highlighter-rouge">WM_QUIT</code>消息，就返回0，整个消息循环就结束了，Game Over！</p>
+<p>当应用程序需要退出的时候，系统会发送<code class="language-plaintext highlighter-rouge">WM_QUIT</code>消息。<code class="language-plaintext highlighter-rouge">WM_QUIT</code>的谦让精神和前面的兄弟消息也是一样，就无需多言了。<code class="language-plaintext highlighter-rouge">WM_QUIT</code>的特殊之处，在于GetMessage一旦得到的是<code class="language-plaintext highlighter-rouge">WM_QUIT</code>消息，就返回0，整个消息循环就结束了，Game Over！</p>
 
 <h3 id="43-一个消息的完整结构">4.3 一个消息的完整结构</h3>
 
@@ -870,7 +870,7 @@
 12
 13
 14
-</pre></td><td class="rouge-code"><pre><span class="k">typedef</span> <span class="k">struct</span> <span class="n">tagMSG</span> <span class="p">{</span>
+</pre></td><td class="rouge-code"><pre><span class="k">typedef</span> <span class="k">struct</span> <span class="nc">tagMSG</span> <span class="p">{</span>
 	<span class="n">HWND</span> <span class="n">hwnd</span><span class="p">;</span>
 
 	<span class="n">UINT</span> <span class="n">message</span><span class="p">;</span>
@@ -886,7 +886,7 @@
 <span class="p">}</span> <span class="n">MSG</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>消息结构体，总共有六个成员变量。第一个就是窗口句柄<code class="highlighter-rouge">hwnd</code>，这个参数就告诉我们是哪个窗口收到消息，操作系统可以根据这个信息将消息放到合适的窗口应用程序消息队列当中；第二个是消息的标识，比如WM_PAINT等；第三和第四参数都是用来存储消息的额外信息；第五个参数记录的是消息被放入到消息队列的时间；第六个参数是消息被放入到消息队列时，鼠标所在的位置。</p>
+<p>消息结构体，总共有六个成员变量。第一个就是窗口句柄<code class="language-plaintext highlighter-rouge">hwnd</code>，这个参数就告诉我们是哪个窗口收到消息，操作系统可以根据这个信息将消息放到合适的窗口应用程序消息队列当中；第二个是消息的标识，比如WM_PAINT等；第三和第四参数都是用来存储消息的额外信息；第五个参数记录的是消息被放入到消息队列的时间；第六个参数是消息被放入到消息队列时，鼠标所在的位置。</p>
 
 <h2 id="5-小结">5. 小结</h2>
 

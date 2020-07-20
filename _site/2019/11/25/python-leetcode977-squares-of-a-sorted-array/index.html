@@ -14,7 +14,7 @@
     <title> LeetCode面试系列 第12天：No.977 - 有序数组的平方 -极客玩家Bravo Yeung博客 </title>
     <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
     <meta name="description"
-          content="&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道&lt;code class=&quot;highlighter-rouge&quot;&gt;集合&lt;/code&gt;相关的数学题。现在我们再来看一个&lt;code class=&quot;highlighter-rouge&quot;&gt;排序&lt;/code&gt;相关的面试题吧~&lt;/p&gt;
+          content="&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;集合&lt;/code&gt;相关的数学题。现在我们再来看一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;排序&lt;/code&gt;相关的面试题吧~&lt;/p&gt;
 
 ">
 
@@ -251,7 +251,7 @@
         
         <div class="col-md-9 markdown-body">
 
-            <p>上一篇 LeetCode 面试题中，我们分析了一道<code class="highlighter-rouge">集合</code>相关的数学题。现在我们再来看一个<code class="highlighter-rouge">排序</code>相关的面试题吧~</p>
+            <p>上一篇 LeetCode 面试题中，我们分析了一道<code class="language-plaintext highlighter-rouge">集合</code>相关的数学题。现在我们再来看一个<code class="language-plaintext highlighter-rouge">排序</code>相关的面试题吧~</p>
 
 <!--more-->
 
@@ -265,11 +265,11 @@
 
 <h3 id="题目描述">题目描述</h3>
 
-<p>给定一个按非递减顺序排序的整数数组 <code class="highlighter-rouge">A</code>，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。</p>
+<p>给定一个按非递减顺序排序的整数数组 <code class="language-plaintext highlighter-rouge">A</code>，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。</p>
 
 <p><strong>示例 1：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入：[-4,-1,0,3,10]
 输出：[0,1,9,16,100]
@@ -277,7 +277,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入：[-7,-3,2,3,11]
 输出：[4,9,9,49,121]
@@ -286,9 +286,9 @@
 <p><strong>提示：</strong></p>
 
 <ol>
-  <li><code class="highlighter-rouge">1 &lt;= A.length &lt;= 10000</code></li>
-  <li><code class="highlighter-rouge">-10000 &lt;= A[i] &lt;= 10000</code></li>
-  <li><code class="highlighter-rouge">A</code> 已按非递减顺序排序。</li>
+  <li><code class="language-plaintext highlighter-rouge">1 &lt;= A.length &lt;= 10000</code></li>
+  <li><code class="language-plaintext highlighter-rouge">-10000 &lt;= A[i] &lt;= 10000</code></li>
+  <li><code class="language-plaintext highlighter-rouge">A</code> 已按非递减顺序排序。</li>
 </ol>
 
 <ul>
@@ -336,11 +336,11 @@
 
 <p><strong>解题思路:</strong></p>
 
-<p>如果有办法将数组 <code class="highlighter-rouge">A</code> 中的值按<code class="highlighter-rouge">绝对值</code>进行递减序排序，那最后只需将排序过的数组中的每个数求个平方依次加入到结果 list 中即可。</p>
+<p>如果有办法将数组 <code class="language-plaintext highlighter-rouge">A</code> 中的值按<code class="language-plaintext highlighter-rouge">绝对值</code>进行递减序排序，那最后只需将排序过的数组中的每个数求个平方依次加入到结果 list 中即可。</p>
 
-<p>恰好 Python 中的 <code class="highlighter-rouge">sorted(array, key = abs)</code> 可以实现按绝对值排序，所以这个问题就迎刃而解了。</p>
+<p>恰好 Python 中的 <code class="language-plaintext highlighter-rouge">sorted(array, key = abs)</code> 可以实现按绝对值排序，所以这个问题就迎刃而解了。</p>
 
-<p>已<code class="highlighter-rouge">AC</code>的代码为:</p>
+<p>已<code class="language-plaintext highlighter-rouge">AC</code>的代码为:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -351,14 +351,14 @@
 7
 </pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">sortedSquares</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
-        <span class="n">B</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">)</span> <span class="c"># sort by absolute values</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="n">B</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">)</span> <span class="c1"># sort by absolute values
+</span>        <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
         <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">B</span><span class="p">:</span>
-            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span><span class="n">elem</span><span class="p">)</span>
+            <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span><span class="n">elem</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>执行用时: <code class="highlighter-rouge">268 ms</code>, 在所有 python3 提交中击败了 ` 87.52 %` 的用户.</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">268 ms</code>, 在所有 python3 提交中击败了 ` 87.52 %` 的用户.</p>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/leetcode977.jpg" alt="Leetcode645" /></p>
 

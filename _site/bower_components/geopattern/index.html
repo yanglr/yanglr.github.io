@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> GeoPattern -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <meta name="description"
+          content="极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~">
+
+    <link rel="canonical" href="https://geekplayers.com/bower_components/geopattern/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="GeoPattern">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>GeoPattern</h1>
+            <span class="meta-info">
+                
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container">
+
+    <h1 id="geopattern">GeoPattern</h1>
+
+<p>This is a JavaScript port of <a href="https://github.com/jasonlong/geo_pattern">jasonlong/geo_pattern</a> with a <a href="http://btmills.github.io/geopattern/geopattern.html">live preview page</a> and is derived from the background generator originally used for <a href="http://guides.github.com/">GitHub Guides</a>.</p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="web">Web</h3>
+
+<p>Include the <a href="/bower_components/geopattern/js/geopattern.min.js">minified script</a>. jQuery is optional.</p>
+
+<pre><code class="language-HTML">&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt; &lt;!-- optional --&gt;
+&lt;script src="js/geopattern.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Use either the <code class="language-plaintext highlighter-rouge">GeoPattern</code> browser global or the jQuery plugin:</p>
+
+<pre><code class="language-JavaScript">// Use the global...
+var pattern = GeoPattern.generate('GitHub');
+$('#geopattern').css('background-image', pattern.toDataUrl());
+
+// ...or the plugin
+$('#geopattern').geopattern('GitHub');
+</code></pre>
+
+<p>For backwards compatibility with the script on the <a href="http://guides.github.com/">Guides</a>, the source hash for generation can be supplied with a <code class="language-plaintext highlighter-rouge">data-title-sha</code> attribute on the element. If the attribute exists, the generator will ignore the input string and use the supplied hash.</p>
+
+<p>View <a href="/bower_components/geopattern/geopattern.html"><code class="language-plaintext highlighter-rouge">geopattern.html</code></a> for a complete example.</p>
+
+<h3 id="nodejs">Node.js</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install </span>geopattern
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>After requiring <code class="language-plaintext highlighter-rouge">geopattern</code>, the API is identical to the browser version, minus the jQuery plugin.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">GeoPattern</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">geopattern</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="nx">GeoPattern</span><span class="p">.</span><span class="nx">generate</span><span class="p">(</span><span class="dl">'</span><span class="s1">GitHub</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">pattern</span><span class="p">.</span><span class="nx">toDataUrl</span><span class="p">();</span> <span class="c1">// url("data:image/svg+xml;...</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="api">API</h3>
+
+<h4 id="geopatterngeneratestring-options">GeoPattern.generate(string, options)</h4>
+
+<p>Returns a newly-generated, tiling SVG Pattern.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">string</code> Will be hashed using the SHA1 algorithm, and the resulting hash will be used as the seed for generation.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">options.color</code> Specify an exact background color. This is a CSS hexadecimal color value.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">options.baseColor</code> Controls the relative background color of the generated image. The color is not identical to that used in the pattern because the hue is rotated by the generator. This is a CSS hexadecimal color value, which defaults to <code class="language-plaintext highlighter-rouge">#933c3c</code>.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">options.generator</code> Determines the pattern. <a href="https://github.com/jasonlong/geo_pattern#available-patterns">All of the original patterns</a> are available in this port, and their names are camelCased.</p>
+  </li>
+</ul>
+
+<h4 id="patterncolor">Pattern.color</h4>
+
+<p>Gets the pattern’s background color as a hexadecimal string.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">GeoPattern</span><span class="p">.</span><span class="nx">generate</span><span class="p">(</span><span class="dl">'</span><span class="s1">GitHub</span><span class="dl">'</span><span class="p">).</span><span class="nx">color</span> <span class="c1">// =&gt; "#455e8a"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="patterntostring-and-patterntosvg">Pattern.toString() and Pattern.toSvg()</h4>
+
+<p>Gets the SVG string representing the pattern.</p>
+
+<h4 id="patterntobase64">Pattern.toBase64()</h4>
+
+<p>Gets the SVG as a Base64-encoded string.</p>
+
+<h4 id="patterntodatauri">Pattern.toDataUri()</h4>
+
+<p>Gets the pattern as a data URI, i.e. <code class="language-plaintext highlighter-rouge">data:image/svg+xml;base64,PHN2ZyB...</code>.</p>
+
+<h4 id="patterntodataurl">Pattern.toDataUrl()</h4>
+
+<p>Gets the pattern as a data URL suitable for use as a CSS <code class="language-plaintext highlighter-rouge">background-image</code>, i.e. <code class="language-plaintext highlighter-rouge">url("data:image/svg+xml;base64,PHN2ZyB...")</code>.</p>
+
+<h2 id="license">License</h2>
+
+<p>Licensed under the terms of the MIT License, the full text of which can be read in <a href="/bower_components/geopattern/LICENSE">LICENSE</a>.</p>
+
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

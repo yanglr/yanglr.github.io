@@ -265,7 +265,7 @@
 
 <h3 id="题目描述">题目描述</h3>
 
-<p>给定一个仅包含大小写字母和空格 <code class="highlighter-rouge">' '</code> 的字符串，返回其最后一个单词的长度。</p>
+<p>给定一个仅包含大小写字母和空格 <code class="language-plaintext highlighter-rouge">' '</code> 的字符串，返回其最后一个单词的长度。</p>
 
 <p>如果不存在最后一个单词，请返回 0 。</p>
 
@@ -273,14 +273,14 @@
 
 <p><strong>示例:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: "Hello World"
 输出: 5
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <ul>
-  <li>题目难度： <code class="highlighter-rouge">简单</code></li>
+  <li>题目难度： <code class="language-plaintext highlighter-rouge">简单</code></li>
   <li>通过次数：49.1K</li>
   <li>提交次数：156.4K</li>
   <li>贡献者：LeetCode</li>
@@ -307,7 +307,7 @@
 <p>这道字符串题目可以使用直接法~</p>
 
 <ul>
-  <li>删掉首尾部的换行、<code class="highlighter-rouge">\t</code>、空格等字符，使用 <code class="highlighter-rouge">strip()</code> 函数可以完成</li>
+  <li>删掉首尾部的换行、<code class="language-plaintext highlighter-rouge">\t</code>、空格等字符，使用 <code class="language-plaintext highlighter-rouge">strip()</code> 函数可以完成</li>
   <li>寻找最后一个空格
     <ul>
       <li>如果不存在空格，直接返回字符串的长度</li>
@@ -328,15 +328,15 @@
 8
 </pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">lengthOfLastWord</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span> 
-        <span class="n">newStr</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>       
-        <span class="n">lastSpacePos</span> <span class="o">=</span> <span class="n">newStr</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+        <span class="n">newStr</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>       
+        <span class="n">lastSpacePos</span> <span class="o">=</span> <span class="n">newStr</span><span class="p">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">lastSpacePos</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">newStr</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">newStr</span><span class="p">)</span> <span class="o">-</span> <span class="n">lastSpacePos</span> <span class="o">-</span> <span class="mi">1</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>执行用时: <code class="highlighter-rouge">28 ms</code>, 在所有 python3 提交中击败了 <code class="highlighter-rouge">99.83%</code> 的用户</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">28 ms</code>, 在所有 python3 提交中击败了 <code class="language-plaintext highlighter-rouge">99.83%</code> 的用户</p>
 
 <p>示例代码: <a href="https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058">https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058</a></p>
 

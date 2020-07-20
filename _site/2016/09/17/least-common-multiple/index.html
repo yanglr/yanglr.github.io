@@ -1,4 +1,257 @@
-<h3 id="题目-求最小公倍数">题目: 求最小公倍数</h3>
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> 华为oj之最小公倍数 -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <meta name="description"
+          content="&lt;h3 id=&quot;题目-求最小公倍数&quot;&gt;题目: 求最小公倍数&lt;/h3&gt;
+
+">
+
+    <link rel="canonical" href="https://geekplayers.com/2016/09/17/least-common-multiple/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="华为oj之最小公倍数">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>华为oj之最小公倍数</h1>
+            <span class="meta-info">
+                
+                
+                <span class="octicon octicon-calendar"></span> 2016/09/17 23:19:26
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+                <a href="/"></a>
+                
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <h3 id="题目-求最小公倍数">题目: 求最小公倍数</h3>
 
 <ul>
   <li>
@@ -14,19 +267,19 @@
 
 <h5 id="输入描述"><strong>输入描述:</strong></h5>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>输入两个正整数A和B。
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <h5 id="输出描述"><strong>输出描述:</strong></h5>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>输出A和B的最小公倍数。
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <h5 id="输入例子"><strong>输入例子:</strong></h5>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre>5 
@@ -36,7 +289,7 @@
 
 <h5 id="输出例子"><strong>输出例子:</strong></h5>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>35
 </pre></td></tr></tbody></table></code></pre></div></div>
 
@@ -44,7 +297,7 @@
 
 <h3 id="分析">分析:</h3>
 
-<p>先用欧几里得(Euclidean)算法求出两数最大公约数, 再利用最小公倍数<code class="highlighter-rouge">lcm*gcd = n*m</code> 求得最小公倍数即可.</p>
+<p>先用欧几里得(Euclidean)算法求出两数最大公约数, 再利用最小公倍数<code class="language-plaintext highlighter-rouge">lcm*gcd = n*m</code> 求得最小公倍数即可.</p>
 
 <p>已AC代码:</p>
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -71,8 +324,8 @@
 #include&lt;iostream&gt;
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">gcd</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>  <span class="c1">// 欧几里得算法(辗转相除法)求最大公约数
-</span><span class="p">{</span>
+<span class="kt">int</span> <span class="nf">gcd</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>  <span class="c1">// 欧几里得算法(辗转相除法)求最大公约数</span>
+<span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">a</span><span class="p">;</span>
     <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">%</span><span class="n">b</span><span class="p">);</span>    
 <span class="p">}</span>
@@ -82,10 +335,250 @@
     <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="kt">int</span> <span class="n">res</span><span class="p">;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">gcd</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">);</span>   <span class="c1">// 最小公倍数lcm*gcd = n*m
-</span>        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">res</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">gcd</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">);</span>   <span class="c1">// 最小公倍数lcm*gcd = n*m</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">res</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>    
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>文档信息</h3>
+    <ul>
+        <li>本文作者：<a href="https://geekplayers.com" target="_blank">Bravo Yeung大白技术控</a></li>
+        <li>本文链接：<a href="https://geekplayers.com/2016/09/17/least-common-multiple/" target="_blank">https://geekplayers.com/2016/09/17/least-common-multiple/</a></li>
+        <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">大白技术控-Bravo Yeung-极客玩家</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET 技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://geekplayers.com/2016/09/17/least-common-multiple/';
+        this.page.identifier = '/2016/09/17/least-common-multiple/';
+        this.page.title = '华为oj之最小公倍数';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <script src="/assets/js/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2016/09/17/least-common-multiple/',
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'blog-comments',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

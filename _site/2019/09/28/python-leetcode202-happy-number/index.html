@@ -14,7 +14,7 @@
     <title> LeetCode面试系列 第4天：No.202 - 快乐数 -极客玩家Bravo Yeung博客 </title>
     <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
     <meta name="description"
-          content="&lt;p&gt;或许你不知道的是，Leetcode 中是有很多 &lt;em&gt;数学题&lt;/em&gt; 的，本文要解析的题 &lt;strong&gt;快乐数&lt;/strong&gt; 就是其中到一个典型问题，本题将基于数据结构 &lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt; 来求解。&lt;/p&gt;
+          content="&lt;p&gt;或许你不知道的是，Leetcode 中是有很多 &lt;em&gt;数学题&lt;/em&gt; 的，本文要解析的题 &lt;strong&gt;快乐数&lt;/strong&gt; 就是其中到一个典型问题，本题将基于数据结构 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set&lt;/code&gt; 来求解。&lt;/p&gt;
 
 ">
 
@@ -251,7 +251,7 @@
         
         <div class="col-md-9 markdown-body">
 
-            <p>或许你不知道的是，Leetcode 中是有很多 <em>数学题</em> 的，本文要解析的题 <strong>快乐数</strong> 就是其中到一个典型问题，本题将基于数据结构 <code class="highlighter-rouge">set</code> 来求解。</p>
+            <p>或许你不知道的是，Leetcode 中是有很多 <em>数学题</em> 的，本文要解析的题 <strong>快乐数</strong> 就是其中到一个典型问题，本题将基于数据结构 <code class="language-plaintext highlighter-rouge">set</code> 来求解。</p>
 
 <!--more-->
 
@@ -271,7 +271,7 @@
 
 <p><strong>示例:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: 19
 输出: true
@@ -320,7 +320,7 @@
 
 <p>具体操作为: 迭代地求给定数的各位数字的平方和，维护一个 set，迭代循环的出口是平方和为1或已在 set 中出现过。</p>
 
-<p>已<code class="highlighter-rouge">AC</code>的代码为:</p>
+<p>已<code class="language-plaintext highlighter-rouge">AC</code>的代码为:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -341,8 +341,8 @@
     <span class="k">def</span> <span class="nf">isHappy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="n">unhappy</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
         <span class="k">while</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unhappy</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">unhappy</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-            <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">GetSquareSum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+            <span class="n">unhappy</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">GetSquareSum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>    
 
     <span class="k">def</span> <span class="nf">GetSquareSum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -356,7 +356,7 @@
 
 <p><strong>运行结果:</strong></p>
 
-<p>执行用时 : <code class="highlighter-rouge">36 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">99.72%</code>的用户.</p>
+<p>执行用时 : <code class="language-plaintext highlighter-rouge">36 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">99.72%</code>的用户.</p>
 
 <p>相应的，如需测试，本地可执行的代码为:</p>
 
@@ -382,8 +382,8 @@
     <span class="k">def</span> <span class="nf">isHappy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="n">unhappy</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
         <span class="k">while</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unhappy</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">unhappy</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-            <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">GetSquareSum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+            <span class="n">unhappy</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">GetSquareSum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>    
 
     <span class="k">def</span> <span class="nf">GetSquareSum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -395,7 +395,7 @@
         <span class="k">return</span> <span class="n">sum0</span>
 
 <span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">isHappy</span><span class="p">(</span><span class="mi">19</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="p">.</span><span class="n">isHappy</span><span class="p">(</span><span class="mi">19</span><span class="p">))</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><br /></p>

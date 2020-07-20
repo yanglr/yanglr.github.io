@@ -269,7 +269,7 @@
 
 <p><strong>示例:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre>输入: 10
@@ -285,7 +285,7 @@
     <p>题目难度: <strong>Easy</strong></p>
   </li>
   <li>
-    <p>通过率: <code class="highlighter-rouge">30.23%</code></p>
+    <p>通过率: <code class="language-plaintext highlighter-rouge">30.23%</code></p>
   </li>
   <li>相关话题
     <ul>
@@ -310,7 +310,7 @@
   <li>遍历每个数，判断它是否为素数。</li>
 </ol>
 
-<p>基于传统教科书中的算法 <code class="highlighter-rouge">IsPrime</code>(其流程见下图)来做，即在 <code class="highlighter-rouge">IsPrime</code>算法外套一个循环来做，由于下面流程的时间复杂度 T(n) = O(n*log n)，于是整体算下来整个算法最后的时间复杂度为 O(n * n * log n)，这个算法的时间复杂度是不达标的。
+<p>基于传统教科书中的算法 <code class="language-plaintext highlighter-rouge">IsPrime</code>(其流程见下图)来做，即在 <code class="language-plaintext highlighter-rouge">IsPrime</code>算法外套一个循环来做，由于下面流程的时间复杂度 T(n) = O(n*log n)，于是整体算下来整个算法最后的时间复杂度为 O(n * n * log n)，这个算法的时间复杂度是不达标的。
   <img src="http://www.justdopython.com/assets/images/2019/python/check_prime.png" alt="check_prime" /></p>
 
 <ol>
@@ -350,7 +350,7 @@
             <span class="k">return</span> <span class="mi">0</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">isDelete</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">]</span><span class="o">*</span><span class="n">n</span>
-            <span class="n">max0</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+            <span class="n">max0</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
             <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
                 <span class="k">if</span> <span class="n">isDelete</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
@@ -365,7 +365,7 @@
         <span class="k">return</span> <span class="n">count</span>            
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>ps: 由于这段代码使用了数学库函数<code class="highlighter-rouge">sqrt()</code>，于是本地测试需要在开头引入<code class="highlighter-rouge">math</code>库，其代码如下:</p>
+<p>ps: 由于这段代码使用了数学库函数<code class="language-plaintext highlighter-rouge">sqrt()</code>，于是本地测试需要在开头引入<code class="language-plaintext highlighter-rouge">math</code>库，其代码如下:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -397,7 +397,7 @@
             <span class="k">return</span> <span class="mi">0</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">isDelete</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">]</span><span class="o">*</span><span class="n">n</span>
-            <span class="n">max0</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+            <span class="n">max0</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
             <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
                 <span class="k">if</span> <span class="n">isDelete</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
@@ -412,12 +412,12 @@
         <span class="k">return</span> <span class="n">count</span>  
 
 <span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">countPrimes</span><span class="p">(</span><span class="mi">5566</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sol</span><span class="p">.</span><span class="n">countPrimes</span><span class="p">(</span><span class="mi">5566</span><span class="p">))</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/sol1.png" alt="sol1" /></p>
 
-<p>执行用时 : <code class="highlighter-rouge">492 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">47.44 %</code>的用户.</p>
+<p>执行用时 : <code class="language-plaintext highlighter-rouge">492 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">47.44 %</code>的用户.</p>
 
 <p>已AC代码 解法2:</p>
 
@@ -439,19 +439,19 @@
         <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
             <span class="k">return</span> <span class="mi">0</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">isPrime</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">n</span>  <span class="c"># isPrime = not deleted</span>
-            <span class="n">isPrime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">isPrime</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">n</span>  <span class="c1"># isPrime = not deleted
+</span>            <span class="n">isPrime</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
             <span class="n">isPrime</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 
             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
                 <span class="k">if</span> <span class="n">isPrime</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-                    <span class="n">isPrime</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">:</span><span class="n">n</span><span class="p">:</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span><span class="o">//</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>   <span class="c"># slice: a[start:stop:step] # items from the beginning through stop-1</span>
-        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">isPrime</span><span class="p">)</span>
+                    <span class="n">isPrime</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">:</span><span class="n">n</span><span class="p">:</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span><span class="o">//</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>   <span class="c1"># slice: a[start:stop:step] # items from the beginning through stop-1
+</span>        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">isPrime</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/sol2.png" alt="sol2" /></p>
 
-<p>执行用时 : <code class="highlighter-rouge">100 ms</code>, 在所有 Python3 提交中击败了<code class="highlighter-rouge">94.27 %</code>的用户.</p>
+<p>执行用时 : <code class="language-plaintext highlighter-rouge">100 ms</code>, 在所有 Python3 提交中击败了<code class="language-plaintext highlighter-rouge">94.27 %</code>的用户.</p>
 
 <p><br /></p>
 

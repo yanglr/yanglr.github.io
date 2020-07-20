@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<!-- simple jekyll search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> 3.5.0 (February 12, 2016) -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <meta name="description"
+          content="极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~">
+
+    <link rel="canonical" href="https://geekplayers.com/bower_components/octicons/CHANGELOG/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="Bravo Yeung大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            Bravo Yeung大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                    <li><a href="http://enjoy233.cnblogs.com" 
+                           target="_blank"
+                     >.NET 极客技术</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="3.5.0 (February 12, 2016)">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>3.5.0 (February 12, 2016)</h1>
+            <span class="meta-info">
+                
+                
+            </span>
+            <!--<p>
+                
+                分类:
+                
+            </p>-->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container">
+
+    <h3 id="350-february-12-2016">3.5.0 (February 12, 2016)</h3>
+
+<p>Adds:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">unverified</code></li>
+</ul>
+
+<p>Refines:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">verified</code></li>
+</ul>
+
+<h3 id="341-january-24-2016">3.4.1 (January 24, 2016)</h3>
+
+<p>This includes various SVG viewport refinements.</p>
+
+<p>Refines:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">thumbs-down</code></li>
+  <li><code class="language-plaintext highlighter-rouge">logo-github</code></li>
+</ul>
+
+<h3 id="340-january-22-2016">3.4.0 (January 22, 2016)</h3>
+
+<p>Adds:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">verified</code></li>
+  <li><code class="language-plaintext highlighter-rouge">smiley</code></li>
+</ul>
+
+<p>Removes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">color-mode</code></li>
+</ul>
+
+<p>Refines:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">primitive-dot</code></li>
+  <li><code class="language-plaintext highlighter-rouge">horizontal-rule</code></li>
+  <li><code class="language-plaintext highlighter-rouge">triangle-down</code></li>
+  <li><code class="language-plaintext highlighter-rouge">triangle-up</code></li>
+  <li><code class="language-plaintext highlighter-rouge">triangle-left</code></li>
+  <li><code class="language-plaintext highlighter-rouge">triangle-right</code></li>
+  <li><code class="language-plaintext highlighter-rouge">globe</code></li>
+  <li><code class="language-plaintext highlighter-rouge">flame</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comment-discussion</code></li>
+</ul>
+
+<h3 id="330-november-12-2015">3.3.0 (November 12, 2015)</h3>
+
+<p>Adds:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">logo-gist</code></li>
+</ul>
+
+<p>Resizes all our SVG to be 16x16 instead of 1024x1024</p>
+
+<h3 id="320-november-6-2015">3.2.0 (November 6, 2015)</h3>
+
+<p>Adds:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bold</code></li>
+  <li><code class="language-plaintext highlighter-rouge">text-size</code></li>
+  <li><code class="language-plaintext highlighter-rouge">italic</code></li>
+  <li><code class="language-plaintext highlighter-rouge">tasklist</code></li>
+</ul>
+
+<p>It also normalizes some styling in:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">list-unordered</code></li>
+  <li><code class="language-plaintext highlighter-rouge">list-ordered</code></li>
+  <li><code class="language-plaintext highlighter-rouge">quote</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mention</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bookmark</code></li>
+  <li><code class="language-plaintext highlighter-rouge">threebars</code></li>
+</ul>
+
+<p>Removes</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">screen-normal</code></li>
+  <li><code class="language-plaintext highlighter-rouge">screen-full</code></li>
+</ul>
+
+<h3 id="310-august-13-2015">3.1.0 (August 13, 2015)</h3>
+
+<p>Adds</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">shield</code></li>
+</ul>
+
+<p>This thickens stroke widths slightly on the following icons:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">circle-slash</code></li>
+  <li><code class="language-plaintext highlighter-rouge">clock</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cloud-upload</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cloud-download</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dashboard</code></li>
+  <li><code class="language-plaintext highlighter-rouge">info</code></li>
+  <li><code class="language-plaintext highlighter-rouge">issue-closed</code></li>
+  <li><code class="language-plaintext highlighter-rouge">issue</code></li>
+  <li><code class="language-plaintext highlighter-rouge">issue-reopened</code></li>
+  <li><code class="language-plaintext highlighter-rouge">history</code></li>
+  <li><code class="language-plaintext highlighter-rouge">question</code></li>
+  <li><code class="language-plaintext highlighter-rouge">search</code></li>
+</ul>
+
+<p>Fills <code class="language-plaintext highlighter-rouge">comment-discussion</code></p>
+
+<p>Thickens <code class="language-plaintext highlighter-rouge">x</code> to match <code class="language-plaintext highlighter-rouge">checkmark</code></p>
+
+<h3 id="301-august-10-2015">3.0.1 (August 10, 2015)</h3>
+
+<p>Some files were missing in <code class="language-plaintext highlighter-rouge">3.0.0</code></p>
+
+<h3 id="300-august-10-2015">3.0.0 (August 10, 2015)</h3>
+
+<p>Removes</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">microscope</code></li>
+  <li><code class="language-plaintext highlighter-rouge">beer</code></li>
+  <li><code class="language-plaintext highlighter-rouge">split</code></li>
+  <li><code class="language-plaintext highlighter-rouge">puzzle</code></li>
+  <li><code class="language-plaintext highlighter-rouge">steps</code></li>
+  <li><code class="language-plaintext highlighter-rouge">podium</code></li>
+  <li><code class="language-plaintext highlighter-rouge">timer</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">alignment</code> icons</li>
+  <li>all <code class="language-plaintext highlighter-rouge">move</code> icons</li>
+  <li>all <code class="language-plaintext highlighter-rouge">playback</code> icons</li>
+  <li>all <code class="language-plaintext highlighter-rouge">jump</code> icons</li>
+</ul>
+
+<p>Adds</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">beaker</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bell</code></li>
+  <li><code class="language-plaintext highlighter-rouge">desktop-download</code></li>
+  <li><code class="language-plaintext highlighter-rouge">watch</code></li>
+</ul>
+
+<p>Line-weight changes, sizing normalization, and new drawings</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">circle-slash</code></li>
+  <li><code class="language-plaintext highlighter-rouge">lock</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cloud-upload</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cloud-download</code></li>
+  <li><code class="language-plaintext highlighter-rouge">plus</code></li>
+  <li><code class="language-plaintext highlighter-rouge">✕</code></li>
+  <li><code class="language-plaintext highlighter-rouge">broadcast</code></li>
+  <li><code class="language-plaintext highlighter-rouge">lock</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">repo</code> icons</li>
+  <li>organization</li>
+  <li>person</li>
+  <li>all <code class="language-plaintext highlighter-rouge">chevrons</code> &amp; <code class="language-plaintext highlighter-rouge">triangles</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">diff</code> icons</li>
+  <li><code class="language-plaintext highlighter-rouge">clippy</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">issue</code> and circular icons</li>
+  <li><code class="language-plaintext highlighter-rouge">rss</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ruby</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cancel</code></li>
+  <li><code class="language-plaintext highlighter-rouge">settings</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mirror</code></li>
+  <li><code class="language-plaintext highlighter-rouge">external-link</code></li>
+  <li><code class="language-plaintext highlighter-rouge">history</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gear</code></li>
+  <li><code class="language-plaintext highlighter-rouge">settings</code></li>
+  <li><code class="language-plaintext highlighter-rouge">info</code></li>
+  <li><code class="language-plaintext highlighter-rouge">history</code></li>
+  <li><code class="language-plaintext highlighter-rouge">package</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gist-secret</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rocket</code></li>
+  <li><code class="language-plaintext highlighter-rouge">law</code></li>
+  <li><code class="language-plaintext highlighter-rouge">telescope</code></li>
+  <li><code class="language-plaintext highlighter-rouge">search</code></li>
+  <li><code class="language-plaintext highlighter-rouge">tag</code></li>
+  <li><code class="language-plaintext highlighter-rouge">normal-screen</code></li>
+  <li><code class="language-plaintext highlighter-rouge">iphone</code></li>
+  <li><code class="language-plaintext highlighter-rouge">no-new-line</code></li>
+  <li><code class="language-plaintext highlighter-rouge">desktop</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">git</code> icons</li>
+  <li><code class="language-plaintext highlighter-rouge">circuit-board</code></li>
+  <li><code class="language-plaintext highlighter-rouge">heart</code></li>
+  <li><code class="language-plaintext highlighter-rouge">home</code></li>
+  <li><code class="language-plaintext highlighter-rouge">briefcase</code></li>
+  <li><code class="language-plaintext highlighter-rouge">wiki</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bookmark</code></li>
+  <li><code class="language-plaintext highlighter-rouge">briefcase</code></li>
+  <li><code class="language-plaintext highlighter-rouge">calendar</code></li>
+  <li><code class="language-plaintext highlighter-rouge">color-mode</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">discussions</code></li>
+  <li><code class="language-plaintext highlighter-rouge">credit-card</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dashboard</code></li>
+  <li><code class="language-plaintext highlighter-rouge">camera</code></li>
+  <li><code class="language-plaintext highlighter-rouge">video</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bug</code></li>
+  <li><code class="language-plaintext highlighter-rouge">desktop</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ellipses</code></li>
+  <li><code class="language-plaintext highlighter-rouge">eye</code></li>
+  <li>all <code class="language-plaintext highlighter-rouge">files</code> &amp; <code class="language-plaintext highlighter-rouge">folders</code></li>
+  <li><code class="language-plaintext highlighter-rouge">fold</code></li>
+  <li><code class="language-plaintext highlighter-rouge">unfold</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gift</code></li>
+  <li><code class="language-plaintext highlighter-rouge">graph</code></li>
+  <li><code class="language-plaintext highlighter-rouge">hubot</code></li>
+  <li><code class="language-plaintext highlighter-rouge">inbox</code></li>
+  <li><code class="language-plaintext highlighter-rouge">jersey</code></li>
+  <li><code class="language-plaintext highlighter-rouge">keyboard</code></li>
+  <li><code class="language-plaintext highlighter-rouge">light-bulb</code></li>
+  <li><code class="language-plaintext highlighter-rouge">link</code></li>
+  <li><code class="language-plaintext highlighter-rouge">location</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mail</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mail-read</code></li>
+  <li><code class="language-plaintext highlighter-rouge">marker</code></li>
+  <li><code class="language-plaintext highlighter-rouge">plug</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mute</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pencil</code></li>
+  <li><code class="language-plaintext highlighter-rouge">push-pin</code></li>
+  <li><code class="language-plaintext highlighter-rouge">fullscreen</code></li>
+  <li><code class="language-plaintext highlighter-rouge">unfullscreen</code></li>
+  <li><code class="language-plaintext highlighter-rouge">server</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sign-in</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sign-out</code></li>
+  <li><code class="language-plaintext highlighter-rouge">tag</code></li>
+  <li><code class="language-plaintext highlighter-rouge">terminal</code></li>
+  <li><code class="language-plaintext highlighter-rouge">thumbs-up</code></li>
+  <li><code class="language-plaintext highlighter-rouge">thumbs-down</code></li>
+  <li><code class="language-plaintext highlighter-rouge">trash</code></li>
+  <li><code class="language-plaintext highlighter-rouge">unmute</code></li>
+  <li><code class="language-plaintext highlighter-rouge">versions</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gist</code></li>
+  <li><code class="language-plaintext highlighter-rouge">key</code></li>
+  <li><code class="language-plaintext highlighter-rouge">megaphone</code></li>
+  <li><code class="language-plaintext highlighter-rouge">checklist</code></li>
+</ul>
+
+<h2 id="241-june-2-2015">2.4.1 (June 2, 2015)</h2>
+
+<ul>
+  <li>Add the scss file I forgot to include</li>
+</ul>
+
+<h2 id="240-june-2-2015">2.4.0 (June 2, 2015)</h2>
+
+<ul>
+  <li>Add <code class="language-plaintext highlighter-rouge">octicons.scss</code></li>
+  <li>Revert path changes to <code class="language-plaintext highlighter-rouge">sprockets-octicons.scss</code>, as they broke octicons in sprockets.</li>
+</ul>
+
+<h2 id="230-may-28-2015">2.3.0 (May 28, 2015)</h2>
+
+<ul>
+  <li>Add a path variable to <code class="language-plaintext highlighter-rouge">sprockets-octicons.scss</code> to be consistent with octicons.less`</li>
+</ul>
+
+<h2 id="223-may-21-2015">2.2.3 (May 21, 2015)</h2>
+
+<ul>
+  <li>Use SPDX license identifiers in package.json</li>
+</ul>
+
+<h2 id="222-april-1-2015">2.2.2 (April 1, 2015)</h2>
+
+<p>Fixes file icons for</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">file-binary</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-code</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-media</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-pdf</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-symlink-file</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-text</code></li>
+  <li><code class="language-plaintext highlighter-rouge">file-zip</code></li>
+</ul>
+
+<h2 id="221-march-30-2015">2.2.1 (March 30, 2015)</h2>
+
+<ul>
+  <li>Fix vector artifact and smooth curves in <code class="language-plaintext highlighter-rouge">mark-github</code></li>
+</ul>
+
+<h2 id="220-feb-18-2015">2.2.0 (Feb 18, 2015)</h2>
+
+<ul>
+  <li>Add two new icons: <code class="language-plaintext highlighter-rouge">thumbsup</code> and <code class="language-plaintext highlighter-rouge">thumbsdown</code></li>
+</ul>
+
+<h2 id="201-june-16-2014">2.0.1 (June 16, 2014)</h2>
+
+<ul>
+  <li>Add mention of github.com/logos to the license</li>
+</ul>
+
+<h2 id="200-june-16-2014">2.0.0 (June 16, 2014)</h2>
+
+<ul>
+  <li>Hello world</li>
+</ul>
+
+
+</article>
+
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                沪ICP备20019934号-2
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

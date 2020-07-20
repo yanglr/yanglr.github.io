@@ -265,13 +265,13 @@
 
 <h3 id="题目描述">题目描述</h3>
 
-<p>集合 <code class="highlighter-rouge">S</code> 包含从 1 到 <code class="highlighter-rouge">n</code>  的整数。不幸的是，因为数据错误，导致集合里面某一个元素复制了成了集合里面的另外一个元素的值，导致集合丢失了一个整数并且有一个元素重复。</p>
+<p>集合 <code class="language-plaintext highlighter-rouge">S</code> 包含从 1 到 <code class="language-plaintext highlighter-rouge">n</code>  的整数。不幸的是，因为数据错误，导致集合里面某一个元素复制了成了集合里面的另外一个元素的值，导致集合丢失了一个整数并且有一个元素重复。</p>
 
-<p>给定一个数组 <code class="highlighter-rouge">nums</code> 代表了集合 <code class="highlighter-rouge">S</code> 发生错误后的结果。你的任务是首先寻找到重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。</p>
+<p>给定一个数组 <code class="language-plaintext highlighter-rouge">nums</code> 代表了集合 <code class="language-plaintext highlighter-rouge">S</code> 发生错误后的结果。你的任务是首先寻找到重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。</p>
 
 <p><strong>示例 1:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: nums = [1,2,2,4]
 输出: [2,3]
@@ -318,7 +318,7 @@
 
 <p><strong>解题思路:</strong></p>
 
-<p>由于给定输入是无序的数组，且每个数的范围是 <code class="highlighter-rouge">[1, n]</code> ，排序后便于后续处理。</p>
+<p>由于给定输入是无序的数组，且每个数的范围是 <code class="language-plaintext highlighter-rouge">[1, n]</code> ，排序后便于后续处理。</p>
 
 <p>如何得到<strong>重复的数</strong>？</p>
 
@@ -336,7 +336,7 @@
 
 <p>最后将 <strong>重复的数 **和 **缺失的数</strong> 一起放进 list 中即可。</p>
 
-<p>已<code class="highlighter-rouge">AC</code>的代码为:</p>
+<p>已<code class="language-plaintext highlighter-rouge">AC</code>的代码为:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -351,16 +351,16 @@
 </pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">findErrorNums</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
         <span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-        <span class="n">nums</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-        <span class="n">stdList</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c"># len(nums) = n</span>
-        <span class="n">repeatedNum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>     
-        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">repeatedNum</span><span class="p">)</span>
-        <span class="n">missingNum</span> <span class="o">=</span>  <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">stdList</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">missingNum</span><span class="p">)</span>
+        <span class="n">nums</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="n">stdList</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># len(nums) = n
+</span>        <span class="n">repeatedNum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>     
+        <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">repeatedNum</span><span class="p">)</span>
+        <span class="n">missingNum</span> <span class="o">=</span>  <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">stdList</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)).</span><span class="n">pop</span><span class="p">()</span>
+        <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">missingNum</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>执行用时: <code class="highlighter-rouge">276 ms</code>, 在所有 python3 提交中击败了 <code class="highlighter-rouge">60.58 %</code> 的用户.</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">276 ms</code>, 在所有 python3 提交中击败了 <code class="language-plaintext highlighter-rouge">60.58 %</code> 的用户.</p>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/leetcode645.jpg" alt="Leetcode645" /></p>
 

@@ -440,7 +440,7 @@
 <span class="k">new</span> <span class="n">MSAvalon</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Media</span><span class="p">.</span><span class="nf">SolidColorBrush</span><span class="p">(</span><span class="n">MSAvalon</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Media</span><span class="p">.</span><span class="n">Color</span><span class="p">.</span><span class="nf">FromARGB</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>如果想知道XAML编译器如何将字符串Red 映射为上面的代码，事实上它使用了一种自从.NET的第一版发布以来就已存在的技术：<code class="highlighter-rouge">类型转换器</code>。类型转换器是.NET设计时环境的一部分，用于在VS.NET Properties窗口中显示的字符串和对象属性的实际值之间执行转换。类型转换器还可以生成代码来初始化这些属性——VS.NET使用它们来创建Windows Forms应用程序的InitializeComponent方法中的代码。XAML 编译器简单地使用这个现有的基础结构，将特性（attribute）字符串值转换为初始化代码。</p>
+<p>如果想知道XAML编译器如何将字符串Red 映射为上面的代码，事实上它使用了一种自从.NET的第一版发布以来就已存在的技术：<code class="language-plaintext highlighter-rouge">类型转换器</code>。类型转换器是.NET设计时环境的一部分，用于在VS.NET Properties窗口中显示的字符串和对象属性的实际值之间执行转换。类型转换器还可以生成代码来初始化这些属性——VS.NET使用它们来创建Windows Forms应用程序的InitializeComponent方法中的代码。XAML 编译器简单地使用这个现有的基础结构，将特性（attribute）字符串值转换为初始化代码。</p>
 
 <p><br /></p>
 
@@ -488,7 +488,7 @@
 
 <h2 id="添加代码">添加代码</h2>
 
-<p>正如我们已经看到的，XAML编译器分别为每个XAML文件生成一个类。那些类从对应XAML文件的根元素类型派生而来，并且包含用于创建所有子元素的代码，如上所示。然而，这些生成的代码对于创建实用的UI 还不足够。大多数用户界面并不只是提供信息——它们通常还需要能够响应用户输入。因此你通常需要添加代码来提供用户界面的行为。把代码插入XAML 文件本身是可以做到的。你可以在Definition 命名空间中添加一个<code class="highlighter-rouge">&lt;Code&gt;</code>元素。（根据约定，Definition命名空间被映射到def命名空间前缀，因此这个元素通常以<code class="highlighter-rouge">&lt;def:Code&gt;</code>的形式出现。）然后你可以把源代码直接放在这个元素内部，XAML编译器将把它添加到所生成的源文件中。这些代码通常添加到<code class="highlighter-rouge">CDATA</code>节之内，如下面的例子所示：</p>
+<p>正如我们已经看到的，XAML编译器分别为每个XAML文件生成一个类。那些类从对应XAML文件的根元素类型派生而来，并且包含用于创建所有子元素的代码，如上所示。然而，这些生成的代码对于创建实用的UI 还不足够。大多数用户界面并不只是提供信息——它们通常还需要能够响应用户输入。因此你通常需要添加代码来提供用户界面的行为。把代码插入XAML 文件本身是可以做到的。你可以在Definition 命名空间中添加一个<code class="language-plaintext highlighter-rouge">&lt;Code&gt;</code>元素。（根据约定，Definition命名空间被映射到def命名空间前缀，因此这个元素通常以<code class="language-plaintext highlighter-rouge">&lt;def:Code&gt;</code>的形式出现。）然后你可以把源代码直接放在这个元素内部，XAML编译器将把它添加到所生成的源文件中。这些代码通常添加到<code class="language-plaintext highlighter-rouge">CDATA</code>节之内，如下面的例子所示：</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -548,7 +548,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nt">&lt;Text</span> <span class="na">ID=</span><span class="s">"textElem"</span><span class="nt">&gt;</span>Hello World<span class="nt">&lt;/Text&gt;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>这样做之后，XAML编译器将使得这个对象可以像该类的成员变量一样使用，也就是使用ID特性中所指定的名称。例如，你可以将上面的元素中的文本修改如下：<code class="highlighter-rouge">textElem.TextRange.Text = "Foo";</code></p>
+<p>这样做之后，XAML编译器将使得这个对象可以像该类的成员变量一样使用，也就是使用ID特性中所指定的名称。例如，你可以将上面的元素中的文本修改如下：<code class="language-plaintext highlighter-rouge">textElem.TextRange.Text = "Foo";</code></p>
 
 <p>你通常不会像上面的例子那样在公共方法编写这种代码。code-behind 文件中的大多数代码都在事件处理程序方法中。</p>
 
@@ -572,7 +572,7 @@
 <span class="k">new</span> <span class="n">MSAvalon</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="nf">ClickEventHandler</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">OnClick</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>为了使这段代码能够正确地编译，我们当然必须在codebehind文件中提供适当的OnClick函数。与.NET程序中的所有事件处理程序一样，该函数的签名必须匹配事件的委托（delegate）类型。在此例中，按钮的Click 事件使用了<code class="highlighter-rouge">ClickEventHandler</code>委托，因此我们必须编写一个具有匹配的签名的函数。</p>
+<p>为了使这段代码能够正确地编译，我们当然必须在codebehind文件中提供适当的OnClick函数。与.NET程序中的所有事件处理程序一样，该函数的签名必须匹配事件的委托（delegate）类型。在此例中，按钮的Click 事件使用了<code class="language-plaintext highlighter-rouge">ClickEventHandler</code>委托，因此我们必须编写一个具有匹配的签名的函数。</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2

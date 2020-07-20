@@ -269,7 +269,7 @@
 
 <p><strong>示例 1:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>输入: 121
 输出: true
@@ -277,7 +277,7 @@
 
 <p><strong>示例 2:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre>输入: -121
@@ -287,7 +287,7 @@
 
 <p><strong>示例 3:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre>输入: 10
@@ -321,21 +321,21 @@
 <p><strong>解题思路:</strong></p>
 
 <ol>
-  <li>先将原数转为字符串 <code class="highlighter-rouge">str0</code></li>
-  <li>反转步骤1中的字符串 <code class="highlighter-rouge">str0</code> 得到字符串 <code class="highlighter-rouge">reversedStr</code>，判断其是否与反转前相等。而 Python 中字符串反转有如下两种常用方法:
+  <li>先将原数转为字符串 <code class="language-plaintext highlighter-rouge">str0</code></li>
+  <li>反转步骤1中的字符串 <code class="language-plaintext highlighter-rouge">str0</code> 得到字符串 <code class="language-plaintext highlighter-rouge">reversedStr</code>，判断其是否与反转前相等。而 Python 中字符串反转有如下两种常用方法:
     <ul>
-      <li>使用切片功能，即<code class="highlighter-rouge">reversedStr = str0[::-1]</code></li>
-      <li>使用 <code class="highlighter-rouge">reversed</code> 函数，<code class="highlighter-rouge">reversedStr = ''.join(list(reversed(str0)))</code></li>
+      <li>使用切片功能，即<code class="language-plaintext highlighter-rouge">reversedStr = str0[::-1]</code></li>
+      <li>使用 <code class="language-plaintext highlighter-rouge">reversed</code> 函数，<code class="language-plaintext highlighter-rouge">reversedStr = ''.join(list(reversed(str0)))</code></li>
     </ul>
   </li>
   <li>解决特殊情况
     <ul>
-      <li>输入的数为负的，前面有<code class="highlighter-rouge">-</code>，反转后显然不相等</li>
+      <li>输入的数为负的，前面有<code class="language-plaintext highlighter-rouge">-</code>，反转后显然不相等</li>
     </ul>
   </li>
 </ol>
 
-<p>已<code class="highlighter-rouge">AC</code>的代码为:</p>
+<p>已<code class="language-plaintext highlighter-rouge">AC</code>的代码为:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -359,7 +359,7 @@
         <span class="k">return</span> <span class="bp">False</span>        
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>执行用时: <code class="highlighter-rouge">64 ms</code>, 在所有 python3 提交中击败了<code class="highlighter-rouge">98.39%</code>的用户.</p>
+<p>执行用时: <code class="language-plaintext highlighter-rouge">64 ms</code>, 在所有 python3 提交中击败了<code class="language-plaintext highlighter-rouge">98.39%</code>的用户.</p>
 
 <p><img src="http://www.justdopython.com/assets/images/2019/python/leetcode009-sol.png" alt="result" /></p>
 
