@@ -17,7 +17,7 @@ favicon: favicon.ico
 
 repository: yanglr/yanglr.github.io
 github_url: https://github.com/yanglr
-url: https://geekplayers.com
+url: http://geekplayers.com
 enforce_ssl: https://geekplayers.com
 
 permalink: /:year/:month/:day/:title/
