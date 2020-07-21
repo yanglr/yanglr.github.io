@@ -7,6 +7,7 @@ tagline: by 萌较瘦
 tags: wpf
 excerpt: WPF中的Data Binding调试方法和工具汇总
 keywords: .NET, wpf, xaml
+author: bravo_yeung
 # topmost: true
 ---
 

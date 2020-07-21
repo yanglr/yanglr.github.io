@@ -1,7 +1,7 @@
 bravo_yeung:
   name: Bravo Yeung
   site: https://geekplayers.com
-  avatar_url: https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_200721130927byavator.jpg
+  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/byavatar.jpg
   # avatar: /avatat.jpg
   # bio: ".NET开发者"
   # email: legege007@126.com
@@ -22,4 +22,4 @@ bravo_yeung:
 helloj2ee:
   name: Helloj2ee
   site: https://home.cnblogs.com/u/helloj2ee
-  avatar_url: https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_cnblog_logo.png
+  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/cnblog_logo.jpg
