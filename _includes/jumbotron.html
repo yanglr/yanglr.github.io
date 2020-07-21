@@ -6,8 +6,18 @@
                 {% if page.subtitle %}
                 {{ page.subtitle }}
                 {% endif %}
+
+                {% assign author = site.data.authors[page.author] %}
+                {% if author %}
+                {% include author.html %}
+                {% else %}
+                <span>
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='{{ site.url }}'>Bravo Yeung</a>
+                </span>
+                {% endif %}
+                
                 {% if page.date %}
-                <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d %T" }}
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">{{ page.date | date: "%Y/%m/%d %T" }}</font>
                 {% endif %}
             </span>
             <!--<p>

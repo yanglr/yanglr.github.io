@@ -39,6 +39,14 @@
     color: #4183c4;
 }
 
+.jumbotron h1 {
+    font-size: 45px !important;
+}
+
+.author-link a:hover {
+    color: MediumSlateBlue !important;
+}
+
 #site-header-brand, #site-header-brand .octicon {
     margin-top: 0;
     margin-bottom: 0;

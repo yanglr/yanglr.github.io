@@ -1,0 +1,36 @@
+<div class="read-more">
+    <div class="read-more-content author-info">
+        <!-- <h3>{{author.name}}</h3> -->
+        <div class="author-container">
+            {% if author.avatar_url %}
+            <img style="width: 32px; border-radius: 50%; display: inline-block; margin-right: 7px;" 
+                src="{{author.avatar_url}}" alt="{{author.name}}" />
+            {% else %}
+            <img style="width: 32px; border-radius: 50%; display: inline-block; margin-right: 7px;"
+                src="{{site.url}}/{{author.avatar}}" alt="{{author.name}}" />
+            {% endif %}
+            <span>
+                <a href="{{ author.site }}" class="author-link">{{author.name}}</a>
+            </span>
+            {% if author.bio %}
+            <div class="author-bio">{{author.bio}}</div>
+            {% endif %}
+        </div>
+        <div class="author-share">
+            <ul class="list-inline social-buttons">
+                {% for network in author.social %}
+                <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                {% endfor %}
+            </ul>
+            {% if author.github %}
+            <a aria-label="Follow @{{author.github}} on GitHub" data-style="mega"
+                href="https://github.com/{{author.github}}" class="github-button">Follow @{{author.github}}</a>
+            {% endif %}
+            <br>
+            {% if author.twitter %}
+            <a href="https://twitter.com/{{author.twitter}}" class="twitter-follow-button" data-show-count="false"
+                data-size="large">Follow @{{author.twitter}}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

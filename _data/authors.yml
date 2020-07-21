@@ -1,0 +1,25 @@
+bravo_yeung:
+  name: Bravo Yeung
+  site: https://geekplayers.com
+  avatar_url: https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_200721130927byavator.jpg
+  # avatar: /avatat.jpg
+  # bio: ".NET开发者"
+  # email: legege007@126.com
+
+  twitter: twitter
+  
+  # github: amacoder
+  social:
+    - title: "github"
+      url: "https://github.com/yanglr"
+    # - title: "linkedin"
+    #   url: "https://www.linkedin.com/in/xxx"
+    # - title: "youtube"
+    #   url: "https://www.youtube.com/channel/UCZT1MatBdHWnVLl0OkcED3Q"
+    # - title: "facebook"
+    #   url: "https://www.facebook.com/adrian.matei.90"
+
+helloj2ee:
+  name: Helloj2ee
+  site: https://home.cnblogs.com/u/helloj2ee
+  avatar_url: https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_cnblog_logo.png
