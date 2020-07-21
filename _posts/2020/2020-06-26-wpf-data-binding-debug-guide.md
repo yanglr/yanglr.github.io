@@ -22,7 +22,7 @@ keywords: .NET, wpf, xaml
 
 具体做法是，在目录`HKEY_CURRENT_USER\Software\Microsoft`中创建文件夹`Tracing`, 然后在其里面创建子文件夹`WPF`，然后新建一个DWORD(32位)值ManagedTracing，将其值设置为`1`.
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug1.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug1.png)
 
 也可以将下面的文件另存为 trace.reg，然后双击进行设置。
 
@@ -37,7 +37,7 @@ Windows Registry Editor Version 5.00
 
 接下来，需要在你的Project的能影响 `.exe.config`生成的那个 `.config`文件下加入`折叠区域`的内容:
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug2.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug2.png)
 
 
 
@@ -136,7 +136,7 @@ Windows Registry Editor Version 5.00
 
 设置好后，你build这个wpf项目后，当启动Debug时，在其相应的debug目录下会多出一个 `BindingTrace.log`文件，比如, 我这边的内容上这样的：
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug3.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug3.png)
 
 
 
@@ -186,7 +186,7 @@ Windows Registry Editor Version 5.00
 
 那么，此时在其相应的debug目录下会多出一个 `BindingTrace.xml`文件，我这边的内容上这样的：
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug4.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug4.png)
 
 
 **参考:**
@@ -248,7 +248,7 @@ old-wpf-blog/45-DebuggingDataBinding at master · bstollnitz/old-wpf-blog
 
 此时，在Output(输出窗口)就可以看到数据绑定的相关信息了。
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug5.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug5.png)
 
 
 可能有人会好奇output中的红色字体是怎么来的，vs的output默认是黑色。
@@ -261,7 +261,7 @@ old-wpf-blog/45-DebuggingDataBinding at master · bstollnitz/old-wpf-blog
 
 当然，你还可以在此时启用"诊断工具"，位置是： 调试 -> 窗口 -> 显示诊断工具，配合起来用起来更爽喔~
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug6.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug6.png)
 
 
 
@@ -284,20 +284,20 @@ spadapet/xaml-binding-tool: XAML binding error window in a Visual Studio 2019 ex
 
 当安装好这个插件时，重启VS就可以用了，debug时，调试窗口中会多一个选项"XAML binding failures (experimental)"。点击该选项，debug相关窗口中会显示`Data binding`的详细信息。
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug7.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug7.png)
 
 
 
 此时，`WPF trace level`附近的`...`还可以点击进行设置。
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug8.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug8.png)
 
 
 ## 方法4: 使用第三方debug工具 WPF 
 
 首推Snoop，这个工具大概2006年就出来了，历史悠久，最初由微软Blend团队的Pete Blois开发，功能也异常强大，而且目前也一直有人维护和更新。
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug9.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug9.png)
 
 左上角支持filter，属性或层级很多时，可以快速定位目标节点。
 
@@ -312,7 +312,7 @@ Snoop允许您查看您在应用程序中指定的事件列表。当您单击元
 在Snoop的左上角，有一个下拉框可以打开，然后选择"Show only Visuals with binding Errors"以查看应用程序所具有的可视数据绑定错误列表。
 
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug10.png)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug10.png)
 
 
 Snoop 的一个众所周知的功能是能够识别数据绑定问题。当看到组件是否绑定正确时，我通常只是尝试一下，看看它是否有效。如果无效，我转向 Visual Studio 调试模式下的output窗口。如果无法立即看到该值，我会这样做：将 Snoop 附加(Attach)到我的应用，并从应用程序树视图上方的搜索/筛选器栏中选择"Show only visuals with binding errors"选项。
@@ -334,14 +334,14 @@ Refresh按钮, Snoop按钮(望远镜)，借助filter找需要inspect的目标元
 
 还可以使用它来显示任何具有绑定错误(Binding error)的控件（就像word中的拼写检查一样）：
 
-![大白技术控-snoop绑定](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug11.png)
+![大白技术控-snoop绑定](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug11.png)
 
 Snoop 中的绑定错误会**红色**高亮显示
 
 
 
 也有小伙伴在用或WPF Inspector，不过这个工具好久没更新了。
-![WPF inspect-大白技术控](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug12.png)
+![WPF inspect-大白技术控](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug12.png)
 
 WPF Inspector 这个项目之前是在CodePlex上的，后来没人维护了，目前有人手动fork到github上，但没见任何更新。
 
@@ -359,7 +359,7 @@ Mole for VS 2017 is installed from the [Visual Studio Marketplace](https://marke
 
 Mole for VS 2019 is installed from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarlShifflettkdawg.MoleforVisualStudio2019).
 
-![mole](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/blog/wpf-debug13.png)
+![mole](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug13.png)
 
 
 ## 其他方法:
