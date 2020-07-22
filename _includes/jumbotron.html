@@ -20,26 +20,35 @@
                 <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">{{ page.date | date: "%Y/%m/%d %T" }}</font>
                 {% endif %}
             </span>
+            
             <p>
-                {% if page.categories.size > 0 %}
-                <div class="blog-tags">
-                    Category：
-                    {% if post %}
-                    {% assign categories = post.categories %}
-                    {% else %}
-                    {% assign categories = page.categories %}
-                    {% endif %}
-                    {% for category in {{categories | shift}} %}
-                    {% capture category_name %}{{ category | first }}{% endcapture %}
-                    {% if site.categories[category_name].size() > 0 %}
-                    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}&nbsp;</a>
-                    {% endif %}
-                    {% unless forloop.last %}&nbsp;{% endunless %}
-                    {% endfor %}
-                </div>
+                {% if post %}
+                {% assign categories = post.categories %}
+                {% else %}
+                {% assign categories = page.categories %}
                 {% endif %}
                 
+                {% for category in categories %}
+                {% if category.size() == 0 %}
+                {% unless category contains "," %}
+                分类: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                {% endunless %}
+                {% elsif category.size() > 0 %}
+                    {% if forloop.index == 1 %}
+                    分类:
+                    {% for cat in category %}
+                    <!-- <p>Inner index:{{forloop.index}}</p> -->
+                    <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
+                    {% endfor %}
+                    {% endif %}                
+                {% else %}
+                
+                {% endif %}
+                <!-- <p>out index:{{forloop.index}}</p>
+                <p>size: {{category.size()}}</p> -->
+                {% endfor %}            
             </p>
+
         </div>
     </div>
 </section>
