@@ -1,0 +1,27 @@
+---
+layout: page
+permalink: /categories/
+title: 博客分类
+---
+
+<div id="archives">
+    {% for category in site.categories %}
+    <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div id="#{{ category_name | slugize }}"></div>
+        <p></p>
+
+        {% unless category_name contains "," %}
+        {% if site.categories[category_name].size() > 0 %}
+        <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size()}})</h3>
+        <a name="{{ category_name | slugize }}"></a>
+        {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        </article>
+        {% endfor %}
+        {% endif %}
+        {% endunless %}
+    </div>
+    {% endfor %}
+</div>
