@@ -12,14 +12,14 @@ title: 博客分类
         <p></p>
 
         {% unless category_name contains "," %}
-        {% if site.categories[category_name].size() > 0 %}
-        <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size()}})</h3>
-        <a name="{{ category_name | slugize }}"></a>
-        {% for post in site.categories[category_name] %}
-        <article class="archive-item">
-            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        </article>
-        {% endfor %}
+        {% if site.categories[category_name] %}
+            <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size}})</h3>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+                <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+            </article>
+            {% endfor %}
         {% endif %}
         {% endunless %}
     </div>
