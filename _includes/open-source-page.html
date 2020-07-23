@@ -1,4 +1,4 @@
-{% if site.github.public_repositories %}
+{% if site.github.public_repositories != false %}
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
@@ -40,7 +40,7 @@
                             <span data-toggle="tooltip" class="meta-info" title="Last updated：{{ repo.updated_at }}">
                                 <span class="octicon octicon-clock"></span>
                                 <time datetime="{{ repo.updated_at }}"
-                                    title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
+                                    title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d %T' }}</time>
                             </span>
                         </div>
                     </div>
