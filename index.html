@@ -15,41 +15,69 @@ css: ['index.css', 'sidebar-popular-repo.css']
         </div>
     </div>
 </section>
+
 <section class="content container">
-
     <div class="row">
-
         <!-- Post List -->
         <div class="col-md-8">
-
             <ol class="post-list">
+                {% for post in site.posts %}
+                {% if paginator.page == 1 %}
+                {% if post.topmost == true %}
+                <li class="post-list-item">
+                    <h3 class="post-list-name">
+                        <a href="{{ site.url }}{{ post.url }}"><span style="color: red;">[置顶]</span>{{ post.title }}</a>
+                    </h3>
+                    <p class="post-list-description">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}&nbsp;
+                        </span>
+                        {% for cat in post.categories %}
+                        <span class="meta-info">
+                            <span class="octicon octicon-file-directory"></span>
+                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                        </span>
+                        {% endfor %}
+                    </p>
+                </li>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+        
                 {% for post in paginator.posts %}
-                 {% if  post.category != 'gitchat' and post.category != 'geektime' %}
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            {{ post.excerpt | strip_html | strip }}
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}
-                        </p>
-                    </li>
-                  {% endif %}
+                {% if post.topmost != true %}
+                <li class="post-list-item">
+                    <h3 class="post-list-name">
+                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    </h3>
+                    <p class="post-list-description">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}&nbsp;
+                        </span>
+                        {% for cat in post.categories %}
+                        <span class="meta-info">
+                            <span class="octicon octicon-file-directory"></span>
+                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                        </span>
+                        {% endfor %}
+                    </p>
+                </li>
+                {% endif %}
                 {% endfor %}
             </ol>
-
-            <!-- Pagination -->
+            <!-- pagination -->
             {% include pagination.html %}
-
         </div>
-
+        <!-- side repos -->
         <div class="col-md-4">
             {% include sidebar-popular-repo.html %}
         </div>
-
     </div>
 
 </section>
-
