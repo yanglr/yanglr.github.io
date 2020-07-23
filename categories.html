@@ -4,7 +4,7 @@ permalink: /categories/
 title: 博客分类
 ---
 
-<div id="archives">
+<div id="blog-categories">
     {% for category in site.categories %}
     <div class="archive-group">
         {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -13,12 +13,13 @@ title: 博客分类
 
         {% unless category_name contains "," %}
         {% if site.categories[category_name] %}
-            <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size}})</h3>
+        <ul class="list-group">
+            <div class="category-head"><font style="font-size: 30px;">{{ category_name }}</font> 
+            <span class="badge">{{ site.categories[category_name].size }}</span> </div>
+        </ul>
             <a name="{{ category_name | slugize }}"></a>
             {% for post in site.categories[category_name] %}
-            <article class="archive-item">
-                <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-            </article>
+                <li style="font-size:15pt !important;"><a href="{{ site.baseurl }}{{ post.url }}"><font style="font-size: 24px;">{{ post.title }}</font></a></li>
             {% endfor %}
         {% endif %}
         {% endunless %}
