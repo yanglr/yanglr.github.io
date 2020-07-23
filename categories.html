@@ -19,7 +19,7 @@ title: 博客分类
         </ul>
             <a name="{{ category_name | slugize }}"></a>
             {% for post in site.categories[category_name] %}
-                <li style="font-size:15pt !important;"><a href="{{ site.baseurl }}{{ post.url }}"><font style="font-size: 24px;">{{ post.title }}</font></a></li>
+                <li style="font-size:15pt !important;">{{ post.date | date: "%Y/%m/%d" }} {% raw %}-{% endraw %} <a href="{{ site.baseurl }}{{ post.url }}"><font style="font-size: 24px;">{{ post.title }}</font></a></li>
             {% endfor %}
         {% endif %}
         {% endunless %}
