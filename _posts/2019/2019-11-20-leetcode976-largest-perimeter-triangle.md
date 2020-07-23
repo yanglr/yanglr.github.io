@@ -12,7 +12,7 @@ excerpt: LeetCode面试No.976 - 三角形的最大周长
 
 <!--more-->
 
-![Leetcode](/images/blog/LeetCode.png)
+![Leetcode](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/public/LeetCode.png)
 
 今天要给大家分析的面试题是 LeetCode 上第 **976** 号问题，
 
