@@ -29,12 +29,12 @@
                 {% endif %}
                 
                 {% for category in categories %}
-                {% if category.size() == 0 %}
+                {% if category.size == 0 %}
                 {% unless category contains "," %}
                 分类: <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
                       href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
                 {% endunless %}
-                {% elsif category.size() > 0 %}
+                {% elsif category.size > 0 %}
                     {% if forloop.index == 1 %}
                     分类:
                     {% for cat in category %}

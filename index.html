@@ -25,9 +25,10 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {% if paginator.page == 1 %}
                 {% if post.topmost == true %}
                 <li class="post-list-item">
-                    <h3 class="post-list-name">
-                        <a href="{{ site.url }}{{ post.url }}"><span style="color: red;">[置顶]</span>{{ post.title }}</a>
-                    </h3>
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}"><span style="color: red;">[置顶]</span>
+                            <font style="line-height: 1.5 !important;">{{ post.title }}</font></a>
+                    </h2>
                     <p class="post-list-description">
                         {{ post.excerpt | strip_html | strip }}
                     </p>
@@ -35,11 +36,22 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         <span class="meta-info">
                             <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}&nbsp;
                         </span>
-                        {% for cat in post.categories %}
-                        <span class="meta-info">
-                            <span class="octicon octicon-file-directory"></span>
-                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-                        </span>
+                        {% for category in post.categories %}
+                        {% if category.size == 0 %}
+                        {% unless category contains "," %}
+                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                        {% endunless %}
+                        {% elsif category.size > 0 %}
+                        {% if forloop.index == 1 %}
+                        <span class="octicon octicon-file-directory"></span>
+                        {% for cat in category %}
+                        <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
+                        {% endfor %}
+                        {% endif %}
+                        {% else %}
+                        
+                        {% endif %}
+
                         {% endfor %}
                     </p>
                 </li>
@@ -50,9 +62,9 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {% for post in paginator.posts %}
                 {% if post.topmost != true %}
                 <li class="post-list-item">
-                    <h3 class="post-list-name">
-                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    </h3>
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    </h2>
                     <p class="post-list-description">
                         {{ post.excerpt | strip_html | strip }}
                     </p>
@@ -60,11 +72,22 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         <span class="meta-info">
                             <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d %T" }}&nbsp;
                         </span>
-                        {% for cat in post.categories %}
-                        <span class="meta-info">
-                            <span class="octicon octicon-file-directory"></span>
-                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-                        </span>
+                        {% for category in post.categories %}
+                        {% if category.size == 0 %}
+                        {% unless category contains "," %}
+                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                        {% endunless %}
+                        {% elsif category.size > 0 %}
+                        {% if forloop.index == 1 %}
+                        <span class="octicon octicon-file-directory"></span>
+                        {% for cat in category %}
+                        <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
+                        {% endfor %}
+                        {% endif %}
+                        {% else %}
+                        
+                        {% endif %}
+
                         {% endfor %}
                     </p>
                 </li>
