@@ -702,7 +702,7 @@ void Onb2Click2(object sender, RoutedEventArgs e)
 -   隧道：最初将调用元素树的根处的事件处理程序。 随后，路由事件将朝着路由事件的源节点元素（即引发路由事件的元素）方向，沿路由线路传播到后续的子元素。
 -   WPF中约定，隧道路由事件的名称以单词"Preview"开头。 输入事件通常成对出现，一个是浮升事件，另一个是隧道事件。例如，如下图所示，假设按钮2为触发事件的源。
 
-![图片](https://raw.githubusercontent.com/farway000/image.techq.xyz/master/images/how-to-learn-wpf/event.png)
+![图片](https://cdn.jsdelivr.net/gh/by8/by8.github.io@master/images/blog/wpf-event.png)
 
 1、处理Border根元素的隧道事件PreviewMouseDown
 
