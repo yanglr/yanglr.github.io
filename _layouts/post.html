@@ -51,7 +51,8 @@ css: ['sidebar-post-nav.css']
         if(heading.id != '')
         {
             linkIcon.setAttribute('href', `#${heading.id}`); // 5
-            linkIcon.innerHTML = linkContent + '&nbsp;'; // 6
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
             heading.insertBefore(linkIcon, heading.firstChild);; // 7
         }
     }
