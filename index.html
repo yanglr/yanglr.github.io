@@ -45,7 +45,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         {% if forloop.index == 1 %}
                         <span class="octicon octicon-file-directory"></span>
                         {% for cat in category %}
-                        <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
                         {% endfor %}
                         {% endif %}
                         {% else %}
@@ -81,7 +81,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         {% if forloop.index == 1 %}
                         <span class="octicon octicon-file-directory"></span>
                         {% for cat in category %}
-                        <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a>
                         {% endfor %}
                         {% endif %}
                         {% else %}
