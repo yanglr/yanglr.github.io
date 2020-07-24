@@ -11,7 +11,7 @@ LeetCode面试题题系列的上一篇文章，我们介绍了**位操作**的�
 
 今天呢，咱们来聊聊哈希表(字典)，这是另一种典型面试题。哈希表实际上就是用内存空间换时间，即消耗额外的一点内存，但可将数据读取的时间大大降低，其时间复杂度几乎是常数时间(O(1))。
 
-![Leetcode](http://www.justdopython.com/assets/images/2019/python/LeetCode.png)
+![Leetcode](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png)
 
 比较典型的一个问题是 Leetcode 上第 **136** 号问题，
 
