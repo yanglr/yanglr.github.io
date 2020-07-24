@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-![Leetcode](http://www.justdopython.com/assets/images/2019/python/LeetCode.png)
+![Leetcode](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png)
 
 今天要给大家分析的面试题是 LeetCode 上第 **13** 号问题，
 
