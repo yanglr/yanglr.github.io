@@ -225,7 +225,7 @@ github地址: https://github.com/PowerShell/PowerShell
 - Windows on Github <https://microsoft.github.io/windows/>
 - TypeScript Types Search <https://microsoft.github.io/TypeSearch/>
 - Python Tools for Visual Studio <https://microsoft.github.io/PTVS/>
-- sqlworkshops {% raw %} | {% endraw %} SQL Server Workshops <https://microsoft.github.io/sqlworkshops/>
+- sqlworkshops \| SQL Server Workshops <https://microsoft.github.io/sqlworkshops/>
 - Join Microsoft Developer Design <https://microsoft.github.io/join-dev-design/>
 - Project Ace - Using Native UI <http://microsoft.github.io/ace/docs/native-ui/>
 - LSP Overview <https://microsoft.github.io/language-server-protocol/overview>
