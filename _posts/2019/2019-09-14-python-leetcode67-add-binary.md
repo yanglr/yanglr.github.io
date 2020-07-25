@@ -78,7 +78,7 @@ class Solution:
 
 执行用时: `44 ms`, 在所有 Python 3 提交中击败了`96.46%`的用户.
 
-![leetcode67-result](http://www.justdopython.com/assets/images/2019/python/leetcode67-result.png)
+![leetcode67-result](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode67-result.png)
 
 如果需要在本地测试，完整代码如下:
 

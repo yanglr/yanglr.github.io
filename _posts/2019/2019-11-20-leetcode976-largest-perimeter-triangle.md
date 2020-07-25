@@ -121,7 +121,7 @@ LeetCode - 976. 三角形的最大周长
 
 执行用时: `256 ms`, 在所有 python3 提交中击败了 ` 91.91 %` 的用户.
 
-![leetcode976-result](http://www.justdopython.com/assets/images/2019/python/leetcode976-result.png)
+![leetcode976-result](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode976-result.png)
 
 
 

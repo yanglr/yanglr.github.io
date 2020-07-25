@@ -93,6 +93,6 @@ class Solution:
 
 执行用时: `276 ms`, 在所有 python3 提交中击败了 `60.58 %` 的用户.
 
-![Leetcode645](http://www.justdopython.com/assets/images/2019/python/leetcode645.jpg)
+![Leetcode645](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode645.jpg)
 
 示例代码: <https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-645>

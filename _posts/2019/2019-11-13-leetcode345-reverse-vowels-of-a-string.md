@@ -114,4 +114,4 @@ class Solution:
 
 示例代码: <https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-345>
 
-![Leetcode](http://www.justdopython.com/assets/images/2019/python/leetcode345.png)
+![Leetcode](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode345.png)

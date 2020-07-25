@@ -89,6 +89,6 @@ class Solution:
 
 执行用时: `64 ms`, 在所有 python3 提交中击败了`98.39%`的用户.
 
-![result](http://www.justdopython.com/assets/images/2019/python/leetcode009-sol.png)
+![result](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode009-sol.png)
 
 示例代码: <https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-009>
