@@ -5,13 +5,16 @@ categories:
 - [.NET, leetcode, 算法面试]
 tags: [.NET, leetcode]
 excerpt: 剑指Offer的C#实战之二维数组中的查找
+
+keywords: .NET, 剑指Offer
+description: 剑指Offer的C#实战之二维数组中的查找
 author: edison_zhou
 platform: 公众号
 gzhname: 恰童鞋骚年
 date: 2020-06-17 07:30:00
 ---
 
-由 Edison Zhou [恰童鞋骚年] 授权发表~
+由 Edison Zhou公众号「恰童鞋骚年」授权发表~
 
 ------
 
