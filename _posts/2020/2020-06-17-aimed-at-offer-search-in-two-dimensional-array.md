@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 剑指Offer | 二维数组中的查找
-
 categories: 
 - [.NET, leetcode, 算法面试]
-platform: 公众号
-gzhname: 恰童鞋骚年
 tags: [.NET, leetcode]
 excerpt: 剑指Offer的C#实战之二维数组中的查找
 author: edison_zhou
+platform: 公众号
+gzhname: 恰童鞋骚年
+date: 2020-06-17 07:30:00
 ---
 
 由 Edison Zhou [恰童鞋骚年] 授权发表~
@@ -208,9 +208,7 @@ public void FindTest7()
 
 最终单元测试的结果：
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/fCpd1cf8iacZsY1wSic4vOwlOND8844Uy8kTiat6xnyb9ia35LqFCyeSTBG7HEopRBsEeSkkaA9QhkpTibIuvYxzjGA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh4.jpg "单元测试")
 
 ## 5.参考资料
 

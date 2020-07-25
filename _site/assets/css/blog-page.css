@@ -100,3 +100,10 @@
 .col-md-9 {
      padding-left:60px;
 }
+
+.jumbotron h1 {
+    font-size: 45px !important;
+}
+.author-link a:hover {
+    color: #7B68EE !important;
+}

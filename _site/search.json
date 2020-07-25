@@ -17,6 +17,22 @@
     } ,
   
     {
+      "title"    : "WPF中的Data Binding调试指南",
+      "category" : "wpf",
+      "tags"     : "wpf",
+      "url"      : "/2020/06/27/wpf-data-binding-debug-guide/",
+      "date"     : "2020-06-27 06:14:09 +0800"
+    } ,
+  
+    {
+      "title"    : "剑指Offer | 二维数组中的查找",
+      "category" : "",
+      "tags"     : ".NET, leetcode",
+      "url"      : "/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/",
+      "date"     : "2020-06-17 15:30:00 +0800"
+    } ,
+  
+    {
       "title"    : "WPF学习笔记（一） - by 邹溪源",
       "category" : "wpf",
       "tags"     : "mfc, windows",
@@ -38,6 +54,22 @@
       "tags"     : "LeetCode面试题系列",
       "url"      : "/2019/11/25/python-leetcode645-set-mismatch/",
       "date"     : "2019-11-25 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "LeetCode面试系列 第10天：No.976 - 三角形的最大周长",
+      "category" : "Leetcode面试题",
+      "tags"     : "LeetCode面试题系列",
+      "url"      : "/2019/11/20/leetcode976-largest-perimeter-triangle/",
+      "date"     : "2019-11-20 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "LeetCode面试系列 第9天：No.345 - 反转字符串中的元音字母",
+      "category" : "Leetcode面试题",
+      "tags"     : "LeetCode面试题系列",
+      "url"      : "/2019/11/13/leetcode345-reverse-vowels-of-a-string/",
+      "date"     : "2019-11-13 00:00:00 +0800"
     } ,
   
     {
