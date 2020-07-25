@@ -10,7 +10,7 @@ permalink: /link
 ## 友情链接
 
 - [吴章金falcon@TinyLab](http://tinylab.org)
-- [沙漠尽头的狼](https://dotnet9.com)
+- [Dotnet9](https://dotnet9.com)
 - [Walterlv - WPF专家(微软MVP)](https://blog.walterlv.com)
 - [云之幻 - UWP](https://blog.richasy.cn)  
 
@@ -34,6 +34,6 @@ permalink: /link
 *需要展示你的网站，就在本页下面留言吧，也算是一种宣传方式。格式要求如下：*
 
 - 网站名称：tinylab  
-- 网站链接：http://tinylab.com
+- 网站链接：<http://tinylab.com>
 - 网站描述：泰晓 的个人博客
 
