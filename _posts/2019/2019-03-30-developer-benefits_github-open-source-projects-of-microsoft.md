@@ -222,30 +222,30 @@ github地址: https://github.com/PowerShell/PowerShell
 这样一来，只要<https://opensource.microsoft.com>的列表里出现新项目，你进`feedly`就能看到了~
 
 ## 其他 microsoft.github.io上**有用的链接**
-- Windows on Github https://microsoft.github.io/windows/
-- TypeScript Types Search https://microsoft.github.io/TypeSearch/
-- Python Tools for Visual Studio https://microsoft.github.io/PTVS/
-- sqlworkshops | SQL Server Workshops https://microsoft.github.io/sqlworkshops/
-- Join Microsoft Developer Design https://microsoft.github.io/join-dev-design/
-- Project Ace - Using Native UI http://microsoft.github.io/ace/docs/native-ui/
-- LSP Overview  https://microsoft.github.io/language-server-protocol/overview
-- DAP Overview https://microsoft.github.io/debug-adapter-protocol/overview
-- ONNX.js - Run ONNX models in the browser https://microsoft.github.io/onnxjs-demo/#/
-- Microsoft Days in the Web https://microsoft.github.io/frontend-bootcamp/
-- Project Mu https://microsoft.github.io/mu/
-- PowerBI Custom Visuals https://microsoft.github.io/PowerBI-visuals/docs/overview/
-- PowerBI-JavaScript demo https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
-- Microsoft Technical Case Studies https://microsoft.github.io/techcasestudies/
-- Microsoft Open Source Code of Conduct https://microsoft.github.io/codeofconduct/
-- Embedded Learning Library (ELL) https://microsoft.github.io/ELL/
-- A library for building cross-platform apps - ReactXP https://microsoft.github.io/reactxp/
-- PartsUnlimited https://microsoft.github.io/PartsUnlimited/
-- PartsUnlimitedMRP https://microsoft.github.io/PartsUnlimitedMRP/
-- CodePush https://microsoft.github.io/code-push/
-- Microsoft PROSE SDK https://microsoft.github.io/prose/
-- Create extensions for Visual Studio https://microsoft.github.io/extendvs/
-- DSCEA https://microsoft.github.io/DSCEA/
-- IoT kit built for the cloud https://microsoft.github.io/azure-iot-developer-kit/
+- Windows on Github <https://microsoft.github.io/windows/>
+- TypeScript Types Search <https://microsoft.github.io/TypeSearch/>
+- Python Tools for Visual Studio <https://microsoft.github.io/PTVS/>
+- sqlworkshops {% raw %} | {% endraw %} SQL Server Workshops <https://microsoft.github.io/sqlworkshops/>
+- Join Microsoft Developer Design <https://microsoft.github.io/join-dev-design/>
+- Project Ace - Using Native UI <http://microsoft.github.io/ace/docs/native-ui/>
+- LSP Overview <https://microsoft.github.io/language-server-protocol/overview>
+- DAP Overview <https://microsoft.github.io/debug-adapter-protocol/overview>
+- ONNX.js - Run ONNX models in the browser <https://microsoft.github.io/onnxjs-demo/#/>
+- Microsoft Days in the Web <https://microsoft.github.io/frontend-bootcamp/>
+- Project Mu <https://microsoft.github.io/mu/>
+- PowerBI Custom Visuals <https://microsoft.github.io/PowerBI-visuals/docs/overview/>
+- PowerBI-JavaScript demo <https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html>
+- Microsoft Technical Case Studies <https://microsoft.github.io/techcasestudies/>
+- Microsoft Open Source Code of Conduct <https://microsoft.github.io/codeofconduct/>
+- Embedded Learning Library (ELL) <https://microsoft.github.io/ELL/>
+- A library for building cross-platform apps - ReactXP <https://microsoft.github.io/reactxp/>
+- PartsUnlimited <https://microsoft.github.io/PartsUnlimited/>
+- PartsUnlimitedMRP <https://microsoft.github.io/PartsUnlimitedMRP/>
+- CodePush <https://microsoft.github.io/code-push/>
+- Microsoft PROSE SDK <https://microsoft.github.io/prose/>
+- Create extensions for Visual Studio <https://microsoft.github.io/extendvs/>
+- DSCEA <https://microsoft.github.io/DSCEA/>
+- IoT kit built for the cloud <https://microsoft.github.io/azure-iot-developer-kit/>
 
 如果有问题，欢迎留言交流~
 

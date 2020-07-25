@@ -5,8 +5,8 @@
     <description>极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Jul 2020 12:09:20 +0800</pubDate>
-    <lastBuildDate>Sat, 25 Jul 2020 12:09:20 +0800</lastBuildDate>
+    <pubDate>Sat, 25 Jul 2020 13:03:34 +0800</pubDate>
+    <lastBuildDate>Sat, 25 Jul 2020 13:03:34 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -1496,8 +1496,266 @@
       </item>
     
       <item>
+        <title>一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收</title>
+        <description>&lt;p&gt;一份微软官方Github上发布的开源项目清单等你签收!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最近在倒腾&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WPF&lt;/code&gt;的项目，试着搜一下微软官方提供的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WPF Smaples&lt;/code&gt;, 结果找到了&lt;a href=&quot;https://github.com/Microsoft/WPF-Samples&quot;&gt;https://github.com/Microsoft/WPF-Samples&lt;/a&gt;. 当然还发现了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cortana&lt;/code&gt;相关的开源资料&lt;a href=&quot;https://microsoft.github.io/UWPQuickStart/docs/challenges/cortana-integration.html&quot;&gt;https://microsoft.github.io/UWPQuickStart/docs/challenges/cortana-integration.html&lt;/a&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UWP&lt;/code&gt;资源&lt;a href=&quot;https://microsoft.github.io/UWPQuickStart/docs/resources.html&quot;&gt;https://microsoft.github.io/UWPQuickStart/docs/resources.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;微软github开源项目入口&quot;&gt;微软Github开源项目入口&lt;/h2&gt;
+
+&lt;p&gt;当你访问网址&lt;a href=&quot;https://microsoft.github.io&quot;&gt;https://microsoft.github.io&lt;/a&gt;时，会自动跳转到&lt;a href=&quot;https://opensource.microsoft.com&quot;&gt;https://opensource.microsoft.com&lt;/a&gt;，于是可知微软开源项目入口即为&lt;a href=&quot;https://opensource.microsoft.com&quot;&gt;https://opensource.microsoft.com&lt;/a&gt;或&lt;a href=&quot;https://microsoft.github.io&quot;&gt;https://microsoft.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;微软开源项目受欢迎程度排名&quot;&gt;微软开源项目受欢迎程度排名&lt;/h2&gt;
+
+&lt;p&gt;打开主页&lt;a href=&quot;https://opensource.microsoft.com&quot;&gt;https://opensource.microsoft.com&lt;/a&gt;，将排序条件从默认的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Trending&lt;/code&gt;切换到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Stars&lt;/code&gt;, 即可看到Star最多的项目，同理&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Forks&lt;/code&gt;是按&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fork&lt;/code&gt;的量排序，A&lt;strong&gt;A&lt;/strong&gt; Name是按项目名字典序排序。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192249612-1866737019.png&quot; alt=&quot;sort-by-stars&quot; /&gt;
+&lt;img src=&quot;//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug1.png&quot; alt=&quot;大白技术控geekplayers&quot; title=&quot;大白技术控Bravo Yeung&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;还可点击&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;← Previous &lt;/code&gt;或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Next →&lt;/code&gt;来进行翻页。&lt;/p&gt;
+
+&lt;h3 id=&quot;visual-studio-code&quot;&gt;Visual Studio Code&lt;/h3&gt;
+
+&lt;p&gt;免费开源且十分流行的跨平台代码编辑器，除了代码编辑功能以外，安装插件后还能进行调试，目前已更新到版本v1.3.2. 相比于Atom、Sublime等其他代码编辑器，它拥有最多的扩展插件，最新数据表明它排在所有商业和非商业IDE中位居第&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6&lt;/code&gt;位。还提供代码实时分享的协作开发(Live share)功能。
+此外，微软官方还开源了很多vs插件的代码: &lt;a href=&quot;https://opensource.microsoft.com/?sort=Stars&amp;amp;keyword=vscode&amp;amp;tag=&quot;&gt;https://opensource.microsoft.com/?sort=Stars&amp;amp;keyword=vscode&amp;amp;tag=&lt;/a&gt;，除了列表里的第一个，其他都是，特别是&lt;a href=&quot;https://github.com/Microsoft/vscode-go&quot;&gt;Microsoft/vscode-go&lt;/a&gt;最受欢迎，源码值得学习.
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192028158-1757180661.png&quot; alt=&quot;vs-code&quot; /&gt;
+中文官网: &lt;a href=&quot;https://azure.microsoft.com/zh-cn/products/visual-studio-code/&quot;&gt;https://azure.microsoft.com/zh-cn/products/visual-studio-code/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/Microsoft/vscode&lt;/p&gt;
+
+&lt;h3 id=&quot;typescript&quot;&gt;TypeScript&lt;/h3&gt;
+
+&lt;p&gt;TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个严格超集，并添加了可选的静态类型和基于类的面向对象编程。C#的首席架构师以及Delphi和Turbo Pascal的创始人安德斯·海尔斯伯格参与了TypeScript的开发。&lt;/p&gt;
+
+&lt;p&gt;TypeScript设计目标是开发大型应用，然后转译成JavaScript。由于TypeScript是JavaScript的严格超集，任何现有的JavaScript程序都是合法的TypeScript程序。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192320599-1248672692.png&quot; alt=&quot;Typescript-TS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/Microsoft/TypeScript&lt;/p&gt;
+
+&lt;h3 id=&quot;rxjs&quot;&gt;RxJS&lt;/h3&gt;
+
+&lt;p&gt;RxJS是JavaScript的Reactive Extensions，它是使用 Observables 的响应式编程的库，它使编写异步或基于回调的代码更容易。该项目是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Reactive-Extensions/RxJS&lt;/code&gt; 上一版本的重写，具有更好的性能、更好的模块性、更好的可调试调用堆栈，同时保持大部分向后兼容，只有一些破坏性的变更(breaking changes)是为了减少外层的 API 。&lt;/p&gt;
+
+&lt;p&gt;中文官网: &lt;a href=&quot;https://cn.rx.js.org&quot;&gt;https://cn.rx.js.org&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192515734-1776677080.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: &lt;a href=&quot;https://github.com/Reactive-Extensions/RxJS&quot;&gt;Reactive-Extensions/RxJS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;net-core-基础类库&quot;&gt;.NET Core 基础类库&lt;/h3&gt;
+
+&lt;p&gt;此Repo包含.NET Core的库实现（称为“CoreFX”）。 它包括System.Collections，System.IO，System.Xml和许多其他组件。 相应的.NET Core Runtime存储库（称为“CoreCLR”）包含.NET Core的运行时实现。 它包括RyuJIT，.NET GC和许多其他组件。 特定运行时的库代码（System.Private.CoreLib）位于Core CLR Repo中。 它需要与运行时一起构建和版本化。 CoreFX的其余部分与运行时实现无关，可以在任何兼容的.NET运行时（例如CoreRT）上运行。
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192810083-1926102133.png&quot; alt=&quot;.net-coreFx&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/dotnet/corefx&lt;/p&gt;
+
+&lt;h3 id=&quot;cntk&quot;&gt;CNTK&lt;/h3&gt;
+
+&lt;p&gt;Microsoft Cognitive Toolkit（CNTK），一个开源的深度学习工具包&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330203509579-77233727.png&quot; alt=&quot;cntk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址:  &lt;a href=&quot;https://github.com/Microsoft/CNTK&quot;&gt;Microsoft/CNTK&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;microsoft-calculator&quot;&gt;Microsoft calculator&lt;/h3&gt;
+
+&lt;p&gt;Windows计算器：Windows自带的一个简单但功能强大的计算器 (Win10上的UWP计算器)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192936640-1128230107.png&quot; alt=&quot;Calculator Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: &lt;a href=&quot;https://github.com/Microsoft/calculator&quot;&gt;Microsoft/calculator&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;monaco-editor&quot;&gt;Monaco editor&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Monaco editor&lt;/strong&gt;：基于浏览器的代码编辑器，Visual Studio就是以Monaco editor为基础开发而成的，本人上一篇文章XAML Studio也是以之为基础做成的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193017878-233129264.png&quot; alt=&quot;Monaco-editor&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在线试用:
+&lt;a href=&quot;https://microsoft.github.io/monaco-editor/playground.html&quot;&gt;https://microsoft.github.io/monaco-editor/playground.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: &lt;a href=&quot;https://github.com/Microsoft/monaco-editor&quot;&gt;Microsoft/monaco-editor&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ms-dos&quot;&gt;MS-DOS&lt;/h3&gt;
+
+&lt;p&gt;MS-DOS 1.25和2.0的原始资源，供参考。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193034987-1030175783.png&quot; alt=&quot;ms-dos&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: &lt;a href=&quot;https://github.com/Microsoft/MS-DOS&quot;&gt;Microsoft/MS-DOS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;redis-windows版&quot;&gt;Redis windows版&lt;/h3&gt;
+
+&lt;p&gt;由于Redis官方没推出Windows版，微软自己基于Redis官方的Linux版的部分特性做了一个Windows版。
+Redis windows版是一个内存数据库，可以在磁盘上保留。 数据模型是键值，但支持许多不同类型的值：字符串，列表，集，排序集，哈希值.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193120892-1062728683.png&quot; alt=&quot;Redis Cache On Windows&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193159887-1045326438.png&quot; alt=&quot;Redis windows&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;它原来的repo地址是 &lt;a href=&quot;https://github.com/MSOpenTech/redis&quot;&gt;MSOpenTech&lt;/a&gt; ，后来 &lt;a href=&quot;https://github.com/orgs/MSOpenTech&quot;&gt;https://github.com/orgs/MSOpenTech&lt;/a&gt;下的项目全迁移到了&lt;a href=&quot;https://github.com/MicrosoftArchive&quot;&gt;https://github.com/MicrosoftArchive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;故最新github地址: &lt;a href=&quot;https://github.com/MicrosoftArchive/redis&quot;&gt;MicrosoftArchive/redis&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;net-core-clr-公共语言运行时&quot;&gt;.NET Core CLR (公共语言运行时)&lt;/h3&gt;
+
+&lt;p&gt;CoreCLR，是 .NET Core 的执行引擎，包括 RynJIT、.NET GC、原生 interop 和其他 .NET 运行时组件。当你在 .NET Core 上运行 ASP.NET 5 应用时，CoreCLR 用来执行你的代码，这还需要依赖于 CoreFX/BCL 库。
+微软称在开源和跨平台 .NET 运行时环境这项工作上将会有几个额外的里程碑。
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193604903-2018667119.png&quot; alt=&quot;.NET Core CLR-enjoy233-Bravo Yeung&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/dotnet/coreclr&lt;/p&gt;
+
+&lt;h3 id=&quot;aspnet-core&quot;&gt;ASP.NET Core&lt;/h3&gt;
+
+&lt;p&gt;ASP.NET Core 是新一代的 ASP.NET，早期称为 ASP.NET vNext，并且在推出初期命名为 ASP.NET 5，但随着 .NET Core 的成熟，以及 ASP.NET 5 的命名会使得外界将它视为 ASP.NET 的升级版，但它其实是新一代从头开始打造的 ASP.NET 核心功能，因此微软宣布将它改为与 .NET Core 同步的名称，即 ASP.NET Core。
+ASP.NET Core 可运行于 Windows 平台以及非 Windows 平台，如 Mac OSX 以及 Ubuntu Linux 操作系统，是 Microsoft 第一个具有跨平台能力的 Web 开发框架。
+微软在一开始开发时就将 ASP.NET Core 开源，因此它也是开源项目的一员，由 .NET 基金会 (.NET Foundation) 所管理。
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193334132-1586429300.png&quot; alt=&quot;ASP.NET Core&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/aspnet/AspNetCore&lt;/p&gt;
+
+&lt;h3 id=&quot;entity-framework-core&quot;&gt;Entity Framework Core&lt;/h3&gt;
+
+&lt;p&gt;Entity Framework Core 是微软新一代的对象关系对应 (ORM) 框架，以 .NET Core 实现，不过它是归属于 ASP.NET Core 项目的一部分，在 ASP.NET Core 开始开发时就被列入标准功能，与现行的 Entity Framework 一样，是微软官方建议使用的数据访问功能，但 .NET Core 成功移植 ADO.NET 基类库 System.Data 之后，开发人员仍能使用 ADO.NET 作为数据访问的解决方案。&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/aspnet/EntityFrameworkCore&lt;/p&gt;
+
+&lt;h3 id=&quot;powershell&quot;&gt;PowerShell&lt;/h3&gt;
+
+&lt;p&gt;PowerShell（包括Windows PowerShell and PowerShell Core）是微软公司开发的任务自动化和配置管理框架，由.NET Framework和.NET Core是构建的命令行界面壳层相关脚本语言组成，最初仅Windows组件，后于2016年8月18日开源并跨平台支持。
+在PowerShell中，管理任务通常由cmdlets（发音为command-lets）执行，这是执行特定操作的专用.NET类。可以将cmdlet集合至脚本、可执行文件（一般是独立应用程序）中，或通过常规.NET类（或WMI / COM对象）实例化。通过访问不同数据存储中的数据由PowerShell运行，如资源管理器或注册表。&lt;/p&gt;
+
+&lt;p&gt;PowerShell Core可很好地与现有工具配合使用, 并针对处理结构化数据 (例如 json、csv、xml 等)、REST API 和对象模型进行了优化。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193720943-437771760.png&quot; alt=&quot;img-Bravo Yeung-enjoy233&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;github地址: https://github.com/PowerShell/PowerShell&lt;/p&gt;
+
+&lt;h2 id=&quot;如何在其中搜索自己需要的项目&quot;&gt;如何在其中搜索自己需要的项目&lt;/h2&gt;
+
+&lt;p&gt;由于主页&lt;a href=&quot;https://opensource.microsoft.com&quot;&gt;https://opensource.microsoft.com&lt;/a&gt;提供了搜索功能，只需在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Search repos...&lt;/code&gt;的地方输入关键字即可。比如我需要搜索&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wpf&lt;/code&gt;相关的，在该处输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wpf&lt;/code&gt;。
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193816046-377228234.png&quot; alt=&quot;search-Bravo Yeung-enjoy233&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;此时发现地址栏的网址已变成
+&lt;a href=&quot;https://opensource.microsoft.com/?sort=Awesomeness&amp;amp;keyword=wpf&amp;amp;tag=&quot;&gt;https://opensource.microsoft.com/?sort=Awesomeness&amp;amp;keyword=wpf&amp;amp;tag=&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;搜索结果为:
+&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330193857268-1171573944.png&quot; alt=&quot;search-result&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同上，此处也可切换排序条件，点击&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;← Previous &lt;/code&gt;或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Next →&lt;/code&gt;来进行翻页。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330192249612-1866737019.png&quot; alt=&quot;sort-by-stars_Bravo Yeung-enjoy233&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;github-邮件订阅&quot;&gt;GitHub-邮件订阅&lt;/h2&gt;
+
+&lt;p&gt;事实上，微软开源项目是使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github pages&lt;/code&gt;来管理的。根据&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github pages&lt;/code&gt;的规则，默认设置下&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github pages&lt;/code&gt;访问页&lt;a href=&quot;http://microsoft.github.io&quot;&gt;http://microsoft.github.io&lt;/a&gt;对应的项目应该为: &lt;a href=&quot;https://github.com/Microsoft/microsoft.github.io&quot;&gt;https://github.com/Microsoft/microsoft.github.io&lt;/a&gt;. 使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github pages&lt;/code&gt;搭建过个人博客的人都应该深知这一点。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330194159138-1727538688.png&quot; alt=&quot;1553940590777-Bravo Yeung-enjoy233&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt;上登录个人账号之后，只需点&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Watching&lt;/code&gt;, 选择”Be notified of all conversions”即可，一旦github上有更新，会在Email中收到通知~&lt;/p&gt;
+
+&lt;h2 id=&quot;rss订阅&quot;&gt;Rss订阅&lt;/h2&gt;
+
+&lt;p&gt;本人使用工具&lt;a href=&quot;https://fivefilters.org/content-only/&quot;&gt;https://fivefilters.org/content-only/&lt;/a&gt;为此网站创建了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rss&lt;/code&gt;功能，订阅地址为&lt;a href=&quot;http://ftr.fivefilters.org/makefulltextfeed.php?url=https%3A%2F%2Fopensource.microsoft.com%2F&amp;amp;max=10&quot;&gt;http://ftr.fivefilters.org/makefulltextfeed.php?url=https%3A%2F%2Fopensource.microsoft.com%2F&amp;amp;max=10&lt;/a&gt;，或者 &lt;a href=&quot;http://www.feed43.com/8078656626535244.xml&quot;&gt;http://www.feed43.com/8078656626535244.xml&lt;/a&gt;，同时我还创建了一个FeedEx的版本: &lt;a href=&quot;https://feedex.net/feed/www.feed43.com/8078656626535244.xml&quot;&gt;https://feedex.net/feed/www.feed43.com/8078656626535244.xml&lt;/a&gt;，按需取用吧。&lt;/p&gt;
+
+&lt;p&gt;推荐使用&lt;a href=&quot;https://feedly.com&quot;&gt;Feedly&lt;/a&gt;来订阅，&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img2018.cnblogs.com/blog/436938/201903/436938-20190330194223001-574473663.png&quot; alt=&quot;Feedly_Usage-Bravo Yeung-enjoy233&quot; /&gt;
+这样一来，只要&lt;a href=&quot;https://opensource.microsoft.com&quot;&gt;https://opensource.microsoft.com&lt;/a&gt;的列表里出现新项目，你进&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;feedly&lt;/code&gt;就能看到了~&lt;/p&gt;
+
+&lt;h2 id=&quot;其他-microsoftgithubio上有用的链接&quot;&gt;其他 microsoft.github.io上&lt;strong&gt;有用的链接&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Windows on Github https://microsoft.github.io/windows/&lt;/li&gt;
+  &lt;li&gt;TypeScript Types Search https://microsoft.github.io/TypeSearch/&lt;/li&gt;
+  &lt;li&gt;Python Tools for Visual Studio https://microsoft.github.io/PTVS/&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;sqlworkshops&lt;/td&gt;
+          &lt;td&gt;SQL Server Workshops https://microsoft.github.io/sqlworkshops/&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Join Microsoft Developer Design https://microsoft.github.io/join-dev-design/&lt;/li&gt;
+  &lt;li&gt;Project Ace - Using Native UI http://microsoft.github.io/ace/docs/native-ui/&lt;/li&gt;
+  &lt;li&gt;LSP Overview  https://microsoft.github.io/language-server-protocol/overview&lt;/li&gt;
+  &lt;li&gt;DAP Overview https://microsoft.github.io/debug-adapter-protocol/overview&lt;/li&gt;
+  &lt;li&gt;ONNX.js - Run ONNX models in the browser https://microsoft.github.io/onnxjs-demo/#/&lt;/li&gt;
+  &lt;li&gt;Microsoft Days in the Web https://microsoft.github.io/frontend-bootcamp/&lt;/li&gt;
+  &lt;li&gt;Project Mu https://microsoft.github.io/mu/&lt;/li&gt;
+  &lt;li&gt;PowerBI Custom Visuals https://microsoft.github.io/PowerBI-visuals/docs/overview/&lt;/li&gt;
+  &lt;li&gt;PowerBI-JavaScript demo https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html&lt;/li&gt;
+  &lt;li&gt;Microsoft Technical Case Studies https://microsoft.github.io/techcasestudies/&lt;/li&gt;
+  &lt;li&gt;Microsoft Open Source Code of Conduct https://microsoft.github.io/codeofconduct/&lt;/li&gt;
+  &lt;li&gt;Embedded Learning Library (ELL) https://microsoft.github.io/ELL/&lt;/li&gt;
+  &lt;li&gt;A library for building cross-platform apps - ReactXP https://microsoft.github.io/reactxp/&lt;/li&gt;
+  &lt;li&gt;PartsUnlimited https://microsoft.github.io/PartsUnlimited/&lt;/li&gt;
+  &lt;li&gt;PartsUnlimitedMRP https://microsoft.github.io/PartsUnlimitedMRP/&lt;/li&gt;
+  &lt;li&gt;CodePush https://microsoft.github.io/code-push/&lt;/li&gt;
+  &lt;li&gt;Microsoft PROSE SDK https://microsoft.github.io/prose/&lt;/li&gt;
+  &lt;li&gt;Create extensions for Visual Studio https://microsoft.github.io/extendvs/&lt;/li&gt;
+  &lt;li&gt;DSCEA https://microsoft.github.io/DSCEA/&lt;/li&gt;
+  &lt;li&gt;IoT kit built for the cloud https://microsoft.github.io/azure-iot-developer-kit/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果有问题，欢迎留言交流~&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;作者简介&lt;/strong&gt;：Bravo Yeung，计算机硕士，知乎干货答主(获&lt;strong&gt;81K&lt;/strong&gt; 赞同, &lt;strong&gt;38K&lt;/strong&gt; 感谢, &lt;strong&gt;235K&lt;/strong&gt; 收藏)。曾在国内 Top3互联网视频直播公司工作过，后加入一家外企做软件开发至今。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;如需转载，请加微信 &lt;strong&gt;iMath7&lt;/strong&gt; 申请开白！&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;欢迎在留言区留下你的观点，一起讨论提高。如果今天的文章让你有新的启发，学习能力的提升上有新的认识，欢迎转发分享给更多人。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;欢迎各位读者加入 &lt;strong&gt;.NET技术交流群&lt;/strong&gt;，在公众号后台回复&lt;strong&gt;“加群”&lt;/strong&gt;或者&lt;strong&gt;“学习”&lt;/strong&gt;即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png&quot; alt=&quot;大白技术控 公众号名片&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;文末彩蛋&quot;&gt;文末彩蛋&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;微信后台回复“&lt;strong&gt;asp&lt;/strong&gt;”，给你：一份全网最强的ASP.NET学习路线图。
+&lt;br /&gt;
+回复“&lt;strong&gt;cs&lt;/strong&gt;”，给你：一整套 C# 和 WPF 学习资源！
+&lt;br /&gt;
+回复“&lt;strong&gt;core&lt;/strong&gt;”，给你：2019年dotConf大会上发布的.NET core 3.0学习视频！&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 27 Jun 2020 06:14:09 +0800</pubDate>
+        <link>http://localhost:4000/2020/06/27/developer-benefits_github-open-source-projects-of-microsoft/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/06/27/developer-benefits_github-open-source-projects-of-microsoft/</guid>
+        
+        <category>github</category>
+        
+        <category>微软</category>
+        
+        
+        <category>[&quot;github&quot;, &quot;\u5FAE\u8F6F&quot;]</category>
+        
+        <category>[&quot;github&quot;, &quot;\u5FAE\u8F6F&quot;]</category>
+        
+        <category>github</category>
+        
+        <category>微软</category>
+        
+      </item>
+    
+      <item>
         <title>剑指Offer | 二维数组中的查找</title>
-        <description>&lt;p&gt;由 Edison Zhou [恰童鞋骚年] 授权发表~&lt;/p&gt;
+        <description>&lt;p&gt;由 Edison Zhou公众号「恰童鞋骚年」授权发表~&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1788,7 +2046,7 @@
 
 &lt;p&gt;最终单元测试的结果：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh4.jpg&quot; alt=&quot;大白技术控geekplayers&quot; title=&quot;单元测试&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh5.png&quot; alt=&quot;大白技术控geekplayers&quot; title=&quot;单元测试&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;5参考资料&quot;&gt;5.参考资料&lt;/h2&gt;
 
@@ -3595,108 +3853,6 @@
         <pubDate>Wed, 13 Nov 2019 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/</guid>
-        
-        <category>LeetCode面试题系列</category>
-        
-        
-        <category>Leetcode面试题</category>
-        
-      </item>
-    
-      <item>
-        <title>LeetCode面试系列 第8天：No.58 - 最后一个单词的长度</title>
-        <description>&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道将数学和字符串结合起来的的面试题，今天我们再来分析了一道轻松的字符串面试题吧~&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png&quot; alt=&quot;Leetcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今天要给大家分析的面试题是 LeetCode 上第 &lt;strong&gt;58&lt;/strong&gt; 号问题，&lt;/p&gt;
-
-&lt;p&gt;LeetCode -  58. 最后一个单词的长度&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/classic/problems/length-of-last-word/&quot;&gt;https://leetcode-cn.com/classic/problems/length-of-last-word/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
-
-&lt;p&gt;给定一个仅包含大小写字母和空格 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;' '&lt;/code&gt; 的字符串，返回其最后一个单词的长度。&lt;/p&gt;
-
-&lt;p&gt;如果不存在最后一个单词，请返回 0 。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;说明：&lt;/strong&gt;一个单词是指由字母组成，但不包含任何空格的字符串。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;示例:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;Hello World&quot;
-输出: 5
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;题目难度： &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;简单&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;通过次数：49.1K&lt;/li&gt;
-  &lt;li&gt;提交次数：156.4K&lt;/li&gt;
-  &lt;li&gt;贡献者：LeetCode&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;相关标签&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;字符串&lt;/p&gt;
-
-        &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/tag/string&quot;&gt;https://leetcode-cn.com/tag/string&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;解题思路:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这道字符串题目可以使用直接法~&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;删掉首尾部的换行、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\t&lt;/code&gt;、空格等字符，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strip()&lt;/code&gt; 函数可以完成&lt;/li&gt;
-  &lt;li&gt;寻找最后一个空格
-    &lt;ul&gt;
-      &lt;li&gt;如果不存在空格，直接返回字符串的长度&lt;/li&gt;
-      &lt;li&gt;若存在空格，用长度 减去 最后一个空格的位置&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;已AC代码:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lengthOfLastWord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;       
-        &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rfind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newStr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastSpacePos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;28 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.83%&lt;/code&gt; 的用户&lt;/p&gt;
-
-&lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-058&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 30 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/30/python-leetcode58-length-of-last-word/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/30/python-leetcode58-length-of-last-word/</guid>
         
         <category>LeetCode面试题系列</category>
         
