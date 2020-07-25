@@ -208,7 +208,7 @@ public void FindTest7()
 
 最终单元测试的结果：
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh4.jpg "单元测试")
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh5.png "单元测试")
 
 ## 5.参考资料
 
