@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收
-date: 2019-03-30 19:43:10
 categories: 
 - [github, 微软]
 
@@ -14,7 +13,7 @@ topmost: true
 author: bravo_yeung
 platform: 博客园
 sourcelink: https://www.cnblogs.com/enjoy233/p/developer-benefits_github-open-source-projects-of-microsoft.html
-date: 2020-06-26 22:14:09
+date: 2019-03-30 19:43:10
 ---
 
 一份微软官方Github上发布的开源项目清单等你签收!
@@ -269,7 +268,7 @@ github地址: https://github.com/PowerShell/PowerShell
 
 <br>
 
-![大白技术控 公众号名片]((//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/gzhCard_for_blog.png "大白技术控Bravo Yeung")
+![大白技术控 公众号名片](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/gzhCard_for_blog.png "大白技术控Bravo Yeung")
 
 
 ### 文末彩蛋
