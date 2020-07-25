@@ -5,7 +5,7 @@ titlebar: payment
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 支付、第三方支付系列文章
 menu: payment
 css: ['blog-page.css']
-permalink: /payment
+permalink: /payment/
 ---
 
 <div class="row">
