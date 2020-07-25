@@ -15,33 +15,35 @@ author: edison_zhou
 
 ------
 
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh1.png)
+
 刚刚结束了《[每天5分钟用C#学习数据结构](http://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=2651731421&idx=1&sn=f97cc4cd59e60f23341c8548c304fdc8&chksm=8bc3eadcbcb463cabb6bb6e8f3bdb01dd1cd2cc6963300bc36843d9aac6bedb1280e3c667c62&scene=21#wechat_redirect)》的学习之旅，今天开始我们来用之前学到的数据结构知识来刷《剑指Offer》的一些核心题目（精选了其中30+道题目），希望对你有帮助！本文是第一篇，题目为：二维数组中的查找。
 
 画外音：后台回复`offer`，pdf下载链接。
 
-1题目介绍
+## 1.题目介绍
 
 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 
 例如下面的二维数组就是每行、每列都递增排序。如果在这个数组中查找数字7，则返回true；如果查找数字5，由于数组不含有该数字，则返回false。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/fCpd1cf8iacZsY1wSic4vOwlOND8844Uy8hp34y4SGnoQWJ8Eiay5U1CLteibtayLLFVYeNe2UNYrLxBWkWmZrLHeQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh2.png)
 
-2解题思路
+## 2.解题思路
 
 怎么样，有思路吗？
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/fCpd1cf8iacZsY1wSic4vOwlOND8844Uy8HHlZHqG5EFkogu949FZQia4ePMOVUYSfMja42ibiaXtZNrDzFtkBriczvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh3.png)
 
 首先选取数组中右上角的数字。如果该数字等于要查找的数字，查找过程结束；如果该数字大于要查找的数字，剔除这个数字所在的列；如果该数字小于要查找的数字，剔除这个数字所在的行。也就是说如果要查找的数字不在数组的右上角，则每一次都在数组的查找范围中剔除一行或者一列，这样每一步都可以缩小查找的范围，直到找到要查找的数字，或者查找范围为空。
 
 例如，我们要在上述的二维数组中查找数字7的步骤如下图所示：
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/fCpd1cf8iacZsY1wSic4vOwlOND8844Uy8VD1K2r9OwXI86YmyYScUicFfiaFgUpiciaUITr8viaxlmicZwO0fF1g8hpgw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh4.jpg)
 
 　　（矩阵中加阴影背景的区域是下一步查找的范围）
 
-3解决问题
+## 3.解决问题
 
 **代码实现**
 
@@ -89,7 +91,7 @@ public static bool Find(int[,] matrix, int rows, int columns, int number)
 
 
 
-**单元测试**
+## 4.单元测试
 
 代码实现之后，我们需要写一定的单元测试来验证我们的代码实现：
 
@@ -210,7 +212,7 @@ public void FindTest7()
 
 
 
-5.参考资料
+## 5.参考资料
 
 何海涛，《剑指Offer》
 
