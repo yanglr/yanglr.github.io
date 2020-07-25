@@ -4,7 +4,8 @@ title: 深入浅出XAML
 
 categories: 
 - [life, xaml, wpf]
-
+# platform: 公众号
+# gzhname: 大白技术控
 tags: [wpf]
 excerpt: 深入浅出XAML - 转载自《程序员杂志》
 ---

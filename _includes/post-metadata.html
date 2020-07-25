@@ -11,11 +11,14 @@
                 {% if author %}
                 {% include author.html %}
                 {% else %}
-                <span>
                     <i class="fa fa-user" aria-hidden="true"></i> <a href='{{ site.url }}'>Bravo Yeung</a>
-                </span>
                 {% endif %}
-                
+
+                {% if page.platform contains '公众号' %}
+                <font style="color: #ddd;"> 首发于: {{ page.platform %}}</font>
+                <font style="font-weight: bold; font-style:italic !important;">{{ page.gzhname %}}</font>&nbsp;
+                {% endif %}
+                                
                 {% if page.date %}
                 <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">{{ page.date | date: "%Y/%m/%d %T" }}</font>
                 {% endif %}
