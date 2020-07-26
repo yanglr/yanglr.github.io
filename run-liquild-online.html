@@ -1,0 +1,110 @@
+<head>
+  <title>Liquid Sandbox with CodeMirror</title>
+
+  <script src='//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/js/codemirror.js'></script> <!-- Recommend in the beginning compared to other assets! -->
+  <link href='//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/css/codemirror.css' rel='stylesheet'>
+  <!-- <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'> -->
+  <!-- The link above loaded the core css -->  
+
+  <script src="//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/js/jquery-3.3.1.min.js"></script>
+  <script src='//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/js/liquid.js'></script>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/css/liquid.css">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/liquidjs@8.5.3/dist/liquid.min.js"></script> -->
+  <script src="//cdn.jsdelivr.net/yanglr/RunLiquidOnline/src/js/liquid.min.js"></script>
+
+<style>
+.button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2658FA;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    text-decoration: none!important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <h1 class="nobottommargin">Liquid Sandbox</h1>
+  <div style="position: relative; padding: 40px;">
+    <p>Liquid is a markup language used in many web apps like Jekeyll, Shopify, Microsoft Power Apps ect. for their templates.</p>
+    <p>You can test your Liquid code here. This sandbox only loads the default Liquid methods.</p>
+    <p>Write your code below and click on <font color="blue">Execute code</font> to run. You will see the result below.</p>
+
+    <!-- {% assign myvar = "bravo" %} {{ myvar | upcase }}  -->    
+    <p>
+<textarea id="editor" style="display: none;">{% assign name = "liquid" %}
+{{ name | capitalize | prepend: "Welcome to "}}</textarea>
+    </p>
+
+    <!-- <div class="CodeMirror editorContainer cm-liquid" id="cm-liquid" name="cm-liquid">
+  </div> -->
+
+    <p><a href="" class="button" id="get_result">Execute Code</a></p>
+    <p><span id="loading" style="display: none;"></span>
+      <textarea cols="92" rows="12" id="set_result" style="display: none;"> </textarea>
+    </p>
+
+    <div id="result"></div>
+  </div>
+
+  <script lang="javascript">
+    (function ($) {
+      $(document).ready(function () {
+        if ($('#editor').length > 0) {
+          var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+            lineNumbers: !0,
+            indentWithTabs: !0,
+            tabSize: 2,
+            foldGutter: !0
+          });
+          var result = document.getElementById('set_result');
+          var button = document.getElementById('get_result');
+
+          var loading = document.getElementById('loading');
+          var engine = new Liquid;
+
+          button.onclick = getResult;
+
+          function getResult(e) {
+            e.preventDefault();
+            loading.style.display = "block";
+            engine.parseAndRender(editor.getValue()).then(function (data) {
+              // result.value = $.trim(data.replace(/\s/g, ' '));
+              result.value = $.trim(data);
+              loading.style.display = "none";
+              result.style.display = "block"
+            }).catch(function (err) {
+              result.value = "Error in liquid syntax! \nError: " + err;
+              loading.style.display = "none";
+              result.style.display = "block"
+            })
+            return !1
+          }
+          editor.on('change', function (cMirror) {
+            result.style.display = "none"
+          })
+        }
+      })
+    }(jQuery))
+
+  </script>
+
+</body>
