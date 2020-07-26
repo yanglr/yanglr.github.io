@@ -128,10 +128,10 @@ navs:
         subHref: /wpf.html
         subLabel: WPF
         
-      -
-        subHref: http://enjoy233.cnblogs.com
-        subLabel: .NET 极客技术
-        target: _blank
+      # -
+      #   subHref: http://enjoy233.cnblogs.com
+      #   subLabel: .NET 极客技术
+      #   target: _blank
 
   -
     href: /algo.html
@@ -152,6 +152,20 @@ navs:
     href: /archives.html
     label: Archives
     target: _self
+
+  -
+    href: /tools/
+    label: Tools
+    target: _blank
+    subnav:
+
+      -
+        subHref: /run-liquild-online.html
+        subLabel: "Run Liquid now"
+
+      -
+        subHref: /run-liquild-online-pro.html
+        subLabel: Run Liquid now Pro    
 
   -
     href: /about.html
