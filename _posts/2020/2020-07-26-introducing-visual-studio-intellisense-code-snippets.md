@@ -3,10 +3,10 @@ layout: post
 title: Visual Studio的智能感应代码段
 
 categories: 
-- [life, xaml, wpf]
-tags: [wpf]
+- [Visual Studio, .NET]
+tags: [Visual Studio, .NET]
 excerpt: Visual Studio的智能感应代码段 - 转载自《程序员杂志》
-keywords: Visual Studio, Code snippet
+keywords: Visual Studio, .NET, Code snippet
 description: Visual Studio中的智能感应代码段
 date: 2020-07-26 22:07:40
 ---
