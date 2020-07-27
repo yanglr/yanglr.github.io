@@ -13,7 +13,7 @@ date: 2016-10-19
 
 想在本地预览 Jekyll 博客，需要安装 Jekyll，刚倒腾了半天，说说我在 Win10 系统下安装 Jekyll 的惨痛经历吧。
 
-### 安装 Jekyll
+## 安装 Jekyll
 
 - 安装集成好的 [RubyInstaller](http://rubyinstaller.org/)
 - 安装 RubyGems（gem 是一个 Ruby 的包管理系统，可以用 gem 很方便的在本地安装 Ruby 应用），解压下载到的压缩包到任意位置，进入文件根目录，执行命令 `ruby setup.rb` 就可以了。
@@ -35,7 +35,7 @@ date: 2016-10-19
 
   然后执行 `gem install jekyll` 就可以了。安装完成后，执行 `jekyll -v`，出现版本号就证明 Jekyll 已经成功安装了。
 
-### 启动 Jekyll serve
+## 启动 Jekyll serve
 
 在博客根目录下用命令行执行 `jekyll serve` 的时候可能会遇到以下几个问题：
 
@@ -93,7 +93,7 @@ date: 2016-10-19
 
 
 
-### 安装完成
+## 安装完成
 
 打开 `http://127.0.0.1:4000/` 就可以本地预览博客了。
 
@@ -101,7 +101,7 @@ date: 2016-10-19
 
 
 
-> *原文发表于: [Windows 下安装 Jekyll 及启动遇到的问题](https://silocean.github.io/2016/10/19/windows-install-jekyll/) - https://silocean.github.io/2016/10/19/windows-install-jekyll/
+> *原文发表于*: [Windows 下安装 Jekyll 及启动遇到的问题](https://silocean.github.io/2016/10/19/windows-install-jekyll/) - https://silocean.github.io/2016/10/19/windows-install-jekyll/
 
 
 
