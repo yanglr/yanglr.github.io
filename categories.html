@@ -13,7 +13,7 @@ title: 博客分类
 
             <ul id="{{ category_name | slugize }}" class="list-group">
                 <font style="font-size: 30px;">{{ category_name }}</font> 
-                <span class="badge">{{ site.categories[category_name].size }}</span>
+                <span class="badge-count">{{ site.categories[category_name].size }}</span>
             </ul>
 
             <a name="{{ category_name | slugize }}"></a>
