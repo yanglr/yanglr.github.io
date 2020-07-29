@@ -11,6 +11,7 @@ permalink: /link
 
 - [吴章金falcon@TinyLab](http://tinylab.org)
 - [Dotnet9](https://dotnet9.com)
+- [峡州仙士之页](https://cjh0613.github.io/blog/index.html) - 世上本没有路
 - [Walterlv - WPF专家(微软MVP)](https://blog.walterlv.com)
 - [云之幻 - UWP](https://blog.richasy.cn)  
 
