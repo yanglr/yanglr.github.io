@@ -12,14 +12,12 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
-    <title> C++中std::getline函数的用法 -极客玩家Bravo Yeung博客 </title>
-    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <title> Windows下安装Jekyll及启动遇到的问题 -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content="silocean, jekyll, Windows, Ruby">
     <meta name="description"
-          content="&lt;h1 id=&quot;stdgetline&quot;&gt;std::getline&lt;/h1&gt;
+          content="Windows下安装Jekyll及启动遇到的问题, 转载自 &#39;https://silocean.github.io/2016/10/19/windows-install-jekyll/&#39; by silocean (rainbow/rinbow.github.io).">
 
-">
-
-    <link rel="canonical" href="http://localhost:4000/2016/09/19/std-getline-function-usage/">
+    <link rel="canonical" href="http://localhost:4000/2016/10/19/windows-install-jekyll/">
     <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
 
     <!-- Third-Party CSS -->
@@ -231,10 +229,10 @@
 
 
         <div class="content">
-            <section class="jumbotron geopattern" data-pattern-id="C++中std::getline函数的用法">
+            <section class="jumbotron geopattern" data-pattern-id="Windows下安装Jekyll及启动遇到的问题">
     <div class="container">
         <div id="jumbotron-meta-info">
-            <h1>C++中std::getline函数的用法</h1>
+            <h1>Windows下安装Jekyll及启动遇到的问题</h1>
             <span class="meta-info">
                 
 
@@ -246,7 +244,7 @@
                 
                                 
                 
-                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/09/19 05:23:07</font>
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/10/19 00:00:00</font>
                 
             </span>
             
@@ -259,12 +257,42 @@
                     <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
                     
                         <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                        href="/categories/#C++常用语法">C++常用语法</a>
+                        href="/categories/#jekyll">jekyll</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#Windows">Windows</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#Ruby">Ruby</a>
                     
                                     
                 
                 <!-- <p>out index:1</p>
+                <p>size: 3</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 29</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 6</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:4</p>
                 <p>size: 7</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:5</p>
+                <p>size: 4</p> -->
                             
             </p>
 
@@ -287,110 +315,135 @@
         
         <div class="col-md-9 markdown-body">
 
-            <h1 id="stdgetline">std::getline</h1>
+            <p>想在本地预览 Jekyll 博客，需要安装 Jekyll，刚倒腾了半天，说说我在 Win10 系统下安装 Jekyll 的惨痛经历吧。</p>
 
-<p> </p>
+<h2 id="安装-jekyll">安装 Jekyll</h2>
 
-<p>在头文件 <string> 中定义.</string></p>
-
-<p><code class="language-plaintext highlighter-rouge">getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
-
-<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction"><code class="language-plaintext highlighter-rouge">UnformattedInputFunction</code></a>, 除了<code class="language-plaintext highlighter-rouge">input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
-
-<p>1) 调用str.erase()</p>
-
-<p>2) <code class="language-plaintext highlighter-rouge">input</code>并把它们添加到<code class="language-plaintext highlighter-rouge">str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
-
-<p>a) 上<code class="language-plaintext highlighter-rouge">input</code>文件结束的条件, 在这种情况下, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">eofbit</a>和回报.</p>
-
-<p>b) 下一个可用的输入字符<code class="language-plaintext highlighter-rouge">delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code class="language-plaintext highlighter-rouge">input</code>提取进行了测试, 但不会追加到<code class="language-plaintext highlighter-rouge">str</code>.</p>
-
-<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code class="language-plaintext highlighter-rouge">getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>并返回.</p>
-
-<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>, 并返回.</p>
-
-<p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
-
-<h3 id="参数">参数</h3>
-
-<p><strong>input</strong>  -     流中获取数据
- <strong>str</strong>    -     把数据转换成字符串 
- <strong>delim</strong>  -     分隔符</p>
-
-<h3 id="返回值">返回值</h3>
-
-<p><code class="language-plaintext highlighter-rouge">input</code></p>
-
-<h3 id="notes">Notes</h3>
-
-<p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin">std::cin</a> » n;, <code class="language-plaintext highlighter-rouge">getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt">operator»</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize">std::streamsize</a> &gt;::max(), ’\n’); before switching to line-oriented input.</p>
-
-<h3 id="示例">示例</h3>
-
-<p>下面的例子陈述了如何使用getline函数来读取用户输入, 以及如何按行处理文件内容. </p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<ul>
+  <li>安装集成好的 <a href="http://rubyinstaller.org/">RubyInstaller</a></li>
+  <li>安装 RubyGems（gem 是一个 Ruby 的包管理系统，可以用 gem 很方便的在本地安装 Ruby 应用），解压下载到的压缩包到任意位置，进入文件根目录，执行命令 <code class="language-plaintext highlighter-rouge">ruby setup.rb</code> 就可以了。</li>
+  <li>安装好 gem 之后就可以开始安装 Jekyll 了，在命令行输入 <code class="language-plaintext highlighter-rouge">gem install jekyll</code>，但你可能会发现下载速度很慢，因为 RubyGems 的镜像源在国内很难访问到，所以要把镜像源切换到我们国内的，<a href="http://gems.ruby-china.org/">Ruby China</a> 就是这样一个镜像源，执行以下命令：
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;string&gt;
-#include &lt;iostream&gt;
-#include &lt;sstream&gt;
-</span> 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="c1">// greet the user</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"What is your name? "</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", nice to meet you.</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
- 
-    <span class="c1">// read file line by line</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="n">input</span><span class="p">;</span>
-    <span class="n">input</span><span class="p">.</span><span class="n">str</span><span class="p">(</span><span class="s">"1</span><span class="se">\n</span><span class="s">2</span><span class="se">\n</span><span class="s">3</span><span class="se">\n</span><span class="s">4</span><span class="se">\n</span><span class="s">5</span><span class="se">\n</span><span class="s">6</span><span class="se">\n</span><span class="s">7</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">line</span><span class="p">;</span> <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">line</span><span class="p">);</span> <span class="p">)</span> <span class="p">{</span>
-        <span class="n">sum</span> <span class="o">+=</span> <span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">The sum is: "</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</pre></td><td class="rouge-code"><pre>gem sources <span class="nt">--add</span> https://gems.ruby-china.org/ <span class="nt">--remove</span> https://rubygems.org/
+<span class="c"># 把自带镜像源替换成我们自己的</span>
+gem sources <span class="nt">-l</span>
+<span class="k">***</span> CURRENT SOURCES <span class="k">***</span>
+http://gems.ruby-china.org
+<span class="c"># 确保只有 gems.ruby-china.org</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>注意在执行第一行命令的时候可能会出现如下错误：</p>
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Error fetching https://gems.ruby-china.org/:
+        SSL_connect <span class="nv">returned</span><span class="o">=</span>1 <span class="nv">errno</span><span class="o">=</span>0 <span class="nv">state</span><span class="o">=</span>SSLv3 <span class="nb">read </span>server certificate B: certificate verify failed <span class="o">(</span>https://gems.ruby-china.org/specs.4.8.gz<span class="o">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>这是 SSL 证书的问题，我们直接用 <code class="language-plaintext highlighter-rouge">http://gems.ruby-china.org</code> 就好了。</p>
 
-<p>可能的输出:</p>
+    <p>然后执行 <code class="language-plaintext highlighter-rouge">gem install jekyll</code> 就可以了。安装完成后，执行 <code class="language-plaintext highlighter-rouge">jekyll -v</code>，出现版本号就证明 Jekyll 已经成功安装了。</p>
+  </li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<h2 id="启动-jekyll-serve">启动 Jekyll serve</h2>
+
+<p>在博客根目录下用命令行执行 <code class="language-plaintext highlighter-rouge">jekyll serve</code> 的时候可能会遇到以下几个问题：</p>
+
+<ul>
+  <li>执行 <code class="language-plaintext highlighter-rouge">jekyll serve</code>，这时候可能会提示某些模块 not found，不要着急，根据提示一个一个 install 即可。不过有一种比较蛋疼的提示是：
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre>What is your name? John Q. Public
-Hello John Q. Public, nice to meet you.
- 
-The sum is 28
-</pre></td></tr></tbody></table></code></pre></div></div>
+5
+6
+</pre></td><td class="rouge-code"><pre>ERROR:  Error installing XXXXXXXXXXX:
+            The <span class="s1">'XXXXXXXXXXXX'</span> native gem requires installed build tools.
+         
+    Please update your PATH to include build tools or download the DevKit
+    from <span class="s1">'http://rubyinstaller.org/downloads'</span> and follow the instructions
+    at <span class="s1">'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>解决方案是去 <a href="http://rubyinstaller.org/downloads">http://rubyinstaller.org/downloads</a> 下载 dev kit，按照 <a href="http://github.com/oneclick/rubyinstaller/wiki/Development-Kit">http://github.com/oneclick/rubyinstaller/wiki/Development-Kit</a> 安装 dev kit。</p>
+
+    <p>主要步骤是：</p>
+
+    <ul>
+      <li>如果原系统已经安装了旧版的 dev kit，删除它。</li>
+      <li>下载上面链接的 dev kit。</li>
+      <li>解压下载下来的文件到任意目录，如 <code class="language-plaintext highlighter-rouge">e:/ruby/devkit</code> （目录不能有空格）。</li>
+      <li>在安装目录下执行 以下命令：
+        <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>ruby dk.rb
+ruby dk.rb init
+ruby dk.rb <span class="nb">install</span>
+</pre></td></tr></tbody></table></code></pre></div>        </div>
+      </li>
+      <li>执行 <code class="language-plaintext highlighter-rouge">gem install rdiscount --platform=ruby</code> 来测试是否成功。</li>
+    </ul>
+  </li>
+  <li>缺失的模块都安装完毕后，再次执行 <code class="language-plaintext highlighter-rouge">jekyll serve</code> 还可能会出现这样一个错误：
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Liquid Exceptions: No repo name found. Specify using PAGES_REPO_NWO environment variables,repository in your configuration, or <span class="nb">set </span>up origin git remote pointing to your github.com repository.
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>解决方案是:</p>
+    <blockquote>
+      <p>If you don’t have a git remote available, you have two other options:</p>
+
+      <ol>
+        <li>Set the environment variable <code class="language-plaintext highlighter-rouge">PAGES_REPO_NWO</code> to your repository name with owner, e.g. <code class="language-plaintext highlighter-rouge">"jekyll/github-metadata"</code>. This is useful if you don’t want to commit your repository to your git history.</li>
+        <li>Add your repository name with organization to your site’s configuration in the <code class="language-plaintext highlighter-rouge">repository</code> key.</li>
+      </ol>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>repository: username/repo-name
+</pre></td></tr></tbody></table></code></pre></div>      </div>
+      <p>来源链接：<a href="https://github.com/jekyll/github-metadata">https://github.com/jekyll/github-metadata</a></p>
+    </blockquote>
+  </li>
+  <li>这个问题解决之后还不算完，还可能有一个权限问题：
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>SSL_connect <span class="nv">returned</span><span class="o">=</span>1 <span class="nv">errno</span><span class="o">=</span>0 <span class="nv">state</span><span class="o">=</span>SSLv3 <span class="nb">read </span>server certificate B: certificate verify failed
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>就是上边这个玩意儿，解决办法是去 <a href="https://curl.haxx.se/ca/cacert.pem">https://curl.haxx.se/ca/cacert.pem</a> 把文件保存到本地，重名为 <code class="language-plaintext highlighter-rouge">.pem</code> 结尾的文件，然后打开 我的电脑 -&gt; 高级系统设置 -&gt; 环境变量，创建一个新的系统变量：</p>
+
+    <p>SSL_CERT_FILE: your_path\cacert.pem
+重启命令行，再次执行 <code class="language-plaintext highlighter-rouge">jekyll serve</code>，如果碰到这样一个错误：</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>  Please report a bug <span class="k">if </span>this causes problems.
+  C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/bundler-1.13.5/lib/bundler/runtime.rb:40:in <span class="sb">`</span>block <span class="k">in </span>setup<span class="s1">': You have already activated jekyll-sass-converter 1.4.0, but your Gemfile requires jekyll-sass-converter 1.3.0. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
+</span></pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>执行 <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> 就好了 (╯▽╰)。</p>
+  </li>
+</ul>
+
+<h2 id="安装完成">安装完成</h2>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code> 就可以本地预览博客了。</p>
+
+<p>此处略去一万个<code class="language-plaintext highlighter-rouge">我靠</code>。。。</p>
+
+<blockquote>
+  <p><em>原文发表于</em>: <a href="https://silocean.github.io/2016/10/19/windows-install-jekyll/">Windows 下安装 Jekyll 及启动遇到的问题</a> - https://silocean.github.io/2016/10/19/windows-install-jekyll/</p>
+</blockquote>
+
+<p>现访问地址: <a href="https://rinbow.github.io/2016/10/19/windows-install-jekyll.html">https://rinbow.github.io/2016/10/19/windows-install-jekyll.html</a></p>
+
+<p>本文的<a href="https://cdn.jsdelivr.net/gh/Rinbow/rinbow.github.io/_posts/2016-10-19-windows-install-jekyll.md">markdown</a>.</p>
 
 
             <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>文档信息</h3>
     <ul>
         <li>本文作者：<a href="http://localhost:4000" target="_blank">Bravo Yeung大白技术控</a></li>
-        <li>本文链接：<a href="http://localhost:4000/2016/09/19/std-getline-function-usage/" target="_blank">http://localhost:4000/2016/09/19/std-getline-function-usage/</a></li>
+        <li>本文链接：<a href="http://localhost:4000/2016/10/19/windows-install-jekyll/" target="_blank">http://localhost:4000/2016/10/19/windows-install-jekyll/</a></li>
         <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
     </ul>
 </div>
@@ -420,9 +473,9 @@ The sum is 28
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = 'http://localhost:4000/2016/09/19/std-getline-function-usage/';
-        this.page.identifier = '/2016/09/19/std-getline-function-usage/';
-        this.page.title = 'C++中std::getline函数的用法';
+        this.page.url = 'http://localhost:4000/2016/10/19/windows-install-jekyll/';
+        this.page.identifier = '/2016/10/19/windows-install-jekyll/';
+        this.page.title = 'Windows下安装Jekyll及启动遇到的问题';
     };
     var disqus_loaded = false;
     $(function() {

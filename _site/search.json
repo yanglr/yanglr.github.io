@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Visual Studio的智能感应代码段",
+      "category" : "",
+      "tags"     : "Visual Studio, .NET",
+      "url"      : "/2020/07/26/introducing-visual-studio-intellisense-code-snippets/",
+      "date"     : "2020-07-26 06:07:40 +0800"
+    } ,
+  
+    {
       "title"    : "永远的窗口(个人对窗口的拙见)",
       "category" : "windows",
       "tags"     : "mfc, windows",
@@ -201,11 +209,27 @@
     } ,
   
     {
+      "title"    : "C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告",
+      "category" : "leetcode",
+      "tags"     : "leetcode",
+      "url"      : "/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/",
+      "date"     : "2018-06-02 19:18:46 +0800"
+    } ,
+  
+    {
       "title"    : "发现另外一个世界",
       "category" : "life",
       "tags"     : "life",
       "url"      : "/2017/01/18/find-new-world/",
       "date"     : "2017-01-18 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Windows下安装Jekyll及启动遇到的问题",
+      "category" : "",
+      "tags"     : "jekyll, Windows, Ruby",
+      "url"      : "/2016/10/19/windows-install-jekyll/",
+      "date"     : "2016-10-19 00:00:00 +0800"
     } ,
   
     {

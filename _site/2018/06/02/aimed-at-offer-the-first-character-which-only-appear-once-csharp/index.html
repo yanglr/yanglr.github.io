@@ -12,14 +12,12 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
-    <title> C++中std::getline函数的用法 -极客玩家Bravo Yeung博客 </title>
-    <meta name="keywords" content="Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <title> C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告 -极客玩家Bravo Yeung博客 </title>
+    <meta name="keywords" content=".NET, leetcode">
     <meta name="description"
-          content="&lt;h1 id=&quot;stdgetline&quot;&gt;std::getline&lt;/h1&gt;
+          content="剑指Offer 面试题35：第一个只出现一次的字符">
 
-">
-
-    <link rel="canonical" href="http://localhost:4000/2016/09/19/std-getline-function-usage/">
+    <link rel="canonical" href="http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/">
     <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
 
     <!-- Third-Party CSS -->
@@ -231,22 +229,144 @@
 
 
         <div class="content">
-            <section class="jumbotron geopattern" data-pattern-id="C++中std::getline函数的用法">
+            <section class="jumbotron geopattern" data-pattern-id="C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告">
     <div class="container">
         <div id="jumbotron-meta-info">
-            <h1>C++中std::getline函数的用法</h1>
+            <h1>C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告</h1>
             <span class="meta-info">
                 
 
                 
                 
-                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
+                <div class="read-more">
+    <div class="read-more-content author-info">
+        <!-- <h3>Bravo Yeung</h3> -->
+        <div class="author-container">
+            
+            <img style="width: 32px; border-radius: 50%; display: inline-block; margin-right: 7px;" 
+                src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/authors/byavatar.jpg" alt="Bravo Yeung" />
+            
+            <span>
+                <a href="https://geekplayers.com" class="author-link">Bravo Yeung</a>
+
+                
+            </span>
+            
+        </div>
+
+        <div class="author-share">
+            
+            <ul style="padding-top: 10px; list-style-type: none;">
+                
+                <li><a href="https://github.com/yanglr" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+                
+            </ul>
+            
+            
+            
+            <br>
+<style>
+    .resp-sharing-button__link,
+    .resp-sharing-button__icon {
+        display: inline-block
+    }
+
+    .resp-sharing-button__link {
+        text-decoration: none;
+        color: #fff !important;
+        margin: .5em;
+        font-size: 12px
+    }
+
+    .resp-sharing-button {
+        border-radius: 3px;
+        transition: 25ms ease-out;
+        padding: 3px 6px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+
+    .resp-sharing-button__icon svg {
+        width: 1em;
+        height: 1em;
+        margin-right: .4em;
+        vertical-align: top;
+        margin-top: 3px
+    }
+
+    .resp-sharing-button--small svg {
+        margin: 0;
+        vertical-align: middle
+    }
+
+    .resp-sharing-button__icon {
+        stroke: #fff;
+        fill: none
+    }
+
+    .resp-sharing-button__icon--solid,
+    .resp-sharing-button__icon--solidcircle {
+        fill: #fff;
+        stroke: none
+    }
+
+    .resp-sharing-button--twitter {
+        background-color: #55acee
+    }
+
+    .resp-sharing-button--twitter:hover {
+        background-color: #2795e9
+    }
+
+    .resp-sharing-button--facebook {
+        background-color: #3b5998
+    }
+
+    .resp-sharing-button--facebook:hover {
+        background-color: #2d4373
+    }
+
+    .resp-sharing-button--facebook {
+        background-color: #3b5998;
+        border-color: #3b5998
+    }
+
+    .resp-sharing-button--facebook:hover,
+    .resp-sharing-button--facebook:active {
+        background-color: #2d4373;
+        border-color: #2d4373
+    }
+
+    .resp-sharing-button--twitter {
+        background-color: #287ab9;
+        border-color: #1c659b;
+        margin-left: -5px
+    }
+
+    .resp-sharing-button--twitter:hover,
+    .resp-sharing-button--twitter:active {
+        background-color: #2795e9;
+        border-color: #2795e9
+    }
+</style>
+        
+        <a aria-label="Share on Twitter" class="resp-sharing-button__link"
+            href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DFollowButton%26query%3Dhttps%253A%252F%252Ftwitter.com%252FFollow @yanglr%26widget%3DButton&ref_src=twsrc%5Etfw&region=follow_link&screen_name=yanglr&tw_p=followbutton" data-show-count="true" 
+            target="_blank">
+            <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                <div aria-hidden="false" class="resp-sharing-button__icon resp-sharing-button__icon--solid"></div>Follow @yanglr
+            </div>
+        </a>
+        
+        </div>
+    </div>
+</div>
+
                 
 
                 
                                 
                 
-                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/09/19 05:23:07</font>
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2018/06/02 19:18:46</font>
                 
             </span>
             
@@ -259,12 +379,12 @@
                     <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
                     
                         <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                        href="/categories/#C++常用语法">C++常用语法</a>
+                        href="/categories/#leetcode">leetcode</a>
                     
                                     
                 
                 <!-- <p>out index:1</p>
-                <p>size: 7</p> -->
+                <p>size: 8</p> -->
                             
             </p>
 
@@ -287,49 +407,57 @@
         
         <div class="col-md-9 markdown-body">
 
-            <h1 id="stdgetline">std::getline</h1>
+            <p>在线提交网址：
+<a href="https://www.nowcoder.com/practice/e896d0f82f1246a3aa7b232ce38029d4?tpId=37&amp;tqId=21282">https://www.nowcoder.com/practice/e896d0f82f1246a3aa7b232ce38029d4?tpId=37&amp;tqId=21282</a></p>
 
-<p> </p>
+<h3 id="题目描述">题目描述</h3>
 
-<p>在头文件 <string> 中定义.</string></p>
+<p>找出字符串中第一个只出现一次的字符</p>
 
-<p><code class="language-plaintext highlighter-rouge">getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
+<h3 id="输入描述">输入描述:</h3>
 
-<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction"><code class="language-plaintext highlighter-rouge">UnformattedInputFunction</code></a>, 除了<code class="language-plaintext highlighter-rouge">input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>输入一个非空字符串
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>1) 调用str.erase()</p>
+<h3 id="输出描述">输出描述:</h3>
 
-<p>2) <code class="language-plaintext highlighter-rouge">input</code>并把它们添加到<code class="language-plaintext highlighter-rouge">str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>输出第一个只出现一次的字符，如果不存在输出-1
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>a) 上<code class="language-plaintext highlighter-rouge">input</code>文件结束的条件, 在这种情况下, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">eofbit</a>和回报.</p>
+<p>示例1</p>
 
-<p>b) 下一个可用的输入字符<code class="language-plaintext highlighter-rouge">delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code class="language-plaintext highlighter-rouge">input</code>提取进行了测试, 但不会追加到<code class="language-plaintext highlighter-rouge">str</code>.</p>
+<h4 id="输入">输入</h4>
 
-<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code class="language-plaintext highlighter-rouge">getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>并返回.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>asdfasdfo
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>, 并返回.</p>
+<h4 id="输出">输出</h4>
 
-<p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>o
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="参数">参数</h3>
+<p>示例2</p>
 
-<p><strong>input</strong>  -     流中获取数据
- <strong>str</strong>    -     把数据转换成字符串 
- <strong>delim</strong>  -     分隔符</p>
+<h4 id="输入-1">输入</h4>
 
-<h3 id="返回值">返回值</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>aabb
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">input</code></p>
+<h4 id="输出-1">输出</h4>
 
-<h3 id="notes">Notes</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>—1
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin">std::cin</a> » n;, <code class="language-plaintext highlighter-rouge">getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt">operator»</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize">std::streamsize</a> &gt;::max(), ’\n’); before switching to line-oriented input.</p>
+<p><strong>思路</strong>：使用Dictionary&lt;char, int&gt;存储每一个字符出现的次数即可，然后从里面挑出第一个出现次数为1的KeyValuePair的Key即可。</p>
 
-<h3 id="示例">示例</h3>
-
-<p>下面的例子陈述了如何使用getline函数来读取用户输入, 以及如何按行处理文件内容. </p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<p>满足题意的代码如下：</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -350,47 +478,94 @@
 19
 20
 21
-</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;string&gt;
-#include &lt;iostream&gt;
-#include &lt;sstream&gt;
-</span> 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">AimedAtOffer35</span>
 <span class="p">{</span>
-    <span class="c1">// greet the user</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"What is your name? "</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">", nice to meet you.</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
- 
-    <span class="c1">// read file line by line</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="n">input</span><span class="p">;</span>
-    <span class="n">input</span><span class="p">.</span><span class="n">str</span><span class="p">(</span><span class="s">"1</span><span class="se">\n</span><span class="s">2</span><span class="se">\n</span><span class="s">3</span><span class="se">\n</span><span class="s">4</span><span class="se">\n</span><span class="s">5</span><span class="se">\n</span><span class="s">6</span><span class="se">\n</span><span class="s">7</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">line</span><span class="p">;</span> <span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">line</span><span class="p">);</span> <span class="p">)</span> <span class="p">{</span>
-        <span class="n">sum</span> <span class="o">+=</span> <span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Program</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="kt">char</span> <span class="nf">FirstNotRepeatingChar</span><span class="p">(</span><span class="kt">string</span> <span class="n">str</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">char</span> <span class="n">res</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">();</span>
+            <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">dict</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">Length</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+                <span class="k">return</span> <span class="sc">'\0'</span><span class="p">;</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">str</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+            <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(!</span><span class="n">dict</span><span class="p">.</span><span class="nf">ContainsKey</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                    <span class="n">dict</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="m">1</span><span class="p">);</span>
+                <span class="k">else</span>
+                    <span class="n">dict</span><span class="p">[</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]]++;</span>
+            <span class="p">}</span>
+            <span class="n">res</span> <span class="p">=</span> <span class="n">dict</span><span class="p">.</span><span class="nf">FirstOrDefault</span><span class="p">(</span><span class="n">p</span> <span class="p">=&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">Value</span> <span class="p">==</span> <span class="m">1</span><span class="p">).</span><span class="n">Key</span><span class="p">;</span> <span class="c1">//LINQ是C#3.0中引入的，可以直接用，目前C#已到7.0版</span>
+
+            <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="kt">string</span> <span class="n">line</span><span class="p">;</span>
+            <span class="k">while</span> <span class="p">((</span><span class="n">line</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="nf">ReadLine</span><span class="p">())</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">string</span> <span class="n">str</span><span class="p">=</span> <span class="n">line</span><span class="p">;</span>
+                <span class="kt">var</span> <span class="n">ch</span> <span class="p">=</span> <span class="nf">FirstNotRepeatingChar</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ch</span> <span class="p">==</span> <span class="sc">'\0'</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(-</span><span class="m">1</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="k">else</span> <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">ch</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
     <span class="p">}</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">The sum is: "</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>可能的输出:</p>
+<p>顺利AC。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<p>如果输出写成这样代码将输出字符的ASCII码数字，最后无法pass。</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-</pre></td><td class="rouge-code"><pre>What is your name? John Q. Public
-Hello John Q. Public, nice to meet you.
- 
-The sum is 28
+</pre></td><td class="rouge-code"><pre>    <span class="kt">var</span> <span class="n">res</span> <span class="p">=</span> <span class="p">(</span><span class="nf">FirstNotRepeatingChar</span><span class="p">(</span><span class="n">str</span><span class="p">)</span> <span class="p">==</span> <span class="sc">'\0'</span><span class="p">)</span> <span class="p">?</span> <span class="p">-</span><span class="m">1</span> <span class="p">:</span> <span class="nf">FirstNotRepeatingChar</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+    <span class="c1">// var即使改为dynamic，在WriteLine时均会输出其ASCII码数字</span>
+    <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">res</span><span class="p">);</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>关于牛客网OJ中的C#输入，<strong>可参考</strong>：</p>
+
+<p>牛客网在线判题系统使用帮助 <em>站内公告</em> - 牛客网</p>
+
+<p><a href="https://www.nowcoder.com/discuss/276">https://www.nowcoder.com/discuss/276</a></p>
 
 
             <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>文档信息</h3>
     <ul>
         <li>本文作者：<a href="http://localhost:4000" target="_blank">Bravo Yeung大白技术控</a></li>
-        <li>本文链接：<a href="http://localhost:4000/2016/09/19/std-getline-function-usage/" target="_blank">http://localhost:4000/2016/09/19/std-getline-function-usage/</a></li>
+        <li>本文链接：<a href="http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/" target="_blank">http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/</a></li>
         <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
     </ul>
 </div>
@@ -420,9 +595,9 @@ The sum is 28
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = 'http://localhost:4000/2016/09/19/std-getline-function-usage/';
-        this.page.identifier = '/2016/09/19/std-getline-function-usage/';
-        this.page.title = 'C++中std::getline函数的用法';
+        this.page.url = 'http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/';
+        this.page.identifier = '/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/';
+        this.page.title = 'C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告';
     };
     var disqus_loaded = false;
     $(function() {
