@@ -1,7 +1,7 @@
 ---
 layout: post
 category: 架构
-title:  C4模型：架构图应该这么画
+title:  C4模型：架构图应该这么画 - by youly
 tagline: by youly
 tags: 架构
 excerpt: C4模型：架构图应该这么画 - 转载自 公众号blockex
@@ -9,7 +9,7 @@ excerpt: C4模型：架构图应该这么画 - 转载自 公众号blockex
 keywords: 架构, 软件设计
 description: C4模型：架构图应该这么画
 # topmost: true
-author: youly
+
 date: 2019-09-05
 ---
 
