@@ -29,7 +29,7 @@ permalink: /link
 - [博客园](https://www.cnblogs.com/enjoy233/)
 - [CSDN](http://blog.csdn.net/yanglr2010)  - 博客专家，偶尔更新
 - [StackOverflow](https://stackoverflow.com/users/6075331/bravo-yeung)  - 偶尔答技术题
-- [V2EX](https://www.v2ex.com/member/legege007) 
+- [V2EX](https://www.v2ex.com/member/legege007)
 
 ## 其它  
 
