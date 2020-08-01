@@ -13,6 +13,7 @@ permalink: /link
 - [Dotnet9](https://dotnet9.com)
 - [峡州仙士之页](https://cjh0613.github.io/blog/index.html) - 世上本没有路
 - [Python知识圈](https://www.pyzhishiquan.com)
+
 <!-- - [Walterlv - WPF专家(微软MVP)](https://blog.walterlv.com)
 - [云之幻 - UWP](https://blog.richasy.cn)   -->
 
@@ -30,6 +31,7 @@ permalink: /link
 - [CSDN](http://blog.csdn.net/yanglr2010)  - 博客专家，偶尔更新
 - [StackOverflow](https://stackoverflow.com/users/6075331/bravo-yeung)  - 偶尔答技术题
 - [V2EX](https://www.v2ex.com/member/legege007)
+- [黑客派](https://hacpai.com/member/legege007)
 
 ## 其它  
 
