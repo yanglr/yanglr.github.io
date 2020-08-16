@@ -9,6 +9,20 @@ categories:
 tags: [面试题]
 excerpt: 面试题 - svg互动
 ---
+
+<section id="categories" markdown="1">
+
+Markdown部分
+
+A list of categories:
+
+- foo
+- bar
+
+</section>
+
+<div id="html" markdown="0">
+<p>HTML部分</p>
         <p>
             面试题1：你好呀~
         </p>
@@ -33,3 +47,4 @@ excerpt: 面试题 - svg互动
                 </rect>
             </svg>
         </center>
+</div>

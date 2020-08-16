@@ -5,9 +5,63 @@
     <description>极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jul 2020 23:18:15 +0800</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2020 23:18:15 +0800</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2020 01:17:24 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2020 01:17:24 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>面试题测试</title>
+        <description>&lt;section id=&quot;categories&quot;&gt;
+
+  &lt;p&gt;Markdown部分&lt;/p&gt;
+
+  &lt;p&gt;A list of categories:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;foo&lt;/li&gt;
+    &lt;li&gt;bar&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+
+&lt;div id=&quot;html&quot;&gt;
+&lt;p&gt;HTML部分&lt;/p&gt;
+        &lt;p&gt;
+            面试题1：你好呀~
+        &lt;/p&gt;
+        &lt;section style=&quot;height: 180px;overflow-x: hidden;overflow-y: auto;text-align: center;box-sizing: border-box;padding: 10px;border-width: 1px;border-style: solid;border-color: rgb(238, 238, 238);&quot;&gt;
+            &lt;section class=&quot;&quot; style=&quot;border-width: 0px;border-style: none;border-color: initial;box-sizing: border-box;&quot;&gt;
+                &lt;p style=&quot;margin-bottom: 10px;white-space: normal;&quot;&gt;
+                    &lt;br /&gt;
+                &lt;/p&gt;
+                &lt;p style=&quot;text-align:center;margin-bottom: 10px;white-space: normal;&quot; align=&quot;center&quot;&gt;
+                    &lt;strong style=&quot;font-size: 14px;caret-color: red;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;line-height: 22.4px;&quot;&gt;我&amp;nbsp;在&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br /&gt;
+                &lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+        &lt;center class=&quot;&quot; style=&quot;box-sizing: border-box;text-align: center;&quot;&gt;
+            &lt;svg width=&quot;100%&quot; height=&quot;200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;margin-top: -180px;box-sizing: border-box;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);&quot;&gt;
+                &lt;rect width=&quot;100%&quot; height=&quot;200&quot; style=&quot;fill: #fefefe;box-sizing: border-box;&quot;&gt;
+                    &lt;animate attributename=&quot;opacity&quot; begin=&quot;click&quot; dur=&quot;6s&quot; style=&quot;box-sizing: border-box;&quot; from=&quot;1&quot; to=&quot;0&quot; fill=&quot;freeze&quot;&gt;&lt;/animate&gt;
+                &lt;/rect&gt;
+            &lt;/svg&gt;
+        &lt;/center&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 16 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/08/16/interview-test/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/08/16/interview-test/</guid>
+        
+        <category>面试题</category>
+        
+        
+        <category>[&quot;\u9762\u8BD5\u9898&quot;]</category>
+        
+        <category>[&quot;\u9762\u8BD5\u9898&quot;]</category>
+        
+        <category>面试题</category>
+        
+      </item>
     
       <item>
         <title>Visual Studio的智能感应代码段</title>
@@ -4074,171 +4128,6 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
         <pubDate>Wed, 20 Nov 2019 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/11/20/leetcode976-largest-perimeter-triangle/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/11/20/leetcode976-largest-perimeter-triangle/</guid>
-        
-        <category>LeetCode面试题系列</category>
-        
-        
-        <category>Leetcode面试题</category>
-        
-      </item>
-    
-      <item>
-        <title>LeetCode面试系列 第9天：No.345 - 反转字符串中的元音字母</title>
-        <description>&lt;p&gt;上一篇 LeetCode 面试题中，我们分析了一道相对轻松的字符串面试题 - &lt;strong&gt;最后一个单词的长度&lt;/strong&gt;。今天，我们接着来看另一道字符串的算法题吧。&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png&quot; alt=&quot;Leetcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今天要给大家分析的面试题是 LeetCode 上第 &lt;strong&gt;345&lt;/strong&gt; 号问题，&lt;/p&gt;
-
-&lt;p&gt;LeetCode - 345. 反转字符串中的元音字母&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/reverse-vowels-of-a-string&quot;&gt;https://leetcode-cn.com/problems/reverse-vowels-of-a-string&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;题目描述&quot;&gt;题目描述&lt;/h3&gt;
-
-&lt;p&gt;编写一个函数，以字符串作为输入，反转该字符串中的元音字母。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;示例 1:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;hello&quot;
-输出: &quot;holle&quot;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;示例 2:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;输入: &quot;leetcode&quot;
-输出: &quot;leotcede&quot;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;说明:&lt;/strong&gt;
-元音字母不包含字母”y”。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;题目难度：&lt;strong&gt;简单&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;通过次数：17.9K&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;提交次数：37.2K&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;贡献者：LeetCode&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;相关标签&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;双指针&lt;/p&gt;
-
-        &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/tag/two-pointers&quot;&gt;https://leetcode-cn.com/tag/two-pointers&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;字符串&lt;/p&gt;
-
-        &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/tag/string&quot;&gt;https://leetcode-cn.com/tag/string&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;相似题目&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;反转字符串&lt;/p&gt;
-
-        &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/reverse-string&quot;&gt;https://leetcode-cn.com/problems/reverse-string&lt;/a&gt;  难度: &lt;strong&gt;简单&lt;/strong&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;删去字符串中的元音&lt;/p&gt;
-
-        &lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/remove-vowels-from-a-string&quot;&gt;https://leetcode-cn.com/problems/remove-vowels-from-a-string&lt;/a&gt;  难度: &lt;strong&gt;简单&lt;/strong&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;解题思路:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;本题的意思很简单，就是给定一个只含有英文字母的字符串，将其中的元音字母在元音字母原有的位置上进行位置反转，而非元音字母的位置保持不变。&lt;/p&gt;
-
-&lt;p&gt;需要注意的一点是：元音字母应把 a, e, i, o, u 的小写和大写都考虑在内。&lt;/p&gt;
-
-&lt;p&gt;具体的操作如下:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;将原字符串遍历一次，取出其中的元音字母放进一个 list (比如，变量名用 vList) 中&lt;/li&gt;
-  &lt;li&gt;调用函数 reverse() 将 vList 进行反转，得到反转后的 vList&lt;/li&gt;
-  &lt;li&gt;重新遍历原字符串，遇到非元音字母直接输出；遇到元音字母，则从已反转的 vList 中取出需要的元音字母。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;已 AC 代码:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reverseVowels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'E'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'I'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'O'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'U'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'e'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'i'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'o'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'u'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;vList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-                
-        &lt;span class=&quot;n&quot;&gt;vCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;  
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;vList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-        &lt;span class=&quot;n&quot;&gt;res_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;        
-        &lt;span class=&quot;n&quot;&gt;vList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-        &lt;span class=&quot;n&quot;&gt;vOutCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;res_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                
-                &lt;span class=&quot;n&quot;&gt;res_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vOutCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;vOutCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res_str&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;运行结果:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;执行用时: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;84 ms&lt;/code&gt;, 在所有 python3 提交中击败了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;48.79%&lt;/code&gt; 的用户.&lt;/p&gt;
-
-&lt;p&gt;示例代码: &lt;a href=&quot;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-345&quot;&gt;https://github.com/JustDoPython/leetcode-python/tree/master/leetcode-345&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode345.png&quot; alt=&quot;Leetcode&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 13 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/</guid>
         
         <category>LeetCode面试题系列</category>
         

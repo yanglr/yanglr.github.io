@@ -3,6 +3,15 @@
   
     
     <url>
+      <loc>http://localhost:4000/2020/08/16/interview-test/</loc>
+      
+        <lastmod>2020-08-16T00:00:00+08:00</lastmod>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/2020/07/26/introducing-visual-studio-intellisense-code-snippets/</loc>
       
         <lastmod>2020-07-26T06:07:40+08:00</lastmod>
@@ -93,6 +102,15 @@
   
     
     <url>
+      <loc>http://localhost:4000/2019/11/04/dabai-VR/</loc>
+      
+        <lastmod>2019-11-04T15:05:00+08:00</lastmod>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/2019/10/30/python-leetcode58-length-of-last-word/</loc>
       
         <lastmod>2019-10-30T00:00:00+08:00</lastmod>
@@ -159,6 +177,15 @@
       <loc>http://localhost:4000/2019/09/09/python-leetcode89-gary-code/</loc>
       
         <lastmod>2019-09-09T00:00:00+08:00</lastmod>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/2019/09/05/c4-model-arch-digram-show-draw-like-this/</loc>
+      
+        <lastmod>2019-09-05T00:00:00+08:00</lastmod>
       
     </url>
     
@@ -537,7 +564,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -546,7 +573,7 @@
     <url>
       <loc>http://localhost:4000/about</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -555,7 +582,7 @@
     <url>
       <loc>http://localhost:4000/algo</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -564,7 +591,7 @@
     <url>
       <loc>http://localhost:4000/arch</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -573,7 +600,7 @@
     <url>
       <loc>http://localhost:4000/archives.html</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -582,7 +609,7 @@
     <url>
       <loc>http://localhost:4000/blog/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -591,7 +618,7 @@
     <url>
       <loc>http://localhost:4000/categories/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -600,7 +627,7 @@
     <url>
       <loc>http://localhost:4000/csharp</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -609,7 +636,7 @@
     <url>
       <loc>http://localhost:4000/docker</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -618,7 +645,7 @@
     <url>
       <loc>http://localhost:4000/dotnet</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -627,7 +654,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -636,7 +663,7 @@
     <url>
       <loc>http://localhost:4000/geektime</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -645,7 +672,7 @@
     <url>
       <loc>http://localhost:4000/gitchat</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -654,7 +681,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -663,7 +690,7 @@
     <url>
       <loc>http://localhost:4000/it</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -672,7 +699,7 @@
     <url>
       <loc>http://localhost:4000/k8s</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -681,7 +708,7 @@
     <url>
       <loc>http://localhost:4000/leetcode</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -690,7 +717,7 @@
     <url>
       <loc>http://localhost:4000/life</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -699,7 +726,7 @@
     <url>
       <loc>http://localhost:4000/link</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -708,7 +735,7 @@
     <url>
       <loc>http://localhost:4000/mongodb</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -717,7 +744,7 @@
     <url>
       <loc>http://localhost:4000/open-source</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -726,7 +753,7 @@
     <url>
       <loc>http://localhost:4000/payment/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -735,7 +762,7 @@
     <url>
       <loc>http://localhost:4000/python</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -744,7 +771,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -753,7 +780,7 @@
     <url>
       <loc>http://localhost:4000/sitemap.xml</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -762,7 +789,7 @@
     <url>
       <loc>http://localhost:4000/tools/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -771,7 +798,7 @@
     <url>
       <loc>http://localhost:4000/wpf</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -780,7 +807,7 @@
     <url>
       <loc>http://localhost:4000/zsxq</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -789,7 +816,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/style.css</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -798,7 +825,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/bootstrap/CHANGELOG/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -807,7 +834,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/hover/HISTORY/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -816,7 +843,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/octicons/CHANGELOG/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -825,7 +852,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/primer-markdown/CLA/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -834,7 +861,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/bootstrap/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -843,7 +870,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/flag-icon-css/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -852,7 +879,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/geopattern/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -861,7 +888,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/jquery/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -870,7 +897,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/octicons/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -879,7 +906,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/octicons/octicons/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -888,7 +915,7 @@
     <url>
       <loc>http://localhost:4000/bower_components/underscore/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -897,7 +924,7 @@
     <url>
       <loc>http://localhost:4000/page2/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -906,7 +933,7 @@
     <url>
       <loc>http://localhost:4000/page3/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -915,7 +942,7 @@
     <url>
       <loc>http://localhost:4000/page4/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
@@ -924,7 +951,16 @@
     <url>
       <loc>http://localhost:4000/page5/</loc>
       
-        <lastmod>2020-07-29T23:18:15+08:00</lastmod>
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/page6/</loc>
+      
+        <lastmod>2020-08-17T01:17:24+08:00</lastmod>
       
     </url>
     
