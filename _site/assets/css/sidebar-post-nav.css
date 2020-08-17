@@ -30,3 +30,10 @@
 .col-md-3 {
     position: static; /* fix strange behavior */
 }
+
+.jumbotron h1 {
+    font-size: 45px !important;
+}
+.author-link a:hover {
+    color: #7B68EE !important;
+}

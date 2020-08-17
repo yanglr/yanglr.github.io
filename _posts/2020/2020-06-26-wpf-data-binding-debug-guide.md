@@ -1,14 +1,18 @@
 ---
 layout: post
 category: wpf
-date: 2020-06-26 22:14:09
 title:  WPF中的Data Binding调试指南
 tagline: by 萌较瘦
 tags: wpf
 excerpt: WPF中的Data Binding调试方法和工具汇总
+
 keywords: .NET, wpf, xaml
+description: WPF中的Data Binding调试方法和工具汇总
 topmost: true
 author: bravo_yeung
+platform: '博客园'
+sourcelink: https://www.cnblogs.com/enjoy233/p/WPF-data-binding-debug-guide.html
+date: 2020-06-26 22:14:09
 ---
 
 大家平时做WPF开发，相信用Visual studio的小伙伴比较多。XAML里面曾经在某些特殊版本的Visual Studio中是可以加断点进行调试的，不过目前多数版本都不支持在XAML加断点来调试。

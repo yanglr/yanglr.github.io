@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 
 <!-- simple jekyll search -->
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
@@ -18,8 +19,8 @@
 
 ">
 
-    <link rel="canonical" href="https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+    <link rel="canonical" href="http://localhost:4000/2016/10/01/num-array-splice-to-min-num/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -27,7 +28,6 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
     <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
-    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
     <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
 
     <!-- My CSS -->
@@ -156,10 +156,6 @@
                            target=""
                      >WPF</a></li>
                     
-                    <li><a href="http://enjoy233.cnblogs.com" 
-                           target="_blank"
-                     >.NET 极客技术</a></li>
-                    
                 </ul>
                 
             </div>
@@ -200,6 +196,27 @@
             </div>
             
             <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
                 <a href="/about.html"
                    target="_self"
                    title="About">
@@ -220,27 +237,58 @@
             <h1>剑指offer面试题33 - 把数组排成最小的数</h1>
             <span class="meta-info">
                 
+
                 
-                <span class="octicon octicon-calendar"></span> 2016/10/01 09:19:07
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/10/01 09:19:07</font>
                 
             </span>
-            <!--<p>
-                
-                分类:
-                
-                <a href="/oj">oj</a>
-                &nbsp;
-                
-                <a href="/"></a>
-                &nbsp;
-                
-                <a href="/"></a>
-                &nbsp;
-                
-                <a href="/"></a>
+            
+            <p>
                 
                 
-            </p>-->
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#oj">oj</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#编程训练">编程训练</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 2</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 34</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 2</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:4</p>
+                <p>size: 4</p> -->
+                            
+            </p>
+
         </div>
     </div>
 </section>
@@ -355,8 +403,8 @@ sort中的比较函数comp()要声明为静态成员函数或全局函数，不�
             <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>文档信息</h3>
     <ul>
-        <li>本文作者：<a href="https://geekplayers.com" target="_blank">Bravo Yeung大白技术控</a></li>
-        <li>本文链接：<a href="https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/" target="_blank">https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/</a></li>
+        <li>本文作者：<a href="http://localhost:4000" target="_blank">Bravo Yeung大白技术控</a></li>
+        <li>本文链接：<a href="http://localhost:4000/2016/10/01/num-array-splice-to-min-num/" target="_blank">http://localhost:4000/2016/10/01/num-array-splice-to-min-num/</a></li>
         <li>版权声明：本文为博主原创或转载文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。）</li>
     </ul>
 </div>
@@ -386,7 +434,7 @@ sort中的比较函数comp()要声明为静态成员函数或全局函数，不�
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = 'https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/';
+        this.page.url = 'http://localhost:4000/2016/10/01/num-array-splice-to-min-num/';
         this.page.identifier = '/2016/10/01/num-array-splice-to-min-num/';
         this.page.title = '剑指offer面试题33 - 把数组排成最小的数';
     };
@@ -418,19 +466,21 @@ sort中的比较函数comp()要声明为静态成员函数或全局函数，不�
 
   
         <div id="gitalk-container"></div>
-        <script src="/assets/js/gitalk.min.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
         <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
         var gitalk = new Gitalk({
-            id: '/2016/10/01/num-array-splice-to-min-num/',
+            id: title,
             clientID: '22eb6462c987e7a79860',
             clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
             repo: 'blog-comments',
             owner: 'yanglr',
             admin: ['yanglr'],
-            labels: ['gitment'],
-            perPage: 50,
+            labels: ['gitalk'],
+            perPage: 50
         })
-        gitalk.render('gitalk-container')
+        gitalk.render('gitalk-container');
         </script>
   
 
@@ -509,6 +559,21 @@ sort中的比较函数comp()要声明为静态成员函数或全局函数，不�
 
 </article>
 
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
         </div>
 
     

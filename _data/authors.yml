@@ -1,7 +1,7 @@
 bravo_yeung:
   name: Bravo Yeung
   site: https://geekplayers.com
-  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/byavatar.jpg
+  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/authors/byavatar.jpg
   # avatar: /avatat.jpg
   # bio: ".NET开发者"
   # email: legege007@126.com
@@ -19,7 +19,12 @@ bravo_yeung:
     # - title: "facebook"
     #   url: "https://www.facebook.com/adrian.matei.90"
 
+edison_zhou:
+  name: Edison Zhou
+  site: https://home.cnblogs.com/u/edisonchou
+  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/authors/eds.jpg
+
 helloj2ee:
   name: Helloj2ee
   site: https://home.cnblogs.com/u/helloj2ee
-  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/cnblogs_logo.jpg
+  avatar_url: //cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/authors/cnblogs_logo.jpg

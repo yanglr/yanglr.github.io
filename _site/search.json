@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "面试题测试",
+      "category" : "",
+      "tags"     : "面试题",
+      "url"      : "/2020/08/16/interview-test/",
+      "date"     : "2020-08-16 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Visual Studio的智能感应代码段",
+      "category" : "",
+      "tags"     : "Visual Studio, .NET",
+      "url"      : "/2020/07/26/introducing-visual-studio-intellisense-code-snippets/",
+      "date"     : "2020-07-26 06:07:40 +0800"
+    } ,
+  
+    {
       "title"    : "永远的窗口(个人对窗口的拙见)",
       "category" : "windows",
       "tags"     : "mfc, windows",
@@ -14,6 +30,22 @@
       "tags"     : "wpf",
       "url"      : "/2020/07/02/inside-xaml/",
       "date"     : "2020-07-02 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "WPF中的Data Binding调试指南",
+      "category" : "wpf",
+      "tags"     : "wpf",
+      "url"      : "/2020/06/27/wpf-data-binding-debug-guide/",
+      "date"     : "2020-06-27 06:14:09 +0800"
+    } ,
+  
+    {
+      "title"    : "剑指Offer | 二维数组中的查找",
+      "category" : "",
+      "tags"     : ".NET, leetcode",
+      "url"      : "/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/",
+      "date"     : "2020-06-17 15:30:00 +0800"
     } ,
   
     {
@@ -38,6 +70,30 @@
       "tags"     : "LeetCode面试题系列",
       "url"      : "/2019/11/25/python-leetcode645-set-mismatch/",
       "date"     : "2019-11-25 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "LeetCode面试系列 第10天：No.976 - 三角形的最大周长",
+      "category" : "Leetcode面试题",
+      "tags"     : "LeetCode面试题系列",
+      "url"      : "/2019/11/20/leetcode976-largest-perimeter-triangle/",
+      "date"     : "2019-11-20 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "LeetCode面试系列 第9天：No.345 - 反转字符串中的元音字母",
+      "category" : "Leetcode面试题",
+      "tags"     : "LeetCode面试题系列",
+      "url"      : "/2019/11/13/leetcode345-reverse-vowels-of-a-string/",
+      "date"     : "2019-11-13 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "大白VR，成为头号玩家",
+      "category" : "大白VR大白VR",
+      "tags"     : "大白VR, 大白, VR",
+      "url"      : "/2019/11/04/dabai-VR/",
+      "date"     : "2019-11-04 15:05:00 +0800"
     } ,
   
     {
@@ -105,6 +161,14 @@
     } ,
   
     {
+      "title"    : "C4模型：架构图应该这么画 - by youly",
+      "category" : "架构",
+      "tags"     : "架构",
+      "url"      : "/2019/09/05/c4-model-arch-digram-show-draw-like-this/",
+      "date"     : "2019-09-05 00:00:00 +0800"
+    } ,
+  
+    {
       "title"    : "给大家在极客时间申请了一些福利。",
       "category" : "geektime",
       "tags"     : "geektime",
@@ -169,11 +233,27 @@
     } ,
   
     {
+      "title"    : "C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告",
+      "category" : "leetcode",
+      "tags"     : "leetcode",
+      "url"      : "/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/",
+      "date"     : "2018-06-02 19:18:46 +0800"
+    } ,
+  
+    {
       "title"    : "发现另外一个世界",
       "category" : "life",
       "tags"     : "life",
       "url"      : "/2017/01/18/find-new-world/",
       "date"     : "2017-01-18 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Windows下安装Jekyll及启动遇到的问题",
+      "category" : "",
+      "tags"     : "jekyll, Windows, Ruby",
+      "url"      : "/2016/10/19/windows-install-jekyll/",
+      "date"     : "2016-10-19 00:00:00 +0800"
     } ,
   
     {

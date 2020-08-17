@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 
 <!-- simple jekyll search -->
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
@@ -16,8 +17,8 @@
     <meta name="description"
           content="极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~">
 
-    <link rel="canonical" href="https://geekplayers.com/">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="https://geekplayers.com/feed.xml">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家Bravo Yeung-大白技术控" href="http://localhost:4000/feed.xml">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -25,7 +26,6 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
     <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
-    <link rel="stylesheet" href="//geekplayers.com/assets/css/gitalk.css">
     <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
 
     <!-- My CSS -->
@@ -156,10 +156,6 @@
                            target=""
                      >WPF</a></li>
                     
-                    <li><a href="http://enjoy233.cnblogs.com" 
-                           target="_blank"
-                     >.NET 极客技术</a></li>
-                    
                 </ul>
                 
             </div>
@@ -200,6 +196,27 @@
             </div>
             
             <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
                 <a href="/about.html"
                    target="_self"
                    title="About">
@@ -234,186 +251,718 @@
         </div>
     </div>
 </section>
+
 <section class="content container">
-
     <div class="row">
-
         <!-- Post List -->
         <div class="col-md-8">
-
             <ol class="post-list">
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/">永远的窗口(个人对窗口的拙见)</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客园博客
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2020/07/05 19:06:50
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2020/07/02/inside-xaml/">深入浅出XAML</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            深入浅出XAML - 转载自《程序员杂志》
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2020/07/02 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2020/03/19/wpf-study-note-by-xiyuanmore/">WPF学习笔记（一） - by 邹溪源</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            WPF学习笔记（一） - 转载自邹溪源的博客园博客
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2020/03/19 05:26:20
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/">LeetCode面试系列 第12天：No.977 - 有序数组的平方</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            上一篇 LeetCode 面试题中，我们分析了一道集合相关的数学题。现在我们再来看一个排序相关的面试题吧~
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/11/25 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/">LeetCode面试系列 第11天：No.645 - 错误的集合</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            上一篇 LeetCode 面试题中，我们分析了一道简单的几何数学题。今天我们来分析一道集合相关的数学题。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/11/25 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/">LeetCode面试系列 第8天：No.58 - 最后一个单词的长度</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            上一篇 LeetCode 面试题中，我们分析了一道将数学和字符串结合起来的的面试题，今天我们再来分析了一道轻松的字符串面试题吧~
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/10/30 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/">LeetCode面试系列 第7天：No.13 - 罗马数字转整数</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            上一篇 LeetCode 面试题中，我们分析了一道轻松的字符串面试题 - 回文数。今天我们来分析一道将数学和字符串结合起来的的面试题。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/10/26 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/">LeetCode面试系列 第6天：No.9 - 回文数</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            上一篇面试题中，我们使用了 埃拉托斯特尼筛法 去统计给定范围内质数的个数(LeetCode No.204)，还是有点烧脑的。今天我们来分析一道相对轻松的字符串面试题吧，恰好大家从Python 100天中学到的字符串知识可以派上用场。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/10/19 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/10/04/python-leetcode204-count-primes/">LeetCode面试系列 第5天：No.204 - 统计质数</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            在上篇算法题的文章中，我们介绍了 LeetCode 中的一道数学题 - 快乐数 。今天，我们来聊聊质数(英文是Prime，也称为素数)相关的面试题。以前很多编程书上会有个经典问题，即判断一个数是否是质数，在那之后大家应该对判定质数的逻辑有了一定的认识。今天呢，我们来解决一个进阶问题，如何计算一个区间内素数(质数)的数量。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/10/04 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/09/28/python-leetcode202-happy-number/">LeetCode面试系列 第4天：No.202 - 快乐数</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            或许你不知道的是，Leetcode 中是有很多 数学题 的，本文要解析的题 快乐数 就是其中到一个典型问题，本题将基于数据结构 set 来求解。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/09/28 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/09/14/python-leetcode67-add-binary/">LeetCode面试系列 第3天：No.67 - 二进制数求和</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 二进制之和 来分析，其中涉及到的主要知识是 Python 中的 进制转换，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/09/14 00:00:00
-                        </p>
-                    </li>
-                  
                 
-                 
-                    <li class="post-list-item">
-                        <h2 class="post-list-title">
-                            <b><a class="hvr-underline-from-center" href="https://geekplayers.com/2019/09/13/python-leetcode136-single-number/">LeetCode面试系列 第2天：No.136 - 只出现一次的数</a></b>
-                        </h2>
-                        <p class="post-list-description">
-                            Leetcode面试题系列
-                        </p>
-                        <p class="post-list-meta">
-                            <span class="octicon octicon-calendar"></span> 2019/09/13 00:00:00
-                        </p>
-                    </li>
-                  
+                
+                
+                
+                
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/06/27/wpf-data-binding-debug-guide/"><span style="color: red;">[置顶]</span>
+                            <font style="line-height: 1.5 !important;">WPF中的Data Binding调试指南</font></a>
+                    </h2>
+                    <p class="post-list-description">
+                        WPF中的Data Binding调试方法和工具汇总
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/06/27 06:14:09&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#wpf">wpf</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/03/31/developer-benefits_github-open-source-projects-of-microsoft/"><span style="color: red;">[置顶]</span>
+                            <font style="line-height: 1.5 !important;">一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收</font></a>
+                    </h2>
+                    <p class="post-list-description">
+                        大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/03/31 03:43:10&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#github">github</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#微软">微软</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/08/16/interview-test/">面试题测试</a>
+                    </h2>
+                    <p class="post-list-description">
+                        面试题 - svg互动
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/08/16 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#面试题">面试题</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/07/26/introducing-visual-studio-intellisense-code-snippets/">Visual Studio的智能感应代码段</a>
+                    </h2>
+                    <p class="post-list-description">
+                        Visual Studio的智能感应代码段 - 转载自《程序员杂志》
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/07/26 06:07:40&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#Visual Studio">Visual Studio</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#.NET">.NET</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/07/05/forever-window-personal-view-on-window/">永远的窗口(个人对窗口的拙见)</a>
+                    </h2>
+                    <p class="post-list-description">
+                        永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客园博客
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/07/05 19:06:50&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#windows">windows</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/07/02/inside-xaml/">深入浅出XAML</a>
+                    </h2>
+                    <p class="post-list-description">
+                        深入浅出XAML - 转载自《程序员杂志》
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/07/02 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#life">life</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#xaml">xaml</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#wpf">wpf</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/">剑指Offer | 二维数组中的查找</a>
+                    </h2>
+                    <p class="post-list-description">
+                        剑指Offer的C#实战之二维数组中的查找
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/06/17 15:30:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#.NET">.NET</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#leetcode">leetcode</a>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#算法面试">算法面试</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2020/03/19/wpf-study-note-by-xiyuanmore/">WPF学习笔记（一） - by 邹溪源</a>
+                    </h2>
+                    <p class="post-list-description">
+                        WPF学习笔记（一） - 转载自邹溪源的博客园博客
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2020/03/19 05:26:20&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#wpf">wpf</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/11/25/python-leetcode977-squares-of-a-sorted-array/">LeetCode面试系列 第12天：No.977 - 有序数组的平方</a>
+                    </h2>
+                    <p class="post-list-description">
+                        上一篇 LeetCode 面试题中，我们分析了一道集合相关的数学题。现在我们再来看一个排序相关的面试题吧~
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/11/25 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#Leetcode面试题">Leetcode面试题</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/11/25/python-leetcode645-set-mismatch/">LeetCode面试系列 第11天：No.645 - 错误的集合</a>
+                    </h2>
+                    <p class="post-list-description">
+                        上一篇 LeetCode 面试题中，我们分析了一道简单的几何数学题。今天我们来分析一道集合相关的数学题。
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/11/25 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#Leetcode面试题">Leetcode面试题</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/11/20/leetcode976-largest-perimeter-triangle/">LeetCode面试系列 第10天：No.976 - 三角形的最大周长</a>
+                    </h2>
+                    <p class="post-list-description">
+                        LeetCode面试No.976 - 三角形的最大周长
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/11/20 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#Leetcode面试题">Leetcode面试题</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/">LeetCode面试系列 第9天：No.345 - 反转字符串中的元音字母</a>
+                    </h2>
+                    <p class="post-list-description">
+                        LeetCode面试No.345 - 反转字符串中的元音字母
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/11/13 00:00:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#Leetcode面试题">Leetcode面试题</a>
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
+                
+                
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="http://localhost:4000/2019/11/04/dabai-VR/">大白VR，成为头号玩家</a>
+                    </h2>
+                    <p class="post-list-description">
+                        大白VR，成为头号玩家
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> 2019/11/04 15:05:00&nbsp;
+                        </span>
+                        
+                        
+                        
+                        <span class="octicon octicon-file-directory"></span>
+                        
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="/categories/#大白VR">大白VR</a>
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                        
+                        
+                        
+
+                        
+                    </p>
+                </li>
+                
                 
             </ol>
-
-            <!-- Pagination -->
+            <!-- pagination -->
             
 <div class="pagination text-align">
     <div class="btn-group">
@@ -443,6 +992,10 @@
         <a href="/page5" class="btn btn-outline">5</a>
         
         
+        
+        <a href="/page6" class="btn btn-outline">6</a>
+        
+        
 
         
         <a href="/page2" class="btn btn-outline">&raquo;</a>
@@ -452,12 +1005,11 @@
 </div>
 
 
-
         </div>
-
+        <!-- side repos -->
         <div class="col-md-4">
-            <div id="search-demo-container">
-    <input type="text" id="search-input" placeholder="search..." style="width: 200px;">
+            <div id="search-demo-container" style="margin:5px; padding-left: 40px; padding-right: 32px;">
+    <input type="text" id="search-input" placeholder="Search..." style="width:96%; min-height: 35px;">
     <ul id="results-container"></ul>
 </div>
 
@@ -465,7 +1017,7 @@
     
     <h3>欢迎关注我的微信公众号</h3>
     <img style="border:1px solid #dddddd;height:192px;width:192px" src="//geekplayers.com/assets/images/dotnet.jpg"
-        alt="闷骚的程序员" />
+         alt="闷骚的程序员" />
     
 </div>
 
@@ -582,11 +1134,9 @@
     })
 </script>
         </div>
-
     </div>
 
 </section>
-
 
         </div>
 

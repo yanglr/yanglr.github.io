@@ -12,7 +12,7 @@ excerpt: Leetcode面试题系列
 
 大家是否还记得电影黑客帝国中的数字雨林的场景？事实上，计算机底层数据的存储和运算都是二进制的，因而面试题环节中面试官也经常会问到二进制相关问题。
 
-![matrix](http://www.justdopython.com/assets/images/2019/python/matrix-01.gif)
+![matrix](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/matrix-01.gif)
 
 比较典型的一个问题是 Leetcode 上第 89 号问题，
 
@@ -60,7 +60,7 @@ Leetcode 89. Gray Code
 
 格雷码有个相应的数学公式，整数 *i*  的格雷码是 i^(i/2) 。而此题并没要求返回结果中的值的严格顺序。
 
-![grayCode](http://www.justdopython.com/assets/images/2019/python/grayCode.png)
+![grayCode](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/grayCode.png)
 
 于是只需遍历从 0 到 2^n - 1 的所有整数 *i*，使用公式将其转换为格雷码，添加到 List 中即可。
 
@@ -75,7 +75,7 @@ class Solution:
         return res
 ```
 
-![code](http://www.justdopython.com/assets/images/2019/python/leetcode89-code.jpg)
+![code](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/leetcode89-code.jpg)
 
 如果需要在本地测试，需要先在代码开头引入`from typing import List`，然后实例化 `Solution`，最后调用相应的 method 即可。完整代码如下:
 

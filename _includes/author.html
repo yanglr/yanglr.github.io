@@ -11,17 +11,29 @@
             {% endif %}
             <span>
                 <a href="{{ author.site }}" class="author-link">{{author.name}}</a>
+
+                {% if page.platform %}
+                {% unless page.platform contains '公众号' %}
+                <span style="color: #ddd;">首发于: 
+                    <a style="color: #164468; text-decoration: underline;" href="{{ page.sourcelink }}">{{ page.platform %}}</a>
+                </span>
+                {% endunless %}
+                {% endif %}
             </span>
             {% if author.bio %}
             <div class="author-bio">{{author.bio}}</div>
             {% endif %}
         </div>
+
         <div class="author-share">
+            {% if author.social %}
             <ul style="padding-top: 10px; list-style-type: none;">
                 {% for network in author.social %}
                 <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
                 {% endfor %}
             </ul>
+            {% endif %}
+            
             {% if author.github %}
             <a aria-label="Follow @{{author.github}} on GitHub" data-style="mega"
                 href="https://github.com/{{author.github}}" class="github-button">Follow @{{author.github}}</a>
