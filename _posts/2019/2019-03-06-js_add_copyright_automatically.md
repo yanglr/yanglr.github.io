@@ -71,8 +71,9 @@ jQuery(document).on('copy', function(e)
     }
 </script>
 ```
+
 ### 方法3:
-```JavaScript
+```javascript
 <script  type="text/javascript">
     var selfLogin = false;
     var follow = $('#profile_block').find('#p_b_follow');
