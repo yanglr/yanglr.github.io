@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 半佛仙人：神圣的存款
-categories: [存款, geekplayers.com]
+categories: 
+- [存款, geekplayers.com]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [半佛仙人, geekplayers.com]
