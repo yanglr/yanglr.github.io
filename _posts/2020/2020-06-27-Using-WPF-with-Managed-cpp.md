@@ -1,14 +1,15 @@
 ---
 layout: post
 title: 基于托管的C++来使用WPF - Using WPF with Managed C++
-categories: [WPF, C++]
+categories: 
+- [WPF, C++]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [WPF, C++]
 excerpt: 基于托管的C++来使用WPF - Using WPF with Managed C++
 ---
 
-基于托管的C++来使用WPF - Using WPF with Managed C++
+# 基于托管的C++来使用WPF - Using WPF with Managed C++
 
 Posted by **Zeeshan Amjad**
 

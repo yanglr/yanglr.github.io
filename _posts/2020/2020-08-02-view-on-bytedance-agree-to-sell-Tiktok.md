@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 如何看待媒体称「字节跳动同意放弃TikTok股份，以达成在美交易」？会给中国互联网带来哪些影响？
-categories: [tiktok, 字节跳动, 社会价值观]
+categories:
+- [tiktok, 字节跳动, 社会价值观]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [tiktok, 字节跳动]

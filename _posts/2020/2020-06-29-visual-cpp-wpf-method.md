@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Visual C++中创建WPF项目的方法
-categories: [WPF, C++]
+categories: 
+- [WPF, C++]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [WPF, C++]

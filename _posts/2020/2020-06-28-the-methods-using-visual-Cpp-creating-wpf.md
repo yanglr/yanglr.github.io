@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 用Visual C++创建WPF项目的三种主要方法
-categories: [WPF, C++]
+categories: 
+- [WPF, C++]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [WPF, C++]
