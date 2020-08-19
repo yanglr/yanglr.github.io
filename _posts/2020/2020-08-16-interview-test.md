@@ -22,29 +22,54 @@ A list of categories:
 </section>
 
 <div id="html" markdown="0">
-<p>HTML部分</p>
-        <p>
-            面试题1：你好呀~
-        </p>
-        <section
-            style="height: 180px;overflow-x: hidden;overflow-y: auto;text-align: center;box-sizing: border-box;padding: 10px;border-width: 1px;border-style: solid;border-color: rgb(238, 238, 238);">
-            <section class="" style="border-width: 0px;border-style: none;border-color: initial;box-sizing: border-box;">
-                <p style="margin-bottom: 10px;white-space: normal;">
-                    <br />
-                </p>
-                <p style="text-align:center;margin-bottom: 10px;white-space: normal;" align="center">
-                    <strong style="font-size: 14px;caret-color: red;"><span style="font-size: 18px;"><span
-                                style="line-height: 22.4px;">我&nbsp;在</span></span></strong> &nbsp; &nbsp; &nbsp;<br />
-                </p>
+    <p>HTML部分</p>
+
+    <section style="width: 100%;vertical-align: top;box-sizing: border-box;">
+        <section style="text-align: left;font-size: 14px;color: rgb(95, 104, 117);box-sizing: border-box;">
+            <p style="box-sizing: border-box;">
+                <strong style="box-sizing: border-box;">点击方框，查看答案</strong>
+            </p>
+        </section>
+
+        <section style="text-align: center;margin-right: 0%;margin-bottom: 10px;margin-left: 0%;box-sizing: border-box;">
+            <section
+                style="height: 200px;vertical-align: top;overflow: hidden;border-radius: 0px;border-width: 0px;border-style: none;border-color: rgb(62, 62, 62);box-shadow: rgb(255, 193, 7) 0px 0px 0px;box-sizing: border-box;">
+                <section style="box-sizing: border-box;">
+                    <section
+                        style="width: 100%;vertical-align: top;overflow: hidden;align-self: flex-start;font-family: -apple-system-font, BlinkMacSystemFont, ‘Helvetica Neue‘, ‘PingFang SC‘, ‘Hiragino Sans GB‘, ‘Microsoft YaHei UI‘, ‘Microsoft YaHei‘, Arial, sans-serif;letter-spacing: 0.034em;box-sizing: border-box;">
+                        <section style="height: 0px;overflow: visible;box-sizing: border-box;">
+                            <section style="width: 100%;vertical-align: top;box-sizing: border-box;">
+                                <section style="text-align: left;box-sizing: border-box; border-width: 1px; border-color:lightgrey; border-style: solid;">
+                                    <p style="box-sizing: border-box; " >
+                                        本题答案便是我啦，哈哈~
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                        <section style="height: 0px;overflow: visible;box-sizing: border-box;">
+                            <section style="width: 100%;vertical-align: top;height: auto;box-sizing: border-box;">
+                                <section style="height: 0px;box-sizing: border-box;">
+                                    <svg opacity="1"
+                                        style="box-sizing: border-box;transform: rotateZ(0deg);background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;background-color: rgb(254, 254, 254);width: 100%; background:lightblue;"
+                                        viewBox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+
+                                        <animate style="box-sizing: border-box;" fill="freeze" attributeName="opacity" begin="click" from="1" to="0"
+                                            dur="0.3" restart="never"></animate>
+                                        <animate style="box-sizing: border-box;" fill="freeze" attributeName="width" begin="click + 0.3s" from="1" to="0"
+                                            dur="0.01" restart="never"></animate>
+                                    </svg>
+                                </section>
+
+                            </section>
+                        </section>
+                        <section style="height: 0px;padding-top: 100%;box-sizing: border-box;line-height: 0;">
+                            <section style="line-height: 0;width: 0px;"><svg viewBox="0 0 1 1"
+                                    style="vertical-align:top;"></svg></section>
+                        </section>
+                    </section>
+                </section>
             </section>
         </section>
-        <center class="" style="box-sizing: border-box;text-align: center;">
-            <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: -180px;box-sizing: border-box;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);">
-                <rect width="100%" height="200" style="fill: #fefefe;box-sizing: border-box;">
-                    <animate attributename="opacity" begin="click" dur="6s" style="box-sizing: border-box;" from="1" to="0"
-                        fill="freeze"></animate>
-                </rect>
-            </svg>
-        </center>
+    </section>
+
 </div>
