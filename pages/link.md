@@ -41,4 +41,3 @@ permalink: /link
 - 网站名称：tinylab  
 - 网站链接：<http://tinylab.com>
 - 网站描述：泰晓 的个人博客
-

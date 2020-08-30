@@ -20,7 +20,7 @@ github_url: https://github.com/yanglr
 url: https://geekplayers.com
 enforce_ssl: geekplayers.com
 
-permalink: /:year/:month/:day/:title/
+permalink: /:title.html
 
 ## Gem
 plugins:
