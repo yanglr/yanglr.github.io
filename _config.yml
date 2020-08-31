@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  极客玩家Bravo Yeung-大白技术控
+title:  极客玩家大白
 subtitle: "大白爱技术，爱生活"
-name: Bravo Yeung大白技术控
+name: 大白技术控
 email: legege007@126.com
-description: "极客玩家Bravo Yeung的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~"
-keywords: Python, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客
+description: "极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~"
+keywords: Python, 大白, VR, 大白技术控, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客
 encoding: "utf-8"
 favicon: favicon.ico
 
@@ -71,7 +71,7 @@ paginate_path: 'page:num'
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Bravo Yeung大白技术控
+author: 大白技术控
 organization: 
 organization_url: 
 github_username: yanglr
