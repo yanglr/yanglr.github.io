@@ -13,6 +13,7 @@ permalink: /link
 - [Dotnet9](https://dotnet9.com)
 - [峡州仙士之页](https://cjh0613.github.io/blog/index.html) - 世上本没有路
 - [Python知识圈](https://www.pyzhishiquan.com)
+- [林德熙 - 微软MVP Windows 应用开发方向](https://lindexi.gitee.io/) - <https://blog.lindexi.com/> - <https://lindexi.blog.csdn.net/>
 
 <!-- - [Walterlv - WPF专家(微软MVP)](https://blog.walterlv.com)
 - [云之幻 - UWP](https://blog.richasy.cn)   -->
@@ -40,4 +41,3 @@ permalink: /link
 - 网站名称：tinylab  
 - 网站链接：<http://tinylab.com>
 - 网站描述：泰晓 的个人博客
-
