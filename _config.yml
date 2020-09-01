@@ -221,7 +221,7 @@ side_bar_repo_limit: 6 # Number of repos to show
 #     tracking_id : ''  # ex. UA-72165600-X
 
 baidu-analysis-id: 461d846fc2f085c6557e2a4e22b02277
-google_analytics: UA-176595919-1
+google_analytics_id: UA-176595919-1
 
 # For about.html. Fell free to create your own!
 skill_software_keywords: [.NET, MySQL, Oracle, Design Patterns]
