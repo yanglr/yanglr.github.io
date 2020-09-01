@@ -1,4 +1,4 @@
-# 极客玩家Bravo Yeung的个人博客
+# *极客玩家大白* 的个人博客
 托管在 Github pages，部署在 zeit.co (或称 now.sh，现<https://vercel.com>)
 
 原地址: <https://yanglr.github.io>
