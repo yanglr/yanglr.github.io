@@ -29,6 +29,7 @@ plugins:
   - rouge
   - kramdown
   - jekyll-github-metadata
+  - jekyll-redirect-from
 
 # Build settings
 lsi:         false

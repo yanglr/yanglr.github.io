@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/
 title: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程
 date: 2019-03-04 21:01:04
 

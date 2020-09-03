@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2018/06/03/calculator_using_caliburn-micro_from0to1/
 title: 从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器
 date: 2018-06-03 19:53:01
 categories: 

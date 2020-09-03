@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/17/char-count-hard-solution/
 title: 华为oj之字符统计(按出现次数由多到少的顺序进行输出)
 date: 2016-09-17 14:38:48
 tags: [oj]

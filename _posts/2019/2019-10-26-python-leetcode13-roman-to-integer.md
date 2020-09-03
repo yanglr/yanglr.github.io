@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/10/26/python-leetcode13-roman-to-integer/
 title:  LeetCode面试系列 第7天：No.13 - 罗马数字转整数
 tagline: by 萌较瘦
 tags: 

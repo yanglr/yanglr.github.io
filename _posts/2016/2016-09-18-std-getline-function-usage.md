@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/18/std-getline-function-usage/
 title: C++中std::getline函数的用法
 date: 2016-09-18 21:23:07
 tags: [oj]

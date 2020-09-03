@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/07/05/forever-window-personal-view-on-window/
 title: 永远的窗口(个人对窗口的拙见)
 date: 2020-07-05 11:06:50
 

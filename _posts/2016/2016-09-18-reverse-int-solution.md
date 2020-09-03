@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/18/reverse-int-solution/
 title: 华为oj之(整型)数字颠倒
 date: 2016-09-18 10:43:12
 tags: [oj]

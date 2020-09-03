@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/10/09/huawei-campus2016-problem3/
 title: 华为校招2016.09第3题
 date: 2016-10-09 21:06:10
 tags: [华为oj]

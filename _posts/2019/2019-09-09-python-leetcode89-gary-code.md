@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2019/09/09/python-leetcode89-gary-code/
 title:  Leetcode面试系列 第1天：No.89 - 格雷码
 tagline: by 萌较瘦
 category: leetcode

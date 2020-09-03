@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/27/odd-before-even-solution/
 title: 剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面
 date: 2016-09-27 15:14:55
 tags: [剑指offer, oj]

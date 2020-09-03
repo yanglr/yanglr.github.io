@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/10/01/num-array-splice-to-min-num/
 title: 剑指offer面试题33 - 把数组排成最小的数
 date: 2016-10-01 01:19:07
 tags: [oj, 剑指offer]

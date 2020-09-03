@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/06/17/aimed-at-offer-search-in-two-dimensional-array/
 title: 剑指Offer | 二维数组中的查找
 categories: 
 - [.NET, leetcode, 算法面试]

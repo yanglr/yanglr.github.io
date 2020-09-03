@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/count-char-in-string-solution/
 title: 华为oj之计算字符个数
 
 date: 2016-09-16 22:31:09

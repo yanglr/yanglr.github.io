@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/09/28/python-leetcode202-happy-number/
 title:  LeetCode面试系列 第4天：No.202 - 快乐数
 tagline: by 萌较瘦
 tags: 

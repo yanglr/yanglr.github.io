@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/10/19/windows-install-jekyll/
 title: Windows下安装Jekyll及启动遇到的问题
 tags: [jekyll]
 layout: post

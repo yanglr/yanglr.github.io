@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/04/10/master-of-money/
 title: 半佛仙人：神圣的存款
 categories: 
 - [存款, geekplayers.com]

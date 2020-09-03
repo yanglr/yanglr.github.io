@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/10/02/cstdlib-cpp-grammer/
 title: C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)
 date: 2016-10-02 01:46:53
 tags: [cpp, cstdlib]

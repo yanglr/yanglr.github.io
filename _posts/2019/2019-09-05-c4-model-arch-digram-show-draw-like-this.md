@@ -1,6 +1,8 @@
 ---
 layout: post
 category: 架构
+redirect_from:
+  - /2019/09/05/c4-model-arch-digram-show-draw-like-this/
 title:  C4模型：架构图应该这么画 - by youly
 tagline: by youly
 tags: 架构

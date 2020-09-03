@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/10/30/python-leetcode58-length-of-last-word/
 title:  LeetCode面试系列 第8天：No.58 - 最后一个单词的长度
 tagline: by 萌较瘦
 tags: 

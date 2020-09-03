@@ -1,6 +1,8 @@
 ---
 layout: post
 category: leetcode
+redirect_from:
+  - /2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/
 title:  C#版 - 剑指Offer 面试题35：第一个只出现一次的字符 解题报告
 tagline: by 萌较瘦
 tags: leetcode

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/10/03/inverse-pairs-in-array/
 title: 剑指offer面试题36 - 数组中的逆序对
 date: 2016-10-03 22:13:18
 tags: [oj, 剑指offer]

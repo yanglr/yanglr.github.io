@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/18/reverse-english-statement/
 title: 华为oj之句子逆序
 date: 2016-09-18 09:47:26
 tags: [oj]

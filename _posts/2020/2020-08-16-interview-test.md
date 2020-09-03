@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/08/16/interview-test/
 title: 面试题测试
 
 categories: 

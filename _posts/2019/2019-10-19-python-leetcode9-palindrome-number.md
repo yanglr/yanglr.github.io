@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/10/19/python-leetcode9-palindrome-number/
 title:  LeetCode面试系列 第6天：No.9 - 回文数
 tagline: by 萌较瘦
 tags: 

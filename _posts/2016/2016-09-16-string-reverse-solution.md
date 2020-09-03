@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/string-reverse-solution/
 title: 华为oj之字符串反转
 date: 2016-09-16 16:03:06
 tags: [oj]

@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/09/14/python-leetcode67-add-binary/
 title:  LeetCode面试系列 第3天：No.67 - 二进制数求和
 tagline: by 萌较瘦
 tags: 

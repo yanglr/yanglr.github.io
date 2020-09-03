@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/integer_storage-one-count/
 title: 华为oj之求int型正整数在内存中存储时1的个数
 date: 2016-09-16 16:55:09
 tags: [oj]

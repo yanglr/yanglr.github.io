@@ -1,5 +1,9 @@
 ---
 layout: post
+redirect_from:
+  - /2019/03/06/js_add_copyright_automatically/
+redirect_from:
+  - /2019/03/06/js_add_copyright_automatically/
 title: JS实现页面复制文字时自动加版权
 
 category: it

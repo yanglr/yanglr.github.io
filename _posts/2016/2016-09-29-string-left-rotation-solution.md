@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/29/string-left-rotation-solution/
 title: 剑指offer面试题42(b)之左旋转字符串
 date: 2016-09-29 00:31:13
 tags: [剑指offer, oj]

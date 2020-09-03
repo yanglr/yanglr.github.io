@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2019/03/30/developer-benefits_github-open-source-projects-of-microsoft/
 title: 一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收
 categories: 
 - [github, 微软]

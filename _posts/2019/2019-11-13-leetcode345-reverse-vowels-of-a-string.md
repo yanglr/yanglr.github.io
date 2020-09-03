@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/11/13/leetcode345-reverse-vowels-of-a-string/
 title:  LeetCode面试系列 第9天：No.345 - 反转字符串中的元音字母
 tagline: by 萌较瘦
 tags: 

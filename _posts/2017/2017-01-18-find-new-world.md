@@ -1,5 +1,9 @@
 ---
 layout: post
+redirect_from:
+  - /2017/01/18/find-new-world/
+redirect_from:
+  - /2017/01/18/find-new-world/
 title: 发现另外一个世界
 category: life 
 tags: [life]

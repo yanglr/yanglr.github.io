@@ -1,6 +1,8 @@
 ---
 layout: post
 category: Leetcode面试题
+redirect_from:
+  - /2019/11/20/leetcode976-largest-perimeter-triangle/
 title:  LeetCode面试系列 第10天：No.976 - 三角形的最大周长
 tagline: by 萌较瘦
 tags: 

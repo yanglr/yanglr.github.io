@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/prime-factor-solution/
 title: 华为oj之质数因子
 
 date: 2016-09-16 22:02:17

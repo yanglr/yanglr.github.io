@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/06/29/visual-cpp-wpf-method/
 title: Visual C++中创建WPF项目的方法
 categories: 
 - [WPF, C++]

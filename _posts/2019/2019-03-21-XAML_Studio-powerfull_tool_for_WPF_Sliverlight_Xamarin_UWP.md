@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2019/03/21/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP/
 title: 微软XAML Studio - WPF、Sliverlight、Xamarin、UWP等技术开发者的福音
 date: 2019-03-21 02:46:04
 

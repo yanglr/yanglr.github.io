@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/17/get-cube-root/
 title: 华为oj之求解立方根
 date: 2016-09-17 16:18:46
 tags: [oj]

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/17/max-profit-in-stock/
 title: 携程校招2017编程题之股票最大利润
 date: 2016-09-17 21:58:36
 tags: [oj] 

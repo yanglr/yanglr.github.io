@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/30/increase-seq-two-sum-solution/
 title: 剑指offer面试题41(a) - 和为S的两个数字
 date: 2016-09-30 20:47:40
 tags: [oj, 剑指offer]

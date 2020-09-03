@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/last-word-length-solution/
 title: 华为oj之字符串最后一个单词的长度
 date: 2016-09-16 15:07:25
 tags: [oj]

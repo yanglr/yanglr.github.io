@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/16/char-count-solution/
 title: 华为oj之字符个数统计
 date: 2016-09-16 23:42:35
 tags: [oj]

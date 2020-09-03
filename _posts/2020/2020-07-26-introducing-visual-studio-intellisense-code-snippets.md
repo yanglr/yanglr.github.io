@@ -1,5 +1,7 @@
 ---
 layout: post
+redirect_from:
+  - /2020/07/26/introducing-visual-studio-intellisense-code-snippets/
 title: Visual Studio的智能感应代码段
 
 categories: 

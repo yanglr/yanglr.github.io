@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/18/backfoward-first-appear-solution/
 title: 华为oj之提取不重复的整数
 date: 2016-09-18 12:56:52
 tags: [oj]

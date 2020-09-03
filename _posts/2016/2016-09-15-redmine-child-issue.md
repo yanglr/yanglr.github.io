@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2016/09/15/redmine-child-issue/
 title: 使用Redmine的PHP API时，如何判断需求是否为原子需求
 date: 2016-09-15 15:33:22
 categories:
