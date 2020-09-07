@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Link
 titlebar: Link
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Resource link
