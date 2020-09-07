@@ -10,7 +10,7 @@ css: ['sidebar-post-nav.css']
         {% if page.no-post-nav %}
         <div class="col-md-12 markdown-body">
 
-            {{ content }}
+            {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
 
             {% include copyright.html %}
 
@@ -23,7 +23,7 @@ css: ['sidebar-post-nav.css']
         {% else %}
         <div class="col-md-9 markdown-body">
 
-            {{ content }}
+            {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
 
             {% include copyright.html %}
 
