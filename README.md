@@ -12,4 +12,6 @@
 
 欢迎订阅公众号: 大白技术控
 
-![大白技术控-公众号](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg)
+<div align="center">
+  <img width="280" height="280" src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" alt="大白技术控-公众号" />
+</div>
