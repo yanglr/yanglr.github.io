@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ".NET极客玩法, 你值得拥有"
+title: .NET极客玩法, 你值得拥有
 titlebar: dotnet
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; .NET极客玩法，你值得拥有
 menu: dotnet

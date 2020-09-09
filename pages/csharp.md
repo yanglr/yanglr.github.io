@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "C#黑科技"
+title: C#黑科技
 titlebar: csharp
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 带你玩转C#黑科技
 menu: csharp

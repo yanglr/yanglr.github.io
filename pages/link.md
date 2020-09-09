@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Link
+title: 友情链接
 titlebar: Link
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Resource link
 menu: Link

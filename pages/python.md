@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Python 系列文章
+title: Python系列文章
 titlebar: python
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Python 学习教程系列文章
 menu: python

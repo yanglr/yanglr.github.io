@@ -5,9 +5,7 @@ titlebar: MongoDB
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; MongoDB 系列教程
 menu: mongodb
 css: ['blog-page.css']
-permalink: /mongodb.html
-redirect_from:
-  - /mongodb
+permalink: /mongodb
 keywords: MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程
 ---
 

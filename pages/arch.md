@@ -5,9 +5,7 @@ titlebar: arch
 subtitle: <span class="mega-octicon octicon-keyboard"></span>&nbsp;&nbsp; 其实我是一名程序员。
 menu: arch
 css: ['blog-page.css']
-permalink: /arch.html
-redirect_from:
-  - /arch
+permalink: /arch
 ---
 
 <div class="row">

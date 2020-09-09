@@ -5,9 +5,7 @@ titlebar: algo
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 算法也可以很有趣
 menu: algo
 css: ['blog-page.css']
-permalink: /algo.html
-redirect_from:
-  - /algo
+permalink: /algo
 keywords: algo, algorithm, leetcode, interview
 ---
 
