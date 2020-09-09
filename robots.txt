@@ -1,2 +1,4 @@
 Sitemap: https://geekplayers.com/sitemap.xml
+Sitemap: https://geekplayers.com/cnsitemap.xml
+
 User-agent: *
