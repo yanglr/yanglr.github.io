@@ -87,7 +87,7 @@ $ npm install eslint@^4.12.0
 ```yaml
 deploy:
 	type: git  #上传类型 选择git
-	repo: https://legege007:yl15826911621@git.dev.tencent.com/legege007/legege007.git  # 执行 git remote -v 可以获得
+	repo: https://legege007:xxx@git.dev.tencent.com/legege007/legege007.git  # 执行 git remote -v 可以获得
 	branch: master  # 部署到 Master分支
 	#message: update blog # 每次提交的信息 不填默认为当前时间
 ```
