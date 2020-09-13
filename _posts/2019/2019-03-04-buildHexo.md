@@ -2,6 +2,7 @@
 layout: post
 redirect_from:
   - /2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/
+  - /build_site_guide_using_hexo_and_coding-net_for_beginners.html
 title: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程
 date: 2019-03-04 21:01:04
 
@@ -29,7 +30,9 @@ excerpt: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑�
 ## 方法1 - 本机Windows下建站 (力荐)
 
 ### 下载安装`node.js`
-到[官网](https://nodejs.org/en/blog/release/)下载`nodejs`的最新`LTS`版安装即可。
+到[Node.js官网](https://nodejs.org/en/blog/release/)下载`nodejs`的最新`LTS`版安装即可。
+安装完后需要重启电脑，以确保在vs code或Windows terminal调用git bash时，`node/npm`命令能正常使用。
+
 ### 用管理员权限打开命令行，安装`hexo-cli`和`hexo`
 ```bash
 $ npm install hexo-cli -g
