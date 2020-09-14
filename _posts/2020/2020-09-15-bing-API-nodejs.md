@@ -286,14 +286,12 @@ https://ssl.bing.com/webmaster/api.svc/json/GetKeywordStats?q=dog%20beds&country
 
 RSS Feed提交:
 
-https://bing.com/webmaster/api.svc/json/SubmitFeed
+<https://bing.com/webmaster/api.svc/json/SubmitFeed>
 
 
 
 获取用户验证后的站点信息:
 
-https://ssl.bing.com/webmaster/api.svc/json/GetUserSites
+<https://ssl.bing.com/webmaster/api.svc/json/GetUserSites>
 
-
-
-有兴趣的朋友可以继续深入研究哈~
+有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~
