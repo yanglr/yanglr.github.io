@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> Visual Studio的智能感应代码段_极客玩家大白</title>
+    <meta name="keywords" content="Visual Studio, .NET, Code snippet">
+    <meta name="description"
+          content="Visual Studio的智能感应代码段 - 转载自《程序员杂志》">
+
+    <link rel="canonical" href="https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="Visual Studio的智能感应代码段">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>Visual Studio的智能感应代码段</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html" title="Visual Studio的智能感应代码段_极客玩家大白" target="_self" rel="canonical">Visual Studio的智能感应代码段</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='https://geekplayers.com'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2020/07/26 06:07:40</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#Visual Studio">Visual Studio</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#.NET">.NET</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 2</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 25</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 13</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:4</p>
+                <p>size: 4</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>文/<code class="language-plaintext highlighter-rouge">Patrick Gallucci</code> 编译/<code class="language-plaintext highlighter-rouge">崔建海</code></p>
+
+<blockquote>
+  <p>Visual Studio 2005 IntelliSense Code Snippets
+This article introduces Visual Studio 2005IntelliSense code snippets that enable you to create y our own IntelliSense snippets without leaving the Visual Studio IDE. This ability boosts productivity by allowing you to create and insert samples of code that you use regularly. It also allows custom code dev elopers to provide snippet examples of their own libraries and APIs.</p>
+</blockquote>
+
+<p>本文介绍了Visual Studio2005 的智能感应代码段功能， 它可以使您方便地创建并插入常用的代码，还可以对开发工具进行定制，以便为特定库和API 产生代码段。</p>
+
+<p>代码动态生成已经不是什么新鲜事物了，您可以找到只要按一个按钮就可以产生几万行代码的工具。其中有些工具设计得非常灵活，以至于可以自由修改模板中的记号，甚至模板本身，以便对代码输出进行更好的控制。
+我老早就想在程序代码中嵌入自动生成代码的“块”，而不是调用一个外部工具或者打开Visual Studio 的附加选项。这就是智能感应代码段（code snippet）可以做的事情。虽然它们的功能没有某些专门的工具强大，它们依然可以为程序员日复一日的工作提供不少帮助。</p>
+
+<p>Visual Studio 2005 的智能感应代码段允许您在IDE中创建自己的代码段。这可以使您方便地创建并插入常用的代码，还可以对开发工具进行定制，以便为特定库和API产生代码段。（见下页表1）</p>
+
+<h2 id="从简单的开始">从简单的开始</h2>
+
+<p>要使用代码段功能，只要在代码窗口单击右键然后选择“Insert Snippet”就可以了。
+根据文件类型不同，您可以看到当前可用的代码段类型。本例使用C#文件，所以您可以看到两个选项：Office Development 和 Visual C#。
+您选择一种类型以后，就列出了这个类型下可以使用的代码段。这些列表可能发生变化，比如您修改了原有代码段或者添加了自己的代码段。
+通过选择合适的代码段名称，您可以将所需的代码段插入代码窗口的适当位置。以C#为例，选择ctor，也就是为您的类生成构造函数的代码段。鼠标点击ctor标签以后，您所需要的代码就插到了您最初单击右键的位置。现在，您可以到ctor代码段的文件中去探索一番了。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip07.jpg" alt="Figure 7: Title and Header Elements in the Code Snippets Manager" /></p>
+
+<p>代码片断中的元素现在来看看怎样创建一个代码段。您可以在<code class="language-plaintext highlighter-rouge">snippetformat.xsd</code> 中找到代码段的schema 。
+CodeSnippets 是这个schema的根元素，它可以包含一个或者多个CodeSnippet 子元素。
+CodeSnippet 包含两个子元素和一个可选的格式属性。格式属性提供了一种可以定义代码段版本的机制。</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;CodeSnippet</span> <span class="na">Format=</span><span class="s">"1.0.1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;Header&gt;</span>...<span class="nt">&lt;/Header&gt;</span>
+<span class="nt">&lt;Snippet&gt;</span>... <span class="nt">&lt;/Snippet&gt;</span>
+<span class="nt">&lt;/CodeSnippet&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Header元素包含代码段的一般信息，每个代码段只能包含一个。这个元素的子元素有：Title，Author，Description，HelpUrl，SnippetTypes，Keyword和Shortcut：</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Header&gt;</span>
+    <span class="nt">&lt;Title&gt;</span>...<span class="nt">&lt;/Title&gt;</span>
+    <span class="nt">&lt;Author&gt;</span>...<span class="nt">&lt;/Author&gt;</span>
+    <span class="nt">&lt;Description&gt;</span>... <span class="nt">&lt;/Description&gt;</span>
+    <span class="nt">&lt;HelpUrl&gt;</span>... <span class="nt">&lt;/HelpUrl&gt;</span>
+    <span class="nt">&lt;SnippetTypes&gt;</span>...<span class="nt">&lt;/SnippetTypes&gt;</span>
+    <span class="nt">&lt;Keywords&gt;</span>... <span class="nt">&lt;/Keywords&gt;</span>
+    <span class="nt">&lt;Shortcut&gt;</span>... <span class="nt">&lt;/Shortcut&gt;</span>
+<span class="nt">&lt;/Header&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>下面是ctor代码段文件中的Header：</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Header&gt;</span>
+    <span class="nt">&lt;Title&gt;</span>ctor<span class="nt">&lt;/Title&gt;</span>
+    <span class="nt">&lt;Shortcut&gt;</span>ctor<span class="nt">&lt;/Shortcut&gt;</span>
+    <span class="nt">&lt;Description&gt;</span>Code snippet for constructor
+    <span class="nt">&lt;/Description&gt;</span>
+    <span class="nt">&lt;Author&gt;</span>Microsoft Corporation<span class="nt">&lt;/Author&gt;</span>
+    <span class="nt">&lt;SnippetTypes&gt;</span>
+        <span class="nt">&lt;SnippetType&gt;</span>Expansion<span class="nt">&lt;/SnippetType&gt;</span>
+    <span class="nt">&lt;/SnippetTypes&gt;</span>
+<span class="nt">&lt;/Header&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>所有这些元素都具有不错的自解释能力。HelpUrl是一个指向额外帮助信息文档的指针。SnippetTypes指示Visual Studio 2005 如何将代码段插入代码窗口。</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;SnippetTypes&gt;</span>
+    <span class="nt">&lt;SnippetType&gt;</span>... <span class="nt">&lt;/SnippetType&gt;</span>
+    <span class="nt">&lt;SnippetType&gt;</span>... <span class="nt">&lt;/SnippetType&gt;</span>
+    <span class="nt">&lt;SnippetTypes&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>如果没有类型信息，该代码段就可以插入任意的文件。下
+面是合法的SnippetType值：</p>
+
+<ul>
+  <li>SurroundsWith: 将代码段放入被选定的代码片段的周围。</li>
+  <li>Expansion:  将代码段插入光标所在位置。</li>
+  <li>Refactoring:  在Visual C# 的refactoring 过程中使用代码段 (Refactoring 无法用于通常的代码段)。</li>
+</ul>
+
+<p>因为Refactoring 无法用于通常的代码段，所以只剩下了SruuoundsWith和Expansion。要用SruuoundsWith，您必须先选中要包围的文本。选中您要包围的文本以后，单击鼠标右键选择合适的代码段。这个例子选择的是region代码段，代码被#region和#endregion标签包围起来了，还可以注意到缺省置换字符串MyRegion已处于选中状态以方便修改。如果您要做更多的替换工作，只需按tab键移到下一个要修改的目标。这个特性提高了维护代码段的速度。Expansion代码段只是简单的将代码段插入光标所在的位置。
+Keywords 元素可以包含一个或者多个子元素，以便Visual Studio 和别的代码段提供者用标准化的方式检索这些代码段。最后是Shortcut 元素，它提供了一种特性，可以让您通过键入一个快捷方式然后按tab键就可以插入一个代码段。这个结合expansion类型的代码段使用非常有效。</p>
+
+<p>现在可以看看Snippet 元素，这个元素定义了代码段的代码。</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Snippet&gt;</span>
+    <span class="nt">&lt;References&gt;</span>... <span class="nt">&lt;/References&gt;</span>
+    <span class="nt">&lt;Imports&gt;</span>... <span class="nt">&lt;/Imports&gt;</span>
+    <span class="nt">&lt;Declarations&gt;</span>... <span class="nt">&lt;/Declarations&gt;</span>
+    <span class="nt">&lt;Code&gt;</span>...<span class="nt">&lt;/Code&gt;</span>
+<span class="nt">&lt;/Snippet&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>下面是ctor的snippet 节点：</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Snippet&gt;</span>
+    <span class="nt">&lt;Declarations&gt;</span>
+        <span class="nt">&lt;Literal</span> <span class="na">Editable=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ID&gt;</span>classname<span class="nt">&lt;/ID&gt;</span>
+            <span class="nt">&lt;ToolTip&gt;</span>Class name
+            <span class="nt">&lt;/ToolTip&gt;</span>
+            <span class="nt">&lt;Function&gt;</span>ClassName()
+            <span class="nt">&lt;/Function&gt;</span>
+            <span class="nt">&lt;Default&gt;</span>
+            ClassNamePlaceholder
+            <span class="nt">&lt;/Default&gt;</span>
+        <span class="nt">&lt;/Literal&gt;</span>
+    <span class="nt">&lt;/Declarations&gt;</span>
+    <span class="nt">&lt;Code</span> <span class="na">Language=</span><span class="s">"csharp"</span><span class="nt">&gt;</span>
+        <span class="cp">&lt;![CDATA[public $classname$ ()
+        {
+            $end$
+        }]]&gt;</span>
+    <span class="nt">&lt;/Code&gt;</span>
+<span class="nt">&lt;/Snippet&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>References 元素只在Visual Basic代码段中有效。该元素可选，包含代码段可能用到的别的库的引用信息。
+它有两个子元素：Assembly 是dll 的位置，Url 是有关assembly说明信息的链接。</p>
+
+<p>表1：Visual Studio 2005智能感应目前支持的代码段列表</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>描述信息</th>
+      <th>适用范围</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#if</td>
+      <td>生成#if和#endif指示符</td>
+      <td>任何地方</td>
+    </tr>
+    <tr>
+      <td>#region</td>
+      <td>生成#region 和#endregion 指示符</td>
+      <td>任何地方</td>
+    </tr>
+    <tr>
+      <td>～</td>
+      <td>为类生成析构函数</td>
+      <td>类内</td>
+    </tr>
+    <tr>
+      <td>attribute</td>
+      <td>生成一个从Attribute 派生的类的声明</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>checked</td>
+      <td>生成一个checked块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>class</td>
+      <td>生成一个类声明</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>ctor</td>
+      <td>为一个类生成一个构造函数</td>
+      <td>类内</td>
+    </tr>
+    <tr>
+      <td>cw</td>
+      <td>生成一个WriteLine 调用</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>do</td>
+      <td>生成一个do while 循环</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>else</td>
+      <td>生成一个else 块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>enum</td>
+      <td>生成一个enum 声明</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>equals</td>
+      <td>生成一个函数声明，覆盖Object 类中定义的Equals 函数</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>exception</td>
+      <td>生成一个从异常派生出来的类的声明（缺省情况从Exception   派生）</td>
+      <td>命名空间内(包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>for</td>
+      <td>生成一个for 循环</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>foreach</td>
+      <td>生成一个foreach 循环</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>forr</td>
+      <td>生成一个for 循环，循环变量递减</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>if</td>
+      <td>生成一个if 块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>indexer</td>
+      <td>生成一个索引器声明</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>interface</td>
+      <td>生成一个接口声明</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>invoke</td>
+      <td>生成一个安全调用事件的块</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>iterator</td>
+      <td>生成一个iterator</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>iterindex</td>
+      <td>通过适用嵌套类生成一个命名的迭代器和索引器对</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>lock</td>
+      <td>生成一个 lock 块</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>mbox</td>
+      <td>生成一个System.Windows.Forms.MessageBox.Show   调用</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>namespace</td>
+      <td>生成一个 namespace 声明</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>prop</td>
+      <td>生成一个属性声明和一个对应的底层字段</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>propg</td>
+      <td>生成一个只带get 访问器的属性声明和一个对应的底层字段</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>sim</td>
+      <td>生成一个static int Main 方法声明</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>struct</td>
+      <td>生成一个 struct 声明</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>svm</td>
+      <td>生成一个static void Main 方法声明</td>
+      <td>命名空间内 (包括全局命名空间),类或者结构内</td>
+    </tr>
+    <tr>
+      <td>switch</td>
+      <td>生成一个switch 块</td>
+      <td>类或者结构内</td>
+    </tr>
+    <tr>
+      <td>try</td>
+      <td>生成一个try 块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>tryf</td>
+      <td>生成一个tryf 块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>unchecked</td>
+      <td>生成一个unchecked块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>unsafe</td>
+      <td>生成一个unsafe 块</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>using</td>
+      <td>生成一个using 指示符</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+    <tr>
+      <td>while</td>
+      <td>生成一个while 循环</td>
+      <td>方法，索引器，属性访问器，时间访问器内</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip01.jpg" alt="Figure 1: Access Code Snippets" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip02.jpg" alt="Figure 2: Available Types of Snippets" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip03.jpg" alt="Figure 3: Available Snippets in Visual C#" /></p>
+
+<p>Imports元素包含代码段可能用到的命名空间的信息。它的效果和您在代码中直接使用import 一样。它只有一个子元素namespace。
+Declarations 元素可以定义变量，这些变量可以替换代码段中code 元素中的内容。Literal 和Object 是两种替换。Literal替换已知的类型，例如：字符串，数字，日期。Object 在代码段外部定义。
+Literal元素有一个Editable属性，它决定在代码段插入以后，您是否可以修改literal的值。缺省值是True。下面是其余元素的说明：</p>
+
+<ul>
+  <li>Default (必备元素): 指定插入代码段时literal的缺省值。 Literal 元素必须包含一个Default 元素。</li>
+  <li>Function (可选元素): 指定一个literal在Visual Studio 中 获得焦点以后执行的函数。 Literal元素可以包含零个或者一个  Function元素。</li>
+  <li>ID(必备元素): 指定literal的唯一ID，一个Literal有且只  能有一个ID 元素。</li>
+  <li>Tooltip(可选元素): 描述literal期望的值和用途。一个  literal 可以有零个或者一个Tooltip 元素。</li>
+</ul>
+
+<p>Function元素有四个可用的预处理函数,这些函数可以返回一些非常有趣的结果。它们是：GenerateSwitchCases(EnumerationLiteral)，ClassName()，SimpleTypeName(TypeName)，
+  CallBase(Parameter)。它们分别返回一个唯一的结果，都非常值 得认真研究。
+  现在来看看code元素，这里将放置您实际的代码，通过使 用置换变量您可以输出期望的文本。Code 元素有三个属性，没有子元素。这些属性分别是：kind，delimiter，language。Delimiter的缺省值是<code class="language-plaintext highlighter-rouge">$</code>。这个符号分割代码段中的文本和对象变量。Language属性是必备属性，可以有以下值：</p>
+<ul>
+  <li>VB: Visual Basic 类型的代码段</li>
+  <li>CSharp: Visual C# 类型的代码段</li>
+  <li>VJSharp: Visual J# 类型的代码段</li>
+  <li>XML: XML 类型的代码段
+这个属性指明语言的类型。实际的代码是由CDATA包围的文本。也就是说以文本字符串的形式出现。下面是ctor代码段的内容：
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Code</span> <span class="na">Language=</span><span class="s">"csharp"</span><span class="nt">&gt;</span>
+<span class="cp">&lt;![CDATA[public $classname$ ()
+{
+	$end$
+}]]&gt;</span>
+<span class="nt">&lt;/Code&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>所以，只要仔细看代码段的输出结果，您就可以轻易的分析出IDE是怎么工作和为什么这么工作的：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">public</span> <span class="nf">Test</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
+  <li>language属性指明语言是C#。</li>
+  <li>code 元素从CDATA开始，然后是public。</li>
+  <li>置换变量<code class="language-plaintext highlighter-rouge">$classname$</code> 将被替换为函数ClassName()返回的结果，然后是类名称后的两个括号。就像您看到的一样，置换发生的位置和置换变量的位置一致，并且基于光标所处的位置。这个也受到Visual Studio 2005 中C#语言格式设置的影响。</li>
+  <li>接下来的行有一个开始大括号，下一行是一个<code class="language-plaintext highlighter-rouge">$end$</code>，再下一行是结束大括号。<code class="language-plaintext highlighter-rouge">$end$</code>是预先定义好的Literals变量之一，用于指明一行或者一个语句的结束。当用户按回车键结束编辑以后，这个变量决定脱字符号（^）的位置。</li>
+</ol>
+
+<h2 id="该创建自己的代码段了">该创建自己的代码段了</h2>
+<p>现在您可以创建一个简单的代码段了。因为所有的代码都必须有文档，所以您可以按照自己的需要创建一个“头文件代码段”。然后您可以在这个代码段的基础上稍作修改扩展成别的代码段。假如您想利用您的代码段生成如下代码：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="c1">// File: test.cs</span>
+<span class="c1">// Date: 17 Oct 2005</span>
+<span class="c1">// Author: Patrick Gallucci</span>
+<span class="c1">// Description: This is a test file used to</span>
+<span class="c1">// demonstrate Code Snippets</span>
+<span class="c1">// Copyright (C) Developer.com.</span>
+<span class="c1">// All rights reserved.</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>我预先定义了四个字面文本变量用于替换模板中的字符串。
+Classname 将会是文件名的前缀。Author将会被<code class="language-plaintext highlighter-rouge">$author$</code> 变量替换。<code class="language-plaintext highlighter-rouge">$date$</code>变量将会替换创建日期和历史日期，<code class="language-plaintext highlighter-rouge">$company$</code>变量替换Developer.com。以下是最终的代码段XML 文件。</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8" ?&gt;</span>
+<span class="nt">&lt;CodeSnippets</span> <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;CodeSnippet</span> <span class="na">Format=</span><span class="s">"1.0.0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Header&gt;</span>
+            <span class="nt">&lt;Title&gt;</span>c#header<span class="nt">&lt;/Title&gt;</span>
+            <span class="nt">&lt;ShortCut&gt;</span>c#header<span class="nt">&lt;/ShortCut&gt;</span>
+            <span class="nt">&lt;Description&gt;</span>Code snippet for file header<span class="nt">&lt;/Description&gt;</span>
+            <span class="nt">&lt;Author&gt;</span>Developer.com<span class="nt">&lt;/Author&gt;</span>
+            <span class="nt">&lt;SnippetTypes&gt;</span>
+                <span class="nt">&lt;SnippetType&gt;</span>Expansion<span class="nt">&lt;/SnippetType&gt;</span>
+                <span class="nt">&lt;SnippetTypes&gt;</span>
+                <span class="nt">&lt;/Header&gt;</span>
+                <span class="nt">&lt;Snippet&gt;</span>
+                    <span class="nt">&lt;Declarations&gt;</span>
+                        <span class="nt">&lt;Literal&gt;</span>
+                            <span class="nt">&lt;ID&gt;</span>classname<span class="nt">&lt;/ID&gt;</span>
+                            <span class="nt">&lt;ToolTip&gt;</span>The class name of the file.<span class="nt">&lt;/ToolTip&gt;</span>
+                            <span class="nt">&lt;Function&gt;</span>ClassName()<span class="nt">&lt;/Function&gt;</span>
+                            <span class="nt">&lt;Default&gt;</span>ClassNamePlaceholder<span class="nt">&lt;/Default&gt;</span>
+                        <span class="nt">&lt;/Literal&gt;</span>
+                        <span class="nt">&lt;Literal&gt;</span>
+                            <span class="nt">&lt;ID&gt;</span>author<span class="nt">&lt;/ID&gt;</span>
+                            <span class="nt">&lt;ToolTip&gt;</span>The developer who created the file.<span class="nt">&lt;/ToolTip&gt;</span>
+                            <span class="nt">&lt;Default&gt;</span>Patrick Gallucci<span class="nt">&lt;/Default&gt;</span>
+                        <span class="nt">&lt;/Literal&gt;</span>
+                        <span class="nt">&lt;Literal&gt;</span>
+                            <span class="nt">&lt;ID&gt;</span>date<span class="nt">&lt;/ID&gt;</span>
+                            <span class="nt">&lt;ToolTip&gt;</span>The date the file was created.<span class="nt">&lt;/ToolTip&gt;</span>
+                            <span class="nt">&lt;Default&gt;</span>Now<span class="nt">&lt;/Default&gt;</span>
+                        <span class="nt">&lt;/Literal&gt;</span>
+                        <span class="nt">&lt;Literal&gt;</span>
+                            <span class="nt">&lt;ID&gt;</span>company<span class="nt">&lt;/ID&gt;</span>
+                            <span class="nt">&lt;ToolTip&gt;</span>The company who owns the class.<span class="nt">&lt;/ToolTip&gt;</span>
+                            <span class="nt">&lt;Default&gt;</span>Developer.com<span class="nt">&lt;/Default&gt;</span>
+                        <span class="nt">&lt;/Literal&gt;</span>
+                    <span class="nt">&lt;/Declarations&gt;</span>
+                    <span class="nt">&lt;code</span> <span class="na">Language=</span><span class="s">"csharp"</span><span class="nt">&gt;</span>
+                        <span class="cp">&lt;![CDATA[//=====================
+                        // File: $classname$.cs
+                        // Data: $date$
+                        // Author: $author$
+                        //------------------------------------
+                        // Descriptions: This is a_u116 ?est file used to
+                        // demonstrate Code Snippets.
+                        // Copyright (c) $company$.
+                        // All rights reserved.
+                        //
+                        // History: $date$ Created
+                        ================================]]&gt;</span>
+                    <span class="nt">&lt;/code&gt;</span>
+                <span class="nt">&lt;/Snippet&gt;</span>
+            <span class="nt">&lt;/Codesnippet&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>现在只须轻点几下鼠标，您就可以使用这个代码段了。首先，打开代码段管理器。选择“My Code Snippets”，单击Import按钮。找到您的header.snippet 文件并选择open。在打开的对话框中，点击“My Code Snippets”前面的复选框，然后点击Finish。现在您可以打开“My Code Snippets”节点，选择c# header代码段，对话框右侧显示了您在XML文件中设置的一些属性。找一个C#的类文件试试这个代码段吧，以下代码是我试验时输出的结果。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip12.jpg" alt="" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip13.jpg" alt="" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip14.jpg" alt="Figure 14: Click the Checkbox Next to &quot;My Code Snippets&quot; and Click Finish" /></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip15.jpg" alt="Figure 15: Open the &quot;My Code Snippets&quot; Node and Highlight the c3header Snippet" /></p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre><span class="c1">// File:</span>
+<span class="n">ClassNamePlaceholder</span><span class="p">.</span><span class="n">cs</span>
+<span class="c1">// Date: Now</span>
+<span class="c1">// Author: Patrick Gallucci</span>
+<span class="c1">// Description: This is a test file used to</span>
+<span class="c1">// demonstrate Code Snippets</span>
+<span class="c1">// Copyright (C) Developer.com.</span>
+<span class="c1">// All rights reserved.</span>
+<span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+<span class="k">namespace</span> <span class="nn">SnippetTestHarness</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="n">Class</span> <span class="n">Test</span> <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">Test</span> <span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>虽然看上去没有什么了不起的，但通过快捷方式插入头文件还只是一个开始而已。
+上面的操作虽然不复杂，但您可能更希望直接操作XML文件。所以下面的两个小节，我将介绍如何“大量生产”代码段，就像有些开源项目做的一样。</p>
+
+<h2 id="代码段宏">代码段宏</h2>
+<p>我发现自己总是要为重载的相同函数写很多代码段，所以就创建了一个Visual Studio宏以便从选定的代码中生成代码段。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip18.jpg" alt="Figure 18: Double Click the CreateSnippet Macro" /></p>
+
+<p>您可以到 <a rel="nofollow noopener noreferrer" target="_blank" href="http://www.developer.com/img/2005/10/CodeSnippetsLibrary.zip">http://www.developer.com/img/2005/10/CodeSnippetsLibrary.zip</a> 下载试用。打开该宏，选择您准备用来生成代码段的代码（如图1）。从宏浏览器中双击CreateSnippet 宏（如图2）。
+　
+然后，窗口切换，您就可以看到解决方案浏览器中的新文件了，虽然有点原始，但毕竟提高了创建代码段的速度。</p>
+
+<h2 id="visual-basic-代码段编辑器">Visual Basic 代码段编辑器</h2>
+
+<p>上一节结尾提到的那个工具，是我维护的一个开源项目：Visual Basic 代码段编辑器，一个使您创建、编辑、测试代码段更方便的小工具。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/Snip20.jpg" alt="Figure 20: Screenshot of Visual Basic Code Snippet Editor" /></p>
+
+<p>可以从http://msdn.microsoft.com/vbasic/downloads/2005/tools/snippeteditor/ 下载试用。虽然不是十分完善，但尝试一下还是值得的，毕竟我们的小组在上面做了不少工作。</p>
+
+<p>另外，试用一下Visual Basic代码段编辑器、本文中提到的方法和Visual Studio 2005 BOL，您将会很快拥有自己的代码段库。希望这个指南能帮助您了解Visual Studio 2005的智能感应代码段功能，并能提高您的开发效率。</p>
+
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="https://geekplayers.com" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html" target="_blank">https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html';
+        this.page.identifier = '/introducing-visual-studio-intellisense-code-snippets.html';
+        this.page.title = 'Visual Studio的智能感应代码段';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

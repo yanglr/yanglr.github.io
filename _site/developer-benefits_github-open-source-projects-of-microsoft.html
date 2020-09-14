@@ -1,0 +1,962 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> 一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收_极客玩家大白</title>
+    <meta name="keywords" content=".NET,微软,开源">
+    <meta name="description"
+          content="大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收">
+
+    <link rel="canonical" href="https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html" title="一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收_极客玩家大白" target="_self" rel="canonical">一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                <div class="read-more">
+    <div class="read-more-content author-info">
+        <!-- <h3>Bravo Yeung</h3> -->
+        <div class="author-container">
+            
+            <img style="width: 32px; border-radius: 50%; display: inline-block; margin-right: 7px;" 
+                src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/authors/byavatar.jpg" alt="Bravo Yeung" />
+            
+            <span>
+                <a href="https://geekplayers.com" class="author-link">Bravo Yeung</a>
+
+                
+                
+                <span style="color: #ddd;">首发于: 
+                    <a style="color: #164468; text-decoration: underline;" href="https://www.cnblogs.com/enjoy233/p/developer-benefits_github-open-source-projects-of-microsoft.html">博客园</a>
+                </span>
+                
+                
+            </span>
+            
+        </div>
+
+        <div class="author-share">
+            
+            <ul style="padding-top: 10px; list-style-type: none;">
+                
+                <li><a href="https://github.com/yanglr" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+                
+            </ul>
+            
+            
+            
+            <br>
+<style>
+    .resp-sharing-button__link,
+    .resp-sharing-button__icon {
+        display: inline-block
+    }
+
+    .resp-sharing-button__link {
+        text-decoration: none;
+        color: #fff !important;
+        margin: .5em;
+        font-size: 12px
+    }
+
+    .resp-sharing-button {
+        border-radius: 3px;
+        transition: 25ms ease-out;
+        padding: 3px 6px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+
+    .resp-sharing-button__icon svg {
+        width: 1em;
+        height: 1em;
+        margin-right: .4em;
+        vertical-align: top;
+        margin-top: 3px
+    }
+
+    .resp-sharing-button--small svg {
+        margin: 0;
+        vertical-align: middle
+    }
+
+    .resp-sharing-button__icon {
+        stroke: #fff;
+        fill: none
+    }
+
+    .resp-sharing-button__icon--solid,
+    .resp-sharing-button__icon--solidcircle {
+        fill: #fff;
+        stroke: none
+    }
+
+    .resp-sharing-button--twitter {
+        background-color: #55acee
+    }
+
+    .resp-sharing-button--twitter:hover {
+        background-color: #2795e9
+    }
+
+    .resp-sharing-button--facebook {
+        background-color: #3b5998
+    }
+
+    .resp-sharing-button--facebook:hover {
+        background-color: #2d4373
+    }
+
+    .resp-sharing-button--facebook {
+        background-color: #3b5998;
+        border-color: #3b5998
+    }
+
+    .resp-sharing-button--facebook:hover,
+    .resp-sharing-button--facebook:active {
+        background-color: #2d4373;
+        border-color: #2d4373
+    }
+
+    .resp-sharing-button--twitter {
+        background-color: #287ab9;
+        border-color: #1c659b;
+        margin-left: -5px
+    }
+
+    .resp-sharing-button--twitter:hover,
+    .resp-sharing-button--twitter:active {
+        background-color: #2795e9;
+        border-color: #2795e9
+    }
+</style>
+        
+        <a aria-label="Share on Twitter" class="resp-sharing-button__link"
+            href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DFollowButton%26query%3Dhttps%253A%252F%252Ftwitter.com%252FFollow @yanglr%26widget%3DButton&ref_src=twsrc%5Etfw&region=follow_link&screen_name=yanglr&tw_p=followbutton" data-show-count="true" 
+            target="_blank">
+            <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+                <div aria-hidden="false" class="resp-sharing-button__icon resp-sharing-button__icon--solid"></div>Follow @yanglr
+            </div>
+        </a>
+        
+        </div>
+    </div>
+</div>
+
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2019/03/31 03:43:10</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#github">github</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#微软">微软</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 2</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 16</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 6</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:4</p>
+                <p>size: 2</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>一份微软官方Github上发布的开源项目清单等你签收!</p>
+
+<hr />
+
+<p>最近在倒腾<code class="language-plaintext highlighter-rouge">WPF</code>的项目，试着搜一下微软官方提供的<code class="language-plaintext highlighter-rouge">WPF Smaples</code>, 结果找到了<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/WPF-Samples">https://github.com/Microsoft/WPF-Samples</a>. 当然还发现了<code class="language-plaintext highlighter-rouge">Cortana</code>相关的开源资料<a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/UWPQuickStart/docs/challenges/cortana-integration.html">https://microsoft.github.io/UWPQuickStart/docs/challenges/cortana-integration.html</a>和<code class="language-plaintext highlighter-rouge">UWP</code>资源<a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/UWPQuickStart/docs/resources.html">https://microsoft.github.io/UWPQuickStart/docs/resources.html</a>.</p>
+
+<h2 id="微软github开源项目入口">微软Github开源项目入口</h2>
+
+<p>当你访问网址<a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io">https://microsoft.github.io</a>时，会自动跳转到<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com">https://opensource.microsoft.com</a>，于是可知微软开源项目入口即为<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com">https://opensource.microsoft.com</a>或<a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io">https://microsoft.github.io</a>.</p>
+
+<h2 id="微软开源项目受欢迎程度排名">微软开源项目受欢迎程度排名</h2>
+
+<p>打开主页<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com">https://opensource.microsoft.com</a>，将排序条件从默认的<code class="language-plaintext highlighter-rouge">Trending</code>切换到<code class="language-plaintext highlighter-rouge">Stars</code>, 即可看到Star最多的项目，同理<code class="language-plaintext highlighter-rouge">Forks</code>是按<code class="language-plaintext highlighter-rouge">fork</code>的量排序，A<strong>A</strong> Name是按项目名字典序排序。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p1.png" alt="sort-by-stars" title="大白技术控Bravo Yeung" /></p>
+
+<p>还可点击<code class="language-plaintext highlighter-rouge">← Previous </code>或<code class="language-plaintext highlighter-rouge">Next →</code>来进行翻页。</p>
+
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+
+<p>免费开源且十分流行的跨平台代码编辑器，除了代码编辑功能以外，安装插件后还能进行调试，目前已更新到版本v1.3.2. 相比于Atom、Sublime等其他代码编辑器，它拥有最多的扩展插件，最新数据表明它排在所有商业和非商业IDE中位居第<code class="language-plaintext highlighter-rouge">6</code>位。还提供代码实时分享的协作开发(Live share)功能。
+此外，微软官方还开源了很多vs插件的代码: <a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com/?sort=Stars&amp;keyword=vscode&amp;tag=">https://opensource.microsoft.com/?sort=Stars&amp;keyword=vscode&amp;tag=</a>，除了列表里的第一个，其他都是，特别是<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/vscode-go">Microsoft/vscode-go</a>最受欢迎，源码值得学习.
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p2.png" alt="vs-code" title="大白技术控Bravo Yeung" /></p>
+
+<p>中文官网: <a rel="nofollow noopener noreferrer" target="_blank" href="https://azure.microsoft.com/zh-cn/products/visual-studio-code/">https://azure.microsoft.com/zh-cn/products/visual-studio-code/</a>.</p>
+
+<p>github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/vscode">https://github.com/Microsoft/vscode</a></p>
+
+<h3 id="typescript">TypeScript</h3>
+
+<p>TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个严格超集，并添加了可选的静态类型和基于类的面向对象编程。C#的首席架构师以及Delphi和Turbo Pascal的创始人安德斯·海尔斯伯格参与了TypeScript的开发。</p>
+
+<p>TypeScript设计目标是开发大型应用，然后转译成JavaScript。由于TypeScript是JavaScript的严格超集，任何现有的JavaScript程序都是合法的TypeScript程序。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p3.png" alt="Typescript-TS" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: https://github.com/Microsoft/TypeScript</p>
+
+<h3 id="rxjs">RxJS</h3>
+
+<p>RxJS是JavaScript的Reactive Extensions，它是使用 Observables 的响应式编程的库，它使编写异步或基于回调的代码更容易。该项目是 <code class="language-plaintext highlighter-rouge">Reactive-Extensions/RxJS</code> 上一版本的重写，具有更好的性能、更好的模块性、更好的可调试调用堆栈，同时保持大部分向后兼容，只有一些破坏性的变更(breaking changes)是为了减少外层的 API 。</p>
+
+<p>中文官网: <a rel="nofollow noopener noreferrer" target="_blank" href="https://cn.rx.js.org">https://cn.rx.js.org</a> .</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p4.png" alt="img" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Reactive-Extensions/RxJS">Reactive-Extensions/RxJS</a></p>
+
+<h3 id="net-core-基础类库">.NET Core 基础类库</h3>
+
+<p>此Repo包含.NET Core的库实现（称为“CoreFX”）。 它包括System.Collections，System.IO，System.Xml和许多其他组件。 相应的.NET Core Runtime存储库（称为“CoreCLR”）包含.NET Core的运行时实现。 它包括RyuJIT，.NET GC和许多其他组件。 特定运行时的库代码（System.Private.CoreLib）位于Core CLR Repo中。 它需要与运行时一起构建和版本化。 CoreFX的其余部分与运行时实现无关，可以在任何兼容的.NET运行时（例如CoreRT）上运行。
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p5.png" alt=".net-coreFx" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: https://github.com/dotnet/corefx</p>
+
+<h3 id="cntk">CNTK</h3>
+
+<p>Microsoft Cognitive Toolkit（CNTK），一个开源的深度学习工具包</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p6.png" alt="cntk" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址:  <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/CNTK">Microsoft/CNTK</a></p>
+
+<h3 id="microsoft-calculator">Microsoft calculator</h3>
+
+<p>Windows计算器：Windows自带的一个简单但功能强大的计算器 (Win10上的UWP计算器)</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p7.png" alt="Calculator Screenshot" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/calculator">Microsoft/calculator</a></p>
+
+<h3 id="monaco-editor">Monaco editor</h3>
+<p><strong>Monaco editor</strong>：基于浏览器的代码编辑器，Visual Studio就是以Monaco editor为基础开发而成的，本人上一篇文章XAML Studio也是以之为基础做成的。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p8.png" alt="Monaco-editor" title="大白技术控Bravo Yeung" /></p>
+
+<p>在线试用:
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/monaco-editor/playground.html">https://microsoft.github.io/monaco-editor/playground.html</a></p>
+
+<p>github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/monaco-editor">Microsoft/monaco-editor</a></p>
+
+<h3 id="ms-dos">MS-DOS</h3>
+
+<p>MS-DOS 1.25和2.0的原始资源，供参考。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p9.png" alt="ms-dos" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/MS-DOS">Microsoft/MS-DOS</a></p>
+
+<h3 id="redis-windows版">Redis windows版</h3>
+
+<p>由于Redis官方没推出Windows版，微软自己基于Redis官方的Linux版的部分特性做了一个Windows版。
+Redis windows版是一个内存数据库，可以在磁盘上保留。 数据模型是键值，但支持许多不同类型的值：字符串，列表，集，排序集，哈希值.</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p10.png" alt="Redis Cache On Windows" title="大白技术控Bravo Yeung" /></p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p11.png" alt="Redis windows" title="大白技术控Bravo Yeung" /></p>
+
+<p>它原来的repo地址是 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/MSOpenTech/redis">MSOpenTech</a> ，后来 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/orgs/MSOpenTech">https://github.com/orgs/MSOpenTech</a>下的项目全迁移到了<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/MicrosoftArchive">https://github.com/MicrosoftArchive</a>.</p>
+
+<p>故最新github地址: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/MicrosoftArchive/redis">MicrosoftArchive/redis</a></p>
+
+<h3 id="net-core-clr-公共语言运行时">.NET Core CLR (公共语言运行时)</h3>
+
+<p>CoreCLR，是 .NET Core 的执行引擎，包括 RynJIT、.NET GC、原生 interop 和其他 .NET 运行时组件。当你在 .NET Core 上运行 ASP.NET 5 应用时，CoreCLR 用来执行你的代码，这还需要依赖于 CoreFX/BCL 库。
+微软称在开源和跨平台 .NET 运行时环境这项工作上将会有几个额外的里程碑。
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p12.png" alt=".NET Core CLR-enjoy233-Bravo Yeung" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: https://github.com/dotnet/coreclr</p>
+
+<h3 id="aspnet-core">ASP.NET Core</h3>
+
+<p>ASP.NET Core 是新一代的 ASP.NET，早期称为 ASP.NET vNext，并且在推出初期命名为 ASP.NET 5，但随着 .NET Core 的成熟，以及 ASP.NET 5 的命名会使得外界将它视为 ASP.NET 的升级版，但它其实是新一代从头开始打造的 ASP.NET 核心功能，因此微软宣布将它改为与 .NET Core 同步的名称，即 ASP.NET Core。
+ASP.NET Core 可运行于 Windows 平台以及非 Windows 平台，如 Mac OSX 以及 Ubuntu Linux 操作系统，是 Microsoft 第一个具有跨平台能力的 Web 开发框架。
+微软在一开始开发时就将 ASP.NET Core 开源，因此它也是开源项目的一员，由 .NET 基金会 (.NET Foundation) 所管理。
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p13.png" alt="ASP.NET Core" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: https://github.com/aspnet/AspNetCore</p>
+
+<h3 id="entity-framework-core">Entity Framework Core</h3>
+
+<p>Entity Framework Core 是微软新一代的对象关系对应 (ORM) 框架，以 .NET Core 实现，不过它是归属于 ASP.NET Core 项目的一部分，在 ASP.NET Core 开始开发时就被列入标准功能，与现行的 Entity Framework 一样，是微软官方建议使用的数据访问功能，但 .NET Core 成功移植 ADO.NET 基类库 System.Data 之后，开发人员仍能使用 ADO.NET 作为数据访问的解决方案。</p>
+
+<p>github地址: https://github.com/aspnet/EntityFrameworkCore</p>
+
+<h3 id="powershell">PowerShell</h3>
+
+<p>PowerShell（包括Windows PowerShell and PowerShell Core）是微软公司开发的任务自动化和配置管理框架，由.NET Framework和.NET Core是构建的命令行界面壳层相关脚本语言组成，最初仅Windows组件，后于2016年8月18日开源并跨平台支持。
+在PowerShell中，管理任务通常由cmdlets（发音为command-lets）执行，这是执行特定操作的专用.NET类。可以将cmdlet集合至脚本、可执行文件（一般是独立应用程序）中，或通过常规.NET类（或WMI / COM对象）实例化。通过访问不同数据存储中的数据由PowerShell运行，如资源管理器或注册表。</p>
+
+<p>PowerShell Core可很好地与现有工具配合使用, 并针对处理结构化数据 (例如 json、csv、xml 等)、REST API 和对象模型进行了优化。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p14.png" alt="img-Bravo Yeung-enjoy233" title="大白技术控Bravo Yeung" /></p>
+
+<p>github地址: https://github.com/PowerShell/PowerShell</p>
+
+<h2 id="如何在其中搜索自己需要的项目">如何在其中搜索自己需要的项目</h2>
+
+<p>由于主页<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com">https://opensource.microsoft.com</a>提供了搜索功能，只需在<code class="language-plaintext highlighter-rouge">Search repos...</code>的地方输入关键字即可。比如我需要搜索<code class="language-plaintext highlighter-rouge">wpf</code>相关的，在该处输入<code class="language-plaintext highlighter-rouge">wpf</code>。
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p15.png" alt="search-Bravo Yeung-enjoy233" title="大白技术控Bravo Yeung" /></p>
+
+<p>此时发现地址栏的网址已变成
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com/?sort=Awesomeness&amp;keyword=wpf&amp;tag=">https://opensource.microsoft.com/?sort=Awesomeness&amp;keyword=wpf&amp;tag=</a>.</p>
+
+<p>搜索结果为:
+<img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p16.png" alt="search-result" title="大白技术控Bravo Yeung" /></p>
+
+<p>同上，此处也可切换排序条件，点击<code class="language-plaintext highlighter-rouge">← Previous </code>或<code class="language-plaintext highlighter-rouge">Next →</code>来进行翻页。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p17.png" alt="sort-by-stars_Bravo Yeung-enjoy233" title="大白技术控Bravo Yeung" /></p>
+
+<h2 id="github-邮件订阅">GitHub-邮件订阅</h2>
+
+<p>事实上，微软开源项目是使用<code class="language-plaintext highlighter-rouge">Github pages</code>来管理的。根据<code class="language-plaintext highlighter-rouge">Github pages</code>的规则，默认设置下<code class="language-plaintext highlighter-rouge">Github pages</code>访问页<a rel="nofollow noopener noreferrer" target="_blank" href="http://microsoft.github.io">http://microsoft.github.io</a>对应的项目应该为: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Microsoft/microsoft.github.io">https://github.com/Microsoft/microsoft.github.io</a>. 使用<code class="language-plaintext highlighter-rouge">Github pages</code>搭建过个人博客的人都应该深知这一点。</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p18.png" alt="1553940590777-Bravo Yeung-enjoy233" title="大白技术控Bravo Yeung" /></p>
+
+<p>在<code class="language-plaintext highlighter-rouge">github</code>上登录个人账号之后，只需点<code class="language-plaintext highlighter-rouge">Watching</code>, 选择”Be notified of all conversions”即可，一旦github上有更新，会在Email中收到通知~</p>
+
+<h2 id="rss订阅">Rss订阅</h2>
+
+<p>本人使用工具<a rel="nofollow noopener noreferrer" target="_blank" href="https://fivefilters.org/content-only/">https://fivefilters.org/content-only/</a>为此网站创建了<code class="language-plaintext highlighter-rouge">rss</code>功能，订阅地址为<a rel="nofollow noopener noreferrer" target="_blank" href="http://ftr.fivefilters.org/makefulltextfeed.php?url=https%3A%2F%2Fopensource.microsoft.com%2F&amp;max=10">http://ftr.fivefilters.org/makefulltextfeed.php?url=https%3A%2F%2Fopensource.microsoft.com%2F&amp;max=10</a>，或者 <a rel="nofollow noopener noreferrer" target="_blank" href="http://www.feed43.com/8078656626535244.xml">http://www.feed43.com/8078656626535244.xml</a>，同时我还创建了一个FeedEx的版本: <a rel="nofollow noopener noreferrer" target="_blank" href="https://feedex.net/feed/www.feed43.com/8078656626535244.xml">https://feedex.net/feed/www.feed43.com/8078656626535244.xml</a>，按需取用吧。</p>
+
+<p>推荐使用<a rel="nofollow noopener noreferrer" target="_blank" href="https://feedly.com">Feedly</a>来订阅，</p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/ms-opensource-p19.png" alt="Feedly_Usage-Bravo Yeung-enjoy233" title="大白技术控Bravo Yeung" />
+这样一来，只要<a rel="nofollow noopener noreferrer" target="_blank" href="https://opensource.microsoft.com">https://opensource.microsoft.com</a>的列表里出现新项目，你进<code class="language-plaintext highlighter-rouge">feedly</code>就能看到了~</p>
+
+<h2 id="其他-microsoftgithubio上有用的链接">其他 microsoft.github.io上<strong>有用的链接</strong></h2>
+<ul>
+  <li>Windows on Github <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/windows/">https://microsoft.github.io/windows/</a></li>
+  <li>TypeScript Types Search <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/TypeSearch/">https://microsoft.github.io/TypeSearch/</a></li>
+  <li>Python Tools for Visual Studio <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/PTVS/">https://microsoft.github.io/PTVS/</a></li>
+  <li>sqlworkshops | SQL Server Workshops <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/sqlworkshops/">https://microsoft.github.io/sqlworkshops/</a></li>
+  <li>Join Microsoft Developer Design <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/join-dev-design/">https://microsoft.github.io/join-dev-design/</a></li>
+  <li>Project Ace - Using Native UI <a rel="nofollow noopener noreferrer" target="_blank" href="http://microsoft.github.io/ace/docs/native-ui/">http://microsoft.github.io/ace/docs/native-ui/</a></li>
+  <li>LSP Overview <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/language-server-protocol/overview">https://microsoft.github.io/language-server-protocol/overview</a></li>
+  <li>DAP Overview <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/debug-adapter-protocol/overview">https://microsoft.github.io/debug-adapter-protocol/overview</a></li>
+  <li>ONNX.js - Run ONNX models in the browser <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/onnxjs-demo/#/">https://microsoft.github.io/onnxjs-demo/#/</a></li>
+  <li>Microsoft Days in the Web <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/frontend-bootcamp/">https://microsoft.github.io/frontend-bootcamp/</a></li>
+  <li>Project Mu <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/mu/">https://microsoft.github.io/mu/</a></li>
+  <li>PowerBI Custom Visuals <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/PowerBI-visuals/docs/overview/">https://microsoft.github.io/PowerBI-visuals/docs/overview/</a></li>
+  <li>PowerBI-JavaScript demo <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html">https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html</a></li>
+  <li>Microsoft Technical Case Studies <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/techcasestudies/">https://microsoft.github.io/techcasestudies/</a></li>
+  <li>Microsoft Open Source Code of Conduct <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/codeofconduct/">https://microsoft.github.io/codeofconduct/</a></li>
+  <li>Embedded Learning Library (ELL) <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/ELL/">https://microsoft.github.io/ELL/</a></li>
+  <li>A library for building cross-platform apps - ReactXP <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/reactxp/">https://microsoft.github.io/reactxp/</a></li>
+  <li>PartsUnlimited <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/PartsUnlimited/">https://microsoft.github.io/PartsUnlimited/</a></li>
+  <li>PartsUnlimitedMRP <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/PartsUnlimitedMRP/">https://microsoft.github.io/PartsUnlimitedMRP/</a></li>
+  <li>CodePush <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/code-push/">https://microsoft.github.io/code-push/</a></li>
+  <li>Microsoft PROSE SDK <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/prose/">https://microsoft.github.io/prose/</a></li>
+  <li>Create extensions for Visual Studio <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/extendvs/">https://microsoft.github.io/extendvs/</a></li>
+  <li>DSCEA <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/DSCEA/">https://microsoft.github.io/DSCEA/</a></li>
+  <li>IoT kit built for the cloud <a rel="nofollow noopener noreferrer" target="_blank" href="https://microsoft.github.io/azure-iot-developer-kit/">https://microsoft.github.io/azure-iot-developer-kit/</a></li>
+</ul>
+
+<p>如果有问题，欢迎留言交流~</p>
+
+<hr />
+
+<p><strong>作者简介</strong>：Bravo Yeung，计算机硕士，知乎干货答主(获<strong>81K</strong> 赞同, <strong>38K</strong> 感谢, <strong>235K</strong> 收藏)。曾在国内 Top3互联网视频直播公司工作过，后加入一家外企做软件开发至今。</p>
+
+<p><br /></p>
+
+<p>如需转载，请加微信 <strong>iMath7</strong> 申请开白！</p>
+
+<p><br /></p>
+
+<p>欢迎在留言区留下你的观点，一起讨论提高。如果今天的文章让你有新的启发，学习能力的提升上有新的认识，欢迎转发分享给更多人。</p>
+
+<p><br /></p>
+
+<p>欢迎各位读者加入 <strong>.NET技术交流群</strong>，在公众号后台回复<strong>“加群”</strong>或者<strong>“学习”</strong>即可。</p>
+
+<p><br /></p>
+
+<p><img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/gzhCard_for_blog.png" alt="大白技术控 公众号名片" title="大白技术控Bravo Yeung" /></p>
+
+<h3 id="文末彩蛋">文末彩蛋</h3>
+
+<blockquote>
+  <p>微信后台回复“<strong>asp</strong>”，给你：一份全网最强的ASP.NET学习路线图。
+<br />
+回复“<strong>cs</strong>”，给你：一整套 C# 和 WPF 学习资源！
+<br />
+回复“<strong>core</strong>”，给你：2019年dotConf大会上发布的.NET core 3.0学习视频！</p>
+</blockquote>
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="https://geekplayers.com" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html" target="_blank">https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html';
+        this.page.identifier = '/developer-benefits_github-open-source-projects-of-microsoft.html';
+        this.page.title = '一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

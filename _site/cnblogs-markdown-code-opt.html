@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> 改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)_极客玩家大白</title>
+    <meta name="keywords" content="Python, 大白, VR, 大奔SEO, 大白SEO, 大白技术控, LeetCode, .NET, WPF, "C#", .NET Core, PHP, geekplayer, geekplayers, 极客玩家, RSS, k8s, 生活故事, 一线, 开发者, 编程, 代码, 开源, IT网站,Developer, Programmer, Coder, Geek, IT技术博客">
+    <meta name="description"
+          content="博客园的markdown模式下的代码高亮功能和行号~">
+
+    <link rel="canonical" href="https://geekplayers.com/cnblogs-markdown-code-opt.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="https://geekplayers.com/cnblogs-markdown-code-opt.html" title="改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)_极客玩家大白" target="_self" rel="canonical">改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='https://geekplayers.com'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2019/03/03 19:33:32</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#博客园美化">博客园美化</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 5</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>博客园的markdown模式下的代码高亮功能使用的是<code class="language-plaintext highlighter-rouge">highlight.js</code>，没有行号和显示相应编程语言的功能，只好自己将其改造了一下(将这两种功能一并实现了)~</p>
+
+<p>先看一下效果，再详细介绍方法~
+<img src="http://geekplayers.com/assets/images/2019/blog/cnblogs-highlight.png" alt="cnblogs-大白技术控" /></p>
+
+<h2 id="查看博客园markdown所使用的代码高亮插件">查看博客园markdown所使用的代码高亮插件</h2>
+<p>先找到一篇markdown模式下写的文章，然后打开Chrome，依次使用 F12 -&gt; network -&gt; filter “.js”，可知 代码高亮插件是 <a rel="nofollow noopener noreferrer" target="_blank" href="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js">highlight.js</a>.
+同理可知TinyMCE模式下使用的是<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/syntaxhighlighter/syntaxhighlighter/wiki/Usage">SyntaxHighlighter</a>插件.
+尝试了很多方法，最后选择了开源的插件 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/wcoder/highlightjs-line-numbers.js">highlightjs-line-numbers.js</a>，其原理是生成一个新的<code class="language-plaintext highlighter-rouge">table</code>，增加<code class="language-plaintext highlighter-rouge">tr</code>、 <code class="language-plaintext highlighter-rouge">td</code>标签, 并设置<code class="language-plaintext highlighter-rouge">border</code>为<code class="language-plaintext highlighter-rouge">none</code>。</p>
+
+<p>该插件官方文档中提到的方法为:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.6.0/dist/highlightjs-line-numbers.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();</span>
+<span class="nx">hljs</span><span class="p">.</span><span class="nx">initLineNumbersOnLoad</span><span class="p">();</span>
+<span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="调整markdown的相关css">调整markdown的相关css</h2>
+<p>接着按需要改进一下markdown的样式，将下面内容贴到<code class="language-plaintext highlighter-rouge">页面定制css</code>一栏即可。</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="rouge-code"><pre><span class="nc">.cnblogs-markdown</span> <span class="nc">.hljs</span> <span class="p">{</span>
+   <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nf">#cnblogs_post_body</span> <span class="nt">th</span><span class="o">,</span> <span class="nf">#cnblogs_post_body</span> <span class="nt">td</span><span class="o">,</span> <span class="nc">.cnblogs-post-body</span> <span class="nt">th</span><span class="o">,</span> <span class="nc">.cnblogs-post-body</span> <span class="nt">td</span> <span class="p">{</span>
+   <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.postCon</span> <span class="p">{</span>
+   <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.cnblogs-markdown</span> <span class="nc">.hljs</span><span class="o">,</span> <span class="nc">.cnblogs-post-body</span> <span class="nc">.hljs</span> <span class="p">{</span>
+   <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Consolas"</span><span class="p">,</span><span class="nb">sans-serif</span> <span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="cp">! important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.cnblogs-markdown</span> <span class="nc">.hljs</span><span class="o">,</span> <span class="nc">.cnblogs-post-body</span> <span class="nc">.hljs</span> <span class="p">{</span>
+   <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Courier New"</span><span class="p">,</span><span class="nb">sans-serif</span><span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#cnblogs_post_body</span> <span class="nt">table</span><span class="o">,</span> <span class="nc">.cnblogs-post-body</span> <span class="nt">table</span> <span class="p">{</span>
+   <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>
+   <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">collapse</span><span class="p">;</span>
+   <span class="nl">word-break</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="实现加代码行号显示代码所用语言的具体js代码">实现加代码行号、显示代码所用语言的具体<code class="language-plaintext highlighter-rouge">js</code>代码</h2>
+<p>然后在页脚HTML中加入如下<code class="language-plaintext highlighter-rouge">js</code>代码~</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.cnblogs-post-body pre &gt; code</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">setCodeRowWithLang</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.cnblogs-post-body pre</span><span class="dl">"</span><span class="p">));</span>
+    <span class="k">else</span> <span class="nx">setCodeRowWithLang</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">.cnblogs-markdown pre</span><span class="dl">"</span><span class="p">));</span>
+
+    <span class="cm">/* markdown模式下为代码加入行号, 调用插件highlightjs-line-numbers.js */</span>
+    <span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();</span>
+    <span class="nx">hljs</span><span class="p">.</span><span class="nx">initLineNumbersOnLoad</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="kd">function</span> <span class="nx">setCodeRowWithLang</span><span class="p">(</span><span class="nx">pre</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* var pre = $(".cnblogs-post-body pre");  选中需要处理的代码块, 如果不是首页，选择器为 .cnblogs-markdown pre  */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">pre</span> <span class="o">&amp;&amp;</span> <span class="nx">pre</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">pre</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+            <span class="kd">var</span> <span class="nx">lang</span> <span class="o">=</span> <span class="nx">item</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">className</span><span class="p">;</span>  <span class="cm">/*  获取高亮的语言，得到js/html/cpp等全小写的语言名，下面进行一个转换  */</span>
+            <span class="kd">var</span> <span class="nx">langMap</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">html</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">HTML</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">xml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">XML</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">svg</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SVG</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">mathml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MathML</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">css</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">CSS</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">clike</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">C-like</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">js</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JavaScript</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">abap</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ABAP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">apacheconf</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Apache Configuration</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">apl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">APL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">arff</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ARFF</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">asciidoc</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AsciiDoc</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">adoc</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AsciiDoc</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">asm6502</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">6502 Assembly</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">aspnet</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ASP.NET (C#)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">autohotkey</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AutoHotkey</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">autoit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AutoIt</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">shell</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Bash</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">basic</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">BASIC</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">csharp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">C#</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">dotnet</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">C#</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">cpp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">C++</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">cil</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">CIL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">csp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Content-Security-Policy</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">css-extras</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">CSS Extras</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">django</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Django/Jinja2</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">jinja2</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Django/Jinja2</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">dockerfile</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Docker</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">erb</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ERB</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">fsharp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">F#</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">gcode</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">G-code</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">gedcom</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GEDCOM</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">glsl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GLSL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">gml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GameMaker Language</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">gamemakerlanguage</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GameMaker Language</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">graphql</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">GraphQL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">hcl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">HCL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">http</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">HTTP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">hpkp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">HTTP Public-Key-Pins</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">hsts</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">HTTP Strict-Transport-Security</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">ichigojam</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">IchigoJam</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">inform7</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Inform 7</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">javastacktrace</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Java stack trace</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">json</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JSON</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">jsonp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">JSONP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">latex</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">LaTeX</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">emacs</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Lisp</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">elisp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Lisp</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">emacs-lisp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Lisp</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">lolcode</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">LOLCODE</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">markup-templating</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Markup templating</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">matlab</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MATLAB</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">mel</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MEL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">n1ql</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">N1QL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">n4js</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">N4JS</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">n4jsd</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">N4JS</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">nand2tetris-hdl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Nand To Tetris HDL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">nasm</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">NASM</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">nginx</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">nginx</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">nsis</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">NSIS</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">objectivec</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Objective-C</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">ocaml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OCaml</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">opencl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">OpenCL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">parigp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PARI/GP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">objectpascal</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Object Pascal</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">php</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PHP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">php-extras</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PHP Extras</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">plsql</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PL/SQL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">powershell</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PowerShell</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">.properties</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">protobuf</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Protocol Buffers</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">q</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Q (kdb+ database)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">jsx</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">React JSX</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">tsx</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">React TSX</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">renpy</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Ren'py</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">rest</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">reST (reStructuredText)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">sas</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SAS</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">sass</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Sass (Sass)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">scss</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Sass (Scss)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">sql</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SQL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">soy</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Soy (Closure Template)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">tap</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">TAP</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">toml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">TOML</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">tt2</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Template Toolkit 2</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">ts</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">TypeScript</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">vbnet</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">VB.Net</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">vhdl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">VHDL</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">vim</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">vim</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">visual-basic</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Visual Basic</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">vb</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Visual Basic</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">wasm</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">WebAssembly</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">wiki</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Wiki markup</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">xeoracube</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">XeoraCube</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">xojo</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Xojo (REALbasic)</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">xquery</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">XQuery</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YAML</span><span class="dl">"</span>
+            <span class="p">};</span>
+
+            <span class="kd">var</span> <span class="nx">displayLangText</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">lang</span> <span class="k">in</span> <span class="nx">langMap</span><span class="p">)</span> <span class="nx">displayLangText</span> <span class="o">=</span> <span class="nx">langMap</span><span class="p">[</span><span class="nx">lang</span><span class="p">];</span>
+            <span class="k">else</span> <span class="nx">displayLangText</span> <span class="o">=</span> <span class="nx">lang</span><span class="p">;</span>
+            <span class="nx">item</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="dl">'</span><span class="s1">.hljs</span><span class="dl">'</span><span class="p">)</span>
+                <span class="p">.</span><span class="nx">prepend</span><span class="p">(</span>
+                    <span class="dl">'</span><span class="s1">&lt;div align="right" top="0px" right="10px" position="relative"&gt;&lt;a href="javascript:void(0);"&gt;&lt;/a&gt; &lt;font class="codeLang"  title="当前Code所用语言"&gt;</span><span class="dl">'</span> <span class="o">+</span>
+                    <span class="nx">displayLangText</span> <span class="o">+</span>
+                    <span class="dl">'</span><span class="s1">&lt;/font&gt;&lt;/div&gt;</span><span class="dl">'</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>使用 <code class="language-plaintext highlighter-rouge">highlight-line-number.js</code>的前提是已经include进来<code class="language-plaintext highlighter-rouge">highlight.js</code>，虽然首页是默认不load <code class="language-plaintext highlighter-rouge">highlight.js</code>的，但可使用<code class="language-plaintext highlighter-rouge">JQuery</code>的<code class="language-plaintext highlighter-rouge">getScript</code>函数去加载之。</p>
+
+<p>上述<code class="language-plaintext highlighter-rouge">js</code>函数<code class="language-plaintext highlighter-rouge">setCodeRowWithLang()</code>对文章内容和博客首页都是有效的~</p>
+
+<p>本文<strong>首发</strong>于 本人<strong>博客园</strong>博客: <br />
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.cnblogs.com/enjoy233/p/10410089.html">https://www.cnblogs.com/enjoy233/p/10410089.html</a> .</p>
+
+
+
+            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="https://geekplayers.com" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="https://geekplayers.com/cnblogs-markdown-code-opt.html" target="_blank">https://geekplayers.com/cnblogs-markdown-code-opt.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://geekplayers.com/cnblogs-markdown-code-opt.html';
+        this.page.identifier = '/cnblogs-markdown-code-opt.html';
+        this.page.title = '改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>
