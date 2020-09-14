@@ -106,10 +106,10 @@
 }
 /******* Scroll End *******/
 
-/** Jumbotron **/
+/* Jumbotron, 页面标题区 */
 .jumbotron {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     color: #fff;
 }
 
