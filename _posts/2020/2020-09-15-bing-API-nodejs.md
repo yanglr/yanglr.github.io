@@ -5,7 +5,7 @@ title: 必应API接口node.js版
 categories:
 - [大奔SEO,seo,Bing]
 tags: [seo,Bing, 大奔SEO]
-excerpt: 必应API接口node.js版
+excerpt: 必应搜索的API接口node.js版
 keywords: 大奔SEO,seo,Bing,大白SEO
 description: 必应API接口node.js版 - 大奔SEO
 topmost: true
