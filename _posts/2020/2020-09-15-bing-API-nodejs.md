@@ -66,7 +66,7 @@ request(options, function (error, response, body) {
 
 
 
-登录必应站长后台https://www.bing.com/webmasters，点右上角的设置按钮(齿轮⚙)，找到你的key：
+登录必应站长后台<https://www.bing.com/webmasters>，点右上角的设置按钮(齿轮⚙)，找到你的key：
 
 Step 1:
 ![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com1.png "大奔SEO")
@@ -246,7 +246,7 @@ request('https://www.geekplayers.com/sitemap.xml', function (error, response, ht
 // Reference: https://stackoverflow.com/a/25012834/6075331
 ```
 
-先保存代码为: sitemapInXMLtoText.js,
+先保存代码为: `sitemapInXMLtoText.js`,
 
 命令行中用cd命令切换到当前目录，然后依次输入:
 
