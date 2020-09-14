@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 大奔SEO
-titlebar: dabenSeo
+titlebar: 大奔SEO
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 大奔SEO
 menu: dabenSeo
 css: ['blog-page.css']
