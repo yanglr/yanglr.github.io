@@ -125,7 +125,6 @@ navs:
     target: _blank
 
   -
-    
     href: /dotnet.html
     label: .NET
     target: _blank
