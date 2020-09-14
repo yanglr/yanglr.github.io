@@ -37,7 +37,7 @@ permalink: /tools/
                 </li>
                 <li class="posts-list-item">
                         <span class="posts-list-meta">2020-09-13 11:30</span>                
-                        <a class="posts-list-name bubble-float-left" href="/tools/ejs">Run ejs</a>
+                        <a class="posts-list-name bubble-float-left" href="/tools/ejs/">Run ejs</a>
                         <span class="circle"></span>                        
                 </li>                            
         </ul> 
