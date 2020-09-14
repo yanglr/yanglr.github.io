@@ -27,14 +27,19 @@ permalink: /tools/
 
                 <li class="posts-list-item">
                         <span class="posts-list-meta">2020-07-26 16:28</span>
-                        <a class="posts-list-name bubble-float-left" href="/run-liquild-online.html"> Run Liquid basic</a>
+                        <a class="posts-list-name bubble-float-left" href="/tools/run-liquild-online.html">Run Liquid basic</a>
                         <span class="circle"></span>
                 </li>
                 <li class="posts-list-item">
                         <span class="posts-list-meta">2020-07-26 18:10</span>                
-                        <a class="posts-list-name bubble-float-left" href="/run-liquild-online-pro.html"> Run Liquid Pro</a>
+                        <a class="posts-list-name bubble-float-left" href="/tools/run-liquild-online-pro.html">Run Liquid Pro</a>
                         <span class="circle"></span>                        
-                </li>                
+                </li>
+                <li class="posts-list-item">
+                        <span class="posts-list-meta">2020-09-13 11:30</span>                
+                        <a class="posts-list-name bubble-float-left" href="/tools/ejs/">Run ejs</a>
+                        <span class="circle"></span>                        
+                </li>                            
         </ul> 
 
         <!-- Pagination -->
