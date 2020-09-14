@@ -111,8 +111,18 @@ menus:
 navs:
 
   -
-    href: /
-    label: Home
+    href: /algo.html
+    label: 算法
+    target: _self
+
+  # -
+  #   href: /
+  #   label: Home
+
+  -
+    href: /dabenSEO.html
+    label: 大奔SEO
+    target: _blank
 
   -
     
@@ -133,11 +143,6 @@ navs:
       #   subHref: http://enjoy233.cnblogs.com
       #   subLabel: .NET 极客技术
       #   target: _blank
-
-  -
-    href: /algo.html
-    label: 算法
-    target: _self
 
   -
     href: /k8s.html
