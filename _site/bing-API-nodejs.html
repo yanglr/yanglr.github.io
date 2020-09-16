@@ -1,0 +1,1018 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> 必应API接口node.js版_极客玩家大白</title>
+    <meta name="keywords" content="大奔SEO,seo,Bing,大白SEO">
+    <meta name="description"
+          content="必应搜索的API接口node.js版">
+
+    <link rel="canonical" href="http://localhost:4000/bing-API-nodejs.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="必应API接口node.js版">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>必应API接口node.js版</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="http://localhost:4000/bing-API-nodejs.html" title="必应API接口node.js版_极客玩家大白" target="_self" rel="canonical">必应API接口node.js版</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2020/09/14 18:21:20</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#大奔SEO">大奔SEO</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#seo">seo</a>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#Bing">Bing</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 3</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 24</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 5</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:4</p>
+                <p>size: 3</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:5</p>
+                <p>size: 4</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>近期，在研究百度、必应、API等的url提交API时，发现有用Go语言做工具的大佬的分享 <a rel="nofollow noopener noreferrer" target="_blank" href="https://pylist.com/t/1582821291">利用 API 自动向搜索引擎提交网址(Go语言版) - pyList</a>。</p>
+
+<p>其中提到bing API提交方法，并给出了Go语言代码:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="k">func</span> <span class="n">Bing</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">sUrl</span> <span class="o">:=</span> <span class="s">"https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey=xxxxxxxx"</span>
+    <span class="n">buf</span> <span class="o">:=</span> <span class="n">bytes</span><span class="o">.</span><span class="n">NewBufferString</span><span class="p">(</span><span class="s">`{
+"siteUrl":"https://pylist.com",
+"url":"https://pylist.com/t/1581940902"
+}`</span><span class="p">)</span>
+    <span class="n">req</span><span class="p">,</span> <span class="n">err</span> <span class="o">:=</span> <span class="n">http</span><span class="o">.</span><span class="n">NewRequest</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">sUrl</span><span class="p">,</span> <span class="n">buf</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">err</span> <span class="o">!=</span> <span class="no">nil</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">Header</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="s">"Content-Type"</span><span class="p">,</span> <span class="s">"application/json; charset=utf-8"</span><span class="p">)</span>
+
+    <span class="n">resp</span><span class="p">,</span> <span class="n">err</span> <span class="o">:=</span> <span class="n">http</span><span class="o">.</span><span class="n">DefaultClient</span><span class="o">.</span><span class="n">Do</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">err</span> <span class="o">!=</span> <span class="no">nil</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+    <span class="k">defer</span> <span class="n">resp</span><span class="o">.</span><span class="n">Body</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>可以保存为: <code class="language-plaintext highlighter-rouge">bing-push.go</code>, 然后在本地执行哈~</p>
+
+<p>而相比于go语言，我本人对node.js更熟悉一点~</p>
+
+<h2 id="必应api接口-单条提交">必应API接口-单条提交</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">uri</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey=</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span><span class="p">,</span> <span class="cm">/* xxx需替换为你的key */</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">json</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">siteUrl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://geekplayers.com</span><span class="dl">"</span><span class="p">,</span> <span class="cm">/* 替换为你的站点，并且在Bing站长平台中验证过权限 */</span>
+        <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://geekplayers.com/link.html</span><span class="dl">"</span>   <span class="cm">/* 替换为你需要推送的url */</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nx">request</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Bing response: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>登录必应站长后台<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.bing.com/webmasters">https://www.bing.com/webmasters</a>，点右上角的设置按钮(齿轮⚙)，找到你的key：</p>
+
+<p>Step 1:
+<img src="https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com1.png" alt="大奔SEO_极客玩家大白" title="大奔SEO" /></p>
+
+<p>Step 2:
+<img src="https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com2.png" alt="大奔SEO_极客玩家大白" title="大奔SEO" /></p>
+
+<p>然后将上述代码中的xxx替换为你的key。</p>
+
+<p>先保存文件为: <code class="language-plaintext highlighter-rouge">bing-SingleSumbit.js</code>,</p>
+
+<p>然后在当前目录下打开命令行，输入 <code class="language-plaintext highlighter-rouge">npm install request</code>,</p>
+
+<p>接下来改好key, siteurl, url等值后，就可以在命令行中运行:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>node bing-SingleSumbit.js
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="必应api接口-批量提交">必应API接口-批量提交</h2>
+
+<h3 id="批量提交---版本1">批量提交 - 版本1</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">myJson</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">siteUrl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://geekplayers.com</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">urlList</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="dl">"</span><span class="s2">http://geekplayers.com/link.html</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">http://geekplayers.com/about.html</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">http://geekplayers.com/blog/</span><span class="dl">"</span>
+    <span class="p">]</span>
+<span class="p">};</span>
+<span class="nx">request</span><span class="p">({</span>
+    <span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey=</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span><span class="p">,</span> <span class="cm">/* xxx需替换为你的key */</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">json</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>   <span class="c1">// &lt;--Very important!!!</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">myJson</span>
+<span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>我记得这里有个跨域的问题, 设置 <code class="language-plaintext highlighter-rouge">json: true</code> 即可解决。</p>
+
+<p>先将代码保存为: <code class="language-plaintext highlighter-rouge">bing-BatchSumbit.js</code>.</p>
+
+<p>运行方法，同上~</p>
+
+<h3 id="批量提交---改进1">批量提交 - 改进1</h3>
+
+<p>在上一版本的基础上可以改进，即：把多条url先按行放进link.txt中，然后读取处理~</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">readline</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">readline</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">function</span> <span class="nx">readFileToArr</span><span class="p">(</span><span class="nx">fReadName</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kd">var</span> <span class="nx">readObj</span> <span class="o">=</span> <span class="nx">readline</span><span class="p">.</span><span class="nx">createInterface</span><span class="p">({</span>
+        <span class="na">input</span><span class="p">:</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="nx">fReadName</span><span class="p">)</span>
+    <span class="p">});</span>
+
+    <span class="nx">readObj</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">line</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">line</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="nx">readObj</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">close</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">readLine close....</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">callback</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">// var urlsFile = path.resolve(__dirname, 'links.txt').replace(/\\/g, '/');  // For Windows</span>
+<span class="kd">var</span> <span class="nx">urlsFile</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="dl">'</span><span class="s1">..</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">nodejs</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">links.txt</span><span class="dl">'</span><span class="p">);</span> <span class="cm">/* 兼容 Windows/Linux, 这里nodejs为上级文件夹名 */</span>
+
+<span class="nx">readFileToArr</span><span class="p">(</span><span class="nx">urlsFile</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">myJson</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">siteUrl</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://geekplayers.com</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">urlList</span><span class="dl">"</span><span class="p">:</span> <span class="nx">arr</span>
+    <span class="p">};</span>
+    
+    <span class="nx">request</span><span class="p">({</span>
+        <span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey=</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">method</span><span class="p">:</span> <span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">json</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>   <span class="c1">// &lt;--Very important!!!</span>
+        <span class="na">body</span><span class="p">:</span> <span class="nx">myJson</span>
+    <span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>保存文件为: <code class="language-plaintext highlighter-rouge">bing-BatchSumbit2.js</code>，</p>
+
+<p>命令行中用cd命令切换到当前目录，然后依次输入:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install </span>fs
+npm <span class="nb">install </span>readline
+npm <span class="nb">install </span>path
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>改好key, siteurl, url等值后，并在当前目录创建文件links.txt并填入需要推送的多条url，就可以在命令行中运行:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>node bing-BatchSumbit2.js
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="批量提交---改进2">批量提交 - 改进2</h3>
+
+<p>上一版本的代码中，links.txt的内容是手动添加的，那我们可不可以从sitemap.xml获取并直接转换为.txt供后面使用呢？当然可以，于是另外写了一段node.js代码做这个事。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">cheerio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">cheerio</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">request</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://www.geekplayers.com/sitemap.xml</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">html</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">error</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">$</span> <span class="o">=</span> <span class="nx">cheerio</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="nx">html</span><span class="p">,</span> <span class="p">{</span>
+            <span class="na">xmlMode</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">});</span>
+
+        <span class="nx">textFile</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">myLink.txt</span><span class="dl">'</span><span class="p">;</span>
+        <span class="nx">fs</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">textFile</span><span class="p">,</span> <span class="dl">'</span><span class="s1">wx</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">fd</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">code</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">EEXIST</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">myfile already exists</span><span class="dl">'</span><span class="p">);</span>
+                    
+                    <span class="nx">fs</span><span class="p">.</span><span class="nx">unlinkSync</span><span class="p">(</span><span class="nx">textFile</span><span class="p">);</span>  <span class="c1">// Remove file</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+        <span class="p">});</span>
+
+        <span class="kd">const</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">loc</span><span class="dl">'</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+        
+        <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nodes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">nodes</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">firstChild</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+
+            <span class="nx">fs</span><span class="p">.</span><span class="nx">appendFile</span><span class="p">(</span><span class="nx">textFile</span><span class="p">,</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="dl">'</span><span class="se">\r\n</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">One line converted failed.</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// append failed</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="c1">// console.error('One line converted done!');</span>
+                <span class="p">}</span>                
+            <span class="p">})</span>
+        <span class="p">}</span>
+
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Converted done!</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// Reference: https://stackoverflow.com/a/25012834/6075331</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>先保存代码为: <code class="language-plaintext highlighter-rouge">sitemapInXMLtoText.js</code>,</p>
+
+<p>命令行中用cd命令切换到当前目录，然后依次输入:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>npm <span class="nb">install </span>fs
+npm <span class="nb">install </span>request
+npm <span class="nb">install </span>cheerio
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>改好key, siteurl, url等值后，就可以在命令行中运行:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>node sitemapInXMLtoText.js
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>接下来只需将request调用时的第一个参数改为你的sitemap.xml的网址即可~</p>
+
+<p>最后再到命令行中执行一次:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>node bing-BatchSumbit2.js
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="bing还提供了其他api接口">Bing还提供了其他API接口</h3>
+
+<p>GetKeywordStats - Bing</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>https://ssl.bing.com/webmaster/api.svc/json/GetKeywordStats?q=dog%20beds&amp;country=be&amp;language=nl-BE&amp;apikey=...
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>RSS Feed提交:</p>
+
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://bing.com/webmaster/api.svc/json/SubmitFeed">https://bing.com/webmaster/api.svc/json/SubmitFeed</a></p>
+
+<p>获取用户验证后的站点信息:</p>
+
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://ssl.bing.com/webmaster/api.svc/json/GetUserSites">https://ssl.bing.com/webmaster/api.svc/json/GetUserSites</a></p>
+
+<p>有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~</p>
+
+
+            <style>
+.PageNav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNav .next {
+  text-align: right;
+}    
+</style>
+
+<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="http://localhost:4000" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="http://localhost:4000/bing-API-nodejs.html" target="_blank">http://localhost:4000/bing-API-nodejs.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div class="PageNav">
+    
+    <a class="prev" href="/replace-flag-counter.html"><i class="fa fa-arrow-left"></i>&nbsp;FlagCounter被博客园禁用的解决方法</a>
+    
+    
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://localhost:4000/bing-API-nodejs.html';
+        this.page.identifier = '/bing-API-nodejs.html';
+        this.page.title = '必应API接口node.js版';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

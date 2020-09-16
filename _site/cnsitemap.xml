@@ -3,7 +3,22 @@
   
     
   <url>
-    <loc>https://geekplayers.com/replace-flag-counter.html</loc>
+    <loc>http://localhost:4000/bing-API-nodejs.html</loc>
+      
+    <lastmod>2020-09-14</lastmod>
+      
+      
+    <changefreq>daily</changefreq>
+      
+      
+    <priority>0.8</priority>
+      
+  </url>
+    
+  
+    
+  <url>
+    <loc>http://localhost:4000/replace-flag-counter.html</loc>
       
     <lastmod>2020-09-08</lastmod>
       
@@ -18,7 +33,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/interview-test.html</loc>
+    <loc>http://localhost:4000/interview-test.html</loc>
       
     <lastmod>2020-08-16</lastmod>
       
@@ -33,7 +48,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html</loc>
+    <loc>http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html</loc>
       
     <lastmod>2020-08-02</lastmod>
       
@@ -48,7 +63,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</loc>
+    <loc>http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</loc>
       
     <lastmod>2020-07-26</lastmod>
       
@@ -63,7 +78,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/forever-window-personal-view-on-window.html</loc>
+    <loc>http://localhost:4000/forever-window-personal-view-on-window.html</loc>
       
     <lastmod>2020-07-05</lastmod>
       
@@ -78,7 +93,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/inside-xaml.html</loc>
+    <loc>http://localhost:4000/inside-xaml.html</loc>
       
     <lastmod>2020-07-02</lastmod>
       
@@ -93,7 +108,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/visual-cpp-wpf-method.html</loc>
+    <loc>http://localhost:4000/visual-cpp-wpf-method.html</loc>
       
     <lastmod>2020-06-29</lastmod>
       
@@ -108,7 +123,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/the-methods-using-visual-Cpp-creating-wpf.html</loc>
+    <loc>http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</loc>
       
     <lastmod>2020-06-28</lastmod>
       
@@ -123,7 +138,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/wpf-data-binding-debug-guide.html</loc>
+    <loc>http://localhost:4000/wpf-data-binding-debug-guide.html</loc>
       
     <lastmod>2020-06-27</lastmod>
       
@@ -138,7 +153,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/Using-WPF-with-Managed-cpp.html</loc>
+    <loc>http://localhost:4000/Using-WPF-with-Managed-cpp.html</loc>
       
     <lastmod>2020-06-27</lastmod>
       
@@ -153,7 +168,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/aimed-at-offer-search-in-two-dimensional-array.html</loc>
+    <loc>http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html</loc>
       
     <lastmod>2020-06-17</lastmod>
       
@@ -168,7 +183,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/master-of-money.html</loc>
+    <loc>http://localhost:4000/master-of-money.html</loc>
       
     <lastmod>2020-04-10</lastmod>
       
@@ -183,7 +198,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/wpf-study-note-by-xiyuanmore.html</loc>
+    <loc>http://localhost:4000/wpf-study-note-by-xiyuanmore.html</loc>
       
     <lastmod>2020-03-19</lastmod>
       
@@ -198,7 +213,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode977-squares-of-a-sorted-array.html</loc>
+    <loc>http://localhost:4000/python-leetcode977-squares-of-a-sorted-array.html</loc>
       
     <lastmod>2019-11-25</lastmod>
       
@@ -213,7 +228,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode645-set-mismatch.html</loc>
+    <loc>http://localhost:4000/python-leetcode645-set-mismatch.html</loc>
       
     <lastmod>2019-11-25</lastmod>
       
@@ -228,7 +243,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/leetcode976-largest-perimeter-triangle.html</loc>
+    <loc>http://localhost:4000/leetcode976-largest-perimeter-triangle.html</loc>
       
     <lastmod>2019-11-20</lastmod>
       
@@ -243,7 +258,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/leetcode345-reverse-vowels-of-a-string.html</loc>
+    <loc>http://localhost:4000/leetcode345-reverse-vowels-of-a-string.html</loc>
       
     <lastmod>2019-11-13</lastmod>
       
@@ -258,7 +273,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/dabai-VR.html</loc>
+    <loc>http://localhost:4000/dabai-VR.html</loc>
       
     <lastmod>2019-11-04</lastmod>
       
@@ -273,7 +288,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode58-length-of-last-word.html</loc>
+    <loc>http://localhost:4000/python-leetcode58-length-of-last-word.html</loc>
       
     <lastmod>2019-10-30</lastmod>
       
@@ -288,7 +303,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode13-roman-to-integer.html</loc>
+    <loc>http://localhost:4000/python-leetcode13-roman-to-integer.html</loc>
       
     <lastmod>2019-10-26</lastmod>
       
@@ -303,7 +318,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode9-palindrome-number.html</loc>
+    <loc>http://localhost:4000/python-leetcode9-palindrome-number.html</loc>
       
     <lastmod>2019-10-19</lastmod>
       
@@ -318,7 +333,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode204-count-primes.html</loc>
+    <loc>http://localhost:4000/python-leetcode204-count-primes.html</loc>
       
     <lastmod>2019-10-04</lastmod>
       
@@ -333,7 +348,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode202-happy-number.html</loc>
+    <loc>http://localhost:4000/python-leetcode202-happy-number.html</loc>
       
     <lastmod>2019-09-28</lastmod>
       
@@ -348,7 +363,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode67-add-binary.html</loc>
+    <loc>http://localhost:4000/python-leetcode67-add-binary.html</loc>
       
     <lastmod>2019-09-14</lastmod>
       
@@ -363,7 +378,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode136-single-number.html</loc>
+    <loc>http://localhost:4000/python-leetcode136-single-number.html</loc>
       
     <lastmod>2019-09-13</lastmod>
       
@@ -378,7 +393,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python-leetcode89-gary-code.html</loc>
+    <loc>http://localhost:4000/python-leetcode89-gary-code.html</loc>
       
     <lastmod>2019-09-09</lastmod>
       
@@ -393,7 +408,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/c4-model-arch-digram-show-draw-like-this.html</loc>
+    <loc>http://localhost:4000/c4-model-arch-digram-show-draw-like-this.html</loc>
       
     <lastmod>2019-09-05</lastmod>
       
@@ -408,7 +423,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/geek-time-gift.html</loc>
+    <loc>http://localhost:4000/geek-time-gift.html</loc>
       
     <lastmod>2019-05-31</lastmod>
       
@@ -423,7 +438,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html</loc>
+    <loc>http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html</loc>
       
     <lastmod>2019-03-31</lastmod>
       
@@ -438,7 +453,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP.html</loc>
+    <loc>http://localhost:4000/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP.html</loc>
       
     <lastmod>2019-03-21</lastmod>
       
@@ -453,7 +468,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/js_add_copyright_automatically.html</loc>
+    <loc>http://localhost:4000/js_add_copyright_automatically.html</loc>
       
     <lastmod>2019-03-06</lastmod>
       
@@ -468,7 +483,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/buildHexo.html</loc>
+    <loc>http://localhost:4000/buildHexo.html</loc>
       
     <lastmod>2019-03-05</lastmod>
       
@@ -483,7 +498,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/cnblogs-markdown-code-opt.html</loc>
+    <loc>http://localhost:4000/cnblogs-markdown-code-opt.html</loc>
       
     <lastmod>2019-03-03</lastmod>
       
@@ -498,7 +513,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/xml-parse-guide-based-on-MSXML-using-cpp.html</loc>
+    <loc>http://localhost:4000/xml-parse-guide-based-on-MSXML-using-cpp.html</loc>
       
     <lastmod>2019-01-11</lastmod>
       
@@ -513,7 +528,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/calculator_using_caliburn-micro_from0to1.html</loc>
+    <loc>http://localhost:4000/calculator_using_caliburn-micro_from0to1.html</loc>
       
     <lastmod>2018-06-04</lastmod>
       
@@ -528,7 +543,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/aimed-at-offer-the-first-character-which-only-appear-once-csharp.html</loc>
+    <loc>http://localhost:4000/aimed-at-offer-the-first-character-which-only-appear-once-csharp.html</loc>
       
     <lastmod>2018-06-02</lastmod>
       
@@ -543,7 +558,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/find-new-world.html</loc>
+    <loc>http://localhost:4000/find-new-world.html</loc>
       
     <lastmod>2017-01-18</lastmod>
       
@@ -558,7 +573,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/windows-install-jekyll.html</loc>
+    <loc>http://localhost:4000/windows-install-jekyll.html</loc>
       
     <lastmod>2016-10-19</lastmod>
       
@@ -573,7 +588,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/huawei-campus2016-problem3.html</loc>
+    <loc>http://localhost:4000/huawei-campus2016-problem3.html</loc>
       
     <lastmod>2016-10-10</lastmod>
       
@@ -588,7 +603,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/huawei-campus2016-problem2.html</loc>
+    <loc>http://localhost:4000/huawei-campus2016-problem2.html</loc>
       
     <lastmod>2016-10-10</lastmod>
       
@@ -603,7 +618,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/huawei-campus2016-problem1.html</loc>
+    <loc>http://localhost:4000/huawei-campus2016-problem1.html</loc>
       
     <lastmod>2016-10-10</lastmod>
       
@@ -618,7 +633,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/inverse-pairs-in-array.html</loc>
+    <loc>http://localhost:4000/inverse-pairs-in-array.html</loc>
       
     <lastmod>2016-10-04</lastmod>
       
@@ -633,7 +648,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/cstdlib-cpp-grammer.html</loc>
+    <loc>http://localhost:4000/cstdlib-cpp-grammer.html</loc>
       
     <lastmod>2016-10-02</lastmod>
       
@@ -648,7 +663,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/num-array-splice-to-min-num.html</loc>
+    <loc>http://localhost:4000/num-array-splice-to-min-num.html</loc>
       
     <lastmod>2016-10-01</lastmod>
       
@@ -663,7 +678,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/increase-seq-two-sum-solution.html</loc>
+    <loc>http://localhost:4000/increase-seq-two-sum-solution.html</loc>
       
     <lastmod>2016-10-01</lastmod>
       
@@ -678,7 +693,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/string-left-rotation-solution.html</loc>
+    <loc>http://localhost:4000/string-left-rotation-solution.html</loc>
       
     <lastmod>2016-09-29</lastmod>
       
@@ -693,7 +708,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/reverse-word-order-solution.html</loc>
+    <loc>http://localhost:4000/reverse-word-order-solution.html</loc>
       
     <lastmod>2016-09-29</lastmod>
       
@@ -708,7 +723,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/string-permutation-solution.html</loc>
+    <loc>http://localhost:4000/string-permutation-solution.html</loc>
       
     <lastmod>2016-09-28</lastmod>
       
@@ -723,7 +738,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/odd-before-even-solution.html</loc>
+    <loc>http://localhost:4000/odd-before-even-solution.html</loc>
       
     <lastmod>2016-09-27</lastmod>
       
@@ -738,7 +753,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/std-getline-function-usage.html</loc>
+    <loc>http://localhost:4000/std-getline-function-usage.html</loc>
       
     <lastmod>2016-09-19</lastmod>
       
@@ -753,7 +768,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/word-reverse-print-solution.html</loc>
+    <loc>http://localhost:4000/word-reverse-print-solution.html</loc>
       
     <lastmod>2016-09-19</lastmod>
       
@@ -768,7 +783,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/string-linebreak-every-eight.html</loc>
+    <loc>http://localhost:4000/string-linebreak-every-eight.html</loc>
       
     <lastmod>2016-09-19</lastmod>
       
@@ -783,7 +798,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/backfoward-first-appear-solution.html</loc>
+    <loc>http://localhost:4000/backfoward-first-appear-solution.html</loc>
       
     <lastmod>2016-09-18</lastmod>
       
@@ -798,7 +813,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/reverse-int-solution.html</loc>
+    <loc>http://localhost:4000/reverse-int-solution.html</loc>
       
     <lastmod>2016-09-18</lastmod>
       
@@ -813,7 +828,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/reverse-english-statement.html</loc>
+    <loc>http://localhost:4000/reverse-english-statement.html</loc>
       
     <lastmod>2016-09-18</lastmod>
       
@@ -828,7 +843,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/max-profit-in-stock.html</loc>
+    <loc>http://localhost:4000/max-profit-in-stock.html</loc>
       
     <lastmod>2016-09-18</lastmod>
       
@@ -843,7 +858,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/get-cube-root.html</loc>
+    <loc>http://localhost:4000/get-cube-root.html</loc>
       
     <lastmod>2016-09-18</lastmod>
       
@@ -858,7 +873,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/sum-of-a-sequence.html</loc>
+    <loc>http://localhost:4000/sum-of-a-sequence.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -873,7 +888,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/least-common-multiple.html</loc>
+    <loc>http://localhost:4000/least-common-multiple.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -888,7 +903,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/char-count-hard-solution.html</loc>
+    <loc>http://localhost:4000/char-count-hard-solution.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -903,7 +918,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/char-count-solution.html</loc>
+    <loc>http://localhost:4000/char-count-solution.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -918,7 +933,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/count-char-in-string-solution.html</loc>
+    <loc>http://localhost:4000/count-char-in-string-solution.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -933,7 +948,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/prime-factor-solution.html</loc>
+    <loc>http://localhost:4000/prime-factor-solution.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -948,7 +963,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/integer_storage-one-count.html</loc>
+    <loc>http://localhost:4000/integer_storage-one-count.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -963,7 +978,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/string-reverse-solution.html</loc>
+    <loc>http://localhost:4000/string-reverse-solution.html</loc>
       
     <lastmod>2016-09-17</lastmod>
       
@@ -978,7 +993,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/last-word-length-solution.html</loc>
+    <loc>http://localhost:4000/last-word-length-solution.html</loc>
       
     <lastmod>2016-09-16</lastmod>
       
@@ -993,7 +1008,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/redmine-child-issue.html</loc>
+    <loc>http://localhost:4000/redmine-child-issue.html</loc>
       
     <lastmod>2016-09-15</lastmod>
       
@@ -1008,7 +1023,7 @@
   
     
   <url>
-    <loc>https://geekplayers.com/smarty_usage_in_php.html</loc>
+    <loc>http://localhost:4000/smarty_usage_in_php.html</loc>
       
     <lastmod>2016-09-15</lastmod>
       
@@ -1024,9 +1039,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/404.html</loc>
+    <loc>http://localhost:4000/404.html</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1039,9 +1054,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/about</loc>
+    <loc>http://localhost:4000/about</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1054,9 +1069,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/algo</loc>
+    <loc>http://localhost:4000/algo</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1069,9 +1084,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/arch</loc>
+    <loc>http://localhost:4000/arch</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1084,9 +1099,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/archives.html</loc>
+    <loc>http://localhost:4000/archives.html</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1099,9 +1114,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/blog/</loc>
+    <loc>http://localhost:4000/blog/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1114,9 +1129,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/categories/</loc>
+    <loc>http://localhost:4000/categories/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1129,9 +1144,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/cnsitemap.xml</loc>
+    <loc>http://localhost:4000/cnsitemap.xml</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1144,9 +1159,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/csharp</loc>
+    <loc>http://localhost:4000/csharp</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1159,9 +1174,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/dabaiSEO</loc>
+    <loc>http://localhost:4000/dabaiSEO</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1174,9 +1189,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/dabenSeo</loc>
+    <loc>http://localhost:4000/dabenSeo</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1189,9 +1204,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/docker</loc>
+    <loc>http://localhost:4000/docker</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1204,9 +1219,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/dotnet</loc>
+    <loc>http://localhost:4000/dotnet</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1219,9 +1234,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/feed.xml</loc>
+    <loc>http://localhost:4000/feed.xml</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1234,9 +1249,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/geektime</loc>
+    <loc>http://localhost:4000/geektime</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1249,9 +1264,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/gitchat</loc>
+    <loc>http://localhost:4000/gitchat</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1264,9 +1279,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/github_io_sitemap.txt</loc>
+    <loc>http://localhost:4000/github_io_sitemap.txt</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1279,9 +1294,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/</loc>
+    <loc>http://localhost:4000/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1294,9 +1309,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/it</loc>
+    <loc>http://localhost:4000/it</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1309,9 +1324,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/k8s</loc>
+    <loc>http://localhost:4000/k8s</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1324,9 +1339,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/leetcode</loc>
+    <loc>http://localhost:4000/leetcode</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1339,9 +1354,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/life</loc>
+    <loc>http://localhost:4000/life</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1354,9 +1369,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/link</loc>
+    <loc>http://localhost:4000/link</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1369,9 +1384,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/mongodb</loc>
+    <loc>http://localhost:4000/mongodb</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1384,9 +1399,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/open-source</loc>
+    <loc>http://localhost:4000/open-source</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1399,9 +1414,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/payment/</loc>
+    <loc>http://localhost:4000/payment/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1414,9 +1429,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/python</loc>
+    <loc>http://localhost:4000/python</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1429,9 +1444,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/search.json</loc>
+    <loc>http://localhost:4000/search.json</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1444,9 +1459,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/sitemap.txt</loc>
+    <loc>http://localhost:4000/sitemap.txt</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1459,9 +1474,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/sitemap.xml</loc>
+    <loc>http://localhost:4000/sitemap.xml</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1474,9 +1489,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/tools/</loc>
+    <loc>http://localhost:4000/tools/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1489,9 +1504,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/wpf</loc>
+    <loc>http://localhost:4000/wpf</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1504,9 +1519,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/zsxq</loc>
+    <loc>http://localhost:4000/zsxq</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1519,9 +1534,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/assets/css/style.css</loc>
+    <loc>http://localhost:4000/assets/css/style.css</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1534,9 +1549,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/15/smarty_usage_in_php/</loc>
+    <loc>http://localhost:4000/2016/09/15/smarty_usage_in_php/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1549,9 +1564,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/15/redmine-child-issue/</loc>
+    <loc>http://localhost:4000/2016/09/15/redmine-child-issue/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1564,9 +1579,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/last-word-length-solution/</loc>
+    <loc>http://localhost:4000/2016/09/16/last-word-length-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1579,9 +1594,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/string-reverse-solution/</loc>
+    <loc>http://localhost:4000/2016/09/16/string-reverse-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1594,9 +1609,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/integer_storage-one-count/</loc>
+    <loc>http://localhost:4000/2016/09/16/integer_storage-one-count/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1609,9 +1624,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/prime-factor-solution/</loc>
+    <loc>http://localhost:4000/2016/09/16/prime-factor-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1624,9 +1639,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/count-char-in-string-solution/</loc>
+    <loc>http://localhost:4000/2016/09/16/count-char-in-string-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1639,9 +1654,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/16/char-count-solution/</loc>
+    <loc>http://localhost:4000/2016/09/16/char-count-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1654,9 +1669,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/char-count-hard-solution/</loc>
+    <loc>http://localhost:4000/2016/09/17/char-count-hard-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1669,9 +1684,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/least-common-multiple/</loc>
+    <loc>http://localhost:4000/2016/09/17/least-common-multiple/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1684,9 +1699,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/sum-of-a-sequence/</loc>
+    <loc>http://localhost:4000/2016/09/17/sum-of-a-sequence/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1699,9 +1714,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/get-cube-root/</loc>
+    <loc>http://localhost:4000/2016/09/17/get-cube-root/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1714,9 +1729,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/max-profit-in-stock/</loc>
+    <loc>http://localhost:4000/2016/09/17/max-profit-in-stock/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1729,9 +1744,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/reverse-english-statement/</loc>
+    <loc>http://localhost:4000/2016/09/18/reverse-english-statement/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1744,9 +1759,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/reverse-int-solution/</loc>
+    <loc>http://localhost:4000/2016/09/18/reverse-int-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1759,9 +1774,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/backfoward-first-appear-solution/</loc>
+    <loc>http://localhost:4000/2016/09/18/backfoward-first-appear-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1774,9 +1789,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/string-linebreak-every-eight/</loc>
+    <loc>http://localhost:4000/2016/09/18/string-linebreak-every-eight/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1789,9 +1804,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/word-reverse-print-solution/</loc>
+    <loc>http://localhost:4000/2016/09/18/word-reverse-print-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1804,9 +1819,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/18/std-getline-function-usage/</loc>
+    <loc>http://localhost:4000/2016/09/18/std-getline-function-usage/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1819,9 +1834,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/27/odd-before-even-solution/</loc>
+    <loc>http://localhost:4000/2016/09/27/odd-before-even-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1834,9 +1849,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/27/string-permutation-solution/</loc>
+    <loc>http://localhost:4000/2016/09/27/string-permutation-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1849,9 +1864,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/28/reverse-word-order-solution/</loc>
+    <loc>http://localhost:4000/2016/09/28/reverse-word-order-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1864,9 +1879,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/29/string-left-rotation-solution/</loc>
+    <loc>http://localhost:4000/2016/09/29/string-left-rotation-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1879,9 +1894,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/30/increase-seq-two-sum-solution/</loc>
+    <loc>http://localhost:4000/2016/09/30/increase-seq-two-sum-solution/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1894,9 +1909,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/</loc>
+    <loc>http://localhost:4000/2016/10/01/num-array-splice-to-min-num/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1909,9 +1924,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/02/cstdlib-cpp-grammer/</loc>
+    <loc>http://localhost:4000/2016/10/02/cstdlib-cpp-grammer/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1924,9 +1939,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/03/inverse-pairs-in-array/</loc>
+    <loc>http://localhost:4000/2016/10/03/inverse-pairs-in-array/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1939,9 +1954,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/09/17/huawei-campus2016-problem1/</loc>
+    <loc>http://localhost:4000/2016/09/17/huawei-campus2016-problem1/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1954,9 +1969,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/09/huawei-campus2016-problem2/</loc>
+    <loc>http://localhost:4000/2016/10/09/huawei-campus2016-problem2/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1969,9 +1984,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/09/huawei-campus2016-problem3/</loc>
+    <loc>http://localhost:4000/2016/10/09/huawei-campus2016-problem3/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1984,9 +1999,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2016/10/19/windows-install-jekyll/</loc>
+    <loc>http://localhost:4000/2016/10/19/windows-install-jekyll/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -1999,9 +2014,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2017/01/18/find-new-world/</loc>
+    <loc>http://localhost:4000/2017/01/18/find-new-world/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2014,9 +2029,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/</loc>
+    <loc>http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2029,9 +2044,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2018/06/03/calculator_using_caliburn-micro_from0to1/</loc>
+    <loc>http://localhost:4000/2018/06/03/calculator_using_caliburn-micro_from0to1/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2044,9 +2059,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/01/10/xml-parse-guide-based-on-MSXML-using-cpp/</loc>
+    <loc>http://localhost:4000/2019/01/10/xml-parse-guide-based-on-MSXML-using-cpp/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2059,9 +2074,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/03/03/cnblogs-markdown-code-opt/</loc>
+    <loc>http://localhost:4000/2019/03/03/cnblogs-markdown-code-opt/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2074,9 +2089,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/</loc>
+    <loc>http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2089,9 +2104,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/build_site_guide_using_hexo_and_coding-net_for_beginners.html</loc>
+    <loc>http://localhost:4000/build_site_guide_using_hexo_and_coding-net_for_beginners.html</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2104,9 +2119,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/03/06/js_add_copyright_automatically/</loc>
+    <loc>http://localhost:4000/2019/03/06/js_add_copyright_automatically/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2119,9 +2134,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/03/21/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP/</loc>
+    <loc>http://localhost:4000/2019/03/21/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2134,9 +2149,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/03/30/developer-benefits_github-open-source-projects-of-microsoft/</loc>
+    <loc>http://localhost:4000/2019/03/30/developer-benefits_github-open-source-projects-of-microsoft/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2149,9 +2164,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/09/05/c4-model-arch-digram-show-draw-like-this/</loc>
+    <loc>http://localhost:4000/2019/09/05/c4-model-arch-digram-show-draw-like-this/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2164,9 +2179,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/09/09/python-leetcode89-gary-code/</loc>
+    <loc>http://localhost:4000/2019/09/09/python-leetcode89-gary-code/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2179,9 +2194,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/09/13/python-leetcode136-single-number/</loc>
+    <loc>http://localhost:4000/2019/09/13/python-leetcode136-single-number/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2194,9 +2209,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/09/14/python-leetcode67-add-binary/</loc>
+    <loc>http://localhost:4000/2019/09/14/python-leetcode67-add-binary/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2209,9 +2224,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/09/28/python-leetcode202-happy-number/</loc>
+    <loc>http://localhost:4000/2019/09/28/python-leetcode202-happy-number/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2224,9 +2239,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/10/04/python-leetcode204-count-primes/</loc>
+    <loc>http://localhost:4000/2019/10/04/python-leetcode204-count-primes/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2239,9 +2254,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/</loc>
+    <loc>http://localhost:4000/2019/10/19/python-leetcode9-palindrome-number/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2254,9 +2269,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/</loc>
+    <loc>http://localhost:4000/2019/10/26/python-leetcode13-roman-to-integer/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2269,9 +2284,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/</loc>
+    <loc>http://localhost:4000/2019/10/30/python-leetcode58-length-of-last-word/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2284,9 +2299,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/11/04/dabai-VR/</loc>
+    <loc>http://localhost:4000/2019/11/04/dabai-VR/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2299,9 +2314,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/11/13/leetcode345-reverse-vowels-of-a-string/</loc>
+    <loc>http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2314,9 +2329,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/11/20/leetcode976-largest-perimeter-triangle/</loc>
+    <loc>http://localhost:4000/2019/11/20/leetcode976-largest-perimeter-triangle/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2329,9 +2344,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/</loc>
+    <loc>http://localhost:4000/2019/11/25/python-leetcode645-set-mismatch/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2344,9 +2359,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</loc>
+    <loc>http://localhost:4000/2019/11/25/python-leetcode977-squares-of-a-sorted-array/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2359,9 +2374,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/</loc>
+    <loc>http://localhost:4000/2020/03/18/wpf-study-note-by-xiyuanmore/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2374,9 +2389,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/04/10/master-of-money/</loc>
+    <loc>http://localhost:4000/2020/04/10/master-of-money/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2389,9 +2404,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/</loc>
+    <loc>http://localhost:4000/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2404,9 +2419,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/06/27/Using-WPF-with-Managed-cpp/</loc>
+    <loc>http://localhost:4000/2020/06/27/Using-WPF-with-Managed-cpp/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2419,9 +2434,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/06/26/wpf-data-binding-debug-guide/</loc>
+    <loc>http://localhost:4000/2020/06/26/wpf-data-binding-debug-guide/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2434,9 +2449,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/06/28/the-methods-using-visual-Cpp-creating-wpf/</loc>
+    <loc>http://localhost:4000/2020/06/28/the-methods-using-visual-Cpp-creating-wpf/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2449,9 +2464,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/06/29/visual-cpp-wpf-method/</loc>
+    <loc>http://localhost:4000/2020/06/29/visual-cpp-wpf-method/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2464,9 +2479,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/07/02/inside-xaml/</loc>
+    <loc>http://localhost:4000/2020/07/02/inside-xaml/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2479,9 +2494,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/</loc>
+    <loc>http://localhost:4000/2020/07/05/forever-window-personal-view-on-window/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2494,9 +2509,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/07/26/introducing-visual-studio-intellisense-code-snippets/</loc>
+    <loc>http://localhost:4000/2020/07/26/introducing-visual-studio-intellisense-code-snippets/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2509,9 +2524,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/08/02/view-on-bytedance-agree-to-sell-Tiktok/</loc>
+    <loc>http://localhost:4000/2020/08/02/view-on-bytedance-agree-to-sell-Tiktok/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2524,9 +2539,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/2020/08/16/interview-test/</loc>
+    <loc>http://localhost:4000/2020/08/16/interview-test/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2539,9 +2554,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/redirects.json</loc>
+    <loc>http://localhost:4000/redirects.json</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2554,9 +2569,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/bootstrap/CHANGELOG</loc>
+    <loc>http://localhost:4000/bower_components/bootstrap/CHANGELOG</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2569,9 +2584,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/hover/HISTORY</loc>
+    <loc>http://localhost:4000/bower_components/hover/HISTORY</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2584,9 +2599,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/octicons/CHANGELOG</loc>
+    <loc>http://localhost:4000/bower_components/octicons/CHANGELOG</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2599,9 +2614,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/primer-markdown/CLA</loc>
+    <loc>http://localhost:4000/bower_components/primer-markdown/CLA</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2614,9 +2629,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/bootstrap/</loc>
+    <loc>http://localhost:4000/bower_components/bootstrap/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2629,9 +2644,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/flag-icon-css/</loc>
+    <loc>http://localhost:4000/bower_components/flag-icon-css/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2644,9 +2659,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/geopattern/</loc>
+    <loc>http://localhost:4000/bower_components/geopattern/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2659,9 +2674,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/jquery/</loc>
+    <loc>http://localhost:4000/bower_components/jquery/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2674,9 +2689,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/octicons/</loc>
+    <loc>http://localhost:4000/bower_components/octicons/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2689,9 +2704,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/octicons/octicons/</loc>
+    <loc>http://localhost:4000/bower_components/octicons/octicons/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2704,9 +2719,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/bower_components/underscore/</loc>
+    <loc>http://localhost:4000/bower_components/underscore/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2719,9 +2734,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/page2/</loc>
+    <loc>http://localhost:4000/page2/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2734,9 +2749,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/page3/</loc>
+    <loc>http://localhost:4000/page3/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2749,9 +2764,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/page4/</loc>
+    <loc>http://localhost:4000/page4/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2764,9 +2779,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/page5/</loc>
+    <loc>http://localhost:4000/page5/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>
@@ -2779,9 +2794,9 @@
   
     
   <url>
-    <loc>https://geekplayers.com/page6/</loc>
+    <loc>http://localhost:4000/page6/</loc>
       
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-16</lastmod>
       
       
     <changefreq>daily</changefreq>

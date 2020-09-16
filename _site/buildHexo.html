@@ -24,8 +24,8 @@
     <meta name="description"
           content="Hexo建站躺坑后亲诉心路历程~">
 
-    <link rel="canonical" href="https://geekplayers.com/buildHexo.html">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
+    <link rel="canonical" href="http://localhost:4000/buildHexo.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -272,7 +272,7 @@
         <div id="jumbotron-meta-info">
             <!-- <h1>开发小白也毫无压力的hexo静态博客建站全攻略</h1> -->
             <h1 style="font-size: 45px;">
-                <a class="hvr-underline-from-center" style="display: initial !important;" href="https://geekplayers.com/buildHexo.html" title="开发小白也毫无压力的hexo静态博客建站全攻略_极客玩家大白" target="_self" rel="canonical">开发小白也毫无压力的hexo静态博客建站全攻略</a>
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="http://localhost:4000/buildHexo.html" title="开发小白也毫无压力的hexo静态博客建站全攻略_极客玩家大白" target="_self" rel="canonical">开发小白也毫无压力的hexo静态博客建站全攻略</a>
             </h1>
 
             <span class="meta-info">
@@ -280,7 +280,7 @@
 
                 
                 
-                    <i class="fa fa-user" aria-hidden="true"></i> <a href='https://geekplayers.com'>Bravo Yeung</a>
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
                 
 
                 
@@ -596,13 +596,42 @@ Cloud Studio还有几个优势，即:</p>
 </blockquote>
 
 
-            <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+            <style>
+.PageNav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNav .next {
+  text-align: right;
+}    
+</style>
+
+<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>版权声明</h3>
     <ul>
-        <li>本文作者：<a href="https://geekplayers.com" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="https://geekplayers.com/buildHexo.html" target="_blank">https://geekplayers.com/buildHexo.html</a></li>
+        <li>本文作者：<a href="http://localhost:4000" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="http://localhost:4000/buildHexo.html" target="_blank">http://localhost:4000/buildHexo.html</a></li>
         <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
     </ul>
+</div>
+
+<div class="PageNav">
+    
+    <a class="prev" href="/cnblogs-markdown-code-opt.html"><i class="fa fa-arrow-left"></i>&nbsp;改进博客园Markdown显示功能(加代码行号、显示代码所用编程语言)</a>
+    
+    
+    <a class="next" href="/js_add_copyright_automatically.html"> JS实现页面复制文字时自动加版权&nbsp;<i class="fa fa-arrow-right"></i></a>
+    
 </div>
 
 <div>
@@ -630,7 +659,7 @@ Cloud Studio还有几个优势，即:</p>
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = 'https://geekplayers.com/buildHexo.html';
+        this.page.url = 'http://localhost:4000/buildHexo.html';
         this.page.identifier = '/buildHexo.html';
         this.page.title = '开发小白也毫无压力的hexo静态博客建站全攻略';
     };

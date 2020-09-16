@@ -1,3 +1,23 @@
+<style>
+.PageNav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNav .next {
+  text-align: right;
+}    
+</style>
+
 <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>版权声明</h3>
     <ul>
@@ -5,6 +25,15 @@
         <li>本文链接：<a href="{{ site.url }}{{ page.url }}" target="_blank">{{ site.url }}{{ page.url }}</a></li>
         <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
     </ul>
+</div>
+
+<div class="PageNav">
+    {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}"><i class="fa fa-arrow-left"></i>&nbsp;{{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}"> {{page.next.title}}&nbsp;<i class="fa fa-arrow-right"></i></a>
+    {% endif %}
 </div>
 
 <div>
