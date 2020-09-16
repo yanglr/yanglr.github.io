@@ -3,6 +3,21 @@
   
     
   <url>
+    <loc>http://localhost:4000/baidu-recover-push-js.html</loc>
+      
+    <lastmod>2020-09-16</lastmod>
+      
+      
+    <changefreq>daily</changefreq>
+      
+      
+    <priority>0.8</priority>
+      
+  </url>
+    
+  
+    
+  <url>
     <loc>http://localhost:4000/bing-API-nodejs.html</loc>
       
     <lastmod>2020-09-14</lastmod>

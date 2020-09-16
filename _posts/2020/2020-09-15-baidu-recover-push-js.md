@@ -26,7 +26,7 @@ topmost: true
 
 
 
-今天进入 [资源搜索平台时](//ziyuan.baidu.com) 时，发现"自动推送"的入口已恢复，有图有真相！
+今天进入 [百度搜索资源平台时](//ziyuan.baidu.com) 时，发现"自动推送"的入口已恢复，有图有真相！
 
 ![百度自动推送恢复-极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p3.png "极客玩家大白")
 

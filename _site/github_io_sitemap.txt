@@ -1,4 +1,6 @@
 
+http://localhost:4000/baidu-recover-push-js.html
+
 http://localhost:4000/bing-API-nodejs.html
 
 http://localhost:4000/replace-flag-counter.html
