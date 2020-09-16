@@ -3,7 +3,7 @@ layout: post
 date: 2020-09-15 20:05:10
 title: 百度自动推送不能用了吗?你错了，刚恢复了！
 categories:
-- [百度自动推送,百度, SEO,百度自动推送js, 百度js自动推送代码]
+- [百度自动推送,百度, seo,百度自动推送js, 百度js自动推送代码]
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [flagcounter,flagcounter插件, flagcounter类似, 博客园]

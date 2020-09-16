@@ -15,7 +15,7 @@ description: 大奔SEO
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='seo' or post.category=='百度' or post.category=='搜狗' or post.categories contains 'seo' or post.keywords contains 'seo' %}
+                {% if post.category=='seo' or post.category=='百度' or post.category=='搜狗' or post.categories contains 'seo' or post.categories contains 'SEO' or post.keywords contains 'seo' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
