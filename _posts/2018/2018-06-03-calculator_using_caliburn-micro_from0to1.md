@@ -24,22 +24,19 @@ Caliburn.Micro(Caliburn.Micro框架概述 - https://blog.csdn.net/lzuacm/article
 真正快速而熟练地掌握一门技术就可以尝试着用最快的速度去构建一个玩具项目(Toy project)，然后不断地优化、重构之。比如本文将介绍如何使用Caliburn.Micro v3.2开发出一个简单的计算器，里面用到了C#中的async异步技术，Caliburn.Micro中的Conductor等等~
 
 ### Step 1: 在VS中创建WPF项目
-![create_project](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324010953551-1224926541.png)
-
+![create_project](https://cdn.jsdelivr.net/gh/yanglr/images/calc1.png)
 
 ### Step 2: 使用NuGet包管理工具为当前项目安装Caliburn.Micro
 对于Caliburn.Micro 1.x和2.x版，只能使用.dll，需手动给项目加Reference。而3.0以后的版本可使用NuGet包管理工具来管理，安装和卸载既方便又彻底，推荐使用。(ps: NuGet之于Visual Studio(C++, C#等), 犹pip之于Python, npm之于node, maven之于Java, gem之于Ruby等等)
 
-![Install CM](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005855423-424717537.png)
-
+![Install CM](https://cdn.jsdelivr.net/gh/yanglr/images/calc2.png)
 
 ### Step 3: 框架搭建
 
  1. 删除项目根目录下的MainWindow.xaml
  2. 按下图调整App.xaml
  删除语句StartupUri="MainWindow.xmal"。
- ![config1](https://img2018.cnblogs.com/blog/436938/201903/436938-20190324005959001-1435534729.png)
-
+ ![config1](https://cdn.jsdelivr.net/gh/yanglr/images/calc3.png)
 
  3. 填充Application.Resources
 ```xml
