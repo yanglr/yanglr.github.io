@@ -478,17 +478,17 @@ namespace CaliburnMicro_Calculator.ViewModels
 
 ### Part 6: 功能举例
 Calculator主页：
-![Main Page](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081757557-1375110827.png)
-
+![Main Page](https://gitee.com/geekplayers/images/raw/master/calc4.png)
 
 点击按钮“ShowCalculator”即可看到具体的计算器~
 
 乘法举例：
-![Multiply](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081820757-800108336.png)
+
+![Multiply](https://gitee.com/geekplayers/images/raw/master/calc5.png)
 
 
 除法举例：
-![Divide](https://img2018.cnblogs.com/blog/436938/201903/436938-20190325081841357-881843872.png)
+![Divide](https://gitee.com/geekplayers/images/raw/master/calc6.png)
 
 
 **最后附上代码：**
@@ -513,12 +513,11 @@ https://github.com/yanglr/CaliburnMicro-Calculator，
 
 <br>
 
-欢迎各位读者加入 **.NET技术交流群**，在公众号后台回复**“加群”**或者**“学习”**即可。
-
+欢迎各位读者加入 **.NET技术交流群**，在公众号后台回复<strong>“加群”</strong>或者<strong>“学习”</strong>即可。
 
 <br>
 
-![大白技术控 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
+![大白技术控 公众号名片](https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png)
 
 
 ### 文末彩蛋
