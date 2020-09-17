@@ -270,8 +270,9 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 
 在上述事例中，共定义了两个按钮的样式，分别是:
 
--   **FlatButtonStyle，这是个圆角按钮。**![](https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212756317-118994661.png)
+-   **FlatButtonStyle，这是个圆角按钮。**
 
+![round-button](https://gitee.com/geekplayers/images/raw/master/wpf-round-button.png)
 
 
 ```xml
@@ -298,7 +299,9 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 
 ```
 
--   **ToggleLikeButtonStyle，这是一个点赞按钮。** ![](https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212810837-524413026.png)
+-   **ToggleLikeButtonStyle，这是一个点赞按钮。** 
+
+![vote](https://gitee.com/geekplayers/images/raw/master/wpf-vote.png)
 
 
 
@@ -677,7 +680,9 @@ DependencyProperty.Register("ButtonType", typeof(ButtonType), typeof(ButtonEx), 
 
 ```
 
-实现了这样的界面![](https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212853603-773449582.png)
+实现了这样的界面
+
+![UI](https://gitee.com/geekplayers/images/raw/master/wpf-ui1.png)
 
 路由事件就是针对这组元素树中多个元素调用处理程序的事件。当我们点击了按钮Button时，将会触发 Button=>StackPanel=>Border的事件路由，而不是像WinForm应用一样，只能触发最上层的Button的按钮点击事件。
 

@@ -124,8 +124,7 @@ XAML Studio的编辑器很像一个"轻量级"的Visual Studio，或者用VS Cod
 
 <br>
 
-![大白技术控 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
-
+![大白技术控 公众号名片](https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png)
 
 ### 文末彩蛋
 
