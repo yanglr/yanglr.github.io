@@ -360,7 +360,7 @@ int main()
 
 运行完，得到的update.xml内容为:
 
-<https://raw.githubusercontent.com/yanglr/SimpleParser4MSXML-cpp/master/msxmlDemo/updated.xml>
+<https://cdn.jsdelivr.net/gh/yanglr/SimpleParser4MSXML-cpp/msxmlDemo/updated.xml>
 
 <br>
 
@@ -369,11 +369,6 @@ int main()
   2. [Using the MSXML Parser](http://www.endurasoft.com/vcd/msxml1.htm) 
   3. [MFC C++ XML Parse - Using MSXML](https://social.msdn.microsoft.com/Forums/vstudio/en-US/d3fbeea4-fdf9-48f9-9513-42cde8a833d6/mfc-c-xml-parse-using-msxml)
   4. [如何：各种字符串类型之间转换 - Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/text/how-to-convert-between-various-string-types?view=vs-2017)
-
-<br>
-
-本文原载于本人的CSDN博客:
-[史上最最靠谱，又双叒叒(ruò,zhuó)简单的基于MSXML的XML解析指南-C++ - Bravo Yeung-羊较瘦之自留地](https://blog.csdn.net/lzuacm/article/details/86245590)
 
 <hr>
 
@@ -394,7 +389,7 @@ int main()
 
 <br>
 
-![大白技术控 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_gzhCard_for_blog.png)
+![大白技术控 公众号名片](https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png)
 
 
 ### 文末彩蛋
