@@ -95,10 +95,9 @@ Create a new CLR project using the steps outlined in the previous section, and a
  
 
 Listing 7.2 A simple Avalon app in procedural code
-![img1](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221201629-1793274217.png)
+![img1](https://gitee.com/geekplayers/images/raw/master/cpp-wpf0.png)
 
-
-![img2](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221217301-1903735148.png)
+![img2](https://gitee.com/geekplayers/images/raw/master/cpp-wpf1.png)
 
 <br>
 
@@ -116,7 +115,7 @@ will look like.
 
 The main steps involved would be to derive two classes-one from the Window class, and the other from the Application class. You’ll start with the Window-derived class.
 
-![FirstAvalonApp](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221404152-438968638.png)
+![FirstAvalonApp](https://gitee.com/geekplayers/images/raw/master/cpp-wpf2.png)
 
 Figure 7.4
 
@@ -141,9 +140,9 @@ using namespace System::Windows;
 using namespace System::Windows::Controls;
 ```
 
-![img6](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221440016-539764851.png)
+![img6](https://gitee.com/geekplayers/images/raw/master/cpp-wpf3.png)
 
-![img7](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221455974-2142465181.png)
+![img7](https://gitee.com/geekplayers/images/raw/master/cpp-wpf4.png)
 
 
 It’s much like Windows Forms programming, except that the controls you declare **①.** are from the System::Windows::Controls namespace (which contains various WPF controls). You set properties like Title, Width, Height, and so on on the window object in the constructor ②. There’s also a call to a method called InitControls ③, where you initialize the child controls (I put it into a separate method to improve the code’s readability). Listing 7.4 shows the InitControls method. Basically, you instantiate each of the child controls, instantiate a container control, add the child controls to the container controls, and finally set the container control as the main Content of the parent window.
@@ -203,7 +202,7 @@ void InitControls(void)
 
  
 
-![img](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221741249-446353224.png)
+![img](https://gitee.com/geekplayers/images/raw/master/cpp-wpf5.png)
 
 <br> 
 
@@ -384,12 +383,10 @@ void OnAddButtonClick(Object^ sender, RoutedEventArgs^ e)
 };
  ```
 
-![img13](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221827223-675937040.png)
+![img13](https://gitee.com/geekplayers/images/raw/master/cpp-wpf6.png)
 
 
-
-![img14](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221838288-1565410796.png)
-
+![img14](https://gitee.com/geekplayers/images/raw/master/cpp-wpf7.png)
 
 The WindowHelper constructor accepts a Window argument and uses the FindName method ① to get the control with the specified identifier (which maps to the Name attributes you used in the XAML). You also hook an event handler to the addbutton control ②. Finally, you have the event handler③, which is identical to the one you used in the procedural code project. Listing 7.7 shows the code for the Application-derived class, where you override OnStartup as before, except that you create a window dynamically by loading the XAML file from the disk.
 
@@ -433,8 +430,7 @@ protected:
 
 
 
-![img15](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221902614-1986627023.png)
-
+![img15](https://gitee.com/geekplayers/images/raw/master/cpp-wpf8.png)
  
 
 You open a file stream to the XAML using File::OpenRead ① and use the overload of XamlReader::Load ② that takes a Stream^ as parameter to create a Window object. This Load method works the magic, by reading and parsing the XAML and building a Window object out of it. You instantiate the WindowHelper object and pass
@@ -505,8 +501,7 @@ Listing 7.8 The **Window** class definition using XAML
  ```
 
 
-![img16](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221923630-1953190151.png)
-
+![img16](https://gitee.com/geekplayers/images/raw/master/cpp-wpf9.png)
  
 
 The XAML is identical to that used in the previous project (where you dynamically loaded it) except for the x:Class attribute for the Window element, which specifies the name of the class that will be generated, and the x:FieldModifier attributes that are applied to the child control elements so they’re generated as protected members in the class (rather than as private which is the default). Build the C# project, and generate the control library. Once that’s done, create a new C++/CLI Avalon project (using the same steps as before), and then add a reference to this C# project. Now, you can write a new Window class that’s derived from the class in the C# DLL, as shown in listing 7.9.
@@ -548,8 +543,7 @@ ref class AppMainWindow : CSXamlLibrary::BaseWindow
 
  
 
-![img17](https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221937841-1261222328.png)
-
+![img17](https://gitee.com/geekplayers/images/raw/master/cpp-wpf10.png)
  
 
 The code is similar to what you’ve seen thus far, except that it’s a lot cleaner.
@@ -602,6 +596,3 @@ Table 7.2 Comparison of the three techniques
 <br>
 
 It’s hard to pinpoint a specific technique and claim that it’s the best one, because depending on your requirements, each has advantages and disadvantages. Of course, in the future, if Visual C++ has direct support for XAML (as I believe it will), that will be your best option for the majority of scenarios.
-
- 
-

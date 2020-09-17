@@ -578,9 +578,9 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 
 作者给出了使用自定义控件的分析思路：
 
-![](https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212827625-1658133466.png)
+![custom-control](https://gitee.com/geekplayers/images/raw/master/custom-control.png)
 
-例如，在示例代码**ToggleLikeButtonStyle **中，我实现了一个点赞和取消点赞的状态，则使用了ToggleButton来完成，就没必要使用 Button 扩展出一个是否点赞的状态了。
+例如，在示例代码**ToggleLikeButtonStyle**中，我实现了一个点赞和取消点赞的状态，则使用了ToggleButton来完成，就没必要使用 Button 扩展出一个是否点赞的状态了。
 
 而如果我们需要实现的功能有这么复杂，那大概使用传统的控件就无法实现，就得使用自定义控件了。（[点击查看示例代码](https://github.com/caomfan/WpfDemo.git)）
 
