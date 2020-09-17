@@ -61,7 +61,7 @@ $ hexo init blog
 
 ### 在本地运行`hexo`，看一切是否正常
 此时可使用`hexo server`(简写为`hexo s`)来开启本地`web`服务器查看页面效果，默认情况下在浏览器中打开`http://localhost:4000`即可看到如下界面:
-![img](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304203706783-1034748400.png)
+![img](https://gitee.com/geekplayers/images/raw/master/hexo1.png)
 
 ### 在`Coding.net`创建与用户名相同的项目，并启用代码的`pages`功能
 打开网址<https://dev.tencent.com/user/projects/create>，即可创建项目。
@@ -100,7 +100,9 @@ Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 // 此处推荐使用默认地址，也可在密钥后面加后缀,即输入"id_rsa_coding"
 ```
 找到刚才生成的`id_rsa_coding.pub`，将其中的内容贴到`Coding`的公钥信息中：
-![img](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304214608470-1076788388.png)
+
+![img](https://gitee.com/geekplayers/images/raw/master/hexo2.png)
+
 此时，`git`推送应该具有权限了~
 目前为止，`_config.yml`配置文件只需要改`deploy`这一处！
 
@@ -109,7 +111,7 @@ Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
  
 ### 域名绑定
 先去域名管理系统中加一条`CNAME`记录, 比如我的域名是<https://enjoy233.cn>，此处想绑定到<https://www.enjoy233.cn>，则添加方法如下：
-![record1](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211351308-907087033.png)
+![record1](https://gitee.com/geekplayers/images/raw/master/hexo3.png)
 
 将`_config.yml`中的`url`从`http://yousite.com`改为实际用的，比如我设置为:
 ```yaml
@@ -118,7 +120,7 @@ root: /
 ```
 
 然后在`coding pages`的页面中设置如下:
-![img2](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211130778-1132950578.png)
+![img2](https://gitee.com/geekplayers/images/raw/master/hexo4.png)
 过几分钟后，就能通过域名<https://www.enjoy233.cn>来访问我的博客了。
 
 
@@ -145,12 +147,12 @@ theme: material-x
 打开网址 <https://dev.tencent.com/user/projects/create>, 开始创建项目。
 
 我的用户名是`legege007`，于是就建了个`legege007`的项目.
-![img](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212259672-990931307.png)
+![img](https://gitee.com/geekplayers/images/raw/master/hexo5.png)
 
 ### 使用现有项目创建工作区
 打开网址 <https://studio.dev.tencent.com/dashboard/workspace/create>, 即可进入Cloud Studio。
 我选择使用了`node.js`的环境来进行配置，同时选中项目`legege007`，然后`创建`即可。
-![img](https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212558823-766636642.png)
+![img](https://gitee.com/geekplayers/images/raw/master/hexo6.png)
 
 ### 使用命令行配置环境
 Cloud studio中默认是`Linux`系统，我习惯于用root的权限来操作，免得后面还需要用`chmod`之类的命令来改权限，一进IDE界面，使用命令`sudo su`切换即可。
@@ -203,19 +205,16 @@ root@coding:/home/coding/workspace/blog# hexo clean && hexo g && hexo d
 `_config.yml`文件的配置、域名绑定、主题使用等等，基本上与在`Windows`下安装完全一样，参考Windows下同样的操作即可，就不再赘述了。
 
 安装完主题后的界面是:
-![UI](http://img2018.cnblogs.com/blog/436938/201903/436938-20190304224154579-1613298900.png)
-
+![UI](https://gitee.com/geekplayers/images/raw/master/hexo7.png)
 
 另外，值得一提的是:
 Cloud Studio还有几个优势，即:
 - 可以迅速切换环境，比如`hexo`、`node.js`、`.net Core`、`Ubuntu`、`Java`等互转，速度超快的。
 - 可以一键部署，除了`coding.me`的域名可用以外，一键部署后，还提供一个`coding.io`的域名可以访问。如果暂时没买个人域名，这就是个大福利了~
 
-![img6](http://img2018.cnblogs.com/blog/436938/201903/436938-20190304220305918-1069723032.png)
+![img6](https://gitee.com/geekplayers/images/raw/master/hexo8.png)
 
 如有帮助，麻烦在右下角"推荐"一下，多谢~
-
-<br>
 
 <hr>
 
@@ -228,7 +227,7 @@ Cloud Studio还有几个优势，即:
 
 <br>
 
-![dotNET匠人 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_qrcode_daBai.jpg)
+![dotNET匠人 公众号名片](https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png)
 
 
 ### 文末彩蛋
