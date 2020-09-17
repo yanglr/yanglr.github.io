@@ -125,8 +125,7 @@ jQuery(document).on('copy', function(e)
 
 <br>
 
-![dotNET匠人 公众号名片](https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_qrcode_daBai.jpg)
-
+![dotNET匠人 公众号名片](https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png)
 
 ### 文末彩蛋
 
