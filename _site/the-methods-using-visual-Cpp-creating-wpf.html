@@ -14,7 +14,9 @@
 
     <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
     <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ" /> <!-- Submit github.com to g. -->
     <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6" /> <!-- Submit github.com to bd. -->
     <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
     <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
     <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
@@ -456,9 +458,9 @@
 <p>Create a new CLR project using the steps outlined in the previous section, and add an App.cpp file to it (you can call it whatever you want). Listing 7.2 shows the code for the simplest Avalon application that shows a window onscreen.</p>
 
 <p>Listing 7.2 A simple Avalon app in procedural code
-<img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221201629-1793274217.png" alt="img1" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf0.png" alt="img1" /></p>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221217301-1903735148.png" alt="img2" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf1.png" alt="img2" /></p>
 
 <p><br /></p>
 
@@ -474,7 +476,7 @@
 
 <p>The main steps involved would be to derive two classes-one from the Window class, and the other from the Application class. You’ll start with the Window-derived class.</p>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221404152-438968638.png" alt="FirstAvalonApp" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf2.png" alt="FirstAvalonApp" /></p>
 
 <p>Figure 7.4</p>
 
@@ -498,9 +500,9 @@
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">System</span><span class="o">::</span><span class="n">Windows</span><span class="o">::</span><span class="n">Controls</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221440016-539764851.png" alt="img6" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf3.png" alt="img6" /></p>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221455974-2142465181.png" alt="img7" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf4.png" alt="img7" /></p>
 
 <p>It’s much like Windows Forms programming, except that the controls you declare <strong>①.</strong> are from the System::Windows::Controls namespace (which contains various WPF controls). You set properties like Title, Width, Height, and so on on the window object in the constructor ②. There’s also a call to a method called InitControls ③, where you initialize the child controls (I put it into a separate method to improve the code’s readability). Listing 7.4 shows the InitControls method. Basically, you instantiate each of the child controls, instantiate a container control, add the child controls to the container controls, and finally set the container control as the main Content of the parent window.</p>
 
@@ -600,7 +602,7 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221741249-446353224.png" alt="img" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf5.png" alt="img" /></p>
 
 <p><br /></p>
 
@@ -858,9 +860,9 @@
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221827223-675937040.png" alt="img13" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf6.png" alt="img13" /></p>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221838288-1565410796.png" alt="img14" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf7.png" alt="img14" /></p>
 
 <p>The WindowHelper constructor accepts a Window argument and uses the FindName method ① to get the control with the specified identifier (which maps to the Name attributes you used in the XAML). You also hook an event handler to the addbutton control ②. Finally, you have the event handler③, which is identical to the one you used in the procedural code project. Listing 7.7 shows the code for the Application-derived class, where you override OnStartup as before, except that you create a window dynamically by loading the XAML file from the disk.</p>
 
@@ -930,7 +932,7 @@
 
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221902614-1986627023.png" alt="img15" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf8.png" alt="img15" /></p>
 
 <p>You open a file stream to the XAML using File::OpenRead ① and use the overload of XamlReader::Load ② that takes a Stream^ as parameter to create a Window object. This Load method works the magic, by reading and parsing the XAML and building a Window object out of it. You instantiate the WindowHelper object and pass</p>
 
@@ -1020,7 +1022,7 @@
 <span class="nt">&lt;/Window&gt;</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221923630-1953190151.png" alt="img16" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf9.png" alt="img16" /></p>
 
 <p>The XAML is identical to that used in the previous project (where you dynamically loaded it) except for the x:Class attribute for the Window element, which specifies the name of the class that will be generated, and the x:FieldModifier attributes that are applied to the child control elements so they’re generated as protected members in the class (rather than as private which is the default). Build the C# project, and generate the control library. Once that’s done, create a new C++/CLI Avalon project (using the same steps as before), and then add a reference to this C# project. Now, you can write a new Window class that’s derived from the class in the C# DLL, as shown in listing 7.9.</p>
 
@@ -1084,7 +1086,7 @@
 <span class="p">};</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><img src="https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221937841-1261222328.png" alt="img17" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/cpp-wpf10.png" alt="img17" /></p>
 
 <p>The code is similar to what you’ve seen thus far, except that it’s a lot cleaner.</p>
 
@@ -1196,7 +1198,6 @@
 <p>It’s hard to pinpoint a specific technique and claim that it’s the best one, because depending on your requirements, each has advantages and disadvantages. Of course, in the future, if Visual C++ has direct support for XAML (as I believe it will), that will be your best option for the majority of scenarios.</p>
 
 
-
             <style>
 .PageNav {
   font-size: 14px;
@@ -1220,8 +1221,8 @@
 <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>版权声明</h3>
     <ul>
-        <li>本文作者：<a href="http://localhost:4000" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html" target="_blank">http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</a></li>
+        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="/the-methods-using-visual-Cpp-creating-wpf.html" target="_blank">http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</a></li>
         <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
     </ul>
 </div>

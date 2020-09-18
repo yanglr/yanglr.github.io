@@ -5,13 +5,13 @@
     <description>极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Sep 2020 15:26:35 +0800</pubDate>
-    <lastBuildDate>Wed, 16 Sep 2020 15:26:35 +0800</lastBuildDate>
+    <pubDate>Fri, 18 Sep 2020 12:09:45 +0800</pubDate>
+    <lastBuildDate>Fri, 18 Sep 2020 12:09:45 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>百度自动推送不能用了吗?你错了，刚恢复了！</title>
-        <description>&lt;p&gt;在 &lt;strong&gt;百度搜索线上公开课&lt;/strong&gt; 的第二期公开课中百度的产品运营小姐姐 &lt;strong&gt;李文菊&lt;/strong&gt; 提到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push.js&lt;/code&gt;接口过一段时间会恢复上线的。&lt;/p&gt;
+        <description>&lt;p&gt;在 &lt;strong&gt;百度搜索线上公开课&lt;/strong&gt; 的第二期公开课中百度的产品运营小姐姐 &lt;strong&gt;李文菊&lt;/strong&gt; 提到自动推送&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push.js&lt;/code&gt;接口过一段时间会恢复上线的。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png&quot; alt=&quot;百度自动推送恢复-极客玩家大白&quot; title=&quot;极客玩家大白&quot; /&gt;&lt;/p&gt;
 
@@ -21,13 +21,13 @@
 
 &lt;p&gt;这不，今天就恢复上线了~&lt;/p&gt;
 
-&lt;p&gt;今天进入 &lt;a href=&quot;//ziyuan.baidu.com&quot;&gt;资源搜索平台时&lt;/a&gt; 时，发现”自动推送”的入口已恢复，有图有真相！&lt;/p&gt;
+&lt;p&gt;今天进入 &lt;a href=&quot;//ziyuan.baidu.com&quot;&gt;百度搜索资源平台&lt;/a&gt; 时，发现”自动推送”的入口已恢复，有图有真相！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p3.png&quot; alt=&quot;百度自动推送恢复-极客玩家大白&quot; title=&quot;极客玩家大白&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;具体的代码如下:&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -41,7 +41,7 @@
 12
 13
 14
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;curProtocol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;protocol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
@@ -54,8 +54,8 @@
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parentNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;insertBefore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;各位小伙伴，赶紧加回来吧，你的网站收录情况一定会越来越好喔~&lt;/p&gt;
 </description>
@@ -72,15 +72,15 @@
         <category>博客园</category>
         
         
-        <category>[&quot;百度自动推送&quot;, &quot;百度&quot;, &quot;SEO&quot;, &quot;百度自动推送js&quot;, &quot;百度js自动推送代码&quot;]</category>
+        <category>[&quot;百度自动推送&quot;, &quot;百度&quot;, &quot;seo&quot;, &quot;百度自动推送js&quot;, &quot;百度js自动推送代码&quot;]</category>
         
-        <category>[&quot;百度自动推送&quot;, &quot;百度&quot;, &quot;SEO&quot;, &quot;百度自动推送js&quot;, &quot;百度js自动推送代码&quot;]</category>
+        <category>[&quot;百度自动推送&quot;, &quot;百度&quot;, &quot;seo&quot;, &quot;百度自动推送js&quot;, &quot;百度js自动推送代码&quot;]</category>
         
         <category>百度自动推送</category>
         
         <category>百度</category>
         
-        <category>SEO</category>
+        <category>seo</category>
         
         <category>百度自动推送js</category>
         
@@ -466,7 +466,7 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 
 &lt;p&gt;有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~&lt;/p&gt;
 </description>
-        <pubDate>Mon, 14 Sep 2020 18:21:20 +0800</pubDate>
+        <pubDate>Tue, 15 Sep 2020 18:21:20 +0800</pubDate>
         <link>http://localhost:4000/bing-API-nodejs.html</link>
         <guid isPermaLink="true">http://localhost:4000/bing-API-nodejs.html</guid>
         
@@ -2962,9 +2962,9 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;Create a new CLR project using the steps outlined in the previous section, and add an App.cpp file to it (you can call it whatever you want). Listing 7.2 shows the code for the simplest Avalon application that shows a window onscreen.&lt;/p&gt;
 
 &lt;p&gt;Listing 7.2 A simple Avalon app in procedural code
-&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221201629-1793274217.png&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf0.png&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221217301-1903735148.png&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf1.png&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -2980,7 +2980,7 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 
 &lt;p&gt;The main steps involved would be to derive two classes-one from the Window class, and the other from the Application class. You’ll start with the Window-derived class.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221404152-438968638.png&quot; alt=&quot;FirstAvalonApp&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf2.png&quot; alt=&quot;FirstAvalonApp&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 7.4&lt;/p&gt;
 
@@ -3004,9 +3004,9 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221440016-539764851.png&quot; alt=&quot;img6&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf3.png&quot; alt=&quot;img6&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221455974-2142465181.png&quot; alt=&quot;img7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf4.png&quot; alt=&quot;img7&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s much like Windows Forms programming, except that the controls you declare &lt;strong&gt;①.&lt;/strong&gt; are from the System::Windows::Controls namespace (which contains various WPF controls). You set properties like Title, Width, Height, and so on on the window object in the constructor ②. There’s also a call to a method called InitControls ③, where you initialize the child controls (I put it into a separate method to improve the code’s readability). Listing 7.4 shows the InitControls method. Basically, you instantiate each of the child controls, instantiate a container control, add the child controls to the container controls, and finally set the container control as the main Content of the parent window.&lt;/p&gt;
 
@@ -3106,7 +3106,7 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221741249-446353224.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -3364,9 +3364,9 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221827223-675937040.png&quot; alt=&quot;img13&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf6.png&quot; alt=&quot;img13&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221838288-1565410796.png&quot; alt=&quot;img14&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf7.png&quot; alt=&quot;img14&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The WindowHelper constructor accepts a Window argument and uses the FindName method ① to get the control with the specified identifier (which maps to the Name attributes you used in the XAML). You also hook an event handler to the addbutton control ②. Finally, you have the event handler③, which is identical to the one you used in the procedural code project. Listing 7.7 shows the code for the Application-derived class, where you override OnStartup as before, except that you create a window dynamically by loading the XAML file from the disk.&lt;/p&gt;
 
@@ -3436,7 +3436,7 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221902614-1986627023.png&quot; alt=&quot;img15&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf8.png&quot; alt=&quot;img15&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You open a file stream to the XAML using File::OpenRead ① and use the overload of XamlReader::Load ② that takes a Stream^ as parameter to create a Window object. This Load method works the magic, by reading and parsing the XAML and building a Window object out of it. You instantiate the WindowHelper object and pass&lt;/p&gt;
 
@@ -3526,7 +3526,7 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Window&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221923630-1953190151.png&quot; alt=&quot;img16&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf9.png&quot; alt=&quot;img16&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The XAML is identical to that used in the previous project (where you dynamically loaded it) except for the x:Class attribute for the Window element, which specifies the name of the class that will be generated, and the x:FieldModifier attributes that are applied to the child control elements so they’re generated as protected members in the class (rather than as private which is the default). Build the C# project, and generate the control library. Once that’s done, create a new C++/CLI Avalon project (using the same steps as before), and then add a reference to this C# project. Now, you can write a new Window class that’s derived from the class in the C# DLL, as shown in listing 7.9.&lt;/p&gt;
 
@@ -3590,7 +3590,7 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img2020.cnblogs.com/blog/436938/202006/436938-20200628221937841-1261222328.png&quot; alt=&quot;img17&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf10.png&quot; alt=&quot;img17&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The code is similar to what you’ve seen thus far, except that it’s a lot cleaner.&lt;/p&gt;
 
@@ -3700,7 +3700,6 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s hard to pinpoint a specific technique and claim that it’s the best one, because depending on your requirements, each has advantages and disadvantages. Of course, in the future, if Visual C++ has direct support for XAML (as I believe it will), that will be your best option for the majority of scenarios.&lt;/p&gt;
-
 </description>
         <pubDate>Sun, 28 Jun 2020 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</link>

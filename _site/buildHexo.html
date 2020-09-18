@@ -14,7 +14,9 @@
 
     <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
     <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ" /> <!-- Submit github.com to g. -->
     <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6" /> <!-- Submit github.com to bd. -->
     <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
     <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
     <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
@@ -376,7 +378,7 @@
 
 <h3 id="在本地运行hexo看一切是否正常">在本地运行<code class="language-plaintext highlighter-rouge">hexo</code>，看一切是否正常</h3>
 <p>此时可使用<code class="language-plaintext highlighter-rouge">hexo server</code>(简写为<code class="language-plaintext highlighter-rouge">hexo s</code>)来开启本地<code class="language-plaintext highlighter-rouge">web</code>服务器查看页面效果，默认情况下在浏览器中打开<code class="language-plaintext highlighter-rouge">http://localhost:4000</code>即可看到如下界面:
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304203706783-1034748400.png" alt="img" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo1.png" alt="img" /></p>
 
 <h3 id="在codingnet创建与用户名相同的项目并启用代码的pages功能">在<code class="language-plaintext highlighter-rouge">Coding.net</code>创建与用户名相同的项目，并启用代码的<code class="language-plaintext highlighter-rouge">pages</code>功能</h3>
 <p>打开网址<a rel="nofollow noopener noreferrer" target="_blank" href="https://dev.tencent.com/user/projects/create">https://dev.tencent.com/user/projects/create</a>，即可创建项目。
@@ -420,9 +422,11 @@
 </pre></td><td class="rouge-code"><pre>Enter file <span class="k">in </span>which to save the key <span class="o">(</span>/Users/you/.ssh/id_rsa<span class="o">)</span>: <span class="o">[</span>Press enter] 
 // 此处推荐使用默认地址，也可在密钥后面加后缀,即输入<span class="s2">"id_rsa_coding"</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p>找到刚才生成的<code class="language-plaintext highlighter-rouge">id_rsa_coding.pub</code>，将其中的内容贴到<code class="language-plaintext highlighter-rouge">Coding</code>的公钥信息中：
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304214608470-1076788388.png" alt="img" />
-此时，<code class="language-plaintext highlighter-rouge">git</code>推送应该具有权限了~
+<p>找到刚才生成的<code class="language-plaintext highlighter-rouge">id_rsa_coding.pub</code>，将其中的内容贴到<code class="language-plaintext highlighter-rouge">Coding</code>的公钥信息中：</p>
+
+<p><img src="https://gitee.com/geekplayers/images/raw/master/hexo2.png" alt="img" /></p>
+
+<p>此时，<code class="language-plaintext highlighter-rouge">git</code>推送应该具有权限了~
 目前为止，<code class="language-plaintext highlighter-rouge">_config.yml</code>配置文件只需要改<code class="language-plaintext highlighter-rouge">deploy</code>这一处！</p>
 
 <h3 id="使用hexo-clean--hexo-g--hexo-d发布hexo博客">使用<code class="language-plaintext highlighter-rouge">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>发布<code class="language-plaintext highlighter-rouge">hexo</code>博客</h3>
@@ -430,7 +434,7 @@
 
 <h3 id="域名绑定">域名绑定</h3>
 <p>先去域名管理系统中加一条<code class="language-plaintext highlighter-rouge">CNAME</code>记录, 比如我的域名是<a rel="nofollow noopener noreferrer" target="_blank" href="https://enjoy233.cn">https://enjoy233.cn</a>，此处想绑定到<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.enjoy233.cn">https://www.enjoy233.cn</a>，则添加方法如下：
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211351308-907087033.png" alt="record1" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo3.png" alt="record1" /></p>
 
 <p>将<code class="language-plaintext highlighter-rouge">_config.yml</code>中的<code class="language-plaintext highlighter-rouge">url</code>从<code class="language-plaintext highlighter-rouge">http://yousite.com</code>改为实际用的，比如我设置为:</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -440,7 +444,7 @@
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>然后在<code class="language-plaintext highlighter-rouge">coding pages</code>的页面中设置如下:
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304211130778-1132950578.png" alt="img2" />
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo4.png" alt="img2" />
 过几分钟后，就能通过域名<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.enjoy233.cn">https://www.enjoy233.cn</a>来访问我的博客了。</p>
 
 <h3 id="主题使用">主题使用</h3>
@@ -469,12 +473,12 @@
 <p>打开网址 <a rel="nofollow noopener noreferrer" target="_blank" href="https://dev.tencent.com/user/projects/create">https://dev.tencent.com/user/projects/create</a>, 开始创建项目。</p>
 
 <p>我的用户名是<code class="language-plaintext highlighter-rouge">legege007</code>，于是就建了个<code class="language-plaintext highlighter-rouge">legege007</code>的项目.
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212259672-990931307.png" alt="img" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo5.png" alt="img" /></p>
 
 <h3 id="使用现有项目创建工作区">使用现有项目创建工作区</h3>
 <p>打开网址 <a rel="nofollow noopener noreferrer" target="_blank" href="https://studio.dev.tencent.com/dashboard/workspace/create">https://studio.dev.tencent.com/dashboard/workspace/create</a>, 即可进入Cloud Studio。
 我选择使用了<code class="language-plaintext highlighter-rouge">node.js</code>的环境来进行配置，同时选中项目<code class="language-plaintext highlighter-rouge">legege007</code>，然后<code class="language-plaintext highlighter-rouge">创建</code>即可。
-<img src="https://img2018.cnblogs.com/blog/436938/201903/436938-20190304212558823-766636642.png" alt="img" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo6.png" alt="img" /></p>
 
 <h3 id="使用命令行配置环境">使用命令行配置环境</h3>
 <p>Cloud studio中默认是<code class="language-plaintext highlighter-rouge">Linux</code>系统，我习惯于用root的权限来操作，免得后面还需要用<code class="language-plaintext highlighter-rouge">chmod</code>之类的命令来改权限，一进IDE界面，使用命令<code class="language-plaintext highlighter-rouge">sudo su</code>切换即可。</p>
@@ -558,7 +562,7 @@ root@coding:/home/coding/workspace/blog# hexo clean <span class="o">&amp;&amp;</
 <p><code class="language-plaintext highlighter-rouge">_config.yml</code>文件的配置、域名绑定、主题使用等等，基本上与在<code class="language-plaintext highlighter-rouge">Windows</code>下安装完全一样，参考Windows下同样的操作即可，就不再赘述了。</p>
 
 <p>安装完主题后的界面是:
-<img src="http://img2018.cnblogs.com/blog/436938/201903/436938-20190304224154579-1613298900.png" alt="UI" /></p>
+<img src="https://gitee.com/geekplayers/images/raw/master/hexo7.png" alt="UI" /></p>
 
 <p>另外，值得一提的是:
 Cloud Studio还有几个优势，即:</p>
@@ -567,11 +571,9 @@ Cloud Studio还有几个优势，即:</p>
   <li>可以一键部署，除了<code class="language-plaintext highlighter-rouge">coding.me</code>的域名可用以外，一键部署后，还提供一个<code class="language-plaintext highlighter-rouge">coding.io</code>的域名可以访问。如果暂时没买个人域名，这就是个大福利了~</li>
 </ul>
 
-<p><img src="http://img2018.cnblogs.com/blog/436938/201903/436938-20190304220305918-1069723032.png" alt="img6" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/hexo8.png" alt="img6" /></p>
 
 <p>如有帮助，麻烦在右下角”推荐”一下，多谢~</p>
-
-<p><br /></p>
 
 <hr />
 
@@ -583,7 +585,7 @@ Cloud Studio还有几个优势，即:</p>
 
 <p><br /></p>
 
-<p><img src="https://images.cnblogs.com/cnblogs_com/enjoy233/1389971/o_qrcode_daBai.jpg" alt="dotNET匠人 公众号名片" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/gzhCard_blog.png" alt="dotNET匠人 公众号名片" /></p>
 
 <h3 id="文末彩蛋">文末彩蛋</h3>
 
@@ -619,8 +621,8 @@ Cloud Studio还有几个优势，即:</p>
 <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>版权声明</h3>
     <ul>
-        <li>本文作者：<a href="http://localhost:4000" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="http://localhost:4000/buildHexo.html" target="_blank">http://localhost:4000/buildHexo.html</a></li>
+        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="/buildHexo.html" target="_blank">http://localhost:4000/buildHexo.html</a></li>
         <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
     </ul>
 </div>
