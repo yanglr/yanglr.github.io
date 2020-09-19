@@ -14,7 +14,9 @@
 
     <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
     <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ" /> <!-- Submit github.com to g. -->
     <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6" /> <!-- Submit github.com to bd. -->
     <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
     <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
     <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
@@ -921,8 +923,10 @@
 <p>在上述事例中，共定义了两个按钮的样式，分别是:</p>
 
 <ul>
-  <li><strong>FlatButtonStyle，这是个圆角按钮。</strong><img src="https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212756317-118994661.png" alt="" /></li>
+  <li><strong>FlatButtonStyle，这是个圆角按钮。</strong></li>
 </ul>
+
+<p><img src="https://gitee.com/geekplayers/images/raw/master/wpf-round-button.png" alt="round-button" /></p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -969,8 +973,10 @@
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <ul>
-  <li><strong>ToggleLikeButtonStyle，这是一个点赞按钮。</strong> <img src="https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212810837-524413026.png" alt="" /></li>
+  <li><strong>ToggleLikeButtonStyle，这是一个点赞按钮。</strong></li>
 </ul>
+
+<p><img src="https://gitee.com/geekplayers/images/raw/master/wpf-vote.png" alt="vote" /></p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -1340,9 +1346,9 @@
 
 <p>作者给出了使用自定义控件的分析思路：</p>
 
-<p><img src="https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212827625-1658133466.png" alt="" /></p>
+<p><img src="https://gitee.com/geekplayers/images/raw/master/custom-control.png" alt="custom-control" /></p>
 
-<p>例如，在示例代码**ToggleLikeButtonStyle **中，我实现了一个点赞和取消点赞的状态，则使用了ToggleButton来完成，就没必要使用 Button 扩展出一个是否点赞的状态了。</p>
+<p>例如，在示例代码<strong>ToggleLikeButtonStyle</strong>中，我实现了一个点赞和取消点赞的状态，则使用了ToggleButton来完成，就没必要使用 Button 扩展出一个是否点赞的状态了。</p>
 
 <p>而如果我们需要实现的功能有这么复杂，那大概使用传统的控件就无法实现，就得使用自定义控件了。（<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/caomfan/WpfDemo.git">点击查看示例代码</a>）</p>
 
@@ -1468,7 +1474,9 @@
 
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>实现了这样的界面<img src="https://img2020.cnblogs.com/blog/191302/202003/191302-20200318212853603-773449582.png" alt="" /></p>
+<p>实现了这样的界面</p>
+
+<p><img src="https://gitee.com/geekplayers/images/raw/master/wpf-ui1.png" alt="UI" /></p>
 
 <p>路由事件就是针对这组元素树中多个元素调用处理程序的事件。当我们点击了按钮Button时，将会触发 Button=&gt;StackPanel=&gt;Border的事件路由，而不是像WinForm应用一样，只能触发最上层的Button的按钮点击事件。</p>
 
@@ -1550,8 +1558,8 @@
 <div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
     <h3>版权声明</h3>
     <ul>
-        <li>本文作者：<a href="http://localhost:4000" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="http://localhost:4000/wpf-study-note-by-xiyuanmore.html" target="_blank">http://localhost:4000/wpf-study-note-by-xiyuanmore.html</a></li>
+        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="/wpf-study-note-by-xiyuanmore.html" target="_blank">http://localhost:4000/wpf-study-note-by-xiyuanmore.html</a></li>
         <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
     </ul>
 </div>
