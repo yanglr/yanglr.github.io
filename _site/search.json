@@ -25,6 +25,14 @@
     } ,
   
     {
+      "title"    : "在GitLab pages上快速搭建Jekyll博客",
+      "category" : "",
+      "tags"     : "gitlab, github",
+      "url"      : "/migrate-from-github-pages-to-gitlab-pages.html",
+      "date"     : "2020-08-30 02:23:52 +0800"
+    } ,
+  
+    {
       "title"    : "面试题测试",
       "category" : "",
       "tags"     : "面试题",
@@ -102,6 +110,14 @@
       "tags"     : ".NET, leetcode",
       "url"      : "/aimed-at-offer-search-in-two-dimensional-array.html",
       "date"     : "2020-06-17 15:30:00 +0800"
+    } ,
+  
+    {
+      "title"    : "使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/cdn-for-github-pages.html",
+      "date"     : "2020-05-01 00:00:00 +0800"
     } ,
   
     {

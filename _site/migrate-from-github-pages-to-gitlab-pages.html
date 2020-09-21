@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "K78pv1Y1Mn20Io", domain: "geekplayers.com", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=K78pv1Y1Mn20Io" style="display:none" height="1"
+            width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ" /> <!-- Submit github.com to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6" /> <!-- Submit github.com to bd. -->
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> 在GitLab pages上快速搭建Jekyll博客_极客玩家大白</title>
+    <meta name="keywords" content="gitlab pages, github pages, jekyll">
+    <meta name="description"
+          content="从github pages快速迁移Jekyll博客到gitlab pages的完全指南。">
+
+    <link rel="canonical" href="http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="在GitLab pages上快速搭建Jekyll博客">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>在GitLab pages上快速搭建Jekyll博客</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="/migrate-from-github-pages-to-gitlab-pages.html" title="在GitLab pages上快速搭建Jekyll博客_极客玩家大白" target="_self" rel="canonical">在GitLab pages上快速搭建Jekyll博客</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2020/08/30 02:23:52</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#gitlab pages">gitlab pages</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 12</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:2</p>
+                <p>size: 12</p> -->
+                
+                
+                                    
+                
+                <!-- <p>out index:3</p>
+                <p>size: 6</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <h2 id="在gitlab-pages上快速搭建jekyll博客">在GitLab pages上快速搭建Jekyll博客</h2>
+
+<p>前一段时间将我的Jekyll静态博客从github pages镜像部署到了 <code class="language-plaintext highlighter-rouge">zeit.co</code>(现vercel)上了一份，最近偶然发现gitlab pages也不错，百度也会正常抓取，于是动手倒腾，将github pages快速迁移Jekyll博客到<a rel="nofollow noopener noreferrer" target="_blank" href="https://web.geekplayers.com">gitlab pages</a>，中途遇到了不少坑，管他呢，一把刷。</p>
+
+<p>于是有了下文的 <strong>从github pages快速迁移Jekyll博客到gitlab pages的完全指南。</strong></p>
+
+<p><br /></p>
+
+<h2 id="step1-导入已有项目">Step1: 导入已有项目</h2>
+
+<p>登陆<a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com">gitlab.com</a>，点击<code class="language-plaintext highlighter-rouge">New Project</code>,</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598757602233-a850ea96-39a9-4cff-bdf9-c320d5d2d744.png" alt="screenshot1" /></p>
+
+<p>点击<code class="language-plaintext highlighter-rouge">Import projects</code>,</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598757844067-819530aa-262f-4971-bead-71c9c1b6abac.png" alt="image.png" /></p>
+
+<p>比如，我的jekyll blog对应的代码仓库是: <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/yanglr/yanglr.github.io">https://github.com/yanglr/yanglr.github.io</a>,</p>
+
+<p>由于我绑定了github账号yanglr，系统会将我在github下所有的分支都load进来，接下来，我选择<a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/yanglr/yanglr.github.io">yanglr/yanglr.github.io</a>,这个仓库，当然Import进来之前要记得改名为: gitlab-username.gitlab.io, 接下来等待导入完成即可。</p>
+
+<p>或点击<code class="language-plaintext highlighter-rouge">Repo by URL</code>,</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598758018132-66be5558-b6cb-424f-9b5f-62d422cf9f13.png" alt="image.png" /></p>
+
+<p><br /></p>
+
+<h2 id="step2-为gitlab生成ssh密钥">Step2: 为gitlab生成ssh密钥</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>bravo@localhost MINGW64 /d/coding/Gitlab.com
+
+<span class="nv">$ </span><span class="nb">cd</span> ~/.ssh
+
+bravo@localhost MINGW64 ~
+
+<span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 2048 <span class="nt">-C</span> <span class="s2">"email@example.com"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后复制id_rsa.pub的内容，贴到gitlab profile的 settings -&gt; ssh key中，具体入口为: <a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/profile/keys">https://gitlab.com/profile/keys</a></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598759369549-f23ad8d1-68f8-4f97-97d8-380c00fdb743.png" alt="image.png" /></p>
+
+<p>如果怕github的密钥文件与gitlab的弄混，可以在执行ssh-keygen -t rsa -b 2048 -C ““时，文件名取为: <code class="language-plaintext highlighter-rouge">id_rsa_gitlab</code></p>
+
+<p>然后到 .ssh 文件夹下创建一个文件名为<code class="language-plaintext highlighter-rouge">config</code>的文件，内容如下:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre># github
+    Host github.com
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+
+# gitlab
+    Host gitlab.com
+    Hostname gitlab.com
+    User legege007
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_gitlab
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="step3-clone代码">Step3: Clone代码</h2>
+
+<p>设置好ssh key后，我们就可以克隆代码到本地了，命令如下:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git clone https://gitlab.com/legege007/legege007.gitlab.io.git
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>git clone非常慢的解决方法:</strong></p>
+
+<p>在自己的PC上git clone太慢了，clone地址换https的速度还可以~</p>
+
+<p>有能力科学地上网的小伙伴可以想办法解决。</p>
+
+<p>还可以在git clone时，去掉末尾的.git</p>
+
+<p><br /></p>
+
+<h2 id="step4-创建-cicd配置文件">Step4: 创建 CI/CD配置文件</h2>
+
+<p>这部分可以直接参考gitlab官方给的 jekyll 示例 <a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/pages/jekyll">https://gitlab.com/pages/jekyll</a> 来做。</p>
+
+<p>具体做法是，在本地克隆下来的代码仓库的根目录中创建文件 <code class="language-plaintext highlighter-rouge">.gitlab.ci.yml</code>, 然后贴入如下代码:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="rouge-code"><pre><span class="na">image</span><span class="pi">:</span> <span class="s">ruby:latest</span>
+
+<span class="na">variables</span><span class="pi">:</span>
+  <span class="na">JEKYLL_ENV</span><span class="pi">:</span> <span class="s">production</span>
+  <span class="na">LC_ALL</span><span class="pi">:</span> <span class="s">C.UTF-8</span>
+
+<span class="na">before_script</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">gem install bundler</span>
+  <span class="pi">-</span> <span class="s">bundle install</span>
+
+<span class="na">test</span><span class="pi">:</span>
+  <span class="na">stage</span><span class="pi">:</span> <span class="s">test</span>
+  <span class="na">script</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">bundle exec jekyll build -d test</span>
+  <span class="na">artifacts</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">test</span>
+  <span class="na">except</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">master</span>
+
+<span class="na">pages</span><span class="pi">:</span>
+  <span class="na">stage</span><span class="pi">:</span> <span class="s">deploy</span>
+  <span class="na">script</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">bundle exec jekyll build -d public</span>
+  <span class="na">artifacts</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">public</span>
+  <span class="na">only</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">master</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>来源: <a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml">https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml</a></p>
+
+<p>同理，如果你的静态博客选用的框架是hexo, 请参考项目<a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/pages/hexo">https://gitlab.com/pages/hexo</a> 下的CI/CD配置文件<a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/pages/hexo/-/blob/master/.gitlab-ci.yml">https://gitlab.com/pages/hexo/-/blob/master/.gitlab-ci.yml</a>，gitbook 项目请用 <a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/pages/gitbook/-/blob/master/.gitlab-ci.yml">https://gitlab.com/pages/gitbook/-/blob/master/.gitlab-ci.yml</a>。</p>
+
+<p>如果想对gitlab CI/CD有更多的了解，请参看:</p>
+
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/help/ci/quick_start/README">https://gitlab.com/help/ci/quick_start/README</a></p>
+
+<p><br /></p>
+
+<h2 id="step5-等待build2到3分钟build完成后即可访问">Step5: 等待build，2到3分钟build完成后即可访问</h2>
+
+<p>点击页面左侧菜单中的 CI/CD,</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598758942346-5b456249-ea92-4ff9-8919-c83ac7c9067c.png" alt="image5" /></p>
+
+<p>大概2到3分钟build完成后即可访问，pipelines中会出现一个状态为 passed 的记录，这时就可以访问你的静态博客(pages)了，访问地址是：<a rel="nofollow noopener noreferrer" target="_blank" href="https://legege007.gitlab.io">legege007.gitlab.io</a>，由于gitlab是为gitlab.io默认提供ssl证书的，所有此时也可以访问https版本: <a rel="nofollow noopener noreferrer" target="_blank" href="https://legege007.gitlab.io">https://legege007.gitlab.io</a>。</p>
+
+<p><br /></p>
+
+<h2 id="step6-绑定域名">Step6: 绑定域名</h2>
+
+<p>现在，我们来绑定自己的域名。</p>
+
+<p>回到项目 刚才的代码仓库，比如我的是: <a rel="nofollow noopener noreferrer" target="_blank" href="https://gitlab.com/legege007/legege007.gitlab.io">https://gitlab.com/legege007/legege007.gitlab.io</a>，点击左侧 Settings -&gt; pages，会发现右上角有个<code class="language-plaintext highlighter-rouge">New Domain</code>,</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598759747911-24a52910-8a9f-46e6-8470-a2454a915fda.png" alt="image6" /></p>
+
+<p>比如，我想绑定到: <code class="language-plaintext highlighter-rouge">geekplayers.com</code>，填进去，点”Create New Domain”即可。</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598759978763-86f36d62-1a3f-4e6d-9f8e-0d55b4dc06f8.png" alt="image7" /></p>
+
+<p>接下来会看到以下界面:</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/yanglr/images/1598760055832-ed221625-27e7-4eeb-91fa-9606b235f19f.png" alt="image8" /></p>
+
+<p>此时，需要在域名管理网站(比如，我在腾讯云上买的域名，我需要登陆 <a rel="nofollow noopener noreferrer" target="_blank" href="https://console.cloud.tencent.com/cns">https://console.cloud.tencent.com/cns</a>)，然后在里面先后分别添加一条类型为TXT和一条类型为CNAME的记录。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>主机记录</th>
+      <th>记录类型</th>
+      <th>线路类型</th>
+      <th>记录值</th>
+      <th>MX优先级</th>
+      <th>TTL（秒）</th>
+      <th>最后操作时间</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_gitlab-pages-verification-code.web</td>
+      <td>TXT</td>
+      <td>默认</td>
+      <td>gitlab-pages-verification-code=319ec4807facc9d92c6c62ba4efd1ccf</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blog</td>
+      <td>CNAME</td>
+      <td>默认</td>
+      <td>legege007.gitlab.io.</td>
+      <td>-</td>
+      <td>600</td>
+      <td>2020-08-30 11:03:33</td>
+      <td>修改暂停删除</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>TXT那一条加完之后，可以点击 Verify Status 右侧的 红色按钮旁边的 ↶ ↺ ⟲ 按钮验证网站所有权，该按钮会变成绿色，接下来点击页面下方的”Save Changes”。</p>
+
+<p><br /></p>
+
+<h2 id="step7-坐等自动下发ssl证书">Step7: 坐等自动下发SSL证书</h2>
+
+<p>最后就是等gitlab自动下发ssl证书。</p>
+
+<p>大概再需要等6分钟左右，页面上的Domain会从http版的 <a rel="nofollow noopener noreferrer" target="_blank" href="http://blog.geekplayers.com">http://blog.geekplayers.com</a> 变为: <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.geekplayers.com">https://blog.geekplayers.com</a>，表明SSL证书已成功获取。</p>
+
+<p>至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~</p>
+
+
+            <style>
+.PageNav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNav .next {
+  text-align: right;
+}    
+</style>
+
+<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="/migrate-from-github-pages-to-gitlab-pages.html" target="_blank">http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div class="PageNav">
+    
+    <a class="prev" href="/interview-test.html"><i class="fa fa-arrow-left"></i>&nbsp;面试题测试</a>
+    
+    
+    <a class="next" href="/replace-flag-counter.html"> FlagCounter被博客园禁用的解决方法&nbsp;<i class="fa fa-arrow-right"></i></a>
+    
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html';
+        this.page.identifier = '/migrate-from-github-pages-to-gitlab-pages.html';
+        this.page.title = '在GitLab pages上快速搭建Jekyll博客';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

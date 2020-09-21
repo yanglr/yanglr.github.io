@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<!-- simple jekyll search -->
+<script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "K78pv1Y1Mn20Io", domain: "geekplayers.com", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=K78pv1Y1Mn20Io" style="display:none" height="1"
+            width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
+
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo" />
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U" />  <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ" /> <!-- Submit github.com to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo" />
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6" /> <!-- Submit github.com to bd. -->
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0" />
+    <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
+
+    <title> 使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源_极客玩家大白</title>
+    <meta name="keywords" content="GitHub, CDN, jsdelivr">
+    <meta name="description"
+          content="&lt;p&gt;挺久以前就有网友给我的 GitHub Pages 博客模板提 &lt;a href=&quot;https://github.com/mzlogin/mzlogin.github.io/issues/65&quot;&gt;Issue&lt;/a&gt;，说希望能增加 CDN 用于加速静态资源的加载，由于懒，一直没有动。&lt;/p&gt;
+
+">
+
+    <link rel="canonical" href="http://localhost:4000/cdn-for-github-pages.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/sidebar-post-nav.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="//geekplayers.com/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+    <body>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <!-- baidu analyisis -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176595919-1">
+    </script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176595919-1');
+    </script>
+    
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/python.html"
+                       target="_self"
+                       title="Python">
+                        Python
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/it.html"
+                       target="_self"
+                       title="IT">
+                        IT
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/zsxq.html"
+                       target="_self"
+                       title="星球">
+                        星球
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/life.html"
+                       target="_self"
+                       title="故事">
+                        故事
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/link.html"
+                       target="_self"
+                       title="友链">
+                        友链
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="大白技术控">
+            <span class="octicon octicon-gist-secret"></span>
+            大白技术控
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/algo.html"
+                   target="_self"
+                   title="算法">
+                    算法
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dabenSeo.html"
+                   target="_blank"
+                   title="大奔SEO">
+                    大奔SEO
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/dabaiSEO.html" 
+                           target="_blank"
+                     >大白SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/dotnet.html"
+                   target="_blank"
+                   title=".NET">
+                    .NET
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/csharp.html" 
+                           target=""
+                     >C#</a></li>
+                    
+                    <li><a href="/wpf.html" 
+                           target=""
+                     >WPF</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/k8s.html"
+                   target="_self"
+                   title="k8s">
+                    k8s
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/k8s.html" 
+                           target=""
+                     >k8s</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target="_self"
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/tools/"
+                   target="_blank"
+                   title="Tools">
+                    Tools
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li><a href="/run-liquild-online.html" 
+                           target=""
+                     >Run Liquid now</a></li>
+                    
+                    <li><a href="/run-liquild-online-pro.html" 
+                           target=""
+                     >Run Liquid now Pro</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target="_self"
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <!-- <h1>使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源</h1> -->
+            <h1 style="font-size: 45px;">
+                <a class="hvr-underline-from-center" style="display: initial !important;" href="/cdn-for-github-pages.html" title="使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源_极客玩家大白" target="_self" rel="canonical">使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源</a>
+            </h1>
+
+            <span class="meta-info">
+                
+
+                
+                
+                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
+                
+
+                
+                                
+                
+                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2020/05/01 00:00:00</font>
+                
+            </span>
+            
+            <p>
+                
+                
+                
+                
+                    
+                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                    
+                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
+                        href="/categories/#GitHub">GitHub</a>
+                    
+                                    
+                
+                <!-- <p>out index:1</p>
+                <p>size: 6</p> -->
+                            
+            </p>
+
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-9 markdown-body">
+
+            <p>挺久以前就有网友给我的 GitHub Pages 博客模板提 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/mzlogin/mzlogin.github.io/issues/65">Issue</a>，说希望能增加 CDN 用于加速静态资源的加载，由于懒，一直没有动。</p>
+
+<p>最近偶尔要打开自己博客看下 Wiki 的时候，要等挺久，比较痛苦，碰巧昨天晚上看到这样一篇帖子：<a rel="nofollow noopener noreferrer" target="_blank" href="https://hacpai.com/article/1583894928771">GitHub 图床的正确用法，通过 jsDelivr CDN 全球加速</a>，感觉很适合我的需求场景，于是决定趁这几天休假将这个改造一下。</p>
+
+<h2 id="先看效果">先看效果</h2>
+
+<p>以下改造前后的加载情况都是在 Edge 浏览器禁用缓存后录制的，录制时间段很接近，从本地访问两个 GitHub Pages 服务的原始响应速度应该类似。</p>
+
+<h3 id="改造前加载">改造前加载</h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/by8/by8.github.io//images/posts/github/cdn-before.png" alt="before use cdn" /></p>
+
+<p><em>注：由于改造前没有保留加载图，所以这是截的一个使用相同模板的朋友的首页加载情况。</em></p>
+
+<p>可以看到耗时最长的两个请求时间达到了 12 秒左右，而且很多资源的加载时间在 1 秒以上，页面完成加载时间长达 15 秒多……估计一般的访客是没这个耐心等待的。</p>
+
+<h3 id="改造后加载">改造后加载</h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/by8/by8.github.io//images/posts/github/cdn-after.png" alt="after use cdn" /></p>
+
+<p>这样一对比效果还是很明显的。改造过后耗时最长的是两个没办法走 CDN 的请求，而走 CDN 的那些资源加载时间基本都没超过 60 毫秒，页面完成加载时间缩短到了 3 秒以内。</p>
+
+<p>当然，因为页面自身还是在 GitHub Pages 托管，有时候首个请求还是会挺久才返回。</p>
+
+<p>改造后的效果可以打开 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.geekplayers.com">https://www.geekplayers.com</a> 体验。</p>
+
+<h2 id="方案考虑">方案考虑</h2>
+
+<p>优化独立博客的加载速度有一些不同的思路，对应不同的方案：</p>
+
+<ol>
+  <li>优化博客代码，精简需要加载的资源；</li>
+  <li>将博客部署到国内访问快的服务器上；</li>
+  <li>部署到国内的代码托管平台，比如 Gitee 和 Coding 等；</li>
+  <li>采用 CDN 加速；</li>
+  <li>等等。</li>
+</ol>
+
+<p>其中 2 和 3 我不想考虑，还是期望只在 GitHub 上管理博客，所以 1 和 4 是优化方向，本文对应的就是 4 的部分。</p>
+
+<p>而采用 CDN 加速的方案，可以考虑</p>
+
+<ul>
+  <li>将公共库改为直接引用公共 CDN 链接；</li>
+  <li>
+    <p>自己编写和修改的静态资源自己去托管在一个 CDN 服务上。</p>
+
+    <p>有一些 CDN 服务商提供一定的免费额度，可以按喜好选用，或者选择付费服务。这里我没有纠结，看完文首提到的那篇文章，去看了下 jsDelivr 的介绍后觉得靠谱：它原生支持使用 GitHub 项目里的资源，什么都不用配置，更重要的是免费，在国内有节点，而且速度还不错（官网上也把 works in China 作为一个卖点的），遂决定直接用它。</p>
+  </li>
+</ul>
+
+<h2 id="jsdelivr-支持的-github-资源的方式">jsDelivr 支持的 GitHub 资源的方式</h2>
+
+<p>jsDelivr 对 GitHub 的支持是作为重要特性来宣传的，官网的介绍链接：<a rel="nofollow noopener noreferrer" target="_blank" href="https://www.jsdelivr.com/features#gh">https://www.jsdelivr.com/features#gh</a>，以下是一些认为需要了解的知识的小结：</p>
+
+<p>这里以我托管博客的 GitHub 仓库为例，地址是 <code class="language-plaintext highlighter-rouge">https://github.com/mzlogin/mzlogin.github.io</code>，那它里面的资源可以直接以 <code class="language-plaintext highlighter-rouge">https://cdn.jsdelivr.net/gh/mzlogin/mzlogin.github.io/</code> + <code class="language-plaintext highlighter-rouge">仓库里的文件路径</code> 来访问。</p>
+
+<p>比如仓库里有一个 js 文件 <code class="language-plaintext highlighter-rouge">assets/js/main.js</code>，那么它可以用 CDN 链接 <code class="language-plaintext highlighter-rouge">https://cdn.jsdelivr.net/gh/mzlogin/mzlogin.github.io/assets/js/main.js</code> 来访问。</p>
+
+<p>另外还支持一些高级用法，比如：</p>
+
+<ol>
+  <li>
+    <p>指定 release 版本号/提交 sha1/分支名称，例如指定获取该仓库的名称为 <code class="language-plaintext highlighter-rouge">1.2.0</code> 或 <code class="language-plaintext highlighter-rouge">v1.2.0</code> 的 release 版本资源：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> https://cdn.jsdelivr.net/gh/mzlogin/mzlogin.github.io@1.2.0/assets/js/main.js
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>如果指定版本为 <code class="language-plaintext highlighter-rouge">1</code> 或者 <code class="language-plaintext highlighter-rouge">1.2</code>，那它会自动匹配到这个范围内的最新版本号。</p>
+
+    <p>也可以不指定版本或者指定版本为 <code class="language-plaintext highlighter-rouge">latest</code>，这样总是使用最新版本的资源。</p>
+  </li>
+  <li>
+    <p>压缩资源，在 js/css 文件后缀前面加上 <code class="language-plaintext highlighter-rouge">.min</code>：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> https://cdn.jsdelivr.net/gh/mzlogin/mzlogin.github.io@1.2.0/assets/js/main.min.js
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>合并多个文件，用 <code class="language-plaintext highlighter-rouge">combine/file1,file2,file3</code> 格式的链接：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> https://cdn.jsdelivr.net/combine/gh/mzlogin/mzlogin.github.io@1.2.0/assets/js/main.min.js,gh/mzlogin/mzlogin.github.io@1.2.0/assets/js/simple-jekyll-search.min.js
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>压缩资源、合并文件的 CDN 链接在第一次有人访问时可能比较慢，后面再有人访问就快了。</p>
+
+<p>其它知识点：</p>
+
+<ul>
+  <li>可以通过 <code class="language-plaintext highlighter-rouge">https://cdn.jsdelivr.net/combine/gh/mzlogin/mzlogin.github.io[@&lt;版本号&gt;]/[&lt;文件夹&gt;/]</code> 这样的路径浏览缓存文件列表；</li>
+  <li>可以访问 <code class="language-plaintext highlighter-rouge">https://purge.jsdelivr.net/gh/mzlogin/mzlogin.github.io@1.2.0/assets/js/main.js</code> 来清除指定文件的缓存；（将引用的 CDN 链接里的 <code class="language-plaintext highlighter-rouge">cdn</code> 改成 <code class="language-plaintext highlighter-rouge">purge</code> 就是了）</li>
+  <li>可以访问 <code class="language-plaintext highlighter-rouge">https://data.jsdelivr.com/v1/package/gh/mzlogin/mzlogin.github.io</code> 来查看 CDN 上的 tags 和 versions 列表，更多数据接口参数参见 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/jsdelivr/data.jsdelivr.com">https://github.com/jsdelivr/data.jsdelivr.com</a>。</li>
+</ul>
+
+<h2 id="改造步骤">改造步骤</h2>
+
+<p>下面是记录具体改造博客模板的步骤：</p>
+
+<ol>
+  <li>
+    <p>在 _config.yml 文件中添加控制开关：</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre> <span class="c1"># 对 css 和 js 资源的 cdn 加速配置</span>
+ <span class="na">cdn</span><span class="pi">:</span>
+     <span class="na">jsdelivr</span><span class="pi">:</span>
+         <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>修改 _layouts 里的文件，给名为 <code class="language-plaintext highlighter-rouge">assets_base_url</code> 的变量赋值，用它来代表加载静态资源的根路径：</p>
+
+    <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre> <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">assets_base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+ <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">cdn</span><span class="p">.</span><span class="nv">jsdelivr</span><span class="p">.</span><span class="nv">enabled</span><span class="w"> </span><span class="p">%}</span>
+     <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">assets_base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://cdn.jsdelivr.net/gh/"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">repository</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="s1">'@master'</span><span class="w"> </span><span class="p">%}</span>
+ <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>修改以前直接用 <code class="language-plaintext highlighter-rouge">{{ site.url }}</code> 拼接的静态资源引用链接，替换为 <code class="language-plaintext highlighter-rouge">{{ assets_base_url }}</code>，比如 _includes/header.html 里：</p>
+
+    <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre> - &lt;link rel="stylesheet" href="{{ site.url }}/assets/css/posts/index.css"&gt;
+ + &lt;link rel="stylesheet" href="{{ assets_base_url }}/assets/css/posts/index.css"&gt;
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>这样万一哪天 CDN 出了点什么状况，我们也可以很方便地通过一个开关就切回自已的资源链接恢复服务。</p>
+
+<p>主要就是这类修改，当然涉及的地方有多处，以上只是举一处例子记录示意，改造过程和改造后的代码可以参考我的博客仓库 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/mzlogin/mzlogin.github.io">https://github.com/mzlogin/mzlogin.github.io</a>。</p>
+
+<h2 id="现存问题">现存问题</h2>
+
+<ul>
+  <li>
+    <p>如果项目曾经打过 tag，那么新增/修改静态资源后，需要刷新 CDN 缓存的话，需要打个新 tag；</p>
+
+    <p>一般发生在修改了博客模板的 js/css 以后。我也还在摸索如何省去这一步的方法。</p>
+
+    <p><strong>Update:</strong> 我后来采用的解决方法是删除了所有的 tag，这样以前的 release 就变成了 Draft，对外是不可见的，因为我这个仓库不需要对外可见的 release，所以这个问题也就解决了，不需要再操心刷新 CDN 的问题了。</p>
+  </li>
+</ul>
+
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+  <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://hacpai.com/article/1583894928771">GitHub 图床的正确用法，通过 jsDelivr CDN 全球加速</a></li>
+  <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.csdn.net/larpland/article/details/101349605">jsDelivr 为开发者提供免费公共 CDN 加速服务</a></li>
+  <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.jsdelivr.com/features">Features - jsDelivr</a></li>
+</ul>
+
+
+            <style>
+.PageNav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNav .next {
+  text-align: right;
+}    
+</style>
+
+<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
+    <h3>版权声明</h3>
+    <ul>
+        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
+        <li>本文链接：<a href="/cdn-for-github-pages.html" target="_blank">http://localhost:4000/cdn-for-github-pages.html</a></li>
+        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
+    </ul>
+</div>
+
+<div class="PageNav">
+    
+    <a class="prev" href="/master-of-money.html"><i class="fa fa-arrow-left"></i>&nbsp;半佛仙人：神圣的存款</a>
+    
+    
+    <a class="next" href="/aimed-at-offer-search-in-two-dimensional-array.html"> 剑指Offer | 二维数组中的查找&nbsp;<i class="fa fa-arrow-right"></i></a>
+    
+</div>
+
+<div>
+    <p align="center">
+        
+        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+        
+        <br />
+        一个有故事的程序员
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
+        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
+    </p>
+    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
+        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
+    </p>
+</div>
+
+            <!-- Comments -->
+            <div class="comment">
+             
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://localhost:4000/cdn-for-github-pages.html';
+        this.page.identifier = '/cdn-for-github-pages.html';
+        this.page.title = '使用 jsDelivr 免费加速 GitHub Pages 博客的静态资源';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'yanglr';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
+        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+        <script>
+        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
+        var gitalk = new Gitalk({
+            id: title,
+            clientID: '22eb6462c987e7a79860',
+            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
+            repo: 'geekplayers.com',
+            owner: 'yanglr',
+            admin: ['yanglr'],
+            labels: ['gitalk'],
+            perPage: 50
+        })
+        gitalk.render('gitalk-container');
+        </script>
+  
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+<script type="text/javascript">
+    const headings = document.querySelectorAll('h2,h3,h4'); // 1
+    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
+    for (const heading of headings) { // 3
+        const linkIcon = document.createElement('a'); // 4
+        
+        if(heading.id != '')
+        {
+            linkIcon.setAttribute('href', `#${heading.id}`); // 5
+            linkIcon.innerHTML = linkContent; // 6
+            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
+            heading.insertBefore(linkIcon, heading.firstChild);; // 7
+        }
+    }
+</script>
+        </div>
+
+    
+    <footer class="container">
+        <div class="site-footer">
+            <!--  <div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/legege007">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/540071991">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/yanglr">
+                GitHub
+            </a>
+        </div> -->
+            <div class="card text-center">
+                <ul class="list-inline" style="margin-left: 0;">
+                    <li>
+                        <a target="_blank" href="https://github.com/yanglr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/540071991">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer-links mobile-hidden">
+                
+                <a href="/docker.html" title="Docker" target="_blank">Docker</a>
+                
+                <a href="/open-source.html" title="Code" target="_blank">Code</a>
+                
+                <a href="/geektime.html" title="极客" target="_blank">极客</a>
+                
+            </div>
+            <!--         <div class="site-footer-icons">
+                   沪ICP备20019934号-2
+            </div> -->
+            <div class="scrolltop">
+                粤ICP备12009483号（Gitee站）
+                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
+            </div>
+            <div class="rss">
+                <a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+            </div>
+        </div>
+        <!-- Third-Party JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/geopattern/js/geopattern.min.js"></script>
+        <!-- My JS -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        
+
+        <!-- Cnzz Analytics -->
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Cnzz Analytics -->
+    </footer>
+
+
+    </body>
+
+</html>

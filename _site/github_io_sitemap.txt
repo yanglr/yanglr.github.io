@@ -5,6 +5,8 @@ http://localhost:4000/bing-API-nodejs.html
 
 http://localhost:4000/replace-flag-counter.html
 
+http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html
+
 http://localhost:4000/interview-test.html
 
 http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html
@@ -24,6 +26,8 @@ http://localhost:4000/wpf-data-binding-debug-guide.html
 http://localhost:4000/Using-WPF-with-Managed-cpp.html
 
 http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html
+
+http://localhost:4000/cdn-for-github-pages.html
 
 http://localhost:4000/master-of-money.html
 

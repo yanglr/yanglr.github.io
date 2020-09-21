@@ -1,3 +1,3 @@
-snoopWpf online documentation - pages
+## SnoopWpf online documentation - pages
 
-Please visit <https://yanglr.github.io/snoopwpf-doc/>.
+Please visit <https://geekplayers.com/snoopwpf-doc/>.

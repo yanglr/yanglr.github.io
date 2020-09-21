@@ -5,8 +5,8 @@
     <description>极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Sep 2020 12:09:45 +0800</pubDate>
-    <lastBuildDate>Fri, 18 Sep 2020 12:09:45 +0800</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2020 08:30:01 +0800</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2020 08:30:01 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -603,6 +603,278 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
         <category>flagcounter插件</category>
         
         <category>flagcounter类似</category>
+        
+      </item>
+    
+      <item>
+        <title>在GitLab pages上快速搭建Jekyll博客</title>
+        <description>&lt;h2 id=&quot;在gitlab-pages上快速搭建jekyll博客&quot;&gt;在GitLab pages上快速搭建Jekyll博客&lt;/h2&gt;
+
+&lt;p&gt;前一段时间将我的Jekyll静态博客从github pages镜像部署到了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zeit.co&lt;/code&gt;(现vercel)上了一份，最近偶然发现gitlab pages也不错，百度也会正常抓取，于是动手倒腾，将github pages快速迁移Jekyll博客到&lt;a href=&quot;https://web.geekplayers.com&quot;&gt;gitlab pages&lt;/a&gt;，中途遇到了不少坑，管他呢，一把刷。&lt;/p&gt;
+
+&lt;p&gt;于是有了下文的 &lt;strong&gt;从github pages快速迁移Jekyll博客到gitlab pages的完全指南。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step1-导入已有项目&quot;&gt;Step1: 导入已有项目&lt;/h2&gt;
+
+&lt;p&gt;登陆&lt;a href=&quot;https://gitlab.com&quot;&gt;gitlab.com&lt;/a&gt;，点击&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Project&lt;/code&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598757602233-a850ea96-39a9-4cff-bdf9-c320d5d2d744.png&quot; alt=&quot;screenshot1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import projects&lt;/code&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598757844067-819530aa-262f-4971-bead-71c9c1b6abac.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;比如，我的jekyll blog对应的代码仓库是: &lt;a href=&quot;https://github.com/yanglr/yanglr.github.io&quot;&gt;https://github.com/yanglr/yanglr.github.io&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;由于我绑定了github账号yanglr，系统会将我在github下所有的分支都load进来，接下来，我选择&lt;a href=&quot;https://github.com/yanglr/yanglr.github.io&quot;&gt;yanglr/yanglr.github.io&lt;/a&gt;,这个仓库，当然Import进来之前要记得改名为: gitlab-username.gitlab.io, 接下来等待导入完成即可。&lt;/p&gt;
+
+&lt;p&gt;或点击&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repo by URL&lt;/code&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598758018132-66be5558-b6cb-424f-9b5f-62d422cf9f13.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step2-为gitlab生成ssh密钥&quot;&gt;Step2: 为gitlab生成ssh密钥&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;bravo@localhost MINGW64 /d/coding/Gitlab.com
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/.ssh
+
+bravo@localhost MINGW64 ~
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 2048 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;email@example.com&quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后复制id_rsa.pub的内容，贴到gitlab profile的 settings -&amp;gt; ssh key中，具体入口为: &lt;a href=&quot;https://gitlab.com/profile/keys&quot;&gt;https://gitlab.com/profile/keys&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598759369549-f23ad8d1-68f8-4f97-97d8-380c00fdb743.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果怕github的密钥文件与gitlab的弄混，可以在执行ssh-keygen -t rsa -b 2048 -C ““时，文件名取为: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id_rsa_gitlab&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后到 .ssh 文件夹下创建一个文件名为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt;的文件，内容如下:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# github
+    Host github.com
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+
+# gitlab
+    Host gitlab.com
+    Hostname gitlab.com
+    User legege007
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_gitlab
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step3-clone代码&quot;&gt;Step3: Clone代码&lt;/h2&gt;
+
+&lt;p&gt;设置好ssh key后，我们就可以克隆代码到本地了，命令如下:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git clone https://gitlab.com/legege007/legege007.gitlab.io.git
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;git clone非常慢的解决方法:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;在自己的PC上git clone太慢了，clone地址换https的速度还可以~&lt;/p&gt;
+
+&lt;p&gt;有能力科学地上网的小伙伴可以想办法解决。&lt;/p&gt;
+
+&lt;p&gt;还可以在git clone时，去掉末尾的.git&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step4-创建-cicd配置文件&quot;&gt;Step4: 创建 CI/CD配置文件&lt;/h2&gt;
+
+&lt;p&gt;这部分可以直接参考gitlab官方给的 jekyll 示例 &lt;a href=&quot;https://gitlab.com/pages/jekyll&quot;&gt;https://gitlab.com/pages/jekyll&lt;/a&gt; 来做。&lt;/p&gt;
+
+&lt;p&gt;具体做法是，在本地克隆下来的代码仓库的根目录中创建文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitlab.ci.yml&lt;/code&gt;, 然后贴入如下代码:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby:latest&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;variables&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;JEKYLL_ENV&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;production&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;C.UTF-8&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;before_script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gem install bundler&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle install&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;test&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle exec jekyll build -d test&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;artifacts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;test&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;pages&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;stage&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;deploy&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle exec jekyll build -d public&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;artifacts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;public&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;only&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;来源: &lt;a href=&quot;https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml&quot;&gt;https://gitlab.com/pages/jekyll/-/blob/master/.gitlab-ci.yml&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;同理，如果你的静态博客选用的框架是hexo, 请参考项目&lt;a href=&quot;https://gitlab.com/pages/hexo&quot;&gt;https://gitlab.com/pages/hexo&lt;/a&gt; 下的CI/CD配置文件&lt;a href=&quot;https://gitlab.com/pages/hexo/-/blob/master/.gitlab-ci.yml&quot;&gt;https://gitlab.com/pages/hexo/-/blob/master/.gitlab-ci.yml&lt;/a&gt;，gitbook 项目请用 &lt;a href=&quot;https://gitlab.com/pages/gitbook/-/blob/master/.gitlab-ci.yml&quot;&gt;https://gitlab.com/pages/gitbook/-/blob/master/.gitlab-ci.yml&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果想对gitlab CI/CD有更多的了解，请参看:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/help/ci/quick_start/README&quot;&gt;https://gitlab.com/help/ci/quick_start/README&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step5-等待build2到3分钟build完成后即可访问&quot;&gt;Step5: 等待build，2到3分钟build完成后即可访问&lt;/h2&gt;
+
+&lt;p&gt;点击页面左侧菜单中的 CI/CD,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598758942346-5b456249-ea92-4ff9-8919-c83ac7c9067c.png&quot; alt=&quot;image5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;大概2到3分钟build完成后即可访问，pipelines中会出现一个状态为 passed 的记录，这时就可以访问你的静态博客(pages)了，访问地址是：&lt;a href=&quot;https://legege007.gitlab.io&quot;&gt;legege007.gitlab.io&lt;/a&gt;，由于gitlab是为gitlab.io默认提供ssl证书的，所有此时也可以访问https版本: &lt;a href=&quot;https://legege007.gitlab.io&quot;&gt;https://legege007.gitlab.io&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step6-绑定域名&quot;&gt;Step6: 绑定域名&lt;/h2&gt;
+
+&lt;p&gt;现在，我们来绑定自己的域名。&lt;/p&gt;
+
+&lt;p&gt;回到项目 刚才的代码仓库，比如我的是: &lt;a href=&quot;https://gitlab.com/legege007/legege007.gitlab.io&quot;&gt;https://gitlab.com/legege007/legege007.gitlab.io&lt;/a&gt;，点击左侧 Settings -&amp;gt; pages，会发现右上角有个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Domain&lt;/code&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598759747911-24a52910-8a9f-46e6-8470-a2454a915fda.png&quot; alt=&quot;image6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;比如，我想绑定到: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geekplayers.com&lt;/code&gt;，填进去，点”Create New Domain”即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598759978763-86f36d62-1a3f-4e6d-9f8e-0d55b4dc06f8.png&quot; alt=&quot;image7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来会看到以下界面:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/1598760055832-ed221625-27e7-4eeb-91fa-9606b235f19f.png&quot; alt=&quot;image8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;此时，需要在域名管理网站(比如，我在腾讯云上买的域名，我需要登陆 &lt;a href=&quot;https://console.cloud.tencent.com/cns&quot;&gt;https://console.cloud.tencent.com/cns&lt;/a&gt;)，然后在里面先后分别添加一条类型为TXT和一条类型为CNAME的记录。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;主机记录&lt;/th&gt;
+      &lt;th&gt;记录类型&lt;/th&gt;
+      &lt;th&gt;线路类型&lt;/th&gt;
+      &lt;th&gt;记录值&lt;/th&gt;
+      &lt;th&gt;MX优先级&lt;/th&gt;
+      &lt;th&gt;TTL（秒）&lt;/th&gt;
+      &lt;th&gt;最后操作时间&lt;/th&gt;
+      &lt;th&gt;操作&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_gitlab-pages-verification-code.web&lt;/td&gt;
+      &lt;td&gt;TXT&lt;/td&gt;
+      &lt;td&gt;默认&lt;/td&gt;
+      &lt;td&gt;gitlab-pages-verification-code=319ec4807facc9d92c6c62ba4efd1ccf&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;blog&lt;/td&gt;
+      &lt;td&gt;CNAME&lt;/td&gt;
+      &lt;td&gt;默认&lt;/td&gt;
+      &lt;td&gt;legege007.gitlab.io.&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;600&lt;/td&gt;
+      &lt;td&gt;2020-08-30 11:03:33&lt;/td&gt;
+      &lt;td&gt;修改暂停删除&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;TXT那一条加完之后，可以点击 Verify Status 右侧的 红色按钮旁边的 ↶ ↺ ⟲ 按钮验证网站所有权，该按钮会变成绿色，接下来点击页面下方的”Save Changes”。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step7-坐等自动下发ssl证书&quot;&gt;Step7: 坐等自动下发SSL证书&lt;/h2&gt;
+
+&lt;p&gt;最后就是等gitlab自动下发ssl证书。&lt;/p&gt;
+
+&lt;p&gt;大概再需要等6分钟左右，页面上的Domain会从http版的 &lt;a href=&quot;http://blog.geekplayers.com&quot;&gt;http://blog.geekplayers.com&lt;/a&gt; 变为: &lt;a href=&quot;https://blog.geekplayers.com&quot;&gt;https://blog.geekplayers.com&lt;/a&gt;，表明SSL证书已成功获取。&lt;/p&gt;
+
+&lt;p&gt;至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2020 02:23:52 +0800</pubDate>
+        <link>http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</link>
+        <guid isPermaLink="true">http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</guid>
+        
+        <category>gitlab</category>
+        
+        <category>github</category>
+        
+        
+        <category>gitlab pages</category>
+        
+        <category>github pages</category>
+        
+        <category>jekyll</category>
         
       </item>
     
@@ -2836,874 +3108,6 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/visual-cpp-wpf-method.html</link>
         <guid isPermaLink="true">http://localhost:4000/visual-cpp-wpf-method.html</guid>
-        
-        <category>WPF</category>
-        
-        <category>C++</category>
-        
-        
-        <category>[&quot;WPF&quot;, &quot;C++&quot;]</category>
-        
-        <category>[&quot;WPF&quot;, &quot;C++&quot;]</category>
-        
-        <category>WPF</category>
-        
-        <category>C++</category>
-        
-      </item>
-    
-      <item>
-        <title>用Visual C++创建WPF项目的三种主要方法</title>
-        <description>&lt;h1 id=&quot;用visual-c创建wpf项目的三种主要方法&quot;&gt;用Visual C++创建WPF项目的三种主要方法&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;The problem with using XAML from C++&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Because C++ doesn’t support partial class definitions, it isn’t possible to directly support XAML in VC++ projects using this mechanism. That isn’t, however, the core reason why VC++ doesn’t directly support XAML. In addition to using the x:Class attribute, you can also use the x:Subclass attribute so that the XAML gets compiled into the class specified by the x:Class attribute, and the code behind will define the class specified by x:Subclass, which will be derived from the x:Class type. Thus, the lack of partial classes isn’t that big of a block. The main issue is that, right now, no 100-percent CodeDOM support is available to convert&lt;/p&gt;
-
-&lt;p&gt;the XAML to C++, and that is the single biggest reason why VC++ doesn’t support XAML intrinsically. I don’t know this for sure, but it’s possible that on a later date, the Visual C++ team may work on their CodeDOM support and provide a fully functional XAML-to-C++ converter. Once that’s available, XAML support can be integrated into VC++ projects. As of today, however, that isn’t an option.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;NOTE: &lt;em&gt;CodeDOM&lt;/em&gt; is a term used to represent a bunch of types available in the System.&lt;/p&gt;
-
-&lt;p&gt;CodeDom namespace that lets you abstract code into an object model. Source code is represented using the CodeDOM tree and can be converted into source code for a specific language using the CodeDOM code generator for that specific language.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Still, the fact that you can’t directly use XAML in a Visual C++ project doesn’t mean that WPF applications can’t be written with Visual C++.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;three-ways-to-write-wpf-apps-using-vc&quot;&gt;Three ways to write WPF apps using VC++&lt;/h2&gt;
-
-&lt;p&gt;You can use three different approaches to write WPF applications using Visual C++. Each has its pros and cons, and we’ll cover each of these approaches in the next section:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Use procedural code.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For one thing, you can directly use procedural code to&lt;/p&gt;
-
-&lt;p&gt;write Avalon-based applications and avoid using XAML. Of course, if you&lt;/p&gt;
-
-&lt;p&gt;do that, you automatically give up the advantages of declarative programming&lt;/p&gt;
-
-&lt;p&gt;that XAML brings in, but for certain scenarios, procedural code often&lt;/p&gt;
-
-&lt;p&gt;serves the purpose well.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Dynamically load&lt;/em&gt; &lt;em&gt;XAML&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Alternatively, you can dynamically load XAML during runtime to create your Avalon windows, although the disadvantage is that you’d be distributing a bunch of XAML files with your application.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Derive from a class in a&lt;/em&gt; &lt;em&gt;C# DLL&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A third technique uses a C# project to create your XAML-based Avalon controls and have a class (or classes) in your C++ project that derives from the classes in the C#-based Avalon DLL. With that mechanism, the UI is created using XAML in the C# project, and the business logic is kept in the C++ project.&lt;/p&gt;
-
-&lt;p&gt;When you’re developing WPF applications with C++, you can use one or more of these approaches to achieve whatever functionality you want. In the next section, you’ll see how to write a simple WPF app with C++/CLI using each of the three techniques mentioned here.&lt;/p&gt;
-
-&lt;h2 id=&quot;72-using-ccli-to-write-a-wpf-application&quot;&gt;7.2 Using C++/CLI to write a WPF application&lt;/h2&gt;
-
-&lt;p&gt;If Visual C++ doesn’t have support for XAML, and there are no project templates for building an Avalon application (as of the June 2006 CTP), how much extra effort does it take to write Avalon applications using C++? In this section, you’ll find out. You’ll put the three different techniques I described at the end of section&lt;/p&gt;
-
-&lt;p&gt;7.1.2 into action. All three mechanisms have their advantages and disadvantages; you can decide which is most suitable for your specific scenario. First, though, let’s briefly go over how to create a new C++/CLI project for Avalon.&lt;/p&gt;
-
-&lt;h3 id=&quot;721-creating-a-new-ccli-avalon-project&quot;&gt;7.2.1 Creating a new C++/CLI Avalon project&lt;/h3&gt;
-
-&lt;p&gt;Avalon is a managed framework, and as such any Visual C++ project that needs to access and use Avalon needs to have the /clr compilation mode turned on.&lt;/p&gt;
-
-&lt;p&gt;Creating a new C++/CLI project with support for Avalon is fortunately not a difficult task. Table 7.1 lists the few simple steps you need to follow each time you create an application (or library, as the case might be) that uses Avalon.&lt;/p&gt;
-
-&lt;p&gt;Table 7.1 Steps to create a C++/CLI Avalon project&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Step Action&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;How To&lt;/strong&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1 Generate a new project&lt;/td&gt;
-      &lt;td&gt;Using the application wizard, specify the CLR Empty Project template.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2 Set the SubSystem to   /SUBSYSTEM:WINDOWS&lt;/td&gt;
-      &lt;td&gt;Apply this change in the Project properties, Linker settings, System   sub-setting.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3 Set the Entry Point to main&lt;/td&gt;
-      &lt;td&gt;From Project properties, choose Linker settings and then the Advanced   sub-setting.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4 Add references to the following assemblies:   System   PresentationCore   PresentationFramework   WindowsBase&lt;/td&gt;
-      &lt;td&gt;Note: Except for System, the other three are required for Avalon.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;At this point, your empty project is ready for writing Avalon code. Of course, you don’t have any code yet to compile, but you’ll fix that soon.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;722-using-procedural-code&quot;&gt;7.2.2 Using procedural code&lt;/h3&gt;
-
-&lt;p&gt;You’ll now write your first Avalon application using C++/CLI, and you’ll do so entirely using procedural code. Think of it as analogous to an instruction book for putting together a table that contains only textual instructions (analogous to the procedural code) and no pictures (analogous to the XAML).&lt;/p&gt;
-
-&lt;p&gt;Create a new CLR project using the steps outlined in the previous section, and add an App.cpp file to it (you can call it whatever you want). Listing 7.2 shows the code for the simplest Avalon application that shows a window onscreen.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.2 A simple Avalon app in procedural code
-&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf0.png&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf1.png&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you compile and run the application, you’ll see a window onscreen that can be moved, resized, minimized, maximized, and closed. Avalon requires you to set the COM threading model to single threaded apartment (STA). You do so using the STAThread attribute on the main function &lt;strong&gt;①&lt;/strong&gt;. You then create a new instance of the Application object (using gcnew) and invoke the Run method on that instance, passing in a new instance of a Window object (again using gcnew) &lt;strong&gt;②&lt;/strong&gt;. The Application class represents an Avalon application and provides the core functionality for running the application. It has a Run method that is called to initiate the application’s main thread. The Run method has an overload that accepts a Window object, which you use in the code. This overload launches the application and uses the specified Window as the main application window. The Window class represents the core functionality of a window and by default provides you with basic windowing functionality such as moving, resizing, and so on, which you verified when you ran the application and saw a fully functional window onscreen.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Those of you who have an MFC background may see a faint similarity between this model and MFC, where the CWinApp class is analogous to the Application class, and the CFrameWnd class is analogous to the Window&lt;/p&gt;
-
-&lt;p&gt;class. CWinApp has a Run method that provides the default message loop, and Application::Run does something similar. Of course, you shouldn’t infer too much from these minor similarities because they’re totally different UI programming models, but it’s possible that a similar design model was used by the architects of Avalon.&lt;/p&gt;
-
-&lt;p&gt;This little program doesn’t have a lot of functionality; it just uses the default Window object to create and show a window onscreen. Let’s write a more refined application with its own Application-derived object as well as a window with some controls. Figure 7.4 shows a screenshot of what the enhanced application&lt;/p&gt;
-
-&lt;p&gt;will look like.&lt;/p&gt;
-
-&lt;p&gt;The main steps involved would be to derive two classes-one from the Window class, and the other from the Application class. You’ll start with the Window-derived class.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf2.png&quot; alt=&quot;FirstAvalonApp&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Figure 7.4&lt;/p&gt;
-
-&lt;p&gt;Enhanced WPF app in C++ (procedural code)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Writing the Window-derived class&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The first thing you’ll do is add a new class called FirstWindow to your project, which will be derived from the Window class. You’ll also add some member variables for the various controls and set some of the window properties in the constructor. Listing 7.3 shows the code once you’ve done that.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.3 A more functional Avalon app in procedural code&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf3.png&quot; alt=&quot;img6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf4.png&quot; alt=&quot;img7&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s much like Windows Forms programming, except that the controls you declare &lt;strong&gt;①.&lt;/strong&gt; are from the System::Windows::Controls namespace (which contains various WPF controls). You set properties like Title, Width, Height, and so on on the window object in the constructor ②. There’s also a call to a method called InitControls ③, where you initialize the child controls (I put it into a separate method to improve the code’s readability). Listing 7.4 shows the InitControls method. Basically, you instantiate each of the child controls, instantiate a container control, add the child controls to the container controls, and finally set the container control as the main Content of the parent window.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.4 Function to initialize the Avalon controls&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;InitControls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ListBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;350&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Add&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Click&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FirstWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;maincanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;maincanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;maincanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;maincanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maincanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf5.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Again, you probably notice the similarity with Windows Forms programming.&lt;/p&gt;
-
-&lt;p&gt;You instantiate the child controls ①, ②, and ③, and set various properties like Width and Height, and you also use the Canvas::SetTop and Canvas::SetLeft methods to position them on their container. For the button control, you also add an event handler for the Click event ④. Then, you instantiate the Canvas control (which is a container control for other child controls) and add the child controls as its children ⑤. Finally, you set the Content property of the window to this Canvas control ⑥.&lt;/p&gt;
-
-&lt;p&gt;Now, you need to add the Click event handler for the button control, where you add the text entered into the TextBox to the ListBox:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Focus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Notice that you set the text of the TextBox to an empty string once you’ve added it to the ListBox. You also call the Focus() method so that the user can continue&lt;/p&gt;
-
-&lt;p&gt;adding more entries into the ListBox. The Window-derived class is ready. Let’s now write the Application-derived class.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Writing the Application-derived class&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;You derive a class called FirstApp from Application and add an override for the OnStartup method where you create and show the main window:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;FirstWindow.h&quot;
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstApp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;FirstApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){}&lt;/span&gt;
-
-&lt;span class=&quot;nl&quot;&gt;protected:&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StartupEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;FirstWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirstWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The OnStartup method is called, not surprisingly, when the application has just started. You override that function so that you can instantiate and show the window.&lt;/p&gt;
-
-&lt;p&gt;The base function is responsible for invoking any event handlers associated with the Startup event, and thus you need to call the base method in the override.&lt;/p&gt;
-
-&lt;p&gt;Now, all that’s left is to modify the main function to use the custom Application object instead of the default, as shown here:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;FirstApp.h&quot;
-&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STAThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&amp;gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirstApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Notice that you don’t specify a window object to the Run method, because the window object is created in the OnStartup override of your Application-derived class.&lt;/p&gt;
-
-&lt;p&gt;Compile and run the application, and try entering some text into the TextBox and clicking the Add button. You should see the text being entered into the ListBox.&lt;/p&gt;
-
-&lt;p&gt;When you use procedural code with Avalon, it’s much like using Windows Forms, where you derive classes from the default controls, set some properties, add some event handlers, and are done. Procedural code is all right to develop WPF applications for simple user interfaces, but sometimes it makes better sense&lt;/p&gt;
-
-&lt;p&gt;to take advantage of XAML and declarative programming. As I’ve mentioned a few times already, XAML isn’t directly supported in VC++, so you’ll have to look at alternate options to make use of XAML. One such option is to dynamically load the XAML at runtime.&lt;/p&gt;
-
-&lt;h3 id=&quot;723-dynamically-loading-xaml&quot;&gt;7.2.3 Dynamically loading XAML&lt;/h3&gt;
-
-&lt;p&gt;In this section, you’ll rewrite the application you wrote in the previous section, using dynamically loaded XAML. This way, you get to leverage the power of XAML and declarative programming (which you couldn’t in the procedural code technique you used in the previous section). Continuing the instruction-book analogy, this will be like one that has textual instructions that refer to pictures (which describe the various steps needed) and are loosely distributed along with the book but not directly printed in the book. You’ll define the UI using XAML instead of procedural code. When you’re done, you’ll have an identical application&lt;/p&gt;
-
-&lt;p&gt;to the one you previously created.&lt;/p&gt;
-
-&lt;p&gt;Create a new C++/CLI Avalon project using the steps mentioned in the introduction to section 7.2, and call it FirstAvalonDynamic (or whatever you want to call it). The first thing you’ll do is write the XAML (MainWindow.xaml) that represents the UI; see listing 7.5.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.5 XAML for the main window&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Window&lt;/span&gt;
-
-      &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;&lt;/span&gt;
-
-      &lt;span class=&quot;na&quot;&gt;xmlns:x=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&lt;/span&gt;
-
-      &lt;span class=&quot;na&quot;&gt;Title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;First Avalon App (dynamically load XAML)&quot;&lt;/span&gt;
-
-      &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400&quot;&lt;/span&gt;
-
-      &lt;span class=&quot;na&quot;&gt;ResizeMode=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NoResize&quot;&lt;/span&gt;
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;Canvas&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;ListBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;180&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;350&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;listbox&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;TextBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;180&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;25&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textbox&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;45&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;80&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;25&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;addbutton&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Add&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Canvas&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Window&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The XAML shown does exactly what you did with the procedural code earlier. For the control elements, you use the same names using the Name attribute as you use for the member variables in the procedural code. Next, you need to hook an event handler to the Button so that the text entered into the TextBox is inserted&lt;/p&gt;
-
-&lt;p&gt;into the ListBox. For that, you’ll write a helper class, as shown in listing 7.6.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.6 &lt;strong&gt;WindowHelper&lt;/strong&gt; class that implements the event handler&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Markup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WindowHelper&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;ListBox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;TextBox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
- 
-
-&lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;WindowHelper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FindName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;addbutton&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextBox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FindName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListBox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FindName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;listbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Click&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WindowHelper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Focus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf6.png&quot; alt=&quot;img13&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf7.png&quot; alt=&quot;img14&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The WindowHelper constructor accepts a Window argument and uses the FindName method ① to get the control with the specified identifier (which maps to the Name attributes you used in the XAML). You also hook an event handler to the addbutton control ②. Finally, you have the event handler③, which is identical to the one you used in the procedural code project. Listing 7.7 shows the code for the Application-derived class, where you override OnStartup as before, except that you create a window dynamically by loading the XAML file from the disk.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.7 The &lt;strong&gt;Application&lt;/strong&gt;-derived class&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstAppDynamic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-&lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;FirstAppDynamic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nl&quot;&gt;protected:&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StartupEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OpenRead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MainWindow.xaml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;XamlReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;WindowHelper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainwndhelper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WindowHelper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf8.png&quot; alt=&quot;img15&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You open a file stream to the XAML using File::OpenRead ① and use the overload of XamlReader::Load ② that takes a Stream^ as parameter to create a Window object. This Load method works the magic, by reading and parsing the XAML and building a Window object out of it. You instantiate the WindowHelper object and pass&lt;/p&gt;
-
-&lt;p&gt;this Window object as the argument, so that the event handler for the addbutton control is properly set up ③. You then show the window ④ with a call to Show().&lt;/p&gt;
-
-&lt;p&gt;The main method is much the same as before, where you instantiate the Application object and call Run on it:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STAThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&amp;gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirstAppDynamic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The advantage of using this technique over using procedural code is that you get to design your UI in XAML, thereby achieving a level of UI/code separation. You can also use Cider or some other XAML designer to quickly design flexible user interfaces, which would involve a good bit of hand-coding in procedural code.&lt;/p&gt;
-
-&lt;p&gt;The disadvantage is that you have to distribute the XAML file with your application, and if you have multiple windows, you then need that many XAML files.&lt;/p&gt;
-
-&lt;p&gt;There’s always the risk of a loosely-distributed XAML file getting corrupted (accidentally or otherwise) or even being deleted. You can embed all the XAML files as resources in the C++/CLI assembly and load them at runtime, but even that involves a lot of extra work. To avoid distributing XAML files loosely with your&lt;/p&gt;
-
-&lt;p&gt;application or embedding them as resources, you may want to use the technique we’ll discuss in the next section: putting the XAML into a C# project and accessing it via a derived class in a C++ project.&lt;/p&gt;
-
-&lt;h3 id=&quot;724-deriving-from-a-class-in-a-c-dll&quot;&gt;7.2.4 Deriving from a class in a C# DLL&lt;/h3&gt;
-
-&lt;p&gt;You’ll write a third variation of the same application in this section. You’ll use a C# control library project for the XAML, and a C++ project that will utilize that XAML control by deriving a control from it. Using the instruction-book analogy again, this is essentially a picture-based, step-by-step guide with the textual&lt;/p&gt;
-
-&lt;p&gt;instructions printed alongside each picture providing some meta-information for the step indicated by that picture. First, use the New Project Wizard to generate a new C# .NET 3.0 Custom Control Library project, and delete the default XAML file generated by the wizard. The default XAML is derived from User-&lt;/p&gt;
-
-&lt;p&gt;Control and isn’t what you want. Add a new XAML file to the C# project that represents a Window, and either use Cider or hand-code the XAML from listing 7.8 into that file.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.8 The &lt;strong&gt;Window&lt;/strong&gt; class definition using XAML&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Window&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CSXamlLibrary.BaseWindow&quot;&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;xmlns:x=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;Title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;First Avalon App (dynamically load XAML)&quot;&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400&quot;&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;ResizeMode=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NoResize&quot;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;Canvas&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;ListBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;180&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;350&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;listbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:FieldModifier=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;protected&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;TextBox&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;180&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;25&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:FieldModifier=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;protected&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Left=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;200&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Canvas.Top=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;45&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;80&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;25&quot;&lt;/span&gt;
-                  &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;addbutton&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:FieldModifier=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;protected&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Add&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Canvas&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Window&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf9.png&quot; alt=&quot;img16&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The XAML is identical to that used in the previous project (where you dynamically loaded it) except for the x:Class attribute for the Window element, which specifies the name of the class that will be generated, and the x:FieldModifier attributes that are applied to the child control elements so they’re generated as protected members in the class (rather than as private which is the default). Build the C# project, and generate the control library. Once that’s done, create a new C++/CLI Avalon project (using the same steps as before), and then add a reference to this C# project. Now, you can write a new Window class that’s derived from the class in the C# DLL, as shown in listing 7.9.&lt;/p&gt;
-
-&lt;p&gt;Listing 7.9 Deriving the main window from the XAML-defined &lt;strong&gt;Window&lt;/strong&gt; class&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
- 
-
-&lt;span class=&quot;n&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppMainWindow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CSXamlLibrary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BaseWindow&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;AppMainWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;addbutton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Click&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AppMainWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-            &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OnAddButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoutedEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-                  &lt;span class=&quot;n&quot;&gt;listbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-                  &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-                  &lt;span class=&quot;n&quot;&gt;textbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Focus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/cpp-wpf10.png&quot; alt=&quot;img17&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The code is similar to what you’ve seen thus far, except that it’s a lot cleaner.&lt;/p&gt;
-
-&lt;p&gt;Unlike the first example, you don’t have a lot of clogged procedural code to create the UI. Unlike the second example, you don’t need a helper class to map the XAML elements to the control variables and event handlers. It’s definitely an improvement over the previous two examples, but you have to bring in the C#&lt;/p&gt;
-
-&lt;p&gt;project just for the XAML. The rest of the code needed for the application is more or less similar to what you saw earlier:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstAppDerived&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;protected:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StartupEventArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnStartup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;AppMainWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AppMainWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;mainwnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STAThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&amp;gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirstAppDerived&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In some ways, the third technique is a sort of hybrid of the previous two techniques.&lt;/p&gt;
-
-&lt;p&gt;A lot of the code is identical to that in the first technique - as with the declaration of a custom class derived from Window and an Application-derived class with the OnStartup method creating the custom window. But, like the second technique, the UI definition is in the XAML, except that in this case, it’s compiled into the C# DLL. You also reduce lines of code with each successive technique. You had the most lines of code with procedural code (as is to be expected) and improved on that considerably when you moved the UI definition to the XAML in the dynamically-loaded XAML example. In the last example, you saved even further on lines of code, such as the helper class from the second example that had to wire the XAML elements to the member variables. Of course, the total lines of code (LOC) isn’t always the single deciding factor that determines what technique you choose. Table 7.2 shows a comparison of the three techniques; for each factor, the cells with the bold text reflect the technique (or techniques) that offer maximum performance (or convenience).&lt;/p&gt;
-
-&lt;p&gt;Table 7.2 Comparison of the three techniques&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;Procedural code&lt;/th&gt;
-      &lt;th&gt;Dynamically load XAML&lt;/th&gt;
-      &lt;th&gt;XAML in C# DLL&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cluttered code that generates the UI&lt;/td&gt;
-      &lt;td&gt;Yes&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dependency on loose XAML files&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-      &lt;td&gt;Yes&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Dependency on C#-based DLL&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-      &lt;td&gt;No&lt;/td&gt;
-      &lt;td&gt;Yes&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Lines of code&lt;/td&gt;
-      &lt;td&gt;Maximum&lt;/td&gt;
-      &lt;td&gt;In-between&lt;/td&gt;
-      &lt;td&gt;Minimum&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;UI design convenience&lt;/td&gt;
-      &lt;td&gt;Poor&lt;/td&gt;
-      &lt;td&gt;Excellent&lt;/td&gt;
-      &lt;td&gt;Excellent&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;UI/business logic separation&lt;/td&gt;
-      &lt;td&gt;Poor&lt;/td&gt;
-      &lt;td&gt;Good&lt;/td&gt;
-      &lt;td&gt;Excellent&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Level of Visual C++ project support&lt;/td&gt;
-      &lt;td&gt;Total&lt;/td&gt;
-      &lt;td&gt;Partial&lt;/td&gt;
-      &lt;td&gt;(Not applicable)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s hard to pinpoint a specific technique and claim that it’s the best one, because depending on your requirements, each has advantages and disadvantages. Of course, in the future, if Visual C++ has direct support for XAML (as I believe it will), that will be your best option for the majority of scenarios.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 28 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html</guid>
         
         <category>WPF</category>
         
