@@ -82,6 +82,11 @@ location: Shanghai, China
 menus:
 
   -
+    href: /news/
+    label: SEO动态
+    target: _self
+
+  -
     href: /python.html
     label: Python  
     target: _self
