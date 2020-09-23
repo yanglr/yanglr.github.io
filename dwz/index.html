@@ -1,0 +1,171 @@
+<html><head>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/dwz/css/bootstrap_2.css">
+</head>
+
+<body><div class="modal-body" style="max-height: 817px; overflow-y: auto;"><style type="text/css">
+input[type="submit"].btn {
+	width: 200px;
+}
+
+.qrcode {
+	position: relative;
+	height: 310px;
+}
+
+.qrcode .onMenu,
+.qrcode .text-center {
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	left: 50%;
+	margin-left: -135px;
+	top: 0;
+	z-index: 999;
+}
+
+.qrcode .text-center {
+	z-index: 998;
+}
+
+#shortUrlResult {
+	height: 32px;
+	color: green;
+	display: inline-block;
+	padding: 0 15px;
+	width: 240px;
+}
+
+.rcmMain.show {
+	display: block;
+}
+
+.rcmMain {
+	position: absolute;
+	display: none;
+	border: 1px solid #ccc;
+	padding: 5px 0px;
+	box-shadow: 0px 0px 2px #ccc;
+	font-size: 14px;
+	border-radius: 3px;
+	z-index: 10000;
+	background: #fff;
+	color: #000;
+}
+
+.rcmMain ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.rcmMain ul li {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0px 18px 0px 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.rcmMain ul li:hover {
+	background-color: rgba(52, 58, 64, 1.0);
+	color: #fff;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+.fa-align-right {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.RCM-child {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+</style>
+<div class="col-md-12 col-sm-12">
+	<div class="">
+		<label class="col-form-label">输入网址: </label>
+		<textarea id="srcInput" name="uri" class="form-control" placeholder="请输入合法有效的网址" rows="3" required="required" maxlength="300" cols="30"></textarea>
+		<p>网址需以http://或https://开头</p>
+	</div>
+	<div class="">
+		<input id="btn" class="btn btn-primary btn-sm" type="submit" value="生成短链" onclick="_onSubmit()">
+		<input type="text" readonly="readonly" id="shortUrlResult" style="display:none;">
+		<span id="shortUrlCopyBtn" onclick="messaged = false;" class="btn btn-default btn-sm" data-clipboard-target="#shortUrlResult" style="display:none;">复制使用</span>
+		<hr>
+		<p><small>提示：在粘贴或输入网址后，点击生成短链，然后复制使用。</small></p>
+
+	</div>
+	
+	
+<script src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/dwz/js/clipboard.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	$('#shortUrlCopyBtn').unbind();
+	var messaged = false;
+	var clipboard = new Clipboard('#shortUrlCopyBtn');
+	clipboard.on('success', function(e) {
+		if (!messaged) {
+			showSuccessMessage("已成功复制");
+			messaged = true;
+			e.clearSelection();
+		}
+		return false;
+	});
+});
+
+// 关闭右键菜单
+function _closeMenu(event) {
+	$('#rcmMain').removeClass('show');
+}
+
+// 打开右键菜单
+function onMenu(event) {
+	$('#rcmMain').addClass('show').css({
+		"left": parseInt(event.offsetX + 120) + 'px',
+		"top": event.offsetY + 'px'
+	});
+}
+
+// 保存二维码
+function onSave() {
+	$('#rcmMain').removeClass('show');
+	var imgSrc = $('#urlQrImg').attr('src');
+	var a = document.createElement('a'); // 创建一个a节点插入的document
+	var event = new MouseEvent('click') // 模拟鼠标click点击事件
+	a.download = 'QRCode_' + randomRange(10, 15) // 设置a节点的download属性值
+	a.href = imgSrc; // 将图片的src赋值给a节点的href
+	a.dispatchEvent(event) // 触发鼠标点击事件
+}
+
+// 随机生成字符
+function randomRange(min, max) {
+	var returnStr = "",
+		range = (max ? Math.round(Math.random() * (max - min)) + min : min),
+		arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+	for (var i = 0; i < range; i++) {
+		var index = Math.round(Math.random() * (arr.length - 1));
+		returnStr += arr[index];
+	}
+	return returnStr;
+}
+
+// 跳转到API页面
+function _onSubmit() {
+	$('#shortUrlResult').val('生成中...');
+	window.location = "http://www.likeyunba.com/api/wurl/" + '?long_url=' + $('#srcInput').val();
+        
+}
+
+</script>
+
+</div><div id="pageTitle" style="display:none;">-</div></div></body></html>
