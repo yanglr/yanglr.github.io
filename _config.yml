@@ -87,6 +87,11 @@ menus:
     target: _self
 
   -
+    href: /dwz/
+    label: 短链接
+    target: _self
+
+  -
     href: /python.html
     label: Python  
     target: _self
