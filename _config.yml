@@ -31,6 +31,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-redirect-from
   - jekyll-archives
+  - jekyll-include-cache  
 
 category_archive:
   type: jekyll-archives

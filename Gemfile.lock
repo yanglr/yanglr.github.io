@@ -246,7 +246,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-archives
-  jekyll-feed (~> 0.12)
   jekyll-include-cache
   tzinfo-data
   wdm (>= 0.1.0)
