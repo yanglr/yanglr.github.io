@@ -30,6 +30,34 @@ plugins:
   - kramdown
   - jekyll-github-metadata
   - jekyll-redirect-from
+  - jekyll-archives
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled: 
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
 
 # Build settings
 lsi:         false
