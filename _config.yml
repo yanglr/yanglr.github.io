@@ -68,7 +68,6 @@ source:      .
 destination: ./_site
 
 quiet:    false
-defaults: []
 
 markdown: kramdown
 # !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
