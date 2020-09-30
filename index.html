@@ -39,13 +39,13 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         {% for category in post.categories %}
                         {% if category.size == 0 %}
                         {% unless category contains "," %}
-                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/{{ category|downcase|replace: ' ', '-'|replace: '+', '' }}">{{category}}</a>
                         {% endunless %}
                         {% elsif category.size > 0 %}
                         {% if forloop.index == 1 %}
                         <span class="octicon octicon-file-directory"></span>
                         {% for cat in category %}
-                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/{{cat|slugize}}">{{cat}}</a>
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/{{ cat|downcase|replace: ' ', '-'|replace: '+', '' }}">{{cat}}</a>
                         {% endfor %}
                         {% endif %}
                         {% else %}
@@ -75,13 +75,13 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         {% for category in post.categories %}
                         {% if category.size == 0 %}
                         {% unless category contains "," %}
-                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+                        <span class="octicon octicon-file-directory"></span> <a href="{{site.baseurl}}/categories/{{category|downcase|replace: ' ', '-'|replace: '+', ''}}">{{category}}</a>
                         {% endunless %}
                         {% elsif category.size > 0 %}
                         {% if forloop.index == 1 %}
                         <span class="octicon octicon-file-directory"></span>
                         {% for cat in category %}
-                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/{{cat|slugize}}">{{cat}}</a>
+                        <a style="background: #6a9fb5;color: #fff;border-radius: 3px;padding: 0 2px;" href="{{site.baseurl}}/categories/{{cat|downcase|replace: ' ', '-'|replace: '+', '' }}">{{cat}}</a>
                         {% endfor %}
                         {% endif %}
                         {% else %}
