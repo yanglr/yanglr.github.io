@@ -1,0 +1,139 @@
+<style>
+    nav, section {
+        display: block;
+    }
+
+    .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .75rem 1rem;
+        margin-bottom: 1rem;
+        list-style: none;
+        background-color: #f8f9fa;
+        border-radius: .25rem
+    }
+
+    .breadcrumb-item {
+        display: flex
+    }
+
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: .5rem
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        display: inline-block;
+        padding-right: .5rem;
+        color: #6c757d;
+        content: "/"
+    }
+
+    .breadcrumb-item+.breadcrumb-item:hover::before {
+        text-decoration: underline
+    }
+
+    .breadcrumb-item+.breadcrumb-item:hover::before {
+        text-decoration: none
+    }
+
+    .breadcrumb-item.active {
+        color: #6c757d
+    }
+
+    .border-secondary {
+        border-color: #6c757d !important;
+    }
+
+    .border {
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .75rem 1rem;
+        margin-bottom: 1rem;
+        list-style: none;
+        background-color: #f8f9fa;
+        border-radius: .25rem;
+    }
+
+    ol, ul, dl {
+        margin-top: 0;
+        margin-bottom: 1.5rem !important;;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    ol {
+        display: block;
+        list-style-type: decimal;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    ol ol,
+    ul ul,
+    ol ul,
+    ul ol {
+        margin-bottom: 0
+    }
+</style>
+
+<nav aria-label="breadcrumb">
+    <div class="breadcrumbs">
+        <ol class="breadcrumb border border-secondary" itemprop="breadcrumb" itemscope=""
+            itemtype="http://schema.org/BreadcrumbList">
+
+            {% assign categories = include.path | split:"/" | pop  %}
+            {% assign route="" %}
+
+            当前位置:&nbsp;
+            {% include breadcrumbs_li.html fa="fa-home" url="/" title="主页" position="1" %}
+            {% raw %}&nbsp;/&nbsp;{% endraw %}
+            {% for category in page.categories %}
+
+            {% if category.size == 0 %}
+            {% unless category contains "," %}
+            <a href="{{site.baseurl}}/categories/{{category|slugize}}" itemprop="item" title="{{ category }}">
+                <span itemprop="name">{{ category }}</span>
+            </a>&nbsp;/&nbsp;
+            {% endunless %}
+            {% elsif category.size > 0 %}
+            {% if forloop.index == 1 %}
+            {% for cat in category %}
+            <a href="{{site.baseurl}}/categories/{{cat|slugize}}" itemprop="item" title="{{ cat }}">
+                <span itemprop="name">{{ cat }}</span>
+            </a>&nbsp;/&nbsp;
+            {% endfor %}
+            {% endif %}
+            {% else %}
+            
+            {% endif %}
+            {% endfor %}
+            
+            <!-- Add post title or .md file containing folder name in the end postion of breadcrumbs -->
+            {% for category in categories %}
+            {% assign route = route | append: category %}
+            {% assign category_position=forloop.index | plus:'1' %}
+
+            {% if forloop.last and category == "_posts" %}
+            {% include breadcrumbs_li.html title=include.title position=category_position %}
+            {% elsif forloop.last %}
+            <font style="color: #6c757d;">{{ category }}</font>
+            {% else %}
+            {% include breadcrumbs_li.html title="" position=category_position %}
+
+            {% endif %}
+
+            {% endfor %}
+        </ol>
+    </div>
+</nav>

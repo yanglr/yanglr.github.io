@@ -2,7 +2,15 @@
 layout: default
 css: ['sidebar-post-nav.css']
 ---
+
 {% include post-metadata.html %}
+
+<div class="post container" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <div class="markdown-body">
+        {% include breadcrumbs.html path=page.path title=page.title %}
+    </div>
+</div>
+
 <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="row">

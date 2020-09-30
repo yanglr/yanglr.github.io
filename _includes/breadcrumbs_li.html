@@ -1,0 +1,26 @@
+{% if include.url %}
+{% assign li_class="breadcrumb-item" %}
+{% else %}
+{% assign li_class="breadcrumb-item active" %}
+{% endif %}
+
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="{{li_class}}">
+    {% if include.url %}
+    <a itemscope itemtype="https://schema.org/Thing" itemprop="item" href="{{include.url}}">
+        {% if include.fa %}
+        <i class="fa {{include.fa}}" aria-hidden="true"></i>
+        {% endif %}
+
+        {{include.title}}
+    </a>
+    {% else %}
+    <span itemscope itemtype="https://schema.org/Thing" itemprop="item">
+        {% if include.fa %}
+        <i class="fa {{include.fa}}" aria-hidden="true"></i>
+        {% endif %}
+
+        <span itemprop="name">{{include.title}}</span>
+    </span>
+    {% endif %}
+    <meta itemprop="position" content="{{include.position}}" />
+</li>
