@@ -7,7 +7,7 @@ layout: default
 
     <div class="archive">
       {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title-taxonomy" class="page__title">{{ page.title|smartify|replace: '[', ''|replace: ']', '' }}</h1>
+      <h1 id="page-title-taxonomy" class="page__title">{{ page.title|smartify|replace: '[', ''|replace: ']', ''|replace: '“', ''|replace: '”', '' }}</h1>
       {% endunless %}
       {% for post in page.posts %}
       {% include archive-single.html %}
