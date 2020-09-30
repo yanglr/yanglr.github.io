@@ -37,8 +37,8 @@
 
 ">
 
-    <link rel="canonical" href="http://localhost:4000/cstdlib-cpp-grammer.html">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+    <link rel="canonical" href="https://geekplayers.com/cstdlib-cpp-grammer.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -57,8 +57,6 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
 
     <!-- CSS set in layout -->
-    
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
     
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
@@ -120,6 +118,22 @@
     <div class="site-header-topbar">
         <div class="container">
             <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/news/"
+                       target="_self"
+                       title="SEO动态">
+                        SEO动态
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/dwz/"
+                       target="_self"
+                       title="短链接">
+                        短链接
+                    </a>
+                </div>
                 
                 <div class="item">
                     <a href="/python.html"
@@ -280,67 +294,26 @@
 
 
         <div class="content">
-            <section class="jumbotron geopattern" data-pattern-id="C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)">
-    <div class="container">
-        <div id="jumbotron-meta-info">
-            <!-- <h1>C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)</h1> -->
-            <h1 style="font-size: 45px;">
-                <a class="hvr-underline-from-center" style="display: initial !important;" href="/cstdlib-cpp-grammer.html" title="C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)_极客玩家大白" target="_self" rel="canonical">C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)</a>
-            </h1>
+            <div id="main" role="main">
 
-            <span class="meta-info">
-                
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="C语言中你可能不熟悉的头文件(stdlib.h)">
+    <meta itemprop="description" content="C语言中你可能不熟悉的头文件&lt;cstdlib&gt;(stdlib.h)">
+    <meta itemprop="datePublished" content="2016-10-02T09:46:53+08:00">
+    
 
-                
-                
-                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
-                
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)</cstdio>
+</h1>
 
-                
-                                
-                
-                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/10/02 09:46:53</font>
-                
-            </span>
-            
-            <p>
-                
-                
-                
-                
-                    
-                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
-                    
-                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                        href="/categories/#认识C标准库">认识C标准库</a>
-                    
-                                    
-                
-                <!-- <p>out index:1</p>
-                <p>size: 6</p> -->
-                            
-            </p>
+        </header>
+      
 
-        </div>
-    </div>
-</section>
-<script>
-    $(document).ready(function(){
-
-        $('.geopattern').each(function(){
-            $(this).geopattern($(this).data('pattern-id'));
-        });
-
-    });
-</script>
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="row">
-
+      <section class="page__content e-content" itemprop="text">
         
-        <div class="col-md-9 markdown-body">
-
-            <h2 id="c语言中你可能不熟悉的头文件cstdlibstdlibh"><strong>C语言中你可能不熟悉的头文件&lt;cstdlib&gt;(stdlib.h)</strong></h2>
+        <h2 id="c语言中你可能不熟悉的头文件cstdlibstdlibh"><strong>C语言中你可能不熟悉的头文件&lt;cstdlib&gt;(stdlib.h)</strong></h2>
 
 <p>C Standard General Utilities Library (header)</p>
 
@@ -354,54 +327,54 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/atof/"><strong>atof</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atof/"><strong>atof</strong></a>
 将字符串(char[])转换为double类型数, 即(char) array-&gt; float(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/atoi/"><strong>atoi</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atoi/"><strong>atoi</strong></a>
 字符串转换为整型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/atol/"><strong>atol</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atol/"><strong>atol</strong></a>
 字符串转换为long类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/atoll/"><strong>atoll</strong></a> (c++11)
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atoll/"><strong>atoll</strong></a> (c++11)
 字符串转换为长整型long long类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtod/"><strong>strtod</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtod/"><strong>strtod</strong></a>
 字符串转换为double类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtof/"><strong>strtof</strong></a> (c++11)
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtof/"><strong>strtof</strong></a> (c++11)
 字符串转换为浮点类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtol/"><strong>strtol</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtol/"><strong>strtol</strong></a>
 字符串转换为long integer类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtold/"><strong>strtold</strong></a> (c++11)
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtold/"><strong>strtold</strong></a> (c++11)
 字符串转换为long double类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtoll/"><strong>strtoll</strong></a> (c++11)
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoll/"><strong>strtoll</strong></a> (c++11)
 字符串转换为long long integer类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtoul/"><strong>strtoul</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoul/"><strong>strtoul</strong></a>
 字符串转换为无符号long integer类型(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/strtoull/"><strong>strtoull</strong></a> (c++11)</p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/strtoull/"><strong>strtoull</strong></a> (c++11)</p>
 
     <p>字符串转换为无符号long long integer类型(函数)</p>
   </li>
   <li>
     <h3 id="函数非标准">函数(非标准)：</h3>
 
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/itoa/"><strong>itoa</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/itoa/"><strong>itoa</strong></a></p>
 
     <p>将整数转换为字符串.</p>
 
@@ -413,11 +386,11 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/rand/"><strong>rand</strong></a>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/rand/"><strong>rand</strong></a>
 产生一个伪随机数(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/srand/"><strong>srand</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/srand/"><strong>srand</strong></a></p>
 
     <p>初始化随机数生成器, 为伪随机数生成器设置种子(函数)</p>
   </li>
@@ -427,22 +400,22 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/calloc/"><strong>calloc</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/calloc/"><strong>calloc</strong></a></p>
 
     <p>分配内存且用 0 数组初始化(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/free/"><strong>free</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/free/"><strong>free</strong></a></p>
 
     <p>释放内存(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/malloc/"><strong>malloc</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/malloc/"><strong>malloc</strong></a></p>
 
     <p>分配内存(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/realloc/"><strong>realloc</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/realloc/"><strong>realloc</strong></a></p>
 
     <p>重分配内存(函数)</p>
   </li>
@@ -452,42 +425,42 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/abort/"><strong>abort</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/abort/"><strong>abort</strong></a></p>
 
     <p>使程序异常中止，不会主动释放资源(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/atexit/"><strong>atexit</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/atexit/"><strong>atexit</strong></a></p>
 
     <p>注册一个一旦程序发起 <code class="language-plaintext highlighter-rouge">exit</code> 请求就会调用的函数(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/at_quick_exit/"><strong>at_quick_exit</strong></a> (C++11)</p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/at_quick_exit/"><strong>at_quick_exit</strong></a> (C++11)</p>
 
     <p>注册一个一旦程序发起 <code class="language-plaintext highlighter-rouge">quick_exit</code> 请求就会调用的函数(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/exit/"><strong>exit</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/exit/"><strong>exit</strong></a></p>
 
     <p>使程序正常中止，主动释放资源(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/getenv/"><strong>getenv</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/getenv/"><strong>getenv</strong></a></p>
 
     <p>获取系统环境变量列表(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/quick_exit/"><strong>quick_exit</strong></a> (C++11)</p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/quick_exit/"><strong>quick_exit</strong></a> (C++11)</p>
 
     <p>使程序正常中止，不会主动释放所有资源(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/system/"><strong>system</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/system/"><strong>system</strong></a></p>
 
     <p>执行系统命令(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/_Exit/"><strong>_Exit</strong></a> (C++11)</p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/_Exit/"><strong>_Exit</strong></a> (C++11)</p>
 
     <p>使程序正常中止，不会主动释放资源(函数)</p>
   </li>
@@ -497,12 +470,12 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/bsearch/"><strong>bsearch</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/bsearch/"><strong>bsearch</strong></a></p>
 
     <p>在数组中进行二分(Binary)查找(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/qsort/"><strong>qsort</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/qsort/"><strong>qsort</strong></a></p>
 
     <p>对数组元素进行快速排序(函数)</p>
   </li>
@@ -512,32 +485,32 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/abs/"><strong>abs</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/abs/"><strong>abs</strong></a></p>
 
     <p>获得整数(Integer)或浮点数(Floating point number)的绝对值(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/div/"><strong>div</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/div/"><strong>div</strong></a></p>
 
     <p>同时获得两数相除的商(Quotient)及余数(Remainder)(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/labs/"><strong>labs</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/labs/"><strong>labs</strong></a></p>
 
     <p>获得整数的绝对值(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/ldiv/"><strong>ldiv</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/ldiv/"><strong>ldiv</strong></a></p>
 
     <p>同时获得两数相除的商及余数(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/llabs/"><strong>llabs</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/llabs/"><strong>llabs</strong></a></p>
 
     <p>获得整数的绝对值(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/lldiv/"><strong>lldiv</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/lldiv/"><strong>lldiv</strong></a></p>
 
     <p>同时获得两数相除的商及余数(函数)</p>
   </li>
@@ -547,17 +520,17 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/mblen/"><strong>mblen</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mblen/"><strong>mblen</strong></a></p>
 
     <p>返回下一个多字节字符的字节数(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/mbtowc/"><strong>mbtowc</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mbtowc/"><strong>mbtowc</strong></a></p>
 
     <p>将下一个多字节字符转化成宽字符(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/wctomb/"><strong>wctomb</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/wctomb/"><strong>wctomb</strong></a></p>
 
     <p>将一个宽字符转化成对应的多字节字符(函数)</p>
   </li>
@@ -567,12 +540,12 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/mbstowcs/"><strong>mbstowcs</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/mbstowcs/"><strong>mbstowcs</strong></a></p>
 
     <p>将一个多字节字符串转化成宽字符串(函数)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/wcstombs/"><strong>wcstombs</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/wcstombs/"><strong>wcstombs</strong></a></p>
 
     <p>将一个宽字符串转化成多字节字符串(函数)</p>
   </li>
@@ -582,27 +555,27 @@
 
 <ul>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/EXIT_FAILURE/"><strong>EXIT_FAILURE</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/EXIT_FAILURE/"><strong>EXIT_FAILURE</strong></a></p>
 
     <p>程序失败终止码, 表明一个程序执行失败 (macro)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/EXIT_SUCCESS/"><strong>EXIT_SUCCESS</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/EXIT_SUCCESS/"><strong>EXIT_SUCCESS</strong></a></p>
 
     <p>程序成功终止码, 表明一个程序非正常完成执行 (macro)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/MB_CUR_MAX/"><strong>MB_CUR_MAX</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/MB_CUR_MAX/"><strong>MB_CUR_MAX</strong></a></p>
 
     <p>多字节字符的最大尺寸 (macro)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/NULL/"><strong>NULL</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/NULL/"><strong>NULL</strong></a></p>
 
     <p>空指针 (macro)</p>
   </li>
   <li>
-    <p><a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/RAND_MAX/"><strong>RAND_MAX</strong></a></p>
+    <p><a href="http://www.cplusplus.com/reference/cstdlib/RAND_MAX/"><strong>RAND_MAX</strong></a></p>
 
     <p><code class="language-plaintext highlighter-rouge">std::rand</code> 可能产生的最大随机数值 (macro)</p>
   </li>
@@ -615,214 +588,77 @@
 | <code class="language-plaintext highlighter-rouge">div_t</code>                                  | 结构体类型，由 <code class="language-plaintext highlighter-rouge">div</code> 函数返回   |
 | <code class="language-plaintext highlighter-rouge">ldiv_t</code>                                 | 结构体类型，由 <code class="language-plaintext highlighter-rouge">ldiv</code> 函数返回  |
 | <code class="language-plaintext highlighter-rouge">lldiv_t</code>                                | 结构体类型，由 <code class="language-plaintext highlighter-rouge">lldiv</code> 函数返回 |
-| <a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstddef/size_t/"><strong>size_t</strong></a> | 无符号整型 (type )        |
+| <a href="http://www.cplusplus.com/reference/cstddef/size_t/"><strong>size_t</strong></a> | 无符号整型 (type )        |
 <br />
-参考链接: <a rel="nofollow noopener noreferrer" target="_blank" href="http://www.cplusplus.com/reference/cstdlib/">http://www.cplusplus.com/reference/cstdlib/</a></p>
+参考链接: <a href="http://www.cplusplus.com/reference/cstdlib/">http://www.cplusplus.com/reference/cstdlib/</a></p>
 
-
-            <style>
-.PageNav {
-  font-size: 14px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.PageNav a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-}
-
-.PageNav .next {
-  text-align: right;
-}    
-</style>
-
-<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
-    <h3>版权声明</h3>
-    <ul>
-        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="/cstdlib-cpp-grammer.html" target="_blank">http://localhost:4000/cstdlib-cpp-grammer.html</a></li>
-        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
-    </ul>
-</div>
-
-<div class="PageNav">
-    
-    <a class="prev" href="/num-array-splice-to-min-num.html"><i class="fa fa-arrow-left"></i>&nbsp;剑指offer面试题33 - 把数组排成最小的数</a>
-    
-    
-    <a class="next" href="/inverse-pairs-in-array.html"> 剑指offer面试题36 - 数组中的逆序对&nbsp;<i class="fa fa-arrow-right"></i></a>
-    
-</div>
-
-<div>
-    <p align="center">
         
-        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+      </section>
+
+      <footer class="page__meta">
         
-        <br />
-        一个有故事的程序员
-    </p>
-    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
-        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
-    </p>
-    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
-        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
-    </p>
-</div>
-
-            <!-- Comments -->
-            <div class="comment">
-             
-
-  
-    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-        this.page.url = 'http://localhost:4000/cstdlib-cpp-grammer.html';
-        this.page.identifier = '/cstdlib-cpp-grammer.html';
-        this.page.title = 'C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)';
-    };
-    var disqus_loaded = false;
-    $(function() {
-        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
-            $(this).html('加载中...');
-            var that = this;
-            if (!disqus_loaded) {
-                var d = document, s = d.createElement('script');
-
-                s.type = 'text/javascript';
-                s.async = true;
-                var shortname = 'yanglr';
-
-                s.src = '//' + shortname + '.disqus.com/embed.js';
-
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-
-                disqus_loaded = true;
-            }
-            $(that).remove();
-        })
-    })
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  
-
-  
-        <div id="gitalk-container"></div>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
-        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-        <script>
-        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
-        var gitalk = new Gitalk({
-            id: title,
-            clientID: '22eb6462c987e7a79860',
-            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
-            repo: 'geekplayers.com',
-            owner: 'yanglr',
-            admin: ['yanglr'],
-            labels: ['gitalk'],
-            perPage: 50
-        })
-        gitalk.render('gitalk-container');
-        </script>
-  
-
-
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <h3>Post Directory</h3>
-<div id="post-directory-module">
-<section class="post-directory">
-    <!-- Links that trigger the jumping -->
-    <!-- Added by javascript below -->
-    <dl></dl>
-</section>
-</div>
-
-<script type="text/javascript">
-
-    $(document).ready(function(){
-        $( "article h2" ).each(function( index ) {
-            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
-                    $(this).attr("id")
-                    + ">"
-                    + $(this).text()
-                    + "</a></dt>");
-
-            var children = $(this).nextUntil("h2", "h3")
-
-            children.each(function( index ) {
-                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
-                        $(this).attr("id")
-                        + ">"
-                        + "&nbsp;&nbsp;- " + $(this).text()
-                        + "</a></dd>");
-            });
-        });
-
-        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
-
-        $(window).scroll(function() {                  // assign scroll event listener
-
-            var currentScroll = $(window).scrollTop(); // get current position
-
-            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-                $('#post-directory-module').css({      // scroll to that element or below it
-                    top: '100px',
-                    position: 'fixed',
-                    width: 'inherit'
-                });
-            } else {                                   // apply position: static
-                $('#post-directory-module').css({      // if you scroll above it
-                    position: 'inherit',
-                    width: 'inherit'
-                });
-            }
-
-        });
-
-        $("a.jumper").on("click", function( e ) {
-
-            e.preventDefault();
-
-            $("body, html").animate({
-                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
-            }, 600);
-
-        });
-    });
-
-</script>
-        </div>
         
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/cpp" class="p-category page__taxonomy-item" rel="tag">cpp</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/cstdlib" class="p-category page__taxonomy-item" rel="tag">cstdlib</a>
+    
+    </span>
+  </p>
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/%E8%AE%A4%E8%AF%86c%E6%A0%87%E5%87%86%E5%BA%93" class="p-category page__taxonomy-item" rel="tag">认识C标准库</a>
+    
+    </span>
+  </p>
+
+
+
+        
+	<p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <a href="/cstdlib-cpp-grammer.html" class="u-url">C语言中你可能不熟悉的头文件<cstdio>(stdlib.h)</cstdio>
+</a> was updated on <time class="dt-published" datetime="2016-10-02T09:46:53+08:00">October 2, 2016</time> by <a rel="author" class="p-author h-card" href=""></a></p>
+        
+      </footer>
 
     </div>
 
-</article>
+    
+  </article>
 
-<script type="text/javascript">
-    const headings = document.querySelectorAll('h2,h3,h4'); // 1
-    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
-    for (const heading of headings) { // 3
-        const linkIcon = document.createElement('a'); // 4
-        
-        if(heading.id != '')
-        {
-            linkIcon.setAttribute('href', `#${heading.id}`); // 5
-            linkIcon.innerHTML = linkContent; // 6
-            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
-            heading.insertBefore(linkIcon, heading.firstChild);; // 7
-        }
-    }
-</script>
+  
+  
+</div>
+
         </div>
 
     

@@ -3,10 +3,10 @@
   <channel>
     <title>极客玩家大白</title>
     <description>极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Sep 2020 08:30:01 +0800</pubDate>
-    <lastBuildDate>Sun, 20 Sep 2020 08:30:01 +0800</lastBuildDate>
+    <link>https://geekplayers.com/</link>
+    <atom:link href="https://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 30 Sep 2020 08:37:14 +0800</pubDate>
+    <lastBuildDate>Wed, 30 Sep 2020 08:37:14 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -60,8 +60,8 @@
 &lt;p&gt;各位小伙伴，赶紧加回来吧，你的网站收录情况一定会越来越好喔~&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Sep 2020 04:05:10 +0800</pubDate>
-        <link>http://localhost:4000/baidu-recover-push-js.html</link>
-        <guid isPermaLink="true">http://localhost:4000/baidu-recover-push-js.html</guid>
+        <link>https://geekplayers.com/baidu-recover-push-js.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/baidu-recover-push-js.html</guid>
         
         <category>flagcounter</category>
         
@@ -467,8 +467,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Sep 2020 18:21:20 +0800</pubDate>
-        <link>http://localhost:4000/bing-API-nodejs.html</link>
-        <guid isPermaLink="true">http://localhost:4000/bing-API-nodejs.html</guid>
+        <link>https://geekplayers.com/bing-API-nodejs.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/bing-API-nodejs.html</guid>
         
         <category>seo</category>
         
@@ -582,8 +582,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;接下来，二选一即可，大功告成~&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Sep 2020 05:18:07 +0800</pubDate>
-        <link>http://localhost:4000/replace-flag-counter.html</link>
-        <guid isPermaLink="true">http://localhost:4000/replace-flag-counter.html</guid>
+        <link>https://geekplayers.com/replace-flag-counter.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/replace-flag-counter.html</guid>
         
         <category>flagcounter</category>
         
@@ -862,8 +862,8 @@ bravo@localhost MINGW64 ~
 &lt;p&gt;至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2020 02:23:52 +0800</pubDate>
-        <link>http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</link>
-        <guid isPermaLink="true">http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</guid>
+        <link>https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</guid>
         
         <category>gitlab</category>
         
@@ -940,8 +940,8 @@ bravo@localhost MINGW64 ~
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/interview-test.html</link>
-        <guid isPermaLink="true">http://localhost:4000/interview-test.html</guid>
+        <link>https://geekplayers.com/interview-test.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/interview-test.html</guid>
         
         <category>面试题</category>
         
@@ -1035,8 +1035,8 @@ bravo@localhost MINGW64 ~
 &lt;p&gt;来源：知乎&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html</link>
-        <guid isPermaLink="true">http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html</guid>
+        <link>https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html</guid>
         
         <category>tiktok</category>
         
@@ -1681,8 +1681,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 
 </description>
         <pubDate>Sun, 26 Jul 2020 06:07:40 +0800</pubDate>
-        <link>http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</link>
-        <guid isPermaLink="true">http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</guid>
+        <link>https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</guid>
         
         <category>Visual Studio</category>
         
@@ -2367,8 +2367,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;我想《永远的窗口》此文就到此结束了……&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jul 2020 19:06:50 +0800</pubDate>
-        <link>http://localhost:4000/forever-window-personal-view-on-window.html</link>
-        <guid isPermaLink="true">http://localhost:4000/forever-window-personal-view-on-window.html</guid>
+        <link>https://geekplayers.com/forever-window-personal-view-on-window.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/forever-window-personal-view-on-window.html</guid>
         
         <category>mfc</category>
         
@@ -2711,8 +2711,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;XAML是生成.NET对象树的简单而强大的方法。由于它基于XML，创建基于XAML的标记就很简单了。这不仅使得手工构建用户界面很容易，而且使得通过工具来生成XAML也相对简单——今后，能够导出文档和以XAML格式来绘制的设计工具将会出现。使用诸如XSLT之类的技术来将XML数据源转换为XAML文档也很容易。XAML通过code-behind文件支持用户界面与代码的完全分离，而它与WinFX的紧密集成使得代码操作标记中定义的用户界面元素非常容易。&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jul 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/inside-xaml.html</link>
-        <guid isPermaLink="true">http://localhost:4000/inside-xaml.html</guid>
+        <link>https://geekplayers.com/inside-xaml.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/inside-xaml.html</guid>
         
         <category>wpf</category>
         
@@ -3106,8 +3106,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;改天接着聊，欢迎来评论区留言互动哈~&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/visual-cpp-wpf-method.html</link>
-        <guid isPermaLink="true">http://localhost:4000/visual-cpp-wpf-method.html</guid>
+        <link>https://geekplayers.com/visual-cpp-wpf-method.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/visual-cpp-wpf-method.html</guid>
         
         <category>WPF</category>
         

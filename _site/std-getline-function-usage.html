@@ -37,8 +37,8 @@
 
 ">
 
-    <link rel="canonical" href="http://localhost:4000/std-getline-function-usage.html">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+    <link rel="canonical" href="https://geekplayers.com/std-getline-function-usage.html">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="https://geekplayers.com/feed.xml">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -57,8 +57,6 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-popular-repo.css"> -->
 
     <!-- CSS set in layout -->
-    
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/sidebar-post-nav.css">
     
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
@@ -120,6 +118,22 @@
     <div class="site-header-topbar">
         <div class="container">
             <div class="topbar-menu">
+                
+                <div class="item">
+                    <a href="/news/"
+                       target="_self"
+                       title="SEO动态">
+                        SEO动态
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a href="/dwz/"
+                       target="_self"
+                       title="短链接">
+                        短链接
+                    </a>
+                </div>
                 
                 <div class="item">
                     <a href="/python.html"
@@ -280,67 +294,26 @@
 
 
         <div class="content">
-            <section class="jumbotron geopattern" data-pattern-id="C++中std::getline函数的用法">
-    <div class="container">
-        <div id="jumbotron-meta-info">
-            <!-- <h1>C++中std::getline函数的用法</h1> -->
-            <h1 style="font-size: 45px;">
-                <a class="hvr-underline-from-center" style="display: initial !important;" href="/std-getline-function-usage.html" title="C++中std::getline函数的用法_极客玩家大白" target="_self" rel="canonical">C++中std::getline函数的用法</a>
-            </h1>
+            <div id="main" role="main">
 
-            <span class="meta-info">
-                
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="C++中std::getline函数的用法">
+    <meta itemprop="description" content="std::getline">
+    <meta itemprop="datePublished" content="2016-09-19T05:23:07+08:00">
+    
 
-                
-                
-                    <i class="fa fa-user" aria-hidden="true"></i> <a href='http://localhost:4000'>Bravo Yeung</a>
-                
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">C++中std::getline函数的用法
+</h1>
 
-                
-                                
-                
-                <span class="octicon octicon-calendar"></span> <font style="color: #ddd;">2016/09/19 05:23:07</font>
-                
-            </span>
-            
-            <p>
-                
-                
-                
-                
-                    
-                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
-                    
-                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                        href="/categories/#C++常用语法">C++常用语法</a>
-                    
-                                    
-                
-                <!-- <p>out index:1</p>
-                <p>size: 7</p> -->
-                            
-            </p>
+        </header>
+      
 
-        </div>
-    </div>
-</section>
-<script>
-    $(document).ready(function(){
-
-        $('.geopattern').each(function(){
-            $(this).geopattern($(this).data('pattern-id'));
-        });
-
-    });
-</script>
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="row">
-
+      <section class="page__content e-content" itemprop="text">
         
-        <div class="col-md-9 markdown-body">
-
-            <h1 id="stdgetline">std::getline</h1>
+        <h1 id="stdgetline">std::getline</h1>
 
 <p> </p>
 
@@ -348,19 +321,19 @@
 
 <p><code class="language-plaintext highlighter-rouge">getline</code>从输入流中读取字符, 并把它们转换成字符串.</p>
 
-<p>1) 的行为就像<a rel="nofollow noopener noreferrer" target="_blank" href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction"><code class="language-plaintext highlighter-rouge">UnformattedInputFunction</code></a>, 除了<code class="language-plaintext highlighter-rouge">input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
+<p>1) 的行为就像<a href="http://zh.cppreference.com/w/cpp/concept/UnformattedInputFunction"><code class="language-plaintext highlighter-rouge">UnformattedInputFunction</code></a>, 除了<code class="language-plaintext highlighter-rouge">input.gcount()</code>不会受到影响.在构造和检查岗哨对象的, 执行以下操作：</p>
 
 <p>1) 调用str.erase()</p>
 
 <p>2) <code class="language-plaintext highlighter-rouge">input</code>并把它们添加到<code class="language-plaintext highlighter-rouge">str</code>的字符提取出来, 直到发生以下情况之一中列出的顺序进行检查</p>
 
-<p>a) 上<code class="language-plaintext highlighter-rouge">input</code>文件结束的条件, 在这种情况下, <code class="language-plaintext highlighter-rouge">getline</code>套<a rel="nofollow noopener noreferrer" target="_blank" href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">eofbit</a>和回报.</p>
+<p>a) 上<code class="language-plaintext highlighter-rouge">input</code>文件结束的条件, 在这种情况下, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">eofbit</a>和回报.</p>
 
 <p>b) 下一个可用的输入字符<code class="language-plaintext highlighter-rouge">delim</code>, Traits::eq(c, delim), 在这种情况下, 分隔符是从<code class="language-plaintext highlighter-rouge">input</code>提取进行了测试, 但不会追加到<code class="language-plaintext highlighter-rouge">str</code>.</p>
 
-<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code class="language-plaintext highlighter-rouge">getline</code>集<a rel="nofollow noopener noreferrer" target="_blank" href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>并返回.</p>
+<p>c) str.max_size()字符, 在这种情况下, 已经被存储<code class="language-plaintext highlighter-rouge">getline</code>集<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>并返回.</p>
 
-<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code class="language-plaintext highlighter-rouge">getline</code>套<a rel="nofollow noopener noreferrer" target="_blank" href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>, 并返回.</p>
+<p>3) 如果没有字符提取任何理由（甚至没有被丢弃的分隔符）, <code class="language-plaintext highlighter-rouge">getline</code>套<a href="http://zh.cppreference.com/w/cpp/io/ios_base/iostate">failbit</a>, 并返回.</p>
 
 <p>2) 同getline(input, str, input.widen(’\n’)), 默认的分隔符是’\n’字符.</p>
 
@@ -376,7 +349,7 @@
 
 <h3 id="notes">Notes</h3>
 
-<p>When used immediately after whitespace-delimited input, e.g. after int n; <a rel="nofollow noopener noreferrer" target="_blank" href="http://en.cppreference.com/w/cpp/io/cin">std::cin</a> » n;, <code class="language-plaintext highlighter-rouge">getline</code> consumes the endline character left on the input stream by <a rel="nofollow noopener noreferrer" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt">operator»</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a rel="nofollow noopener noreferrer" target="_blank" href="http://en.cppreference.com/w/cpp/types/numeric_limits">std::numeric_limits</a> &lt; <a rel="nofollow noopener noreferrer" target="_blank" href="http://en.cppreference.com/w/cpp/io/streamsize">std::streamsize</a> &gt;::max(), ’\n’); before switching to line-oriented input.</p>
+<p>When used immediately after whitespace-delimited input, e.g. after int n; <a href="http://en.cppreference.com/w/cpp/io/cin">std::cin</a> » n;, <code class="language-plaintext highlighter-rouge">getline</code> consumes the endline character left on the input stream by <a href="http://en.cppreference.com/w/cpp/io/basic_istream/operator_gtgt">operator»</a>, and returns immediately. A common solution is to ignore all leftover characters on the line of input with cin.ignore(<a href="http://en.cppreference.com/w/cpp/types/numeric_limits">std::numeric_limits</a> &lt; <a href="http://en.cppreference.com/w/cpp/io/streamsize">std::streamsize</a> &gt;::max(), ’\n’); before switching to line-oriented input.</p>
 
 <h3 id="示例">示例</h3>
 
@@ -438,210 +411,69 @@ Hello John Q. Public, nice to meet you.
 The sum is 28
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-
-            <style>
-.PageNav {
-  font-size: 14px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.PageNav a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-}
-
-.PageNav .next {
-  text-align: right;
-}    
-</style>
-
-<div style="margin-top:2em; padding:0 1.5em; border:1px solid #d3d3d3; background-color:#deebf7">
-    <h3>版权声明</h3>
-    <ul>
-        <li>本文作者：<a href="" target="_blank">极客玩家大白</a></li>
-        <li>本文链接：<a href="/std-getline-function-usage.html" target="_blank">http://localhost:4000/std-getline-function-usage.html</a></li>
-        <li>郑重声明：本文为博主原创或经授权转载的文章，欢迎转载，但<b>转载文章之后必须在文章页面明显位置注明出处</b>，否则保留追究法律责任的权利。如您有任何疑问或者授权方面的协商，请留言。</li>
-    </ul>
-</div>
-
-<div class="PageNav">
-    
-    <a class="prev" href="/word-reverse-print-solution.html"><i class="fa fa-arrow-left"></i>&nbsp;华为oj之【中级】单词倒排</a>
-    
-    
-    <a class="next" href="/odd-before-even-solution.html"> 剑指offer面试题14 - 调整数组顺序使奇数位于偶数前面&nbsp;<i class="fa fa-arrow-right"></i></a>
-    
-</div>
-
-<div>
-    <p align="center">
         
-        <img src="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/dotnet.jpg" width="300" height="300">
+      </section>
+
+      <footer class="page__meta">
         
-        <br />
-        一个有故事的程序员
-    </p>
-    <p align="center" style="margin-top: 15px; font-size: 11px;color: #cc0000;">
-        <strong>（转载本站文章请注明作者和出处 <a href="//geekplayers.com">极客玩家大白</a>）</strong>
-    </p>
-    <p align="center" style="margin-top: 15px; font-size: 16px;color: #337ab7;">
-        <strong><a href="//geekplayers.com" target="_blank">点击了解 ：.NET技术人的网站</a></strong>
-    </p>
-</div>
-
-            <!-- Comments -->
-            <div class="comment">
-             
-
-  
-    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-        this.page.url = 'http://localhost:4000/std-getline-function-usage.html';
-        this.page.identifier = '/std-getline-function-usage.html';
-        this.page.title = 'C++中std::getline函数的用法';
-    };
-    var disqus_loaded = false;
-    $(function() {
-        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
-            $(this).html('加载中...');
-            var that = this;
-            if (!disqus_loaded) {
-                var d = document, s = d.createElement('script');
-
-                s.type = 'text/javascript';
-                s.async = true;
-                var shortname = 'yanglr';
-
-                s.src = '//' + shortname + '.disqus.com/embed.js';
-
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-
-                disqus_loaded = true;
-            }
-            $(that).remove();
-        })
-    })
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  
-
-  
-        <div id="gitalk-container"></div>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/gitalk.css"> <!-- 根据 cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css 微调 -->
-        <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-        <script>
-        var title = location.pathname.substr(0, 50); //截取路径的前50个字符作为标识符          
-        var gitalk = new Gitalk({
-            id: title,
-            clientID: '22eb6462c987e7a79860',
-            clientSecret: '6cd15fa90d4e2f73fa16eaab9b3f783831fe3f3d',
-            repo: 'geekplayers.com',
-            owner: 'yanglr',
-            admin: ['yanglr'],
-            labels: ['gitalk'],
-            perPage: 50
-        })
-        gitalk.render('gitalk-container');
-        </script>
-  
-
-
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <h3>Post Directory</h3>
-<div id="post-directory-module">
-<section class="post-directory">
-    <!-- Links that trigger the jumping -->
-    <!-- Added by javascript below -->
-    <dl></dl>
-</section>
-</div>
-
-<script type="text/javascript">
-
-    $(document).ready(function(){
-        $( "article h2" ).each(function( index ) {
-            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
-                    $(this).attr("id")
-                    + ">"
-                    + $(this).text()
-                    + "</a></dt>");
-
-            var children = $(this).nextUntil("h2", "h3")
-
-            children.each(function( index ) {
-                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
-                        $(this).attr("id")
-                        + ">"
-                        + "&nbsp;&nbsp;- " + $(this).text()
-                        + "</a></dd>");
-            });
-        });
-
-        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
-
-        $(window).scroll(function() {                  // assign scroll event listener
-
-            var currentScroll = $(window).scrollTop(); // get current position
-
-            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-                $('#post-directory-module').css({      // scroll to that element or below it
-                    top: '100px',
-                    position: 'fixed',
-                    width: 'inherit'
-                });
-            } else {                                   // apply position: static
-                $('#post-directory-module').css({      // if you scroll above it
-                    position: 'inherit',
-                    width: 'inherit'
-                });
-            }
-
-        });
-
-        $("a.jumper").on("click", function( e ) {
-
-            e.preventDefault();
-
-            $("body, html").animate({
-                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
-            }, 600);
-
-        });
-    });
-
-</script>
-        </div>
         
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/oj" class="p-category page__taxonomy-item" rel="tag">oj</a>
+    
+    </span>
+  </p>
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/c-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95" class="p-category page__taxonomy-item" rel="tag">C++常用语法</a>
+    
+    </span>
+  </p>
+
+
+
+        
+	<p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <a href="/std-getline-function-usage.html" class="u-url">C++中std::getline函数的用法
+</a> was updated on <time class="dt-published" datetime="2016-09-19T05:23:07+08:00">September 19, 2016</time> by <a rel="author" class="p-author h-card" href=""></a></p>
+        
+      </footer>
 
     </div>
 
-</article>
+    
+  </article>
 
-<script type="text/javascript">
-    const headings = document.querySelectorAll('h2,h3,h4'); // 1
-    const linkContent = '<svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'; // 2
-    for (const heading of headings) { // 3
-        const linkIcon = document.createElement('a'); // 4
-        
-        if(heading.id != '')
-        {
-            linkIcon.setAttribute('href', `#${heading.id}`); // 5
-            linkIcon.innerHTML = linkContent; // 6
-            heading.firstChild.textContent = ' ' + heading.firstChild.textContent;
-            heading.insertBefore(linkIcon, heading.firstChild);; // 7
-        }
-    }
-</script>
+  
+  
+</div>
+
         </div>
 
     

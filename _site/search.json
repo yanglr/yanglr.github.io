@@ -305,6 +305,14 @@
     } ,
   
     {
+      "title"    : "个人博客怎么做",
+      "category" : "",
+      "tags"     : "博客, 大奔SEO, 个人品牌",
+      "url"      : "/build-brand-blog.html",
+      "date"     : "2018-09-28 17:19:40 +0800"
+    } ,
+  
+    {
       "title"    : "从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器",
       "category" : "",
       "tags"     : "wpf",
