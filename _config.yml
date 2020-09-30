@@ -58,7 +58,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
 
 # Build settings
 lsi:         false
