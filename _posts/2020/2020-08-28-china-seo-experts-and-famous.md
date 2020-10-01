@@ -619,9 +619,9 @@ QQ：59037148（经本人同意）
 被转载数十万次，微信订阅号(seozyg)。强调以数据为驱动，以结果为导向。
 
 
--   [ETag使用效果对比&经验分享](https://link.zhihu.com/?target=http%3A//zhanzhang.baidu.com/college/articleinfo%3Fid%3D487)
--   [SEOer在部门沟通中常见问题及建议](https://link.zhihu.com/?target=http%3A//zhanzhang.baidu.com/college/articleinfo%3Fid%3D849)
--   [新站如何被百度快速收录](https://link.zhihu.com/?target=http%3A//zhanzhang.baidu.com/college/articleinfo%3Fid%3D874)
+- [ETag使用效果对比&经验分享](https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D487)
+- [SEOer在部门沟通中常见问题及建议](https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D849)
+- [新站如何被百度快速收录](https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D874)
 
 
 
