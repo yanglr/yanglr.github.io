@@ -102,15 +102,15 @@
 
             {% if category.size == 0 %}
             {% unless category contains "," %}
-            <a href="{{site.baseurl}}/categories/{{category|slugize}}" itemprop="item" title="{{ category }}">
-                <span itemprop="name">{{ category|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', '' }}</span>
+            <a href="{{site.baseurl}}/categories/{{category|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}" itemprop="item" title="{{ category }}">
+                <span itemprop="name">{{ category }}</span>
             </a>&nbsp;/&nbsp;
             {% endunless %}
             {% elsif category.size > 0 %}
             {% if forloop.index == 1 %}
             {% for cat in category %}
-            <a href="{{site.baseurl}}/categories/{{cat|slugize}}" itemprop="item" title="{{ cat }}">
-                <span itemprop="name">{{ cat|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', '' }}</span>
+            <a href="{{site.baseurl}}/categories/{{cat|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}" itemprop="item" title="{{ cat }}">
+                <span itemprop="name">{{ cat }}</span>
             </a>&nbsp;/&nbsp;
             {% endfor %}
             {% endif %}
