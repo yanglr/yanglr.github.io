@@ -10,7 +10,7 @@
                 src="{{site.url}}/{{author.avatar}}" alt="{{author.name}}" />
             {% endif %}
             <span>
-                <a href="{{ author.site }}" class="author-link">{{author.name}}</a>
+                <a href="{{ author.site }}" class="author-link" rel='nofollow noreferrer'>{{author.name}}</a>
 
                 {% if page.platform %}
                 {% unless page.platform contains '公众号' %}
