@@ -650,4 +650,4 @@ QQ：1136018016
 
 微信`628552`，注明来意。不收徒。
 
-<https://www.linkedin.com/in/thaddeus-liu/www.linkedin.com>
+<https://www.linkedin.com/in/thaddeus-liu>
