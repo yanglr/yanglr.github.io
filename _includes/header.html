@@ -15,11 +15,11 @@
         </div>
     </div>
     <div class="container">
-        <h1><a id="site-header-brand" href="/" title="{{ site.name }}">
+        <h2><strong><a id="site-header-brand" href="/" title="{{ site.name }}">
                 <span class="octicon octicon-gist-secret"></span>
                 {{ site.name }}
-            </a>
-        </h1>
+            </a></strong>
+        </h2>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
             <div class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center">
