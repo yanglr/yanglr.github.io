@@ -15,7 +15,7 @@ keywords: csharp, dotnet, wpf, windows forms, asp.net, .net core
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='csharp' or post.keywords contains 'dotnet' or post.keywords contains 'C#' %}
+                {% if post.category=='csharp' or post.keywords contains 'dotnet' or post.categories contains '.NET' or post.categories contains '.Net' or post.categories contains '.net' or post.keywords contains 'C#' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
