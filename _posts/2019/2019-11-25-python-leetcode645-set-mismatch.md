@@ -1,6 +1,7 @@
 ---
 layout: post
-category: Leetcode面试题
+categories: 
+- [leetcode, python, Leetcode面试题]
 redirect_from:
   - /2019/11/25/python-leetcode645-set-mismatch/
 title:  LeetCode面试系列 第11天：No.645 - 错误的集合

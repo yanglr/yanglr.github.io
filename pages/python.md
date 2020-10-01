@@ -14,7 +14,7 @@ permalink: /python
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='python'  or post.keywords contains 'Python' %}
+                {% if post.category=='python' or post.categories contains 'python' or post.keywords contains 'Python' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

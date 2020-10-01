@@ -1,6 +1,7 @@
 ---
 layout: post
-category: Leetcode面试题
+categories: 
+- [leetcode, python, Leetcode面试题]
 redirect_from:
   - /2019/10/04/python-leetcode204-count-primes/
 title:  LeetCode面试系列 第5天：No.204 - 统计质数

@@ -4,7 +4,8 @@ redirect_from:
   - /2019/09/13/python-leetcode136-single-number/
 title:  LeetCode面试系列 第2天：No.136 - 只出现一次的数
 tagline: by 萌较瘦
-category: Leetcode面试题
+categories: 
+- [leetcode, python, Leetcode面试题]
 copyright: python
 excerpt: Leetcode面试题系列
 ---
