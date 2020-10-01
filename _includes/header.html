@@ -15,9 +15,10 @@
         </div>
     </div>
     <div class="container">
-        <h1 id="site-header-brand" href="/" title="{{ site.name }}">
-            <span class="octicon octicon-gist-secret"></span>
-            {{ site.name }}
+        <h1><a id="site-header-brand" href="/" title="{{ site.name }}">
+                <span class="octicon octicon-gist-secret"></span>
+                {{ site.name }}
+            </a>
         </h1>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
