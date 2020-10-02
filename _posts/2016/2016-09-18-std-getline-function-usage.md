@@ -5,7 +5,7 @@ title: C++中std::getline函数的用法
 date: 2016-09-18 21:23:07
 tags: [oj]
 categories:
-- C++常用语法
+- [C++, C++常用语法]
 ---
 
 # std::getline
