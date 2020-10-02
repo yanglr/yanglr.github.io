@@ -9,7 +9,7 @@
     {% if include.url %}
         <a itemprop="item" itemtype="https://schema.org/Thing" href="{{include.url}}">
             {% if include.fa %}
-            <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i></span>
+            <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true">{{ }}</i></span>
             {% endif %}                
             <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
         </a>
@@ -17,7 +17,7 @@
     {% else %}
     <span itemprop="item" itemscope itemtype="https://schema.org/Thing">
     {% if include.fa %}
-    <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i></span>
+    <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true">{{ }}</i></span>
     {% endif %}
 
     <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
