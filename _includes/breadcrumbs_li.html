@@ -4,23 +4,25 @@
 {% assign li_class="breadcrumb-item active" %}
 {% endif %}
 
-<li itemprop="itemListElement" item.name='itemList1' itemscope itemtype="https://schema.org/ListItem" class="{{li_class}}">
-    {% if include.url %}
-    <a itemscope itemtype="https://schema.org/Thing" itemprop="item" item.name='itemUrl' id="url" href="{{include.url}}">
+<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="{{li_class}}">
+        {% if include.url %}
+            <a itemprop="item" itemtype="https://schema.org/Thing" href="{{include.url}}">
+                {% if include.fa %}
+                <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i></span>
+                {% endif %}                
+                <span itemprop="name">{{include.title}}</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        {% else %}
+        <span itemprop="item" itemscope itemtype="https://schema.org/Thing">
         {% if include.fa %}
-        <i class="fa {{include.fa}}" aria-hidden="true"></i>
-        {% endif %}
-
-        {{include.title}}
-    </a>
-    {% else %}
-    <span itemprop="item" item.name='item3' itemscope itemtype="https://schema.org/Thing">
-        {% if include.fa %}
-        <i class="fa {{include.fa}}" aria-hidden="true"></i>
+        <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i></span>
         {% endif %}
 
         <span itemprop="name">{{include.title}}</span>
     </span>
-    {% endif %}
-    <meta itemprop="position" content="{{include.position}}" />
-</li>
+        {% endif %}
+        <meta itemprop="position" content="{{include.position}}" />
+    </li>
+</ol>
