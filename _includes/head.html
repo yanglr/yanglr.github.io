@@ -80,7 +80,7 @@
 					"primaryImageOfPage": {
 						"@id": "{{ site.url }}"
 					},
-					"datePublished": "{{ post.date }}",
+					"datePublished": "{{ page.date }}",
 					"dateModified": "2020-09-30T09:20:00+08:00",
 					"description": "{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}",
 					"inLanguage": "zh-CN",
@@ -103,7 +103,7 @@
 						"@id": "{{ site.url }}"
 					},
 					"headline": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}",
-					"datePublished": "{{ post.date }}",
+					"datePublished": "{{ page.date }}",
 					"dateModified": "2020-09-30T09:20:00+08:00",
 					"commentCount": 30,
 					"publisher": {
@@ -165,7 +165,7 @@
 							"url": "{{ site.url }}{{ page.url }}#step-3"
 						}
 					],
-					"datePublished": "{{ post.date }}",
+					"datePublished": "{{ page.date }}",
 					"@id": "{{ site.url }}{{ page.url }}",
 					"isPartOf": {
 						"@id": "{{ site.url }}"

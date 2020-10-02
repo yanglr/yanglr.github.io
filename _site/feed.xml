@@ -3,11 +3,295 @@
   <channel>
     <title>极客玩家大白</title>
     <description>极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
-    <link>https://geekplayers.com/</link>
-    <atom:link href="https://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Sep 2020 13:43:42 +0800</pubDate>
-    <lastBuildDate>Wed, 30 Sep 2020 13:43:42 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 02 Oct 2020 22:53:53 +0800</pubDate>
+    <lastBuildDate>Fri, 02 Oct 2020 22:53:53 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>站长之家 seo查询</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/chinaz-logo.png&quot; alt=&quot;极客玩家大白-站长之家&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作为一枚中文站点的站长，站长之家的&lt;a href=&quot;//geekplayers.com/dabenSeo.html&quot;&gt;SEO&lt;/a&gt;工具我们是必须熟悉并掌握的。今天大白进行了全面的整理，分享给大家~&lt;/p&gt;
+
+&lt;h2 id=&quot;chinaz站长后台工具&quot;&gt;Chinaz站长后台工具&lt;/h2&gt;
+
+&lt;h3 id=&quot;网站管理---站长工具&quot;&gt;网站管理 - 站长工具&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/WebsiteManage/Index&quot;&gt;http://my.chinaz.com/ChinazToolSeo/WebsiteManage/Index&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png&quot; alt=&quot;极客玩家大白-站长之家-网站管理页&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;需要注意的是，免费账号最多只能提交一个网站。另外，如果你的站点是https的，在这里的一个站长验证是无法通过的，不过不影响其他功能的使用。&lt;/p&gt;
+
+&lt;p&gt;其中的免费功能有如下这些:&lt;/p&gt;
+
+&lt;h4 id=&quot;seo监控&quot;&gt;SEO监控&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/WebsiteManage/Index&quot;&gt;网站管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/KeyWordMonitor/Index&quot;&gt;关键词排名监控&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/IndexMonitor/Index&quot;&gt;关键词指数监控&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/IncludedMonitor/Index&quot;&gt;网站收录量监控&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/TdkMonitor/Index&quot;&gt;网站TDK监控&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/ChinazToolSeo/LinkMonitor/Index&quot;&gt;友情链接监控&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;域名安全监控&quot;&gt;域名安全监控&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/WebsiteManage/Index&quot;&gt;域名管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/WechatMonitor/Index&quot;&gt;微信拦截&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/DomainNameMonitor/Index?page=QQ&quot;&gt;QQ安全&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/DomainNameMonitor/Index?page=So&quot;&gt;360安全&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/DomainNameMonitor/Index?page=Baidu&quot;&gt;百度安全&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/DomainNameMonitor/Index?page=DomainName&quot;&gt;域名被墙&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://my.chinaz.com/SafeMonitorUrl/DomainNameMonitor/Index?page=BeiAn&quot;&gt;备案监控&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;工具中心---站长工具&quot;&gt;工具中心 - 站长工具&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://my.chinaz.com/ToolMember/Member/Account&quot;&gt;http://my.chinaz.com/ToolMember/Member/Account&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;alexa中心---网站管理---站长工具&quot;&gt;ALEXA中心 - 网站管理 - 站长工具&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://alexa.chinaz.com/usercenter/&quot;&gt;https://alexa.chinaz.com/usercenter/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/chinaz-alexa.png&quot; alt=&quot;极客玩家大白-站长之家-Alexa用户中心&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;日常实用工具---站长工具&quot;&gt;日常实用工具 - 站长工具&lt;/h3&gt;
+&lt;p&gt;http://tool.chinaz.com/map.aspx&lt;/p&gt;
+
+&lt;h3 id=&quot;seo查询&quot;&gt;SEO查询&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://seo.chinaz.com/&quot;&gt;SEO综合&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mseo.chinaz.com/&quot;&gt;移动SEO查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/webdetect/&quot;&gt;网页检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xzh.chinaz.com/&quot;&gt;熊掌号查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://report.chinaz.com/&quot;&gt;网站SEO报告&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;优化辅助&quot;&gt;优化辅助&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/longkeywords&quot;&gt;长尾词生成&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pr.chinaz.com/&quot;&gt;PR查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://seo.chinaz.com/exportpr/&quot;&gt;PR输出值&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/seocheck&quot;&gt;SEO优化建议&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/history/&quot;&gt;SEO历史记录&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/rate&quot;&gt;关键词权重分析&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/segment&quot;&gt;关键词分词&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;世界排名&quot;&gt;世界排名&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alexa.chinaz.com/&quot;&gt;Alexa排名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alexa.chinaz.com/alexa_history.aspx&quot;&gt;ALexa历史报告&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/&quot;&gt;收录查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/&quot;&gt;百度收录查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/entry&quot;&gt;收录率&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/haosou/&quot;&gt;360收录&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;权重查询&quot;&gt;权重查询&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/all&quot;&gt;权重综合&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/&quot;&gt;百度权重&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/baidumobile&quot;&gt;百度移动权重&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/sorank&quot;&gt;360权重&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/rank360&quot;&gt;360移动权重&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/smrank&quot;&gt;神马权重&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;数据内参&quot;&gt;数据内参&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://trends.chinaz.com/ranklist&quot;&gt;权重总榜&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://trends.chinaz.com/change/baidupc/-1-1-1&quot;&gt;权重变化榜&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://trends.chinaz.com/change/baidupc/-2-1-1&quot;&gt;关键词变化榜&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://trends.chinaz.com/change/baidupc/-3-1-1&quot;&gt;预估流量变化榜&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;百度关键词&quot;&gt;百度关键词&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/words.aspx&quot;&gt;百度关键词挖掘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/relatewords&quot;&gt;相关词挖掘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/keywords&quot;&gt;百度关键词综合排名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/keywordsarea/&quot;&gt;百度关键词地区排名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/keywordsbjh/&quot;&gt;百家号关键词排名&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;360关键词&quot;&gt;360关键词&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/haosou/words.aspx&quot;&gt;360关键词挖掘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/keywords360/&quot;&gt;360关键词排名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/kws/&quot;&gt;网站关键词&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/keywordslmm&quot;&gt;关键词即时查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://seo.chinaz.com/kwbatch/&quot;&gt;关键词批量查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/seohis&quot;&gt;关键词历史记录&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/kwevaluate/&quot;&gt;关键词优化分析&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;指数查询&quot;&gt;指数查询&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mindex.chinaz.com/&quot;&gt;关键词全网指数查询 - 移动端&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://index.chinaz.com/&quot;&gt;全网指数&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/topwords.aspx&quot;&gt;指数排行&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rank.chinaz.com/wordsindex.aspx&quot;&gt;指数批量&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;域名备案&quot;&gt;域名备案&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://whois.chinaz.com/&quot;&gt;WHOIS查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/&quot;&gt;网站备案&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;已备案域名&quot;&gt;已备案域名&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/searchs&quot;&gt;域名备案批量查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/conditions&quot;&gt;已备案域名查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/provinces&quot;&gt;最新备案域名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/report&quot;&gt;域名接入商查询&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;备案账号安全&quot;&gt;备案账号安全&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/find&quot;&gt;找回备案密码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icp.chinaz.com/change&quot;&gt;修改备案密码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ip-查询&quot;&gt;IP 查询&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/&quot;&gt;IP 综合查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/ipbatch&quot;&gt;IP 批量查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/ipwhois/&quot;&gt;IP WHOIS查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/siteip&quot;&gt;IP所在地批量&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/baiduspider&quot;&gt;百度真假蜘蛛&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;同ip网站&quot;&gt;同IP网站&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/Same/&quot;&gt;同IP网站查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/linksip&quot;&gt;友情链接同IP检测&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;域名&quot;&gt;域名&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/dns/&quot;&gt;DNS查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/nslookup/&quot;&gt;NsLookup查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://del.chinaz.com/&quot;&gt;过期域名查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/DomainDel/&quot;&gt;域名删除时间&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://del.chinaz.com/type&quot;&gt;删除域名归档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/subdomain/&quot;&gt;网站子域名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/urlencode&quot;&gt;中文域名转码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/sitespeed/&quot;&gt;网站测速&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ping.chinaz.com/&quot;&gt;PING检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/speedtest.aspx&quot;&gt;国内测速&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/speedcom.aspx&quot;&gt;国内多站对比&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/speedworld.aspx&quot;&gt;海外测速&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;网站监控&quot;&gt;网站监控&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/port/&quot;&gt;端口扫描&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Tracert&quot;&gt;路由追踪&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Tools/subnetmask&quot;&gt;子网掩码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;安全状态&quot;&gt;安全状态&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/webscan&quot;&gt;网站安全检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/ppb&quot;&gt;安全联盟认证&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;网站状态&quot;&gt;网站状态&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Gzips/&quot;&gt;网站GZIP压缩&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Tools/webcheck.aspx&quot;&gt;网站被黑检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/history/&quot;&gt;网站历史记录&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/websitepk.aspx&quot;&gt;竞争网站分析&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;网页相关&quot;&gt;网页相关&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/baidu/metadig.aspx&quot;&gt;META信息挖掘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/metacheck.aspx&quot;&gt;网页META信息检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/pagestatus/&quot;&gt;网页状态检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/density.aspx&quot;&gt;网页关键词密度检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/robots/&quot;&gt;robots.txt生成&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/httptest.aspx&quot;&gt;在线HTTP接口测试&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stool.chinaz.com/robots&quot;&gt;Robots.txt检测&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;网页信息抓取&quot;&gt;网页信息抓取&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Tools/PageCode.aspx&quot;&gt;查看网页源代码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/robot.aspx&quot;&gt;搜索蜘蛛、机器人模拟抓取&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;网站链接&quot;&gt;网站链接&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://link.chinaz.com/&quot;&gt;友情链接检测&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip.tool.chinaz.com/linksip&quot;&gt;友情链接同IP检测&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;反链死链&quot;&gt;反链/死链&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://outlink.chinaz.com/&quot;&gt;反链查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/seos/sites.aspx&quot;&gt;网站收录/反链查询&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Links/&quot;&gt;死链接检测/全站PR查询&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;短链&quot;&gt;短链&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/Tools/dwz.aspx&quot;&gt;在线短链生成器&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tool.chinaz.com/tools/batchdwz.aspx&quot;&gt;在线批量短链生成器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;友情链接查询结果：
+&lt;a href=&quot;http://link.chinaz.com/geekplayers.com&quot;&gt;http://link.chinaz.com/geekplayers.com&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Sep 2020 18:21:20 +0800</pubDate>
+        <link>http://localhost:4000/chinaz-usage.html</link>
+        <guid isPermaLink="true">http://localhost:4000/chinaz-usage.html</guid>
+        
+        <category>大奔SEO</category>
+        
+        <category>seo</category>
+        
+        <category>站长之家</category>
+        
+        
+        <category>[&quot;大奔SEO&quot;, &quot;seo&quot;, &quot;chinaz&quot;, &quot;站长之家&quot;]</category>
+        
+        <category>[&quot;大奔SEO&quot;, &quot;seo&quot;, &quot;chinaz&quot;, &quot;站长之家&quot;]</category>
+        
+        <category>大奔SEO</category>
+        
+        <category>seo</category>
+        
+        <category>chinaz</category>
+        
+        <category>站长之家</category>
+        
+      </item>
     
       <item>
         <title>百度自动推送不能用了吗?你错了，刚恢复了！</title>
@@ -60,8 +344,8 @@
 &lt;p&gt;各位小伙伴，赶紧加回来吧，你的网站收录情况一定会越来越好喔~&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Sep 2020 04:05:10 +0800</pubDate>
-        <link>https://geekplayers.com/baidu-recover-push-js.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/baidu-recover-push-js.html</guid>
+        <link>http://localhost:4000/baidu-recover-push-js.html</link>
+        <guid isPermaLink="true">http://localhost:4000/baidu-recover-push-js.html</guid>
         
         <category>flagcounter</category>
         
@@ -467,8 +751,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Sep 2020 18:21:20 +0800</pubDate>
-        <link>https://geekplayers.com/bing-API-nodejs.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/bing-API-nodejs.html</guid>
+        <link>http://localhost:4000/bing-API-nodejs.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bing-API-nodejs.html</guid>
         
         <category>seo</category>
         
@@ -582,8 +866,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;接下来，二选一即可，大功告成~&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Sep 2020 05:18:07 +0800</pubDate>
-        <link>https://geekplayers.com/replace-flag-counter.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/replace-flag-counter.html</guid>
+        <link>http://localhost:4000/replace-flag-counter.html</link>
+        <guid isPermaLink="true">http://localhost:4000/replace-flag-counter.html</guid>
         
         <category>flagcounter</category>
         
@@ -862,8 +1146,8 @@ bravo@localhost MINGW64 ~
 &lt;p&gt;至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2020 02:23:52 +0800</pubDate>
-        <link>https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</guid>
+        <link>http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</link>
+        <guid isPermaLink="true">http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</guid>
         
         <category>gitlab</category>
         
@@ -875,6 +1159,593 @@ bravo@localhost MINGW64 ~
         <category>github pages</category>
         
         <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>国内SEO英雄榜，你知道几个？</title>
+        <description>&lt;p&gt;by &lt;a href=&quot;https://www.zhihu.com/people/seoaqua&quot;&gt;刘明&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;名单中列出的大部分都是百度站长学院vip大讲堂学员&quot;&gt;名单中列出的大部分都是《百度站长学院VIP大讲堂》学员。&lt;/h2&gt;
+
+&lt;h2 id=&quot;百度站长学院-供稿&quot;&gt;&lt;a href=&quot;http://zhanzhang.baidu.com/college/index&quot;&gt;百度站长学院&lt;/a&gt; 供稿&lt;/h2&gt;
+
+&lt;h2 id=&quot;昝辉&quot;&gt;昝辉&lt;/h2&gt;
+&lt;p&gt;网名：ZAC&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/zacsg-zanhui.jpg&quot; alt=&quot;极客玩家大白-seoZac&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Email：zanhui@gmail.com（来自本人博客）&lt;/p&gt;
+
+&lt;p&gt;描述：SEO行业教父，《SEO实战密码》作者。2000年做自己的第一个个人爱好网站，从此一发不可收拾。2003年辞职，创建中新网络科技Silver Media，全职SEO（搜索引擎优化），虚拟主机等以网络为中心的生意。目前是新加坡发展最快的虚拟主机和服务器提供商。&lt;/p&gt;
+
+&lt;h2 id=&quot;刘明&quot;&gt;刘明&lt;/h2&gt;
+
+&lt;p&gt;网名：seoaqua&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/liumin.jpg&quot; alt=&quot;极客玩家大白-刘明&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;QQ/微信：628552（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：曾就职于新浪，网易。现任艺龙网SEO总监，SEO渠道的酒店订单连续两年翻翻。研发和架构能力强，善于通过技术手段&lt;/p&gt;
+
+&lt;p&gt;（Ruby+Linux+Mysql+Redis+Hadoop+Git）搭建SEO系统（关键词挖掘、友链系统、差异化内容API、SEO自动测试、蜘蛛行为分析行业排名趋势）解决问题。带领团队设计并研发了自动化SEM系统（物料管理、关键词粒度的数据统计、关键词挖掘和自动识别、多维度精准调优），适用于全部搜索引擎，自称强于绝大部分外包公司。对ASO有一定研究和实践。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;相关文章（可在站长学院找到）：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=376&quot;&gt;如何避免大量重复URL被百度收录&lt;/a&gt;》&lt;/p&gt;
+
+&lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=348&quot;&gt;如何保证网站长期的SEO健康度&lt;/a&gt;》&lt;/p&gt;
+
+&lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=419&quot;&gt;利用百度蜘蛛referer找到报错页面入口&lt;/a&gt;》&lt;/p&gt;
+
+&lt;h2 id=&quot;安琦&quot;&gt;安琦&lt;/h2&gt;
+&lt;p&gt;网名：an7
+QQ：54818355（经本人同意）
+描述：早年从事外贸seo,现在携程无线营销渠道产品组负责人&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=307&quot;&gt;移动站点站内优化checklist_最新文章&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=294&quot;&gt;单页应用的搜索引擎优化&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=375&quot;&gt;如何让百度准确地识别页面类型&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;申永&quot;&gt;申永&lt;/h2&gt;
+&lt;p&gt;网名：大卫&lt;/p&gt;
+
+&lt;p&gt;QQ/微信：seoview（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：2003年涉足SEO，国内SEO老兵，曾就职于香港大型外贸公司，负责上千站群Google，Yahoo， Bing排名优化。后续先后就职阿里巴巴国际站，中文站流量业务负责人。14年中英文大型B2B，B2C，企业官网，旺铺等网站SEO，ASO，SEM，DSP，VSO，Affiliate，自媒体营销推广经验。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.seoview.cn/&quot;&gt;SEO外链工具&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://seohacker.lofter.com/post/1ecd8fa3_120476d6&quot;&gt;2018SEO趋势，搜索引擎优化清单，2018年SEO如何做？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://seohacker.lofter.com/post/1ecd8fa3_11ddeff3&quot;&gt;百度算法大全，SEO从业者的”福音”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;飞鹰正义&quot;&gt;飞鹰正义&lt;/h2&gt;
+&lt;p&gt;QQ：356252296（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：百度站长社区超级版主&lt;/p&gt;
+
+&lt;p&gt;ID：飞鹰正义，曾有过一段斗志昂扬的红客史擅长&lt;/p&gt;
+
+&lt;p&gt;windows下安全攻防，是国内较早的百度seo人，为人低调帅气，现任中国服装网SEO
+负责人。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=422&quot;&gt;网站收录怪象： 那些关于收录的秘密&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=373&quot;&gt;适配关系发生变化如何通知百度&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=353&quot;&gt;如何让百度正确识别跳转适配关系&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=344&quot;&gt;百度眼中的优质移动站点什么样&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;胡金环&quot;&gt;胡金环&lt;/h2&gt;
+
+&lt;p&gt;网名:神马浮云&lt;/p&gt;
+
+&lt;p&gt;QQ:1038442403&lt;/p&gt;
+
+&lt;p&gt;描述：专业从事房产网站平台seo，sem工作，原房途网/房探007项目seo总监，现就
+职酷客美地从事移动互联网运营推广工作。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=374&quot;&gt;浅谈移动站点优化之痛——HTML5_最新文章&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=381&quot;&gt;为何流量与关键词的数据比百度统计少&lt;/a&gt;》&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;胡亮亮&quot;&gt;胡亮亮&lt;/h2&gt;
+
+&lt;p&gt;描述：新网迈广告seo总监&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=301&quot;&gt;《杀死你网站SEO的5个技术》&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=435&quot;&gt;《如何在百度维护品牌权益》&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;柳焕斌&quot;&gt;柳焕斌&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/%E6%9F%B3%E7%84%95%E6%96%8Crobin.jpg&quot; alt=&quot;极客玩家大白-柳焕斌Robin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;描述：Robin，在线营销专家，资深电商从业者，从事互联网工作9年。2006年发起和联合创建SEO公益分享组织点石互动，2009年加入麦包包，分管在线营销业务，现担任凯络中国电商总经理，负责电商平台布局业务。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;《&lt;a href=&quot;http://zhanzhang.baidu.com/college/articleinfo?id=313&quot;&gt;柳焕斌谈百度与站长关系演变&lt;/a&gt;》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;seo网红&quot;&gt;SEO网红&lt;/h2&gt;
+
+&lt;h2 id=&quot;齐军瑞&quot;&gt;齐军瑞&lt;/h2&gt;
+
+&lt;p&gt;网名：痞子瑞&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/pizirui.jpeg&quot; alt=&quot;极客玩家大白-痞子瑞&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;微信：seoshendu（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：《SEO深度解析》作者&lt;/p&gt;
+
+&lt;h2 id=&quot;陈汝一&quot;&gt;陈汝一&lt;/h2&gt;
+&lt;p&gt;QQ：1296429673（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;网名：夜息&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/yexi.jpg&quot; alt=&quot;极客玩家大白_夜息yexi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;描述：曾任途牛网seo负责人,SEO顾问服务过多个行业，大中小规模的网站，并且取得了明显的流量增长效果。 在业内具有良好的人脉资源，与国内各大互联网公司相关人士有密切交流。&lt;/p&gt;
+
+&lt;h2 id=&quot;张闻一&quot;&gt;张闻一&lt;/h2&gt;
+&lt;p&gt;网名：Zero&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/geekplayers/images/raw/master/zhangwenyi_zero.jpg&quot; alt=&quot;极客玩家大白_张闻一Zero&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;描述：曾负责过赶集、美团、知乎等网站的SEO，突出成绩如三个月内使美团的百度SEO流量不止翻倍。在搜索引擎及技术方向，有广泛且较深入的研究。创办SEO前线主营SEO顾问业务，服务于智联招聘、下厨房等网站。且运营行业论坛，将行业竞争最大的词”SEO”的排名做到百度首页。&lt;/p&gt;
+
+&lt;h2 id=&quot;张国平&quot;&gt;张国平&lt;/h2&gt;
+&lt;p&gt;作品: sem一家之言&lt;/p&gt;
+
+&lt;p&gt;描述：杭州光年信息技术有限公司创始人，著名SEO专家。从个人站长到阿里巴巴SEO负责人，张国平先生凭借自己的优秀SEO经验技术使得众多网站流量得到飞速提升，也因此在业内获得广泛赞誉。他以”实战派”SEO为人所称道，注重数据分析，坚持用数据来指导SEO，提倡”做科学的SEO”。杭州光年自创办以来，已经先后成功的为”易趣”、”携程”、”19楼”、”证券之星”、”阿里巴巴日文站”等知名网站提了SEO咨询服务，并且获得了客户的高度评价。&lt;/p&gt;
+
+&lt;h2 id=&quot;黄凤华&quot;&gt;黄凤华&lt;/h2&gt;
+&lt;p&gt;网名：夫唯&lt;/p&gt;
+
+&lt;p&gt;描述：seowhy创始人。本科就读于山东大学，研究生就读于北京师范大学。夫唯先生推崇”循序渐进，基业长青”的SEO运维思想，以SEOWHY为实战案例，历经2年零起步创造了网站品牌，为SEO行业奉献了一个优秀的行业平台和成功案例。
+WW&lt;/p&gt;
+
+&lt;h2 id=&quot;上市公司营销高管&quot;&gt;上市公司营销高管&lt;/h2&gt;
+
+&lt;h2 id=&quot;付必鹏&quot;&gt;付必鹏&lt;/h2&gt;
+&lt;p&gt;QQ：保密&lt;/p&gt;
+
+&lt;p&gt;阿里国际站资深总监，点石互动联合创始人。&lt;/p&gt;
+
+&lt;h2 id=&quot;孙波&quot;&gt;孙波&lt;/h2&gt;
+&lt;p&gt;QQ：保密&lt;/p&gt;
+
+&lt;p&gt;描述：携程网在线营销副总裁。资深互联网民工，曾就职于阿里巴巴、5173等。&lt;/p&gt;
+
+&lt;h2 id=&quot;韦护-微信whooll&quot;&gt;韦护 （微信：whooll）&lt;/h2&gt;
+&lt;p&gt;现京东 市场无线营销 高级经理，（09年～14年负责京东市场流量拓展部 ，业务板块：全站SEO、流量BD、精选商品频道、API合作和流量数据分析等），07年开始网赚、网络营销、seo、建站等内容。&lt;/p&gt;
+
+&lt;h2 id=&quot;孙健小健&quot;&gt;孙健（小健）&lt;/h2&gt;
+&lt;p&gt;QQ：307824429（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：前国美、库巴流量产品运营部总监；现任慧聪网流量部总监。&lt;/p&gt;
+
+&lt;h2 id=&quot;刘斌&quot;&gt;刘斌&lt;/h2&gt;
+&lt;p&gt;QQ：478800361（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;网名：BinGo&lt;/p&gt;
+
+&lt;p&gt;描述：夫唯学院第五期学员，搜房网平台事业部总监，负责搜房网seo、sem和搜索合
+作。&lt;/p&gt;
+
+&lt;h2 id=&quot;seo服务提供商&quot;&gt;SEO服务提供商&lt;/h2&gt;
+
+&lt;h2 id=&quot;陈超&quot;&gt;陈超&lt;/h2&gt;
+&lt;p&gt;QQ：10511707（来自本人公开微博）&lt;/p&gt;
+
+&lt;p&gt;描述：上海刑天文化传播有限公司创始人，SEO服务提供商。&lt;/p&gt;
+
+&lt;h2 id=&quot;狼雨&quot;&gt;狼雨&lt;/h2&gt;
+&lt;p&gt;QQ：20985142（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：2011年一站成名。狼雨SEO创始人，提供外包服务。&lt;/p&gt;
+
+&lt;h2 id=&quot;方法这是真名&quot;&gt;方法（这是真名）&lt;/h2&gt;
+&lt;p&gt;QQ：123119329（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;SEO服务提供商，提供SEO顾问、SEO全案外包、SEO项目合作、SEO培训等服务。现任智联招聘高级SEO顾问，负责智联招聘移动端SEO规划实施，以及智联旗下高端招聘平台智联卓聘的PC+移动端全部SEO相关工作。个人博客(http://seofangfa.com)及个人微信订阅号(seofangfa)是一个以分享科学SEO理念为主的平台，也收集整理了很多国内顶级SEO的干货文章，目前每天有1000多个独立访客。&lt;/p&gt;
+
+&lt;h2 id=&quot;小向&quot;&gt;小向&lt;/h2&gt;
+&lt;p&gt;QQ：8943489（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;公司：脉速营销 IMAISU&lt;/p&gt;
+
+&lt;p&gt;描述：4A广告公司投资，拥有4A策划团队结合知名互联网运营背景，超过8年SEO实战经验，6年SEM操作经验，4年SEO培训经验。服务于旅游、电商、金融、快消、医疗、教育、机械、数码、育儿等多个领域客户，为携程、平安、爱家、众安、好孩子、舒适等100家知名品牌网站提供顾问及优化服务。&lt;/p&gt;
+
+&lt;h2 id=&quot;郑志平&quot;&gt;郑志平&lt;/h2&gt;
+&lt;p&gt;爱站网创始人，现为爱站网络科技有限公司CEO、搜狐SEO总顾问。&lt;/p&gt;
+
+&lt;h2 id=&quot;李华东&quot;&gt;李华东&lt;/h2&gt;
+&lt;p&gt;A5站长网SEO总监，A5首席SEO诊断师。&lt;/p&gt;
+
+&lt;h2 id=&quot;焦宗宗&quot;&gt;焦宗宗&lt;/h2&gt;
+&lt;p&gt;网名：焦大
+QQ：651207990（经本人同意）
+描述:11年开始做seo，先后建立seo培训联盟和seo学堂，目前独立创业，主要承接网
+站seo项目合作以及seo培训。&lt;/p&gt;
+
+&lt;h2 id=&quot;坐馆欢喜哥&quot;&gt;坐馆欢喜哥&lt;/h2&gt;
+
+&lt;p&gt;微信：wilsonwang21&lt;/p&gt;
+
+&lt;p&gt;1、Artand，中国艺术类社交电商门户，Alexa全球排名 39963，UV 12000 / PV 48000
+2、Modesens，时尚海淘一站式聚合搜索工具，Alexa全球排名 5485，IP 36000 / PV 115200
+3、FiboGroup.com，全球投资金融平台，Alexa全球排名20万位&lt;/p&gt;
+
+&lt;h2 id=&quot;埋头苦干的兄弟姐妹&quot;&gt;埋头苦干的兄弟姐妹&lt;/h2&gt;
+
+&lt;h2 id=&quot;刘梦晨&quot;&gt;刘梦晨&lt;/h2&gt;
+&lt;p&gt;网名：FBSENDER&lt;/p&gt;
+
+&lt;p&gt;描述：艺龙在线营销部主程。原凡客库存系统研发工程师。来艺龙开发SEM自动化投放
+系统。擅长大型网站SEM投放及优化技术。现负责艺龙营销部全部技术工作及部分SEO业
+务。技术强人，效率至上，逻辑思维和业务思维并重。关键词”羽毛球规则”在百度排名
+稳定第一。&lt;/p&gt;
+
+&lt;h2 id=&quot;刘铮&quot;&gt;刘铮&lt;/h2&gt;
+&lt;p&gt;网名：银狐云枫&lt;/p&gt;
+
+&lt;p&gt;QQ：42397890（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：现任一亩田SEO总监。曾任百度知识类产品SEO全线负责人。赶集SEO总监。马可波罗海外部SEO总监。经历项目：中国供应商 360圈 中国日报 28商机  6间房 PPS搜易 中华英才 九城  中国台湾网 天津网 威客网  西陆网 达芙妮&lt;/p&gt;
+
+&lt;h2 id=&quot;唐安&quot;&gt;唐安&lt;/h2&gt;
+&lt;p&gt;网名：安洋&lt;/p&gt;
+
+&lt;p&gt;QQ：281826888&lt;/p&gt;
+
+&lt;p&gt;5年个人站长seo经验 2010年加入4399到至今&lt;/p&gt;
+
+&lt;p&gt;目前主要负责游戏资讯 4399手机游戏媒体网站运营总监&lt;/p&gt;
+
+&lt;h2 id=&quot;殷晓俊&quot;&gt;殷晓俊&lt;/h2&gt;
+&lt;p&gt;QQ：190714307（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：房多多市场部高级经理 流量负责人  曾就职携程，平安&lt;/p&gt;
+
+&lt;h2 id=&quot;孙炜亮&quot;&gt;孙炜亮&lt;/h2&gt;
+&lt;p&gt;QQ：26344665&lt;/p&gt;
+
+&lt;p&gt;土豆、乐视SEO负责人，SEO内链体系获得国家专利。用数据做SEO。&lt;/p&gt;
+
+&lt;h2 id=&quot;胡星宇&quot;&gt;胡星宇&lt;/h2&gt;
+&lt;p&gt;网名：老胡&lt;/p&gt;
+
+&lt;p&gt;软件开发多年,SEO&amp;amp;SEM多年,现主要从事数据分析,管理电子化与运营管理&lt;/p&gt;
+
+&lt;h2 id=&quot;吴敏&quot;&gt;吴敏&lt;/h2&gt;
+&lt;p&gt;QQ：131289（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：曾就职于搜狐，19楼。现任贝贝网营销合作总监。个人站长出身，SEO顾问过好
+多个行业，行业人脉资源广泛，低调华丽。&lt;/p&gt;
+
+&lt;h2 id=&quot;郭明阳&quot;&gt;郭明阳&lt;/h2&gt;
+&lt;p&gt;微信：gmy229&lt;/p&gt;
+
+&lt;p&gt;世界工厂网SEO负责人，长期深耕B2B行业&lt;/p&gt;
+
+&lt;h2 id=&quot;杨妮娜&quot;&gt;杨妮娜&lt;/h2&gt;
+&lt;p&gt;QQ：371370684（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：
+现任百度海外搜索产品SEO，ASO负责人。&lt;/p&gt;
+
+&lt;p&gt;曾任百度知识搜索产品优化(知道，文库，经验，地图)，F团SEO负责人&lt;/p&gt;
+
+&lt;p&gt;其他项目：外贸行业，78，工控网&lt;/p&gt;
+
+&lt;h2 id=&quot;高庆华&quot;&gt;高庆华&lt;/h2&gt;
+&lt;p&gt;QQ：112143235（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;铁友网SEO负责人。06年就兼从事企业网站SEO外包服务，2010年开始负责铁友网和携
+程汽车票频道，有着大站的5年SEO营销团队组建和SEO内容运营经验，在职期间2014年
+因为移动端的行业趋势，我们很快跟进并参加百度无线搜索适配快速迭代上线对应的移
+动频道页面，获得百度”奋斗”奖。铁友网初创期，负责过2年的产品运营部门，由于现
+阶段职业瓶颈去了一家互联网创业公司专门负责产品运营部门&lt;/p&gt;
+
+&lt;h2 id=&quot;张赵伟&quot;&gt;张赵伟&lt;/h2&gt;
+&lt;p&gt;QQ：1420186160（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：现就职蘑菇街，曾花瓣网SEO负责人。&lt;/p&gt;
+
+&lt;p&gt;百度首届移动优化大赛专家奖获得者，给花瓣网SEO流量翻了16倍。&lt;/p&gt;
+
+&lt;h2 id=&quot;黄齐明&quot;&gt;黄齐明&lt;/h2&gt;
+&lt;p&gt;QQ：1491993033（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：赢商网SEO负责人。曾任职于5U体育（原U体育），妆品网等网站SEO负责人。&lt;/p&gt;
+
+&lt;h2 id=&quot;李卫国&quot;&gt;李卫国&lt;/h2&gt;
+&lt;p&gt;QQ：294513544（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：就职于寻医问药。专业从事4年医疗SEO&lt;/p&gt;
+
+&lt;h2 id=&quot;小黑&quot;&gt;小黑&lt;/h2&gt;
+&lt;p&gt;QQ：290282086（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：互联网安全技术出身，一时迷于黑客之间，后接触SEO，有幸结识了不少圈内人
+士，单页优化流量超过2W。曾就职光年论坛、京东商城。&lt;/p&gt;
+
+&lt;h2 id=&quot;师旭&quot;&gt;师旭&lt;/h2&gt;
+&lt;p&gt;QQ：544129967（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：就职于世界工厂网。专注于互联网产品设计、中英文搜索引擎优化、B2B网站运
+营、企业网站SEM&lt;/p&gt;
+
+&lt;h2 id=&quot;张洺乾&quot;&gt;张洺乾&lt;/h2&gt;
+&lt;p&gt;QQ：744949589（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：原到到网（改名为猫途鹰）SEO/SEM负责人，双料选手，一个人能顶俩。平时会
+写程序（Ruby语言）来辅助日常工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;张基&quot;&gt;张基&lt;/h2&gt;
+&lt;p&gt;QQ：23853329（经本人同意）
+描述：阿里巴巴&lt;/p&gt;
+
+&lt;h2 id=&quot;张阳&quot;&gt;张阳&lt;/h2&gt;
+&lt;p&gt;QQ：179782221（经本人同意）
+描述：原zhuna.cn SEO负责人，专长于酒店行业SEO&lt;/p&gt;
+
+&lt;h2 id=&quot;陈明鹏&quot;&gt;陈明鹏&lt;/h2&gt;
+&lt;p&gt;描述：途牛PC站SEO负责人&lt;/p&gt;
+
+&lt;h1 id=&quot;吕翠香&quot;&gt;吕翠香&lt;/h1&gt;
+
+&lt;p&gt;QQ：361722397（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;09年从事SEO工作，曾任职于赶集网，易车网，目前就职于智联招聘&lt;/p&gt;
+
+&lt;h2 id=&quot;张雪峰&quot;&gt;张雪峰&lt;/h2&gt;
+&lt;p&gt;网名：放肆绅士&lt;/p&gt;
+
+&lt;p&gt;QQ：53854854（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述:穷游网 网络营销经理，SEO、ASO负责人，擅长数据分析及A/B测试，并通过数据驱动带领团队实现每年流量增长一倍及转化率提升，积累了旅游，酒店，教育，美食，电商，招聘，社区等行业的丰富项目经验，曾任Netconcepts耐特康赛SEO项目经理，服务于艾瑞，智联招聘，优购，国航，贝太厨房，爱结，英孚教育等。&lt;/p&gt;
+
+&lt;h2 id=&quot;章螂&quot;&gt;章螂&lt;/h2&gt;
+&lt;p&gt;QQ：63224（经本人同意）
+描述：天气网（tianqi.com）CEO/SEO。&lt;/p&gt;
+
+&lt;h2 id=&quot;孙炜亮-1&quot;&gt;孙炜亮&lt;/h2&gt;
+&lt;p&gt;原乐视网SEO负责人&lt;/p&gt;
+
+&lt;h2 id=&quot;王龙&quot;&gt;王龙&lt;/h2&gt;
+&lt;p&gt;QQ：280026798（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：大众养生网SEO负责人。曾就职于世邦机器。&lt;/p&gt;
+
+&lt;h2 id=&quot;蒋孟奇&quot;&gt;蒋孟奇&lt;/h2&gt;
+&lt;p&gt;QQ：975327365（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;酷讯搜索营销主管，擅长SEO、SEM、ASO等相关领域&lt;/p&gt;
+
+&lt;h2 id=&quot;贪狼&quot;&gt;贪狼&lt;/h2&gt;
+&lt;p&gt;土巴兔SEO负责人&lt;/p&gt;
+
+&lt;h2 id=&quot;吴嘉阳&quot;&gt;吴嘉阳&lt;/h2&gt;
+&lt;p&gt;QQ：718831725（经本人同意）
+描述：Digital marketing and consumer experience focused.
+Passionate about online marketing and consulting. Seeking to combine digital marketing skills with international background
+in a leading technology company. Self motivated, good working in team. Proficient knowledge of SEO,PPC Ads(Google Adwords),Display ADs.&lt;/p&gt;
+
+&lt;h2 id=&quot;王建中&quot;&gt;王建中&lt;/h2&gt;
+&lt;p&gt;上海刻缘营销创始人；上海蔚为医美副总&lt;/p&gt;
+
+&lt;h2 id=&quot;袁大吉&quot;&gt;袁大吉&lt;/h2&gt;
+&lt;p&gt;QQ：61866257（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：39健康网  流量合作seo总监 8年seo经验，曾负责多个b2c ，b2b，金融门户
+网站优化，也有丰富的站群流量站优化经验！！&lt;/p&gt;
+
+&lt;h2 id=&quot;周文军&quot;&gt;周文军&lt;/h2&gt;
+&lt;p&gt;QQ：252087418（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;阿里巴巴&lt;/p&gt;
+
+&lt;h2 id=&quot;黄达和&quot;&gt;黄达和&lt;/h2&gt;
+&lt;p&gt;网名：小二&lt;/p&gt;
+
+&lt;p&gt;QQ：1290505352&lt;/p&gt;
+
+&lt;p&gt;描述：99健康网SEO负责人。曾任职于火车网，品牌网，&lt;/p&gt;
+
+&lt;h2 id=&quot;金鑫&quot;&gt;金鑫&lt;/h2&gt;
+&lt;p&gt;QQ：19516833（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;337网&lt;/p&gt;
+
+&lt;p&gt;8年海内外搜索营销经验，业内人脉丰富。&lt;/p&gt;
+
+&lt;h2 id=&quot;吕令建&quot;&gt;吕令建&lt;/h2&gt;
+&lt;p&gt;E-mail: lvlingjian@yeah.net&lt;/p&gt;
+
+&lt;p&gt;大家称之为令建，山东泰安人，现居北京。专注于大型网站的SEO流量提升，对十万百
+万千万级流量的网站有独特的手法。先后任职于慧聪网，去哪儿，负责整体SEO工作。
+不爱露面的SEO工作者。&lt;/p&gt;
+
+&lt;h2 id=&quot;泡面&quot;&gt;泡面&lt;/h2&gt;
+&lt;p&gt;描述：本地宝联合创始人，总编辑，seo负责人，多年SEO实战经验。&lt;/p&gt;
+
+&lt;h2 id=&quot;无天&quot;&gt;无天&lt;/h2&gt;
+&lt;p&gt;OurSEO站长，专注企业网站SEO优化、网络推广、品牌营销，挖掘、研究SEO。无天此博客，是一个关注互联网，关注网站运营、搜索优化、营销策划、用户体验的IT博客。&lt;/p&gt;
+
+&lt;h2 id=&quot;林国平&quot;&gt;林国平&lt;/h2&gt;
+&lt;p&gt;网名：乱发型&lt;/p&gt;
+
+&lt;p&gt;QQ：1935959013（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：就职于4399。有4，5年SEO经验&lt;/p&gt;
+
+&lt;h2 id=&quot;姚磊&quot;&gt;姚磊&lt;/h2&gt;
+&lt;p&gt;QQ：283146795（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;网名：大姚&lt;/p&gt;
+
+&lt;p&gt;描述：多特软件站seo负责人，曾就职于购酒网，热衷于B2C运营和推广。&lt;/p&gt;
+
+&lt;h2 id=&quot;杨文军&quot;&gt;杨文军&lt;/h2&gt;
+&lt;p&gt;网名：魔法师&lt;/p&gt;
+
+&lt;p&gt;email：yangwenjun61@sina.com（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：现就职于考拉FM，负责PC端流量。曾就职于淘房网、云通讯平台、中国网库。擅长SEO、网络营销、品牌推广。&lt;/p&gt;
+
+&lt;h2 id=&quot;磊子&quot;&gt;磊子&lt;/h2&gt;
+&lt;p&gt;描述：就职爱奇艺，激动网，视频seo爱好者&lt;/p&gt;
+
+&lt;h2 id=&quot;王润&quot;&gt;王润&lt;/h2&gt;
+&lt;p&gt;QQ：398872331（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：什么值得买SEO和数据分析负责人&lt;/p&gt;
+
+&lt;h2 id=&quot;程堂军&quot;&gt;程堂军&lt;/h2&gt;
+&lt;p&gt;QQ：87621304（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：58安居客高级流量经理，负责SEO流量，及其它免费流量。&lt;/p&gt;
+
+&lt;h2 id=&quot;马如意&quot;&gt;马如意&lt;/h2&gt;
+&lt;p&gt;网名：如意&lt;/p&gt;
+
+&lt;p&gt;QQ：651324810（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：曾负责新浪乐居SEO/SEM、百度乐居房产网站SEO工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;肖洁纯&quot;&gt;肖洁纯&lt;/h2&gt;
+&lt;p&gt;网名：洁纯&lt;/p&gt;
+
+&lt;p&gt;QQ:305624763（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：现就职拉手网SE0主管一职，曾任职新东方，负责新东方集团SEO优化。
+经历项目：新东方（新东方宝典）、拉手网商家库&lt;/p&gt;
+
+&lt;h2 id=&quot;苏云田&quot;&gt;苏云田&lt;/h2&gt;
+&lt;p&gt;网名：亦奇&lt;/p&gt;
+
+&lt;p&gt;QQ：182185871（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：500彩票seo负责人。6年seo。曾就职环球资源、亚太传媒集团。&lt;/p&gt;
+
+&lt;h2 id=&quot;王秀杰&quot;&gt;王秀杰&lt;/h2&gt;
+&lt;p&gt;描述：就职于中关村在线，主要负责中关村在线论坛、下载等相关业务。&lt;/p&gt;
+
+&lt;h2 id=&quot;贺涛&quot;&gt;贺涛&lt;/h2&gt;
+&lt;p&gt;网名：wnipai&lt;/p&gt;
+
+&lt;p&gt;QQ：345311821（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：2013年加入百姓网，14年开始以数据分析师的角度开始接触SEO，现在负责百姓网SEO的运营。&lt;/p&gt;
+
+&lt;h2 id=&quot;张化祥&quot;&gt;张化祥&lt;/h2&gt;
+&lt;p&gt;网名：SEO祥子&lt;/p&gt;
+
+&lt;p&gt;QQ：236213140（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：曾任职于Netconcepts、悠易互通广告有限公司，现负责新浪乐居SEO工作。主
+要技能SEO，熟悉SEM、DSP、广点通、社会化媒体等营销推广。&lt;/p&gt;
+
+&lt;h2 id=&quot;stevezhou&quot;&gt;Stevezhou&lt;/h2&gt;
+&lt;p&gt;QQ：1185521130（由其好基友推荐）&lt;/p&gt;
+
+&lt;p&gt;没有天份 还剩天真。&lt;/p&gt;
+
+&lt;p&gt;技术派SEO；规划驴妈妈产品端总体SEO布局与运营，成绩显赫；构建SEO管理系统（全
+站TKD管理、内链、友链等）以及工具系统（日志、需求词库、排名等）、其中研发的
+排名工具速度和实用性值得称赞。怀着一份情怀，寻找方向的家伙，希望能遇见志同道
+合的小伙伴。博客地址stevezhou.info。工具地址：tool.stevezhou.info(鉴于
+保密协议，日志数据已下线）&lt;/p&gt;
+
+&lt;h2 id=&quot;王敏&quot;&gt;王敏&lt;/h2&gt;
+&lt;p&gt;网名：王威廉
+QQ：373570383（经本人同意）
+描述：就职好未来，负责K12站群SEO/ASO工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;道哥&quot;&gt;道哥&lt;/h2&gt;
+&lt;p&gt;微信：seodug（经本人同意）
+QQ：59037148（经本人同意）
+《SEO深度解析》第二版联合作者&lt;/p&gt;
+
+&lt;h2 id=&quot;赵彦刚&quot;&gt;赵彦刚&lt;/h2&gt;
+&lt;p&gt;微信：zygseo（经本人同意）
+描述：原中公网校SEO负责人，个人站长出身，懂点技术。个人博客(seojishu.com)曾在业内
+被转载数十万次，微信订阅号(seozyg)。强调以数据为驱动，以结果为导向。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D487&quot;&gt;ETag使用效果对比&amp;amp;经验分享&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D849&quot;&gt;SEOer在部门沟通中常见问题及建议&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zhanzhang.baidu.com/college/articleinfo%3Fid%3D874&quot;&gt;新站如何被百度快速收录&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;吴秀龙&quot;&gt;吴秀龙&lt;/h2&gt;
+&lt;p&gt;QQ：1009926370（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;微信：longhua0612（经本人同意）&lt;/p&gt;
+
+&lt;p&gt;描述：负责中公教育集团SEO、优就业SEO研究院院长，专注教育行业SEO研究分析，同时涉足电商、酒店旅游、社交问答等领域。&lt;/p&gt;
+
+&lt;h2 id=&quot;王保良&quot;&gt;王保良&lt;/h2&gt;
+&lt;p&gt;QQ：1285294056&lt;/p&gt;
+
+&lt;p&gt;微信：happywbl&lt;/p&gt;
+
+&lt;p&gt;描述：中国制造交易网 SEO负责人。&lt;/p&gt;
+
+&lt;h2 id=&quot;刀心&quot;&gt;刀心&lt;/h2&gt;
+&lt;p&gt;QQ：1136018016&lt;/p&gt;
+
+&lt;p&gt;描述： 曾负责寺库secoo.com的SEO。多年个人站长经验，操作过数20万PV的个人站。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，本人：&lt;/p&gt;
+
+&lt;p&gt;微信&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;628552&lt;/code&gt;，注明来意。不收徒。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/thaddeus-liu&quot;&gt;https://www.linkedin.com/in/thaddeus-liu&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Aug 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/china-seo-experts-and-famous.html</link>
+        <guid isPermaLink="true">http://localhost:4000/china-seo-experts-and-famous.html</guid>
+        
+        <category>seo</category>
+        
+        <category>排行榜</category>
+        
+        
+        <category>seo</category>
         
       </item>
     
@@ -940,8 +1811,8 @@ bravo@localhost MINGW64 ~
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Aug 2020 00:00:00 +0800</pubDate>
-        <link>https://geekplayers.com/interview-test.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/interview-test.html</guid>
+        <link>http://localhost:4000/interview-test.html</link>
+        <guid isPermaLink="true">http://localhost:4000/interview-test.html</guid>
         
         <category>面试题</category>
         
@@ -1035,8 +1906,8 @@ bravo@localhost MINGW64 ~
 &lt;p&gt;来源：知乎&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Aug 2020 00:00:00 +0800</pubDate>
-        <link>https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html</guid>
+        <link>http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html</link>
+        <guid isPermaLink="true">http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html</guid>
         
         <category>tiktok</category>
         
@@ -1681,8 +2552,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 
 </description>
         <pubDate>Sun, 26 Jul 2020 06:07:40 +0800</pubDate>
-        <link>https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</guid>
+        <link>http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</link>
+        <guid isPermaLink="true">http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</guid>
         
         <category>Visual Studio</category>
         
@@ -2367,8 +3238,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;我想《永远的窗口》此文就到此结束了……&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jul 2020 19:06:50 +0800</pubDate>
-        <link>https://geekplayers.com/forever-window-personal-view-on-window.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/forever-window-personal-view-on-window.html</guid>
+        <link>http://localhost:4000/forever-window-personal-view-on-window.html</link>
+        <guid isPermaLink="true">http://localhost:4000/forever-window-personal-view-on-window.html</guid>
         
         <category>mfc</category>
         
@@ -2376,751 +3247,6 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
         
         
         <category>windows</category>
-        
-      </item>
-    
-      <item>
-        <title>深入浅出XAML</title>
-        <description>&lt;p&gt;今天来聊聊深入浅出XAML的那些事~&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Inside XAML&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Ian Griffiths/文, co-author of Mastering Visual Studio .NET&lt;/p&gt;
-
-&lt;p&gt;01/19/2004&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Longhorn 为开发人员提供的最有趣技术之一就是其基于XML的新标记语言，开发代号为XAML（eXtensible ApplicationMarkup Language〈可扩展应用标记语言〉的缩写，发音为”Zammel”）。Longhorn应用程序中的用户界面通常是使用XAML来构建的。 在本文中，我们将考察XAML与WinFX 提供的底层支持如何相关。&lt;/p&gt;
-
-&lt;p&gt;XAML用户界面的构建方式与HTML Web用户界面的构建方式非常相似——只需使用标签来为所需要的每个界面元素创建一个文档。下面是一个简单的XAML用户界面：&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;FlowPanel&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/2003/xaml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Text&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Text&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&amp;gt;&lt;/span&gt;Click me!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/FlowPanel&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这个特定的例子显示一个Text元素和一个Button元素，同时使用FlowPanel 在屏幕上排列它们。这些全都是Avalon定义的类，Avalon 是WinFX 的用户界面框架。Text 和Button元素是不言而喻的。FlowPanel 是窗格的一个例子。窗格用于根据特定的布局方法安排元素。FlowPanel 在屏幕上安排元素的方式与通常对文本进行格式编排的方式相同——元素从左至右地“流”过可用空间，在当前行没有更多空间时移到下一行上。结果如下所示。（第一幅图片显示了这样一个窗口，它足够宽到可在一行上同时包含两个元素。第二幅图片显示了当窗口不足够宽时所发生的情况 —— FlowPanel 将元素分割到两行上。）Avalon提供了针对不同布局技术的各种窗格类型，包括固定布局、停靠，以及基于列的文本流。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img1.png&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img2.png&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;为什么要发明一种新的标记语言&quot;&gt;为什么要发明一种新的标记语言?&lt;/h2&gt;
-
-&lt;p&gt;你可能在疑感为什么Microsoft决定发明一种崭新的标记语言来构建用户界面，而不是使用HTML或SVG。原因之一是功能——Avalon 提供许多HTML中不可用的高级用户界面特性，比如文本和图形的缩放和旋转，以及动画。此外，HTML主要是为在Web上使用而开发的，而XAML主要针对的是直接运行在Windows上的应用程序(即“胖客户机”(Rich Client)或“智能客户机”)。但是这仍然留下了为什么微软不使用SVG(Scalable Vector Graphics,可缩放矢量图形，这是一种基于XML的图形丰富的标记语言)的问题。毕竟，SVG弥补了HTME作为胖客户机标记语言所其有的许多缺点。然而，设计一种新标记语言的最有力原因在于，XAML文件中的元素之间以及运行时的对象之间存在非常紧密的关系。不像任何早前的标记语言，XAML被设计为直接与WinFX集成。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;xaml和对象&quot;&gt;XAML和对象&lt;/h2&gt;
-
-&lt;p&gt;XAML文件中的每个元素都会导致在运行时创建一个对应的对象。在前面的例子中，运行中的程序将具有三个对象，分别是FlowPanel，Text和Button类型。这些类是Avalon类库的组成部分。由于命名空间声明的存在，XAML编译器知道要使用哪些类库 一 XAML编译器将XML命名空间http://schemas.microsoft.com/2003/xaml理解为要使用Avalon类。&lt;/p&gt;
-
-&lt;p&gt;你还可以定义自定义的命名空间来使用类库。（原则上，你可以在XAML中使用任何.NET类。Don Box曾撰写过一篇文章表明，如果需要，你甚至可以用XAML编写控制台应用程序。）&lt;/p&gt;
-
-&lt;p&gt;XAML文件通常是编译过的，而不是在运行时分析（虽然在确实需要时也可以采用运行时分析）在构建基于XAML的项目时，XAML编译器将分别为每个XAML文件生成一个类。这些类包含用于创建XAML中指定的对象的代码。如果你感到好奇，可以找出这些已生成的代码。使用支持Longhorn的Visual Studio .NET Whidbey版本（在2003年的专业开发人员大会——PDC上公布），你可以使用Longhorn Application模板之一来创建新的基于XAML的项目。在编译项目时，XAML编译器将为每个XAML文件生成一个临时源代码文件。这些文件将创建在obj\Debug or obj\Release子目录中。例如，如果将上述例子中的XAML放在一个名为MyPanel.xaml 的文件中，生成（build ）该项目将产生一个临时文件&lt;/p&gt;
-
-&lt;p&gt;obj\Debug\MyPanel.g.cs。（如果使用Visual Basic .NET，文件扩展名将是.vb 而不是.cs。）&lt;/p&gt;
-
-&lt;p&gt;观察一下这个生成的文件的内部，你会找到一个类定义。&lt;/p&gt;
-
-&lt;p&gt;对于每个XAML文件，XAML编译器都会构建一个类，这个类派生自该文件的根元素的类。在前面所示的例子中，根元素是FlowPanel，因此所生成的类就派生自FlowPanel：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;partial&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyPanel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FlowPanel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;在该类的初始化代码内部，它创建了XAML中指定的其他元素。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FlowPanel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_FlowPanel_1_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_FlowPanel_1_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_Text_2_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; 
-
-    &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Text_2_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_FlowPanel_1_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Text_2_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Text_2_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Text_2_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;EndDeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_Button_3_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; 
-
-    &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Button_3_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_FlowPanel_1_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Button_3_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAddChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Button_3_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Click me!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Button_3_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;EndDeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serialization&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ILoaded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_FlowPanel_1_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;EndDeferLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;其中创建Text和Button 对象的行以粗体高亮显示。其余的代码不过就是设置两个元素的文本，然后使它们成为FlowPanel的子元素，以便在运行时反映原始XAML的树结构。注意所有这些代码都是在编译时生成的——XAML本身在运行时并不需要。（综上所述，如果想要动态生成用户界面，就不必执行这个编译步骤——在运行时分析XAML也是可以的。WinFX提供了一个用于将未编译的XAML直接转换为对象的API。）&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;属性property&quot;&gt;属性（property）&lt;/h2&gt;
-
-&lt;p&gt;像创建对象一样，XAML还允许设置那些对象上的属性。例如，让我们把创建Button 的行修改如下：&lt;/p&gt;
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Red&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click me!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这表明应该设置Button对象的Background 属性。XAML编译器将生成相应的代码来设置该属性：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;Button_3_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Background&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;SolidColorBrush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;FromARGB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果想知道XAML编译器如何将字符串Red 映射为上面的代码，事实上它使用了一种自从.NET的第一版发布以来就已存在的技术：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;类型转换器&lt;/code&gt;。类型转换器是.NET设计时环境的一部分，用于在VS.NET Properties窗口中显示的字符串和对象属性的实际值之间执行转换。类型转换器还可以生成代码来初始化这些属性——VS.NET使用它们来创建Windows Forms应用程序的InitializeComponent方法中的代码。XAML 编译器简单地使用这个现有的基础结构，将特性（attribute）字符串值转换为初始化代码。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;复杂属性&quot;&gt;复杂属性&lt;/h2&gt;
-
-&lt;p&gt;并非所有属性都可表示为字符串–有些属性具有一个包含许多嵌套对象的内部结构。XAML支持一种特殊的语法，用于设置这些所谓的复杂属性。与使用特性（attribute）来设置属性（property），相反，这些属性可以使用子元素来设置。为了表明一个XAML元素表示一个复杂属性而不是表示通常的子对象，元素名称必须包含父元素的名称，后面跟着一个点，然后再跟着属性名称，如下面的例子所示：&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button.Background&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearGradientBrush&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearGradientBrush.GradientStops&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;GradientStopCollection&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;GradientStop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Red&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Offset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;GradientStop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Magenta&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Offset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0.25&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;GradientStop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Blue&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Offset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0.5&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;GradientStop&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Color=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Offset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/GradientStopCollection&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/LinearGradientBrush.GradientStops&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/LinearGradientBrush&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button.Background&amp;gt;&lt;/span&gt;
-  Click me!
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;与依赖通常的类型转换器机制来将字符串转换为画笔不同，这个例子显式地使用标记来创建了一个画笔。在此例中，我们创建了一个相当复杂的画笔——具有许多填充阶次的LinearGradientBrush。这个例子展示了两个复杂属性，一个属性嵌套在另一个属性的内部。&lt;Button.Background&gt;元素设置按钮的背景属性， 但是在这个元素的内部，&lt;LinearGradientBrush.GradientStops&gt;元素设置线性渐变画笔的GradientStops属性。复杂属性的语法与其他任何XAML属性的语法完全相同——它允许建立对象的树结构。唯一的区别在于，这些属性然后被指定为它们所应用到的元素的属性，而不是成为那些元素的子元素。结果如下所示：&lt;/LinearGradientBrush.GradientStops&gt;&lt;/Button.Background&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img3.png&quot; alt=&quot;Click me&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;添加代码&quot;&gt;添加代码&lt;/h2&gt;
-
-&lt;p&gt;正如我们已经看到的，XAML编译器分别为每个XAML文件生成一个类。那些类从对应XAML文件的根元素类型派生而来，并且包含用于创建所有子元素的代码，如上所示。然而，这些生成的代码对于创建实用的UI 还不足够。大多数用户界面并不只是提供信息——它们通常还需要能够响应用户输入。因此你通常需要添加代码来提供用户界面的行为。把代码插入XAML 文件本身是可以做到的。你可以在Definition 命名空间中添加一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Code&amp;gt;&lt;/code&gt;元素。（根据约定，Definition命名空间被映射到def命名空间前缀，因此这个元素通常以&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;def:Code&amp;gt;&lt;/code&gt;的形式出现。）然后你可以把源代码直接放在这个元素内部，XAML编译器将把它添加到所生成的源文件中。这些代码通常添加到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CDATA&lt;/code&gt;节之内，如下面的例子所示：&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;FlowPanel&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://schemas.microsoft.com/2003/xaml&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;xmlns:def=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Definition&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Text&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Text&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&amp;gt;&lt;/span&gt;Click me!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;def:Code&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[
-        // Will be added to generated source file
-        public string Hello()
-        {
-          return &quot;Hello!&quot;; 
-        }
-      ]]&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/def:Code&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/FlowPanel&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;然而，对于建立动态Web页面有过足够经验的任何人都知道，在单个源文件中混合代码和标记是一种不可维护的方案。将用户界面的可视设计与决定UI 行为的代码分离，这样要好得多。幸运的是，XAML使得将代码与标记分离很容易——它支持这样一种代码编写风格，只要你使用过ASP.NET 的“code-behind（代码分离）”特性，就会对这种代码编写风格很熟悉。（如果熟悉ASP.NET的Whidbey 版本所引入的“code-beside”技术，你会对这种代码编写风格更加熟悉。）从上面的例子可以看出，XAML编译器生成的类使用了partial关键字来声明。这向C#编译器表明，该类定义可能分散在多个&lt;/p&gt;
-
-&lt;p&gt;源文件中，而这个声明仅包含该定义的一部分。这样使得我们能够通过在另一个源文件中放置更多成员来扩充该类–C#编译器将生成这样一个类，它是为该类提供的所有partial类定义的汇总。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;partial&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyPanel&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;当你在Visual Studio .NET中创建一个XAML项目时，添加到项目的每个XAML文件都会自动具有一个对应的源文件，其中包含一个partial 类定义，允许你向将从XAML文件生成的代码添加新的代码。你可以通过单击Solution Explorer中的Show All Files 按钮来看到这些code-behind 文件。注意，如果在code-behind文件中指定了基类，它必须与所生成的代码的基类（即XAML文件的根元素）匹配——如果指定了不一致的基类，C#编译器将提示出错。&lt;/p&gt;
-
-&lt;p&gt;在编写XAML文件的代码时，你当然需要能够访问标记所定义的对象，以便控制UI。结果证明这是极其简单的：你所需做的就是在标记中使用一个ID特性来标注你希望能够访问的对象，如下所示：&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Text&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ID=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;textElem&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Text&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这样做之后，XAML编译器将使得这个对象可以像该类的成员变量一样使用，也就是使用ID特性中所指定的名称。例如，你可以将上面的元素中的文本修改如下：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textElem.TextRange.Text = &quot;Foo&quot;;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;你通常不会像上面的例子那样在公共方法编写这种代码。code-behind 文件中的大多数代码都在事件处理程序方法中。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;处理事件&quot;&gt;处理事件&lt;/h2&gt;
-
-&lt;p&gt;向XAML页面添加代码的主要原因是为了处理事件——或者是来自用户的输入，或者是用户界面生存期中的重要事件。&lt;/p&gt;
-
-&lt;p&gt;向XAML编译器表明我们的code-behind文件中的代码应该在某些事件发生时调用，这是一件简单的事情。我们只需向希望其处理事件的元素添加一个特性。该特性的名称应该是事件的名称，其值应该是code-behind文件中的处理程序方法的名称。例如，我们可以像下面这样处理按钮单击事件：&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Click=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;OnClick&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Click me!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Button&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这样将导致XAML编译器生成相应代码，把OnClick函数附加为事件处理程序。它使用标准的.NET事件处理机制来完成这个工作，例如：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;_Button_4_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Click&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MSAvalon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ClickEventHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;为了使这段代码能够正确地编译，我们当然必须在codebehind文件中提供适当的OnClick函数。与.NET程序中的所有事件处理程序一样，该函数的签名必须匹配事件的委托（delegate）类型。在此例中，按钮的Click 事件使用了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ClickEventHandler&lt;/code&gt;委托，因此我们必须编写一个具有匹配的签名的函数。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OnClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ClickEventArgs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;textElem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Foo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;结束语&quot;&gt;结束语&lt;/h2&gt;
-
-&lt;p&gt;XAML是生成.NET对象树的简单而强大的方法。由于它基于XML，创建基于XAML的标记就很简单了。这不仅使得手工构建用户界面很容易，而且使得通过工具来生成XAML也相对简单——今后，能够导出文档和以XAML格式来绘制的设计工具将会出现。使用诸如XSLT之类的技术来将XML数据源转换为XAML文档也很容易。XAML通过code-behind文件支持用户界面与代码的完全分离，而它与WinFX的紧密集成使得代码操作标记中定义的用户界面元素非常容易。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jul 2020 00:00:00 +0800</pubDate>
-        <link>https://geekplayers.com/inside-xaml.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/inside-xaml.html</guid>
-        
-        <category>wpf</category>
-        
-        
-        <category>[&quot;life&quot;, &quot;xaml&quot;, &quot;wpf&quot;]</category>
-        
-        <category>[&quot;life&quot;, &quot;xaml&quot;, &quot;wpf&quot;]</category>
-        
-        <category>life</category>
-        
-        <category>xaml</category>
-        
-        <category>wpf</category>
-        
-      </item>
-    
-      <item>
-        <title>Visual C++中创建WPF项目的方法</title>
-        <description>&lt;h2 id=&quot;ccli下创建wpf项目的方法&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C++/CLI&lt;/code&gt;下创建WPF项目的方法&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual C++&lt;/code&gt;中创建WPF项目的方法&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;由于WPF不仅仅支持C#/VB开发，还支持其他语言，比如: C++、F#等开发，于是大白我最近花了点时间摸索了一下，本文主要介绍&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C++/CLI&lt;/code&gt;下创建WPF项目的方法。&lt;/p&gt;
-
-&lt;p&gt;我使用的开发环境是: Win10 x64 + Visual Studio 2019 (16.6.1版本)。&lt;/p&gt;
-
-&lt;p&gt;今天我们需要使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C++/CLI&lt;/code&gt;，算是C++的一个子集吧。&lt;/p&gt;
-
-&lt;p&gt;要能正常使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C++/CLI&lt;/code&gt;，首先需要确保你安装了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C++/CLI&lt;/code&gt; build套件(见下图)，同时还需要确保你安装好了Visual C++相应版本的运行库。&lt;/p&gt;
-
-&lt;p&gt;进入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;控制面板&lt;/code&gt;，找到 Visual Studio 2019，右击”修改”，然后切换到”独立组件”(Individual components)这个选项卡。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LThiMDEzYThmN2M3OGZjNmQucG5n&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;如果没安装，勾选后安装一下即可。&lt;/p&gt;
-
-&lt;p&gt;接下来我们可以创建项目了，建议选用模板 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CLR Empty Project (.NET Framework)&lt;/code&gt;，解决方案和项目名可以都用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CppWpfDemo&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWNhNDIwMDYyNmZmMDQyM2EucG5n&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这时一个空项目就创建完成了。&lt;/p&gt;
-
-&lt;p&gt;此时查看 Project的属性，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Configration  Properties&lt;/code&gt;  -&amp;gt;  “C/C++” -&amp;gt; “All Options”，输入 “common”进行搜索，确保选中的是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Common Language Runtime Suppor(/clr)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWIzOGIzYmIzNzBhZDQ5NjAucG5n&quot; alt=&quot;img3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;接下来我们鼠标右击项目下的文件夹”Resource Files”，点”Add” -&amp;gt; “new item”，类型选”Component Class”，可使用默认的名字&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyComponent&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LTJlOTJlOGIwNDczYzQ4YmIucG5n&quot; alt=&quot;img4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;此时，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyComponent.cpp&lt;/code&gt;中的代码如下:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;MyComponent.h&quot;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;为了正确引用到 WPF 中的各种库，我们还需要加入 WPF中 3 个核心的 dll，操作方法是:&lt;/p&gt;
-
-&lt;p&gt;右键点击项目中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;References&lt;/code&gt;，然后点 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add Reference&lt;/code&gt;，勾选上:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PresentationCore&lt;/li&gt;
-  &lt;li&gt;PresentationFramework&lt;/li&gt;
-  &lt;li&gt;WindowsBase&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWUwMTVlY2I5ZGI5MDcyMWMucG5n&quot; alt=&quot;img5&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;接下来，进行了一番倒腾，我改成了这个，做成了一个简单的界面:&lt;/p&gt;
-
-&lt;p&gt;此时 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyComponent.cpp&lt;/code&gt;的内容如下:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;MyComponent.h&quot;
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CppWpfDemo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STAThreadAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&amp;gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;C++/CLI WPF demo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;TextBlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextBlock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello WPF&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Add root Grid&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;RowDefinition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myRowDef1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RowDefinition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RowDefinitions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myRowDef1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;DataGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Background&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Brushes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LightBlue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Define the Canvas&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetRow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;代码中的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[STAThread]&lt;/code&gt;是需要的，表示Single Thread Apartment(单线程单元)，等价于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[System::STAThread]&lt;/code&gt; 或 ` [System::STAThreadAttribute]`，更多相关介绍见文末。&lt;/p&gt;
-
-&lt;p&gt;还有个朋友说需要在项目属性中设置”Entry Point”的值为”main”，测试过了填与不填没影响，建议别填。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LTQ0MmJjMDNlMDQ2OWFiOWYucG5n&quot; alt=&quot;image6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;接下来，可以build了。&lt;/p&gt;
-
-&lt;p&gt;如果出现&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VCRUNTIME140.dll missing&lt;/code&gt;的问题，安装一下&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=48145&quot;&gt;Visual C++ Redistributable for Visual Studio 2015&lt;/a&gt; 和 &lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=52685&quot;&gt;Microsoft Visual C++ 2015 Redistributable Update 3 RC&lt;/a&gt; 可以解决，x64和x86的运行库都需要安装。&lt;/p&gt;
-
-&lt;p&gt;如果还不行，&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;下载 &lt;a href=&quot;http://www.opendll.com/index.php?file-download=vcruntime140.dll&amp;amp;arch=64bit&amp;amp;version=14.0.22816.0&amp;amp;dsc=&quot;&gt;VCRUNTIME140.DLL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;以管理员权限复制这个 dll 到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Windows\System32&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;检查该 dll 的文件读写权限是否为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;只读&lt;/code&gt;，如果是只读，去掉前面的勾勾.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;此时按F5(或 Ctrl + F5)，运行结果如下:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LTI2M2Q0NWQyYzY1MmI0ZjQucG5n&quot; alt=&quot;image7&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;美中不足的是后面一直有个命令行窗口。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;启动时如何设置才能只显示wpf界面&quot;&gt;启动时如何设置才能只显示WPF界面?&lt;/h2&gt;
-&lt;p&gt;那么问题来了，F5启动时如何设置才能只显示WPF界面?
-网上找了下解决方案，发现将目前用的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int main()&lt;/code&gt;改为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int WINAPI WinMain() &lt;/code&gt; 可以解决，要能使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WinMain()&lt;/code&gt;则需要引入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;windows.h&lt;/code&gt;头文件。&lt;/p&gt;
-
-&lt;p&gt;当把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include windows.h&lt;/code&gt;加到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &quot;MyComponent.h&quot;&lt;/code&gt;下一行时，发现如下错误:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWFmMzg2MjNiZjc3YmVjZTgucG5n&quot; alt=&quot;image8&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;原因在于命令空间冲突，使得&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; Window&lt;/code&gt;的引用出现起义。&lt;/p&gt;
-
-&lt;p&gt;解决方法是: 将 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include windows.h&lt;/code&gt;放在代码的第一行。&lt;/p&gt;
-
-&lt;p&gt;此时，此时 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyComponent.cpp&lt;/code&gt;的内容如下:&lt;/p&gt;
-
-&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;windows.h&quot;
-#include &quot;MyComponent.h&quot;
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Controls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Media&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STAThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WINAPI&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;WinMain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HINSTANCE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HINSTANCE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hPrevInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;LPSTR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lpCmd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nCmd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;C++/CLI WPF demo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;TextBlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextBlock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello WPF&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Add root Grid&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;RowDefinition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myRowDef1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RowDefinition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RowDefinitions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myRowDef1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;DataGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Background&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Brushes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LightBlue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Define the Canvas&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gcnew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetLeft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;Grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SetRow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;而运行结果为:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWE4OWZmN2NjMzY1NWFjOGIucG5n&quot; alt=&quot;image9&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;大白今天躺坑完毕，总算解决了问题，先酱~&lt;/p&gt;
-
-&lt;p&gt;第一个版本代码已上传到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github&lt;/code&gt;: &lt;a href=&quot;https://github.com/yanglr/CppWpfDemo/tree/master/CppWpfDemo/CppWpfDemo&quot;&gt;https://github.com/yanglr/CppWpfDemo/tree/master/CppWpfDemo/CppWpfDemo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;线程化与套间单元&quot;&gt;线程化与“套间”(单元)&lt;/h2&gt;
-
-&lt;p&gt;STAThreadAttribute 类：指示应用程序的 COM 线程模型是单线程单元 (STA)。&lt;/p&gt;
-
-&lt;p&gt;一个进程加载了一个COM的DLL文件后，该DLL可能定义并使用了一些可修改的全局变量或访问共享资源。该进程内的多个线程如何并发访问该DLL并保证是&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8&quot;&gt;线程安全&lt;/a&gt;的，这就是“套间”（apartment）技术需要解决的问题。&lt;/p&gt;
-
-&lt;p&gt;COM对象与创建或调用COM对象的线程可以按两种策略来实现并发安全：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;按照单线程执行方式写COM对象的代码，完全不考虑并发执行问题。这样的每个COM对象只能由一个线程执行，该线程通过Windows消息队列实现多线程访问该COM对象被串行化从而并发安全。这种策略称作单线程套间（Single-Threaded Apartment，STA）。&lt;/li&gt;
-  &lt;li&gt;COM对象的代码自身实现了并发控制（通过Windows互斥原语，如&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BA%92%E6%96%A5%E9%94%81&quot;&gt;互斥锁&lt;/a&gt;、&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%B8%B4%E7%95%8C%E5%8C%BA&quot;&gt;临界区&lt;/a&gt;、&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BA%8B%E4%BB%B6_(%E5%90%8C%E6%AD%A5%E5%8E%9F%E8%AF%AD)&quot;&gt;事件&lt;/a&gt;、&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BF%A1%E5%8F%B7%E9%87%8F&quot;&gt;信号量&lt;/a&gt;等）。因此实际上多线程可以直接调用该COM对象的方法，这是并发安全的。这种策略称作多线程套间（Multi-Threaded Apartment，MTA）。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;COM的并发安全的具体实现，提出了套间（apartment）概念。每一种套间类型表示在一个进程内部是多线程情况下，如何同步对COM对象的调用。套间是一个逻辑容器，收纳遵循相同线程访问规则的COM对象与&lt;strong&gt;COM线程&lt;/strong&gt;（创建了COM对象的线程或者调用了COM对象的方法的线程）。套间本质上只是一个逻辑概念而非物理实体，没有句柄类型可以引用它，更没有可调用的API操纵它。套间有两种：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;单线程套间（Single-Threaded Apartment，STA）：每个进程可以有多个STA套间。每个STA套间只能有一个线程。每个STA性质的COM对象只能属于一个STA套间。一个STA套间可以有零个或多个STA属性的COM对象，这些COM对象的方法只能由该套间的唯一线程执行。STA套间的线程可以直接调用该套间的COM对象的方法。如果STA套间的COM对象被套间外的线程或进程调用，那么该套间的线程必须实现&lt;a href=&quot;https://zh.wikipedia.org/wiki/Windows%E6%B6%88%E6%81%AF%E5%BE%AA%E7%8E%AF&quot;&gt;Windows消息队列与消息循环&lt;/a&gt;处理机制，其他线程必须通过&lt;a href=&quot;https://zh.wikipedia.org/wiki/Marshalling_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)&quot;&gt;marshalling&lt;/a&gt;与unmarshalling机制，通过给该STA套间的线程发送Windows消息来调用COM对象。每个STA性质的线程自动形成一个STA套间，这个套间容纳了该线程及其创建的所有STA性质COM对象。MTA性质的线程创建STA性质的COM对象时，系统自动把该COM对象放在default STA套间内，由该套间的STA线程来执行该COM对象的方法。每个进程至多有一个default STA套间，该套间与套间内线程是自动生成的。&lt;/li&gt;
-  &lt;li&gt;多线程套间（Multi-Threaded Apartment，MTA）：每个进程至多有一个MTA套间。所有MTA性质的线程都属于MTA套间。所有MTA性质的COM对象也都属于这个MTA套间。STA性质的线程创建MTA性质的COM对象时，系统自动创建一些线程以执行这些MTA性质的COM对象，这些线程也属于MTA套间，系统返回安整后的COM对象的描述给STA性质的线程。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一个COM对象只能存在于一个套间。COM对象一经创建就确定所属套间，并且直到销毁它一直存在于这个套间。COM对象有4种套间模式：&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%8D%95%E7%BA%BF%E7%A8%8B&quot;&gt;单线程&lt;/a&gt;套间（Single Threading Apartment，STA），&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%A4%9A%E7%BA%BF%E7%A8%8B&quot;&gt;多线程&lt;/a&gt;套间（MTA），线程中立套间（Thread Neutral Apartment，NA），以及Both(STA+MTA)。详见下表。COM对象的套间类型写在Windows注册表相关条目中。&lt;/p&gt;
-
-&lt;p&gt;一个COM线程从创建到结束都属于同一个套间。COM线程只有两种套间模式：STA或MTA。[&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#cite_note-13&quot;&gt;13]&lt;/a&gt;线程必须通过调用CoInitializeEx()函数并且设定参数为COINIT_APARTMENTTHREADED或者COINIT_MULTITHREADED，来指明该线程的套间模式。调用了CoInitializeEx()函数的线程即已进入套间，直到线程调用CoUninitialize()函数或者自身终止，才会离开套间。COM为每个STA的线程自动创建了一个隐藏窗口，其Windows class是”OleMainThreadWndClass” 。跨套间调用这个STA套间内的COM对象，实际上是向这个隐藏窗口发送了一条窗口消息，通过消息循环与分派，该窗口过程收到这条窗口消息并调用相应的COM对象的接口方法。&lt;/p&gt;
-
-&lt;p&gt;线程与属于同一套间的对象遵循相同的线程访问规则，可以直接执行方法调用而不需COM的辅助。线程跨套间边界去调用COM对象，传递的指针需要&lt;a href=&quot;https://zh.wikipedia.org/wiki/Marshalling_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)&quot;&gt;marshalling&lt;/a&gt;。如果通过标准的COM的API来调用，可以自动完成安整。例如，把一个COM接口指针作为参数传递给另外一个套间的COM对象的proxy的情形。但如果软件编程者跨套间传递接口指针而没有使用标准COM机制，就需要手工完成安整（通过CoMarshalInterThreadInterfaceInStream函数）与反安整（通过CoGetInterfaceAndReleaseStream函数获取COM接口的proxy）。例如，把COM接口指针作为线程启动时的参数传递的情形。&lt;/p&gt;
-
-&lt;p&gt;跨进程的调用COM对象类似于同一进程内跨套间的调用COM对象。&lt;/p&gt;
-
-&lt;p&gt;Object Linking &amp;amp; Embedding (&lt;strong&gt;OLE&lt;/strong&gt;，对象链接与嵌入技术)提供了如下几种套间:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;套间类型&lt;/th&gt;
-      &lt;th&gt;描述&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;单线程套间&lt;/strong&gt;[&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#cite_note-14&quot;&gt;14]&lt;/a&gt;（&lt;em&gt;STA&lt;/em&gt;），（ThreadingModel=&lt;em&gt;Apartment&lt;/em&gt;）&lt;/td&gt;
-      &lt;td&gt;一个单独的线程专门用于执行COM对象的方法。如果是STA的COM线程创建了STA的COM对象，这个COM对象的方法就由该线程执行，该线程调用该COM对象是直接调用。如果MTA的COM线程创建了STA的COM对象，系统在当前进程内自动创建一个default STA线程来执行该STA的COM对象的方法，并把COM对象的proxy返回该MTA的线程。COM对象所在STA套间之外的线程调用该COM对象的方法，需要对COM对象的指针先做&lt;a href=&quot;https://zh.wikipedia.org/wiki/Marshalling_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)&quot;&gt;marshalling&lt;/a&gt;再由操作系统自动排队（通过该COM对象被调用方法所在的线程的标准的&lt;a href=&quot;https://zh.wikipedia.org/wiki/Microsoft_Windows%E7%9A%84%E8%A8%8A%E6%81%AF%E8%BF%B4%E5%9C%88&quot;&gt;Microsoft Windows的訊息迴圈&lt;/a&gt;）。这提供了自动同步以确保对象的方法每次调用执行完毕后才能启动方法的新的调用。开发者不需要担心线程加锁（locking）或&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%AB%B6%E6%85%8B%E6%A2%9D%E4%BB%B6&quot;&gt;競態條件&lt;/a&gt;。如果跨套间调用STA的COM对象，该对象所在STA的线程必须提供线程消息循环处理机制。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;多线程套间&lt;/strong&gt;[&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#cite_note-15&quot;&gt;15]&lt;/a&gt;（&lt;em&gt;MTA&lt;/em&gt;），（ThreadingModel=&lt;em&gt;Free&lt;/em&gt;）&lt;/td&gt;
-      &lt;td&gt;COM&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%BF%90%E8%A1%8C%E6%97%B6&quot;&gt;运行时&lt;/a&gt;不提供同步，多个MTA线程可以同时调用同一个MTA的COM对象，由各个MTA线程直接执行COM对象的方法，且因为在同一个MTA中因此不需要安整。COM对象需要自己实现同步控制以避免多线程同时访问造成的&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%AB%B6%E6%85%8B%E6%A2%9D%E4%BB%B6&quot;&gt;競態條件&lt;/a&gt;或死锁。STA的线程创建MTA的COM对象，系统自动创建一个或多个线程来执行MTA的COM对象。STA线程调用MTA的COM对象也需要&lt;a href=&quot;https://zh.wikipedia.org/wiki/Marshalling_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)&quot;&gt;marshalling&lt;/a&gt;，系统自动分配某个自动创建的线程来执行COM对象。MTA的优点是提高了并发处理性能，同时工作线程不需要有自己的&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97&quot;&gt;Windows消息循环&lt;/a&gt;。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;自动选择套间&lt;/strong&gt;[&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#cite_note-16&quot;&gt;16]&lt;/a&gt;，（ThreadingModel=&lt;em&gt;Both&lt;/em&gt;）&lt;/td&gt;
-      &lt;td&gt;COM对象创建时系统自动选择STA或MTA，以匹配主调线程的套间类别。这避免了很多&lt;a href=&quot;https://zh.wikipedia.org/wiki/Marshalling_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)&quot;&gt;marshalling&lt;/a&gt;开销，例如一个MTA服务器被一个STA线程调用。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Thread Neutral Apartment&lt;/strong&gt;（&lt;em&gt;NA&lt;/em&gt;），（ThreadingModel=&lt;em&gt;Neutral&lt;/em&gt;）&lt;/td&gt;
-      &lt;td&gt;一个特殊的套间，没有任何指定的线程。当STA或MTA线程调用同一进程的NA对象，则调用线程临时离开它的套间并执行COM对象的代码，没有任何线程切换。即任何线程都可以直接了当调用COM对象的方法。[&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#cite_note-17&quot;&gt;17]&lt;/a&gt;因此NA可以认为是优化套间之间方法调用的效率。&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;参考:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#%E7%BA%BF%E7%A8%8B%E5%8C%96%E4%B8%8E%E2%80%9C%E5%A5%97%E9%97%B4%E2%80%9D&quot;&gt;https://zh.wikipedia.org/wiki/%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B#%E7%BA%BF%E7%A8%8B%E5%8C%96%E4%B8%8E%E2%80%9C%E5%A5%97%E9%97%B4%E2%80%9D&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-CN/dotnet/api/system.stathreadattribute&quot;&gt;https://docs.microsoft.com/zh-CN/dotnet/api/system.stathreadattribute&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/1293402/why-does-wpf-require-a-stathread-attribute-to-be-applied-to-the-main-method&quot;&gt;https://stackoverflow.com/questions/1293402/why-does-wpf-require-a-stathread-attribute-to-be-applied-to-the-main-method&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;改天接着聊，欢迎来评论区留言互动哈~&lt;/p&gt;
-</description>
-        <pubDate>Mon, 29 Jun 2020 00:00:00 +0800</pubDate>
-        <link>https://geekplayers.com/visual-cpp-wpf-method.html</link>
-        <guid isPermaLink="true">https://geekplayers.com/visual-cpp-wpf-method.html</guid>
-        
-        <category>WPF</category>
-        
-        <category>C++</category>
-        
-        
-        <category>[&quot;WPF&quot;, &quot;C++&quot;]</category>
-        
-        <category>[&quot;WPF&quot;, &quot;C++&quot;]</category>
-        
-        <category>WPF</category>
-        
-        <category>C++</category>
         
       </item>
     
