@@ -7,21 +7,21 @@
 
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="{{li_class}}">
     {% if include.url %}
-        <a itemprop="item" itemtype="https://schema.org/Thing" href="{{include.url}}">
-            {% if include.fa %}
-            <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true">{{ }}</i></span>
-            {% endif %}                
-            <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
-        </a>
-        <meta itemprop="position" content="1" />
+    <a itemprop="item" itemtype="https://schema.org/Thing" href="{{include.url}}">
+        {% if include.fa %}
+        <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i>{{ }}</span>
+        {% endif %}
+        <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
+    </a>
+    <meta itemprop="position" content="1" />
     {% else %}
     <span itemprop="item" itemscope itemtype="https://schema.org/Thing">
-    {% if include.fa %}
-    <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true">{{ }}</i></span>
-    {% endif %}
+        {% if include.fa %}
+        <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i>{{ }}</span>
+        {% endif %}
 
-    <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
-</span>
+        <span itemprop="name">{% if include.title %}{{include.title}}{% else %}{{ }}{% endif %}</span>
+    </span>
     {% endif %}
     <meta itemprop="position" content="{{include.position}}" />
 </li>
