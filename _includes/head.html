@@ -136,7 +136,7 @@
 					"description": "{{ site.subtitle }}!",
 					"author": {
 						"@type": "Person",
-						"name": "{% assign author = site.data.authors[page.author] %} {% if author %}{% auther %}{% else %} Bravo Yeung {% endif %}"
+						"name": "{% if site.data.authors[page.author] %}{{ page.author }} {% else %}Bravo Yeung{% endif %}"
 					},
 					"image": [
 						"{% if page.image %} {{ page.image }} {% endif %}"
