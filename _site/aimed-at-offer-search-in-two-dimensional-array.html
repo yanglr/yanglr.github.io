@@ -10,11 +10,17 @@
     <!-- simple jekyll search -->
     <script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
 
-    <!-- Favicon Icon -->
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
-    <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
-    <link rel="apple-touch-icon" href="/img/icon-196x196.png">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png">
+
+	<meta name="theme-color" content="#cc0000">
+	<meta name="msapplication-TileColor" content="#cc0000">
+	<meta name="msapplication-TileImage" content="//geekplayers.com/assets/images/better-me.jpg">
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -40,23 +46,23 @@
     <meta name="description" content="剑指Offer的C#实战之二维数组中的查找">   
   
      <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="剑指Offer - 二维数组中的查找"/>
-    <meta property="og:image" content="/assets/images/better-me.jpg"/>
+    <meta property="og:title" content="剑指Offer - 二维数组中的查找 | 极客玩家大白"/>
+    <meta property="og:image" content="//geekplayers.com/assets/images/better-me.jpg"/>
+
     <meta property="og:url" content="http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html"/>
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://localhost:4000/assets/images/better-me.jpg"/>
     <meta property="og:site_name" content="极客玩家大白"/>
-    <meta property="og:description" content="由 Edison Zhou公众号「恰童鞋骚年」授权发表~刚刚结束了《每天5分钟用C#学习数据结构》的学习之旅，今天开始我们来用之前学到的数据结构知识来刷《剑指Offer》的一些核心题目（精选了其中30+道题目），希望对你有帮助！本文是第一篇，题目为：二维数组中的查找。画外音：后台回复offer，pdf下载链接。1..."/>
+    <meta property="og:description" content="剑指Offer的C#实战之二维数组中的查找"/>
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:title" content="剑指Offer - 二维数组中的查找" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/better-me.jpg" />
+    <meta name="twitter:image" content="//geekplayers.com/assets/images/better-me.jpg" />
     <meta name="twitter:url" content="http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html" />
-    <meta name="twitter:description" content="由 Edison Zhou公众号「恰童鞋骚年」授权发表~刚刚结束了《每天5分钟用C#学习数据结构》的学习之旅，今天开始我们来用之前学到的数据结构知识来刷《剑指Offer》的一些核心题目（精选了其中30+道题目），希望对你有帮助！本文是第一篇，题目为：二维数组中的查找。画外音：后台回复offer，pdf下载链接。1..." />
+    <meta name="twitter:description" content="剑指Offer的C#实战之二维数组中的查找" />
   
     <link rel="canonical" href="http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白 RSS feed" href="http://localhost:4000/feed.xml">
     <link rel="sitemap" type="application/xml" title="极客玩家大白 Sitemap" href="http://localhost:4000/sitemap.xml" />
 
 	<script type="application/ld+json">
@@ -65,9 +71,9 @@
 			"@graph": [
 				{
 					"@type": "ImageObject",
-					"@id": " /assets/images/better-me.jpg ",
+					"@id": " //geekplayers.com/assets/images/better-me.jpg ",
 					"inLanguage": "zh-CN",
-					"url": " /assets/images/better-me.jpg ",
+					"url": " //geekplayers.com/assets/images/better-me.jpg ",
 					"width": 266,
 					"height": 266,
 					"caption": "剑指Offer - 二维数组中的查找 | 极客玩家大白"
@@ -83,8 +89,8 @@
 					"primaryImageOfPage": {
 						"@id": "http://localhost:4000"
 					},
-					"datePublished": "",
-					"dateModified": "2020-09-30T09:20:00+08:00",
+					"datePublished": "2020-06-17T15:30:00+08:00",
+					"dateModified": "2020-10-03T00:16:49+08:00",
 					"description": "剑指Offer的C#实战之二维数组中的查找",
 					"inLanguage": "zh-CN",
 					"potentialAction": [
@@ -106,14 +112,14 @@
 						"@id": "http://localhost:4000"
 					},
 					"headline": "剑指Offer - 二维数组中的查找 | 极客玩家大白",
-					"datePublished": "",
-					"dateModified": "2020-09-30T09:20:00+08:00",
+					"datePublished": "2020-06-17T15:30:00+08:00",
+					"dateModified": "2020-10-03T00:16:49+08:00",
 					"commentCount": 30,
 					"publisher": {
 						"@id": "http://localhost:4000"
 					},
 					"image": {
-						"@id": " /assets/images/better-me.jpg "
+						"@id": " //geekplayers.com/assets/images/better-me.jpg "
 					},
 					"articleSection": "剑指Offer - 二维数组中的查找",
 					"inLanguage": "zh-CN",
@@ -142,7 +148,7 @@
 						"name": "edison_zhou "
 					},
 					"image": [
-						" /assets/images/better-me.jpg "
+						" //geekplayers.com/assets/images/better-me.jpg "
 					],
 					"url": "http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html",
 					"recipeIngredient": [
@@ -168,7 +174,7 @@
 							"url": "http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html#step-3"
 						}
 					],
-					"datePublished": "",
+					"datePublished": "2020-06-17T15:30:00+08:00",
 					"@id": "http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html",
 					"isPartOf": {
 						"@id": "http://localhost:4000"

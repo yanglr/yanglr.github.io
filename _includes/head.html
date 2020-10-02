@@ -1,9 +1,11 @@
-﻿<head>
+﻿<head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+	<meta name="applicable-device" content="pc,mobile" />
+	<meta name="google" value="notranslate"/>
+
     <!-- simple jekyll search -->
     <script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
 
@@ -14,11 +16,12 @@
     <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon.png">
     <link rel="apple-touch-icon" href="/assets/images/favicon.png">
 	<link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png">
+	<link rel="search" type="application/opensearchdescription+json" href="https://geekplayers.com/search.json" title="{{ site.title }}" />
 
-	<meta name=theme-color content=#cc0000>
-	<meta name=msapplication-TileColor content=#cc0000>
-	{% if page.image %}<meta name=msapplication-TileImage content={{ page.image }}>{% endif %}
-	
+	<meta name="theme-color" content="#cc0000">
+	<meta name="msapplication-TileColor" content="#cc0000">
+	{% if page.image %}<meta name="msapplication-TileImage" content="{{ page.image }}">{% endif %}
+
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
         _atrk_opts = { atrk_acct: "K78pv1Y1Mn20Io", domain: "geekplayers.com", dynamic: true };
@@ -37,29 +40,40 @@
     <meta name="sogou_site_verification" content="53WDIeIDAM" /> <!-- Submit github.io to sg. -->
     <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F" />
 
-    <title>{% if page.titlebar %} {{ page.titlebar | escape }}_极客玩家大白{% elsif page.title %} {{ page.title | escape }}_极客玩家大白{% else %}{{ site.title | escape }}{% endif %}</title>
+	<title>{% if page.titlebar %} {{ page.titlebar | escape }}_极客玩家大白{% elsif page.title %} {{ page.title | escape }}_极客玩家大白{% else %}{{ site.title | escape }}{% endif %}</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords }}{% endif %}">
     {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">   
-  
-     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="{{ page.title }}"/>
-    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% endif %}
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" property="og:description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}"/>
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/> <meta property="og:image:width" content="266"> <meta property="og:image:height" content="266">{% endif %}
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:updated_time" content="{{ site.time | date_to_xmlschema }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
     <meta property="og:site_name" content="{{ site.title }}"/>
-    <meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.twitter_url }}">
-    <meta name="twitter:title" content="{{ page.title }}" />
-    {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}"/>
+
+	<meta property="og:type" content="article">
+	<meta property="article:section" content="{{ site.subtitle }}">
+	{% if page.image %}<meta property="og:image:secure_url" content="{{ page.image }}"/>{% endif %}
+	<meta property="og:image:alt" content="{{ site.title }}">
+	<meta name="apple-mobile-web-app-title" content="{{ site.title }}"/>
+	<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	<meta property="article:modified_time" content="{{ site.time | date_to_xmlschema }}">
+	
+	<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yanglr">
+    <meta name="twitter:title" content="Bravo Yeung" />
+    {% if page.image %}<meta name="twitter:image" content="{{ page.image }}" />{% endif %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-    <meta name="twitter:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}" />
   
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
     <link rel="sitemap" type="application/xml" title="{{ site.title }} Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
 	<script type="application/ld+json">

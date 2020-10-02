@@ -10,11 +10,17 @@
     <!-- simple jekyll search -->
     <script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
 
-    <!-- Favicon Icon -->
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
-    <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
-    <link rel="apple-touch-icon" href="/img/icon-196x196.png">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png">
+
+	<meta name="theme-color" content="#cc0000">
+	<meta name="msapplication-TileColor" content="#cc0000">
+	<meta name="msapplication-TileImage" content="//geekplayers.com/assets/images/better-me.jpg">
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -42,23 +48,27 @@
 ">   
   
      <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="LeetCode面试系列 第3天：No.67 - 二进制数求和"/>
-    <meta property="og:image" content="/assets/images/better-me.jpg"/>
+    <meta property="og:title" content="LeetCode面试系列 第3天：No.67 - 二进制数求和 | 极客玩家大白"/>
+    <meta property="og:image" content="//geekplayers.com/assets/images/better-me.jpg"/>
+
     <meta property="og:url" content="http://localhost:4000/python-leetcode67-add-binary.html"/>
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://localhost:4000/assets/images/better-me.jpg"/>
     <meta property="og:site_name" content="极客玩家大白"/>
-    <meta property="og:description" content="大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 二进制之和 来分析，其中涉及到的主要知识是 Python 中的 进制转换，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。今天要给大家分析的面试题是 LeetCod..."/>
+    <meta property="og:description" content="&lt;p&gt;大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 &lt;strong&gt;二进制之和&lt;/strong&gt; 来分析，其中涉及到的主要知识是 Python 中的 &lt;strong&gt;进制转换&lt;/strong&gt;，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。&lt;/p&gt;
+
+"/>
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:title" content="LeetCode面试系列 第3天：No.67 - 二进制数求和" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/better-me.jpg" />
+    <meta name="twitter:image" content="//geekplayers.com/assets/images/better-me.jpg" />
     <meta name="twitter:url" content="http://localhost:4000/python-leetcode67-add-binary.html" />
-    <meta name="twitter:description" content="大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 二进制之和 来分析，其中涉及到的主要知识是 Python 中的 进制转换，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。今天要给大家分析的面试题是 LeetCod..." />
+    <meta name="twitter:description" content="&lt;p&gt;大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 &lt;strong&gt;二进制之和&lt;/strong&gt; 来分析，其中涉及到的主要知识是 Python 中的 &lt;strong&gt;进制转换&lt;/strong&gt;，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。&lt;/p&gt;
+
+" />
   
     <link rel="canonical" href="http://localhost:4000/python-leetcode67-add-binary.html">
-    <link rel="alternate" type="application/rss+xml" title="极客玩家大白" href="http://localhost:4000/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白 RSS feed" href="http://localhost:4000/feed.xml">
     <link rel="sitemap" type="application/xml" title="极客玩家大白 Sitemap" href="http://localhost:4000/sitemap.xml" />
 
 	<script type="application/ld+json">
@@ -67,9 +77,9 @@
 			"@graph": [
 				{
 					"@type": "ImageObject",
-					"@id": " /assets/images/better-me.jpg ",
+					"@id": " //geekplayers.com/assets/images/better-me.jpg ",
 					"inLanguage": "zh-CN",
-					"url": " /assets/images/better-me.jpg ",
+					"url": " //geekplayers.com/assets/images/better-me.jpg ",
 					"width": 266,
 					"height": 266,
 					"caption": "LeetCode面试系列 第3天：No.67 - 二进制数求和 | 极客玩家大白"
@@ -85,8 +95,8 @@
 					"primaryImageOfPage": {
 						"@id": "http://localhost:4000"
 					},
-					"datePublished": "",
-					"dateModified": "2020-09-30T09:20:00+08:00",
+					"datePublished": "2019-09-14T00:00:00+08:00",
+					"dateModified": "2020-10-03T00:16:49+08:00",
 					"description": "&lt;p&gt;大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 &lt;strong&gt;二进制之和&lt;/strong&gt; 来分析，其中涉及到的主要知识是 Python 中的 &lt;strong&gt;进制转换&lt;/strong&gt;，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。&lt;/p&gt;
 
 ",
@@ -110,14 +120,14 @@
 						"@id": "http://localhost:4000"
 					},
 					"headline": "LeetCode面试系列 第3天：No.67 - 二进制数求和 | 极客玩家大白",
-					"datePublished": "",
-					"dateModified": "2020-09-30T09:20:00+08:00",
+					"datePublished": "2019-09-14T00:00:00+08:00",
+					"dateModified": "2020-10-03T00:16:49+08:00",
 					"commentCount": 30,
 					"publisher": {
 						"@id": "http://localhost:4000"
 					},
 					"image": {
-						"@id": " /assets/images/better-me.jpg "
+						"@id": " //geekplayers.com/assets/images/better-me.jpg "
 					},
 					"articleSection": "LeetCode面试系列 第3天：No.67 - 二进制数求和",
 					"inLanguage": "zh-CN",
@@ -146,7 +156,7 @@
 						"name": "Bravo Yeung"
 					},
 					"image": [
-						" /assets/images/better-me.jpg "
+						" //geekplayers.com/assets/images/better-me.jpg "
 					],
 					"url": "http://localhost:4000/python-leetcode67-add-binary.html",
 					"recipeIngredient": [
@@ -172,7 +182,7 @@
 							"url": "http://localhost:4000/python-leetcode67-add-binary.html#step-3"
 						}
 					],
-					"datePublished": "",
+					"datePublished": "2019-09-14T00:00:00+08:00",
 					"@id": "http://localhost:4000/python-leetcode67-add-binary.html",
 					"isPartOf": {
 						"@id": "http://localhost:4000"

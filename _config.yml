@@ -59,7 +59,10 @@ defaults:
       type: posts
     values:
       layout: post
-      image: /assets/images/better-me.jpg  
+  - scope:
+      path: ""
+    values:
+      image: https://geekplayers.com/assets/images/better-me.jpg  
 
 # Build settings
 lsi:         false
