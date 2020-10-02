@@ -59,6 +59,7 @@ defaults:
       type: posts
     values:
       layout: post
+      image: /assets/images/better-me.jpg  
 
 # Build settings
 lsi:         false

@@ -3,8 +3,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- simple jekyll search -->
+    <script src="//cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
+    <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
+    <link rel="apple-touch-icon" href="/img/icon-196x196.png">
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -26,11 +33,148 @@
 
     <title>{% if page.titlebar %} {{ page.titlebar | escape }}_极客玩家大白{% elsif page.title %} {{ page.title | escape }}_极客玩家大白{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords }}{% endif %}">
-    <meta name="description"
-          content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
-
+    {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">   
+  
+     <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.twitter_url }}">
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
+  
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="sitemap" type="application/xml" title="{{ site.title }} Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "ImageObject",
+					"@id": "{% if page.image %} {{ page.image }} {% endif %}",
+					"inLanguage": "zh-CN",
+					"url": "{% if page.image %} {{ page.image }} {% endif %}",
+					"width": 266,
+					"height": 266,
+					"caption": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}"
+				},
+				{
+					"@type": "WebPage",
+					"@id": "{{ site.url }}{{ page.url }}",
+					"url": "{{ site.url }}{{ page.url }}",
+					"name": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}",
+					"isPartOf": {
+						"@id": "{{ site.url }}"
+					},
+					"primaryImageOfPage": {
+						"@id": "{{ site.url }}"
+					},
+					"datePublished": "{{ post.date }}",
+					"dateModified": "2020-09-30T09:20:00+08:00",
+					"description": "{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}",
+					"inLanguage": "zh-CN",
+					"potentialAction": [
+						{
+							"@type": "ReadAction",
+							"target": [
+								"{{ site.url }}{{ page.url }}"
+							]
+						}
+					]
+				},
+				{
+					"@type": "Article",
+					"@id": "{{ site.url }}{{ page.url }}",
+					"isPartOf": {
+						"@id": "{{ site.url }}{{ page.url }}"
+					},
+					"author": {
+						"@id": "{{ site.url }}"
+					},
+					"headline": "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}",
+					"datePublished": "{{ post.date }}",
+					"dateModified": "2020-09-30T09:20:00+08:00",
+					"commentCount": 30,
+					"publisher": {
+						"@id": "{{ site.url }}"
+					},
+					"image": {
+						"@id": "{% if page.image %} {{ page.image }} {% endif %}"
+					},
+					"articleSection": "{% if page.title %}{{ page.title }}{% endif %}",
+					"inLanguage": "zh-CN",
+					"potentialAction": [
+						{
+							"@type": "CommentAction",
+							"name": "Comment",
+							"target": [
+								"{{ site.url }}{{ page.url }}"
+							]
+						}
+					]
+				},
+				{
+					"@type": "Person",
+					"@id": "{{ site.url }}",
+					"name": "{{ site.name }}"
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "Recipe",
+					"name": "{{ site.subtitle }}",
+					"description": "{{ site.subtitle }}!",
+					"author": {
+						"@type": "Person",
+						"name": "{% assign author = site.data.authors[page.author] %} {% if author %}{% auther %}{% else %} Bravo Yeung {% endif %}"
+					},
+					"image": [
+						"{% if page.image %} {{ page.image }} {% endif %}"
+					],
+					"url": "{{ site.url }}{{ page.url }}",
+					"recipeIngredient": [
+						"第1步",
+						"第2步",
+						"第3步",
+						"第4步"
+					],
+					"recipeInstructions": [
+						{
+							"@type": "HowToStep",
+							"text": "第1步",
+							"url": "{{ site.url }}{{ page.url }}#step-1"
+						},
+						{
+							"@type": "HowToStep",
+							"text": "第2步",
+							"url": "{{ site.url }}{{ page.url }}#step-2"
+						},
+						{
+							"@type": "HowToStep",
+							"text": "第3步",
+							"url": "{{ site.url }}{{ page.url }}#step-3"
+						}
+					],
+					"datePublished": "{{ post.date }}",
+					"@id": "{{ site.url }}{{ page.url }}",
+					"isPartOf": {
+						"@id": "{{ site.url }}"
+					},
+					"mainEntityOfPage": "{{ site.url }}"
+				}
+			]
+		}
+	</script>
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">

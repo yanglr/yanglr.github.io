@@ -9,6 +9,7 @@ excerpt: 必应搜索的API接口node.js版
 keywords: 大奔SEO,seo,Bing,大白SEO
 description: 必应API接口node.js版 - 大奔SEO
 topmost: true
+image: https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com1.png
 ---
 
 近期，在研究百度、必应、API等的url提交API时，发现有用Go语言做工具的大佬的分享 [利用 API 自动向搜索引擎提交网址(Go语言版) - pyList](https://pylist.com/t/1582821291)。
