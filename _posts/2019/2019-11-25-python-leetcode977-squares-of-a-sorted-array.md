@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第12天：No.977 - 有序数组的平方
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 上一篇 LeetCode 面试题中，我们分析了一道`集合`相关的数学题。现在我们再来看一个`排序`相关的面试题吧~

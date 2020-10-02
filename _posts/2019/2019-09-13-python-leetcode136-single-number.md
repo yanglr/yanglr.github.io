@@ -8,6 +8,7 @@ categories:
 - [leetcode, python, Leetcode面试题]
 copyright: python
 excerpt: Leetcode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 LeetCode面试题题系列的上一篇文章，我们介绍了**位操作**的一个典型题。

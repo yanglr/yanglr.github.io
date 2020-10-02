@@ -9,6 +9,7 @@ tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
 excerpt: LeetCode面试No.976 - 三角形的最大周长
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 上一篇 LeetCode 面试题中，我们分析了一道字符串的算法题 - **反转字符串中的元音字母**，今天我们来分析一道简单的几何题吧。

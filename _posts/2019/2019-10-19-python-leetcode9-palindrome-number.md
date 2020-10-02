@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第6天：No.9 - 回文数
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 上一篇面试题中，我们使用了 **埃拉托斯特尼筛法** 去统计给定范围内质数的个数(LeetCode No.204)，还是有点烧脑的。今天我们来分析一道相对轻松的字符串面试题吧，恰好大家从Python 100天中学到的字符串知识可以派上用场。

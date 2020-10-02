@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第5天：No.204 - 统计质数
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 在上篇算法题的文章中，我们介绍了 LeetCode 中的一道*数学题* - **快乐数** 。今天，我们来聊聊**质数**(英文是Prime，也称为素数)相关的面试题。以前很多编程书上会有个经典问题，即**判断一个数是否是质数**，在那之后大家应该对判定质数的逻辑有了一定的认识。今天呢，我们来解决一个进阶问题，如何计算一个区间内素数(质数)的数量。

@@ -9,6 +9,7 @@ categories:
 tags: [leetcode, python]
 copyright: 萌较瘦
 excerpt: Leetcode面试题系列第1天
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 最近，打算花点时间写个 Python 解决 Leetcode 题的系列文章~

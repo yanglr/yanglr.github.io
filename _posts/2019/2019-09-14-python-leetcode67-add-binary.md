@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第3天：No.67 - 二进制数求和
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png  
 ---
 
 大家都知道 LeetCode 中的第一道题是 Two Sum，比较简单。我们今天决定挑一个与之类似，但难度稍大于之的问题 **二进制之和** 来分析，其中涉及到的主要知识是 Python 中的 **进制转换**，比如后面的解题方法中我们先将二进制转换为十进制，最后又将十进制转换回二进制。

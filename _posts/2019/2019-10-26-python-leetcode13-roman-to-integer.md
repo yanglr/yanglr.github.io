@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第7天：No.13 - 罗马数字转整数
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 上一篇 LeetCode 面试题中，我们分析了一道轻松的字符串面试题 - **回文数**。今天我们来分析一道将数学和字符串结合起来的的面试题。

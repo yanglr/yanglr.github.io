@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第11天：No.645 - 错误的集合
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
 上一篇 LeetCode 面试题中，我们分析了一道简单的几何数学题。今天我们来分析一道集合相关的数学题。

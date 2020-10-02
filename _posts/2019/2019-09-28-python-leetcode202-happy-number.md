@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第4天：No.202 - 快乐数
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png  
 ---
 
 或许你不知道的是，Leetcode 中是有很多 *数学题* 的，本文要解析的题 **快乐数** 就是其中到一个典型问题，本题将基于数据结构 `set` 来求解。
