@@ -70,9 +70,11 @@
         var hostname = window.location.hostname;
 
         var newUrl = "";
+        console.log(window.location.href);
         if(hostname.indexOf('github.io') > -1)
         {
             newUrl = window.location.href.replace('geekplayers.com', 'yanglr.github.io');
+            console.log(newUrl);
         }
         document.getElementById("index-query").setAttribute("href", newUrl);
 
