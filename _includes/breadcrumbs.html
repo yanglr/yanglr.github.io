@@ -94,7 +94,7 @@
             {% assign categories = include.path | split:"/" | pop  %}
             {% assign route="" %}
 
-            当前位置:&nbsp;
+            <span><i class="fa fa-anchor"></i>&nbsp;当前位置:&nbsp;</span>
             {% include breadcrumbs_li.html fa="fa-home" url="/" title="主页" position="1" %}
             {% raw %}&nbsp;/&nbsp;{% endraw %}
             {% for category in page.categories %}
