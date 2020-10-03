@@ -71,13 +71,12 @@
         $('.geopattern').each(function () {
             $(this).geopattern($(this).data('pattern-id'));
         });
-
-        var initUrl = $("#index-query").href.toString();
+        
+        var initUrl = document.getElementById("index-query").href.toString();
         if (initUrl.indexOf('github.io') > -1) {
             var newUrl = initUrl.replace('geekplayers.com', 'yanglr.github.io');
             console.log(newUrl);
         }
-        $("#index-query").attr("href", newUrl);
-
+        document.getElementById("index-query").setAttribute("href", newUrl);
     });
 </script>
