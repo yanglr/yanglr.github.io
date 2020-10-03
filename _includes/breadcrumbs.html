@@ -127,8 +127,6 @@
             {% include breadcrumbs_li.html title=include.title position=category_position %}
             {% elsif forloop.last %}
             <font style="color: #6c757d;">{{ category }}</font>
-            {% else %}
-            {% include breadcrumbs_li.html title=" " position=category_position %}
             {% endif %}
             {% endfor %}
         </ol>
