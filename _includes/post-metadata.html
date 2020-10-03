@@ -67,15 +67,12 @@
 <script>
 
     $(document).ready(function () {
-        var initUrl = $("a#index-query").href;
-        var a = document.createElement('a');
-        a.href = initUrl;
-        var hostname = a.hostname;
-        if (hostname.indexOf('github.io') > -1) {
+        var initUrl = $("#index-query").href;
+        if (initUrl .indexOf('github.io') > -1) {
             var newUrl = replace('geekplayers.com', 'yanglr.github.io');
             console.log(newUrl);
         }
-        $("a#index-query").attr("href", newUrl);
+        $("#index-query").attr("href", newUrl);
 
         $('.geopattern').each(function () {
             $(this).geopattern($(this).data('pattern-id'));
