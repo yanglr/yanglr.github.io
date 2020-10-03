@@ -72,7 +72,7 @@
         var newUrl = "";
         if(hostname.indexOf('github.io') > -1)
         {
-            newUrl = replace('geekplayers.com', 'yanglr.github.io');
+            newUrl = window.location.href.replace('geekplayers.com', 'yanglr.github.io');
         }
         document.getElementById("index-query").setAttribute("href", newUrl);
 
