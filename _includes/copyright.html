@@ -65,7 +65,7 @@
         if(hostname.indexOf('github.io') > -1)
         {
             newUrl = window.location.href.replace('geekplayers.com', 'yanglr.github.io');
-            document.getElementById("link").setAttribute("href", newUrl);
+            document.getElementById("link").innerText = newUrl;
         }
 
         $('.geopattern').each(function(){
