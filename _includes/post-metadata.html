@@ -66,13 +66,9 @@
 
 <script>
 
-
     $(document).ready(function(){
-        var initUrl = "{{ site.url }}{{ page.url }}";
-        var a = document.createElement('a');
-        a.href = initUrl;
-        var hostname = a.hostname;
-        
+        var hostname = window.location.hostname;
+
         var newUrl = "";
         if(hostname.indexOf('github.io') > -1)
         {
