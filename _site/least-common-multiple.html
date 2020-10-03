@@ -60,7 +60,7 @@
     <meta property="og:title" content="华为oj之最小公倍数 | 极客玩家大白"/>
     <meta property="og:image" content="https://geekplayers.com/assets/images/better-me.jpg"/> <meta property="og:image:width" content="266"> <meta property="og:image:height" content="266">
 	<meta property="og:locale" content="zh_cn">
-	<meta property="og:updated_time" content="2020-10-03T17:20:03+08:00">
+	<meta property="og:updated_time" content="2020-10-03T19:43:26+08:00">
     <meta property="og:url" content="http://localhost:4000/least-common-multiple.html"/>
     <meta property="og:site_name" content="极客玩家大白"/>
     <meta property="og:description" content="&lt;h3 id=&quot;题目-求最小公倍数&quot;&gt;题目: 求最小公倍数&lt;/h3&gt;
@@ -72,7 +72,7 @@
 	<meta property="og:image:secure_url" content="https://geekplayers.com/assets/images/better-me.jpg"/>
 	<meta property="og:image:alt" content="极客玩家大白">
 	<meta property="article:published_time" content="2016-09-17T23:19:26+08:00">
-	<meta property="article:modified_time" content="2020-10-03T17:20:03+08:00">
+	<meta property="article:modified_time" content="2020-10-03T19:43:26+08:00">
 	
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@yanglr">
@@ -112,7 +112,7 @@
 						"@id": "http://localhost:4000"
 					},
 					"datePublished": "2016-09-17T23:19:26+08:00",
-					"dateModified": "2020-10-03T17:20:03+08:00",
+					"dateModified": "2020-10-03T19:43:26+08:00",
 					"description": "&lt;h3 id=&quot;题目-求最小公倍数&quot;&gt;题目: 求最小公倍数&lt;/h3&gt;
 
 ",
@@ -137,7 +137,7 @@
 					},
 					"headline": "华为oj之最小公倍数 | 极客玩家大白",
 					"datePublished": "2016-09-17T23:19:26+08:00",
-					"dateModified": "2020-10-03T17:20:03+08:00",
+					"dateModified": "2020-10-03T19:43:26+08:00",
 					"commentCount": 30,
 					"publisher": {
 						"@id": "http://localhost:4000"
@@ -506,13 +506,24 @@
                 
             </p>
             <p class="meta-info"><i class="fa fa-info-circle"></i>
-                <a rel="external nofollow" href="http://www.baidu.com/s?wd=http://localhost:4000/least-common-multiple.html" _target="_blank"
+                <a rel="external nofollow" id='index-query' href="http://www.baidu.com/s?wd=http://localhost:4000/least-common-multiple.html" _target="_blank"
                     title="度娘怜爱" target="_blank">&nbsp;<font style='color: #0d31bc; font-size: 16px;'>百度收录</font></a>
             </p>
         </div>
     </div>
 </section>
+
 <script>
+    var initUrl = "http://localhost:4000/least-common-multiple.html";
+    var a = document.createElement('a');
+    a.href = initUrl;
+    var hostname = a.hostname;
+    if(hostname.indexOf('github.io') > -1)
+    {
+        var newUrl = replace('geekplayers.com', 'yanglr.github.io');
+    }
+    $("a#index-query").attr("href", newUrl);
+
     $(document).ready(function(){
 
         $('.geopattern').each(function(){

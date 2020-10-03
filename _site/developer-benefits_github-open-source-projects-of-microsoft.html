@@ -56,7 +56,7 @@
     <meta property="og:title" content="一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收 | 极客玩家大白"/>
     <meta property="og:image" content="https://geekplayers.com/assets/images/better-me.jpg"/> <meta property="og:image:width" content="266"> <meta property="og:image:height" content="266">
 	<meta property="og:locale" content="zh_cn">
-	<meta property="og:updated_time" content="2020-10-03T17:20:03+08:00">
+	<meta property="og:updated_time" content="2020-10-03T19:43:26+08:00">
     <meta property="og:url" content="http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html"/>
     <meta property="og:site_name" content="极客玩家大白"/>
     <meta property="og:description" content="大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收"/>
@@ -66,7 +66,7 @@
 	<meta property="og:image:secure_url" content="https://geekplayers.com/assets/images/better-me.jpg"/>
 	<meta property="og:image:alt" content="极客玩家大白">
 	<meta property="article:published_time" content="2019-03-31T03:43:10+08:00">
-	<meta property="article:modified_time" content="2020-10-03T17:20:03+08:00">
+	<meta property="article:modified_time" content="2020-10-03T19:43:26+08:00">
 	
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@yanglr">
@@ -104,7 +104,7 @@
 						"@id": "http://localhost:4000"
 					},
 					"datePublished": "2019-03-31T03:43:10+08:00",
-					"dateModified": "2020-10-03T17:20:03+08:00",
+					"dateModified": "2020-10-03T19:43:26+08:00",
 					"description": "大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收",
 					"inLanguage": "zh-CN",
 					"potentialAction": [
@@ -127,7 +127,7 @@
 					},
 					"headline": "一大波开发者福利来了，一份微软官方Github上发布的开源项目清单等你签收 | 极客玩家大白",
 					"datePublished": "2019-03-31T03:43:10+08:00",
-					"dateModified": "2020-10-03T17:20:03+08:00",
+					"dateModified": "2020-10-03T19:43:26+08:00",
 					"commentCount": 30,
 					"publisher": {
 						"@id": "http://localhost:4000"
@@ -645,13 +645,24 @@
                 
             </p>
             <p class="meta-info"><i class="fa fa-info-circle"></i>
-                <a rel="external nofollow" href="http://www.baidu.com/s?wd=http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html" _target="_blank"
+                <a rel="external nofollow" id='index-query' href="http://www.baidu.com/s?wd=http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html" _target="_blank"
                     title="度娘怜爱" target="_blank">&nbsp;<font style='color: #0d31bc; font-size: 16px;'>百度收录</font></a>
             </p>
         </div>
     </div>
 </section>
+
 <script>
+    var initUrl = "http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html";
+    var a = document.createElement('a');
+    a.href = initUrl;
+    var hostname = a.hostname;
+    if(hostname.indexOf('github.io') > -1)
+    {
+        var newUrl = replace('geekplayers.com', 'yanglr.github.io');
+    }
+    $("a#index-query").attr("href", newUrl);
+
     $(document).ready(function(){
 
         $('.geopattern').each(function(){
