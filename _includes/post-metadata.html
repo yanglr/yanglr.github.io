@@ -72,7 +72,7 @@
             $(this).geopattern($(this).data('pattern-id'));
         });
 
-        var initUrl = "";
+        var initUrl;
         initUrl = $("#index-query").href;
         if (initUrl.indexOf('github.io') > -1) {
             var newUrl = initUrl.replace('geekplayers.com', 'yanglr.github.io');
