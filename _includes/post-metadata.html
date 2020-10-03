@@ -66,17 +66,23 @@
 
 <script>
 
-    $(document).ready(function () {
 
-        $('.geopattern').each(function () {
-            $(this).geopattern($(this).data('pattern-id'));
-        });
+    $(document).ready(function(){
+        var initUrl = "{{ site.url }}{{ page.url }}";
+        var a = document.createElement('a');
+        a.href = initUrl;
+        var hostname = a.hostname;
         
-        var initUrl = document.getElementById("index-query").href.toString();
-        if (initUrl.indexOf('github.io') > -1) {
-            var newUrl = initUrl.replace('geekplayers.com', 'yanglr.github.io');
-            console.log(newUrl);
+        var newUrl = "";
+        if(hostname.indexOf('github.io') > -1)
+        {
+            newUrl = replace('geekplayers.com', 'yanglr.github.io');
         }
         document.getElementById("index-query").setAttribute("href", newUrl);
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
     });
 </script>
