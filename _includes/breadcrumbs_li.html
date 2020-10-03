@@ -16,11 +16,7 @@
     <meta itemprop="position" content="1" />
     {% else %}
     <span itemprop="item" itemscope itemtype="https://schema.org/Thing">
-        {% if include.fa %}
-        <span itemprop="name"><i class="fa {{include.fa}}" aria-hidden="true"></i>&nbsp;{{ }}</span>
-        {% endif %}
-
-        <span itemprop="name">{% if include.title %}{{include.title}}{% else %}&nbsp;{{ }}{% endif %}</span>
+        <span itemprop="name">{% if include.title %}{{include.title}}{% else %}&nbsp; {% endif %}</span>
     </span>
     {% endif %}
     <meta itemprop="position" content="{{include.position}}" />
