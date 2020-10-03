@@ -74,7 +74,7 @@
 
         var initUrl;
         initUrl = $("#index-query").href;
-        if (initUrl.indexOf('github.io') > -1) {
+        if (initUrl.toString().indexOf('github.io') > -1) {
             var newUrl = initUrl.replace('geekplayers.com', 'yanglr.github.io');
             console.log(newUrl);
         }
