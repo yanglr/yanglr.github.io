@@ -10,6 +10,7 @@ category: windows
 tags: [mfc, windows]
 excerpt: 永远的窗口(个人对窗口的拙见) - 转载自helloj2ee的博客园博客
 author: helloj2ee
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/forever-window-p2.jpg
 ---
 
 来源: [永远的窗口（个人对窗口的拙见） - by helloj2ee](https://www.cnblogs.com/helloj2ee/archive/2009/06/29/1513210.html)

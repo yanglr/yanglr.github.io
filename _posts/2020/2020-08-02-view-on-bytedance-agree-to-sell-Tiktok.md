@@ -9,6 +9,7 @@ categories:
 # gzhname: 大白技术控
 tags: [tiktok, 字节跳动]
 excerpt: 如何看待媒体称「字节跳动同意放弃TikTok股份，以达成在美交易」？会给中国互联网带来哪些影响？
+image: https://cdn.jsdelivr.net/gh/yanglr/images/zhzz2020pqw7i.jpg
 ---
 
 # 如何看待媒体称「字节跳动同意放弃TikTok股份，以达成在美交易」？会给中国互联网带来哪些影响？

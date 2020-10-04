@@ -8,6 +8,7 @@ category: wpf
 
 tags: [mfc, windows]
 excerpt: WPF学习笔记（一） - 转载自邹溪源的博客园博客
+image: https://cdn.jsdelivr.net/gh/by8/by8.github.io@master/images/blog/wpf-event.png
 ---
 
 来源: [WPF学习笔记（一） - by 邹溪源](https://www.cnblogs.com/xiyuanMore/p/12520439.html)
@@ -584,7 +585,7 @@ WPF中的控件可以通过模板 Template 的形式来定义其内容，使得�
 
 而如果我们需要实现的功能有这么复杂，那大概使用传统的控件就无法实现，就得使用自定义控件了。（[点击查看示例代码](https://github.com/caomfan/WpfDemo.git)）
 
-![图片](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/zxy-wpf-self-define-control.png)
+![图片](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/zxy-wpf-self-define-control.png)
 
 作者定义了自定义控件 ButtonEx，并实现了依赖属性 ButtonType，见【依赖属性】，并定义了不同类型的样式特征。
 

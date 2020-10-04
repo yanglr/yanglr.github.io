@@ -10,6 +10,7 @@ categories:
 # gzhname: 大白技术控
 tags: [wpf]
 excerpt: 深入浅出XAML - 转载自《程序员杂志》
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img1.png
 ---
 
 今天来聊聊深入浅出XAML的那些事~
@@ -38,8 +39,7 @@ XAML用户界面的构建方式与HTML Web用户界面的构建方式非常相�
 
 这个特定的例子显示一个Text元素和一个Button元素，同时使用FlowPanel 在屏幕上排列它们。这些全都是Avalon定义的类，Avalon 是WinFX 的用户界面框架。Text 和Button元素是不言而喻的。FlowPanel 是窗格的一个例子。窗格用于根据特定的布局方法安排元素。FlowPanel 在屏幕上安排元素的方式与通常对文本进行格式编排的方式相同——元素从左至右地“流”过可用空间，在当前行没有更多空间时移到下一行上。结果如下所示。（第一幅图片显示了这样一个窗口，它足够宽到可在一行上同时包含两个元素。第二幅图片显示了当窗口不足够宽时所发生的情况 —— FlowPanel 将元素分割到两行上。）Avalon提供了针对不同布局技术的各种窗格类型，包括固定布局、停靠，以及基于列的文本流。
 
-![img1](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img1.png
-)
+![img1](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img1.png)
 
 ![img2](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/xaml-img2.png)
 

@@ -11,6 +11,7 @@ excerpt: 百度自动推送不能用了吗?你错了，刚恢复了！
 keywords: 百度自动推送, 百度自动推送js, 百度js自动推送代码
 description: 百度自动推送不能用了吗?你错了，刚恢复了！再也不要考虑"怎么关闭百度首页推送"了~
 topmost: true
+image: https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png
 ---
 
 在 **百度搜索线上公开课** 的第二期公开课中百度的产品运营小姐姐 **李文菊** 提到自动推送`push.js`接口过一段时间会恢复上线的。

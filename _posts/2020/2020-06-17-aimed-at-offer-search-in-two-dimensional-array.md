@@ -14,13 +14,14 @@ author: edison_zhou
 platform: 公众号
 gzhname: 恰童鞋骚年
 date: 2020-06-17 07:30:00
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh1.png
 ---
 
 由 Edison Zhou公众号「恰童鞋骚年」授权发表~
 
 ------
 
-![大白技术控geekplayers](//cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh1.png)
+![大白技术控geekplayers](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh1.png)
 
 刚刚结束了《[每天5分钟用C#学习数据结构](http://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=2651731421&idx=1&sn=f97cc4cd59e60f23341c8548c304fdc8&chksm=8bc3eadcbcb463cabb6bb6e8f3bdb01dd1cd2cc6963300bc36843d9aac6bedb1280e3c667c62&scene=21#wechat_redirect)》的学习之旅，今天开始我们来用之前学到的数据结构知识来刷《剑指Offer》的一些核心题目（精选了其中30+道题目），希望对你有帮助！本文是第一篇，题目为：二维数组中的查找。
 

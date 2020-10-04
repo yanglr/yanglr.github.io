@@ -16,7 +16,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/
 
 大家是否还记得电影黑客帝国中的数字雨林的场景？事实上，计算机底层数据的存储和运算都是二进制的，因而面试题环节中面试官也经常会问到二进制相关问题。
 
-![matrix](http://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/matrix-01.gif)
+![matrix](https://cdn.jsdelivr.net/gh/justdopython/justdopython.github.io/assets/images/2019/python/matrix-01.gif)
 
 比较典型的一个问题是 Leetcode 上第 89 号问题，
 

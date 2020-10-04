@@ -11,6 +11,7 @@ excerpt: FlagCounter插件被博客园禁用后，相似的替代工具有哪些
 keywords: flagcounter,flagcounter插件, flagcounter类似
 description: FlagCounter插件被博客园禁用后，相似的替代工具有哪些?
 topmost: true
+image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 ---
 
 ## FlagCounter被博客园禁用的解决方法

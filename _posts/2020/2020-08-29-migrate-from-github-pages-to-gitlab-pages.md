@@ -10,6 +10,7 @@ excerpt: 从github pages快速迁移Jekyll博客到gitlab pages的完全指南�
 description: 从github pages快速迁移Jekyll博客到gitlab pages的完全指南。 - 大白技术控
 keywords: gitlab pages, github pages, jekyll
 topmost: true
+image: https://cdn.jsdelivr.net/gh/yanglr/images/1598757844067-819530aa-262f-4971-bead-71c9c1b6abac.png
 ---
 
 ## 在GitLab pages上快速搭建Jekyll博客

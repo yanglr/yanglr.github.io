@@ -9,6 +9,7 @@ categories:
 # gzhname: 大白技术控
 tags: [半佛仙人, geekplayers.com]
 excerpt: 半佛仙人 - Master of Money 神圣的存款 - Vogue四月
+image: https://cdn.jsdelivr.net/gh/yanglr/images/banfo2.jpg
 ---
 
 # 半佛仙人 - Master of Money 神圣的存款

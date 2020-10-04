@@ -11,6 +11,7 @@ category: it
 
 tags: [hexo, it]
 description: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程
+image: https://gitee.com/geekplayers/images/raw/master/hexo7.png
 ---
 
 扯一扯在coding.net上建Hexo静态博客的坑和玩法~

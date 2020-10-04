@@ -10,6 +10,7 @@ categories:
 
 tags: [wpf]
 excerpt: 大白技术控 - 微软XAML Studio - WPF、Sliverlight、Xamarin、UWP等技术开发者的福音
+image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/xamlStudio1.png
 ---
 
 XAML Studio，用来调试REST服务的绑定挺棒的~

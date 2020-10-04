@@ -8,6 +8,7 @@ category: seo
 tags: [seo, 排行榜]
 excerpt: 国内SEO英雄榜，你上榜了嘛? - 大白技术控
 description: 国内SEO英雄榜，你上榜了嘛? - 大白技术控
+image: https://gitee.com/geekplayers/images/raw/master/zacsg-zanhui.jpg
 ---
 
 by [刘明](https://www.zhihu.com/people/seoaqua)
