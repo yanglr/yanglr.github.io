@@ -2,6 +2,7 @@
 layout: post
 redirect_from:
   - /2020/08/02/view-on-bytedance-agree-to-sell-Tiktok/
+  - /view-on-bytedance-agree-to-sell-Tiktok.html
 title: 如何看待媒体称「字节跳动同意放弃TikTok股份，以达成在美交易」？会给中国互联网带来哪些影响？
 categories:
 - [tiktok, 字节跳动, 社会价值观]

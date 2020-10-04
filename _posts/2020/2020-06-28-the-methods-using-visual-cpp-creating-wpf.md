@@ -2,6 +2,7 @@
 layout: post
 redirect_from:
   - /2020/06/28/the-methods-using-visual-Cpp-creating-wpf/
+  - /the-methods-using-visual-Cpp-creating-wpf.html 
 title: 用Visual C++创建WPF项目的三种主要方法
 categories: 
 - [WPF, C++]

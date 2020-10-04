@@ -2,6 +2,7 @@
 layout: post
 redirect_from:
   - /2020/06/27/Using-WPF-with-Managed-cpp/
+  - /Using-WPF-with-Managed-cpp.html
 title: 基于托管的C++来使用WPF - Using WPF with Managed C++
 categories: 
 - [WPF, C++]

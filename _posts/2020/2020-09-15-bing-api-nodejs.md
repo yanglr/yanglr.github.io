@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2020-09-15 10:21:20
+redirect_from:
+  - /bing-API-nodejs.html
 title: 必应API接口node.js版
 categories:
 - [大奔SEO,seo,Bing]
