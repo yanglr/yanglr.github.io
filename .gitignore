@@ -1,3 +1,11 @@
+_site/
+*.sw[po]
+*~
+.DS_Store
+Gemfile.lock
+.vscode/
+.jekyll-metadata
+
 .idea
 *.sqlite
 
