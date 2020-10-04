@@ -9,14 +9,10 @@ permalink: /link
 
 ## 友情链接
 
-<!-- - [吴章金falcon@TinyLab](http://tinylab.org) -->
 - [Dotnet9](https://dotnet9.com)
 - [峡州仙士之页](https://cjh0613.github.io/blog/index.html) - 世上本没有路
 - [Python知识圈](https://www.pyzhishiquan.com)
-- [林德熙 - 微软MVP Windows 应用开发方向](https://lindexi.gitee.io/) - <https://blog.lindexi.com/> - <https://lindexi.blog.csdn.net/>
-
-<!-- - [Walterlv - WPF专家(微软MVP)](https://blog.walterlv.com)
-- [云之幻 - UWP](https://blog.richasy.cn)   -->
+- [林德熙 - 微软MVP Windows 应用开发方向](https://lindexi.gitee.io/)
 
 ## 推荐网站
 
@@ -38,6 +34,6 @@ permalink: /link
 
 *需要展示你的网站，就在本页下面留言吧，也算是一种宣传方式。格式要求如下：*
 
-- 网站名称：tinylab  
-- 网站链接：<http://tinylab.com>
-- 网站描述：泰晓 的个人博客
+- 网站名称：极客玩家大白
+- 网站链接：<https://geekplayers.com>
+- 网站描述：极客玩家大白的个人博客
