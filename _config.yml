@@ -64,6 +64,12 @@ defaults:
     values:
       image: https://geekplayers.com/assets/images/better-me.jpg  
 
+collections:
+        categories:
+                output: true
+        tags:
+                output: true               
+
 # Build settings
 lsi:         false
 excerpt_separator: "\n\n"
