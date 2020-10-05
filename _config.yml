@@ -64,6 +64,8 @@ defaults:
     values:
       image: https://geekplayers.com/assets/images/better-me.jpg  
 
+include: [pages]
+
 collections:
   categories:
     output: true
