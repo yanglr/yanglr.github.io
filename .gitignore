@@ -1,10 +1,12 @@
 _site/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 *.sw[po]
-*~
 .DS_Store
 Gemfile.lock
 .vscode/
-.jekyll-metadata
 
 .idea
 *.sqlite
