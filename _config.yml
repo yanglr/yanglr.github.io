@@ -64,14 +64,6 @@ defaults:
     values:
       image: https://geekplayers.com/assets/images/better-me.jpg  
 
-# Reading Files
-include:
-  - pages
-
-collections:
-  page:
-    output: true
-
 # Build settings
 lsi:         false
 excerpt_separator: "\n\n"
