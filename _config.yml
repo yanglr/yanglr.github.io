@@ -33,23 +33,41 @@ plugins:
   - jekyll-archives
   - jekyll-include-cache  
 
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
+# category_archive:
+#   type: jekyll-archives
+#   path: /categories/
+# tag_archive:
+#   type: jekyll-archives
+#   path: /tags/
+# # https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled: 
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
 jekyll-archives:
-  enabled: 
-    - categories
+  enabled:
+    # - year
+    # - month
     - tags
+    - categories
+  layout: page
   layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
+    # year: year
+    # month: month
+    tag: tag_and_category
+    category: tag_and_category  
   permalinks:
-    category: /categories/:name/
+    year: /:year/
+    month: /:year/:month/
     tag: /tags/:name/
+    category: /categories/:name/
 
 # Defaults
 defaults:
