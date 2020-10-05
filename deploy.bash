@@ -2,6 +2,8 @@ rm -rf tags/*
 rm -rf categories/*
 rm -rf categories
 rm -rf tags
+rm -rf category/*
+rm -rf category
 
 bundle exec jekyll build
 
