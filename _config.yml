@@ -66,7 +66,11 @@ defaults:
 
 # Reading Files
 include:
-  - _pages
+  - pages
+
+collections:
+  tags:
+    output: true
 
 # Build settings
 lsi:         false
