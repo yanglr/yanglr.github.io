@@ -63,15 +63,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://geekplayers.com/assets/images/better-me.jpg  
-
-include: [pages]
-
-collections:
-  categories:
-    output: true
-  tags:
-    output: true
+      image: https://geekplayers.com/assets/images/better-me.jpg
 
 # Build settings
 lsi:         false
