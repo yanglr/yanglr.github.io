@@ -5,20 +5,12 @@ layout: page
 <article class="post container">
   <div id="main" role="main">
 
-    {% assign categorysize = page.title.size %}
+    <!-- {% assign categorysize = page.title.size %} -->
     <div class="archive">
-      <!-- {% unless page.header.overlay_color or page.header.overlay_image %}
-        <h1 id="page-title-taxonomy">{{ page.title }}</h1>
-      {% endunless %} -->
-
-      {% if categorysize > 0 %}
       <h1 id="page-title-taxonomy" class="page__title">{{ page.title|smartify|replace: '[', ''|replace: ']', ''|replace: '“', ''|replace: '”', ''| upcase }}</h1>
         {% for post in page.posts %}
         {% include archive-single.html %}
         {% endfor %}
-      {% else %}
-      {% include categories.html %}
-      {% endif %}
 
     </div>
   </div>

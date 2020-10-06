@@ -1,739 +1,741 @@
 
-https://geekplayers.com/chinaz-usage.html
+http://localhost:4000/chinaz-usage.html
 
-https://geekplayers.com/baidu-recover-push-js.html
+http://localhost:4000/baidu-recover-push-js.html
 
-https://geekplayers.com/bing-api-nodejs.html
+http://localhost:4000/bing-api-nodejs.html
 
-https://geekplayers.com/replace-flag-counter.html
+http://localhost:4000/replace-flag-counter.html
 
-https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html
+http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html
 
-https://geekplayers.com/china-seo-experts-and-famous.html
+http://localhost:4000/china-seo-experts-and-famous.html
 
-https://geekplayers.com/interview-test.html
+http://localhost:4000/interview-test.html
 
-https://geekplayers.com/view-on-bytedance-agree-to-sell-tiktok.html
+http://localhost:4000/view-on-bytedance-agree-to-sell-tiktok.html
 
-https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html
+http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html
 
-https://geekplayers.com/forever-window-personal-view-on-window.html
+http://localhost:4000/forever-window-personal-view-on-window.html
 
-https://geekplayers.com/inside-xaml.html
+http://localhost:4000/inside-xaml.html
 
-https://geekplayers.com/visual-cpp-wpf-method.html
+http://localhost:4000/visual-cpp-wpf-method.html
 
-https://geekplayers.com/the-methods-using-visual-cpp-creating-wpf.html
+http://localhost:4000/the-methods-using-visual-cpp-creating-wpf.html
 
-https://geekplayers.com/wpf-data-binding-debug-guide.html
+http://localhost:4000/wpf-data-binding-debug-guide.html
 
-https://geekplayers.com/using-wpf-with-managed-cpp.html
+http://localhost:4000/using-wpf-with-managed-cpp.html
 
-https://geekplayers.com/aimed-at-offer-search-in-two-dimensional-array.html
+http://localhost:4000/aimed-at-offer-search-in-two-dimensional-array.html
 
-https://geekplayers.com/cdn-for-github-pages.html
+http://localhost:4000/cdn-for-github-pages.html
 
-https://geekplayers.com/master-of-money.html
+http://localhost:4000/master-of-money.html
 
-https://geekplayers.com/wpf-study-note-by-xiyuanmore.html
+http://localhost:4000/wpf-study-note-by-xiyuanmore.html
 
-https://geekplayers.com/python-leetcode977-squares-of-a-sorted-array.html
+http://localhost:4000/python-leetcode977-squares-of-a-sorted-array.html
 
-https://geekplayers.com/python-leetcode645-set-mismatch.html
+http://localhost:4000/python-leetcode645-set-mismatch.html
 
-https://geekplayers.com/leetcode976-largest-perimeter-triangle.html
+http://localhost:4000/leetcode976-largest-perimeter-triangle.html
 
-https://geekplayers.com/leetcode345-reverse-vowels-of-a-string.html
+http://localhost:4000/leetcode345-reverse-vowels-of-a-string.html
 
-https://geekplayers.com/dabai-vr.html
+http://localhost:4000/dabai-vr.html
 
-https://geekplayers.com/python-leetcode58-length-of-last-word.html
+http://localhost:4000/python-leetcode58-length-of-last-word.html
 
-https://geekplayers.com/python-leetcode13-roman-to-integer.html
+http://localhost:4000/python-leetcode13-roman-to-integer.html
 
-https://geekplayers.com/python-leetcode9-palindrome-number.html
+http://localhost:4000/python-leetcode9-palindrome-number.html
 
-https://geekplayers.com/python-leetcode204-count-primes.html
+http://localhost:4000/python-leetcode204-count-primes.html
 
-https://geekplayers.com/python-leetcode202-happy-number.html
+http://localhost:4000/python-leetcode202-happy-number.html
 
-https://geekplayers.com/python-leetcode67-add-binary.html
+http://localhost:4000/python-leetcode67-add-binary.html
 
-https://geekplayers.com/python-leetcode136-single-number.html
+http://localhost:4000/python-leetcode136-single-number.html
 
-https://geekplayers.com/python-leetcode89-gary-code.html
+http://localhost:4000/python-leetcode89-gary-code.html
 
-https://geekplayers.com/c4-model-arch-digram-show-draw-like-this.html
+http://localhost:4000/c4-model-arch-digram-show-draw-like-this.html
 
-https://geekplayers.com/geek-time-gift.html
+http://localhost:4000/geek-time-gift.html
 
-https://geekplayers.com/developer-benefits_github-open-source-projects-of-microsoft.html
+http://localhost:4000/developer-benefits_github-open-source-projects-of-microsoft.html
 
-https://geekplayers.com/xaml_studio-powerfull_tool_for_wpf_sliverlight_xamarin_uwp.html
+http://localhost:4000/xaml_studio-powerfull_tool_for_wpf_sliverlight_xamarin_uwp.html
 
-https://geekplayers.com/js_add_copyright_automatically.html
+http://localhost:4000/js_add_copyright_automatically.html
 
-https://geekplayers.com/buildhexo.html
+http://localhost:4000/buildhexo.html
 
-https://geekplayers.com/cnblogs-markdown-code-opt.html
+http://localhost:4000/cnblogs-markdown-code-opt.html
 
-https://geekplayers.com/xml-parse-guide-based-on-msxml-using-cpp.html
+http://localhost:4000/xml-parse-guide-based-on-msxml-using-cpp.html
 
-https://geekplayers.com/build-brand-blog.html
+http://localhost:4000/build-brand-blog.html
 
-https://geekplayers.com/calculator_using_caliburn-micro_from0to1.html
+http://localhost:4000/calculator_using_caliburn-micro_from0to1.html
 
-https://geekplayers.com/aimed-at-offer-the-first-character-which-only-appear-once-csharp.html
+http://localhost:4000/aimed-at-offer-the-first-character-which-only-appear-once-csharp.html
 
-https://geekplayers.com/find-new-world.html
+http://localhost:4000/find-new-world.html
 
-https://geekplayers.com/windows-install-jekyll.html
+http://localhost:4000/windows-install-jekyll.html
 
-https://geekplayers.com/huawei-campus2016-problem3.html
+http://localhost:4000/huawei-campus2016-problem3.html
 
-https://geekplayers.com/huawei-campus2016-problem2.html
+http://localhost:4000/huawei-campus2016-problem2.html
 
-https://geekplayers.com/huawei-campus2016-problem1.html
+http://localhost:4000/huawei-campus2016-problem1.html
 
-https://geekplayers.com/inverse-pairs-in-array.html
+http://localhost:4000/inverse-pairs-in-array.html
 
-https://geekplayers.com/cstdlib-cpp-grammer.html
+http://localhost:4000/cstdlib-cpp-grammer.html
 
-https://geekplayers.com/num-array-splice-to-min-num.html
+http://localhost:4000/num-array-splice-to-min-num.html
 
-https://geekplayers.com/increase-seq-two-sum-solution.html
+http://localhost:4000/increase-seq-two-sum-solution.html
 
-https://geekplayers.com/string-left-rotation-solution.html
+http://localhost:4000/string-left-rotation-solution.html
 
-https://geekplayers.com/reverse-word-order-solution.html
+http://localhost:4000/reverse-word-order-solution.html
 
-https://geekplayers.com/string-permutation-solution.html
+http://localhost:4000/string-permutation-solution.html
 
-https://geekplayers.com/odd-before-even-solution.html
+http://localhost:4000/odd-before-even-solution.html
 
-https://geekplayers.com/std-getline-function-usage.html
+http://localhost:4000/std-getline-function-usage.html
 
-https://geekplayers.com/word-reverse-print-solution.html
+http://localhost:4000/word-reverse-print-solution.html
 
-https://geekplayers.com/string-linebreak-every-eight.html
+http://localhost:4000/string-linebreak-every-eight.html
 
-https://geekplayers.com/backfoward-first-appear-solution.html
+http://localhost:4000/backfoward-first-appear-solution.html
 
-https://geekplayers.com/reverse-int-solution.html
+http://localhost:4000/reverse-int-solution.html
 
-https://geekplayers.com/reverse-english-statement.html
+http://localhost:4000/reverse-english-statement.html
 
-https://geekplayers.com/max-profit-in-stock.html
+http://localhost:4000/max-profit-in-stock.html
 
-https://geekplayers.com/get-cube-root.html
+http://localhost:4000/get-cube-root.html
 
-https://geekplayers.com/sum-of-a-sequence.html
+http://localhost:4000/sum-of-a-sequence.html
 
-https://geekplayers.com/least-common-multiple.html
+http://localhost:4000/least-common-multiple.html
 
-https://geekplayers.com/char-count-hard-solution.html
+http://localhost:4000/char-count-hard-solution.html
 
-https://geekplayers.com/char-count-solution.html
+http://localhost:4000/char-count-solution.html
 
-https://geekplayers.com/count-char-in-string-solution.html
+http://localhost:4000/count-char-in-string-solution.html
 
-https://geekplayers.com/prime-factor-solution.html
+http://localhost:4000/prime-factor-solution.html
 
-https://geekplayers.com/integer_storage-one-count.html
+http://localhost:4000/integer_storage-one-count.html
 
-https://geekplayers.com/string-reverse-solution.html
+http://localhost:4000/string-reverse-solution.html
 
-https://geekplayers.com/last-word-length-solution.html
+http://localhost:4000/last-word-length-solution.html
 
-https://geekplayers.com/redmine-child-issue.html
+http://localhost:4000/redmine-child-issue.html
 
-https://geekplayers.com/smarty_usage_in_php.html
+http://localhost:4000/smarty_usage_in_php.html
 
 
-https://geekplayers.com/404.html
+http://localhost:4000/404.html
 
-https://geekplayers.com/about
+http://localhost:4000/about
 
-https://geekplayers.com/algo
+http://localhost:4000/algo
 
-https://geekplayers.com/arch
+http://localhost:4000/arch
 
-https://geekplayers.com/archives.html
+http://localhost:4000/archives.html
 
-https://geekplayers.com/news/
+http://localhost:4000/news/
 
-https://geekplayers.com/blog/
+http://localhost:4000/blog/
 
-https://geekplayers.com/category/
+http://localhost:4000/category/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/
 
-https://geekplayers.com/cnsitemap.xml
+http://localhost:4000/cnsitemap.xml
 
-https://geekplayers.com/csharp
+http://localhost:4000/csharp
 
-https://geekplayers.com/dabaiSEO
+http://localhost:4000/dabaiSEO
 
-https://geekplayers.com/dabenSeo
+http://localhost:4000/dabenSeo
 
-https://geekplayers.com/docker
+http://localhost:4000/docker
 
-https://geekplayers.com/dotnet
+http://localhost:4000/dotnet
 
-https://geekplayers.com/feed.xml
+http://localhost:4000/feed.xml
 
-https://geekplayers.com/geektime
+http://localhost:4000/geektime
 
-https://geekplayers.com/gitchat
+http://localhost:4000/gitchat
 
-https://geekplayers.com/github_io_sitemap.txt
+http://localhost:4000/github_io_sitemap.txt
 
-https://geekplayers.com/
+http://localhost:4000/
 
-https://geekplayers.com/it
+http://localhost:4000/it
 
-https://geekplayers.com/k8s
+http://localhost:4000/k8s
 
-https://geekplayers.com/leetcode
+http://localhost:4000/leetcode
 
-https://geekplayers.com/life
+http://localhost:4000/life
 
-https://geekplayers.com/link
+http://localhost:4000/link
 
-https://geekplayers.com/mongodb
+http://localhost:4000/mongodb
 
-https://geekplayers.com/open-source
+http://localhost:4000/open-source
 
-https://geekplayers.com/payment/
+http://localhost:4000/payment/
 
-https://geekplayers.com/python
+http://localhost:4000/python
 
-https://geekplayers.com/search.json
+http://localhost:4000/search.json
 
-https://geekplayers.com/sitemap.txt
+http://localhost:4000/sitemap.txt
 
-https://geekplayers.com/sitemap.xml
+http://localhost:4000/sitemap.xml
 
-https://geekplayers.com/tags/
+http://localhost:4000/tags/
 
-https://geekplayers.com/tools/
+http://localhost:4000/tools/
 
-https://geekplayers.com/wiki/
+http://localhost:4000/wiki/
 
-https://geekplayers.com/wpf
+http://localhost:4000/wpf
 
-https://geekplayers.com/zsxq
+http://localhost:4000/zsxq
 
-https://geekplayers.com/assets/css/style.css
+http://localhost:4000/assets/css/style.css
 
-https://geekplayers.com/bower_components/bootstrap/CHANGELOG
+http://localhost:4000/bower_components/bootstrap/CHANGELOG
 
-https://geekplayers.com/bower_components/hover/HISTORY
+http://localhost:4000/bower_components/hover/HISTORY
 
-https://geekplayers.com/bower_components/octicons/CHANGELOG
+http://localhost:4000/bower_components/octicons/CHANGELOG
 
-https://geekplayers.com/bower_components/primer-markdown/CLA
+http://localhost:4000/bower_components/primer-markdown/CLA
 
-https://geekplayers.com/2016/09/15/smarty_usage_in_php/
+http://localhost:4000/2016/09/15/smarty_usage_in_php/
 
-https://geekplayers.com/2016/09/15/redmine-child-issue/
+http://localhost:4000/2016/09/15/redmine-child-issue/
 
-https://geekplayers.com/2016/09/16/last-word-length-solution/
+http://localhost:4000/2016/09/16/last-word-length-solution/
 
-https://geekplayers.com/2016/09/16/string-reverse-solution/
+http://localhost:4000/2016/09/16/string-reverse-solution/
 
-https://geekplayers.com/2016/09/16/integer_storage-one-count/
+http://localhost:4000/2016/09/16/integer_storage-one-count/
 
-https://geekplayers.com/2016/09/16/prime-factor-solution/
+http://localhost:4000/2016/09/16/prime-factor-solution/
 
-https://geekplayers.com/2016/09/16/count-char-in-string-solution/
+http://localhost:4000/2016/09/16/count-char-in-string-solution/
 
-https://geekplayers.com/2016/09/16/char-count-solution/
+http://localhost:4000/2016/09/16/char-count-solution/
 
-https://geekplayers.com/2016/09/17/char-count-hard-solution/
+http://localhost:4000/2016/09/17/char-count-hard-solution/
 
-https://geekplayers.com/2016/09/17/least-common-multiple/
+http://localhost:4000/2016/09/17/least-common-multiple/
 
-https://geekplayers.com/2016/09/17/sum-of-a-sequence/
+http://localhost:4000/2016/09/17/sum-of-a-sequence/
 
-https://geekplayers.com/2016/09/17/get-cube-root/
+http://localhost:4000/2016/09/17/get-cube-root/
 
-https://geekplayers.com/2016/09/17/max-profit-in-stock/
+http://localhost:4000/2016/09/17/max-profit-in-stock/
 
-https://geekplayers.com/2016/09/18/reverse-english-statement/
+http://localhost:4000/2016/09/18/reverse-english-statement/
 
-https://geekplayers.com/2016/09/18/reverse-int-solution/
+http://localhost:4000/2016/09/18/reverse-int-solution/
 
-https://geekplayers.com/2016/09/18/backfoward-first-appear-solution/
+http://localhost:4000/2016/09/18/backfoward-first-appear-solution/
 
-https://geekplayers.com/2016/09/18/string-linebreak-every-eight/
+http://localhost:4000/2016/09/18/string-linebreak-every-eight/
 
-https://geekplayers.com/2016/09/18/word-reverse-print-solution/
+http://localhost:4000/2016/09/18/word-reverse-print-solution/
 
-https://geekplayers.com/2016/09/18/std-getline-function-usage/
+http://localhost:4000/2016/09/18/std-getline-function-usage/
 
-https://geekplayers.com/2016/09/27/odd-before-even-solution/
+http://localhost:4000/2016/09/27/odd-before-even-solution/
 
-https://geekplayers.com/2016/09/27/string-permutation-solution/
+http://localhost:4000/2016/09/27/string-permutation-solution/
 
-https://geekplayers.com/2016/09/28/reverse-word-order-solution/
+http://localhost:4000/2016/09/28/reverse-word-order-solution/
 
-https://geekplayers.com/2016/09/29/string-left-rotation-solution/
+http://localhost:4000/2016/09/29/string-left-rotation-solution/
 
-https://geekplayers.com/2016/09/30/increase-seq-two-sum-solution/
+http://localhost:4000/2016/09/30/increase-seq-two-sum-solution/
 
-https://geekplayers.com/2016/10/01/num-array-splice-to-min-num/
+http://localhost:4000/2016/10/01/num-array-splice-to-min-num/
 
-https://geekplayers.com/2016/10/02/cstdlib-cpp-grammer/
+http://localhost:4000/2016/10/02/cstdlib-cpp-grammer/
 
-https://geekplayers.com/2016/10/03/inverse-pairs-in-array/
+http://localhost:4000/2016/10/03/inverse-pairs-in-array/
 
-https://geekplayers.com/2016/09/17/huawei-campus2016-problem1/
+http://localhost:4000/2016/09/17/huawei-campus2016-problem1/
 
-https://geekplayers.com/2016/10/09/huawei-campus2016-problem2/
+http://localhost:4000/2016/10/09/huawei-campus2016-problem2/
 
-https://geekplayers.com/2016/10/09/huawei-campus2016-problem3/
+http://localhost:4000/2016/10/09/huawei-campus2016-problem3/
 
-https://geekplayers.com/2016/10/19/windows-install-jekyll/
+http://localhost:4000/2016/10/19/windows-install-jekyll/
 
-https://geekplayers.com/2017/01/18/find-new-world/
+http://localhost:4000/2017/01/18/find-new-world/
 
-https://geekplayers.com/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/
+http://localhost:4000/2018/06/02/aimed-at-offer-the-first-character-which-only-appear-once-csharp/
 
-https://geekplayers.com/2018/06/03/calculator_using_caliburn-micro_from0to1/
+http://localhost:4000/2018/06/03/calculator_using_caliburn-micro_from0to1/
 
-https://geekplayers.com/2019/01/10/xml-parse-guide-based-on-MSXML-using-cpp/
+http://localhost:4000/2019/01/10/xml-parse-guide-based-on-MSXML-using-cpp/
 
-https://geekplayers.com/xml-parse-guide-based-on-MSXML-using-cpp.html
+http://localhost:4000/xml-parse-guide-based-on-MSXML-using-cpp.html
 
-https://geekplayers.com/2019/03/03/cnblogs-markdown-code-opt/
+http://localhost:4000/2019/03/03/cnblogs-markdown-code-opt/
 
-https://geekplayers.com/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/
+http://localhost:4000/2019/03/04/build_site_guide_using_hexo_and_coding-net_for_beginners/
 
-https://geekplayers.com/build_site_guide_using_hexo_and_coding-net_for_beginners.html
+http://localhost:4000/build_site_guide_using_hexo_and_coding-net_for_beginners.html
 
-https://geekplayers.com/buildHexo.html
+http://localhost:4000/buildHexo.html
 
-https://geekplayers.com/2019/03/06/js_add_copyright_automatically/
+http://localhost:4000/2019/03/06/js_add_copyright_automatically/
 
-https://geekplayers.com/2019/03/21/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP/
+http://localhost:4000/2019/03/21/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP/
 
-https://geekplayers.com/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP.html
+http://localhost:4000/XAML_Studio-powerfull_tool_for_WPF_Sliverlight_Xamarin_UWP.html
 
-https://geekplayers.com/2019/03/30/developer-benefits_github-open-source-projects-of-microsoft/
+http://localhost:4000/2019/03/30/developer-benefits_github-open-source-projects-of-microsoft/
 
-https://geekplayers.com/2019/09/05/c4-model-arch-digram-show-draw-like-this/
+http://localhost:4000/2019/09/05/c4-model-arch-digram-show-draw-like-this/
 
-https://geekplayers.com/2019/09/09/python-leetcode89-gary-code/
+http://localhost:4000/2019/09/09/python-leetcode89-gary-code/
 
-https://geekplayers.com/2019/09/13/python-leetcode136-single-number/
+http://localhost:4000/2019/09/13/python-leetcode136-single-number/
 
-https://geekplayers.com/2019/09/14/python-leetcode67-add-binary/
+http://localhost:4000/2019/09/14/python-leetcode67-add-binary/
 
-https://geekplayers.com/2019/09/28/python-leetcode202-happy-number/
+http://localhost:4000/2019/09/28/python-leetcode202-happy-number/
 
-https://geekplayers.com/2019/10/04/python-leetcode204-count-primes/
+http://localhost:4000/2019/10/04/python-leetcode204-count-primes/
 
-https://geekplayers.com/2019/10/19/python-leetcode9-palindrome-number/
+http://localhost:4000/2019/10/19/python-leetcode9-palindrome-number/
 
-https://geekplayers.com/2019/10/26/python-leetcode13-roman-to-integer/
+http://localhost:4000/2019/10/26/python-leetcode13-roman-to-integer/
 
-https://geekplayers.com/2019/10/30/python-leetcode58-length-of-last-word/
+http://localhost:4000/2019/10/30/python-leetcode58-length-of-last-word/
 
-https://geekplayers.com/2019/11/04/dabai-VR/
+http://localhost:4000/2019/11/04/dabai-VR/
 
-https://geekplayers.com/dabai-VR.html
+http://localhost:4000/dabai-VR.html
 
-https://geekplayers.com/2019/11/13/leetcode345-reverse-vowels-of-a-string/
+http://localhost:4000/2019/11/13/leetcode345-reverse-vowels-of-a-string/
 
-https://geekplayers.com/2019/11/20/leetcode976-largest-perimeter-triangle/
+http://localhost:4000/2019/11/20/leetcode976-largest-perimeter-triangle/
 
-https://geekplayers.com/2019/11/25/python-leetcode645-set-mismatch/
+http://localhost:4000/2019/11/25/python-leetcode645-set-mismatch/
 
-https://geekplayers.com/2019/11/25/python-leetcode977-squares-of-a-sorted-array/
+http://localhost:4000/2019/11/25/python-leetcode977-squares-of-a-sorted-array/
 
-https://geekplayers.com/2020/03/18/wpf-study-note-by-xiyuanmore/
+http://localhost:4000/2020/03/18/wpf-study-note-by-xiyuanmore/
 
-https://geekplayers.com/2020/04/10/master-of-money/
+http://localhost:4000/2020/04/10/master-of-money/
 
-https://geekplayers.com/2020/05/01/cdn-for-github-pages/
+http://localhost:4000/2020/05/01/cdn-for-github-pages/
 
-https://geekplayers.com/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/
+http://localhost:4000/2020/06/17/aimed-at-offer-search-in-two-dimensional-array/
 
-https://geekplayers.com/2020/06/27/Using-WPF-with-Managed-cpp/
+http://localhost:4000/2020/06/27/Using-WPF-with-Managed-cpp/
 
-https://geekplayers.com/Using-WPF-with-Managed-cpp.html
+http://localhost:4000/Using-WPF-with-Managed-cpp.html
 
-https://geekplayers.com/2020/06/26/wpf-data-binding-debug-guide/
+http://localhost:4000/2020/06/26/wpf-data-binding-debug-guide/
 
-https://geekplayers.com/2020/06/28/the-methods-using-visual-Cpp-creating-wpf/
+http://localhost:4000/2020/06/28/the-methods-using-visual-Cpp-creating-wpf/
 
-https://geekplayers.com/the-methods-using-visual-Cpp-creating-wpf.html
+http://localhost:4000/the-methods-using-visual-Cpp-creating-wpf.html
 
-https://geekplayers.com/2020/06/29/visual-cpp-wpf-method/
+http://localhost:4000/2020/06/29/visual-cpp-wpf-method/
 
-https://geekplayers.com/2020/07/02/inside-xaml/
+http://localhost:4000/2020/07/02/inside-xaml/
 
-https://geekplayers.com/2020/07/05/forever-window-personal-view-on-window/
+http://localhost:4000/2020/07/05/forever-window-personal-view-on-window/
 
-https://geekplayers.com/2020/07/26/introducing-visual-studio-intellisense-code-snippets/
+http://localhost:4000/2020/07/26/introducing-visual-studio-intellisense-code-snippets/
 
-https://geekplayers.com/2020/08/02/view-on-bytedance-agree-to-sell-Tiktok/
+http://localhost:4000/2020/08/02/view-on-bytedance-agree-to-sell-Tiktok/
 
-https://geekplayers.com/view-on-bytedance-agree-to-sell-Tiktok.html
+http://localhost:4000/view-on-bytedance-agree-to-sell-Tiktok.html
 
-https://geekplayers.com/2020/08/16/interview-test/
+http://localhost:4000/2020/08/16/interview-test/
 
-https://geekplayers.com/2020/08/28/china-seo-experts-and-famous/
+http://localhost:4000/2020/08/28/china-seo-experts-and-famous/
 
-https://geekplayers.com/2020/08/29/migrate-from-github-pages-to-gitlab-pages/
+http://localhost:4000/2020/08/29/migrate-from-github-pages-to-gitlab-pages/
 
-https://geekplayers.com/bing-API-nodejs.html
+http://localhost:4000/bing-API-nodejs.html
 
-https://geekplayers.com/redirects.json
+http://localhost:4000/categories/
 
-https://geekplayers.com/tags/php/
+http://localhost:4000/redirects.json
 
-https://geekplayers.com/tags/redmine/
+http://localhost:4000/tags/php/
 
-https://geekplayers.com/tags/php/
+http://localhost:4000/tags/redmine/
 
-https://geekplayers.com/tags/api/
+http://localhost:4000/tags/php/
 
-https://geekplayers.com/tags/oj/
+http://localhost:4000/tags/api/
 
-https://geekplayers.com/tags/%E5%89%91%E6%8C%87offer/
+http://localhost:4000/tags/oj/
 
-https://geekplayers.com/tags/cpp/
+http://localhost:4000/tags/%E5%89%91%E6%8C%87offer/
 
-https://geekplayers.com/tags/cstdlib/
+http://localhost:4000/tags/cpp/
 
-https://geekplayers.com/tags/%E5%8D%8E%E4%B8%BAoj/
+http://localhost:4000/tags/cstdlib/
 
-https://geekplayers.com/tags/jekyll/
+http://localhost:4000/tags/%E5%8D%8E%E4%B8%BAoj/
 
-https://geekplayers.com/tags/windows/
+http://localhost:4000/tags/jekyll/
 
-https://geekplayers.com/tags/ruby/
+http://localhost:4000/tags/windows/
 
-https://geekplayers.com/tags/life/
+http://localhost:4000/tags/ruby/
 
-https://geekplayers.com/tags/leetcode/
+http://localhost:4000/tags/life/
 
-https://geekplayers.com/tags/wpf/
+http://localhost:4000/tags/leetcode/
 
-https://geekplayers.com/tags/%E5%8D%9A%E5%AE%A2/
+http://localhost:4000/tags/wpf/
 
-https://geekplayers.com/tags/%E5%A4%A7%E5%A5%94seo/
+http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/
 
-https://geekplayers.com/tags/%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
+http://localhost:4000/tags/%E5%A4%A7%E5%A5%94seo/
 
-https://geekplayers.com/tags/xml/
+http://localhost:4000/tags/%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
 
-https://geekplayers.com/tags/msxml/
+http://localhost:4000/tags/xml/
 
-https://geekplayers.com/tags/c/
+http://localhost:4000/tags/msxml/
 
-https://geekplayers.com/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/
+http://localhost:4000/tags/c/
 
-https://geekplayers.com/tags/markdown/
+http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD/
 
-https://geekplayers.com/tags/hexo/
+http://localhost:4000/tags/markdown/
 
-https://geekplayers.com/tags/it/
+http://localhost:4000/tags/hexo/
 
-https://geekplayers.com/tags/js/
+http://localhost:4000/tags/it/
 
-https://geekplayers.com/tags/copyright/
+http://localhost:4000/tags/js/
 
-https://geekplayers.com/tags/github/
+http://localhost:4000/tags/copyright/
 
-https://geekplayers.com/tags/%E5%BE%AE%E8%BD%AF/
+http://localhost:4000/tags/github/
 
-https://geekplayers.com/tags/geektime/
+http://localhost:4000/tags/%E5%BE%AE%E8%BD%AF/
 
-https://geekplayers.com/tags/%E6%9E%B6%E6%9E%84/
+http://localhost:4000/tags/geektime/
 
-https://geekplayers.com/tags/python/
+http://localhost:4000/tags/%E6%9E%B6%E6%9E%84/
 
-https://geekplayers.com/tags/leetcode%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97/
+http://localhost:4000/tags/python/
 
-https://geekplayers.com/tags/%E5%A4%A7%E7%99%BDvr/
+http://localhost:4000/tags/leetcode%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97/
 
-https://geekplayers.com/tags/%E5%A4%A7%E7%99%BD/
+http://localhost:4000/tags/%E5%A4%A7%E7%99%BDvr/
 
-https://geekplayers.com/tags/vr/
+http://localhost:4000/tags/%E5%A4%A7%E7%99%BD/
 
-https://geekplayers.com/tags/mfc/
+http://localhost:4000/tags/vr/
 
-https://geekplayers.com/tags/windows/
+http://localhost:4000/tags/mfc/
 
-https://geekplayers.com/tags/%E5%8D%8A%E4%BD%9B%E4%BB%99%E4%BA%BA/
+http://localhost:4000/tags/windows/
 
-https://geekplayers.com/tags/geekplayers-com/
+http://localhost:4000/tags/%E5%8D%8A%E4%BD%9B%E4%BB%99%E4%BA%BA/
 
-https://geekplayers.com/tags/net/
+http://localhost:4000/tags/geekplayers-com/
 
-https://geekplayers.com/tags/wpf/
+http://localhost:4000/tags/net/
 
-https://geekplayers.com/tags/visual-studio/
+http://localhost:4000/tags/wpf/
 
-https://geekplayers.com/tags/tiktok/
+http://localhost:4000/tags/visual-studio/
 
-https://geekplayers.com/tags/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/
+http://localhost:4000/tags/tiktok/
 
-https://geekplayers.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://localhost:4000/tags/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/
 
-https://geekplayers.com/tags/seo/
+http://localhost:4000/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/
 
-https://geekplayers.com/tags/%E6%8E%92%E8%A1%8C%E6%A6%9C/
+http://localhost:4000/tags/seo/
 
-https://geekplayers.com/tags/gitlab/
+http://localhost:4000/tags/%E6%8E%92%E8%A1%8C%E6%A6%9C/
 
-https://geekplayers.com/tags/flagcounter/
+http://localhost:4000/tags/gitlab/
 
-https://geekplayers.com/tags/flagcounter%E6%8F%92%E4%BB%B6/
+http://localhost:4000/tags/flagcounter/
 
-https://geekplayers.com/tags/flagcounter%E7%B1%BB%E4%BC%BC/
+http://localhost:4000/tags/flagcounter%E6%8F%92%E4%BB%B6/
 
-https://geekplayers.com/tags/bing/
+http://localhost:4000/tags/flagcounter%E7%B1%BB%E4%BC%BC/
 
-https://geekplayers.com/tags/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
+http://localhost:4000/tags/bing/
 
-https://geekplayers.com/categories/php/
+http://localhost:4000/tags/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
 
-https://geekplayers.com/categories/php%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/
+http://localhost:4000/categories/php/
 
-https://geekplayers.com/categories/%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
+http://localhost:4000/categories/php%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
 
-https://geekplayers.com/categories/oj-%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/oj/
+http://localhost:4000/categories/oj-%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
 
-https://geekplayers.com/categories/%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/
+http://localhost:4000/categories/oj/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/
 
-https://geekplayers.com/categories/oj-%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/oj-%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/
 
-https://geekplayers.com/categories/%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%BC%96%E7%A8%8B%E8%AE%AD%E7%BB%83/
 
-https://geekplayers.com/categories/c-c-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/c/
+http://localhost:4000/categories/c-c-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/
 
-https://geekplayers.com/categories/c-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/
+http://localhost:4000/categories/c/
 
-https://geekplayers.com/categories/%E8%AE%A4%E8%AF%86c%E6%A0%87%E5%87%86%E5%BA%93/
+http://localhost:4000/categories/c-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/
 
-https://geekplayers.com/categories/%E6%A0%A1%E6%8B%9B%E7%BC%96%E7%A8%8B%E9%A2%98/
+http://localhost:4000/categories/%E8%AE%A4%E8%AF%86c%E6%A0%87%E5%87%86%E5%BA%93/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E6%A0%A1%E6%8B%9B%E7%BC%96%E7%A8%8B%E9%A2%98/
 
-https://geekplayers.com/categories/oj-%E6%A0%A1%E6%8B%9B%E7%BC%96%E7%A8%8B%E9%A2%98/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/oj-%E6%A0%A1%E6%8B%9B%E7%BC%96%E7%A8%8B%E9%A2%98/
 
-https://geekplayers.com/categories/jekyll-windows-ruby/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/jekyll/
+http://localhost:4000/categories/jekyll-windows-ruby/
 
-https://geekplayers.com/categories/windows/
+http://localhost:4000/categories/jekyll/
 
-https://geekplayers.com/categories/ruby/
+http://localhost:4000/categories/windows/
 
-https://geekplayers.com/categories/life/
+http://localhost:4000/categories/ruby/
 
-https://geekplayers.com/categories/leetcode/
+http://localhost:4000/categories/life/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/leetcode/
 
-https://geekplayers.com/categories/wpf-xaml-caliburn-micro/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/wpf/
+http://localhost:4000/categories/wpf-xaml-caliburn-micro/
 
-https://geekplayers.com/categories/xaml/
+http://localhost:4000/categories/wpf/
 
-https://geekplayers.com/categories/caliburn-micro/
+http://localhost:4000/categories/xaml/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/caliburn-micro/
 
-https://geekplayers.com/categories/%E5%8D%9A%E5%AE%A2-%E5%A4%A7%E5%A5%94seo-%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/%E5%8D%9A%E5%AE%A2/
+http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2-%E5%A4%A7%E5%A5%94seo-%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
 
-https://geekplayers.com/categories/%E5%A4%A7%E5%A5%94seo/
+http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2/
 
-https://geekplayers.com/categories/%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
+http://localhost:4000/categories/%E5%A4%A7%E5%A5%94seo/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/
 
-https://geekplayers.com/categories/xml-msxml-c/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/xml/
+http://localhost:4000/categories/xml-msxml-c/
 
-https://geekplayers.com/categories/msxml/
+http://localhost:4000/categories/xml/
 
-https://geekplayers.com/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E7%BE%8E%E5%8C%96/
+http://localhost:4000/categories/msxml/
 
-https://geekplayers.com/categories/it/
+http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E7%BE%8E%E5%8C%96/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/it/
 
-https://geekplayers.com/categories/wpf-xaml/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/wpf-xaml/
 
-https://geekplayers.com/categories/github-%E5%BE%AE%E8%BD%AF/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/github/
+http://localhost:4000/categories/github-%E5%BE%AE%E8%BD%AF/
 
-https://geekplayers.com/categories/%E5%BE%AE%E8%BD%AF/
+http://localhost:4000/categories/github/
 
-https://geekplayers.com/categories/geektime/
+http://localhost:4000/categories/%E5%BE%AE%E8%BD%AF/
 
-https://geekplayers.com/categories/%E6%9E%B6%E6%9E%84/
+http://localhost:4000/categories/geektime/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E6%9E%B6%E6%9E%84/
 
-https://geekplayers.com/categories/leetcode-python/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/python/
+http://localhost:4000/categories/leetcode-python/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/python/
 
-https://geekplayers.com/categories/leetcode-python-leetcode%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/leetcode%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://localhost:4000/categories/leetcode-python-leetcode%E9%9D%A2%E8%AF%95%E9%A2%98/
 
-https://geekplayers.com/categories/%E5%A4%A7%E7%99%BDvr/
+http://localhost:4000/categories/leetcode%E9%9D%A2%E8%AF%95%E9%A2%98/
 
-https://geekplayers.com/categories/%E5%A4%A7%E7%99%BD/
+http://localhost:4000/categories/%E5%A4%A7%E7%99%BDvr/
 
-https://geekplayers.com/categories/vr/
+http://localhost:4000/categories/%E5%A4%A7%E7%99%BD/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/vr/
 
-https://geekplayers.com/categories/%E5%AD%98%E6%AC%BE-geekplayers-com/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/%E5%AD%98%E6%AC%BE/
+http://localhost:4000/categories/%E5%AD%98%E6%AC%BE-geekplayers-com/
 
-https://geekplayers.com/categories/geekplayers-com/
+http://localhost:4000/categories/%E5%AD%98%E6%AC%BE/
 
-https://geekplayers.com/categories/github/
+http://localhost:4000/categories/geekplayers-com/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/github/
 
-https://geekplayers.com/categories/net-leetcode-%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/net/
+http://localhost:4000/categories/net-leetcode-%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95/
 
-https://geekplayers.com/categories/%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95/
+http://localhost:4000/categories/net/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95/
 
-https://geekplayers.com/categories/wpf-c/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/wpf/
+http://localhost:4000/categories/wpf-c/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/wpf/
 
-https://geekplayers.com/categories/life-xaml-wpf/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/windows/
+http://localhost:4000/categories/life-xaml-wpf/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/windows/
 
-https://geekplayers.com/categories/visual-studio-net/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/visual-studio/
+http://localhost:4000/categories/visual-studio-net/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/visual-studio/
 
-https://geekplayers.com/categories/tiktok-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-%E7%A4%BE%E4%BC%9A%E4%BB%B7%E5%80%BC%E8%A7%82/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/tiktok/
+http://localhost:4000/categories/tiktok-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-%E7%A4%BE%E4%BC%9A%E4%BB%B7%E5%80%BC%E8%A7%82/
 
-https://geekplayers.com/categories/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/
+http://localhost:4000/categories/tiktok/
 
-https://geekplayers.com/categories/%E7%A4%BE%E4%BC%9A%E4%BB%B7%E5%80%BC%E8%A7%82/
+http://localhost:4000/categories/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%A4%BE%E4%BC%9A%E4%BB%B7%E5%80%BC%E8%A7%82/
 
-https://geekplayers.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://localhost:4000/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/
 
-https://geekplayers.com/categories/seo/
+http://localhost:4000/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/
 
-https://geekplayers.com/categories/gitlab-pages/
+http://localhost:4000/categories/seo/
 
-https://geekplayers.com/categories/github-pages/
+http://localhost:4000/categories/gitlab-pages/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/github-pages/
 
-https://geekplayers.com/categories/flagcounter-flagcounter%E6%8F%92%E4%BB%B6-flagcounter%E7%B1%BB%E4%BC%BC/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/flagcounter/
+http://localhost:4000/categories/flagcounter-flagcounter%E6%8F%92%E4%BB%B6-flagcounter%E7%B1%BB%E4%BC%BC/
 
-https://geekplayers.com/categories/flagcounter%E6%8F%92%E4%BB%B6/
+http://localhost:4000/categories/flagcounter/
 
-https://geekplayers.com/categories/flagcounter%E7%B1%BB%E4%BC%BC/
+http://localhost:4000/categories/flagcounter%E6%8F%92%E4%BB%B6/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/flagcounter%E7%B1%BB%E4%BC%BC/
 
-https://geekplayers.com/categories/%E5%A4%A7%E5%A5%94seo-seo-bing/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/bing/
+http://localhost:4000/categories/%E5%A4%A7%E5%A5%94seo-seo-bing/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/bing/
 
-https://geekplayers.com/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81-%E7%99%BE%E5%BA%A6-seo-%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81js-%E7%99%BE%E5%BA%A6js%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81/
+http://localhost:4000/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81-%E7%99%BE%E5%BA%A6-seo-%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81js-%E7%99%BE%E5%BA%A6js%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81/
 
-https://geekplayers.com/categories/%E7%99%BE%E5%BA%A6/
+http://localhost:4000/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81/
 
-https://geekplayers.com/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81js/
+http://localhost:4000/categories/%E7%99%BE%E5%BA%A6/
 
-https://geekplayers.com/categories/%E7%99%BE%E5%BA%A6js%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81/
+http://localhost:4000/categories/%E7%99%BE%E5%BA%A6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81js/
 
-https://geekplayers.com/categories/
+http://localhost:4000/categories/%E7%99%BE%E5%BA%A6js%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81/
 
-https://geekplayers.com/categories/%E5%A4%A7%E5%A5%94seo-seo-chinaz-%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
+http://localhost:4000/categories/
 
-https://geekplayers.com/categories/chinaz/
+http://localhost:4000/categories/%E5%A4%A7%E5%A5%94seo-seo-chinaz-%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
 
-https://geekplayers.com/categories/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
+http://localhost:4000/categories/chinaz/
 
-https://geekplayers.com/bower_components/bootstrap/
+http://localhost:4000/categories/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/
 
-https://geekplayers.com/bower_components/flag-icon-css/
+http://localhost:4000/bower_components/bootstrap/
 
-https://geekplayers.com/bower_components/geopattern/
+http://localhost:4000/bower_components/flag-icon-css/
 
-https://geekplayers.com/bower_components/jquery/
+http://localhost:4000/bower_components/geopattern/
 
-https://geekplayers.com/bower_components/octicons/
+http://localhost:4000/bower_components/jquery/
 
-https://geekplayers.com/bower_components/octicons/octicons/
+http://localhost:4000/bower_components/octicons/
 
-https://geekplayers.com/bower_components/underscore/
+http://localhost:4000/bower_components/octicons/octicons/
 
-https://geekplayers.com/page2/
+http://localhost:4000/bower_components/underscore/
 
-https://geekplayers.com/page3/
+http://localhost:4000/page2/
 
-https://geekplayers.com/page4/
+http://localhost:4000/page3/
 
-https://geekplayers.com/page5/
+http://localhost:4000/page4/
 
-https://geekplayers.com/page6/
+http://localhost:4000/page5/
 
-https://geekplayers.com/page7/
+http://localhost:4000/page6/
+
+http://localhost:4000/page7/
