@@ -1,69 +1,69 @@
-
-    <footer class="container">
-        <div class="site-footer">
-            <!--  <div class="site-footer-icons">
-            <a target="_blank" href="https://www.zhihu.com/people/legege007">
-               知乎
-            </a>
-            <a target="_blank" href="http://weibo.com/540071991">
-               微博
-            </a>
-            <a target="_blank" href="https://github.com/yanglr">
-                GitHub
-            </a>
-        </div> -->
-            <div class="card text-center">
-                <ul class="list-inline" style="margin-left: 0;">
-                    <li>
-                        <a target="_blank" href="https://github.com/yanglr">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/legege007">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://weibo.com/540071991">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="site-footer-links mobile-hidden">
-                {% for nav in site.labels %}
-                <a href="{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
-                {% endfor %}
-            </div>
-            <!--         <div class="site-footer-icons">
+<footer class="container">
+    <div class="site-footer">
+        <div class="card text-center">
+            <ul class="list-inline" style="margin-left: 0;">
+                <li>
+                    <a target="_blank" href="https://github.com/yanglr">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.zhihu.com/people/legege007">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa  fa-stack-1x fa-inverse">知</i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://weibo.com/540071991">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-footer-links mobile-hidden">
+            {% for nav in site.labels %}
+            <a href="{{ nav.href }}" title="{{ nav.label }}"
+                target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
+            {% endfor %}
+        </div>
+        <!--         <div class="site-footer-icons">
                    沪ICP备20019934号-2
             </div> -->
-            <div class="scrolltop">
-                粤ICP备12009483号（Gitee站）
-                <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
-            </div>
-            <div class="rss">
-                <a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
-                Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
-            </div>
+        <div class="scrolltop">
+            粤ICP备12009483号（Gitee站）
+            <a href="javascript:window.scrollTo(0,0)">TOP↑</a>
         </div>
-        <!-- Third-Party JS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/by8/by8.github.io@master/assets/js/geopattern.js"></script>
-        <!-- My JS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+        <div class="rss">
+            <a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+            Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
+        </div>
+    </div>
 
-        <!-- Cnzz Analytics -->
-        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <!-- Cnzz Analytics -->
-    </footer>
+    <!-- Third-Party JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/by8/by8.github.io@master/assets/js/geopattern.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.geopattern').each(function () {
+                $(this).geopattern($(this).data('pattern-id'));
+            });
+        });
+    </script>
+
+    <!-- My JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/js/script.js"></script>
+
+    <!-- Cnzz Analytics -->
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279049771'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279049771%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <!-- Cnzz Analytics -->
+</footer>
