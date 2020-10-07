@@ -3,10 +3,10 @@
   <channel>
     <title>极客玩家大白</title>
     <description>极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Oct 2020 14:01:37 +0800</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2020 14:01:37 +0800</lastBuildDate>
+    <link>https://geekplayers.com/</link>
+    <atom:link href="https://geekplayers.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 07 Oct 2020 22:52:20 +0800</pubDate>
+    <lastBuildDate>Wed, 07 Oct 2020 22:52:20 +0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -269,8 +269,8 @@
 &lt;a href=&quot;http://link.chinaz.com/geekplayers.com&quot;&gt;http://link.chinaz.com/geekplayers.com&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Sep 2020 18:21:20 +0800</pubDate>
-        <link>http://localhost:4000/chinaz-usage.html</link>
-        <guid isPermaLink="true">http://localhost:4000/chinaz-usage.html</guid>
+        <link>https://geekplayers.com/chinaz-usage.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/chinaz-usage.html</guid>
         
         <category>大奔SEO</category>
         
@@ -344,8 +344,8 @@
 &lt;p&gt;各位小伙伴，赶紧加回来吧，你的网站收录情况一定会越来越好喔~&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Sep 2020 04:05:10 +0800</pubDate>
-        <link>http://localhost:4000/baidu-recover-push-js.html</link>
-        <guid isPermaLink="true">http://localhost:4000/baidu-recover-push-js.html</guid>
+        <link>https://geekplayers.com/baidu-recover-push-js.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/baidu-recover-push-js.html</guid>
         
         <category>flagcounter</category>
         
@@ -753,8 +753,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;有兴趣的朋友可以继续深入研究哈, 欢迎在评论区留言交流~&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Sep 2020 18:21:20 +0800</pubDate>
-        <link>http://localhost:4000/bing-api-nodejs.html</link>
-        <guid isPermaLink="true">http://localhost:4000/bing-api-nodejs.html</guid>
+        <link>https://geekplayers.com/bing-api-nodejs.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/bing-api-nodejs.html</guid>
         
         <category>seo</category>
         
@@ -868,8 +868,8 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cheerio
 &lt;p&gt;接下来，二选一即可，大功告成~&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Sep 2020 05:18:07 +0800</pubDate>
-        <link>http://localhost:4000/replace-flag-counter.html</link>
-        <guid isPermaLink="true">http://localhost:4000/replace-flag-counter.html</guid>
+        <link>https://geekplayers.com/replace-flag-counter.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/replace-flag-counter.html</guid>
         
         <category>flagcounter</category>
         
@@ -1148,8 +1148,8 @@ bravo@localhost MINGW64 ~
 &lt;p&gt;至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2020 02:23:52 +0800</pubDate>
-        <link>http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</link>
-        <guid isPermaLink="true">http://localhost:4000/migrate-from-github-pages-to-gitlab-pages.html</guid>
+        <link>https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/migrate-from-github-pages-to-gitlab-pages.html</guid>
         
         <category>gitlab</category>
         
@@ -1739,8 +1739,8 @@ QQ：59037148（经本人同意）
 &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/thaddeus-liu&quot;&gt;https://www.linkedin.com/in/thaddeus-liu&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/china-seo-experts-and-famous.html</link>
-        <guid isPermaLink="true">http://localhost:4000/china-seo-experts-and-famous.html</guid>
+        <link>https://geekplayers.com/china-seo-experts-and-famous.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/china-seo-experts-and-famous.html</guid>
         
         <category>seo</category>
         
@@ -1813,8 +1813,8 @@ QQ：59037148（经本人同意）
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/interview-test.html</link>
-        <guid isPermaLink="true">http://localhost:4000/interview-test.html</guid>
+        <link>https://geekplayers.com/interview-test.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/interview-test.html</guid>
         
         <category>面试题</category>
         
@@ -1908,8 +1908,8 @@ QQ：59037148（经本人同意）
 &lt;p&gt;来源：知乎&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Aug 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/view-on-bytedance-agree-to-sell-tiktok.html</link>
-        <guid isPermaLink="true">http://localhost:4000/view-on-bytedance-agree-to-sell-tiktok.html</guid>
+        <link>https://geekplayers.com/view-on-bytedance-agree-to-sell-tiktok.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/view-on-bytedance-agree-to-sell-tiktok.html</guid>
         
         <category>tiktok</category>
         
@@ -2554,8 +2554,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 
 </description>
         <pubDate>Sun, 26 Jul 2020 06:07:40 +0800</pubDate>
-        <link>http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</link>
-        <guid isPermaLink="true">http://localhost:4000/introducing-visual-studio-intellisense-code-snippets.html</guid>
+        <link>https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/introducing-visual-studio-intellisense-code-snippets.html</guid>
         
         <category>Visual Studio</category>
         
@@ -3240,8 +3240,8 @@ Classname 将会是文件名的前缀。Author将会被&lt;code class=&quot;lang
 &lt;p&gt;我想《永远的窗口》此文就到此结束了……&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jul 2020 19:06:50 +0800</pubDate>
-        <link>http://localhost:4000/forever-window-personal-view-on-window.html</link>
-        <guid isPermaLink="true">http://localhost:4000/forever-window-personal-view-on-window.html</guid>
+        <link>https://geekplayers.com/forever-window-personal-view-on-window.html</link>
+        <guid isPermaLink="true">https://geekplayers.com/forever-window-personal-view-on-window.html</guid>
         
         <category>mfc</category>
         

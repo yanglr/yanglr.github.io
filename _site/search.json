@@ -598,6 +598,14 @@
       "tags"     : "PHP",
       "url"      : "/smarty_usage_in_php.html",
       "date"     : "2016-09-15 23:07:22 +0800"
+    } ,
+  
+    {
+      "title"    : "只学一点点：我的技术学习策略",
+      "category" : "",
+      "tags"     : "技术学习, 极客玩家大白",
+      "url"      : "/just-learn-little.html",
+      "date"     : "2011-12-09 18:21:20 +0800"
     } 
   
 ]
