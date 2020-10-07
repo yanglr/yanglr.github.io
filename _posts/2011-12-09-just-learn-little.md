@@ -8,7 +8,6 @@ tags: [技术学习, 极客玩家大白]
 excerpt: 只学一点点：我的技术学习策略 - 转载自xiaotie
 keywords: 极客玩家大白
 description: 只学一点点：我的技术学习策略 - xiaotie
-topmost: true
 image: https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg
 ---
 
