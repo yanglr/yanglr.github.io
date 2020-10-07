@@ -55,7 +55,7 @@ image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 ![极客玩家大白-站长之家-Alexa用户中心](https://gitee.com/geekplayers/images/raw/master/chinaz-alexa.png)
 
 ### 日常实用工具 - 站长工具
-http://tool.chinaz.com/map.aspx
+<http://tool.chinaz.com/map.aspx>
 
 ### SEO查询
 
