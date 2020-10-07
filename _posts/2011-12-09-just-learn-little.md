@@ -66,12 +66,17 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg
 
 Flash是一个最简单的虚拟机，它只封装了最基本的操作（图形图像、声音、视频、XML以及现在的3D），连Button控件都没有，凡是可有可没有的都没有。
 用普通的眼光看，这个虚拟机简单、弱小。换一种方式看：尺寸小，平台小，容易移植。用html5/js来写一套Flash的基本API也没多少代码。因此，Flash/AIR才这么容易的打入iOS之中，且各类平台间Flash代码保持非常好的兼容性。
+
 Flash提供了一套简洁的API，跨各种平台。Flash以库的形式扩展（这一点与.Net很大不同），Flash CS工具里自带了一套简单、开源的UI控件库，Flex则提供了一套复杂的、全功能的UI库，这些都是Flash平台外部的（这也与.Net不同，WPF是在SDK里面的，而不是外面）。在平台外部，就拥有了很好的灵活性。
 这个简单的弱小的小玩意怎么能算遁去的一呢？
+
 算不上！
+
 它充其量就是一个灰尘大小的卵细胞。
+
 下面，一个微不足道的、看似毫无关联的玩意出场了：数据绑定。它就像一个小蝌蚪一样，向卵细胞游啊游，在两者接触的瞬间，一个生命诞生了！
 Flash开发遁去的一就是Flash的底层API + 数据绑定。
+
 Flash底层API很简单很少，各大平台都支持（Web，桌面，移动）。它就是中国移动全球通，什么地方都有它——我能！
 光能还不行，直接用Flash底层API开发，就像用GDI+一笔笔绘制一样，麻烦的要命，直到数据绑定出现，数据绑定让基于Flash API的开发有了质的飞跃——它好我也好！
 
@@ -81,14 +86,19 @@ Flash底层API很简单很少，各大平台都支持（Web，桌面，移动）
 
 首先，得学习开发语言。Flash平台的官方开发语言是actionscript3，简称as3，每当说起as3时，人们总会谈起as2，你就当as2从没出现过，了解as2一点用都没有，不闻、不问、不看。
 as3和主流开发语言很类似。package 机制、类机制和java相似，继承是extends，实现接口是implements。区别：
+
 （1）变量声明是var i:int；函数声明是：function foo(i:int):int; 不支持方法重载，支持默认参数。函数可以作为参数传递。支持闭包。
+
 （2）Getter和Setter分别为：function get foo():int; 和function set foo(i:int):int;
+
 （3）抛出事件：dispatchEvent;监听事件addEventListeneraddEventListener。事件支持弱引用。
+
 （4）for each可以遍历集合；
+
 （5）支持动态类，Object是动态类，for可以遍历Object: 
 
 ```actionscript
-for (var key:String in obj) 
+for (var key:String in obj)
 {
 ...
 }
@@ -132,84 +142,84 @@ as3很快就学会了，拿本语法书，扫一眼就行了。不用Flash CS�
 
 下面，就靠这些开始征程。
 先解决多语言的问题：
-```java
-package 
+```as
+package
 {
-    import orc.common.RpcRequest;
+    import orc.common.RpcRequest;
 
-    public dynamic class l extends Object
-    {
-        [Bindable]
-        public static var i:l = new l();
-        
-        public function s(key:String, defaultString:String = null):String
-        {
-            return getString(key,defaultString);
-        }
-        
-        public static function s(key:String, defaultString:String = null):String
-        {
-            return i.s(key,defaultString);
-        }
+    public dynamic class l extends Object
+    {
+        [Bindable]
+        public static var i:l = new l();
+        
+        public function s(key:String, defaultString:String = null):String
+        {
+            return getString(key,defaultString);
+        }
+        
+        public static function s(key:String, defaultString:String = null):String
+        {
+            return i.s(key,defaultString);
+        }
 
 
-        public function getString(key:String, defaultString:String = null):String
-        {
-            if(this.hasOwnProperty(key)==false) 
-            {
-                var lowKey:String = key.toLowerCase();
-                if(this.hasOwnProperty(lowKey) == false)
-                {
-                    return defaultString ? defaultString : key;
-                }
-                else
-                {
-                    return this[lowKey];
-                }
-            }
-            else
-            {
-                return this[key];
-            }
-        }
-        
-        public static function loadRemote(url:String, callback:Function = null, failCallback:Function = null):void
-        {
-            new RpcRequest(url, null,
-                function(obj:Object):void
-                {
-                    loadXml(new XML(obj));
-                    if(callback != null) callback();
-                },
-                failCallback
-            );
-        }
-        
-        public static function loadXml(xml:XML):void
-        {
-            if(xml == null) return;
-            
-            var lang:l = new l();
-            
-            // 第一遍
-            for each(var node: XML in xml.item)
-            {
-                lang[node.@key]=String(node.@value);
-            }
-            
-            // 第二遍，存储小写的key
-            for each(var node: XML in xml.item)
-            {
-                var lkey:String = String(node.@key).toLowerCase();
-                if(lang.hasOwnProperty(lkey) == false)
-                {
-                    lang[lkey] = String(node.@value); 
-                }
-            }
-            
-            i = lang;
-        }
-    }
+        public function getString(key:String, defaultString:String = null):String
+        {
+            if(this.hasOwnProperty(key)==false) 
+            {
+                var lowKey:String = key.toLowerCase();
+                if(this.hasOwnProperty(lowKey) == false)
+                {
+                    return defaultString ? defaultString : key;
+                }
+                else
+                {
+                    return this[lowKey];
+                }
+            }
+            else
+            {
+                return this[key];
+            }
+        }
+        
+        public static function loadRemote(url:String, callback:Function = null, failCallback:Function = null):void
+        {
+            new RpcRequest(url, null,
+                function(obj:Object):void
+                {
+                    loadXml(new XML(obj));
+                    if(callback != null) callback();
+                },
+                failCallback
+            );
+        }
+        
+        public static function loadXml(xml:XML):void
+        {
+            if(xml == null) return;
+            
+            var lang:l = new l();
+            
+            // 第一遍
+            for each(var node: XML in xml.item)
+            {
+                lang[node.@key]=String(node.@value);
+            }
+            
+            // 第二遍，存储小写的key
+            for each(var node: XML in xml.item)
+            {
+                var lkey:String = String(node.@key).toLowerCase();
+                if(lang.hasOwnProperty(lkey) == false)
+                {
+                    lang[lkey] = String(node.@value); 
+                }
+            }
+            
+            i = lang;
+        }
+    }
 }
 ```
 
@@ -1791,7 +1801,9 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 ![极客玩家大白-resize box](https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg "极客玩家大白")
 
 　　当然，滚动条啥的控件就复杂一点，不想写可以就拿Flash里自带的包装一下，照样用。
+
 　　然后是动画，动画也很容易，下面是让一个界面慢慢的变小的代码：
+
 ```java
             [Bindable]
             public var centerX:Number = 0;
@@ -1841,14 +1853,23 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 
  　 as3有个叫haXe的兄弟语言，haXe写的代码可以在Flash平台运行，可以在js环境运行，铺平了向html5的过渡之途。
 下面，回答前面提出的四个问题：我会哪些？我学了哪些？我能做什么？做这些我相对于别人有哪些优势？
+
 我会哪些？我学了哪些？
+
 Flash CS系列工具会吗？不会！
+
 Flex会吗，会一点点而已。
+
 还就只懂几个API和数据绑定和几个Flash基本类。其实这就够了。有基本类、有几个API，有数据绑定，组合起来就是非常强大的工具，我们不需要学习多少东西，却可以非常高效率的开发很多应用，且开发的这些应用可以分发到各大平台。不需要学习多少控件，有学习的时间，就够写一个自己的了。自己写的控件没有冗余，性能高，编译后的尺寸小，且修改方便。
 我能做什么？
+
 通常的，对特效要求不是特别高的Flash App都能做，这意味着，某些桌面软件，某些Web应用，某些ios应用和某些android应用。额，Html5也算顺便能做，今年顺手用haXe做了个html5的项目。
 我相对于别人有哪些优势？
+
 那些用Flash CS开发的，开发效率低，代码可维护性差。那些用Flex开发的，代码尺寸大，程序性能差。俺这样的优势就是Flex般的开发效率和灵活性，Flash般的性能和代码尺寸，且什么都是自己写的，出了问题自己也好弄，不像Flex那样是代码迷宫。
 学的少，可做的多，相对别人还有优势，这是不是就是遁去的一呢？要是按照书本学，按照别人的建议学，东西学了一大堆，能做多少还是个问题，能以什么效率做也是个问题，更可怕的是，学完了还不知道自己学习的是什么。
-只学一点点，不累！剩下的，交给狗爹度娘吧。
-　　注：本文代码只有主要代码，那些不影响阅读的代码就没贴出来，不然太长了。又由于和业务代码在一个项目里，也不方便打包放出。见谅！
+只学一点点，不累！
+
+剩下的，交给狗爹度娘吧。
+
+注：本文代码只有主要代码，那些不影响阅读的代码就没贴出来，不然太长了。又由于和业务代码在一个项目里，也不方便打包放出。见谅！
