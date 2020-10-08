@@ -7,7 +7,7 @@ tagline: by 萌较瘦
 categories: 
 - [leetcode, python]
 tags: [leetcode, python]
-copyright: 萌较瘦
+copyright: python
 excerpt: Leetcode面试题系列第1天
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
