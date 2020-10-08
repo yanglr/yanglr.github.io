@@ -6,6 +6,8 @@ vendor
 .DS_Store
 Gemfile.lock
 .vscode/
+.vs/
+_site/
 
 .idea
 *.sqlite
