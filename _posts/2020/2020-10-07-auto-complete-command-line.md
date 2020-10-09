@@ -32,10 +32,10 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/posh.png
 
 但是命令行自动补全功能带给我最大的乐趣！
 
-- git ch <TAB> -> git checkout st <TAB> -> git checkout暂存
-- dotnet bu <TAB> -> dotnet构建
-- dotnet --list-s <TAB> -> dotnet --list-sdks
-- 在<TAB>中的winget -> winget安装 -> winget安装WinDi <TAB> -> winget安装WinDirStat
+- git ch `<TAB>` -> git checkout st `<TAB>` -> git checkout暂存
+- dotnet bu `<TAB>` -> dotnet构建
+- dotnet --list-s `<TAB>` -> dotnet --list-sdks
+- 在`<TAB>`中的winget -> winget安装 -> winget安装WinDi `<TAB>` -> winget安装WinDirStat
 
 一旦你成功地完成了标签操作，就可以轻松获得荣耀。使用PowerShell及其表亲，可以通过Register-ArgumentCompleter使其成为可能。这是[dotnet](http://www.dot.net) CLI的外观。
 
@@ -53,7 +53,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 
 > **注意：**如果你了解这是如何工作的，则可以轻松地为一直使用的实用程序制作自己的Argument Completer！你可以为使用你的实用程序的工作人员制作它们！
 
-你从未真正看到过对“dotnet complete”的调用。你只是看到自己输入dotnet bui <TAB>并获得一系列选项即可浏览！
+你从未真正看到过对“dotnet complete”的调用。你只是看到自己输入dotnet bui `<TAB>`并获得一系列选项即可浏览！
 
 
 这是后台发生的事情：
