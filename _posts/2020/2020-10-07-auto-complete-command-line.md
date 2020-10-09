@@ -67,6 +67,6 @@ msbuild
 
 你可以将它们添加到你的`$profile`中。通常，我在命令行上运行'notepad $profile'，它将在正确的位置自动创建正确的文件。
 
-这是一个超级强大的模式！你可以使用 [PoshGit](https://github.com/dahlbyk/posh-git)[在PowerShell中的Git中](https://git-scm.com/book/ms/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Powershell) 以及在[WinGet中](https://github.com/microsoft/winget-cli/blob/master/doc/Completion.md)获得[自动完成](https://git-scm.com/book/ms/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Powershell)[功能](https://github.com/microsoft/winget-cli/blob/master/doc/Completion.md)！
+这是一个超级强大的模式！你可以使用 [PoshGit](https://github.com/dahlbyk/posh-git)[在PowerShell中的Git中](https://git-scm.com/book/ms/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Powershell) 以及在[WinGet中](https://github.com/microsoft/winget-cli/blob/master/doc/Completion.md)获得[自动完成](https://git-scm.com/book/ms/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Powershell)[功能](https://github.com/microsoft/winget-cli/blob/master/doc/Completion.md)！
 
 你已添加到PowerShell配置文件的一些更晦涩的自动完成功能是什么？

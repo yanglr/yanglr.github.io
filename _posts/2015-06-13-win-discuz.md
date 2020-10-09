@@ -127,10 +127,6 @@ Win7 64 with sp1
           disable_functions = passthru,exec,system,chroot,scandir,chgrp,chown,shell_exec,proc_open,proc_get_status,ini_alter,ini_alter,ini_restore,dl,pfsockopen,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server
      ```
 
-     Plaintext
-
-     Copy
-
    据称 IIS 7 以下需要将 php.ini 复制到 C:\Windows\php.ini。
 
    另外，官方文档上显示的需要找开的模块比上面列出的多，但是在配置文件里并没有找到。
@@ -317,13 +313,13 @@ Win7 64 with sp1
 
 ## 常用入口
 
-打开论坛 [http://localhost](http://localhost/)
+打开论坛 <http://localhost/>
 
 论坛管理 http://localhost/admin.php
 
 查看数据库 http://localhost/phpmyadmin
 
-打开UCenter http://localhost/uc_server
+打开用户中心 http://localhost/uc_server
 
 
 
@@ -340,5 +336,3 @@ Win7 64 with sp1
 2. 为网站添加本机 IP 绑定
 
    ![极客玩家大白-img](https://cdn.jsdelivr.net/gh/by8/by8.github.io@master/images/posts/php/nat-bind-ip.png "极客玩家大白")
-
-
