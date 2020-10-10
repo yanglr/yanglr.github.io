@@ -134,8 +134,9 @@ Javascript代码请添加到网页中`</body>`标签的后面。
 在Javascript程序中调用BaiduSuggestion.bind()方法将“百度搜索框提示”功能和页面上的元素进行绑定。
 BaiduSuggestion.bind()的具体形式为：
 
-
-**BaiduSuggestion.bind(inputObj|inputId,[params],[confirmCallback]);**
+```JavaScript
+BaiduSuggestion.bind(inputObj|inputId,[params],[confirmCallback]);
+```
 
 **inputObj|inputId:**
 为需要绑定搜索框提示功能的input对象或input对象的id。
