@@ -242,7 +242,7 @@ touch .bashrc
 
 - 在 `.bashrc` 文件中添加alias别名:
 
-pagic.cmd的默认安装目录为: /C/Users/{username}/.deno/bin/pagic.cmd
+pagic.cmd的默认安装目录为: `/C/Users/{username}/.deno/bin/pagic.cmd`.
 
 这里需要把{username}替换为自己的用户名。
 
