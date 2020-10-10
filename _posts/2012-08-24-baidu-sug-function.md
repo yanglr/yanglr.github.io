@@ -136,7 +136,7 @@ BaiduSuggestion.bind()的具体形式为：
 
 
 **BaiduSuggestion.bind(inputObj|inputId,[params],[confirmCallback]);**
-**
+
 **inputObj|inputId:**
 为需要绑定搜索框提示功能的input对象或input对象的id。
 
@@ -169,10 +169,10 @@ Javascript代码请添加到网页中</body>标签的后面。
 如使用utf-8编码，请务必在script标签中设置charset=gbk属性，否则搜索提示词会出现乱码。
 
 Javascript文件的应在BaiduSuggestion.bind()方法被调用之前引入。
+
 [查看样例效果](http://www.baidu.com/search/sug/demo2.html)
 
 
-**
 **常见问题**
 
 - **使用“百度搜索框提示”功能将给站长带来哪些收益？**
@@ -196,6 +196,7 @@ Javascript文件的应在BaiduSuggestion.bind()方法被调用之前引入。
 - **引入搜索框提示功能是否会影响网页中的原有功能？**
 
 1、不会。“百度搜索框提示”功能采用闭包设计，不会污染原有页面代码，因此不会影响您页面中的原有功能。
+
 2、为了防止功能冲突，如果您的搜索框已经绑定了其他提示功能，请先取消原有的功能后再绑定“百度搜索框提示”功能。
 
 - **我能否根据自己站点的需要，对“百度搜索框提示”功能进行个性化的样式定义？**
