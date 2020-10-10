@@ -9,6 +9,7 @@ categories:
 # platform: 公众号
 # gzhname: 大白技术控
 tags: [WPF, C++]
+original: true
 excerpt: 用Visual C++创建WPF项目的三种主要方法
 image: https://gitee.com/geekplayers/images/raw/master/cpp-wpf5.png
 ---

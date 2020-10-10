@@ -9,6 +9,7 @@ categories:
 # gzhname: 大白技术控
 tags: [WPF, C++]
 excerpt: Visual C++中创建WPF项目的方法
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/images/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTAxNDc3LWE4OWZmN2NjMzY1NWFjOGIucG5n
 ---
 

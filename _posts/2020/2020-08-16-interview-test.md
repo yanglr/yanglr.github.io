@@ -10,6 +10,7 @@ categories:
 # gzhname: 大白技术控
 tags: [面试题]
 excerpt: 面试题 - svg互动
+original: true
 ---
 
 <section id="categories" markdown="1">

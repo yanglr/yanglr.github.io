@@ -9,6 +9,7 @@ excerpt: 如何在dotnet，git，winget等命令行中使用自动完成功能
 keywords: 极客玩家大白
 description: 如何在dotnet，git，winget等命令行中使用自动完成功能
 topmost: true
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/images/posh.png
 ---
 

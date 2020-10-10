@@ -11,6 +11,7 @@ excerpt: WPF中的Data Binding调试方法和工具汇总
 keywords: .NET, wpf, xaml
 description: WPF中的Data Binding调试方法和工具汇总
 topmost: true
+original: true
 author: bravo_yeung
 platform: '博客园'
 sourcelink: https://www.cnblogs.com/enjoy233/p/WPF-data-binding-debug-guide.html
