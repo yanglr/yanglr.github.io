@@ -16,7 +16,7 @@ image: https://pic.rmb.bdstatic.com/bjh/bb51f88b0090674ff086ad80162b7083.png
 
 **免费获取百度搜索框提示功能帮助**
 [功能介绍](http://www.baidu.com/search/sug/sugcode.html#intro)  [法律声明](http://www.baidu.com/search/sug/sugcode.html#law)  [立即获取](http://www.baidu.com/search/sug/sugcode.html#get)  [常见问题](http://www.baidu.com/search/sug/sugcode.html#qa)
-[帮助中心](http://http://www.baidu.com/search/jiqiao.html)
+[帮助中心](http://www.baidu.com/search/jiqiao.html)
 
 
 **搜索框提示功能介绍**
