@@ -5,7 +5,7 @@ title: pagic零基础入门教程
 categories:
 - [pagic, 入门教程]
 tags: [pagic, 入门教程]
-excerpt: pagic零基础入门教程, 从零到一
+excerpt: 不错的静态网站生成器一枚 - pagic，基于Deno和React，大白来分享一下该框架的玩法，给出从零到一的Pagic入门教程。
 keywords: pagic, 入门教程, deno
 description: 不错的静态网站生成器一枚 - pagic，基于Deno和React，大白来分享一下该框架的玩法，给出从零到一的Pagic入门教程。
 topmost: true
