@@ -8,5 +8,5 @@ jobs:
     steps:
      - uses: actions/checkout@v1
      - run: |
-        bash deploy.bash -xe
+        bash deploy-jekyll.bash -xe
      - run: echo "Deploy categories and tags."
