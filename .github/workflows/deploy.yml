@@ -1,0 +1,12 @@
+name: Workflow for categories and tags.
+
+on: [push]
+
+jobs:
+  runMultipleCommands:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v1
+     - run: |
+        bash deploy.bash -xe
+     - run: echo "Deploy categories and tags."
