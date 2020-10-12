@@ -2,7 +2,10 @@ rm -rf categories
 rm -rf category
 rm -rf tags
 
-bundle exec jekyll build
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
+
+jekyll build
 
 cp -r _site/categories .
 cp -r _site/tags .
