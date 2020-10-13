@@ -1,12 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<head>
+<head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
     <title>EJS Sandbox_极客玩家大白</title>
     <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.5/ejs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="apple-mobile-web-app-title" content="极客玩家大白">
+    <meta name="google" value="notranslate">
+    <!-- simple jekyll search -->
+    <script charset="utf-8" src="https://ers.baidu.com/app/s.js?siteId=15780746&amp;goTop=1"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://hm.baidu.com/hm.js?87596be0014a64eee1571944c5130a8e"></script>
+    <script src="https://zz.bdstatic.com/linksubmit/push.js"></script>
+    <script type="text/javascript" async="" src="https://certify-js.alexametrics.com/atrk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.11/dest/simple-jekyll-search.min.js"></script>
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon.png">
+    <link rel="search" type="application/opensearchdescription+json" href="https://geekplayers.com/search.json"
+        title="极客玩家大白">
+    <meta name="theme-color" content="#cc0000">
+    <meta name="msapplication-TileColor" content="#cc0000">
+    <meta name="msapplication-TileImage" content="https://geekplayers.com/assets/images/better-me.jpg">
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "K78pv1Y1Mn20Io", domain: "geekplayers.com", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=K78pv1Y1Mn20Io" style="display:none"
+            height="1" width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
+    <meta name="google-site-verification" content="GtBOHqwkUyIwJzqdPZ1VheMXW4edMcCJwjFJx5kGdWo">
+    <meta name="google-site-verification" content="41OWG5Vo9v4bjss_dr9CXfFGqd6FOE6iz-amoUsSC4U">
+    <!-- Submit github.io to g. -->
+    <meta name="google-site-verification" content="ITq_FdS8-Xx5YYhrXsVuWxj1QSFF0GITF53q1O0cMSQ">
+    <!-- Submit github.com to g. -->
+    <meta name="baidu-site-verification" content="yML3Kpovuo">
+    <meta name="baidu-site-verification" content="code-ZdUPa21nv6"> <!-- Submit github.com to bd. -->
+    <meta name="360-site-verification" content="49ed3d11f562a12a5ba68d3c6d2115b0">
+    <meta name="sogou_site_verification" content="53WDIeIDAM"> <!-- Submit github.io to sg. -->
+    <meta name="msvalidate.01" content="0FE0D36F099AFBB1CAC652EF20A2437F">
+
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-10-13T14:32:34+00:00">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="keywords" content="Python, 大白VR, 大奔SEO, 大白技术控, 技术博客, .NET">
+    <meta name="description" content="极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧">
+    <!-- <meta name="description" property="og:description" content="极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧" /> -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="EJS Sandbox | 极客玩家大白">
+    <meta property="og:image" content="https://geekplayers.com/assets/images/better-me.jpg">
+    <meta property="og:image:width" content="266">
+    <meta property="og:image:height" content="266">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:updated_time" content="2020-10-13T14:32:34+00:00">
+    <meta property="og:url" content="https://geekplayers.com/tools/ejs/">
+    <meta property="og:site_name" content="极客玩家大白">
+    <meta property="og:description" content="极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧">
+    <meta property="article:section" content="大白技术控，分享技术、感悟人生，兼谈运营硬核技巧.">
+    <meta property="og:image:secure_url" content="https://geekplayers.com/assets/images/better-me.jpg">
+    <meta property="og:image:alt" content="极客玩家大白">
+    <meta property="article:modified_time" content="2020-10-13T14:32:34+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yanglr">
+    <meta name="twitter:title" content="Bravo Yeung">
+    <meta name="twitter:image" content="https://geekplayers.com/assets/images/better-me.jpg">
+    <meta name="twitter:url" content="https://geekplayers.com/tools/ejs/">
+    <meta name="twitter:description" content="极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧">
+    <link rel="canonical" href="https://geekplayers.com/tools/ejs/">
+    <link rel="alternate" type="application/rss+xml" title="极客玩家大白 RSS feed" href="https://geekplayers.com/feed.xml">
+    <link rel="sitemap" type="application/xml" title="极客玩家大白 Sitemap" href="https://geekplayers.com/sitemap.xml">
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "ImageObject",
+                        "@id": "https://geekplayers.com/assets/images/better-me.jpg",
+                        "inLanguage": "zh-CN",
+                        "url": "https://geekplayers.com/assets/images/better-me.jpg",
+                        "width": 266,
+                        "height": 266,
+                        "caption": "你的生活和我一样吗 | 极客玩家大白"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://geekplayers.com/tools/ejs/",
+                        "url": "https://geekplayers.com/tools/ejs/",
+                        "name": "你的生活和我一样吗 | 极客玩家大白",
+                        "isPartOf": {
+                            "@id": "https://geekplayers.com"
+                        },
+                        "primaryImageOfPage": {
+                            "@id": "https://geekplayers.com"
+                        },
+                        "datePublished": "2020-10-13T14:32:34+00:00",
+                        "dateModified": "2020-10-13T14:32:34+00:00",
+                        "description": "极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧",
+                        "inLanguage": "zh-CN",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://geekplayers.com/tools/ejs/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "Article",
+                        "@id": "https://geekplayers.com/tools/ejs/",
+                        "isPartOf": {
+                            "@id": "https://geekplayers.com/tools/ejs/"
+                        },
+                        "author": {
+                            "@id": "https://geekplayers.com"
+                        },
+                        "headline": "你的生活和我一样吗 | 极客玩家大白",
+                        "datePublished": "2020-10-13T14:32:34+00:00",
+                        "dateModified": "2020-10-13T14:32:34+00:00",
+                        "commentCount": 30,
+                        "publisher": {
+                            "@id": "https://geekplayers.com"
+                        },
+                        "image": {
+                            "@id": "https://geekplayers.com/assets/images/better-me.jpg"
+                        },
+                        "articleSection": "你的生活和我一样吗",
+                        "inLanguage": "zh-CN",
+                        "potentialAction": [
+                            {
+                                "@type": "CommentAction",
+                                "name": "Comment",
+                                "target": [
+                                    "https://geekplayers.com/tools/ejs/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "Person",
+                        "@id": "https://geekplayers.com",
+                        "name": "极客玩家大白"
+                    },
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "Recipe",
+                        "name": "大白技术控，分享技术、感悟人生，兼谈运营硬核技巧.",
+                        "description": "大白技术控，分享技术、感悟人生，兼谈运营硬核技巧.!",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Bravo Yeung"
+                        },
+                        "image": [
+                            "https://geekplayers.com/assets/images/better-me.jpg"
+                        ],
+                        "url": "https://geekplayers.com/tools/ejs/",
+                        "recipeIngredient": [
+                            "第1步",
+                            "第2步",
+                            "第3步",
+                            "第4步"
+                        ],
+                        "recipeInstructions": [
+                            {
+                                "@type": "HowToStep",
+                                "text": "第1步",
+                                "url": "https://geekplayers.com/tools/ejs/#step-1"
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "text": "第2步",
+                                "url": "https://geekplayers.com/tools/ejs/#step-2"
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "text": "第3步",
+                                "url": "https://geekplayers.com/tools/ejs/#step-3"
+                            }
+                        ],
+                        "datePublished": "2020-10-13T14:32:34+00:00",
+                        "@id": "https://geekplayers.com/tools/ejs/",
+                        "isPartOf": {
+                            "@id": "https://geekplayers.com"
+                        },
+                        "mainEntityOfPage": "https://geekplayers.com"
+                    }
+                ]
+            }
+        </script>
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://geekplayers.com/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="https://geekplayers.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="https://geekplayers.com/assets/css/sidebar-post-nav.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://geekplayers.com/assets/css/common.css">
+    <!-- CSS set in page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/css/blog-page.css">
+
+    <!-- CSS set in layout -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@v4.6.3/css/font-awesome.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
