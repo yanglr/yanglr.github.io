@@ -1,3 +1,53 @@
+<style>
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    .tag ul {
+        display: flex
+    }
+
+    .tag ul li {
+        margin-right: 18px
+    }
+
+    .tag ul i {    
+        line-height: 1;
+        padding: 4px 2px;
+        font-size: 16px;
+    }
+
+    .tag ul a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #ddd;
+        transition: transform .3s;
+        background-color: #16a085 !important; 
+        padding: 3px 2px;
+        border-radius: 5px 0 0 5px !important;
+        font-size: 12px;
+    }
+
+    .tag ul a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -1em;
+        width: 0;
+        border: 1em solid transparent;
+        border-right: none;
+        border-left: 1em solid #16a085
+    }
+
+    .tag ul a:hover {
+        transform: translateX(4px)
+    }
+
+</style>
+
 <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
     <div class="container">
         <div id="jumbotron-meta-info">
@@ -34,27 +84,32 @@
                 {% assign categories = page.categories %}
                 {% endif %}
                 
-                {% for category in categories %}
-                {% if category.size == 0 %}
-                {% unless category contains "," %}
-                <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
-                <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                      href="{{site.baseurl}}/categories/{{category|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}">{{category}}</a>
-                {% endunless %}
-                {% elsif category.size > 0 %}
-                    {% if forloop.index == 1 %}
-                    <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
-                    {% for cat in category %}
-                        <a style='background-color: #16a085 !important; padding: 2px 6px; border-radius: 4px !important;font-size: 15px;overflow: scroll;' 
-                        href="{{site.baseurl}}/categories/{{cat|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}">{{cat}}</a>
-                    {% endfor %}
-                    {% endif %}                
-                {% else %}
-
-                {% endif %}
-                <!-- <p>out index:{{forloop.index}}</p>
-                <p>size: {{category.size()}}</p> -->
-                {% endfor %}
+                <div class="tag">
+                    <ul>
+                        {% for category in categories %}
+                        {% if category.size == 0 %}
+                        {% unless category contains "," %}
+                
+                        <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                        <li><a
+                                href="{{site.baseurl}}/categories/{{category|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}">{{category}}</a>
+                        </li>
+                        {% endunless %}
+                        {% elsif category.size > 0 %}
+                        {% if forloop.index == 1 %}
+                        <font style="color: #ddd;"><i class="fa fa-folder-open" aria-hidden="true"></i></font>
+                        {% for cat in category %}
+                        <li><a href="{{site.baseurl}}/categories/{{cat|downcase|replace: ' ', '-'|replace: '+', ''|replace: '.', ''}}">{{cat}}</a></li>
+                        {% endfor %}
+                        {% endif %}
+                        {% else %}
+                
+                        {% endif %}
+                        <!-- <p>out index:{{forloop.index}}</p>
+                                                <p>size: {{category.size()}}</p> -->
+                        {% endfor %}
+                    </ul>
+                </div>
             </p>
             <p class="meta-info"><i class="fa fa-info-circle"></i>
                 <a rel="external nofollow" id='index-query' href="http://www.baidu.com/s?wd={{ site.url }}{{ page.url }}" _target="_blank"
