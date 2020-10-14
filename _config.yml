@@ -70,6 +70,12 @@ collections:
         output: true
         permalink: /wiki/:path/
 
+# 组件配置
+components:
+    # 分享
+    share:
+        enabled: true
+
 # Build settings
 lsi:         false
 excerpt_separator: "\n\n"

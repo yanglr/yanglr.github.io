@@ -9,6 +9,11 @@ layout: page
 
       <article class="article-content markdown-body">
         {{ content }}
+
+        <div class="share">
+          {% include sns-share.html %}
+        </div>
+
         {% include copyright.html %}
       </article>
 
