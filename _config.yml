@@ -65,6 +65,11 @@ defaults:
     values:
       image: https://geekplayers.com/assets/images/better-me.jpg
 
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
 # Build settings
 lsi:         false
 excerpt_separator: "\n\n"
