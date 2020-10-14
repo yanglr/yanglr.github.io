@@ -3,7 +3,7 @@ layout: page
 title: Wiki
 titlebar: 维基
 subtitle:  <span class="mega-octicon octicon-person"></span>&nbsp;&nbsp; 人越学越觉得自己无知~
-css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon-css/css/flag-icon.min.css']
+css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon-css/css/flag-icon.min.css', 'gitalk.css']
 comments: false
 menu: 维基
 permalink: /wiki/
