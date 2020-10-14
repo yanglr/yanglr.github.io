@@ -33,6 +33,10 @@ plugins:
   - jekyll-archives
   - jekyll-include-cache  
 
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-archives
+
 category_archive:
   type: jekyll-archives
   path: /categories/
