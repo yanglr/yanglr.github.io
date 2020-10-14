@@ -1,7 +1,6 @@
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
 *.sw[po]
 .DS_Store
 Gemfile.lock
