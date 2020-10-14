@@ -9,4 +9,12 @@
 .about .btn {
     margin-bottom: 5px;
 }
-.icon-logo{fill: #000;}
+
+.icon-logo{
+    fill: #000;
+}
+
+#tip {
+    max-width: 240px;
+    max-height: 240px;
+}
