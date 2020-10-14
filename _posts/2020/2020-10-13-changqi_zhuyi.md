@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2020-10-13 10:15:32
+redirect_from:
+  - /changqi-zhuyi.html
 title: 长期主义什么意思？真正的高手都是长期主义
 categories:
 - [个人成长, 成长思维, 长期主义]
