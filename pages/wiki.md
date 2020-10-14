@@ -9,6 +9,13 @@ menu: 维基
 permalink: /wiki/
 ---
 
+<style>
+    li.listing-item {
+    font-size: 18px !important;
+    margin: 5px 0 !important;
+}
+</style>
+
 > 记多少命令和快捷键会让脑袋爆炸呢？
 
 <ul class="listing">
