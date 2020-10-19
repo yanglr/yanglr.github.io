@@ -9,6 +9,7 @@ tags: [oj]
 
 categories:
 - [oj, 编程练习]
+original: true
 ---
 
 ### 题目: 质数因子

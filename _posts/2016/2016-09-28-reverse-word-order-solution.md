@@ -6,6 +6,7 @@ date: 2016-09-28 23:48:56
 tags: [剑指offer, oj]
 categories: 
 - 编程训练
+original: true
 ---
 
 

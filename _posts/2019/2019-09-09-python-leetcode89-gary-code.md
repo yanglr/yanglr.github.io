@@ -9,6 +9,7 @@ categories:
 tags: [leetcode, python]
 copyright: python
 excerpt: Leetcode面试题系列第1天
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 

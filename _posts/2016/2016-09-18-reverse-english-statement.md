@@ -6,6 +6,7 @@ date: 2016-09-18 09:47:26
 tags: [oj]
 categories:
 - 编程训练
+original: true
 ---
 
 ### 题目: 句子逆序

@@ -6,6 +6,7 @@ date: 2016-09-17 15:19:26
 tags: [oj]
 categories:
 - 编程训练
+original: true
 ---
 
 ### 题目: 求最小公倍数

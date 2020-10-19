@@ -6,6 +6,7 @@ date: 2016-10-09 21:06:10
 tags: [华为oj]
 categories: 
 - [oj, 校招编程题]
+original: true
 ---
 
 

@@ -8,6 +8,7 @@ categories:
 - [leetcode, python, Leetcode面试题]
 copyright: python
 excerpt: Leetcode面试题系列
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 

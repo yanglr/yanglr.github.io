@@ -12,6 +12,7 @@ excerpt: 大白技术控 - @开发者，一份微软官方Github上发布的开�
 keywords: .NET,微软,开源
 description: 大白技术控 - @开发者，一份微软官方Github上发布的开源项目清单等你签收
 topmost: true
+original: true
 author: bravo_yeung
 platform: 博客园
 sourcelink: https://www.cnblogs.com/enjoy233/p/developer-benefits_github-open-source-projects-of-microsoft.html

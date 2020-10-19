@@ -6,6 +6,7 @@ date: 2016-09-15 15:33:22
 categories:
 - PHP项目实战
 tags: [redmine, php, api]
+original: true
 ---
 
 使用redmine的PHP接口时，怎样才能判断需求是否为原子需求呢，下面给出具体的做法:

@@ -8,6 +8,7 @@ category: it
 
 tags: [js, copyright]
 excerpt: JS实现页面复制文字时自动加版权
+original: true
 ---
 
 经亲自实践，尝试了各种方法，目前可行的方法主要有如下两种：

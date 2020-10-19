@@ -8,6 +8,7 @@ tags: [博客, 大奔SEO, 个人品牌]
 excerpt: 用网站打造个人博客品牌
 keywords: 博客, 大奔SEO, 个人品牌
 description: 个人博客怎么做
+original: true
 ---
 
 by 南忠豹

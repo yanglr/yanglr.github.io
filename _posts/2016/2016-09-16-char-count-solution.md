@@ -6,6 +6,7 @@ date: 2016-09-16 23:42:35
 tags: [oj]
 categories: 
 - 编程训练
+original: true
 ---
 
 ### 题目:字符个数统计

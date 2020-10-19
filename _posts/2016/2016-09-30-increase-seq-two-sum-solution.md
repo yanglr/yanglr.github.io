@@ -6,6 +6,7 @@ date: 2016-09-30 20:47:40
 tags: [oj, 剑指offer]
 categories: 
 - 编程训练
+original: true
 ---
 
 ### 题目: 和为S的两个数字

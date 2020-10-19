@@ -6,6 +6,7 @@ date: 2016-09-18 21:23:07
 tags: [oj]
 categories:
 - [C++, C++常用语法]
+original: true
 ---
 
 # std::getline

@@ -14,6 +14,7 @@ author: edison_zhou
 platform: 公众号
 gzhname: 恰童鞋骚年
 date: 2020-06-17 07:30:00
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/edison-gzh1.png
 ---
 

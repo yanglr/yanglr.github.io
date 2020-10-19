@@ -9,6 +9,7 @@ categories:
 
 tags: [wpf]
 excerpt: 大白技术控 - 从0到1：使用Caliburn.Micro(WPF和MVVM)开发简单的计算器
+original: true
 ---
 
 前一段时间一直在用`Caliburn.micro`框架，今天抽空来总结一下~

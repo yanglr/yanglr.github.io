@@ -6,6 +6,7 @@ date: 2016-09-29 00:31:13
 tags: [剑指offer, oj]
 categories: 
 - 编程训练
+original: true
 ---
 
 ### 题目: 左旋转字符串

@@ -6,6 +6,7 @@ date: 2016-09-17 16:18:46
 tags: [oj]
 categories: 
 - 编程训练
+original: true
 ---
 
 ### 题目: 求解立方根

@@ -7,6 +7,7 @@ tags: [博客园, markdown]
 categories:
 - 博客园美化
 excerpt: 博客园的markdown模式下的代码高亮功能和行号~
+original: true
 ---
 
 博客园的markdown模式下的代码高亮功能使用的是`highlight.js`，没有行号和显示相应编程语言的功能，只好自己将其改造了一下(将这两种功能一并实现了)~ 

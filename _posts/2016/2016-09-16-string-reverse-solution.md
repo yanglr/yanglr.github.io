@@ -6,9 +6,8 @@ date: 2016-09-16 16:03:06
 tags: [oj]
 categories: 
 - [oj, 编程训练]
+original: true
 ---
-
-
 
 ### 题目: 字符串反转
 

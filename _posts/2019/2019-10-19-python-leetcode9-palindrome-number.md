@@ -8,6 +8,7 @@ title:  LeetCode面试系列 第6天：No.9 - 回文数
 tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 

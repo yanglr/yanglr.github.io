@@ -1,4 +1,5 @@
 ---
+date: 2016-10-19
 redirect_from:
   - /2016/10/19/windows-install-jekyll/
 title: Windows下安装Jekyll及启动遇到的问题
@@ -11,7 +12,7 @@ tags: [jekyll, Windows, Ruby]
 excerpt: Windows下安装Jekyll及启动遇到的问题, 转载自 'https://silocean.github.io/2016/10/19/windows-install-jekyll/' by silocean (rainbow/rinbow.github.io).
 keywords: silocean, jekyll, Windows, Ruby
 description: Windows下安装Jekyll及启动遇到的问题 - https://silocean.github.io/2016/10/19/windows-install-jekyll/
-date: 2016-10-19
+original: true
 ---
 
 想在本地预览 Jekyll 博客，需要安装 Jekyll，刚倒腾了半天，说说我在 Win10 系统下安装 Jekyll 的惨痛经历吧。

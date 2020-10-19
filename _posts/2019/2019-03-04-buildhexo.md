@@ -12,6 +12,7 @@ category: it
 
 tags: [hexo, it]
 description: 开发小白也毫无压力的hexo静态博客建站全攻略 - 躺坑后亲诉心路历程
+original: true
 image: https://gitee.com/geekplayers/images/raw/master/hexo7.png
 ---
 

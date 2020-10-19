@@ -6,6 +6,7 @@ date: 2016-09-18 10:43:12
 tags: [oj]
 categories: 
 - 编程训练
+original: true
 ---
 
 ### 题目: 数字颠倒

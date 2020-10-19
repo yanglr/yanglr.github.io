@@ -9,6 +9,7 @@ tagline: by 萌较瘦
 tags: 
   - LeetCode面试题系列
 excerpt: LeetCode面试No.976 - 三角形的最大周长
+original: true
 image: https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/public/LeetCode.png
 ---
 
