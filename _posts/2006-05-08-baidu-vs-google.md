@@ -8,6 +8,7 @@ tags: [百度SEO, 谷歌, 搜索专利]
 excerpt: Keso：东拉西扯-超链分析和PageRank的专利问题
 keywords: Keso, 超链分析专利, 百度vs谷歌
 description: Keso：东拉西扯-超链分析和PageRank的专利问题, 转载自 http://blog.donews.com/keso/archive/2006/05/08/860109.aspx
+image: https://pic.rmb.bdstatic.com/bjh/a2bfab7574b646604f4e1943c65b3815.png
 ---
 
 ## Keso：东拉西扯-超链分析和PageRank的专利问题
