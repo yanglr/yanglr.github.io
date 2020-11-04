@@ -40,7 +40,6 @@ description: Keso：东拉西扯-超链分析和PageRank的专利问题, 转载�
 
 
 
-归类于： [0.1: 东拉西扯](http://blog.donews.com/keso/archive/category/东拉西扯) — keso @ 09:53 [评论(154)](http://blog.donews.com/keso/archive/2006/05/08/860109.aspx#comments)
-
+归类于： [0.1: 东拉西扯](http://blog.donews.com/keso/archive/category/东拉西扯) — keso @ 09:53
 
 ![Keso-对牛乱弹琴-极客玩家大白](https://pic.rmb.bdstatic.com/bjh/269716b26f8be27002d81b213a13037c.png)
