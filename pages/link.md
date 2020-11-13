@@ -10,6 +10,7 @@ permalink: /link
 ## 友情链接
 
 - [极客中心](https://www.geekzl.com)
+- [码志](https://mazhuang.org)
 - [Dotnet9](https://dotnet9.com)
 - [峡州仙士之页](https://cjh0613.github.io/blog/index.html) - 世上本没有路
 - [Python知识圈](https://www.pyzhishiquan.com)
