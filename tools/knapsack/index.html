@@ -1,0 +1,111 @@
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"><script src="knapsack_files/analytics.js" type="text/javascript"></script>
+    <script type="text/javascript" src="knapsack_files/wombat.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="knapsack_files/banner-styles.css">
+    <link rel="stylesheet" type="text/css" href="knapsack_files/iconochive.css">
+    <!-- End Wayback Rewrite JS Include -->
+    
+        <meta charset="ISO-8859-1">
+        
+        <!-- FAVICON -->
+        <!--<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
+        
+        <title>knapsack</title>
+        
+        <!--LIBRARYISH RESOURSES -->
+        <!--<link rel="stylesheet" href="NEWKaraffeltutCom/lib/jquery-ui-1.9.2.custom.min.css"/>-->
+        <script type="text/javascript" src="knapsack_files/jquery-1.js"></script>
+            
+        <!-- MY STUFF -->
+        <script type="text/javascript" src="knapsack_files/knapsack.js"></script>	
+        <link rel="stylesheet" type="text/css" href="knapsack_files/knapsack.css">
+        
+    </head>
+    <body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+    <style type="text/css">
+    body {
+      margin-top:0 !important;
+      padding-top:0 !important;
+      /*min-width:800px !important;*/
+    }
+    </style>
+    <script>__wm.rw(0);</script>
+    <div id="wm-ipp-base" style="display: block; direction: ltr;" lang="en">
+    </div>
+    <div id="donato" style="position:relative;width:100%;">
+      <div id="donato-base">
+        <iframe id="donato-if" src="knapsack_files/donate.htm" scrolling="no" style="width:100%; height:100%" frameborder="0">
+        </iframe>
+      </div>
+    </div>
+    
+    <!-- END WAYBACK TOOLBAR INSERT -->
+        <a href="http://geekplayers.com/">HOME</a>
+        <div id="solution-items-div">
+            <table id="solution-items-table" class="cool-table"><tbody><tr><th>Items in solution</th></tr><tr><td>val=12 w=4</td></tr><tr><td style="background-color:#117f54">solution: 12</td></tr></tbody></table>
+        </div>
+        
+        <div id="tab-div">
+            
+            <h4 class="font_1">Online 0/1 Knapsack problem solver</h4>
+            <p>
+                Using dynamic programming with javascript
+                <a style="margin-left:15px" href="http://en.wikipedia.org/wiki/Knapsack_problem">Read about it at wikipedia</a>
+                <a style="margin-left:15px" href="http://www.youtube.com/watch?v=hugQNiYoqUA">Youtube explaination movie-film</a>
+            </p>
+            <table id="solution-table" class="cool-table"><tbody><tr> <th class="no-border"></th><th class="no-border">capacity ==&gt;</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th></tr><tr><td class="no-border"></td><td class="lef">no items</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td class="del"><input type="button" class="but1" value="delete" id="del0"></td><td class="lef">value=12 weight=4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td style="background-color: rgb(17, 127, 84);">12</td></tr></tbody></table>
+        </div>
+        <div id="controll">
+            <div id="new-item" class="float-left">
+                <table class="cool-table">
+                    <tbody><tr> <th>Add Item</th></tr>
+                    <tr>	<td><label>Value: </label><input type="number" name="val" id="val"></td> </tr>
+                    <tr>	<td><label>Weight: </label><input type="number" name="wei" id="wei"></td> </tr>
+                    <tr>  <td class="no-border">	<input type="button" class="but1" value="OK " onclick="newItem()"></td></tr>			
+                </tbody></table>
+            </div>
+            <div id="delete-Items" class="float-left">
+                <table class="cool-table">
+                    <tbody><tr> <th>Delete all Items</th></tr>
+                    <tr>	<td class="no-border"><input type="button" class="but1" value="delete" name="delete" onclick="deleteItems()"></td> </tr>			
+                </tbody></table>
+            </div>
+            <div id="load-demo-items" class="float-left">
+                <table class="cool-table">
+                    <tbody><tr> <th>Reload demo items</th></tr>
+                    <tr>	<td class="no-border"><input type="button" value="reload" class="but1" name="delete" onclick="loadDemoItems()"></td> </tr>			
+                </tbody></table>
+            </div>
+            <div id="new-item" class="float-left">
+                <table class="cool-table">
+                    <tbody><tr> <th>New capacity</th></tr>
+                    <tr>	<td>knapsack size:<br><input type="number" value="18" name="val" id="capacity"></td> </tr>
+                    <tr>  <td class="no-border">	<input type="button" class="but1" value="OK " onclick="newCapacity()"></td></tr>			
+                </tbody></table>
+            </div>
+            <div id="new-item" class="float-left">
+                <table class="cool-table">
+                    <tbody><tr> <th>Reverse Items</th></tr>
+                    <tr>  <td class="no-border">	<input type="button" class="but1" value="OK " onclick="reverseItems()"></td></tr>			
+                </tbody></table>
+            </div>
+        </div>
+    
+    
+    
+    <!--
+    playback timings (ms):
+      captures_list: 167.059
+      exclusion.robots: 0.23
+      exclusion.robots.policy: 0.22
+      RedisCDXSource: 5.23
+      esindex: 0.009
+      LoadShardBlock: 137.899 (3)
+      PetaboxLoader3.datanode: 147.706 (4)
+      CDXLines.iter: 19.703 (3)
+      load_resource: 143.083
+      PetaboxLoader3.resolve: 105.212
+    -->
+    </body></html>
