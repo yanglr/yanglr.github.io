@@ -5,7 +5,7 @@ titlebar: leetcode
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Leetcode刷刷更健康
 menu: leetcode
 css: ['blog-page.css']
-permalink: /leetcode
+permalink: /leetcode-
 ---
 
 <div class="row">
