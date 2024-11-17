@@ -1,4 +1,4 @@
-Sitemap: https://geekplayers.com/sitemap.xml
-Sitemap: https://geekplayers.com/cnsitemap.xml
+Sitemap: https://yanglr.github.io/sitemap.xml
+Sitemap: https://yanglr.github.io/cnsitemap.xml
 
 User-agent: *

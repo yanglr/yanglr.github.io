@@ -5,8 +5,8 @@
 
 这是我的个人博客项目，里面会记录技术、运营和生活的点点滴滴。
 
-访问地址：https://geekplayers.com/
-或 https://www.geekplayers.com/
+访问地址：https://yanglr.github.io/
+或 https://www.yanglr.github.io/
 
 ## 大白技术控的技术博客，兼谈运营硬核技巧.
 
