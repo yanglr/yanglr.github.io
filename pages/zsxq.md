@@ -2,7 +2,7 @@
 layout: page
 title: 知识星球
 titlebar: zsxq
-subtitle: <span class="mega-octicon octicon-keyboard"></span>&nbsp;&nbsp;探索创业、黑客增长、营销策略、创意分享、商业案例等。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://geekplayers.com/" target="_blank" ><font color="#EB9439">点我直达</font></a>
+subtitle: <span class="mega-octicon octicon-keyboard"></span>&nbsp;&nbsp;探索创业、黑客增长、营销策略、创意分享、商业案例等。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://yanglr.github.io/" target="_blank" ><font color="#EB9439">点我直达</font></a>
 menu: zsxq
 css: ['blog-page.css']
 permalink: /zsxq

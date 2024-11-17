@@ -12,7 +12,7 @@ keywords: 大奔SEO,seo,Bing,大白SEO
 description: 必应API接口node.js版 - 大奔SEO
 topmost: true
 original: true
-image: https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com2.png
+image: https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io2.png
 ---
 
 近期，在研究百度、必应、API等的url提交API时，发现有用Go语言做工具的大佬的分享 [利用 API 自动向搜索引擎提交网址(Go语言版) - pyList](https://pylist.com/t/1582821291)。
@@ -58,8 +58,8 @@ var options = {
     uri: 'https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey=' + 'xxx', /* xxx需替换为你的key */
     method: 'POST',
     json: {
-        "siteUrl": "http://geekplayers.com", /* 替换为你的站点，并且在Bing站长平台中验证过权限 */
-        "url": "http://geekplayers.com/link.html"   /* 替换为你需要推送的url */
+        "siteUrl": "http://yanglr.github.io", /* 替换为你的站点，并且在Bing站长平台中验证过权限 */
+        "url": "http://yanglr.github.io/link.html"   /* 替换为你需要推送的url */
     }
 };
 
@@ -74,11 +74,11 @@ request(options, function (error, response, body) {
 
 Step 1:
 
-![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com1.png "大奔SEO")
+![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io1.png "大奔SEO")
 
 Step 2:
 
-![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-geekplayers.com2.png "大奔SEO")
+![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io2.png "大奔SEO")
 
 然后将上述代码中的xxx替换为你的key。
 
@@ -105,11 +105,11 @@ node bing-SingleSumbit.js
 ```js
 var request = require('request');
 var myJson = {
-    "siteUrl": "http://geekplayers.com",
+    "siteUrl": "http://yanglr.github.io",
     "urlList": [
-        "http://geekplayers.com/link.html",
-        "http://geekplayers.com/about.html",
-        "http://geekplayers.com/blog/"
+        "http://yanglr.github.io/link.html",
+        "http://yanglr.github.io/about.html",
+        "http://yanglr.github.io/blog/"
     ]
 };
 request({
@@ -164,7 +164,7 @@ var urlsFile = path.resolve(__dirname, '..', 'nodejs', 'links.txt'); /* 兼容 W
 readFileToArr(urlsFile, function (arr) {
     var request = require('request');
     var myJson = {
-        "siteUrl": "http://geekplayers.com",
+        "siteUrl": "http://yanglr.github.io",
         "urlList": arr
     };
     
@@ -212,7 +212,7 @@ var fs = require('fs');
 var request = require('request');
 const cheerio = require('cheerio');
 
-request('https://www.geekplayers.com/sitemap.xml', function (error, response, html) {
+request('https://www.yanglr.github.io/sitemap.xml', function (error, response, html) {
     if (!error && response.statusCode == 200) {
         var $ = cheerio.load(html, {
             xmlMode: true

@@ -13,7 +13,7 @@ original: true
 博客园的markdown模式下的代码高亮功能使用的是`highlight.js`，没有行号和显示相应编程语言的功能，只好自己将其改造了一下(将这两种功能一并实现了)~ 
 
 先看一下效果，再详细介绍方法~
-![cnblogs-大白技术控](http://geekplayers.com/assets/images/2019/blog/cnblogs-highlight.png)
+![cnblogs-大白技术控](http://yanglr.github.io/assets/images/2019/blog/cnblogs-highlight.png)
 
 ## 查看博客园markdown所使用的代码高亮插件
 先找到一篇markdown模式下写的文章，然后打开Chrome，依次使用 F12 -> network -> filter ".js"，可知 代码高亮插件是 [highlight.js](https://common.cnblogs.com/highlight/9.12.0/highlight.min.js).

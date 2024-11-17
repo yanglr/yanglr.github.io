@@ -15,7 +15,7 @@ image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 
 ![极客玩家大白-站长之家](https://gitee.com/geekplayers/images/raw/master/chinaz-logo.png)
 
-作为一枚中文站点的站长，站长之家的[SEO](//geekplayers.com/dabenSeo.html)工具我们是必须熟悉并掌握的。今天大白进行了全面的整理，分享给大家~
+作为一枚中文站点的站长，站长之家的[SEO](//yanglr.github.io/dabenSeo.html)工具我们是必须熟悉并掌握的。今天大白进行了全面的整理，分享给大家~
 
 ## Chinaz站长后台工具
 
@@ -222,4 +222,4 @@ image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 - [在线批量短链生成器](http://tool.chinaz.com/tools/batchdwz.aspx)
 
 友情链接查询结果：
-<http://link.chinaz.com/geekplayers.com>
+<http://link.chinaz.com/yanglr.github.io>

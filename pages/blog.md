@@ -5,6 +5,6 @@ subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Take not
 menu: blog
 permalink: /blog/
 css: ['blog-page.css']
-keywords: blog, leetcode, geekplayers.com, interview
+keywords: blog, leetcode, yanglr.github.io, interview
 ---
 {% include blog-page.html %}

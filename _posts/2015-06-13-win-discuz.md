@@ -24,17 +24,17 @@ Win7 64 with sp1
 
 **目录**
 
-- [使用软件](http://by.geekplayers.com/win-discuz.html#使用软件)
+- [使用软件](http://yanglr.github.io/win-discuz.html#使用软件)
 - 详细步骤
-  - [安装 IIS](http://by.geekplayers.com/win-discuz.html#安装-iis)
-  - [配置 PHP](http://by.geekplayers.com/win-discuz.html#配置-php)
-  - [配置 MySQL](http://by.geekplayers.com/win-discuz.html#配置-mysql)
-  - [检测环境是否准备好](http://by.geekplayers.com/win-discuz.html#检测环境是否准备好)
-  - [安装 Zend Optimizer](http://by.geekplayers.com/win-discuz.html#安装-zend-optimizer)
-  - [部署 Discuz!](http://by.geekplayers.com/win-discuz.html#部署-discuz)
-  - [部署 phpMyAdmin（可选）](http://by.geekplayers.com/win-discuz.html#部署-phpmyadmin可选)
-  - [常用入口](http://by.geekplayers.com/win-discuz.html#常用入口)
-  - [让 Discuz! 局域网内可访问](http://by.geekplayers.com/win-discuz.html#让-discuz-局域网内可访问)
+  - [安装 IIS](http://yanglr.github.io/win-discuz.html#安装-iis)
+  - [配置 PHP](http://yanglr.github.io/win-discuz.html#配置-php)
+  - [配置 MySQL](http://yanglr.github.io/win-discuz.html#配置-mysql)
+  - [检测环境是否准备好](http://yanglr.github.io/win-discuz.html#检测环境是否准备好)
+  - [安装 Zend Optimizer](http://yanglr.github.io/win-discuz.html#安装-zend-optimizer)
+  - [部署 Discuz!](http://yanglr.github.io/win-discuz.html#部署-discuz)
+  - [部署 phpMyAdmin（可选）](http://yanglr.github.io/win-discuz.html#部署-phpmyadmin可选)
+  - [常用入口](http://yanglr.github.io/win-discuz.html#常用入口)
+  - [让 Discuz! 局域网内可访问](http://yanglr.github.io/win-discuz.html#让-discuz-局域网内可访问)
 
 ## 使用软件
 

@@ -8,4 +8,4 @@ excerpt: 199 元极客时间大礼包
 ---
 
 
-# [199 元极客时间大礼包,点击我免费领取](http://geekplayers.com)
+# [199 元极客时间大礼包,点击我免费领取](http://yanglr.github.io)

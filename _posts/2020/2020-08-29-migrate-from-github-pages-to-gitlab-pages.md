@@ -16,7 +16,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/1598757844067-819530aa-262f-497
 
 ## 在GitLab pages上快速搭建Jekyll博客
 
-前一段时间将我的Jekyll静态博客从github pages镜像部署到了 `zeit.co`(现vercel)上了一份，最近偶然发现gitlab pages也不错，百度也会正常抓取，于是动手倒腾，将github pages快速迁移Jekyll博客到[gitlab pages](https://web.geekplayers.com)，中途遇到了不少坑，管他呢，一把刷。
+前一段时间将我的Jekyll静态博客从github pages镜像部署到了 `zeit.co`(现vercel)上了一份，最近偶然发现gitlab pages也不错，百度也会正常抓取，于是动手倒腾，将github pages快速迁移Jekyll博客到[gitlab pages](https://web.yanglr.github.io)，中途遇到了不少坑，管他呢，一把刷。
 
 于是有了下文的 **从github pages快速迁移Jekyll博客到gitlab pages的完全指南。**
 
@@ -184,7 +184,7 @@ pages:
 ![image6](https://cdn.jsdelivr.net/gh/yanglr/images/1598759747911-24a52910-8a9f-46e6-8470-a2454a915fda.png)
 
 
-比如，我想绑定到: `geekplayers.com`，填进去，点"Create New Domain"即可。
+比如，我想绑定到: `yanglr.github.io`，填进去，点"Create New Domain"即可。
 
 ![image7](https://cdn.jsdelivr.net/gh/yanglr/images/1598759978763-86f36d62-1a3f-4e6d-9f8e-0d55b4dc06f8.png)
 
@@ -213,6 +213,6 @@ TXT那一条加完之后，可以点击 Verify Status 右侧的 红色按钮旁�
 
 最后就是等gitlab自动下发ssl证书。
 
-大概再需要等6分钟左右，页面上的Domain会从http版的 <http://blog.geekplayers.com> 变为: <https://blog.geekplayers.com>，表明SSL证书已成功获取。
+大概再需要等6分钟左右，页面上的Domain会从http版的 <http://blog.yanglr.github.io> 变为: <https://blog.yanglr.github.io>，表明SSL证书已成功获取。
 
 至此，gitlab pages构建完毕。如有疑问，欢迎在评论区提问交流~
