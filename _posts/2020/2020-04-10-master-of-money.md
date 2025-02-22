@@ -4,10 +4,10 @@ redirect_from:
   - /2020/04/10/master-of-money/
 title: 半佛仙人：神圣的存款
 categories: 
-- [存款, yanglr.github.io]
+- [存款, www.geekzl.com]
 # platform: 公众号
 # gzhname: 大白技术控
-tags: [半佛仙人, yanglr.github.io]
+tags: [半佛仙人, www.geekzl.com]
 excerpt: 半佛仙人 - Master of Money 神圣的存款 - Vogue四月
 image: https://cdn.jsdelivr.net/gh/yanglr/images/banfo2.jpg
 ---

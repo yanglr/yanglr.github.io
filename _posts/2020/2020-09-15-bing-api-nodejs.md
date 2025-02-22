@@ -212,7 +212,7 @@ var fs = require('fs');
 var request = require('request');
 const cheerio = require('cheerio');
 
-request('https://www.yanglr.github.io/sitemap.xml', function (error, response, html) {
+request('https://www.geekzl.com/sitemap.xml', function (error, response, html) {
     if (!error && response.statusCode == 200) {
         var $ = cheerio.load(html, {
             xmlMode: true

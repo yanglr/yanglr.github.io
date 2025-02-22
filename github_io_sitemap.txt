@@ -2,5 +2,5 @@
 layout: null
 ---
 {% for post in site.posts %}
-{{ site.url | replace: "geekplayers.com", "yanglr.github.io" }}{{ post.url }}
+{{ site.url | replace: "www.geekzl.com", "yanglr.github.io" }}{{ post.url }}
 {% endfor %}

@@ -1,4 +1,4 @@
-Sitemap: https://yanglr.github.io/sitemap.xml
-Sitemap: https://yanglr.github.io/cnsitemap.xml
+Sitemap: https://www.geekzl.com/sitemap.xml
+Sitemap: https://www.geekzl.com/cnsitemap.xml
 
 User-agent: *
