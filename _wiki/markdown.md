@@ -19,14 +19,14 @@ mindmap: true
 ### 超链接
 
 ```
-[靠谱-ing](https://www.geekzl.com)
+[靠谱-ing](https://geekzl.com)
 
-<https://www.geekzl.com>
+<https://geekzl.com>
 ```
 
-[靠谱-ing](https://www.geekzl.com)  
+[靠谱-ing](https://geekzl.com)  
 
-<https://www.geekzl.com>
+<https://geekzl.com>
 
 ### 列表
 

@@ -1,7 +1,7 @@
 # *极客玩家大白* 的个人博客
 托管在 Github pages
 
-访问地址：https://www.geekzl.com/
+访问地址：https://geekzl.com/
 
 这是我的个人博客项目，里面会记录技术、运营和生活的点点滴滴。
 

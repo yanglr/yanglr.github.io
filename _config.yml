@@ -17,7 +17,7 @@ favicon: favicon.ico
 
 repository: yanglr/yanglr.github.io
 github_url: https://github.com/yanglr
-url: https://www.geekzl.com
+url: https://geekzl.com
 enforce_ssl: www.geekzl.com
 
 permalink: /:title.html
@@ -67,7 +67,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://www.geekzl.com/assets/images/better-me.jpg
+      image: https://geekzl.com/assets/images/better-me.jpg
 
 collections:
     wiki:
