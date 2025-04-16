@@ -43,4 +43,4 @@ image: https://pic.rmb.bdstatic.com/bjh/a2bfab7574b646604f4e1943c65b3815.png
 
 归类于： [0.1: 东拉西扯](http://blog.donews.com/keso/archive/category/东拉西扯) — keso @ 09:53
 
-![Keso-对牛乱弹琴-极客玩家大白](https://pic.rmb.bdstatic.com/bjh/269716b26f8be27002d81b213a13037c.png)
+![Keso-对牛乱弹琴-极客白小飞](https://pic.rmb.bdstatic.com/bjh/269716b26f8be27002d81b213a13037c.png)

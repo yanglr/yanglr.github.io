@@ -6,7 +6,7 @@ categories:
 - [开源,微软技术]
 tags: [大开源,微软技术]
 excerpt: 如何在dotnet，git，winget等命令行中使用自动完成功能
-keywords: 极客玩家大白
+keywords: 极客白小飞
 description: 如何在dotnet，git，winget等命令行中使用自动完成功能
 topmost: true
 original: true
@@ -29,7 +29,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/posh.png
 
 我倾向于将PowerShell 7（以前称为PowerShell Core）用作主提示符，因为它是跨OS的提示符。我可以在Windows和Linux上使用相同的提示，相同的功能，所有内容。
 
-![极客玩家大白-WindowsTerminal](https://cdn.jsdelivr.net/gh/yanglr/images/posh.png "极客玩家大白")
+![极客白小飞-WindowsTerminal](https://cdn.jsdelivr.net/gh/yanglr/images/posh.png "极客白小飞")
 
 但是命令行自动补全功能带给我最大的乐趣！
 

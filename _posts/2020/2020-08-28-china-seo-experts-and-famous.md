@@ -22,7 +22,7 @@ by [刘明](https://www.zhihu.com/people/seoaqua)
 ## 昝辉
 网名：ZAC
 
-![极客玩家大白-seoZac](https://gitee.com/geekplayers/images/raw/master/zacsg-zanhui.jpg)
+![极客白小飞-seoZac](https://gitee.com/geekplayers/images/raw/master/zacsg-zanhui.jpg)
 
 Email：zanhui@gmail.com（来自本人博客）
 
@@ -32,7 +32,7 @@ Email：zanhui@gmail.com（来自本人博客）
 
 网名：seoaqua 
 
-![极客玩家大白-刘明](https://gitee.com/geekplayers/images/raw/master/liumin.jpg)
+![极客白小飞-刘明](https://gitee.com/geekplayers/images/raw/master/liumin.jpg)
 
 QQ/微信：628552（经本人同意）
 
@@ -118,7 +118,7 @@ QQ:1038442403
 
 ## 柳焕斌
 
-![极客玩家大白-柳焕斌Robin](https://gitee.com/geekplayers/images/raw/master/%E6%9F%B3%E7%84%95%E6%96%8Crobin.jpg)
+![极客白小飞-柳焕斌Robin](https://gitee.com/geekplayers/images/raw/master/%E6%9F%B3%E7%84%95%E6%96%8Crobin.jpg)
 
 描述：Robin，在线营销专家，资深电商从业者，从事互联网工作9年。2006年发起和联合创建SEO公益分享组织点石互动，2009年加入麦包包，分管在线营销业务，现担任凯络中国电商总经理，负责电商平台布局业务。
 
@@ -133,7 +133,7 @@ SEO网红
 
 网名：痞子瑞
 
-![极客玩家大白-痞子瑞](https://gitee.com/geekplayers/images/raw/master/pizirui.jpeg)
+![极客白小飞-痞子瑞](https://gitee.com/geekplayers/images/raw/master/pizirui.jpeg)
 
 微信：seoshendu（经本人同意）
 
@@ -146,7 +146,7 @@ QQ：1296429673（经本人同意）
 
 网名：夜息
 
-![极客玩家大白_夜息yexi](https://gitee.com/geekplayers/images/raw/master/yexi.jpg)
+![极客白小飞_夜息yexi](https://gitee.com/geekplayers/images/raw/master/yexi.jpg)
 
 描述：曾任途牛网seo负责人,SEO顾问服务过多个行业，大中小规模的网站，并且取得了明显的流量增长效果。 在业内具有良好的人脉资源，与国内各大互联网公司相关人士有密切交流。
 
@@ -155,7 +155,7 @@ QQ：1296429673（经本人同意）
 ## 张闻一
 网名：Zero
 
-![极客玩家大白_张闻一Zero](https://gitee.com/geekplayers/images/raw/master/zhangwenyi_zero.jpg)
+![极客白小飞_张闻一Zero](https://gitee.com/geekplayers/images/raw/master/zhangwenyi_zero.jpg)
 
 描述：曾负责过赶集、美团、知乎等网站的SEO，突出成绩如三个月内使美团的百度SEO流量不止翻倍。在搜索引擎及技术方向，有广泛且较深入的研究。创办SEO前线主营SEO顾问业务，服务于智联招聘、下厨房等网站。且运营行业论坛，将行业竞争最大的词"SEO"的排名做到百度首页。
 

@@ -125,7 +125,7 @@ These classes and their usages looks quite familiar with MFC. In MFC based appli
 
 As we have seen before that to make smallest WPF application that display its own window we have to create objects of at least two classes named Window and Application. Before going further let's take a look at these two classes in little bit more detail. Here is a class diagram to show the inheritance chain for Application and Window class.
 
-![极客玩家大白yanglr.github.io](https://www.codeguru.com/images/article/16355/Loan_02.gif)
+![极客白小飞yanglr.github.io](https://www.codeguru.com/images/article/16355/Loan_02.gif)
 
 
 

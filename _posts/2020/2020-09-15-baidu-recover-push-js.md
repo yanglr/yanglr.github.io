@@ -17,10 +17,10 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png
 
 在 **百度搜索线上公开课** 的第二期公开课中百度的产品运营小姐姐 **李文菊** 提到自动推送`push.js`接口过一段时间会恢复上线的。
 
-![百度自动推送恢复-极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png "极客玩家大白")
+![百度自动推送恢复-极客白小飞](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png "极客白小飞")
 
 
-![百度自动推送恢复-极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p2.png "大奔SEO")
+![百度自动推送恢复-极客白小飞](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p2.png "大奔SEO")
 
 视频回放地址: <http://mbd.baidu.com/webpage?type=live&action=liveshow&source=h5pre&room_id=3789761765>, 就是在时间点`03:04`的。
 
@@ -30,7 +30,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p1.png
 
 今天进入 [百度搜索资源平台](//ziyuan.baidu.com) 时，发现"自动推送"的入口已恢复，有图有真相！
 
-![百度自动推送恢复-极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p3.png "极客玩家大白")
+![百度自动推送恢复-极客白小飞](https://cdn.jsdelivr.net/gh/yanglr/images/pushjs-recove-p3.png "极客白小飞")
 
 
 具体的代码如下:

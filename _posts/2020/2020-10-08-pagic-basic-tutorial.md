@@ -183,7 +183,7 @@ pagic build --watch --serve
 
 
 
-![极客玩家大白-image1](https://pic.rmb.bdstatic.com/bjh/36b5bf4f3479daaeeb8b67fd0690eb5c.png "极客玩家大白-CMD命令行")
+![极客白小飞-image1](https://pic.rmb.bdstatic.com/bjh/36b5bf4f3479daaeeb8b67fd0690eb5c.png "极客白小飞-CMD命令行")
 
 
 
@@ -197,11 +197,11 @@ pagic build --watch --serve
 
 
 
-![极客玩家大白-系统变量PATH](https://pic.rmb.bdstatic.com/bjh/7c6809a4966126b2ca34adcbe3d972a7.png "极客玩家大白")
+![极客白小飞-系统变量PATH](https://pic.rmb.bdstatic.com/bjh/7c6809a4966126b2ca34adcbe3d972a7.png "极客白小飞")
 
 此时，再输入同样的命令，就能起作用了:
 
-![极客玩家大白-系统变量](https://pic.rmb.bdstatic.com/bjh/250abd0b7971ee4f12496258bb3433e4.png "极客玩家大白")
+![极客白小飞-系统变量](https://pic.rmb.bdstatic.com/bjh/250abd0b7971ee4f12496258bb3433e4.png "极客白小飞")
 
 
 
@@ -221,7 +221,7 @@ bash: pgic: command not found
 
 
 
-![极客玩家大白](https://pic.rmb.bdstatic.com/bjh/f70e4afeccdae52a7a99933479c3ef90.png "极客玩家大白")
+![极客白小飞](https://pic.rmb.bdstatic.com/bjh/f70e4afeccdae52a7a99933479c3ef90.png "极客白小飞")
 
 
 
@@ -270,7 +270,7 @@ alias pagic='winpty /C/Users/{username}/.deno/bin/pagic.cmd'
 pagic build --serve
 ```
 
-![极客玩家大白-系统变量](https://pic.rmb.bdstatic.com/bjh/cc8fef46bc0fd12266f85d976a64b0ab.png)
+![极客白小飞-系统变量](https://pic.rmb.bdstatic.com/bjh/cc8fef46bc0fd12266f85d976a64b0ab.png)
 
 当然还需要注意一点，build时需要关闭科学上网工具~
 
@@ -278,7 +278,7 @@ pagic build --serve
 
 然后用浏览器打开 http://127.0.0.1:8000/ ，看看是不是显示出 `Hi, so cool.` 了呢？
 
-![极客玩家大白-静态站点界面](https://pic.rmb.bdstatic.com/bjh/5e7ecc2377179f8345992794e910ab05.png)
+![极客白小飞-静态站点界面](https://pic.rmb.bdstatic.com/bjh/5e7ecc2377179f8345992794e910ab05.png)
 
 
 

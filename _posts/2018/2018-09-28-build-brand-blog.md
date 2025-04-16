@@ -75,4 +75,4 @@ by 南忠豹
 
 20.享受和分享成功带给你的快乐。
 
-![极客玩家大白-图片8](https://gitee.com/geekplayers/images/raw/master/blog8.png)
+![极客白小飞-图片8](https://gitee.com/geekplayers/images/raw/master/blog8.png)

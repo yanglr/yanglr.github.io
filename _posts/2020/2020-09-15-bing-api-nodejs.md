@@ -74,11 +74,11 @@ request(options, function (error, response, body) {
 
 Step 1:
 
-![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io1.png "大奔SEO")
+![大奔SEO_极客白小飞](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io1.png "大奔SEO")
 
 Step 2:
 
-![大奔SEO_极客玩家大白](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io2.png "大奔SEO")
+![大奔SEO_极客白小飞](https://cdn.jsdelivr.net/gh/yanglr/images/bing-api-yanglr.github.io2.png "大奔SEO")
 
 然后将上述代码中的xxx替换为你的key。
 

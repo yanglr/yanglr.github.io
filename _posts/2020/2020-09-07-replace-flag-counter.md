@@ -24,7 +24,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 首先，注册账号 [https://www.tracemyip.org/members/index.php?page=spm_checkout&type=ssub&ntc=1](https://www.tracemyip.org/members/index.php?page=spm_checkout&type=ssub&ntc=1)，类型选"Level 1 Free"
 
-![极客玩家大白p1-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p1.png)
+![极客白小飞p1-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p1.png)
 
 然后拖到页面下方，点"Sign up"
 
@@ -39,7 +39,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 不登录时，得到的是:
 
-![极客玩家大白p2-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p2.png)
+![极客白小飞p2-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p2.png)
 
 填完信息时，会要求填email，然后登陆即可~
 
@@ -48,7 +48,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 由于我的博客园博客是[www.cnblogs.com/enjoy233](http://www.cnblogs.com/enjoy233)，所以相应地url需要填: `www.cnblogs.com/enjoy233`.
 
-![极客玩家大白p3-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p3.png)
+![极客白小飞p3-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p3.png)
 
 
 得到代码后，贴到博客园设置后台的**博客侧边栏公告**中:
@@ -68,7 +68,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 效果图如下:
 
-![极客玩家大白p4-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png)
+![极客白小飞p4-Tracemyip.org](https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png)
 
 <br>
 
@@ -78,7 +78,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 创建Widget: [https://clustrmaps.com/add](https://clustrmaps.com/add)
 
-![极客玩家大白p1-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p1.png)
+![极客白小飞p1-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p1.png)
 
 
 填入自己的博客园博客地址，比如我的是: 
@@ -87,7 +87,7 @@ image: https://cdn.jsdelivr.net/gh/yanglr/images/trace-p4.png
 
 然后点"next"按钮即可得到代码:
 
-![极客玩家大白p2-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p2.png)
+![极客白小飞p2-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p2.png)
 
 ```html
 <a href="https://clustrmaps.com/site/1bcz5" title="Visit tracker"><img 
@@ -96,11 +96,11 @@ src="//www.clustrmaps.com/map_v2.png?d=Z5dh85VLcC8BLff99dwZ0SHJUomU2T_XMP-WbIcG2
 
 接下来，将红线框出部分的代码贴到博客园后台的**博客侧边栏公告**中：
 
-![极客玩家大白p3-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p3.png)
+![极客白小飞p3-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p3.png)
 
 
 保存代码，就可以看到效果了~
 
-![极客玩家大白p4-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p4.png)
+![极客白小飞p4-clustrmaps](https://cdn.jsdelivr.net/gh/yanglr/images/clustrmaps-p4.png)
 
 接下来，二选一即可，大功告成~

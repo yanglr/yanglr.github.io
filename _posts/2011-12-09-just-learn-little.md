@@ -3,17 +3,17 @@ layout: post
 date: 2011-12-09 10:21:20
 title: 只学一点点：我的技术学习策略
 categories:
-- [技术学习, 极客玩家大白]
-tags: [技术学习, 极客玩家大白]
+- [技术学习, 极客白小飞]
+tags: [技术学习, 极客白小飞]
 excerpt: 只学一点点：我的技术学习策略 - 转载自xiaotie
-keywords: 极客玩家大白
+keywords: 极客白小飞
 description: 只学一点点：我的技术学习策略 - xiaotie
 image: https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg
 ---
 
 > 转载自 [只学一点点：我的技术学习策略 - xiaotie](https://www.cnblogs.com/xiaotie/archive/2011/12/10/2283384.html)
 
-> by ![极客玩家大白-xiaotie头像](https://cdn.jsdelivr.net/gh/yanglr/images/xiaotie-touxiang.jpg "极客玩家大白")
+> by ![极客白小飞-xiaotie头像](https://cdn.jsdelivr.net/gh/yanglr/images/xiaotie-touxiang.jpg "极客白小飞")
 
 <hr/>
 
@@ -1662,7 +1662,7 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 
 带图标的按钮：
 
-![极客玩家大白-ComboButton](https://cdn.jsdelivr.net/gh/yanglr/images/combo-button.jpg "极客玩家大白")
+![极客白小飞-ComboButton](https://cdn.jsdelivr.net/gh/yanglr/images/combo-button.jpg "极客白小飞")
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1698,7 +1698,7 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 
 　　HSlider: 
 
-![极客玩家大白-Slider](https://cdn.jsdelivr.net/gh/yanglr/images/slider.jpg "极客玩家大白")
+![极客白小飞-Slider](https://cdn.jsdelivr.net/gh/yanglr/images/slider.jpg "极客白小飞")
 
 
 ```xml
@@ -1817,7 +1817,7 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 
 　　图像拉伸、旋转、缩放、删除的控制框控件复杂一点，400多行，代码贴时出错了，就不贴了，效果图：
 
-![极客玩家大白-resize box](https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg "极客玩家大白")
+![极客白小飞-resize box](https://cdn.jsdelivr.net/gh/yanglr/images/resize-box.jpg "极客白小飞")
 
 　　当然，滚动条啥的控件就复杂一点，不想写可以就拿Flash里自带的包装一下，照样用。
 
@@ -1868,7 +1868,7 @@ x="{0.5*width-borderThickness*0.5}" y="{-handleLength}"
 
 　　看看我做的一个项目的整体效果图，这些界面大部分都是从Draw API一步步绘制的：
 
-![极客玩家大白-大头贴](https://cdn.jsdelivr.net/gh/yanglr/images/datoutie.jpg "极客玩家大白")
+![极客白小飞-大头贴](https://cdn.jsdelivr.net/gh/yanglr/images/datoutie.jpg "极客白小飞")
 
  　 as3有个叫haXe的兄弟语言，haXe写的代码可以在Flash平台运行，可以在js环境运行，铺平了向html5的过渡之途。
 下面，回答前面提出的四个问题：我会哪些？我学了哪些？我能做什么？做这些我相对于别人有哪些优势？

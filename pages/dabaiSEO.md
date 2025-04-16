@@ -6,7 +6,7 @@ subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; �
 menu: dabaiSEO
 css: ['blog-page.css']
 permalink: /dabaiSEO
-keywords: 大白seo, 极客玩家大白, seo
+keywords: 大白seo, 极客白小飞, seo
 description: 大白SEO
 ---
 

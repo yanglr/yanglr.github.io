@@ -1,4 +1,4 @@
-# *极客玩家大白* 的个人博客
+# *极客白小飞* 的个人博客
 托管在 Github pages
 
 访问地址：https://geekzl.com/

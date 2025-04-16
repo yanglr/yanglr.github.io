@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  极客玩家大白
-subtitle: 大白技术控，分享技术、感悟人生，兼谈运营硬核技巧.
-name: 极客玩家大白
+title:  极客白小飞
+subtitle: 极客白小飞，分享技术、感悟人生，兼谈运营硬核技巧.
+name: 极客白小飞
 email: legege007@126.com
-description: "极客玩家大白的技术分享博客。内容涵盖.NET, PHP, Leetcode面试题，Python等等~分享技术、感悟人生，兼谈运营硬核技巧‧‧‧"
+description: "极客白小飞的技术博客，极客白小飞 | 极客中心，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战‧‧‧"
 keywords: Python, 大白VR, 大奔SEO, 大白技术控, 技术博客, .NET
 encoding: "utf-8"
 favicon: favicon.ico
@@ -120,7 +120,7 @@ paginate_path: 'page:num'
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: 极客玩家大白
+author: 极客白小飞
 organization: 
 organization_url: 
 github_username: yanglr

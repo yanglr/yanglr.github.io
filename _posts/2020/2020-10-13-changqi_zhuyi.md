@@ -24,7 +24,7 @@ image: https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png
 
 ## 长期主义误区一：只盯着长远的目标，不计较当下的得失
 
-![极客玩家大白-长期主义误区一](https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png "极客玩家大白")
+![极客白小飞-长期主义误区一](https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png "极客白小飞")
 
 
 大多数人的第一个误区就是盯着长远的目标，不计较当下的得失。
@@ -45,12 +45,12 @@ image: https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png
 
 长期主义的第二个误区是一味的相信坚持的力量撞破南墙都不回头。
 
-![极客玩家大白-长期主义误区二](https://pic.rmb.bdstatic.com/bjh/f2a8b345ff69bd93f7a8839e0bfbd6b6.png "极客玩家大白")
+![极客白小飞-长期主义误区二](https://pic.rmb.bdstatic.com/bjh/f2a8b345ff69bd93f7a8839e0bfbd6b6.png "极客白小飞")
 
 
 坚持是好事，但过往的视频里，我不止一次的提到概率论，按照公式来说就是：足够尝试的次数加一定的概率，再小的偶然都会出现必然的结果。
 
-![极客玩家大白-概率论](https://pic.rmb.bdstatic.com/bjh/a7f04730717a598ae34ffcb24f499493.png "极客玩家大白")
+![极客白小飞-概率论](https://pic.rmb.bdstatic.com/bjh/a7f04730717a598ae34ffcb24f499493.png "极客白小飞")
 
 我们常说时间会给我们答案，就是这个原理，很多时候就是如此。
 当我们活得足够惨，做的选择足够多时，大数法则就会发生作用。到那个时候我们的命运就不再取决于一到两次的选择，而是整个系统。运气就不再是虚无缥缈的东西。
@@ -63,7 +63,7 @@ image: https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png
 
 长期主义的第三个误区就是：不清楚长期有多长。
 
-![极客玩家大白-长期主义误区三](https://pic.rmb.bdstatic.com/bjh/0cf0dbc0882bf6b49ef64d2b52e3fb98.png "极客玩家大白")
+![极客白小飞-长期主义误区三](https://pic.rmb.bdstatic.com/bjh/0cf0dbc0882bf6b49ef64d2b52e3fb98.png "极客白小飞")
 
 我们嘴里总是说说长期，但你是否想过长期到底有多长，是5年、10年还是一辈子？这些答案都是错误的。长期主义是在符合一件事物的周期曲线里去努力，而不是盲目的去坚持。
 
@@ -71,7 +71,7 @@ image: https://pic.rmb.bdstatic.com/bjh/ca8b7ea2a00fc93a83375aced73efd27.png
 
 同样在一个长周期里，为什么两者的命运如此不同，答案其实就在周期曲线里，任何事物都有萌芽期、成长期、巅峰期、衰落期和终结期，好比生死轮回。
 
-![极客玩家大白-长期主义的周期曲线](https://pic.rmb.bdstatic.com/bjh/69a38e1df952c2e0bfa42f5e63906fd4.png "极客玩家大白")
+![极客白小飞-长期主义的周期曲线](https://pic.rmb.bdstatic.com/bjh/69a38e1df952c2e0bfa42f5e63906fd4.png "极客白小飞")
 
 因此真正的长期主义是识别周期曲线的变化。然后像傻子一样的努力，而不是用努力去博不确定的未来，知道这点很重要。
 

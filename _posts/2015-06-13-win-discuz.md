@@ -87,7 +87,7 @@ Win7 64 with sp1
 
 打开「控制面板」–「程序」–「打开或关闭 Windows 功能」，勾选「Internet 信息服务」，**确认「万维网服务」–「应用程序开发功能」–「CGI」是勾选状态**，然后点「确定」安装。
 
-![极客玩家大白-iis](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/iis.png "极客玩家大白")
+![极客白小飞-iis](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/iis.png "极客白小飞")
 
 ## 配置 PHP
 
@@ -135,7 +135,7 @@ Win7 64 with sp1
 
    打开「控制面板」–「系统和安全」–「管理工具」–「Internet 信息服务(IIS)管理器」–「处理程序映射」，点击右方的「添加模块映射」，填写如下并确认：
 
-   ![极客玩家大白-fastcgi](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/fastcgi.png "极客玩家大白")
+   ![极客白小飞-fastcgi](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/fastcgi.png "极客白小飞")
 
 
 
@@ -149,39 +149,39 @@ Win7 64 with sp1
 
 选择 Custom 自定义安装。
 
-![极客玩家大白-custom](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-1.png "极客玩家大白")
+![极客白小飞-custom](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-1.png "极客白小飞")
 
 更改安装路径。
 
-![极客玩家大白-install-path](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-2.png "极客玩家大白")
+![极客白小飞-install-path](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-2.png "极客白小飞")
 
 选择 MySQL 运行模式：Server Machine。
 
-![极客玩家大白-server-machine](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-3.png "极客玩家大白")
+![极客白小飞-server-machine](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-3.png "极客白小飞")
 
 选择 MySQL 数据库默认存储方式：Non-Trans Only (MYISAM)。
 
-![极客玩家大白-non-trans](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-4.png "极客玩家大白")
+![极客白小飞-non-trans](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-4.png "极客白小飞")
 
 设定 MySQL 的最大连接数，一般设置为 128 - 512 之间的整数。
 
-![极客玩家大白-connections](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-5.png "极客玩家大白")
+![极客白小飞-connections](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-5.png "极客白小飞")
 
 设定网络参数，注意：勾消掉「Enable Strict Mode」。而「Add firewall exception for this port」仅在需要外连 MySQL 的时候勾上。
 
-![极客玩家大白-networking](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-6.png "极客玩家大白")
+![极客白小飞-networking](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-6.png "极客白小飞")
 
 设定默认字符集，我根据官方文档选择了 gbk。
 
-![极客玩家大白-character set](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-7.png "极客玩家大白")
+![极客白小飞-character set](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-7.png "极客白小飞")
 
 将 Bin 目录添加到 PATH。
 
-![极客玩家大白-path](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-8.png "极客玩家大白")
+![极客白小飞-path](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-8.png "极客白小飞")
 
 设置 root 用户密码，推荐设置复杂一点。
 
-![极客玩家大白-password](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-9.png "极客玩家大白")
+![极客白小飞-password](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/mysql-9.png "极客白小飞")
 
 测试 MySQL 工作是否正常，在 CMD 运行
 
@@ -237,7 +237,7 @@ Win7 64 with sp1
 
 在「Internet 信息服务(IIS)管理器」中右击「网站」，选「添加网站」：
 
-![极客玩家大白-add-website](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/add-website.png "极客玩家大白")
+![极客白小飞-add-website](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/add-website.png "极客白小飞")
 
 然后在新建的网站的「默认文档」里添加 index.php。
 
@@ -253,7 +253,7 @@ Win7 64 with sp1
 
 打开浏览器访问 http://localhost/phpinfo.php，如果能显示如下网页表示环境已经准备就绪。
 
-![极客玩家大白-img](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/phpinfo.png "极客玩家大白")
+![极客白小飞-img](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/phpinfo.png "极客白小飞")
 
 ## 安装 Zend Optimizer
 
@@ -269,7 +269,7 @@ Win7 64 with sp1
 
 安装完成后直接访问 [http://localhost](http://localhost/) 就能看到熟悉的界面了：
 
-![极客玩家大白-discuz](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/discuz.png "极客玩家大白")
+![极客白小飞-discuz](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/discuz.png "极客白小飞")
 
 **配置确认**
 
@@ -335,4 +335,4 @@ Win7 64 with sp1
 
 2. 为网站添加本机 IP 绑定
 
-   ![极客玩家大白-img](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/nat-bind-ip.png "极客玩家大白")
+   ![极客白小飞-img](https://cdn.jsdelivr.net/gh/wpfgeek/wpfgeek.github.io@master/images/posts/php/nat-bind-ip.png "极客白小飞")

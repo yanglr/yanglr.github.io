@@ -6,14 +6,14 @@ categories:
 - [大奔SEO,seo, chinaz,站长之家]
 tags: [大奔SEO,seo,站长之家]
 excerpt: 站长之家 seo查询 - SEO工具大全
-keywords: 极客玩家大白
+keywords: 极客白小飞
 description: 站长之家 seo查询 - SEO工具大全
 topmost: true
 original: true
 image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 ---
 
-![极客玩家大白-站长之家](https://gitee.com/geekplayers/images/raw/master/chinaz-logo.png)
+![极客白小飞-站长之家](https://gitee.com/geekplayers/images/raw/master/chinaz-logo.png)
 
 作为一枚中文站点的站长，站长之家的[SEO](//yanglr.github.io/dabenSeo.html)工具我们是必须熟悉并掌握的。今天大白进行了全面的整理，分享给大家~
 
@@ -22,7 +22,7 @@ image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 ### 网站管理 - 站长工具
 <http://my.chinaz.com/ChinazToolSeo/WebsiteManage/Index>
 
-![极客玩家大白-站长之家-网站管理页](https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png)
+![极客白小飞-站长之家-网站管理页](https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png)
 
 需要注意的是，免费账号最多只能提交一个网站。另外，如果你的站点是https的，在这里的一个站长验证是无法通过的，不过不影响其他功能的使用。
 
@@ -53,7 +53,7 @@ image: https://gitee.com/geekplayers/images/raw/master/chinaz-websites.png
 ### ALEXA中心 - 网站管理 - 站长工具
 <https://alexa.chinaz.com/usercenter/>
 
-![极客玩家大白-站长之家-Alexa用户中心](https://gitee.com/geekplayers/images/raw/master/chinaz-alexa.png)
+![极客白小飞-站长之家-Alexa用户中心](https://gitee.com/geekplayers/images/raw/master/chinaz-alexa.png)
 
 ### 日常实用工具 - 站长工具
 <http://tool.chinaz.com/map.aspx>

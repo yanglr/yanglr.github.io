@@ -33,7 +33,7 @@ image: https://pic.rmb.bdstatic.com/bjh/bb51f88b0090674ff086ad80162b7083.png
 
 [点击查看样例效果](http://www.baidu.com/search/sug/demo.html)
 
-![极客玩家大白-样例](https://pic.rmb.bdstatic.com/bjh/27cc1510036eab07e29a83741515f4d3.png "极客玩家大白")
+![极客白小飞-样例](https://pic.rmb.bdstatic.com/bjh/27cc1510036eab07e29a83741515f4d3.png "极客白小飞")
 
 
 **法律声明**
@@ -86,7 +86,7 @@ Javascript代码：
 
 [查看样例效果](http://www.baidu.com/search/sug/demo.html)
 
-![极客玩家大白-样例效果](https://pic.rmb.bdstatic.com/bjh/bb51f88b0090674ff086ad80162b7083.png "极客玩家大白")
+![极客白小飞-样例效果](https://pic.rmb.bdstatic.com/bjh/bb51f88b0090674ff086ad80162b7083.png "极客白小飞")
 
 ### 添加方式
 

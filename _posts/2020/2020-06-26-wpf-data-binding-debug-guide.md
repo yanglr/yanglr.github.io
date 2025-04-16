@@ -321,7 +321,7 @@ Snoop允许您查看您在应用程序中指定的事件列表。当您单击元
 在Snoop的左上角，有一个下拉框可以打开，然后选择"Show only Visuals with binding Errors"以查看应用程序所具有的可视数据绑定错误列表。
 
 
-![极客玩家大白-geekplayers](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug10.png)
+![极客白小飞-geekplayers](https://cdn.jsdelivr.net/gh/yanglr/yanglr.github.io/assets/images/2020/wpf-debug10.png)
 
 
 Snoop 的一个众所周知的功能是能够识别数据绑定问题。当看到组件是否绑定正确时，我通常只是尝试一下，看看它是否有效。如果无效，我转向 Visual Studio 调试模式下的output窗口。如果无法立即看到该值，我会这样做：将 Snoop 附加(Attach)到我的应用，并从应用程序树视图上方的搜索/筛选器栏中选择"Show only visuals with binding errors"选项。
