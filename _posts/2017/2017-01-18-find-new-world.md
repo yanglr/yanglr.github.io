@@ -15,5 +15,5 @@ tags: [life]
 -------------
 
 **作者：极客玩家Bravo Yeung**  
-**出处：[www.geekzl.com](http://geekzl.com)**  
+**出处：[www.geekzl.com](http://yanglr.github.io)**  
 **版权所有，欢迎保留原文链接进行转载：)**

@@ -19,14 +19,14 @@ mindmap: true
 ### 超链接
 
 ```
-[靠谱-ing](https://geekzl.com)
+[靠谱-ing](https://yanglr.github.io)
 
-<https://geekzl.com>
+<https://yanglr.github.io>
 ```
 
-[靠谱-ing](https://geekzl.com)  
+[靠谱-ing](https://yanglr.github.io)  
 
-<https://geekzl.com>
+<https://yanglr.github.io>
 
 ### 列表
 
